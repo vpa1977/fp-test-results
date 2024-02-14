@@ -1,0 +1,528 @@
+#####
+ubuntu-withfp-opt-id - Run 1
+2024-02-14 13:30:08
+#####
+[   0.000][d][global] user path: '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1/mpv-1.0.1-1707917404-1.log' -> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1/mpv-1.0.1-1707917404-1.log'
+[   0.008][v][cplayer] mpv 0.36.0 Copyright © 2000-2023 mpv/MPlayer/mplayer2 projects
+[   0.008][v][cplayer]  built on UNKNOWN
+[   0.008][v][cplayer] libplacebo version: v6.292.0
+[   0.008][v][cplayer] FFmpeg version: 6.0-6ubuntu1
+[   0.008][v][cplayer] FFmpeg library versions:
+[   0.008][v][cplayer]    libavutil       58.2.100
+[   0.008][v][cplayer]    libavcodec      60.3.100
+[   0.008][v][cplayer]    libavformat     60.3.100
+[   0.008][v][cplayer]    libswscale      7.1.100
+[   0.008][v][cplayer]    libavfilter     9.3.100
+[   0.008][v][cplayer]    libswresample   4.10.100
+[   0.008][v][cplayer] 
+[   0.008][v][cplayer] Configuration: -Dpython.bytecompile=-1 -Dlibmpv=true -Dbuild-date=false -Dcdda=enabled -Ddvdnav=enabled -Dsdl2=enabled -Dsndio=disabled -Ddvbin=enabled -Dprefix=/usr -Dlibdir=lib/x86_64-linux-gnu -Dlocalstatedir=/var -Dsysconfdir=/etc -Dbuildtype=plain -Dwrap_mode=nodownload
+[   0.008][v][cplayer] List of enabled features: alsa av-channel-layout avif_muxer caca cdda cplugins cuda-hwaccel cuda-interop dmabuf-interop-gl dmabuf-interop-pl dmabuf-wayland drm drm-is-kms dvbin dvdnav egl egl-drm egl-helpers egl-x11 ffmpeg ffnvcodec gbm gl gl-wayland glibc-thread-name glob glob-posix gpl iconv jack javascript jpeg jpegxl lcms2 libarchive libass libavdevice libbluray libdl libm libplacebo libplacebo-next librt linux-fstatfs lua52 manpage-build memfd_create noexecstack pipewire posix posix_shm pulse rubberband rubberband-3 sdl2 sdl2-audio sdl2-gamepad sdl2-video sixel spirv-cross stdatomic threads uchardet vaapi vaapi-drm vaapi-egl vaapi-libplacebo vaapi-wayland vaapi-x-egl vaapi-x11 vdpau vector vk_khr_display vt.h vulkan wayland wayland_protocols_1_27 wayland_protocols_1_31 wayland_protocols_1_32 x11 xv zimg zimg-st428 zlib
+[   0.008][v][cplayer] Command line options: '--no-audio' '--untimed' '--opengl-swapinterval=0' '--video-sync=display-desync' '-v' '--osd-msg1=FPS: ${estimated-display-fps}' '--term-status-msg=FPS: ${estimated-display-fps}' '--term-osd-bar' '--length=300' '--log-file=/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1/mpv-1.0.1-1707917404-1.log'
+[   0.008][v][cplayer] mpv 0.36.0 Copyright © 2000-2023 mpv/MPlayer/mplayer2 projects
+[   0.008][v][cplayer]  built on UNKNOWN
+[   0.008][v][cplayer] libplacebo version: v6.292.0
+[   0.008][v][cplayer] FFmpeg version: 6.0-6ubuntu1
+[   0.008][v][cplayer] FFmpeg library versions:
+[   0.008][v][cplayer]    libavutil       58.2.100
+[   0.008][v][cplayer]    libavcodec      60.3.100
+[   0.008][v][cplayer]    libavformat     60.3.100
+[   0.008][v][cplayer]    libswscale      7.1.100
+[   0.008][v][cplayer]    libavfilter     9.3.100
+[   0.008][v][cplayer]    libswresample   4.10.100
+[   0.008][v][cplayer] 
+[   0.008][v][cplayer] Configuration: -Dpython.bytecompile=-1 -Dlibmpv=true -Dbuild-date=false -Dcdda=enabled -Ddvdnav=enabled -Dsdl2=enabled -Dsndio=disabled -Ddvbin=enabled -Dprefix=/usr -Dlibdir=lib/x86_64-linux-gnu -Dlocalstatedir=/var -Dsysconfdir=/etc -Dbuildtype=plain -Dwrap_mode=nodownload
+[   0.008][v][cplayer] List of enabled features: alsa av-channel-layout avif_muxer caca cdda cplugins cuda-hwaccel cuda-interop dmabuf-interop-gl dmabuf-interop-pl dmabuf-wayland drm drm-is-kms dvbin dvdnav egl egl-drm egl-helpers egl-x11 ffmpeg ffnvcodec gbm gl gl-wayland glibc-thread-name glob glob-posix gpl iconv jack javascript jpeg jpegxl lcms2 libarchive libass libavdevice libbluray libdl libm libplacebo libplacebo-next librt linux-fstatfs lua52 manpage-build memfd_create noexecstack pipewire posix posix_shm pulse rubberband rubberband-3 sdl2 sdl2-audio sdl2-gamepad sdl2-video sixel spirv-cross stdatomic threads uchardet vaapi vaapi-drm vaapi-egl vaapi-libplacebo vaapi-wayland vaapi-x-egl vaapi-x11 vdpau vector vk_khr_display vt.h vulkan wayland wayland_protocols_1_27 wayland_protocols_1_31 wayland_protocols_1_32 x11 xv zimg zimg-st428 zlib
+[   0.008][d][global] home path: '' -> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv'
+[   0.008][d][global] user path: '~~home/' -> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv'
+[   0.008][d][global] user path: '~~old_home/' -> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv'
+[   0.008][d][global] config path: 'encoding-profiles.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/encoding-profiles.conf'
+[   0.008][d][global] config path: 'encoding-profiles.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/encoding-profiles.conf'
+[   0.008][d][global] config path: 'encoding-profiles.conf' -> '/etc/mpv/encoding-profiles.conf'
+[   0.008][v][cplayer] Reading config file /etc/mpv/encoding-profiles.conf
+[   0.008][v][ifo_dvdnav] Opening /etc/mpv/encoding-profiles.conf
+[   0.008][v][bdmv/bluray] Opening /etc/mpv/encoding-profiles.conf
+[   0.008][v][file] Opening /etc/mpv/encoding-profiles.conf
+[   0.008][d][file] resize stream to 131072 bytes, drop 0 bytes
+[   0.008][d][file] Stream opened successfully.
+[   0.008][v][cplayer] Applying profile 'default'...
+[   0.008][d][global] config path: 'mpv.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/mpv.conf'
+[   0.008][d][global] config path: 'config' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/config'
+[   0.008][d][global] config path: 'mpv.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/mpv.conf'
+[   0.008][d][global] config path: 'config' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/config'
+[   0.008][d][global] config path: 'mpv.conf' -> '/etc/mpv/mpv.conf'
+[   0.008][d][global] config path: 'config' -/-> '/etc/mpv/config'
+[   0.008][v][cplayer] Reading config file /etc/mpv/mpv.conf
+[   0.008][v][ifo_dvdnav] Opening /etc/mpv/mpv.conf
+[   0.008][v][bdmv/bluray] Opening /etc/mpv/mpv.conf
+[   0.008][v][file] Opening /etc/mpv/mpv.conf
+[   0.008][d][file] resize stream to 131072 bytes, drop 0 bytes
+[   0.008][d][file] Stream opened successfully.
+[   0.008][v][cplayer] Applying profile 'default'...
+[   0.008][v][cplayer] Setting option 'hwdec' = 'vaapi' (flags = 4)
+[   0.008][v][cplayer] Setting option 'audio' = 'no' (flags = 8)
+[   0.008][v][cplayer] Setting option 'untimed' = '' (flags = 8)
+[   0.008][v][cplayer] Setting option 'opengl-swapinterval' = '0' (flags = 8)
+[   0.008][v][cplayer] Setting option 'video-sync' = 'display-desync' (flags = 8)
+[   0.008][v][cplayer] Setting option 'v' = '' (flags = 8)
+[   0.008][v][cplayer] Setting option 'osd-msg1' = 'FPS: ${estimated-display-fps}' (flags = 8)
+[   0.008][v][cplayer] Setting option 'term-status-msg' = 'FPS: ${estimated-display-fps}' (flags = 8)
+[   0.008][v][cplayer] Setting option 'term-osd-bar' = '' (flags = 8)
+[   0.008][v][cplayer] Setting option 'length' = '300' (flags = 8)
+[   0.008][v][cplayer] Setting option 'log-file' = '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1/mpv-1.0.1-1707917404-1.log' (flags = 8)
+[   0.008][d][global] config path: 'input.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/input.conf'
+[   0.008][d][global] config path: 'input.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/input.conf'
+[   0.008][d][global] config path: 'input.conf' -/-> '/etc/mpv/input.conf'
+[   0.008][d][global] user path: '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1/mpv-1.0.1-1707917404-1.log' -> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1/mpv-1.0.1-1707917404-1.log'
+[   0.008][d][osc] Loading lua script @osc.lua...
+[   0.008][d][ytdl_hook] Loading lua script @ytdl_hook.lua...
+[   0.008][d][stats] Loading lua script @stats.lua...
+[   0.008][d][console] Loading lua script @console.lua...
+[   0.008][d][auto_profiles] Loading lua script @auto_profiles.lua...
+[   0.008][i][cplayer] mpv 0.36.0 Copyright © 2000-2023 mpv/MPlayer/mplayer2 projects
+[   0.008][i][cplayer]  built on UNKNOWN
+[   0.008][i][cplayer] libplacebo version: v6.292.0
+[   0.008][i][cplayer] FFmpeg version: 6.0-6ubuntu1
+[   0.008][i][cplayer] FFmpeg library versions:
+[   0.008][i][cplayer]    libavutil       58.2.100
+[   0.008][i][cplayer]    libavcodec      60.3.100
+[   0.008][i][cplayer]    libavformat     60.3.100
+[   0.008][i][cplayer]    libswscale      7.1.100
+[   0.008][i][cplayer]    libavfilter     9.3.100
+[   0.008][i][cplayer]    libswresample   4.10.100
+[   0.008][i][cplayer] 
+[   0.008][i][cplayer] Usage:   mpv [options] [url|path/]filename
+[   0.008][i][cplayer] 
+[   0.008][i][cplayer] Basic options:
+[   0.008][i][cplayer]  --start=<time>    seek to given (percent, seconds, or hh:mm:ss) position
+[   0.008][i][cplayer]  --no-audio        do not play sound
+[   0.008][i][cplayer]  --no-video        do not play video
+[   0.008][i][cplayer]  --fs              fullscreen playback
+[   0.008][i][cplayer]  --sub-file=<file> specify subtitle file to use
+[   0.008][i][cplayer]  --playlist=<file> specify playlist file
+[   0.008][i][cplayer] 
+[   0.008][i][cplayer]  --list-options    list all mpv options
+[   0.008][i][cplayer]  --h=<string>      print options which contain the given string in their name
+[   0.008][i][cplayer] 
+[   0.008][d][auto_profiles] loading mp.defaults
+[   0.009][d][auto_profiles] loading @auto_profiles.lua
+[   0.009][d][osc] loading mp.defaults
+[   0.010][d][osc] loading @osc.lua
+[   0.010][d][ytdl_hook] loading mp.defaults
+[   0.011][d][stats] loading mp.defaults
+[   0.011][d][console] loading mp.defaults
+[   0.011][d][auto_profiles] Exiting...
+[   0.013][d][console] loading @console.lua
+[   0.013][d][stats] loading @stats.lua
+[   0.014][d][osc] reading options for osc 
+[   0.014][d][global] config path: 'script-opts/osc.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/script-opts/osc.conf'
+[   0.014][d][global] config path: 'script-opts/osc.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/script-opts/osc.conf'
+[   0.014][d][global] config path: 'script-opts/osc.conf' -/-> '/etc/mpv/script-opts/osc.conf'
+[   0.014][d][osc] script-opts/osc.conf not found. 
+[   0.014][d][global] config path: 'lua-settings/osc.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/lua-settings/osc.conf'
+[   0.014][d][global] config path: 'lua-settings/osc.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/lua-settings/osc.conf'
+[   0.014][d][global] config path: 'lua-settings/osc.conf' -/-> '/etc/mpv/lua-settings/osc.conf'
+[   0.014][d][osc] lua-settings/osc.conf not found. 
+[   0.016][d][cplayer] Run command: define-section, flags=64, args=[name="showhide", contents="mouse_move script-binding osc/__keybinding1\nmouse_leave script-binding osc/__keybinding2\n", flags="force"]
+[   0.016][d][cplayer] Run command: define-section, flags=64, args=[name="showhide_wc", contents="mouse_move script-binding osc/__keybinding3\nmouse_leave script-binding osc/__keybinding4\n", flags="force"]
+[   0.016][d][cplayer] Run command: enable-section, flags=64, args=[name="showhide", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.016][d][cplayer] Run command: enable-section, flags=64, args=[name="showhide_wc", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.016][d][cplayer] Run command: define-section, flags=64, args=[name="input", contents="mbtn_left script-binding osc/__keybinding5\nshift+mbtn_left script-binding osc/__keybinding6\nmbtn_right script-binding osc/__keybinding7\nmbtn_mid script-binding osc/__keybinding8\nwheel_up script-binding osc/__keybinding9\nwheel_down script-binding osc/__keybinding10\nmbtn_left_dbl ignore\nshift+mbtn_left_dbl ignore\nmbtn_right_dbl ignore\n", flags="force"]
+[   0.016][d][cplayer] Run command: enable-section, flags=64, args=[name="input", flags=""]
+[   0.016][d][cplayer] Run command: define-section, flags=64, args=[name="window-controls", contents="mbtn_left script-binding osc/__keybinding11\n", flags="force"]
+[   0.016][d][cplayer] Run command: enable-section, flags=64, args=[name="window-controls", flags=""]
+[   0.016][d][cplayer] Run command: change-list, flags=64, args=[name="shared-script-properties", operation="append", value="osc-visibility=auto"]
+[   0.016][v][cplayer] Set property: shared-script-properties -> 1
+[   0.016][v][cplayer] Set property: user-data/osc/visibility="auto" -> 1
+[   0.016][d][cplayer] Run command: disable-section, flags=64, args=[name="input"]
+[   0.016][d][cplayer] Run command: disable-section, flags=64, args=[name="window-controls"]
+[   0.016][d][cplayer] Run command: change-list, flags=64, args=[name="shared-script-properties", operation="append", value="osc-margins=0.000000,0.000000,0.000000,0.000000"]
+[   0.016][v][cplayer] Set property: shared-script-properties -> 1
+[   0.016][v][cplayer] Set property: user-data/osc/margins={"r":0,"b":0,"l":0,"t":0} -> 1
+[   0.016][d][cplayer] Run command: change-list, flags=64, args=[name="shared-script-properties", operation="remove", value="osc-margins"]
+[   0.016][v][cplayer] Set property: shared-script-properties -> 1
+[   0.016][d][cplayer] Run command: del, flags=64, args=[name="user-data/osc"]
+[   0.016][d][console] reading options for console 
+[   0.016][d][ytdl_hook] loading @ytdl_hook.lua
+[   0.016][d][global] config path: 'script-opts/console.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/script-opts/console.conf'
+[   0.016][d][global] config path: 'script-opts/console.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/script-opts/console.conf'
+[   0.016][d][global] config path: 'script-opts/console.conf' -/-> '/etc/mpv/script-opts/console.conf'
+[   0.016][d][console] script-opts/console.conf not found. 
+[   0.016][d][global] config path: 'lua-settings/console.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/lua-settings/console.conf'
+[   0.016][d][global] config path: 'lua-settings/console.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/lua-settings/console.conf'
+[   0.016][d][global] config path: 'lua-settings/console.conf' -/-> '/etc/mpv/lua-settings/console.conf'
+[   0.016][d][console] lua-settings/console.conf not found. 
+[   0.017][d][console] Exiting...
+[   0.017][d][ytdl_hook] reading options for ytdl_hook 
+[   0.017][d][global] config path: 'script-opts/ytdl_hook.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/script-opts/ytdl_hook.conf'
+[   0.017][d][global] config path: 'script-opts/ytdl_hook.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/script-opts/ytdl_hook.conf'
+[   0.017][d][global] config path: 'script-opts/ytdl_hook.conf' -/-> '/etc/mpv/script-opts/ytdl_hook.conf'
+[   0.017][d][ytdl_hook] script-opts/ytdl_hook.conf not found. 
+[   0.017][d][global] config path: 'lua-settings/ytdl_hook.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/lua-settings/ytdl_hook.conf'
+[   0.017][d][global] config path: 'lua-settings/ytdl_hook.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/lua-settings/ytdl_hook.conf'
+[   0.017][d][global] config path: 'lua-settings/ytdl_hook.conf' -/-> '/etc/mpv/lua-settings/ytdl_hook.conf'
+[   0.017][d][ytdl_hook] lua-settings/ytdl_hook.conf not found. 
+[   0.018][d][ytdl_hook] Exiting...
+[   0.018][d][osc] Exiting...
+[   0.018][d][stats] reading options for stats 
+[   0.018][d][global] config path: 'script-opts/stats.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/script-opts/stats.conf'
+[   0.018][d][global] config path: 'script-opts/stats.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/script-opts/stats.conf'
+[   0.018][d][global] config path: 'script-opts/stats.conf' -/-> '/etc/mpv/script-opts/stats.conf'
+[   0.018][d][stats] script-opts/stats.conf not found. 
+[   0.018][d][global] config path: 'lua-settings/stats.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/lua-settings/stats.conf'
+[   0.018][d][global] config path: 'lua-settings/stats.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/lua-settings/stats.conf'
+[   0.018][d][global] config path: 'lua-settings/stats.conf' -/-> '/etc/mpv/lua-settings/stats.conf'
+[   0.018][d][stats] lua-settings/stats.conf not found. 
+[   0.019][d][stats] Exiting...
+
+#####
+ubuntu-withfp-opt-id - Run 2
+2024-02-14 13:30:13
+#####
+[   0.000][d][global] user path: '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1/mpv-1.0.1-1707917404-2.log' -> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1/mpv-1.0.1-1707917404-2.log'
+[   0.007][v][cplayer] mpv 0.36.0 Copyright © 2000-2023 mpv/MPlayer/mplayer2 projects
+[   0.007][v][cplayer]  built on UNKNOWN
+[   0.007][v][cplayer] libplacebo version: v6.292.0
+[   0.007][v][cplayer] FFmpeg version: 6.0-6ubuntu1
+[   0.007][v][cplayer] FFmpeg library versions:
+[   0.007][v][cplayer]    libavutil       58.2.100
+[   0.007][v][cplayer]    libavcodec      60.3.100
+[   0.007][v][cplayer]    libavformat     60.3.100
+[   0.007][v][cplayer]    libswscale      7.1.100
+[   0.007][v][cplayer]    libavfilter     9.3.100
+[   0.007][v][cplayer]    libswresample   4.10.100
+[   0.007][v][cplayer] 
+[   0.007][v][cplayer] Configuration: -Dpython.bytecompile=-1 -Dlibmpv=true -Dbuild-date=false -Dcdda=enabled -Ddvdnav=enabled -Dsdl2=enabled -Dsndio=disabled -Ddvbin=enabled -Dprefix=/usr -Dlibdir=lib/x86_64-linux-gnu -Dlocalstatedir=/var -Dsysconfdir=/etc -Dbuildtype=plain -Dwrap_mode=nodownload
+[   0.007][v][cplayer] List of enabled features: alsa av-channel-layout avif_muxer caca cdda cplugins cuda-hwaccel cuda-interop dmabuf-interop-gl dmabuf-interop-pl dmabuf-wayland drm drm-is-kms dvbin dvdnav egl egl-drm egl-helpers egl-x11 ffmpeg ffnvcodec gbm gl gl-wayland glibc-thread-name glob glob-posix gpl iconv jack javascript jpeg jpegxl lcms2 libarchive libass libavdevice libbluray libdl libm libplacebo libplacebo-next librt linux-fstatfs lua52 manpage-build memfd_create noexecstack pipewire posix posix_shm pulse rubberband rubberband-3 sdl2 sdl2-audio sdl2-gamepad sdl2-video sixel spirv-cross stdatomic threads uchardet vaapi vaapi-drm vaapi-egl vaapi-libplacebo vaapi-wayland vaapi-x-egl vaapi-x11 vdpau vector vk_khr_display vt.h vulkan wayland wayland_protocols_1_27 wayland_protocols_1_31 wayland_protocols_1_32 x11 xv zimg zimg-st428 zlib
+[   0.007][v][cplayer] Command line options: '--no-audio' '--untimed' '--opengl-swapinterval=0' '--video-sync=display-desync' '-v' '--osd-msg1=FPS: ${estimated-display-fps}' '--term-status-msg=FPS: ${estimated-display-fps}' '--term-osd-bar' '--length=300' '--log-file=/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1/mpv-1.0.1-1707917404-2.log'
+[   0.007][v][cplayer] mpv 0.36.0 Copyright © 2000-2023 mpv/MPlayer/mplayer2 projects
+[   0.007][v][cplayer]  built on UNKNOWN
+[   0.007][v][cplayer] libplacebo version: v6.292.0
+[   0.007][v][cplayer] FFmpeg version: 6.0-6ubuntu1
+[   0.007][v][cplayer] FFmpeg library versions:
+[   0.007][v][cplayer]    libavutil       58.2.100
+[   0.007][v][cplayer]    libavcodec      60.3.100
+[   0.007][v][cplayer]    libavformat     60.3.100
+[   0.007][v][cplayer]    libswscale      7.1.100
+[   0.007][v][cplayer]    libavfilter     9.3.100
+[   0.007][v][cplayer]    libswresample   4.10.100
+[   0.007][v][cplayer] 
+[   0.007][v][cplayer] Configuration: -Dpython.bytecompile=-1 -Dlibmpv=true -Dbuild-date=false -Dcdda=enabled -Ddvdnav=enabled -Dsdl2=enabled -Dsndio=disabled -Ddvbin=enabled -Dprefix=/usr -Dlibdir=lib/x86_64-linux-gnu -Dlocalstatedir=/var -Dsysconfdir=/etc -Dbuildtype=plain -Dwrap_mode=nodownload
+[   0.007][v][cplayer] List of enabled features: alsa av-channel-layout avif_muxer caca cdda cplugins cuda-hwaccel cuda-interop dmabuf-interop-gl dmabuf-interop-pl dmabuf-wayland drm drm-is-kms dvbin dvdnav egl egl-drm egl-helpers egl-x11 ffmpeg ffnvcodec gbm gl gl-wayland glibc-thread-name glob glob-posix gpl iconv jack javascript jpeg jpegxl lcms2 libarchive libass libavdevice libbluray libdl libm libplacebo libplacebo-next librt linux-fstatfs lua52 manpage-build memfd_create noexecstack pipewire posix posix_shm pulse rubberband rubberband-3 sdl2 sdl2-audio sdl2-gamepad sdl2-video sixel spirv-cross stdatomic threads uchardet vaapi vaapi-drm vaapi-egl vaapi-libplacebo vaapi-wayland vaapi-x-egl vaapi-x11 vdpau vector vk_khr_display vt.h vulkan wayland wayland_protocols_1_27 wayland_protocols_1_31 wayland_protocols_1_32 x11 xv zimg zimg-st428 zlib
+[   0.007][d][global] home path: '' -> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv'
+[   0.007][d][global] user path: '~~home/' -> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv'
+[   0.007][d][global] user path: '~~old_home/' -> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv'
+[   0.007][d][global] config path: 'encoding-profiles.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/encoding-profiles.conf'
+[   0.007][d][global] config path: 'encoding-profiles.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/encoding-profiles.conf'
+[   0.007][d][global] config path: 'encoding-profiles.conf' -> '/etc/mpv/encoding-profiles.conf'
+[   0.007][v][cplayer] Reading config file /etc/mpv/encoding-profiles.conf
+[   0.007][v][ifo_dvdnav] Opening /etc/mpv/encoding-profiles.conf
+[   0.008][v][bdmv/bluray] Opening /etc/mpv/encoding-profiles.conf
+[   0.008][v][file] Opening /etc/mpv/encoding-profiles.conf
+[   0.008][d][file] resize stream to 131072 bytes, drop 0 bytes
+[   0.008][d][file] Stream opened successfully.
+[   0.008][v][cplayer] Applying profile 'default'...
+[   0.008][d][global] config path: 'mpv.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/mpv.conf'
+[   0.008][d][global] config path: 'config' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/config'
+[   0.008][d][global] config path: 'mpv.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/mpv.conf'
+[   0.008][d][global] config path: 'config' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/config'
+[   0.008][d][global] config path: 'mpv.conf' -> '/etc/mpv/mpv.conf'
+[   0.008][d][global] config path: 'config' -/-> '/etc/mpv/config'
+[   0.008][v][cplayer] Reading config file /etc/mpv/mpv.conf
+[   0.008][v][ifo_dvdnav] Opening /etc/mpv/mpv.conf
+[   0.008][v][bdmv/bluray] Opening /etc/mpv/mpv.conf
+[   0.008][v][file] Opening /etc/mpv/mpv.conf
+[   0.008][d][file] resize stream to 131072 bytes, drop 0 bytes
+[   0.008][d][file] Stream opened successfully.
+[   0.008][v][cplayer] Applying profile 'default'...
+[   0.008][v][cplayer] Setting option 'hwdec' = 'vaapi' (flags = 4)
+[   0.008][v][cplayer] Setting option 'audio' = 'no' (flags = 8)
+[   0.008][v][cplayer] Setting option 'untimed' = '' (flags = 8)
+[   0.008][v][cplayer] Setting option 'opengl-swapinterval' = '0' (flags = 8)
+[   0.008][v][cplayer] Setting option 'video-sync' = 'display-desync' (flags = 8)
+[   0.008][v][cplayer] Setting option 'v' = '' (flags = 8)
+[   0.008][v][cplayer] Setting option 'osd-msg1' = 'FPS: ${estimated-display-fps}' (flags = 8)
+[   0.008][v][cplayer] Setting option 'term-status-msg' = 'FPS: ${estimated-display-fps}' (flags = 8)
+[   0.008][v][cplayer] Setting option 'term-osd-bar' = '' (flags = 8)
+[   0.008][v][cplayer] Setting option 'length' = '300' (flags = 8)
+[   0.008][v][cplayer] Setting option 'log-file' = '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1/mpv-1.0.1-1707917404-2.log' (flags = 8)
+[   0.008][d][global] config path: 'input.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/input.conf'
+[   0.008][d][global] config path: 'input.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/input.conf'
+[   0.008][d][global] config path: 'input.conf' -/-> '/etc/mpv/input.conf'
+[   0.008][d][global] user path: '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1/mpv-1.0.1-1707917404-2.log' -> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1/mpv-1.0.1-1707917404-2.log'
+[   0.008][d][osc] Loading lua script @osc.lua...
+[   0.008][d][ytdl_hook] Loading lua script @ytdl_hook.lua...
+[   0.008][d][stats] Loading lua script @stats.lua...
+[   0.008][d][console] Loading lua script @console.lua...
+[   0.008][d][auto_profiles] Loading lua script @auto_profiles.lua...
+[   0.008][i][cplayer] mpv 0.36.0 Copyright © 2000-2023 mpv/MPlayer/mplayer2 projects
+[   0.008][i][cplayer]  built on UNKNOWN
+[   0.008][i][cplayer] libplacebo version: v6.292.0
+[   0.008][i][cplayer] FFmpeg version: 6.0-6ubuntu1
+[   0.008][i][cplayer] FFmpeg library versions:
+[   0.008][i][cplayer]    libavutil       58.2.100
+[   0.008][i][cplayer]    libavcodec      60.3.100
+[   0.008][i][cplayer]    libavformat     60.3.100
+[   0.008][i][cplayer]    libswscale      7.1.100
+[   0.008][i][cplayer]    libavfilter     9.3.100
+[   0.008][i][cplayer]    libswresample   4.10.100
+[   0.008][i][cplayer] 
+[   0.008][i][cplayer] Usage:   mpv [options] [url|path/]filename
+[   0.008][i][cplayer] 
+[   0.008][i][cplayer] Basic options:
+[   0.008][i][cplayer]  --start=<time>    seek to given (percent, seconds, or hh:mm:ss) position
+[   0.008][i][cplayer]  --no-audio        do not play sound
+[   0.008][i][cplayer]  --no-video        do not play video
+[   0.008][i][cplayer]  --fs              fullscreen playback
+[   0.008][i][cplayer]  --sub-file=<file> specify subtitle file to use
+[   0.008][i][cplayer]  --playlist=<file> specify playlist file
+[   0.008][i][cplayer] 
+[   0.008][i][cplayer]  --list-options    list all mpv options
+[   0.008][i][cplayer]  --h=<string>      print options which contain the given string in their name
+[   0.008][i][cplayer] 
+[   0.008][d][ytdl_hook] loading mp.defaults
+[   0.009][d][ytdl_hook] loading @ytdl_hook.lua
+[   0.010][d][ytdl_hook] reading options for ytdl_hook 
+[   0.010][d][global] config path: 'script-opts/ytdl_hook.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/script-opts/ytdl_hook.conf'
+[   0.010][d][global] config path: 'script-opts/ytdl_hook.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/script-opts/ytdl_hook.conf'
+[   0.010][d][global] config path: 'script-opts/ytdl_hook.conf' -/-> '/etc/mpv/script-opts/ytdl_hook.conf'
+[   0.010][d][ytdl_hook] script-opts/ytdl_hook.conf not found. 
+[   0.010][d][global] config path: 'lua-settings/ytdl_hook.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/lua-settings/ytdl_hook.conf'
+[   0.010][d][global] config path: 'lua-settings/ytdl_hook.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/lua-settings/ytdl_hook.conf'
+[   0.010][d][global] config path: 'lua-settings/ytdl_hook.conf' -/-> '/etc/mpv/lua-settings/ytdl_hook.conf'
+[   0.010][d][ytdl_hook] lua-settings/ytdl_hook.conf not found. 
+[   0.010][d][ytdl_hook] Exiting...
+[   0.011][d][osc] loading mp.defaults
+[   0.011][d][stats] loading mp.defaults
+[   0.011][d][console] loading mp.defaults
+[   0.011][d][auto_profiles] loading mp.defaults
+[   0.012][d][osc] loading @osc.lua
+[   0.012][d][console] loading @console.lua
+[   0.013][d][auto_profiles] loading @auto_profiles.lua
+[   0.013][d][stats] loading @stats.lua
+[   0.015][d][osc] reading options for osc 
+[   0.015][d][global] config path: 'script-opts/osc.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/script-opts/osc.conf'
+[   0.015][d][global] config path: 'script-opts/osc.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/script-opts/osc.conf'
+[   0.015][d][global] config path: 'script-opts/osc.conf' -/-> '/etc/mpv/script-opts/osc.conf'
+[   0.015][d][osc] script-opts/osc.conf not found. 
+[   0.015][d][global] config path: 'lua-settings/osc.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/lua-settings/osc.conf'
+[   0.015][d][global] config path: 'lua-settings/osc.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/lua-settings/osc.conf'
+[   0.015][d][global] config path: 'lua-settings/osc.conf' -/-> '/etc/mpv/lua-settings/osc.conf'
+[   0.015][d][osc] lua-settings/osc.conf not found. 
+[   0.015][d][console] reading options for console 
+[   0.015][d][global] config path: 'script-opts/console.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/script-opts/console.conf'
+[   0.015][d][global] config path: 'script-opts/console.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/script-opts/console.conf'
+[   0.015][d][global] config path: 'script-opts/console.conf' -/-> '/etc/mpv/script-opts/console.conf'
+[   0.015][d][console] script-opts/console.conf not found. 
+[   0.015][d][global] config path: 'lua-settings/console.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/lua-settings/console.conf'
+[   0.015][d][global] config path: 'lua-settings/console.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/lua-settings/console.conf'
+[   0.015][d][global] config path: 'lua-settings/console.conf' -/-> '/etc/mpv/lua-settings/console.conf'
+[   0.015][d][console] lua-settings/console.conf not found. 
+[   0.016][d][cplayer] Run command: define-section, flags=64, args=[name="showhide", contents="mouse_move script-binding osc/__keybinding1\nmouse_leave script-binding osc/__keybinding2\n", flags="force"]
+[   0.016][d][cplayer] Run command: define-section, flags=64, args=[name="showhide_wc", contents="mouse_move script-binding osc/__keybinding3\nmouse_leave script-binding osc/__keybinding4\n", flags="force"]
+[   0.016][d][cplayer] Run command: enable-section, flags=64, args=[name="showhide", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.016][d][cplayer] Run command: enable-section, flags=64, args=[name="showhide_wc", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.016][d][cplayer] Run command: define-section, flags=64, args=[name="input", contents="mbtn_left script-binding osc/__keybinding5\nshift+mbtn_left script-binding osc/__keybinding6\nmbtn_right script-binding osc/__keybinding7\nmbtn_mid script-binding osc/__keybinding8\nwheel_up script-binding osc/__keybinding9\nwheel_down script-binding osc/__keybinding10\nmbtn_left_dbl ignore\nshift+mbtn_left_dbl ignore\nmbtn_right_dbl ignore\n", flags="force"]
+[   0.016][d][cplayer] Run command: enable-section, flags=64, args=[name="input", flags=""]
+[   0.016][d][cplayer] Run command: define-section, flags=64, args=[name="window-controls", contents="mbtn_left script-binding osc/__keybinding11\n", flags="force"]
+[   0.016][d][cplayer] Run command: enable-section, flags=64, args=[name="window-controls", flags=""]
+[   0.016][d][cplayer] Run command: change-list, flags=64, args=[name="shared-script-properties", operation="append", value="osc-visibility=auto"]
+[   0.016][v][cplayer] Set property: shared-script-properties -> 1
+[   0.016][d][stats] reading options for stats 
+[   0.017][v][cplayer] Set property: user-data/osc/visibility="auto" -> 1
+[   0.017][d][cplayer] Run command: disable-section, flags=64, args=[name="input"]
+[   0.017][d][cplayer] Run command: disable-section, flags=64, args=[name="window-controls"]
+[   0.017][d][cplayer] Run command: change-list, flags=64, args=[name="shared-script-properties", operation="append", value="osc-margins=0.000000,0.000000,0.000000,0.000000"]
+[   0.017][v][cplayer] Set property: shared-script-properties -> 1
+[   0.017][d][console] Exiting...
+[   0.017][d][global] config path: 'script-opts/stats.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/script-opts/stats.conf'
+[   0.017][d][global] config path: 'script-opts/stats.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/script-opts/stats.conf'
+[   0.017][d][global] config path: 'script-opts/stats.conf' -/-> '/etc/mpv/script-opts/stats.conf'
+[   0.017][v][cplayer] Set property: user-data/osc/margins={"r":0,"b":0,"l":0,"t":0} -> 1
+[   0.017][d][cplayer] Run command: change-list, flags=64, args=[name="shared-script-properties", operation="remove", value="osc-margins"]
+[   0.017][v][cplayer] Set property: shared-script-properties -> 1
+[   0.017][d][cplayer] Run command: del, flags=64, args=[name="user-data/osc"]
+[   0.017][d][auto_profiles] Exiting...
+[   0.017][d][osc] Exiting...
+[   0.017][d][stats] script-opts/stats.conf not found. 
+[   0.017][d][global] config path: 'lua-settings/stats.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/lua-settings/stats.conf'
+[   0.017][d][global] config path: 'lua-settings/stats.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/lua-settings/stats.conf'
+[   0.017][d][global] config path: 'lua-settings/stats.conf' -/-> '/etc/mpv/lua-settings/stats.conf'
+[   0.017][d][stats] lua-settings/stats.conf not found. 
+[   0.018][d][stats] Exiting...
+
+#####
+ubuntu-withfp-opt-id - Run 3
+2024-02-14 13:30:15
+#####
+[   0.000][d][global] user path: '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1/mpv-1.0.1-1707917404-3.log' -> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1/mpv-1.0.1-1707917404-3.log'
+[   0.008][v][cplayer] mpv 0.36.0 Copyright © 2000-2023 mpv/MPlayer/mplayer2 projects
+[   0.008][v][cplayer]  built on UNKNOWN
+[   0.008][v][cplayer] libplacebo version: v6.292.0
+[   0.008][v][cplayer] FFmpeg version: 6.0-6ubuntu1
+[   0.008][v][cplayer] FFmpeg library versions:
+[   0.008][v][cplayer]    libavutil       58.2.100
+[   0.008][v][cplayer]    libavcodec      60.3.100
+[   0.008][v][cplayer]    libavformat     60.3.100
+[   0.008][v][cplayer]    libswscale      7.1.100
+[   0.008][v][cplayer]    libavfilter     9.3.100
+[   0.008][v][cplayer]    libswresample   4.10.100
+[   0.008][v][cplayer] 
+[   0.008][v][cplayer] Configuration: -Dpython.bytecompile=-1 -Dlibmpv=true -Dbuild-date=false -Dcdda=enabled -Ddvdnav=enabled -Dsdl2=enabled -Dsndio=disabled -Ddvbin=enabled -Dprefix=/usr -Dlibdir=lib/x86_64-linux-gnu -Dlocalstatedir=/var -Dsysconfdir=/etc -Dbuildtype=plain -Dwrap_mode=nodownload
+[   0.008][v][cplayer] List of enabled features: alsa av-channel-layout avif_muxer caca cdda cplugins cuda-hwaccel cuda-interop dmabuf-interop-gl dmabuf-interop-pl dmabuf-wayland drm drm-is-kms dvbin dvdnav egl egl-drm egl-helpers egl-x11 ffmpeg ffnvcodec gbm gl gl-wayland glibc-thread-name glob glob-posix gpl iconv jack javascript jpeg jpegxl lcms2 libarchive libass libavdevice libbluray libdl libm libplacebo libplacebo-next librt linux-fstatfs lua52 manpage-build memfd_create noexecstack pipewire posix posix_shm pulse rubberband rubberband-3 sdl2 sdl2-audio sdl2-gamepad sdl2-video sixel spirv-cross stdatomic threads uchardet vaapi vaapi-drm vaapi-egl vaapi-libplacebo vaapi-wayland vaapi-x-egl vaapi-x11 vdpau vector vk_khr_display vt.h vulkan wayland wayland_protocols_1_27 wayland_protocols_1_31 wayland_protocols_1_32 x11 xv zimg zimg-st428 zlib
+[   0.008][v][cplayer] Command line options: '--no-audio' '--untimed' '--opengl-swapinterval=0' '--video-sync=display-desync' '-v' '--osd-msg1=FPS: ${estimated-display-fps}' '--term-status-msg=FPS: ${estimated-display-fps}' '--term-osd-bar' '--length=300' '--log-file=/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1/mpv-1.0.1-1707917404-3.log'
+[   0.008][v][cplayer] mpv 0.36.0 Copyright © 2000-2023 mpv/MPlayer/mplayer2 projects
+[   0.008][v][cplayer]  built on UNKNOWN
+[   0.008][v][cplayer] libplacebo version: v6.292.0
+[   0.008][v][cplayer] FFmpeg version: 6.0-6ubuntu1
+[   0.008][v][cplayer] FFmpeg library versions:
+[   0.008][v][cplayer]    libavutil       58.2.100
+[   0.008][v][cplayer]    libavcodec      60.3.100
+[   0.008][v][cplayer]    libavformat     60.3.100
+[   0.008][v][cplayer]    libswscale      7.1.100
+[   0.008][v][cplayer]    libavfilter     9.3.100
+[   0.008][v][cplayer]    libswresample   4.10.100
+[   0.008][v][cplayer] 
+[   0.008][v][cplayer] Configuration: -Dpython.bytecompile=-1 -Dlibmpv=true -Dbuild-date=false -Dcdda=enabled -Ddvdnav=enabled -Dsdl2=enabled -Dsndio=disabled -Ddvbin=enabled -Dprefix=/usr -Dlibdir=lib/x86_64-linux-gnu -Dlocalstatedir=/var -Dsysconfdir=/etc -Dbuildtype=plain -Dwrap_mode=nodownload
+[   0.008][v][cplayer] List of enabled features: alsa av-channel-layout avif_muxer caca cdda cplugins cuda-hwaccel cuda-interop dmabuf-interop-gl dmabuf-interop-pl dmabuf-wayland drm drm-is-kms dvbin dvdnav egl egl-drm egl-helpers egl-x11 ffmpeg ffnvcodec gbm gl gl-wayland glibc-thread-name glob glob-posix gpl iconv jack javascript jpeg jpegxl lcms2 libarchive libass libavdevice libbluray libdl libm libplacebo libplacebo-next librt linux-fstatfs lua52 manpage-build memfd_create noexecstack pipewire posix posix_shm pulse rubberband rubberband-3 sdl2 sdl2-audio sdl2-gamepad sdl2-video sixel spirv-cross stdatomic threads uchardet vaapi vaapi-drm vaapi-egl vaapi-libplacebo vaapi-wayland vaapi-x-egl vaapi-x11 vdpau vector vk_khr_display vt.h vulkan wayland wayland_protocols_1_27 wayland_protocols_1_31 wayland_protocols_1_32 x11 xv zimg zimg-st428 zlib
+[   0.008][d][global] home path: '' -> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv'
+[   0.008][d][global] user path: '~~home/' -> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv'
+[   0.008][d][global] user path: '~~old_home/' -> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv'
+[   0.008][d][global] config path: 'encoding-profiles.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/encoding-profiles.conf'
+[   0.008][d][global] config path: 'encoding-profiles.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/encoding-profiles.conf'
+[   0.008][d][global] config path: 'encoding-profiles.conf' -> '/etc/mpv/encoding-profiles.conf'
+[   0.008][v][cplayer] Reading config file /etc/mpv/encoding-profiles.conf
+[   0.008][v][ifo_dvdnav] Opening /etc/mpv/encoding-profiles.conf
+[   0.008][v][bdmv/bluray] Opening /etc/mpv/encoding-profiles.conf
+[   0.008][v][file] Opening /etc/mpv/encoding-profiles.conf
+[   0.008][d][file] resize stream to 131072 bytes, drop 0 bytes
+[   0.008][d][file] Stream opened successfully.
+[   0.008][v][cplayer] Applying profile 'default'...
+[   0.008][d][global] config path: 'mpv.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/mpv.conf'
+[   0.008][d][global] config path: 'config' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/config'
+[   0.008][d][global] config path: 'mpv.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/mpv.conf'
+[   0.008][d][global] config path: 'config' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/config'
+[   0.008][d][global] config path: 'mpv.conf' -> '/etc/mpv/mpv.conf'
+[   0.008][d][global] config path: 'config' -/-> '/etc/mpv/config'
+[   0.008][v][cplayer] Reading config file /etc/mpv/mpv.conf
+[   0.008][v][ifo_dvdnav] Opening /etc/mpv/mpv.conf
+[   0.008][v][bdmv/bluray] Opening /etc/mpv/mpv.conf
+[   0.008][v][file] Opening /etc/mpv/mpv.conf
+[   0.008][d][file] resize stream to 131072 bytes, drop 0 bytes
+[   0.008][d][file] Stream opened successfully.
+[   0.008][v][cplayer] Applying profile 'default'...
+[   0.008][v][cplayer] Setting option 'hwdec' = 'vaapi' (flags = 4)
+[   0.008][v][cplayer] Setting option 'audio' = 'no' (flags = 8)
+[   0.008][v][cplayer] Setting option 'untimed' = '' (flags = 8)
+[   0.008][v][cplayer] Setting option 'opengl-swapinterval' = '0' (flags = 8)
+[   0.008][v][cplayer] Setting option 'video-sync' = 'display-desync' (flags = 8)
+[   0.008][v][cplayer] Setting option 'v' = '' (flags = 8)
+[   0.008][v][cplayer] Setting option 'osd-msg1' = 'FPS: ${estimated-display-fps}' (flags = 8)
+[   0.008][v][cplayer] Setting option 'term-status-msg' = 'FPS: ${estimated-display-fps}' (flags = 8)
+[   0.008][v][cplayer] Setting option 'term-osd-bar' = '' (flags = 8)
+[   0.008][v][cplayer] Setting option 'length' = '300' (flags = 8)
+[   0.008][v][cplayer] Setting option 'log-file' = '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1/mpv-1.0.1-1707917404-3.log' (flags = 8)
+[   0.008][d][global] config path: 'input.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/input.conf'
+[   0.008][d][global] config path: 'input.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/input.conf'
+[   0.008][d][global] config path: 'input.conf' -/-> '/etc/mpv/input.conf'
+[   0.008][d][global] user path: '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1/mpv-1.0.1-1707917404-3.log' -> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1/mpv-1.0.1-1707917404-3.log'
+[   0.008][d][osc] Loading lua script @osc.lua...
+[   0.008][d][ytdl_hook] Loading lua script @ytdl_hook.lua...
+[   0.008][d][stats] Loading lua script @stats.lua...
+[   0.008][d][console] Loading lua script @console.lua...
+[   0.008][d][auto_profiles] Loading lua script @auto_profiles.lua...
+[   0.008][i][cplayer] mpv 0.36.0 Copyright © 2000-2023 mpv/MPlayer/mplayer2 projects
+[   0.008][i][cplayer]  built on UNKNOWN
+[   0.008][i][cplayer] libplacebo version: v6.292.0
+[   0.008][i][cplayer] FFmpeg version: 6.0-6ubuntu1
+[   0.008][i][cplayer] FFmpeg library versions:
+[   0.008][i][cplayer]    libavutil       58.2.100
+[   0.008][i][cplayer]    libavcodec      60.3.100
+[   0.008][i][cplayer]    libavformat     60.3.100
+[   0.008][i][cplayer]    libswscale      7.1.100
+[   0.008][i][cplayer]    libavfilter     9.3.100
+[   0.008][i][cplayer]    libswresample   4.10.100
+[   0.008][i][cplayer] 
+[   0.008][i][cplayer] Usage:   mpv [options] [url|path/]filename
+[   0.008][i][cplayer] 
+[   0.008][i][cplayer] Basic options:
+[   0.008][i][cplayer]  --start=<time>    seek to given (percent, seconds, or hh:mm:ss) position
+[   0.008][i][cplayer]  --no-audio        do not play sound
+[   0.008][i][cplayer]  --no-video        do not play video
+[   0.008][i][cplayer]  --fs              fullscreen playback
+[   0.008][i][cplayer]  --sub-file=<file> specify subtitle file to use
+[   0.008][i][cplayer]  --playlist=<file> specify playlist file
+[   0.008][i][cplayer] 
+[   0.008][i][cplayer]  --list-options    list all mpv options
+[   0.008][i][cplayer]  --h=<string>      print options which contain the given string in their name
+[   0.008][i][cplayer] 
+[   0.008][d][ytdl_hook] loading mp.defaults
+[   0.009][d][ytdl_hook] loading @ytdl_hook.lua
+[   0.010][d][ytdl_hook] reading options for ytdl_hook 
+[   0.010][d][global] config path: 'script-opts/ytdl_hook.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/script-opts/ytdl_hook.conf'
+[   0.010][d][global] config path: 'script-opts/ytdl_hook.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/script-opts/ytdl_hook.conf'
+[   0.010][d][global] config path: 'script-opts/ytdl_hook.conf' -/-> '/etc/mpv/script-opts/ytdl_hook.conf'
+[   0.010][d][ytdl_hook] script-opts/ytdl_hook.conf not found. 
+[   0.010][d][global] config path: 'lua-settings/ytdl_hook.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/lua-settings/ytdl_hook.conf'
+[   0.010][d][global] config path: 'lua-settings/ytdl_hook.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/lua-settings/ytdl_hook.conf'
+[   0.010][d][global] config path: 'lua-settings/ytdl_hook.conf' -/-> '/etc/mpv/lua-settings/ytdl_hook.conf'
+[   0.010][d][ytdl_hook] lua-settings/ytdl_hook.conf not found. 
+[   0.011][d][ytdl_hook] Exiting...
+[   0.011][d][auto_profiles] loading mp.defaults
+[   0.011][d][osc] loading mp.defaults
+[   0.011][d][stats] loading mp.defaults
+[   0.011][d][console] loading mp.defaults
+[   0.012][d][auto_profiles] loading @auto_profiles.lua
+[   0.012][d][stats] loading @stats.lua
+[   0.013][d][console] loading @console.lua
+[   0.013][d][osc] loading @osc.lua
+[   0.013][d][auto_profiles] Exiting...
+[   0.014][d][stats] reading options for stats 
+[   0.014][d][global] config path: 'script-opts/stats.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/script-opts/stats.conf'
+[   0.014][d][global] config path: 'script-opts/stats.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/script-opts/stats.conf'
+[   0.014][d][global] config path: 'script-opts/stats.conf' -/-> '/etc/mpv/script-opts/stats.conf'
+[   0.014][d][stats] script-opts/stats.conf not found. 
+[   0.017][d][console] reading options for console 
+[   0.017][d][global] config path: 'script-opts/console.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/script-opts/console.conf'
+[   0.017][d][global] config path: 'lua-settings/stats.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/lua-settings/stats.conf'
+[   0.017][d][global] config path: 'lua-settings/stats.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/lua-settings/stats.conf'
+[   0.017][d][global] config path: 'lua-settings/stats.conf' -/-> '/etc/mpv/lua-settings/stats.conf'
+[   0.017][d][stats] lua-settings/stats.conf not found. 
+[   0.017][d][global] config path: 'script-opts/console.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/script-opts/console.conf'
+[   0.017][d][global] config path: 'script-opts/console.conf' -/-> '/etc/mpv/script-opts/console.conf'
+[   0.017][d][console] script-opts/console.conf not found. 
+[   0.017][d][global] config path: 'lua-settings/console.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/lua-settings/console.conf'
+[   0.017][d][global] config path: 'lua-settings/console.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/lua-settings/console.conf'
+[   0.017][d][global] config path: 'lua-settings/console.conf' -/-> '/etc/mpv/lua-settings/console.conf'
+[   0.017][d][console] lua-settings/console.conf not found. 
+[   0.017][d][osc] reading options for osc 
+[   0.017][d][global] config path: 'script-opts/osc.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/script-opts/osc.conf'
+[   0.017][d][global] config path: 'script-opts/osc.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/script-opts/osc.conf'
+[   0.017][d][global] config path: 'script-opts/osc.conf' -/-> '/etc/mpv/script-opts/osc.conf'
+[   0.017][d][osc] script-opts/osc.conf not found. 
+[   0.017][d][global] config path: 'lua-settings/osc.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.config/mpv/lua-settings/osc.conf'
+[   0.017][d][global] config path: 'lua-settings/osc.conf' -/-> '/home/ubuntu/.phoronix-test-suite/installed-tests/system/mpv-1.0.1//.mpv/lua-settings/osc.conf'
+[   0.017][d][global] config path: 'lua-settings/osc.conf' -/-> '/etc/mpv/lua-settings/osc.conf'
+[   0.017][d][osc] lua-settings/osc.conf not found. 
+[   0.018][d][console] Exiting...
+[   0.018][d][cplayer] Run command: define-section, flags=64, args=[name="showhide", contents="mouse_move script-binding osc/__keybinding1\nmouse_leave script-binding osc/__keybinding2\n", flags="force"]
+[   0.018][d][cplayer] Run command: define-section, flags=64, args=[name="showhide_wc", contents="mouse_move script-binding osc/__keybinding3\nmouse_leave script-binding osc/__keybinding4\n", flags="force"]
+[   0.018][d][cplayer] Run command: enable-section, flags=64, args=[name="showhide", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.018][d][cplayer] Run command: enable-section, flags=64, args=[name="showhide_wc", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.018][d][cplayer] Run command: define-section, flags=64, args=[name="input", contents="mbtn_left script-binding osc/__keybinding5\nshift+mbtn_left script-binding osc/__keybinding6\nmbtn_right script-binding osc/__keybinding7\nmbtn_mid script-binding osc/__keybinding8\nwheel_up script-binding osc/__keybinding9\nwheel_down script-binding osc/__keybinding10\nmbtn_left_dbl ignore\nshift+mbtn_left_dbl ignore\nmbtn_right_dbl ignore\n", flags="force"]
+[   0.018][d][cplayer] Run command: enable-section, flags=64, args=[name="input", flags=""]
+[   0.018][d][cplayer] Run command: define-section, flags=64, args=[name="window-controls", contents="mbtn_left script-binding osc/__keybinding11\n", flags="force"]
+[   0.018][d][stats] Exiting...
+[   0.018][d][cplayer] Run command: enable-section, flags=64, args=[name="window-controls", flags=""]
+[   0.018][d][cplayer] Run command: change-list, flags=64, args=[name="shared-script-properties", operation="append", value="osc-visibility=auto"]
+[   0.018][v][cplayer] Set property: shared-script-properties -> 1
+[   0.018][v][cplayer] Set property: user-data/osc/visibility="auto" -> 1
+[   0.018][d][cplayer] Run command: disable-section, flags=64, args=[name="input"]
+[   0.018][d][cplayer] Run command: disable-section, flags=64, args=[name="window-controls"]
+[   0.018][d][cplayer] Run command: change-list, flags=64, args=[name="shared-script-properties", operation="append", value="osc-margins=0.000000,0.000000,0.000000,0.000000"]
+[   0.018][v][cplayer] Set property: shared-script-properties -> 1
+[   0.018][v][cplayer] Set property: user-data/osc/margins={"r":0,"b":0,"l":0,"t":0} -> 1
+[   0.018][d][cplayer] Run command: change-list, flags=64, args=[name="shared-script-properties", operation="remove", value="osc-margins"]
+[   0.018][v][cplayer] Set property: shared-script-properties -> 1
+[   0.018][d][cplayer] Run command: del, flags=64, args=[name="user-data/osc"]
+[   0.019][d][osc] Exiting...
+

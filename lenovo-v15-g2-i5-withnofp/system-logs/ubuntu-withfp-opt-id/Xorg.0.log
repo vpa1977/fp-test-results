@@ -1,0 +1,206 @@
+
+X.Org X Server 1.21.1.7
+X Protocol Version 11, Revision 0
+Current Operating System: Linux ubuntu 6.5.0-9-generic #9-Ubuntu SMP PREEMPT_DYNAMIC Wed Jan 31 04:44:51 UTC 2024 x86_64
+Kernel command line: BOOT_IMAGE=/vmlinuz-6.5.0-9-generic root=LABEL=cloudimg-rootfs ro console=tty1 console=ttyS0
+xorg-server 2:21.1.7-3ubuntu2 (For technical support please see http://www.ubuntu.com/support) 
+Current version of pixman: 0.42.2
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Wed Feb 14 08:09:37 2024
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+(==) No Layout section.  Using the first Screen section.
+(==) No screen section available. Using defaults.
+(**) |-->Screen "Default Screen Section" (0)
+(**) |   |-->Monitor "<default monitor>"
+(==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+(==) Automatically adding devices
+(==) Automatically enabling devices
+(==) Automatically adding GPU devices
+(==) Automatically binding GPU devices
+(==) Max clients allowed: 256, resource mask: 0x1fffff
+(WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+	Entry deleted from font path.
+(WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+	Entry deleted from font path.
+(WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+	Entry deleted from font path.
+(WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+	Entry deleted from font path.
+(WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+	Entry deleted from font path.
+(==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/Type1,
+	built-ins
+(==) ModulePath set to "/usr/lib/xorg/modules"
+(II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+(II) Loader magic: 0x564459a46020
+(II) Module ABI versions:
+	X.Org ANSI C Emulation: 0.4
+	X.Org Video Driver: 25.2
+	X.Org XInput driver : 24.4
+	X.Org Server Extension : 10.0
+(++) using VT number 7
+
+(II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+(--) PCI:*(0@0:2:0) 8086:9a49:17aa:3f9c rev 1, Mem @ 0x6002000000/16777216, 0x4000000000/268435456, I/O @ 0x00004000/64, BIOS @ 0x????????/131072
+(II) LoadModule: "glx"
+(II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+(II) Module glx: vendor="X.Org Foundation"
+	compiled for 1.21.1.7, module version = 1.0.0
+	ABI class: X.Org Server Extension, version 10.0
+(==) Matched modesetting as autoconfigured driver 0
+(==) Matched fbdev as autoconfigured driver 1
+(==) Matched vesa as autoconfigured driver 2
+(==) Assigned the driver to the xf86ConfigLayout
+(II) LoadModule: "modesetting"
+(II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+(II) Module modesetting: vendor="X.Org Foundation"
+	compiled for 1.21.1.7, module version = 1.21.1
+	Module class: X.Org Video Driver
+	ABI class: X.Org Video Driver, version 25.2
+(II) LoadModule: "fbdev"
+(II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+(II) Module fbdev: vendor="X.Org Foundation"
+	compiled for 1.21.1.7, module version = 0.5.0
+	Module class: X.Org Video Driver
+	ABI class: X.Org Video Driver, version 25.2
+(II) LoadModule: "vesa"
+(II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+(II) Module vesa: vendor="X.Org Foundation"
+	compiled for 1.21.1.7, module version = 2.5.0
+	Module class: X.Org Video Driver
+	ABI class: X.Org Video Driver, version 25.2
+(II) modesetting: Driver for Modesetting Kernel Drivers: kms
+(II) FBDEV: driver for framebuffer: fbdev
+(II) VESA: driver for VESA chipsets: vesa
+(EE) open /dev/dri/card0: No such file or directory
+(WW) Falling back to old probe method for modesetting
+(EE) open /dev/dri/card0: No such file or directory
+(II) Loading sub module "fbdevhw"
+(II) LoadModule: "fbdevhw"
+(II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+(II) Module fbdevhw: vendor="X.Org Foundation"
+	compiled for 1.21.1.7, module version = 0.0.2
+	ABI class: X.Org Video Driver, version 25.2
+(EE) Unable to find a valid framebuffer device
+(WW) Falling back to old probe method for fbdev
+(II) Loading sub module "fbdevhw"
+(II) LoadModule: "fbdevhw"
+(II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+(II) Module fbdevhw: vendor="X.Org Foundation"
+	compiled for 1.21.1.7, module version = 0.0.2
+	ABI class: X.Org Video Driver, version 25.2
+(II) FBDEV(2): using default device
+vesa: Refusing to run on UEFI
+(EE) Screen 0 deleted because of no matching config section.
+(II) UnloadModule: "modesetting"
+(EE) Screen 0 deleted because of no matching config section.
+(II) UnloadModule: "fbdev"
+(II) UnloadSubModule: "fbdevhw"
+(II) FBDEV(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+(==) FBDEV(0): Depth 24, (==) framebuffer bpp 32
+(==) FBDEV(0): RGB weight 888
+(==) FBDEV(0): Default visual is TrueColor
+(==) FBDEV(0): Using gamma correction (1.0, 1.0, 1.0)
+(II) FBDEV(0): hardware: EFI VGA (video memory: 8100kB)
+(DB) xf86MergeOutputClassOptions unsupported bus type 0
+(II) FBDEV(0): checking modes against framebuffer device...
+(II) FBDEV(0): checking modes against monitor...
+(II) FBDEV(0): Virtual size is 1920x1080 (pitch 1920)
+(**) FBDEV(0):  Built-in mode "current": 207.4 MHz, 85.3 kHz, 77.2 Hz
+(II) FBDEV(0): Modeline "current"x0.0  207.38  1920 1952 2192 2432  1080 1084 1088 1104 -hsync -vsync -csync (85.3 kHz b)
+(==) FBDEV(0): DPI set to (96, 96)
+(II) Loading sub module "fb"
+(II) LoadModule: "fb"
+(II) Module "fb" already built-in
+(**) FBDEV(0): using shadow framebuffer
+(II) Loading sub module "shadow"
+(II) LoadModule: "shadow"
+(II) Loading /usr/lib/xorg/modules/libshadow.so
+(II) Module shadow: vendor="X.Org Foundation"
+	compiled for 1.21.1.7, module version = 1.1.0
+	ABI class: X.Org ANSI C Emulation, version 0.4
+(II) FBDEV(0): FBIOBLANK: Invalid argument (Screen blanking not supported by kernel - disabling)
+(==) FBDEV(0): Backing store enabled
+(==) FBDEV(0): DPMS enabled
+(II) Initializing extension Generic Event Extension
+(II) Initializing extension SHAPE
+(II) Initializing extension MIT-SHM
+(II) Initializing extension XInputExtension
+(II) Initializing extension XTEST
+(II) Initializing extension BIG-REQUESTS
+(II) Initializing extension SYNC
+(II) Initializing extension XKEYBOARD
+(II) Initializing extension XC-MISC
+(II) Initializing extension SECURITY
+(II) Initializing extension XFIXES
+(II) Initializing extension RENDER
+(II) Initializing extension RANDR
+(II) Initializing extension COMPOSITE
+(II) Initializing extension DAMAGE
+(II) Initializing extension MIT-SCREEN-SAVER
+(II) Initializing extension DOUBLE-BUFFER
+(II) Initializing extension RECORD
+(II) Initializing extension DPMS
+(II) Initializing extension Present
+(II) Initializing extension DRI3
+(II) Initializing extension X-Resource
+(II) Initializing extension XVideo
+(II) Initializing extension XVideo-MotionCompensation
+(II) Initializing extension SELinux
+(II) SELinux: Disabled on system
+(II) Initializing extension GLX
+(II) AIGLX: Screen 0 is not DRI2 capable
+(II) IGLX: Loaded and initialized swrast
+(II) GLX: Initialized DRISWRAST GL provider for screen 0
+(II) Initializing extension XFree86-VidModeExtension
+(II) Initializing extension XFree86-DGA
+(II) Initializing extension XFree86-DRI
+(II) Initializing extension DRI2
+(II) config/udev: Adding input device Power Button (/dev/input/event1)
+(**) Power Button: Applying InputClass "libinput keyboard catchall"
+(II) LoadModule: "libinput"
+(II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+(II) Module libinput: vendor="X.Org Foundation"
+	compiled for 1.21.1.7, module version = 1.3.0
+	Module class: X.Org XInput Driver
+	ABI class: X.Org XInput driver, version 24.4
+(II) Using input driver 'libinput' for 'Power Button'
+(**) Power Button: always reports core events
+(**) Option "Device" "/dev/input/event1"
+(II) event1  - Power Button: is tagged by udev as: Keyboard
+(II) event1  - Power Button: device is a keyboard
+(II) event1  - Power Button: device removed
+(**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+(II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+(**) Option "xkb_model" "pc105"
+(**) Option "xkb_layout" "us"
+(II) event1  - Power Button: is tagged by udev as: Keyboard
+(II) event1  - Power Button: device is a keyboard
+(II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event2)
+(**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+(II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+(**) AT Translated Set 2 keyboard: always reports core events
+(**) Option "Device" "/dev/input/event2"
+(II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+(II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+(II) event2  - AT Translated Set 2 keyboard: device removed
+(**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input2/event2"
+(II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 7)
+(**) Option "xkb_model" "pc105"
+(**) Option "xkb_layout" "us"
+(II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+(II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+(II) event1  - Power Button: device removed
+(II) event2  - AT Translated Set 2 keyboard: device removed
