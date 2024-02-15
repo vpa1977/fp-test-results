@@ -1,0 +1,400 @@
+#####
+baseline-fp-2-opt-id - Run 1
+2024-02-15 13:55:29
+#####
+Running benchmark: benchmark_index
+Test speed of array indexing.
+
+array size (n) = 4e+06
+number of repeats (rep) = 100
+time for a(i:j): 0.00019002
+time for a(i:k:j): 0.279651
+time for a(idx): 0.544033
+time for a(:,i:j): 0.000212908
+time for a(i:j,:): 0.327596
+time for a(:,idx): 0.298509
+time for a(idx,:): 0.422858
+time for a(:,:,i:j,k): 0.00028801
+time for a(:,:,k,i:j): 0.110085
+time for a(i,j,k,:): 0.171539
+time for a(ones(1, k), :), a row vector: 0.332558
+time for a(:, ones(1, k)), a column vector: 0.177853
+Running benchmark: benchmark_intmath
+Test speed of integer math & conversions.
+
+array size (n) = 1e+07
+ratio of intmath for generating integers (ratio) = 0.6
+time to convert real vector to uint8: 0.0405381
+time to add two uint8 vectors: 0.00776696
+time to subtract two uint8 vectors: 0.00700998
+time to multiply two uint8 vectors: 0.00773096
+time to divide two uint8 vectors: 0.017071
+time to convert real vector to int8: 0.0421879
+time to add two int8 vectors: 0.039887
+time to subtract two int8 vectors: 0.035861
+time to multiply two int8 vectors: 0.037782
+time to divide two int8 vectors: 0.0893562
+time to convert real vector to uint16: 0.0418651
+time to add two uint16 vectors: 0.0107572
+time to subtract two uint16 vectors: 0.010112
+time to multiply two uint16 vectors: 0.0117059
+time to divide two uint16 vectors: 0.0220251
+time to convert real vector to int16: 0.042124
+time to add two int16 vectors: 0.0426838
+time to subtract two int16 vectors: 0.0366051
+time to multiply two int16 vectors: 0.0397019
+time to divide two int16 vectors: 0.090961
+time to convert real vector to uint32: 0.0471179
+time to add two uint32 vectors: 0.0178921
+time to subtract two uint32 vectors: 0.017329
+time to multiply two uint32 vectors: 0.0185771
+time to divide two uint32 vectors: 0.026361
+time to convert real vector to int32: 0.0475481
+time to add two int32 vectors: 0.0493519
+time to subtract two int32 vectors: 0.0476029
+time to multiply two int32 vectors: 0.0511839
+time to divide two int32 vectors: 0.100877
+Running benchmark: benchmark_permute
+Test speed of array permuting.
+
+dimension size (n^5 is number of elements) (n) = 30
+time_21345 = 0.081382
+time for [2,1,3,4,5] permutation: 0.081382
+time_13425 = 0.077514
+time for [1,3,4,2,5] permutation: 0.0775139
+time_34125 = 0.098548
+time for [3,4,1,2,5] permutation: 0.0985482
+time_45123 = 0.1036
+time for [4,5,1,2,3] permutation: 0.103619
+Running benchmark: benchmark_stmm
+Sparse transposed matrix-vector multiplication benchmark.
+This is to test the "compound operators" feature introduced in Octave.
+
+dimension of matrix (n) = 300
+number of vector op repeats (nvec) = 100
+constructing sparse matrix
+Time for A'*B (B n^2-by-nvec matrix): 0.115653
+Time for A'*v nvec-times (v vector): 0.094739
+Time for B*A' (B nvec-by-n^2 matrix): 0.0560071
+Time for v*A' nvec-times (v vector): 0.116786
+
+#####
+baseline-fp-2-opt-id - Run 2
+2024-02-15 13:55:41
+#####
+Running benchmark: benchmark_index
+Test speed of array indexing.
+
+array size (n) = 4e+06
+number of repeats (rep) = 100
+time for a(i:j): 0.000185966
+time for a(i:k:j): 0.281408
+time for a(idx): 0.546586
+time for a(:,i:j): 0.000205994
+time for a(i:j,:): 0.330926
+time for a(:,idx): 0.296365
+time for a(idx,:): 0.425984
+time for a(:,:,i:j,k): 0.000287056
+time for a(:,:,k,i:j): 0.109462
+time for a(i,j,k,:): 0.171685
+time for a(ones(1, k), :), a row vector: 0.331727
+time for a(:, ones(1, k)), a column vector: 0.181892
+Running benchmark: benchmark_intmath
+Test speed of integer math & conversions.
+
+array size (n) = 1e+07
+ratio of intmath for generating integers (ratio) = 0.6
+time to convert real vector to uint8: 0.0401602
+time to add two uint8 vectors: 0.00665307
+time to subtract two uint8 vectors: 0.00716686
+time to multiply two uint8 vectors: 0.00767803
+time to divide two uint8 vectors: 0.0169771
+time to convert real vector to int8: 0.0414779
+time to add two int8 vectors: 0.038769
+time to subtract two int8 vectors: 0.035826
+time to multiply two int8 vectors: 0.0378401
+time to divide two int8 vectors: 0.0894101
+time to convert real vector to uint16: 0.0421131
+time to add two uint16 vectors: 0.010026
+time to subtract two uint16 vectors: 0.0100689
+time to multiply two uint16 vectors: 0.0118389
+time to divide two uint16 vectors: 0.0219002
+time to convert real vector to int16: 0.042002
+time to add two int16 vectors: 0.0424349
+time to subtract two int16 vectors: 0.036675
+time to multiply two int16 vectors: 0.039772
+time to divide two int16 vectors: 0.091126
+time to convert real vector to uint32: 0.047334
+time to add two uint32 vectors: 0.017401
+time to subtract two uint32 vectors: 0.017278
+time to multiply two uint32 vectors: 0.0184789
+time to divide two uint32 vectors: 0.0262661
+time to convert real vector to int32: 0.047612
+time to add two int32 vectors: 0.0487211
+time to subtract two int32 vectors: 0.0478749
+time to multiply two int32 vectors: 0.050982
+time to divide two int32 vectors: 0.100865
+Running benchmark: benchmark_permute
+Test speed of array permuting.
+
+dimension size (n^5 is number of elements) (n) = 30
+time_21345 = 0.081868
+time for [2,1,3,4,5] permutation: 0.0818679
+time_13425 = 0.077510
+time for [1,3,4,2,5] permutation: 0.0775101
+time_34125 = 0.099194
+time for [3,4,1,2,5] permutation: 0.0991938
+time_45123 = 0.1030
+time for [4,5,1,2,3] permutation: 0.102961
+Running benchmark: benchmark_stmm
+Sparse transposed matrix-vector multiplication benchmark.
+This is to test the "compound operators" feature introduced in Octave.
+
+dimension of matrix (n) = 300
+number of vector op repeats (nvec) = 100
+constructing sparse matrix
+Time for A'*B (B n^2-by-nvec matrix): 0.115871
+Time for A'*v nvec-times (v vector): 0.095047
+Time for B*A' (B nvec-by-n^2 matrix): 0.055702
+Time for v*A' nvec-times (v vector): 0.117041
+
+#####
+baseline-fp-2-opt-id - Run 3
+2024-02-15 13:55:52
+#####
+Running benchmark: benchmark_index
+Test speed of array indexing.
+
+array size (n) = 4e+06
+number of repeats (rep) = 100
+time for a(i:j): 0.000190973
+time for a(i:k:j): 0.281722
+time for a(idx): 0.548203
+time for a(:,i:j): 0.000211954
+time for a(i:j,:): 0.331987
+time for a(:,idx): 0.299889
+time for a(idx,:): 0.426442
+time for a(:,:,i:j,k): 0.000290155
+time for a(:,:,k,i:j): 0.109755
+time for a(i,j,k,:): 0.172292
+time for a(ones(1, k), :), a row vector: 0.332636
+time for a(:, ones(1, k)), a column vector: 0.185181
+Running benchmark: benchmark_intmath
+Test speed of integer math & conversions.
+
+array size (n) = 1e+07
+ratio of intmath for generating integers (ratio) = 0.6
+time to convert real vector to uint8: 0.0403461
+time to add two uint8 vectors: 0.00670195
+time to subtract two uint8 vectors: 0.00697899
+time to multiply two uint8 vectors: 0.00767398
+time to divide two uint8 vectors: 0.017065
+time to convert real vector to int8: 0.04141
+time to add two int8 vectors: 0.0387299
+time to subtract two int8 vectors: 0.035866
+time to multiply two int8 vectors: 0.0377128
+time to divide two int8 vectors: 0.089468
+time to convert real vector to uint16: 0.0418608
+time to add two uint16 vectors: 0.0100601
+time to subtract two uint16 vectors: 0.0100689
+time to multiply two uint16 vectors: 0.0117931
+time to divide two uint16 vectors: 0.0219491
+time to convert real vector to int16: 0.0437779
+time to add two int16 vectors: 0.042186
+time to subtract two int16 vectors: 0.036721
+time to multiply two int16 vectors: 0.03966
+time to divide two int16 vectors: 0.0910621
+time to convert real vector to uint32: 0.047215
+time to add two uint32 vectors: 0.0172701
+time to subtract two uint32 vectors: 0.0171361
+time to multiply two uint32 vectors: 0.018544
+time to divide two uint32 vectors: 0.026222
+time to convert real vector to int32: 0.047452
+time to add two int32 vectors: 0.0488169
+time to subtract two int32 vectors: 0.0475209
+time to multiply two int32 vectors: 0.0511301
+time to divide two int32 vectors: 0.100867
+Running benchmark: benchmark_permute
+Test speed of array permuting.
+
+dimension size (n^5 is number of elements) (n) = 30
+time_21345 = 0.081499
+time for [2,1,3,4,5] permutation: 0.0814991
+time_13425 = 0.077262
+time for [1,3,4,2,5] permutation: 0.0772619
+time_34125 = 0.098460
+time for [3,4,1,2,5] permutation: 0.09846
+time_45123 = 0.1018
+time for [4,5,1,2,3] permutation: 0.101836
+Running benchmark: benchmark_stmm
+Sparse transposed matrix-vector multiplication benchmark.
+This is to test the "compound operators" feature introduced in Octave.
+
+dimension of matrix (n) = 300
+number of vector op repeats (nvec) = 100
+constructing sparse matrix
+Time for A'*B (B n^2-by-nvec matrix): 0.117204
+Time for A'*v nvec-times (v vector): 0.0961542
+Time for B*A' (B nvec-by-n^2 matrix): 0.0556991
+Time for v*A' nvec-times (v vector): 0.117451
+
+#####
+baseline-fp-2-opt-id - Run 4
+2024-02-15 13:56:03
+#####
+Running benchmark: benchmark_index
+Test speed of array indexing.
+
+array size (n) = 4e+06
+number of repeats (rep) = 100
+time for a(i:j): 0.00018692
+time for a(i:k:j): 0.279202
+time for a(idx): 0.544636
+time for a(:,i:j): 0.000211
+time for a(i:j,:): 0.325926
+time for a(:,idx): 0.29213
+time for a(idx,:): 0.426446
+time for a(:,:,i:j,k): 0.000298023
+time for a(:,:,k,i:j): 0.108864
+time for a(i,j,k,:): 0.171043
+time for a(ones(1, k), :), a row vector: 0.330231
+time for a(:, ones(1, k)), a column vector: 0.181031
+Running benchmark: benchmark_intmath
+Test speed of integer math & conversions.
+
+array size (n) = 1e+07
+ratio of intmath for generating integers (ratio) = 0.6
+time to convert real vector to uint8: 0.0402529
+time to add two uint8 vectors: 0.00664306
+time to subtract two uint8 vectors: 0.00707316
+time to multiply two uint8 vectors: 0.00759506
+time to divide two uint8 vectors: 0.0170259
+time to convert real vector to int8: 0.041724
+time to add two int8 vectors: 0.0388749
+time to subtract two int8 vectors: 0.0358639
+time to multiply two int8 vectors: 0.037709
+time to divide two int8 vectors: 0.0894129
+time to convert real vector to uint16: 0.041806
+time to add two uint16 vectors: 0.00997806
+time to subtract two uint16 vectors: 0.0100241
+time to multiply two uint16 vectors: 0.0119171
+time to divide two uint16 vectors: 0.0219281
+time to convert real vector to int16: 0.0419769
+time to add two int16 vectors: 0.042119
+time to subtract two int16 vectors: 0.036742
+time to multiply two int16 vectors: 0.0395701
+time to divide two int16 vectors: 0.0910861
+time to convert real vector to uint32: 0.0471191
+time to add two uint32 vectors: 0.0174971
+time to subtract two uint32 vectors: 0.017134
+time to multiply two uint32 vectors: 0.0185368
+time to divide two uint32 vectors: 0.0262589
+time to convert real vector to int32: 0.0474031
+time to add two int32 vectors: 0.0487709
+time to subtract two int32 vectors: 0.0476758
+time to multiply two int32 vectors: 0.05111
+time to divide two int32 vectors: 0.100585
+Running benchmark: benchmark_permute
+Test speed of array permuting.
+
+dimension size (n^5 is number of elements) (n) = 30
+time_21345 = 0.081588
+time for [2,1,3,4,5] permutation: 0.081588
+time_13425 = 0.077168
+time for [1,3,4,2,5] permutation: 0.077168
+time_34125 = 0.098540
+time for [3,4,1,2,5] permutation: 0.0985398
+time_45123 = 0.1025
+time for [4,5,1,2,3] permutation: 0.102479
+Running benchmark: benchmark_stmm
+Sparse transposed matrix-vector multiplication benchmark.
+This is to test the "compound operators" feature introduced in Octave.
+
+dimension of matrix (n) = 300
+number of vector op repeats (nvec) = 100
+constructing sparse matrix
+Time for A'*B (B n^2-by-nvec matrix): 0.116108
+Time for A'*v nvec-times (v vector): 0.0951591
+Time for B*A' (B nvec-by-n^2 matrix): 0.0558422
+Time for v*A' nvec-times (v vector): 0.117299
+
+#####
+baseline-fp-2-opt-id - Run 5
+2024-02-15 13:56:13
+#####
+Running benchmark: benchmark_index
+Test speed of array indexing.
+
+array size (n) = 4e+06
+number of repeats (rep) = 100
+time for a(i:j): 0.000188112
+time for a(i:k:j): 0.279096
+time for a(idx): 0.5444
+time for a(:,i:j): 0.000210047
+time for a(i:j,:): 0.32708
+time for a(:,idx): 0.292067
+time for a(idx,:): 0.421813
+time for a(:,:,i:j,k): 0.000296116
+time for a(:,:,k,i:j): 0.108299
+time for a(i,j,k,:): 0.17187
+time for a(ones(1, k), :), a row vector: 0.330374
+time for a(:, ones(1, k)), a column vector: 0.180312
+Running benchmark: benchmark_intmath
+Test speed of integer math & conversions.
+
+array size (n) = 1e+07
+ratio of intmath for generating integers (ratio) = 0.6
+time to convert real vector to uint8: 0.0402889
+time to add two uint8 vectors: 0.006639
+time to subtract two uint8 vectors: 0.00712895
+time to multiply two uint8 vectors: 0.00775504
+time to divide two uint8 vectors: 0.016994
+time to convert real vector to int8: 0.041573
+time to add two int8 vectors: 0.038846
+time to subtract two int8 vectors: 0.036109
+time to multiply two int8 vectors: 0.0377312
+time to divide two int8 vectors: 0.089421
+time to convert real vector to uint16: 0.041966
+time to add two uint16 vectors: 0.010098
+time to subtract two uint16 vectors: 0.010072
+time to multiply two uint16 vectors: 0.0120819
+time to divide two uint16 vectors: 0.0218742
+time to convert real vector to int16: 0.04199
+time to add two int16 vectors: 0.0422921
+time to subtract two int16 vectors: 0.0366609
+time to multiply two int16 vectors: 0.039628
+time to divide two int16 vectors: 0.0909889
+time to convert real vector to uint32: 0.0470979
+time to add two uint32 vectors: 0.0173428
+time to subtract two uint32 vectors: 0.0172541
+time to multiply two uint32 vectors: 0.0184669
+time to divide two uint32 vectors: 0.0262718
+time to convert real vector to int32: 0.0476799
+time to add two int32 vectors: 0.049212
+time to subtract two int32 vectors: 0.0476429
+time to multiply two int32 vectors: 0.051198
+time to divide two int32 vectors: 0.100838
+Running benchmark: benchmark_permute
+Test speed of array permuting.
+
+dimension size (n^5 is number of elements) (n) = 30
+time_21345 = 0.081652
+time for [2,1,3,4,5] permutation: 0.0816522
+time_13425 = 0.077248
+time for [1,3,4,2,5] permutation: 0.0772479
+time_34125 = 0.098657
+time for [3,4,1,2,5] permutation: 0.0986569
+time_45123 = 0.1020
+time for [4,5,1,2,3] permutation: 0.102027
+Running benchmark: benchmark_stmm
+Sparse transposed matrix-vector multiplication benchmark.
+This is to test the "compound operators" feature introduced in Octave.
+
+dimension of matrix (n) = 300
+number of vector op repeats (nvec) = 100
+constructing sparse matrix
+Time for A'*B (B n^2-by-nvec matrix): 0.115885
+Time for A'*v nvec-times (v vector): 0.0948491
+Time for B*A' (B nvec-by-n^2 matrix): 0.055702
+Time for v*A' nvec-times (v vector): 0.117069
+
