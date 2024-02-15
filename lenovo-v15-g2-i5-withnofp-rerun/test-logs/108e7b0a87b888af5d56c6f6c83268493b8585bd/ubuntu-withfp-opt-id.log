@@ -1,0 +1,126 @@
+#####
+ubuntu-withfp-opt-id - Run 1
+2024-02-14 19:54:07
+#####
+Running benchmark 1/6 "Five Back to Back FIR Filters (FFT, 256 Real taps, Complex input)"
+	Trial 1 - 114.6 MS/s, 874.4 MiB/s
+	Trial 2 - 112.1 MS/s, 855.6 MiB/s
+	Trial 3 - 112.6 MS/s, 859.1 MiB/s
+	Average Five Back to Back FIR Filters (FFT, 256 Real taps, Complex input) - 113.1 MS/s, 863.0 MiB/s
+	  Stdev - 1.1 MS/s, 8.2 MiB/s
+Running benchmark 2/6 "Signal Source (Cosine)"
+	Trial 1 - 1101.4 MS/s, 4201.4 MiB/s
+	Trial 2 - 1111.5 MS/s, 4240.1 MiB/s
+	Trial 3 - 1137.2 MS/s, 4338.1 MiB/s
+	Average Signal Source (Cosine) - 1116.7 MS/s, 4259.9 MiB/s
+	  Stdev - 15.1 MS/s, 57.5 MiB/s
+Running benchmark 3/6 "FIR Filter (FFT, 128 Real taps, Real input)"
+	Trial 1 - 233.0 MS/s, 888.8 MiB/s
+	Trial 2 - 234.1 MS/s, 893.0 MiB/s
+	Trial 3 - 230.5 MS/s, 879.2 MiB/s
+	Average FIR Filter (FFT, 128 Real taps, Real input) - 232.5 MS/s, 887.0 MiB/s
+	  Stdev - 1.5 MS/s, 5.8 MiB/s
+Running benchmark 4/6 "IIR Filter (5 ff 3 fb Real taps, Complex input)"
+	Trial 1 - 46.4 MS/s, 353.8 MiB/s
+	Trial 2 - 46.7 MS/s, 356.2 MiB/s
+	Trial 3 - 46.1 MS/s, 351.5 MiB/s
+	Average IIR Filter (5 ff 3 fb Real taps, Complex input) - 46.4 MS/s, 353.8 MiB/s
+	  Stdev - 0.2 MS/s, 1.9 MiB/s
+Running benchmark 5/6 "FM Deemphasis Filter"
+	Trial 1 - 272.0 MS/s, 1037.6 MiB/s
+	Trial 2 - 271.7 MS/s, 1036.3 MiB/s
+	Trial 3 - 271.6 MS/s, 1036.1 MiB/s
+	Average FM Deemphasis Filter - 271.8 MS/s, 1036.7 MiB/s
+	  Stdev - 0.2 MS/s, 0.7 MiB/s
+Running benchmark 6/6 "Hilbert Transform (129 taps)"
+	Trial 1 - 62.3 MS/s, 474.9 MiB/s
+	Trial 2 - 62.2 MS/s, 474.9 MiB/s
+	Trial 3 - 62.3 MS/s, 475.2 MiB/s
+	Average Hilbert Transform (129 taps) - 62.3 MS/s, 475.0 MiB/s
+	  Stdev - 0.0 MS/s, 0.1 MiB/s
+{"version": "3.10.7.0", "parameters": {"num_trials": 3, "trial_duration": 20.0}, "benchmarks": [{"name": "Five Back to Back FIR Filters (FFT, 256 Real taps, Complex input)", "block_name": "filter.fft_filter_ccf", "results": {"samples_per_second": 113114907.71133417, "samples_per_second_stdev": 1070845.761441574, "bytes_per_second": 904919261.6906734}}, {"name": "Signal Source (Cosine)", "block_name": "analog.sig_source_f", "results": {"samples_per_second": 1116697785.1187093, "samples_per_second_stdev": 15085103.640593728, "bytes_per_second": 4466791140.474837}}, {"name": "FIR Filter (FFT, 128 Real taps, Real input)", "block_name": "filter.fft_filter_fff", "results": {"samples_per_second": 232523167.0839747, "samples_per_second_stdev": 1509607.8670191737, "bytes_per_second": 930092668.3358988}}, {"name": "IIR Filter (5 ff 3 fb Real taps, Complex input)", "block_name": "filter.iir_filter_ccf", "results": {"samples_per_second": 46375783.478369, "samples_per_second_stdev": 248444.16788691425, "bytes_per_second": 371006267.826952}}, {"name": "FM Deemphasis Filter", "block_name": "analog.fm_deemph", "results": {"samples_per_second": 271759385.7585239, "samples_per_second_stdev": 172722.89641300373, "bytes_per_second": 1087037543.0340955}}, {"name": "Hilbert Transform (129 taps)", "block_name": "filter.hilbert_fc", "results": {"samples_per_second": 62263622.05821059, "samples_per_second_stdev": 18606.79641508479, "bytes_per_second": 498108976.4656847}}]}
+
+#####
+ubuntu-withfp-opt-id - Run 2
+2024-02-14 20:00:11
+#####
+Running benchmark 1/6 "Five Back to Back FIR Filters (FFT, 256 Real taps, Complex input)"
+	Trial 1 - 113.4 MS/s, 865.1 MiB/s
+	Trial 2 - 114.0 MS/s, 869.8 MiB/s
+	Trial 3 - 111.7 MS/s, 851.9 MiB/s
+	Average Five Back to Back FIR Filters (FFT, 256 Real taps, Complex input) - 113.0 MS/s, 862.3 MiB/s
+	  Stdev - 1.0 MS/s, 7.6 MiB/s
+Running benchmark 2/6 "Signal Source (Cosine)"
+	Trial 1 - 1111.6 MS/s, 4240.5 MiB/s
+	Trial 2 - 1126.7 MS/s, 4298.0 MiB/s
+	Trial 3 - 1099.0 MS/s, 4192.4 MiB/s
+	Average Signal Source (Cosine) - 1112.4 MS/s, 4243.6 MiB/s
+	  Stdev - 11.3 MS/s, 43.2 MiB/s
+Running benchmark 3/6 "FIR Filter (FFT, 128 Real taps, Real input)"
+	Trial 1 - 229.7 MS/s, 876.3 MiB/s
+	Trial 2 - 228.6 MS/s, 872.2 MiB/s
+	Trial 3 - 233.3 MS/s, 889.8 MiB/s
+	Average FIR Filter (FFT, 128 Real taps, Real input) - 230.5 MS/s, 879.5 MiB/s
+	  Stdev - 2.0 MS/s, 7.5 MiB/s
+Running benchmark 4/6 "IIR Filter (5 ff 3 fb Real taps, Complex input)"
+	Trial 1 - 47.4 MS/s, 361.5 MiB/s
+	Trial 2 - 47.4 MS/s, 361.7 MiB/s
+	Trial 3 - 47.4 MS/s, 361.7 MiB/s
+	Average IIR Filter (5 ff 3 fb Real taps, Complex input) - 47.4 MS/s, 361.6 MiB/s
+	  Stdev - 0.0 MS/s, 0.1 MiB/s
+Running benchmark 5/6 "FM Deemphasis Filter"
+	Trial 1 - 271.4 MS/s, 1035.2 MiB/s
+	Trial 2 - 270.2 MS/s, 1030.7 MiB/s
+	Trial 3 - 271.2 MS/s, 1034.5 MiB/s
+	Average FM Deemphasis Filter - 270.9 MS/s, 1033.5 MiB/s
+	  Stdev - 0.5 MS/s, 2.0 MiB/s
+Running benchmark 6/6 "Hilbert Transform (129 taps)"
+	Trial 1 - 62.9 MS/s, 479.6 MiB/s
+	Trial 2 - 62.6 MS/s, 477.5 MiB/s
+	Trial 3 - 60.0 MS/s, 458.0 MiB/s
+	Average Hilbert Transform (129 taps) - 61.8 MS/s, 471.7 MiB/s
+	  Stdev - 1.3 MS/s, 9.7 MiB/s
+{"version": "3.10.7.0", "parameters": {"num_trials": 3, "trial_duration": 20.0}, "benchmarks": [{"name": "Five Back to Back FIR Filters (FFT, 256 Real taps, Complex input)", "block_name": "filter.fft_filter_ccf", "results": {"samples_per_second": 113020188.60317157, "samples_per_second_stdev": 992619.4244121737, "bytes_per_second": 904161508.8253726}}, {"name": "Signal Source (Cosine)", "block_name": "analog.sig_source_f", "results": {"samples_per_second": 1112446548.7556832, "samples_per_second_stdev": 11312463.64661909, "bytes_per_second": 4449786195.022733}}, {"name": "FIR Filter (FFT, 128 Real taps, Real input)", "block_name": "filter.fft_filter_fff", "results": {"samples_per_second": 230542844.58255967, "samples_per_second_stdev": 1970953.4600632088, "bytes_per_second": 922171378.3302387}}, {"name": "IIR Filter (5 ff 3 fb Real taps, Complex input)", "block_name": "filter.iir_filter_ccf", "results": {"samples_per_second": 47396124.76502752, "samples_per_second_stdev": 13889.909589752551, "bytes_per_second": 379168998.1202202}}, {"name": "FM Deemphasis Filter", "block_name": "analog.fm_deemph", "results": {"samples_per_second": 270918608.40046555, "samples_per_second_stdev": 519822.0650081029, "bytes_per_second": 1083674433.6018622}}, {"name": "Hilbert Transform (129 taps)", "block_name": "filter.hilbert_fc", "results": {"samples_per_second": 61826940.08092036, "samples_per_second_stdev": 1277025.253018972, "bytes_per_second": 494615520.6473629}}]}
+
+#####
+ubuntu-withfp-opt-id - Run 3
+2024-02-14 20:06:14
+#####
+Running benchmark 1/6 "Five Back to Back FIR Filters (FFT, 256 Real taps, Complex input)"
+	Trial 1 - 113.6 MS/s, 866.6 MiB/s
+	Trial 2 - 113.6 MS/s, 866.4 MiB/s
+	Trial 3 - 111.5 MS/s, 851.0 MiB/s
+	Average Five Back to Back FIR Filters (FFT, 256 Real taps, Complex input) - 112.9 MS/s, 861.4 MiB/s
+	  Stdev - 1.0 MS/s, 7.3 MiB/s
+Running benchmark 2/6 "Signal Source (Cosine)"
+	Trial 1 - 1123.1 MS/s, 4284.2 MiB/s
+	Trial 2 - 1117.8 MS/s, 4264.2 MiB/s
+	Trial 3 - 1130.5 MS/s, 4312.6 MiB/s
+	Average Signal Source (Cosine) - 1123.8 MS/s, 4287.0 MiB/s
+	  Stdev - 5.2 MS/s, 19.9 MiB/s
+Running benchmark 3/6 "FIR Filter (FFT, 128 Real taps, Real input)"
+	Trial 1 - 231.9 MS/s, 884.5 MiB/s
+	Trial 2 - 231.5 MS/s, 883.1 MiB/s
+	Trial 3 - 232.9 MS/s, 888.6 MiB/s
+	Average FIR Filter (FFT, 128 Real taps, Real input) - 232.1 MS/s, 885.4 MiB/s
+	  Stdev - 0.6 MS/s, 2.3 MiB/s
+Running benchmark 4/6 "IIR Filter (5 ff 3 fb Real taps, Complex input)"
+	Trial 1 - 46.8 MS/s, 356.8 MiB/s
+	Trial 2 - 46.9 MS/s, 357.9 MiB/s
+	Trial 3 - 50.4 MS/s, 384.7 MiB/s
+	Average IIR Filter (5 ff 3 fb Real taps, Complex input) - 48.0 MS/s, 366.5 MiB/s
+	  Stdev - 1.7 MS/s, 12.9 MiB/s
+Running benchmark 5/6 "FM Deemphasis Filter"
+	Trial 1 - 271.6 MS/s, 1036.0 MiB/s
+	Trial 2 - 271.0 MS/s, 1033.9 MiB/s
+	Trial 3 - 271.8 MS/s, 1036.8 MiB/s
+	Average FM Deemphasis Filter - 271.5 MS/s, 1035.6 MiB/s
+	  Stdev - 0.3 MS/s, 1.2 MiB/s
+Running benchmark 6/6 "Hilbert Transform (129 taps)"
+	Trial 1 - 61.5 MS/s, 469.4 MiB/s
+	Trial 2 - 62.7 MS/s, 478.6 MiB/s
+	Trial 3 - 62.1 MS/s, 473.6 MiB/s
+	Average Hilbert Transform (129 taps) - 62.1 MS/s, 473.9 MiB/s
+	  Stdev - 0.5 MS/s, 3.8 MiB/s
+{"version": "3.10.7.0", "parameters": {"num_trials": 3, "trial_duration": 20.0}, "benchmarks": [{"name": "Five Back to Back FIR Filters (FFT, 256 Real taps, Complex input)", "block_name": "filter.fft_filter_ccf", "results": {"samples_per_second": 112900848.5018887, "samples_per_second_stdev": 958531.7568495211, "bytes_per_second": 903206788.0151097}}, {"name": "Signal Source (Cosine)", "block_name": "analog.sig_source_f", "results": {"samples_per_second": 1123814073.0297458, "samples_per_second_stdev": 5204027.184980474, "bytes_per_second": 4495256292.118983}}, {"name": "FIR Filter (FFT, 128 Real taps, Real input)", "block_name": "filter.fft_filter_fff", "results": {"samples_per_second": 232105630.28867266, "samples_per_second_stdev": 613295.5630129335, "bytes_per_second": 928422521.1546906}}, {"name": "IIR Filter (5 ff 3 fb Real taps, Complex input)", "block_name": "filter.iir_filter_ccf", "results": {"samples_per_second": 48032630.750558816, "samples_per_second_stdev": 1688512.313442508, "bytes_per_second": 384261046.0044705}}, {"name": "FM Deemphasis Filter", "block_name": "analog.fm_deemph", "results": {"samples_per_second": 271466567.1849796, "samples_per_second_stdev": 317535.36359519785, "bytes_per_second": 1085866268.7399185}}, {"name": "Hilbert Transform (129 taps)", "block_name": "filter.hilbert_fc", "results": {"samples_per_second": 62113001.0290471, "samples_per_second_stdev": 492910.09087491716, "bytes_per_second": 496904008.2323768}}]}
+

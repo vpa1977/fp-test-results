@@ -1,0 +1,938 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>ubuntu-withfp-opt-name</Title>
+    <LastModified>2024-02-15 01:27:33</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.4</TestClient>
+    <Description>Intel Core i5-1135G7 testing with a LENOVO Lenovo V15 G2 ITL LNVNB161216 (GGCN50WW BIOS) and Intel TigerLake-LP GT2 [Iris Xe ] on Ubuntu 23.10 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>ubuntu-withfp-opt-id</Identifier>
+    <Hardware>Processor: Intel Core i5-1135G7 @ 4.20GHz (4 Cores / 8 Threads), Motherboard: LENOVO Lenovo V15 G2 ITL LNVNB161216 (GGCN50WW BIOS), Chipset: Intel Tiger Lake-LP, Memory: 32 + 8 DDR4-3200MT/s, Disk: 512GB TS512GESD310C, Graphics: Intel TigerLake-LP GT2 [Iris Xe ], Audio: Intel Tiger Lake-LP Smart Sound Audio, Network: Realtek RTL8111/8168/8411 + Intel Wi-Fi 6 AX201</Hardware>
+    <Software>OS: Ubuntu 23.10, Kernel: 6.5.0-9-generic (x86_64), Display Server: X Server 1.21.1.7, Compiler: GCC 13.2.0, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>ubuntu</User>
+    <TimeStamp>2024-02-14 19:46:49</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --enable-libphobos-checking=release --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=2 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=\/build\/gcc-13-b9QCDx\/gcc-13-13.2.0\/debian\/tmp-nvptx\/usr,amdgcn-amdhsa=\/build\/gcc-13-b9QCDx\/gcc-13-13.2.0\/debian\/tmp-gcn\/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v","disk-scheduler":"MQ-DEADLINE","disk-mount-options":"commit=30,discard,errors=remount-ro,relatime,rw","disk-details":"Block Size: 4096","cpu-scaling-governor":"intel_pstate powersave (EPP: balance_performance)","cpu-microcode":"0xa4","kernel-extra-details":"Transparent Huge Pages: madvise","python":"Python 3.11.6","security":"gather_data_sampling: Vulnerable: No microcode + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Not affected + retbleed: Not affected + spec_rstack_overflow: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced \/ Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>system/sqlite-1.0.1</Identifier>
+    <Title>SQLite</Title>
+    <AppVersion>3.42.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>SQLite </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>10.606</Value>
+        <RawString>10.839:10.468:10.511</RawString>
+        <JSON>{"test-run-times":"10.84:10.47:10.51"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/compress-zstd-1.5.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Zstd Compression Processor </Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"2.41:0.80:0.79","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnuradio-1.0.0</Identifier>
+    <Title>GNU Radio</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: Five Back to Back FIR Filters</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>862.2</Value>
+        <RawString>863:862.3:861.4</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"360.35:360.21:360.21"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnuradio-1.0.0</Identifier>
+    <Title>GNU Radio</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: Signal Source (Cosine)</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>4263.5</Value>
+        <RawString>4259.9:4243.6:4287</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"360.35:360.21:360.21"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnuradio-1.0.0</Identifier>
+    <Title>GNU Radio</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: FIR Filter</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>884.0</Value>
+        <RawString>887:879.5:885.4</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"360.35:360.21:360.21"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnuradio-1.0.0</Identifier>
+    <Title>GNU Radio</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: IIR Filter</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>360.6</Value>
+        <RawString>353.8:361.6:366.5</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"360.35:360.21:360.21"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnuradio-1.0.0</Identifier>
+    <Title>GNU Radio</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: FM Deemphasis Filter</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>1035.3</Value>
+        <RawString>1036.7:1033.5:1035.6</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"360.35:360.21:360.21"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnuradio-1.0.0</Identifier>
+    <Title>GNU Radio</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: Hilbert Transform</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>473.5</Value>
+        <RawString>475:471.7:473.9</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"360.35:360.21:360.21"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/compress-pbzip2-1.0.0</Identifier>
+    <Title>PBZIP2 Compression</Title>
+    <AppVersion>1.1.13</AppVersion>
+    <Arguments></Arguments>
+    <Description>PBZIP2 Compression </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/system-decompress-bzip2-1.0.2</Identifier>
+    <Title>System BZIP2 Decompression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>System BZIP2 Decompression Processor </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>8.789</Value>
+        <RawString>8.8:8.779:8.788</RawString>
+        <JSON>{"test-run-times":"8.80:8.78:8.79"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/system-decompress-gzip-1.1.1</Identifier>
+    <Title>System GZIP Decompression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>System GZIP Decompression Processor </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>3.025</Value>
+        <RawString>3.356:3:2.997:2.995:3.002:2.994:2.996:2.995:2.994:3.002:2.995:2.997:2.998</RawString>
+        <JSON>{"test-run-times":"3.36:3.00:3.00:2.99:3.00:2.99:3.00:2.99:2.99:3.00:2.99:3.00:3.00"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/system-decompress-xz-1.0.2</Identifier>
+    <Title>System XZ Decompression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>System XZ Decompression Processor </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>3.238</Value>
+        <RawString>3.243:3.243:3.227</RawString>
+        <JSON>{"test-run-times":"3.24:3.24:3.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/compress-lzma-1.0.0</Identifier>
+    <Title>LZMA Compression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>LZMA Compression </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/system-decompress-tiff-1.0.1</Identifier>
+    <Title>System Libtiff Decompression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>System Libtiff Decompression Processor </Description>
+    <Scale>ms</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>7.419969</Value>
+        <RawString>12.59517:7.178613:7.524564:7.304102:7.039774:7.559453:7.126045:7.135489:7.117848:6.941025:7.198825:7.005245:7.413101:7.100273:7.479448:7.256707:6.967363:7.049029:7.483977:7.656475:7.134037:7.454536:7.150567:7.776113:7.02371:7.450931:7.724617:7.555103:7.172717:7.653389:7.082899:7.85652:6.943718:7.699867:7.462704:7.019674:7.536818:7.381304:6.984402:7.172976:7.559305:7.300451:7.360436:7.176257:7.394589:7.158393</RawString>
+        <JSON>{"test-run-times":"0.02:0.01:0.01:0.02:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.02:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.02:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/system-libjpeg-1.1.0</Identifier>
+    <Title>System JPEG Library Decode</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>System JPEG Library Decode Processor </Description>
+    <Scale>ms</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>10.422466</Value>
+        <RawString>13.073338:10.55846:10.143274:10.556214:10.665108:10.714989:9.861226:10.15339:10.104124:9.872133:10.281053:10.475281:10.315362:10.487886:10.545038:10.472669:10.343558:10.554278:10.086826:10.579928:10.062117:10.2299:10.628386:10.254776:10.386001:10.561607:10.173659:10.461546:10.279706:10.756487:10.316017:10.437422:10.660032:9.531384:9.886957:10.549765:10.39003:10.053875:10.075695:10.835339:9.942787:10.255037:10.935354:10.21633:10.562396:10.669404:10.53299:10.770114:10.488818:10.375253</RawString>
+        <JSON>{"test-run-times":"0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.01:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/system-libxml2-1.0.3</Identifier>
+    <Title>System Libxml2 Parsing</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>System Libxml2 Parsing Processor </Description>
+    <Scale>ms</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/systemd-boot-kernel-1.0.1</Identifier>
+    <Title>Systemd Kernel Boot Time</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Systemd Kernel Boot Time Processor </Description>
+    <Scale>ms</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.02","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/systemd-boot-userspace-1.0.1</Identifier>
+    <Title>Systemd Userspace Boot Time</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Systemd Userspace Boot Time Processor </Description>
+    <Scale>ms</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.01","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/openssl-1.2.0</Identifier>
+    <Title>OpenSSL</Title>
+    <AppVersion> </AppVersion>
+    <Arguments></Arguments>
+    <Description>OpenSSL Processor </Description>
+    <Scale>byte/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>7</Value>
+        <RawString>7:7:7</RawString>
+        <JSON>{"install-footnote":"OpenSSL 3.0.10 1 Aug 2023 (Library: OpenSSL 3.0.10 1 Aug 2023)","test-run-times":"5671.82:5671.85:5671.77"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/mpv-1.0.1</Identifier>
+    <Title>MPV</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>MPV System </Description>
+    <Scale>FPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.29:0.15:0.15","error":"The test run did not produce a result. E: [   0.017][d][ytdl_hook] lua-settings\/ytdl_hook.conf not found. "}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>PBKDF2-sha512</Description>
+    <Scale>Iterations Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>1661777</Value>
+        <RawString>1664406:1656518:1664406</RawString>
+        <JSON>{"test-run-times":"34.00:34.01:34.00"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>PBKDF2-whirlpool</Description>
+    <Scale>Iterations Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>675338</Value>
+        <RawString>674759:675628:675628</RawString>
+        <JSON>{"test-run-times":"34.00:34.01:34.00"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>AES-XTS 256b Encryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>4825.7</Value>
+        <RawString>4821.6:4836.7:4818.7</RawString>
+        <JSON>{"test-run-times":"34.00:34.01:34.00"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>AES-XTS 256b Decryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>4852.3</Value>
+        <RawString>4850.6:4851.4:4854.8</RawString>
+        <JSON>{"test-run-times":"34.00:34.01:34.00"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Serpent-XTS 256b Encryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>688.3</Value>
+        <RawString>685.1:690:689.8</RawString>
+        <JSON>{"test-run-times":"34.00:34.01:34.00"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Serpent-XTS 256b Decryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>648.4</Value>
+        <RawString>648.6:648.2:648.3</RawString>
+        <JSON>{"test-run-times":"34.00:34.01:34.00"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Twofish-XTS 256b Encryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>425.4</Value>
+        <RawString>424.1:426.1:425.9</RawString>
+        <JSON>{"test-run-times":"34.00:34.01:34.00"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Twofish-XTS 256b Decryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>428.7</Value>
+        <RawString>428.5:429.1:428.4</RawString>
+        <JSON>{"test-run-times":"34.00:34.01:34.00"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>AES-XTS 512b Encryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>4276.3</Value>
+        <RawString>4263.8:4299.9:4265.1</RawString>
+        <JSON>{"test-run-times":"34.00:34.01:34.00"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>AES-XTS 512b Decryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>4267.7</Value>
+        <RawString>4266:4267.7:4269.4</RawString>
+        <JSON>{"test-run-times":"34.00:34.01:34.00"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Serpent-XTS 512b Encryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>689.7</Value>
+        <RawString>689.7:689.8:689.7</RawString>
+        <JSON>{"test-run-times":"34.00:34.01:34.00"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Serpent-XTS 512b Decryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>648.4</Value>
+        <RawString>648.5:648.3:648.4</RawString>
+        <JSON>{"test-run-times":"34.00:34.01:34.00"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Twofish-XTS 512b Encryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>425.8</Value>
+        <RawString>426.5:425.7:425.1</RawString>
+        <JSON>{"test-run-times":"34.00:34.01:34.00"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Twofish-XTS 512b Decryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>428.2</Value>
+        <RawString>428.2:428.3:428.2</RawString>
+        <JSON>{"test-run-times":"34.00:34.01:34.00"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/darktable-1.0.5</Identifier>
+    <Title>Darktable</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Darktable System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.11:0.05:0.05","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gegl-1.0.0</Identifier>
+    <Title>GEGL</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>GEGL System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>25.203</Value>
+        <RawString>25.23:25.2:25.179</RawString>
+        <JSON>{"test-run-times":"25.23:25.20:25.18"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gimp-1.1.3</Identifier>
+    <Title>GIMP</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>GIMP System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.01:0.01:0.00","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gmic-1.0.0</Identifier>
+    <Title>G'MIC</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>G'MIC System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.36:0.22:0.22","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/hugin-1.0.0</Identifier>
+    <Title>Hugin</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Hugin System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>56.184</Value>
+        <RawString>56.639:55.576:56.338</RawString>
+        <JSON>{"test-run-times":"56.64:55.58:56.34"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/inkscape-1.0.1</Identifier>
+    <Title>Inkscape</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Inkscape System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>21.438</Value>
+        <RawString>21.654:21.338:21.321</RawString>
+        <JSON>{"install-footnote":"Inkscape 1.2.2 (b0a8486541, 2022-12-01)","test-run-times":"21.65:21.34:21.32"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/ocrmypdf-1.0.0</Identifier>
+    <Title>OCRMyPDF</Title>
+    <AppVersion>14.0.1+dfsg1</AppVersion>
+    <Arguments></Arguments>
+    <Description>OCRMyPDF System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>25.105</Value>
+        <RawString>23.594:24.557:25.126:25.502:25.043:25.513:25.362:25.547:25.382:25.424</RawString>
+        <JSON>{"test-run-times":"23.59:24.56:25.13:25.50:25.04:25.51:25.36:25.55:25.38:25.42"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/octave-benchmark-1.0.1</Identifier>
+    <Title>GNU Octave Benchmark</Title>
+    <AppVersion>8.3.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>GNU Octave Benchmark System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>7.357</Value>
+        <RawString>7.417:7.319:7.371:7.327:7.353</RawString>
+        <JSON>{"test-run-times":"7.42:7.32:7.37:7.33:7.35"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/openscad-1.0.0</Identifier>
+    <Title>OpenSCAD</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>OpenSCAD System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.11:0.03:0.03","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/rawtherapee-1.0.1</Identifier>
+    <Title>RawTherapee</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>RawTherapee System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>83.577</Value>
+        <RawString>83.557:83.615:83.559</RawString>
+        <JSON>{"install-footnote":"RawTherapee, version 5.9, command line.","test-run-times":"84.44:84.48:84.44"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/rsvg-1.0.0</Identifier>
+    <Title>librsvg</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>librsvg System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>20.312</Value>
+        <RawString>20.553:20.217:20.165</RawString>
+        <JSON>{"install-footnote":"rsvg-convert version 2.54.7","test-run-times":"20.55:20.22:20.17"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/redis-1.1.1</Identifier>
+    <Title>Redis Memtier / Redis Benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Redis Memtier / Redis Benchmark System </Description>
+    <Scale></Scale>
+    <Proportion></Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"45.04:45.03:45.03","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/blender-1.2.1</Identifier>
+    <Title>Blender</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Blender System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"1.30:1.03:1.03","error":"The test quit with a non-zero exit status. E: AttributeError: 'Context' object has no attribute 'user_preferences'. Did you mean: 'preferences'?"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/clpeak-1.0.1</Identifier>
+    <Title>clpeak</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>clpeak System </Description>
+    <Scale></Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test run did not produce a result. E: no platforms found"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/nginx-1.0.0</Identifier>
+    <Title>Nginx</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Nginx System </Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lluajit-5.1 -lm -lssl -lcrypto -lpthread -ldl -std=c99 -O2"},"test-run-times":"0.02:0.01:0.01","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/tesseract-ocr-1.0.1</Identifier>
+    <Title>Tesseract OCR</Title>
+    <AppVersion>5.3.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>Tesseract OCR System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value>22.018</Value>
+        <RawString>22.042:21.991:22.022</RawString>
+        <JSON>{"test-run-times":"22.04:21.99:22.02"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/systemd-boot-total-1.0.6</Identifier>
+    <Title>Systemd Total Boot Time</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Systemd Total Boot Time System </Description>
+    <Scale>ms</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ubuntu-withfp-opt-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.03","error":"The test run did not produce a result. E: BrokenPipeError: [Errno 32] Broken pipe"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
