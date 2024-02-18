@@ -1,0 +1,384 @@
+#####
+baseline-baseline-ryzen-id - Run 1
+2024-02-16 09:35:35
+#####
+Authorization required, but no authorization protocol specified
+
+Generating wavelet
+Repositioning initial camera
+Rendering first frame
+[0m[31m(   2.317s) [paraview        ]    vtkPVRenderView.cxx:2044   ERR| vtkPVRenderView (0x139a93c0): Some of the representations in this view require remote rendering which, however, is not available. Rendering may not work as expected.[0m
+Authorization required, but no authorization protocol specified
+
+[0m[1m[91m
+Loguru caught a signal: SIGSEGV
+[0m[0m[31mStack trace:
+45            0x401f7f /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/pvpython-real() [0x401f7f]
+44      0x7f37e4028189 __libc_start_main + 137
+43      0x7f37e40280d0 /lib/x86_64-linux-gnu/libc.so.6(+0x280d0) [0x7f37e40280d0]
+42            0x4027be /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/pvpython-real() [0x4027be]
+41      0x7f37e1008db4 vtkPythonInterpreter::PyMain(int, char**) + 532
+40      0x7f37dd02e053 Py_Main + 67
+39      0x7f37dd02dbf0 Py_RunMain + 1936
+38      0x7f37dd009948 PyRun_SimpleFileExFlags + 376
+37      0x7f37dd007a25 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x207a25) [0x7f37dd007a25]
+36      0x7f37dcfc331b PyEval_EvalCode + 27
+35      0x7f37dcfc32ee PyEval_EvalCodeEx + 62
+34      0x7f37dcfc32a2 _PyEval_EvalCodeWithName + 82
+33      0x7f37dcfc2f09 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x1c2f09) [0x7f37dcfc2f09]
+32      0x7f37dce6ddcb _PyEval_EvalFrameDefault + 22283
+31      0x7f37dce67187 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x67187) [0x7f37dce67187]
+30      0x7f37dce6dd2d _PyEval_EvalFrameDefault + 22125
+29      0x7f37dcebd2d1 _PyFunction_Vectorcall + 177
+28      0x7f37dcfc2f09 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x1c2f09) [0x7f37dcfc2f09]
+27      0x7f37dce6ddcb _PyEval_EvalFrameDefault + 22283
+26      0x7f37dce67187 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x67187) [0x7f37dce67187]
+25      0x7f37dce6e750 _PyEval_EvalFrameDefault + 24720
+24      0x7f37dce682a7 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x682a7) [0x7f37dce682a7]
+23      0x7f37dcec0be3 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0xc0be3) [0x7f37dcec0be3]
+22      0x7f37dcebd2d1 _PyFunction_Vectorcall + 177
+21      0x7f37dcfc2f09 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x1c2f09) [0x7f37dcfc2f09]
+20      0x7f37dce6a3e9 _PyEval_EvalFrameDefault + 7465
+19      0x7f37dcebd11e _PyObject_Call + 94
+18      0x7f37dcf1850b /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x11850b) [0x7f37dcf1850b]
+17      0x7f378e7a1094 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/lib/python3.9/site-packages/paraview/modules/vtkRemotingViews.so(+0x1a1094) [0x7f378e7a1094]
+16      0x7f37d4a67023 vtkSMViewProxy::StillRender() + 307
+15      0x7f37e1ec3c25 vtkPVSessionBase::ExecuteStream(unsigned int, vtkClientServerStream const&, bool) + 53
+14      0x7f37e1ec4bfb vtkPVSessionCore::ExecuteStream(unsigned int, vtkClientServerStream const&, bool) + 59
+13      0x7f37e1ec4dc2 vtkPVSessionCore::ExecuteStreamInternal(vtkClientServerStream const&, bool) + 242
+12      0x7f37e0c1128d vtkClientServerInterpreter::ProcessStream(vtkClientServerStream const&) + 29
+11      0x7f37e0c10fee vtkClientServerInterpreter::ProcessOneMessage(vtkClientServerStream const&, int) + 1294
+10      0x7f37e0c108bd vtkClientServerInterpreter::ProcessCommandInvoke(vtkClientServerStream const&, int) + 1229
+9       0x7f37e0c10259 vtkClientServerInterpreter::CallCommandFunction(char const*, vtkObjectBase*, char const*, vtkClientServerStream const&, vtkClientServerStream&) + 345
+8       0x7f37e2bff810 vtkPVRenderViewCommand(vtkClientServerInterpreter*, vtkObjectBase*, char const*, vtkClientServerStream const&, vtkClientServerStream&, void*) + 8288
+7       0x7f37d49c29a1 vtkPVRenderView::StillRender() + 97
+6       0x7f37d49ceada vtkPVRenderView::Render(bool, bool) + 2074
+5       0x7f37b8be5c30 vtkXOpenGLRenderWindow::Render() + 32
+4       0x7f37b8b47511 vtkOpenGLRenderWindow::Render() + 81
+3       0x7f37b37496f9 vtkRenderWindow::Render() + 169
+2       0x7f37b860a4bc vtkXRenderWindowInteractor::Initialize() + 204
+1       0x7f37e26528fd XSync + 29
+0       0x7f37e4042910 /lib/x86_64-linux-gnu/libc.so.6(+0x42910) [0x7f37e4042910][0m
+[0m[31m(   2.318s) [paraview        ]                       :0     FATL| Signal: SIGSEGV[0m
+error: exception occurred: Segmentation fault
+
+#####
+baseline-baseline-ryzen-id - Run 2
+2024-02-16 09:35:42
+#####
+Authorization required, but no authorization protocol specified
+
+Generating wavelet
+Repositioning initial camera
+Rendering first frame
+[0m[31m(   2.317s) [paraview        ]    vtkPVRenderView.cxx:2044   ERR| vtkPVRenderView (0x14211550): Some of the representations in this view require remote rendering which, however, is not available. Rendering may not work as expected.[0m
+Authorization required, but no authorization protocol specified
+
+[0m[1m[91m
+Loguru caught a signal: SIGSEGV
+[0m[0m[31mStack trace:
+45            0x401f7f /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/pvpython-real() [0x401f7f]
+44      0x7f0991028189 __libc_start_main + 137
+43      0x7f09910280d0 /lib/x86_64-linux-gnu/libc.so.6(+0x280d0) [0x7f09910280d0]
+42            0x4027be /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/pvpython-real() [0x4027be]
+41      0x7f098e008db4 vtkPythonInterpreter::PyMain(int, char**) + 532
+40      0x7f098a02e053 Py_Main + 67
+39      0x7f098a02dbf0 Py_RunMain + 1936
+38      0x7f098a009948 PyRun_SimpleFileExFlags + 376
+37      0x7f098a007a25 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x207a25) [0x7f098a007a25]
+36      0x7f0989fc331b PyEval_EvalCode + 27
+35      0x7f0989fc32ee PyEval_EvalCodeEx + 62
+34      0x7f0989fc32a2 _PyEval_EvalCodeWithName + 82
+33      0x7f0989fc2f09 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x1c2f09) [0x7f0989fc2f09]
+32      0x7f0989e6ddcb _PyEval_EvalFrameDefault + 22283
+31      0x7f0989e67187 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x67187) [0x7f0989e67187]
+30      0x7f0989e6dd2d _PyEval_EvalFrameDefault + 22125
+29      0x7f0989ebd2d1 _PyFunction_Vectorcall + 177
+28      0x7f0989fc2f09 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x1c2f09) [0x7f0989fc2f09]
+27      0x7f0989e6ddcb _PyEval_EvalFrameDefault + 22283
+26      0x7f0989e67187 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x67187) [0x7f0989e67187]
+25      0x7f0989e6e750 _PyEval_EvalFrameDefault + 24720
+24      0x7f0989e682a7 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x682a7) [0x7f0989e682a7]
+23      0x7f0989ec0be3 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0xc0be3) [0x7f0989ec0be3]
+22      0x7f0989ebd2d1 _PyFunction_Vectorcall + 177
+21      0x7f0989fc2f09 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x1c2f09) [0x7f0989fc2f09]
+20      0x7f0989e6a3e9 _PyEval_EvalFrameDefault + 7465
+19      0x7f0989ebd11e _PyObject_Call + 94
+18      0x7f0989f1850b /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x11850b) [0x7f0989f1850b]
+17      0x7f093b7a1094 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/lib/python3.9/site-packages/paraview/modules/vtkRemotingViews.so(+0x1a1094) [0x7f093b7a1094]
+16      0x7f0981a67023 vtkSMViewProxy::StillRender() + 307
+15      0x7f098eec3c25 vtkPVSessionBase::ExecuteStream(unsigned int, vtkClientServerStream const&, bool) + 53
+14      0x7f098eec4bfb vtkPVSessionCore::ExecuteStream(unsigned int, vtkClientServerStream const&, bool) + 59
+13      0x7f098eec4dc2 vtkPVSessionCore::ExecuteStreamInternal(vtkClientServerStream const&, bool) + 242
+12      0x7f098dc1128d vtkClientServerInterpreter::ProcessStream(vtkClientServerStream const&) + 29
+11      0x7f098dc10fee vtkClientServerInterpreter::ProcessOneMessage(vtkClientServerStream const&, int) + 1294
+10      0x7f098dc108bd vtkClientServerInterpreter::ProcessCommandInvoke(vtkClientServerStream const&, int) + 1229
+9       0x7f098dc10259 vtkClientServerInterpreter::CallCommandFunction(char const*, vtkObjectBase*, char const*, vtkClientServerStream const&, vtkClientServerStream&) + 345
+8       0x7f098fbff810 vtkPVRenderViewCommand(vtkClientServerInterpreter*, vtkObjectBase*, char const*, vtkClientServerStream const&, vtkClientServerStream&, void*) + 8288
+7       0x7f09819c29a1 vtkPVRenderView::StillRender() + 97
+6       0x7f09819ceada vtkPVRenderView::Render(bool, bool) + 2074
+5       0x7f0965be5c30 vtkXOpenGLRenderWindow::Render() + 32
+4       0x7f0965b47511 vtkOpenGLRenderWindow::Render() + 81
+3       0x7f09607496f9 vtkRenderWindow::Render() + 169
+2       0x7f096560a4bc vtkXRenderWindowInteractor::Initialize() + 204
+1       0x7f098f7068fd XSync + 29
+0       0x7f0991042910 /lib/x86_64-linux-gnu/libc.so.6(+0x42910) [0x7f0991042910][0m
+[0m[31m(   2.319s) [paraview        ]                       :0     FATL| Signal: SIGSEGV[0m
+error: exception occurred: Segmentation fault
+
+#####
+baseline-baseline-ryzen-id - Run 3
+2024-02-16 09:35:47
+#####
+Authorization required, but no authorization protocol specified
+
+Generating wavelet
+Repositioning initial camera
+Rendering first frame
+[0m[31m(   2.317s) [paraview        ]    vtkPVRenderView.cxx:2044   ERR| vtkPVRenderView (0x14af71e0): Some of the representations in this view require remote rendering which, however, is not available. Rendering may not work as expected.[0m
+Authorization required, but no authorization protocol specified
+
+[0m[1m[91m
+Loguru caught a signal: SIGSEGV
+[0m[0m[31mStack trace:
+45            0x401f7f /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/pvpython-real() [0x401f7f]
+44      0x7f46db628189 __libc_start_main + 137
+43      0x7f46db6280d0 /lib/x86_64-linux-gnu/libc.so.6(+0x280d0) [0x7f46db6280d0]
+42            0x4027be /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/pvpython-real() [0x4027be]
+41      0x7f46d8608db4 vtkPythonInterpreter::PyMain(int, char**) + 532
+40      0x7f46d462e053 Py_Main + 67
+39      0x7f46d462dbf0 Py_RunMain + 1936
+38      0x7f46d4609948 PyRun_SimpleFileExFlags + 376
+37      0x7f46d4607a25 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x207a25) [0x7f46d4607a25]
+36      0x7f46d45c331b PyEval_EvalCode + 27
+35      0x7f46d45c32ee PyEval_EvalCodeEx + 62
+34      0x7f46d45c32a2 _PyEval_EvalCodeWithName + 82
+33      0x7f46d45c2f09 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x1c2f09) [0x7f46d45c2f09]
+32      0x7f46d446ddcb _PyEval_EvalFrameDefault + 22283
+31      0x7f46d4467187 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x67187) [0x7f46d4467187]
+30      0x7f46d446dd2d _PyEval_EvalFrameDefault + 22125
+29      0x7f46d44bd2d1 _PyFunction_Vectorcall + 177
+28      0x7f46d45c2f09 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x1c2f09) [0x7f46d45c2f09]
+27      0x7f46d446ddcb _PyEval_EvalFrameDefault + 22283
+26      0x7f46d4467187 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x67187) [0x7f46d4467187]
+25      0x7f46d446e750 _PyEval_EvalFrameDefault + 24720
+24      0x7f46d44682a7 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x682a7) [0x7f46d44682a7]
+23      0x7f46d44c0be3 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0xc0be3) [0x7f46d44c0be3]
+22      0x7f46d44bd2d1 _PyFunction_Vectorcall + 177
+21      0x7f46d45c2f09 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x1c2f09) [0x7f46d45c2f09]
+20      0x7f46d446a3e9 _PyEval_EvalFrameDefault + 7465
+19      0x7f46d44bd11e _PyObject_Call + 94
+18      0x7f46d451850b /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x11850b) [0x7f46d451850b]
+17      0x7f4685da1094 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/lib/python3.9/site-packages/paraview/modules/vtkRemotingViews.so(+0x1a1094) [0x7f4685da1094]
+16      0x7f46cc067023 vtkSMViewProxy::StillRender() + 307
+15      0x7f46d94c3c25 vtkPVSessionBase::ExecuteStream(unsigned int, vtkClientServerStream const&, bool) + 53
+14      0x7f46d94c4bfb vtkPVSessionCore::ExecuteStream(unsigned int, vtkClientServerStream const&, bool) + 59
+13      0x7f46d94c4dc2 vtkPVSessionCore::ExecuteStreamInternal(vtkClientServerStream const&, bool) + 242
+12      0x7f46d821128d vtkClientServerInterpreter::ProcessStream(vtkClientServerStream const&) + 29
+11      0x7f46d8210fee vtkClientServerInterpreter::ProcessOneMessage(vtkClientServerStream const&, int) + 1294
+10      0x7f46d82108bd vtkClientServerInterpreter::ProcessCommandInvoke(vtkClientServerStream const&, int) + 1229
+9       0x7f46d8210259 vtkClientServerInterpreter::CallCommandFunction(char const*, vtkObjectBase*, char const*, vtkClientServerStream const&, vtkClientServerStream&) + 345
+8       0x7f46da1ff810 vtkPVRenderViewCommand(vtkClientServerInterpreter*, vtkObjectBase*, char const*, vtkClientServerStream const&, vtkClientServerStream&, void*) + 8288
+7       0x7f46cbfc29a1 vtkPVRenderView::StillRender() + 97
+6       0x7f46cbfceada vtkPVRenderView::Render(bool, bool) + 2074
+5       0x7f46b01e5c30 vtkXOpenGLRenderWindow::Render() + 32
+4       0x7f46b0147511 vtkOpenGLRenderWindow::Render() + 81
+3       0x7f46aad496f9 vtkRenderWindow::Render() + 169
+2       0x7f46afc0a4bc vtkXRenderWindowInteractor::Initialize() + 204
+1       0x7f46d9c528fd XSync + 29
+0       0x7f46db642910 /lib/x86_64-linux-gnu/libc.so.6(+0x42910) [0x7f46db642910][0m
+[0m[31m(   2.318s) [paraview        ]                       :0     FATL| Signal: SIGSEGV[0m
+error: exception occurred: Segmentation fault
+
+#####
+baseline-baseline-ryzen-id - Run 1
+2024-02-17 21:48:20
+#####
+Authorization required, but no authorization protocol specified
+
+Generating wavelet
+Repositioning initial camera
+Rendering first frame
+[0m[31m(   2.286s) [paraview        ]    vtkPVRenderView.cxx:2044   ERR| vtkPVRenderView (0x147e5690): Some of the representations in this view require remote rendering which, however, is not available. Rendering may not work as expected.[0m
+Authorization required, but no authorization protocol specified
+
+[0m[1m[91m
+Loguru caught a signal: SIGSEGV
+[0m[0m[31mStack trace:
+45            0x401f7f /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/pvpython-real() [0x401f7f]
+44      0x7f8ce8428189 __libc_start_main + 137
+43      0x7f8ce84280d0 /lib/x86_64-linux-gnu/libc.so.6(+0x280d0) [0x7f8ce84280d0]
+42            0x4027be /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/pvpython-real() [0x4027be]
+41      0x7f8ce5408db4 vtkPythonInterpreter::PyMain(int, char**) + 532
+40      0x7f8ce142e053 Py_Main + 67
+39      0x7f8ce142dbf0 Py_RunMain + 1936
+38      0x7f8ce1409948 PyRun_SimpleFileExFlags + 376
+37      0x7f8ce1407a25 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x207a25) [0x7f8ce1407a25]
+36      0x7f8ce13c331b PyEval_EvalCode + 27
+35      0x7f8ce13c32ee PyEval_EvalCodeEx + 62
+34      0x7f8ce13c32a2 _PyEval_EvalCodeWithName + 82
+33      0x7f8ce13c2f09 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x1c2f09) [0x7f8ce13c2f09]
+32      0x7f8ce126ddcb _PyEval_EvalFrameDefault + 22283
+31      0x7f8ce1267187 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x67187) [0x7f8ce1267187]
+30      0x7f8ce126dd2d _PyEval_EvalFrameDefault + 22125
+29      0x7f8ce12bd2d1 _PyFunction_Vectorcall + 177
+28      0x7f8ce13c2f09 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x1c2f09) [0x7f8ce13c2f09]
+27      0x7f8ce126ddcb _PyEval_EvalFrameDefault + 22283
+26      0x7f8ce1267187 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x67187) [0x7f8ce1267187]
+25      0x7f8ce126e750 _PyEval_EvalFrameDefault + 24720
+24      0x7f8ce12682a7 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x682a7) [0x7f8ce12682a7]
+23      0x7f8ce12c0be3 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0xc0be3) [0x7f8ce12c0be3]
+22      0x7f8ce12bd2d1 _PyFunction_Vectorcall + 177
+21      0x7f8ce13c2f09 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x1c2f09) [0x7f8ce13c2f09]
+20      0x7f8ce126a3e9 _PyEval_EvalFrameDefault + 7465
+19      0x7f8ce12bd11e _PyObject_Call + 94
+18      0x7f8ce131850b /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x11850b) [0x7f8ce131850b]
+17      0x7f8c92ba1094 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/lib/python3.9/site-packages/paraview/modules/vtkRemotingViews.so(+0x1a1094) [0x7f8c92ba1094]
+16      0x7f8cd8e67023 vtkSMViewProxy::StillRender() + 307
+15      0x7f8ce62c3c25 vtkPVSessionBase::ExecuteStream(unsigned int, vtkClientServerStream const&, bool) + 53
+14      0x7f8ce62c4bfb vtkPVSessionCore::ExecuteStream(unsigned int, vtkClientServerStream const&, bool) + 59
+13      0x7f8ce62c4dc2 vtkPVSessionCore::ExecuteStreamInternal(vtkClientServerStream const&, bool) + 242
+12      0x7f8ce501128d vtkClientServerInterpreter::ProcessStream(vtkClientServerStream const&) + 29
+11      0x7f8ce5010fee vtkClientServerInterpreter::ProcessOneMessage(vtkClientServerStream const&, int) + 1294
+10      0x7f8ce50108bd vtkClientServerInterpreter::ProcessCommandInvoke(vtkClientServerStream const&, int) + 1229
+9       0x7f8ce5010259 vtkClientServerInterpreter::CallCommandFunction(char const*, vtkObjectBase*, char const*, vtkClientServerStream const&, vtkClientServerStream&) + 345
+8       0x7f8ce6fff810 vtkPVRenderViewCommand(vtkClientServerInterpreter*, vtkObjectBase*, char const*, vtkClientServerStream const&, vtkClientServerStream&, void*) + 8288
+7       0x7f8cd8dc29a1 vtkPVRenderView::StillRender() + 97
+6       0x7f8cd8dceada vtkPVRenderView::Render(bool, bool) + 2074
+5       0x7f8cbcfe5c30 vtkXOpenGLRenderWindow::Render() + 32
+4       0x7f8cbcf47511 vtkOpenGLRenderWindow::Render() + 81
+3       0x7f8cb7b496f9 vtkRenderWindow::Render() + 169
+2       0x7f8cbca0a4bc vtkXRenderWindowInteractor::Initialize() + 204
+1       0x7f8ce6b068fd XSync + 29
+0       0x7f8ce8442910 /lib/x86_64-linux-gnu/libc.so.6(+0x42910) [0x7f8ce8442910][0m
+[0m[31m(   2.288s) [paraview        ]                       :0     FATL| Signal: SIGSEGV[0m
+error: exception occurred: Segmentation fault
+
+#####
+baseline-baseline-ryzen-id - Run 2
+2024-02-17 21:48:27
+#####
+Authorization required, but no authorization protocol specified
+
+Generating wavelet
+Repositioning initial camera
+Rendering first frame
+[0m[31m(   2.288s) [paraview        ]    vtkPVRenderView.cxx:2044   ERR| vtkPVRenderView (0x14a17130): Some of the representations in this view require remote rendering which, however, is not available. Rendering may not work as expected.[0m
+Authorization required, but no authorization protocol specified
+
+[0m[1m[91m
+Loguru caught a signal: SIGSEGV
+[0m[0m[31mStack trace:
+45            0x401f7f /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/pvpython-real() [0x401f7f]
+44      0x7fab4c628189 __libc_start_main + 137
+43      0x7fab4c6280d0 /lib/x86_64-linux-gnu/libc.so.6(+0x280d0) [0x7fab4c6280d0]
+42            0x4027be /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/pvpython-real() [0x4027be]
+41      0x7fab49608db4 vtkPythonInterpreter::PyMain(int, char**) + 532
+40      0x7fab4562e053 Py_Main + 67
+39      0x7fab4562dbf0 Py_RunMain + 1936
+38      0x7fab45609948 PyRun_SimpleFileExFlags + 376
+37      0x7fab45607a25 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x207a25) [0x7fab45607a25]
+36      0x7fab455c331b PyEval_EvalCode + 27
+35      0x7fab455c32ee PyEval_EvalCodeEx + 62
+34      0x7fab455c32a2 _PyEval_EvalCodeWithName + 82
+33      0x7fab455c2f09 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x1c2f09) [0x7fab455c2f09]
+32      0x7fab4546ddcb _PyEval_EvalFrameDefault + 22283
+31      0x7fab45467187 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x67187) [0x7fab45467187]
+30      0x7fab4546dd2d _PyEval_EvalFrameDefault + 22125
+29      0x7fab454bd2d1 _PyFunction_Vectorcall + 177
+28      0x7fab455c2f09 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x1c2f09) [0x7fab455c2f09]
+27      0x7fab4546ddcb _PyEval_EvalFrameDefault + 22283
+26      0x7fab45467187 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x67187) [0x7fab45467187]
+25      0x7fab4546e750 _PyEval_EvalFrameDefault + 24720
+24      0x7fab454682a7 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x682a7) [0x7fab454682a7]
+23      0x7fab454c0be3 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0xc0be3) [0x7fab454c0be3]
+22      0x7fab454bd2d1 _PyFunction_Vectorcall + 177
+21      0x7fab455c2f09 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x1c2f09) [0x7fab455c2f09]
+20      0x7fab4546a3e9 _PyEval_EvalFrameDefault + 7465
+19      0x7fab454bd11e _PyObject_Call + 94
+18      0x7fab4551850b /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x11850b) [0x7fab4551850b]
+17      0x7faaf6da1094 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/lib/python3.9/site-packages/paraview/modules/vtkRemotingViews.so(+0x1a1094) [0x7faaf6da1094]
+16      0x7fab3d067023 vtkSMViewProxy::StillRender() + 307
+15      0x7fab4a4c3c25 vtkPVSessionBase::ExecuteStream(unsigned int, vtkClientServerStream const&, bool) + 53
+14      0x7fab4a4c4bfb vtkPVSessionCore::ExecuteStream(unsigned int, vtkClientServerStream const&, bool) + 59
+13      0x7fab4a4c4dc2 vtkPVSessionCore::ExecuteStreamInternal(vtkClientServerStream const&, bool) + 242
+12      0x7fab4921128d vtkClientServerInterpreter::ProcessStream(vtkClientServerStream const&) + 29
+11      0x7fab49210fee vtkClientServerInterpreter::ProcessOneMessage(vtkClientServerStream const&, int) + 1294
+10      0x7fab492108bd vtkClientServerInterpreter::ProcessCommandInvoke(vtkClientServerStream const&, int) + 1229
+9       0x7fab49210259 vtkClientServerInterpreter::CallCommandFunction(char const*, vtkObjectBase*, char const*, vtkClientServerStream const&, vtkClientServerStream&) + 345
+8       0x7fab4b1ff810 vtkPVRenderViewCommand(vtkClientServerInterpreter*, vtkObjectBase*, char const*, vtkClientServerStream const&, vtkClientServerStream&, void*) + 8288
+7       0x7fab3cfc29a1 vtkPVRenderView::StillRender() + 97
+6       0x7fab3cfceada vtkPVRenderView::Render(bool, bool) + 2074
+5       0x7fab211e5c30 vtkXOpenGLRenderWindow::Render() + 32
+4       0x7fab21147511 vtkOpenGLRenderWindow::Render() + 81
+3       0x7fab1bd496f9 vtkRenderWindow::Render() + 169
+2       0x7fab20c0a4bc vtkXRenderWindowInteractor::Initialize() + 204
+1       0x7fab4ac528fd XSync + 29
+0       0x7fab4c642910 /lib/x86_64-linux-gnu/libc.so.6(+0x42910) [0x7fab4c642910][0m
+[0m[31m(   2.289s) [paraview        ]                       :0     FATL| Signal: SIGSEGV[0m
+error: exception occurred: Segmentation fault
+
+#####
+baseline-baseline-ryzen-id - Run 3
+2024-02-17 21:48:31
+#####
+Authorization required, but no authorization protocol specified
+
+Generating wavelet
+Repositioning initial camera
+Rendering first frame
+[0m[31m(   2.284s) [paraview        ]    vtkPVRenderView.cxx:2044   ERR| vtkPVRenderView (0x139fc1a0): Some of the representations in this view require remote rendering which, however, is not available. Rendering may not work as expected.[0m
+Authorization required, but no authorization protocol specified
+
+[0m[1m[91m
+Loguru caught a signal: SIGSEGV
+[0m[0m[31mStack trace:
+45            0x401f7f /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/pvpython-real() [0x401f7f]
+44      0x7fb068228189 __libc_start_main + 137
+43      0x7fb0682280d0 /lib/x86_64-linux-gnu/libc.so.6(+0x280d0) [0x7fb0682280d0]
+42            0x4027be /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/pvpython-real() [0x4027be]
+41      0x7fb065208db4 vtkPythonInterpreter::PyMain(int, char**) + 532
+40      0x7fb06122e053 Py_Main + 67
+39      0x7fb06122dbf0 Py_RunMain + 1936
+38      0x7fb061209948 PyRun_SimpleFileExFlags + 376
+37      0x7fb061207a25 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x207a25) [0x7fb061207a25]
+36      0x7fb0611c331b PyEval_EvalCode + 27
+35      0x7fb0611c32ee PyEval_EvalCodeEx + 62
+34      0x7fb0611c32a2 _PyEval_EvalCodeWithName + 82
+33      0x7fb0611c2f09 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x1c2f09) [0x7fb0611c2f09]
+32      0x7fb06106ddcb _PyEval_EvalFrameDefault + 22283
+31      0x7fb061067187 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x67187) [0x7fb061067187]
+30      0x7fb06106dd2d _PyEval_EvalFrameDefault + 22125
+29      0x7fb0610bd2d1 _PyFunction_Vectorcall + 177
+28      0x7fb0611c2f09 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x1c2f09) [0x7fb0611c2f09]
+27      0x7fb06106ddcb _PyEval_EvalFrameDefault + 22283
+26      0x7fb061067187 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x67187) [0x7fb061067187]
+25      0x7fb06106e750 _PyEval_EvalFrameDefault + 24720
+24      0x7fb0610682a7 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x682a7) [0x7fb0610682a7]
+23      0x7fb0610c0be3 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0xc0be3) [0x7fb0610c0be3]
+22      0x7fb0610bd2d1 _PyFunction_Vectorcall + 177
+21      0x7fb0611c2f09 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x1c2f09) [0x7fb0611c2f09]
+20      0x7fb06106a3e9 _PyEval_EvalFrameDefault + 7465
+19      0x7fb0610bd11e _PyObject_Call + 94
+18      0x7fb06111850b /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/bin/../lib/libpython3.9.so.1.0(+0x11850b) [0x7fb06111850b]
+17      0x7fb0129a1094 /home/ubuntu/.phoronix-test-suite/installed-tests/pts/paraview-1.3.0/ParaView-5.10.1-MPI-Linux-Python3.9-x86_64/lib/python3.9/site-packages/paraview/modules/vtkRemotingViews.so(+0x1a1094) [0x7fb0129a1094]
+16      0x7fb058c67023 vtkSMViewProxy::StillRender() + 307
+15      0x7fb0660c3c25 vtkPVSessionBase::ExecuteStream(unsigned int, vtkClientServerStream const&, bool) + 53
+14      0x7fb0660c4bfb vtkPVSessionCore::ExecuteStream(unsigned int, vtkClientServerStream const&, bool) + 59
+13      0x7fb0660c4dc2 vtkPVSessionCore::ExecuteStreamInternal(vtkClientServerStream const&, bool) + 242
+12      0x7fb064e1128d vtkClientServerInterpreter::ProcessStream(vtkClientServerStream const&) + 29
+11      0x7fb064e10fee vtkClientServerInterpreter::ProcessOneMessage(vtkClientServerStream const&, int) + 1294
+10      0x7fb064e108bd vtkClientServerInterpreter::ProcessCommandInvoke(vtkClientServerStream const&, int) + 1229
+9       0x7fb064e10259 vtkClientServerInterpreter::CallCommandFunction(char const*, vtkObjectBase*, char const*, vtkClientServerStream const&, vtkClientServerStream&) + 345
+8       0x7fb066dff810 vtkPVRenderViewCommand(vtkClientServerInterpreter*, vtkObjectBase*, char const*, vtkClientServerStream const&, vtkClientServerStream&, void*) + 8288
+7       0x7fb058bc29a1 vtkPVRenderView::StillRender() + 97
+6       0x7fb058bceada vtkPVRenderView::Render(bool, bool) + 2074
+5       0x7fb03cde5c30 vtkXOpenGLRenderWindow::Render() + 32
+4       0x7fb03cd47511 vtkOpenGLRenderWindow::Render() + 81
+3       0x7fb0379496f9 vtkRenderWindow::Render() + 169
+2       0x7fb03c80a4bc vtkXRenderWindowInteractor::Initialize() + 204
+1       0x7fb0668528fd XSync + 29
+0       0x7fb068242910 /lib/x86_64-linux-gnu/libc.so.6(+0x42910) [0x7fb068242910][0m
+[0m[31m(   2.285s) [paraview        ]                       :0     FATL| Signal: SIGSEGV[0m
+error: exception occurred: Segmentation fault
+

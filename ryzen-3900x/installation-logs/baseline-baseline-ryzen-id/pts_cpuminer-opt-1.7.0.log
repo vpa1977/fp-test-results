@@ -1,0 +1,333 @@
+configure.ac:15: installing './compile'
+configure.ac:4: installing './config.guess'
+configure.ac:4: installing './config.sub'
+configure.ac:9: installing './install-sh'
+configure.ac:9: installing './missing'
+Makefile.am: installing './depcomp'
+configure.ac:4: warning: The macro `AC_CANONICAL_SYSTEM' is obsolete.
+configure.ac:4: You should run autoupdate.
+./lib/autoconf/general.m4:2081: AC_CANONICAL_SYSTEM is expanded from...
+configure.ac:4: the top level
+configure.ac:15: warning: The macro `AC_PROG_CC_C99' is obsolete.
+configure.ac:15: You should run autoupdate.
+./lib/autoconf/c.m4:1659: AC_PROG_CC_C99 is expanded from...
+configure.ac:15: the top level
+configure.ac:23: warning: The macro `AC_HEADER_STDC' is obsolete.
+configure.ac:23: You should run autoupdate.
+./lib/autoconf/headers.m4:704: AC_HEADER_STDC is expanded from...
+configure.ac:23: the top level
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking whether gcc needs -traditional... no
+checking dependency style of gcc... gcc3
+checking for ranlib... ranlib
+checking for g++... g++
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking dependency style of g++... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for egrep... (cached) /usr/bin/grep -E
+checking for sys/endian.h... no
+checking for sys/param.h... yes
+checking for syslog.h... yes
+checking for sys/sysctl.h... no
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether be32dec is declared... no
+checking whether le32dec is declared... no
+checking whether be32enc is declared... no
+checking whether le32enc is declared... no
+checking whether le16dec is declared... no
+checking whether le16enc is declared... no
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for getopt_long... yes
+checking for json_loads in -ljansson... no
+checking for pthread_create in -lpthread... yes
+checking whether __uint128_t is supported... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating compat/Makefile
+config.status: creating compat/jansson/Makefile
+config.status: creating cpuminer-config.h
+config.status: executing depfiles commands
+make  all-recursive
+make[1]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cpuminer-opt-1.7.0/cpuminer-opt-23.5'
+Making all in compat
+make[2]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cpuminer-opt-1.7.0/cpuminer-opt-23.5/compat'
+Making all in jansson
+make[3]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cpuminer-opt-1.7.0/cpuminer-opt-23.5/compat/jansson'
+depbase=`echo dump.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..   -Ino/include  -O3   -Ino/include -MT dump.o -MD -MP -MF $depbase.Tpo -c -o dump.o dump.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo error.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..   -Ino/include  -O3   -Ino/include -MT error.o -MD -MP -MF $depbase.Tpo -c -o error.o error.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo hashtable.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..   -Ino/include  -O3   -Ino/include -MT hashtable.o -MD -MP -MF $depbase.Tpo -c -o hashtable.o hashtable.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo load.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..   -Ino/include  -O3   -Ino/include -MT load.o -MD -MP -MF $depbase.Tpo -c -o load.o load.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo memory.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..   -Ino/include  -O3   -Ino/include -MT memory.o -MD -MP -MF $depbase.Tpo -c -o memory.o memory.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo pack_unpack.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..   -Ino/include  -O3   -Ino/include -MT pack_unpack.o -MD -MP -MF $depbase.Tpo -c -o pack_unpack.o pack_unpack.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo strbuffer.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..   -Ino/include  -O3   -Ino/include -MT strbuffer.o -MD -MP -MF $depbase.Tpo -c -o strbuffer.o strbuffer.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo strconv.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..   -Ino/include  -O3   -Ino/include -MT strconv.o -MD -MP -MF $depbase.Tpo -c -o strconv.o strconv.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo utf.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..   -Ino/include  -O3   -Ino/include -MT utf.o -MD -MP -MF $depbase.Tpo -c -o utf.o utf.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo value.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..   -Ino/include  -O3   -Ino/include -MT value.o -MD -MP -MF $depbase.Tpo -c -o value.o value.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -I../.. -Ino/include -O3 -Ino/include -MT dump.o -MD -MP -MF .deps/dump.Tpo -c -o dump.o dump.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -I../.. -Ino/include -O3 -Ino/include -MT error.o -MD -MP -MF .deps/error.Tpo -c -o error.o error.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -I../.. -Ino/include -O3 -Ino/include -MT hashtable.o -MD -MP -MF .deps/hashtable.Tpo -c -o hashtable.o hashtable.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -I../.. -Ino/include -O3 -Ino/include -MT load.o -MD -MP -MF .deps/load.Tpo -c -o load.o load.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -I../.. -Ino/include -O3 -Ino/include -MT memory.o -MD -MP -MF .deps/memory.Tpo -c -o memory.o memory.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -I../.. -Ino/include -O3 -Ino/include -MT pack_unpack.o -MD -MP -MF .deps/pack_unpack.Tpo -c -o pack_unpack.o pack_unpack.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -I../.. -Ino/include -O3 -Ino/include -MT strbuffer.o -MD -MP -MF .deps/strbuffer.Tpo -c -o strbuffer.o strbuffer.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -I../.. -Ino/include -O3 -Ino/include -MT strconv.o -MD -MP -MF .deps/strconv.Tpo -c -o strconv.o strconv.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -I../.. -Ino/include -O3 -Ino/include -MT utf.o -MD -MP -MF .deps/utf.Tpo -c -o utf.o utf.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -I../.. -Ino/include -O3 -Ino/include -MT value.o -MD -MP -MF .deps/value.Tpo -c -o value.o value.c
+load.c: In function ‘error_set’:
+load.c:108:29: warning: ‘ near '’ directive output may be truncated writing 7 bytes into a region of size between 1 and 160 [-Wformat-truncation=]
+  108 |                          "%s near '%s'", msg_text, saved_text);
+      |                             ^~~~~~~
+In file included from /usr/include/stdio.h:964,
+                 from load.c:14:
+In function ‘snprintf’,
+    inlined from ‘error_set’ at load.c:107:17:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:54:10: note: ‘__builtin___snprintf_chk’ output 9 or more bytes (assuming 168) into a destination of size 160
+   54 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   55 |                                    __glibc_objsize (__s), __fmt,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   56 |                                    __va_arg_pack ());
+      |                                    ~~~~~~~~~~~~~~~~~
+load.c: In function ‘error_set’:
+load.c:121:29: warning: ‘ near end of file’ directive output may be truncated writing 17 bytes into a region of size between 1 and 160 [-Wformat-truncation=]
+  121 |                          "%s near end of file", msg_text);
+      |                             ^~~~~~~~~~~~~~~~~
+In function ‘snprintf’,
+    inlined from ‘error_set’ at load.c:120:17:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:54:10: note: ‘__builtin___snprintf_chk’ output between 18 and 177 bytes into a destination of size 160
+   54 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   55 |                                    __glibc_objsize (__s), __fmt,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   56 |                                    __va_arg_pack ());
+      |                                    ~~~~~~~~~~~~~~~~~
+rm -f libjansson.a
+ar cru libjansson.a dump.o error.o hashtable.o load.o memory.o pack_unpack.o strbuffer.o strconv.o utf.o value.o 
+ar: `u' modifier ignored since `D' is the default (see `U')
+ranlib libjansson.a
+make[3]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cpuminer-opt-1.7.0/cpuminer-opt-23.5/compat/jansson'
+make[3]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cpuminer-opt-1.7.0/cpuminer-opt-23.5/compat'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cpuminer-opt-1.7.0/cpuminer-opt-23.5/compat'
+make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cpuminer-opt-1.7.0/cpuminer-opt-23.5/compat'
+make[2]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cpuminer-opt-1.7.0/cpuminer-opt-23.5'
+gcc -DHAVE_CONFIG_H -I.  -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast   -O3   -Ino/include -MT cpuminer-cpu-miner.o -MD -MP -MF .deps/cpuminer-cpu-miner.Tpo -c -o cpuminer-cpu-miner.o `test -f 'cpu-miner.c' || echo './'`cpu-miner.c
+gcc -DHAVE_CONFIG_H -I.  -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast   -O3   -Ino/include -MT cpuminer-util.o -MD -MP -MF .deps/cpuminer-util.Tpo -c -o cpuminer-util.o `test -f 'util.c' || echo './'`util.c
+gcc -DHAVE_CONFIG_H -I.  -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast   -O3   -Ino/include -MT cpuminer-api.o -MD -MP -MF .deps/cpuminer-api.Tpo -c -o cpuminer-api.o `test -f 'api.c' || echo './'`api.c
+gcc -DHAVE_CONFIG_H -I.  -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast   -O3   -Ino/include -MT cpuminer-sysinfos.o -MD -MP -MF .deps/cpuminer-sysinfos.Tpo -c -o cpuminer-sysinfos.o `test -f 'sysinfos.c' || echo './'`sysinfos.c
+gcc -DHAVE_CONFIG_H -I.  -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast   -O3   -Ino/include -MT cpuminer-algo-gate-api.o -MD -MP -MF .deps/cpuminer-algo-gate-api.Tpo -c -o cpuminer-algo-gate-api.o `test -f 'algo-gate-api.c' || echo './'`algo-gate-api.c
+gcc -DHAVE_CONFIG_H -I.  -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast   -O3   -Ino/include -MT cpuminer-malloc-huge.o -MD -MP -MF .deps/cpuminer-malloc-huge.Tpo -c -o cpuminer-malloc-huge.o `test -f 'malloc-huge.c' || echo './'`malloc-huge.c
+gcc -DHAVE_CONFIG_H -I.  -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast   -O3   -Ino/include -MT algo/argon2d/cpuminer-argon2d-gate.o -MD -MP -MF algo/argon2d/.deps/cpuminer-argon2d-gate.Tpo -c -o algo/argon2d/cpuminer-argon2d-gate.o `test -f 'algo/argon2d/argon2d-gate.c' || echo './'`algo/argon2d/argon2d-gate.c
+gcc -DHAVE_CONFIG_H -I.  -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast   -O3   -Ino/include -MT algo/argon2d/blake2/cpuminer-blake2b.o -MD -MP -MF algo/argon2d/blake2/.deps/cpuminer-blake2b.Tpo -c -o algo/argon2d/blake2/cpuminer-blake2b.o `test -f 'algo/argon2d/blake2/blake2b.c' || echo './'`algo/argon2d/blake2/blake2b.c
+gcc -DHAVE_CONFIG_H -I.  -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast   -O3   -Ino/include -MT algo/argon2d/argon2d/cpuminer-argon2.o -MD -MP -MF algo/argon2d/argon2d/.deps/cpuminer-argon2.Tpo -c -o algo/argon2d/argon2d/cpuminer-argon2.o `test -f 'algo/argon2d/argon2d/argon2.c' || echo './'`algo/argon2d/argon2d/argon2.c
+gcc -DHAVE_CONFIG_H -I.  -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast   -O3   -Ino/include -MT algo/argon2d/argon2d/cpuminer-core.o -MD -MP -MF algo/argon2d/argon2d/.deps/cpuminer-core.Tpo -c -o algo/argon2d/argon2d/cpuminer-core.o `test -f 'algo/argon2d/argon2d/core.c' || echo './'`algo/argon2d/argon2d/core.c
+gcc -DHAVE_CONFIG_H -I.  -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast   -O3   -Ino/include -MT algo/argon2d/argon2d/cpuminer-opt.o -MD -MP -MF algo/argon2d/argon2d/.deps/cpuminer-opt.Tpo -c -o algo/argon2d/argon2d/cpuminer-opt.o `test -f 'algo/argon2d/argon2d/opt.c' || echo './'`algo/argon2d/argon2d/opt.c
+gcc -DHAVE_CONFIG_H -I.  -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast   -O3   -Ino/include -MT algo/argon2d/argon2d/cpuminer-argon2d_thread.o -MD -MP -MF algo/argon2d/argon2d/.deps/cpuminer-argon2d_thread.Tpo -c -o algo/argon2d/argon2d/cpuminer-argon2d_thread.o `test -f 'algo/argon2d/argon2d/argon2d_thread.c' || echo './'`algo/argon2d/argon2d/argon2d_thread.c
+gcc -DHAVE_CONFIG_H -I.  -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast   -O3   -Ino/include -MT algo/argon2d/argon2d/cpuminer-encoding.o -MD -MP -MF algo/argon2d/argon2d/.deps/cpuminer-encoding.Tpo -c -o algo/argon2d/argon2d/cpuminer-encoding.o `test -f 'algo/argon2d/argon2d/encoding.c' || echo './'`algo/argon2d/argon2d/encoding.c
+gcc -DHAVE_CONFIG_H -I.  -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast   -O3   -Ino/include -MT algo/blake/cpuminer-sph_blake.o -MD -MP -MF algo/blake/.deps/cpuminer-sph_blake.Tpo -c -o algo/blake/cpuminer-sph_blake.o `test -f 'algo/blake/sph_blake.c' || echo './'`algo/blake/sph_blake.c
+gcc -DHAVE_CONFIG_H -I.  -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast   -O3   -Ino/include -MT algo/blake/cpuminer-blake256-hash.o -MD -MP -MF algo/blake/.deps/cpuminer-blake256-hash.Tpo -c -o algo/blake/cpuminer-blake256-hash.o `test -f 'algo/blake/blake256-hash.c' || echo './'`algo/blake/blake256-hash.c
+gcc -DHAVE_CONFIG_H -I.  -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast   -O3   -Ino/include -MT algo/blake/cpuminer-blake512-hash.o -MD -MP -MF algo/blake/.deps/cpuminer-blake512-hash.Tpo -c -o algo/blake/cpuminer-blake512-hash.o `test -f 'algo/blake/blake512-hash.c' || echo './'`algo/blake/blake512-hash.c
+gcc -DHAVE_CONFIG_H -I.  -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast   -O3   -Ino/include -MT algo/blake/cpuminer-blake-gate.o -MD -MP -MF algo/blake/.deps/cpuminer-blake-gate.Tpo -c -o algo/blake/cpuminer-blake-gate.o `test -f 'algo/blake/blake-gate.c' || echo './'`algo/blake/blake-gate.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast -O3 -Ino/include -MT cpuminer-cpu-miner.o -MD -MP -MF .deps/cpuminer-cpu-miner.Tpo -c -o cpuminer-cpu-miner.o cpu-miner.c
+gcc -DHAVE_CONFIG_H -I.  -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast   -O3   -Ino/include -MT algo/blake/cpuminer-blake.o -MD -MP -MF algo/blake/.deps/cpuminer-blake.Tpo -c -o algo/blake/cpuminer-blake.o `test -f 'algo/blake/blake.c' || echo './'`algo/blake/blake.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast -O3 -Ino/include -MT cpuminer-util.o -MD -MP -MF .deps/cpuminer-util.Tpo -c -o cpuminer-util.o util.c
+gcc -DHAVE_CONFIG_H -I.  -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast   -O3   -Ino/include -MT algo/blake/cpuminer-blake-4way.o -MD -MP -MF algo/blake/.deps/cpuminer-blake-4way.Tpo -c -o algo/blake/cpuminer-blake-4way.o `test -f 'algo/blake/blake-4way.c' || echo './'`algo/blake/blake-4way.c
+gcc -DHAVE_CONFIG_H -I.  -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast   -O3   -Ino/include -MT algo/blake/cpuminer-sph_blake2b.o -MD -MP -MF algo/blake/.deps/cpuminer-sph_blake2b.Tpo -c -o algo/blake/cpuminer-sph_blake2b.o `test -f 'algo/blake/sph_blake2b.c' || echo './'`algo/blake/sph_blake2b.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast -O3 -Ino/include -MT cpuminer-sysinfos.o -MD -MP -MF .deps/cpuminer-sysinfos.Tpo -c -o cpuminer-sysinfos.o sysinfos.c
+gcc -DHAVE_CONFIG_H -I.  -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast   -O3   -Ino/include -MT algo/blake/cpuminer-sph-blake2s.o -MD -MP -MF algo/blake/.deps/cpuminer-sph-blake2s.Tpo -c -o algo/blake/cpuminer-sph-blake2s.o `test -f 'algo/blake/sph-blake2s.c' || echo './'`algo/blake/sph-blake2s.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast -O3 -Ino/include -MT cpuminer-algo-gate-api.o -MD -MP -MF .deps/cpuminer-algo-gate-api.Tpo -c -o cpuminer-algo-gate-api.o algo-gate-api.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast -O3 -Ino/include -MT cpuminer-api.o -MD -MP -MF .deps/cpuminer-api.Tpo -c -o cpuminer-api.o api.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast -O3 -Ino/include -MT cpuminer-malloc-huge.o -MD -MP -MF .deps/cpuminer-malloc-huge.Tpo -c -o cpuminer-malloc-huge.o malloc-huge.c
+gcc -DHAVE_CONFIG_H -I.  -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast   -O3   -Ino/include -MT algo/blake/cpuminer-blake2s-hash.o -MD -MP -MF algo/blake/.deps/cpuminer-blake2s-hash.Tpo -c -o algo/blake/cpuminer-blake2s-hash.o `test -f 'algo/blake/blake2s-hash.c' || echo './'`algo/blake/blake2s-hash.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast -O3 -Ino/include -MT algo/argon2d/cpuminer-argon2d-gate.o -MD -MP -MF algo/argon2d/.deps/cpuminer-argon2d-gate.Tpo -c -o algo/argon2d/cpuminer-argon2d-gate.o algo/argon2d/argon2d-gate.c
+gcc -DHAVE_CONFIG_H -I.  -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast   -O3   -Ino/include -MT algo/blake/cpuminer-blake2s.o -MD -MP -MF algo/blake/.deps/cpuminer-blake2s.Tpo -c -o algo/blake/cpuminer-blake2s.o `test -f 'algo/blake/blake2s.c' || echo './'`algo/blake/blake2s.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast -O3 -Ino/include -MT algo/argon2d/argon2d/cpuminer-argon2.o -MD -MP -MF algo/argon2d/argon2d/.deps/cpuminer-argon2.Tpo -c -o algo/argon2d/argon2d/cpuminer-argon2.o algo/argon2d/argon2d/argon2.c
+gcc -DHAVE_CONFIG_H -I.  -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast   -O3   -Ino/include -MT algo/blake/cpuminer-blake2b-hash.o -MD -MP -MF algo/blake/.deps/cpuminer-blake2b-hash.Tpo -c -o algo/blake/cpuminer-blake2b-hash.o `test -f 'algo/blake/blake2b-hash.c' || echo './'`algo/blake/blake2b-hash.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast -O3 -Ino/include -MT algo/argon2d/blake2/cpuminer-blake2b.o -MD -MP -MF algo/argon2d/blake2/.deps/cpuminer-blake2b.Tpo -c -o algo/argon2d/blake2/cpuminer-blake2b.o algo/argon2d/blake2/blake2b.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast -O3 -Ino/include -MT algo/argon2d/argon2d/cpuminer-core.o -MD -MP -MF algo/argon2d/argon2d/.deps/cpuminer-core.Tpo -c -o algo/argon2d/argon2d/cpuminer-core.o algo/argon2d/argon2d/core.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast -O3 -Ino/include -MT algo/argon2d/argon2d/cpuminer-argon2d_thread.o -MD -MP -MF algo/argon2d/argon2d/.deps/cpuminer-argon2d_thread.Tpo -c -o algo/argon2d/argon2d/cpuminer-argon2d_thread.o algo/argon2d/argon2d/argon2d_thread.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast -O3 -Ino/include -MT algo/argon2d/argon2d/cpuminer-opt.o -MD -MP -MF algo/argon2d/argon2d/.deps/cpuminer-opt.Tpo -c -o algo/argon2d/argon2d/cpuminer-opt.o algo/argon2d/argon2d/opt.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast -O3 -Ino/include -MT algo/argon2d/argon2d/cpuminer-encoding.o -MD -MP -MF algo/argon2d/argon2d/.deps/cpuminer-encoding.Tpo -c -o algo/argon2d/argon2d/cpuminer-encoding.o algo/argon2d/argon2d/encoding.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast -O3 -Ino/include -MT algo/blake/cpuminer-sph_blake.o -MD -MP -MF algo/blake/.deps/cpuminer-sph_blake.Tpo -c -o algo/blake/cpuminer-sph_blake.o algo/blake/sph_blake.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast -O3 -Ino/include -MT algo/blake/cpuminer-blake256-hash.o -MD -MP -MF algo/blake/.deps/cpuminer-blake256-hash.Tpo -c -o algo/blake/cpuminer-blake256-hash.o algo/blake/blake256-hash.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast -O3 -Ino/include -MT algo/blake/cpuminer-blake512-hash.o -MD -MP -MF algo/blake/.deps/cpuminer-blake512-hash.Tpo -c -o algo/blake/cpuminer-blake512-hash.o algo/blake/blake512-hash.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast -O3 -Ino/include -MT algo/blake/cpuminer-blake-gate.o -MD -MP -MF algo/blake/.deps/cpuminer-blake-gate.Tpo -c -o algo/blake/cpuminer-blake-gate.o algo/blake/blake-gate.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast -O3 -Ino/include -MT algo/blake/cpuminer-blake.o -MD -MP -MF algo/blake/.deps/cpuminer-blake.Tpo -c -o algo/blake/cpuminer-blake.o algo/blake/blake.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast -O3 -Ino/include -MT algo/blake/cpuminer-blake-4way.o -MD -MP -MF algo/blake/.deps/cpuminer-blake-4way.Tpo -c -o algo/blake/cpuminer-blake-4way.o algo/blake/blake-4way.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast -O3 -Ino/include -MT algo/blake/cpuminer-sph_blake2b.o -MD -MP -MF algo/blake/.deps/cpuminer-sph_blake2b.Tpo -c -o algo/blake/cpuminer-sph_blake2b.o algo/blake/sph_blake2b.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast -O3 -Ino/include -MT algo/blake/cpuminer-sph-blake2s.o -MD -MP -MF algo/blake/.deps/cpuminer-sph-blake2s.Tpo -c -o algo/blake/cpuminer-sph-blake2s.o algo/blake/sph-blake2s.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast -O3 -Ino/include -MT algo/blake/cpuminer-blake2s-hash.o -MD -MP -MF algo/blake/.deps/cpuminer-blake2s-hash.Tpo -c -o algo/blake/cpuminer-blake2s-hash.o algo/blake/blake2s-hash.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast -O3 -Ino/include -MT algo/blake/cpuminer-blake2s.o -MD -MP -MF algo/blake/.deps/cpuminer-blake2s.Tpo -c -o algo/blake/cpuminer-blake2s.o algo/blake/blake2s.c
+/usr/bin/gcc-13 -DHAVE_CONFIG_H -I. -Ino/include -fno-strict-aliasing -I./compat/jansson -I. -Ino/include -Wno-pointer-sign -Wno-pointer-to-int-cast -O3 -Ino/include -MT algo/blake/cpuminer-blake2b-hash.o -MD -MP -MF algo/blake/.deps/cpuminer-blake2b-hash.Tpo -c -o algo/blake/cpuminer-blake2b-hash.o algo/blake/blake2b-hash.c
+In file included from sysinfos.c:16:
+miner.h:52:10: fatal error: curl/curl.h: No such file or directory
+   52 | #include <curl/curl.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [Makefile:2728: cpuminer-sysinfos.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from ./algo-gate-api.h:7,
+                 from algo/argon2d/argon2d-gate.h:4,
+                 from algo/argon2d/argon2d-gate.c:1:
+./miner.h:52:10: fatal error: curl/curl.h: No such file or directory
+   52 | #include <curl/curl.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+In file included from ./algo-gate-api.h:7,
+                 from algo/blake/blake-gate.h:4,
+                 from algo/blake/blake-gate.c:1:
+./miner.h:52:10: fatal error: curl/curl.h: No such file or directory
+   52 | #include <curl/curl.h>
+      |          ^~~~~~~~~~~~~
+make[2]: *** [Makefile:2770: algo/argon2d/cpuminer-argon2d-gate.o] Error 1
+compilation terminated.
+In file included from ./algo-gate-api.h:7,
+                 from algo/blake/blake-gate.h:4,
+                 from algo/blake/blake-4way.c:1:
+./miner.h:52:10: fatal error: curl/curl.h: No such file or directory
+   52 | #include <curl/curl.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+In file included from malloc-huge.c:2:
+miner.h:52:10: fatal error: curl/curl.h: No such file or directory
+   52 | #include <curl/curl.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+In file included from ./algo-gate-api.h:7,
+                 from algo/blake/blake.c:1:
+./miner.h:52:10: fatal error: curl/curl.h: No such file or directory
+   52 | #include <curl/curl.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+In file included from algo/argon2d/argon2d/core.h:21,
+                 from algo/argon2d/argon2d/core.c:33:
+./miner.h:52:10: fatal error: curl/curl.h: No such file or directory
+   52 | #include <curl/curl.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+In file included from algo/argon2d/argon2d/core.h:21,
+                 from algo/argon2d/argon2d/opt.c:23:
+./miner.h:52:10: fatal error: curl/curl.h: No such file or directory
+   52 | #include <curl/curl.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+In file included from algo/argon2d/argon2d/core.h:21,
+                 from algo/argon2d/argon2d/argon2.c:24:
+./miner.h:52:10: fatal error: curl/curl.h: No such file or directory
+   52 | #include <curl/curl.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+In file included from ./algo-gate-api.h:7,
+                 from algo/blake/blake2s.c:1:
+./miner.h:52:10: fatal error: curl/curl.h: No such file or directory
+   52 | #include <curl/curl.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [Makefile:2938: algo/blake/cpuminer-blake-4way.o] Error 1
+make[2]: *** [Makefile:2910: algo/blake/cpuminer-blake-gate.o] Error 1
+make[2]: *** [Makefile:2924: algo/blake/cpuminer-blake.o] Error 1
+make[2]: *** [Makefile:2756: cpuminer-malloc-huge.o] Error 1
+In file included from algo/argon2d/argon2d/core.h:21,
+                 from algo/argon2d/argon2d/encoding.c:23:
+./miner.h:52:10: fatal error: curl/curl.h: No such file or directory
+   52 | #include <curl/curl.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [Makefile:2826: algo/argon2d/argon2d/cpuminer-opt.o] Error 1
+mv -f algo/argon2d/argon2d/.deps/cpuminer-argon2d_thread.Tpo algo/argon2d/argon2d/.deps/cpuminer-argon2d_thread.Po
+make[2]: *** [Makefile:2812: algo/argon2d/argon2d/cpuminer-core.o] Error 1
+make[2]: *** [Makefile:2798: algo/argon2d/argon2d/cpuminer-argon2.o] Error 1
+make[2]: *** [Makefile:2994: algo/blake/cpuminer-blake2s.o] Error 1
+In file included from algo-gate-api.h:7,
+                 from algo-gate-api.c:18:
+miner.h:52:10: fatal error: curl/curl.h: No such file or directory
+   52 | #include <curl/curl.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+util.c:26:10: fatal error: curl/curl.h: No such file or directory
+   26 | #include <curl/curl.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [Makefile:2854: algo/argon2d/argon2d/cpuminer-encoding.o] Error 1
+make[2]: *** [Makefile:2742: cpuminer-algo-gate-api.o] Error 1
+cpu-miner.c:37:10: fatal error: curl/curl.h: No such file or directory
+   37 | #include <curl/curl.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [Makefile:2700: cpuminer-util.o] Error 1
+make[2]: *** [Makefile:2686: cpuminer-cpu-miner.o] Error 1
+In file included from api.c:34:
+miner.h:52:10: fatal error: curl/curl.h: No such file or directory
+   52 | #include <curl/curl.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [Makefile:2714: cpuminer-api.o] Error 1
+mv -f algo/argon2d/blake2/.deps/cpuminer-blake2b.Tpo algo/argon2d/blake2/.deps/cpuminer-blake2b.Po
+mv -f algo/blake/.deps/cpuminer-blake2b-hash.Tpo algo/blake/.deps/cpuminer-blake2b-hash.Po
+mv -f algo/blake/.deps/cpuminer-sph_blake2b.Tpo algo/blake/.deps/cpuminer-sph_blake2b.Po
+mv -f algo/blake/.deps/cpuminer-sph-blake2s.Tpo algo/blake/.deps/cpuminer-sph-blake2s.Po
+mv -f algo/blake/.deps/cpuminer-blake2s-hash.Tpo algo/blake/.deps/cpuminer-blake2s-hash.Po
+mv -f algo/blake/.deps/cpuminer-sph_blake.Tpo algo/blake/.deps/cpuminer-sph_blake.Po
+mv -f algo/blake/.deps/cpuminer-blake256-hash.Tpo algo/blake/.deps/cpuminer-blake256-hash.Po
+mv -f algo/blake/.deps/cpuminer-blake512-hash.Tpo algo/blake/.deps/cpuminer-blake512-hash.Po
+make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cpuminer-opt-1.7.0/cpuminer-opt-23.5'
+make[1]: *** [Makefile:6433: all-recursive] Error 1
+make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cpuminer-opt-1.7.0/cpuminer-opt-23.5'
+make: *** [Makefile:1223: all] Error 2

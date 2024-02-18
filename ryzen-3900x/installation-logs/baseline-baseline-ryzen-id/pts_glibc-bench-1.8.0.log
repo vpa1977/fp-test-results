@@ -1,0 +1,45 @@
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for gcc... gcc
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking whether g++ can link programs... yes
+checking for sysdeps preconfigure fragments... aarch64 alpha arc arm csky hppa i386 loongarch m68k microblaze checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+mips nios2 or1k powerpc riscv s390 sh checking for grep that handles long lines and -e... (cached) /usr/bin/grep
+checking for egrep... (cached) /usr/bin/grep -E
+sparc x86_64 checking whether gcc compiles in -mx32 mode by default... no
+
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether ln -s works... yes
+checking for /usr/bin/gcc-13... /usr/bin/gcc-13 -print-prog-name=ld
+ld
+checking version of /usr/bin/gcc-13 -print-prog-name=ld
+ld... v. ?.??, bad
+checking for gnumake... no
+checking for gmake... gmake
+checking version of gmake... 4.3, ok
+checking for gnumsgfmt... no
+checking for gmsgfmt... no
+checking for msgfmt... no
+checking for makeinfo... makeinfo
+checking version of makeinfo... 7.0.3, ok
+checking for sed... sed
+checking version of sed... 4.9, ok
+checking for gawk... gawk
+checking version of gawk... 5.2.1, ok
+checking for bison... bison
+checking version of bison... 3.8.2, ok
+checking if gcc is sufficient to build libc... yes
+checking for python3... python3
+checking version of python3... 3.11.6, ok
+configure: error: 
+*** These critical programs are missing or too old: GNU ld
+*** Check the INSTALL file for required versions.
+configure: WARNING: cache variable ac_cv_prog_LD contains a newline
+make: *** No targets specified and no makefile found.  Stop.
+make: *** No rule to make target 'bench-build'.  Stop.

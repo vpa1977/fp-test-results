@@ -1,0 +1,487 @@
+MPI is detected and it appears to be OpenMPI
+Compiling with 32 processes for target native.
+==================== Finding GCC from system paths ====================
+path to gcc is /tmp/pts-compiler-mask-cp2k1.4.1/gcc
+path to g++ is /tmp/pts-compiler-mask-cp2k1.4.1/g++
+path to gfortran is /tmp/pts-compiler-mask-cp2k1.4.1/gfortran
+Found include directory /usr/include
+Step gcc took 0.00 seconds.
+Step intel took 0.00 seconds.
+==================== Getting proc arch info using OpenBLAS tools ====================
+OpenBLAS-0.3.21.tar.gz: OK
+Checksum of OpenBLAS-0.3.21.tar.gz Ok
+awk: fatal: cannot open file `-v' for reading: No such file or directory
+awk: fatal: cannot open file `-v' for reading: No such file or directory
+/usr/bin/ld: warning: /tmp/cc8q3yfy.o: missing .note.GNU-stack section implies executable stack
+/usr/bin/ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker
+awk: fatal: cannot open file `-v' for reading: No such file or directory
+expr: syntax error: unexpected argument ‘-dumpversion’
+expr: syntax error: unexpected argument ‘-dumpversion’
+expr: syntax error: unexpected argument ‘-dumpversion’
+expr: syntax error: unexpected argument ‘-dumpversion’
+expr: syntax error: unexpected argument ‘-dumpversion’
+expr: syntax error: unexpected argument ‘-dumpversion’
+expr: syntax error: unexpected argument ‘-dumpversion’
+expr: syntax error: unexpected argument ‘-dumpversion’
+expr: syntax error: unexpected argument ‘-dumpversion’
+expr: syntax error: unexpected argument ‘-dumpversion’
+expr: syntax error: unexpected argument ‘-dumpversion’
+expr: syntax error: unexpected argument ‘-dumpversion’
+OpenBLAS detected LIBCORE = zen
+OpenBLAS detected ARCH    = x86_64
+==================== Finding CMake from system paths ====================
+path to cmake is /usr/bin/cmake
+Step cmake took 0.00 seconds.
+==================== Finding OpenMPI from system paths ====================
+path to mpirun is /usr/bin/mpirun
+path to mpicc is /usr/bin/mpicc
+path to mpic++ is /usr/bin/mpic++
+path to mpif90 is /usr/bin/mpif90
+Step openmpi took 0.00 seconds.
+==================== Installing OpenBLAS ====================
+OpenBLAS-0.3.21.tar.gz is found
+Installing from scratch into /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/openblas-0.3.21
+Step openblas took 101.00 seconds.
+==================== Installing FFTW ====================
+fftw-3.3.10.tar.gz: OK
+Checksum of fftw-3.3.10.tar.gz Ok
+Installing from scratch into /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/fftw-3.3.10
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if /tmp/pts-compiler-mask-cp2k1.4.1/gcc supports -fno-rtti -fno-exceptions... no
+checking for /tmp/pts-compiler-mask-cp2k1.4.1/gcc option to produce PIC... -fPIC -DPIC
+checking if /tmp/pts-compiler-mask-cp2k1.4.1/gcc PIC flag -fPIC -DPIC works... yes
+checking if /tmp/pts-compiler-mask-cp2k1.4.1/gcc static flag -static works... yes
+checking if /tmp/pts-compiler-mask-cp2k1.4.1/gcc supports -c -o file.o... yes
+checking if /tmp/pts-compiler-mask-cp2k1.4.1/gcc supports -c -o file.o... (cached) yes
+checking whether the /tmp/pts-compiler-mask-cp2k1.4.1/gcc linker (/usr/bin/gcc-13 -print-prog-name=ld
+ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... unsupported
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking for ranlib... (cached) ranlib
+checking for ocamlbuild... no
+checking for mpicc... /usr/bin/mpicc
+checking for MPI_Init... yes
+checking for mpi.h... yes
+checking for mpirun... /usr/bin/mpirun
+checking size of MPI_Fint... 4
+checking whether C compiler accepts -mavx... yes
+checking whether C compiler accepts -mavx2... yes
+checking whether C compiler accepts -mfma... yes
+checking for ANSI C header files... (cached) yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking fenv.h usability... yes
+checking fenv.h presence... yes
+checking for fenv.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking altivec.h usability... no
+checking altivec.h presence... no
+checking for altivec.h... no
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for size_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for long double... yes
+checking for hrtime_t... no
+checking size of int... 4
+checking size of unsigned int... 4
+checking size of long... 8
+checking size of unsigned long... 8
+checking size of long long... 8
+checking size of unsigned long long... 8
+checking size of size_t... 8
+checking size of ptrdiff_t... 8
+checking for ptrdiff_t... yes
+checking for uintptr_t... yes
+checking size of float... 4
+checking size of double... 8
+checking size of fftw_r2r_kind... 4
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for working strtod... yes
+checking for vprintf... yes
+checking for _doprnt... no
+checking for sin in -lm... yes
+checking for BSDgettimeofday... no
+checking for gettimeofday... yes
+checking for gethrtime... no
+checking for read_real_time... no
+checking for time_base_to_time... no
+checking for drand48... yes
+checking for sqrt... yes
+checking for memset... yes
+checking for posix_memalign... yes
+checking for memalign... yes
+checking for _mm_malloc... no
+checking for _mm_free... no
+checking for clock_gettime... yes
+checking for mach_absolute_time... no
+checking for sysctl... no
+checking for abort... yes
+checking for sinl... yes
+checking for cosl... yes
+checking for snprintf... yes
+checking for memmove... yes
+checking for strchr... yes
+checking for getpagesize... yes
+checking whether sinl is declared... yes
+checking whether cosl is declared... yes
+checking whether sinq is declared... no
+checking whether cosq is declared... no
+checking whether memalign is declared... yes
+checking whether drand48 is declared... yes
+checking whether srand48 is declared... yes
+checking whether posix_memalign is declared... yes
+checking for _rtc intrinsic... no
+checking for isnan... yes
+checking whether C compiler accepts -mpreferred-stack-boundary=4... yes
+checking whether the stack is at least 8-byte aligned by gcc... checking whether C compiler accepts -malign-double... yes
+yes
+checking whether we are using the GNU Fortran 77 compiler... yes
+checking whether /tmp/pts-compiler-mask-cp2k1.4.1/gfortran accepts -g... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking for /tmp/pts-compiler-mask-cp2k1.4.1/gfortran option to produce PIC... -fPIC
+checking if /tmp/pts-compiler-mask-cp2k1.4.1/gfortran PIC flag -fPIC works... yes
+checking if /tmp/pts-compiler-mask-cp2k1.4.1/gfortran static flag -static works... yes
+checking if /tmp/pts-compiler-mask-cp2k1.4.1/gfortran supports -c -o file.o... yes
+checking if /tmp/pts-compiler-mask-cp2k1.4.1/gfortran supports -c -o file.o... (cached) yes
+checking whether the /tmp/pts-compiler-mask-cp2k1.4.1/gfortran linker (/usr/bin/gcc-13 -print-prog-name=ld
+ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... unsupported
+checking how to get verbose linking output from /tmp/pts-compiler-mask-cp2k1.4.1/gfortran... -v
+checking for Fortran 77 libraries of /tmp/pts-compiler-mask-cp2k1.4.1/gfortran...  -L/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/openblas-0.3.21/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/openblas-0.3.21/lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -lgfortran -lm -lgomp -lquadmath -lpthread
+checking for dummy main to link with Fortran 77 libraries... none
+checking for Fortran 77 name-mangling scheme... lower case, underscore, no extra underscore
+checking for OpenMP flag of C compiler... -fopenmp
+checking whether a cycle counter is available... yes
+configure: WARNING: cache variable lt_cv_path_LD contains a newline
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating support/Makefile
+config.status: creating genfft/Makefile
+config.status: creating kernel/Makefile
+config.status: creating simd-support/Makefile
+config.status: creating dft/Makefile
+config.status: creating dft/scalar/Makefile
+config.status: creating dft/scalar/codelets/Makefile
+config.status: creating dft/simd/Makefile
+config.status: creating dft/simd/common/Makefile
+config.status: creating dft/simd/sse2/Makefile
+config.status: creating dft/simd/avx/Makefile
+config.status: creating dft/simd/avx-128-fma/Makefile
+config.status: creating dft/simd/avx2/Makefile
+config.status: creating dft/simd/avx2-128/Makefile
+config.status: creating dft/simd/avx512/Makefile
+config.status: creating dft/simd/kcvi/Makefile
+config.status: creating dft/simd/altivec/Makefile
+config.status: creating dft/simd/vsx/Makefile
+config.status: creating dft/simd/neon/Makefile
+config.status: creating dft/simd/generic-simd128/Makefile
+config.status: creating dft/simd/generic-simd256/Makefile
+config.status: creating rdft/Makefile
+config.status: creating rdft/scalar/Makefile
+config.status: creating rdft/scalar/r2cf/Makefile
+config.status: creating rdft/scalar/r2cb/Makefile
+config.status: creating rdft/scalar/r2r/Makefile
+config.status: creating rdft/simd/Makefile
+config.status: creating rdft/simd/common/Makefile
+config.status: creating rdft/simd/sse2/Makefile
+config.status: creating rdft/simd/avx/Makefile
+config.status: creating rdft/simd/avx-128-fma/Makefile
+config.status: creating rdft/simd/avx2/Makefile
+config.status: creating rdft/simd/avx2-128/Makefile
+config.status: creating rdft/simd/avx512/Makefile
+config.status: creating rdft/simd/kcvi/Makefile
+config.status: creating rdft/simd/altivec/Makefile
+config.status: creating rdft/simd/vsx/Makefile
+config.status: creating rdft/simd/neon/Makefile
+config.status: creating rdft/simd/generic-simd128/Makefile
+config.status: creating rdft/simd/generic-simd256/Makefile
+config.status: creating reodft/Makefile
+config.status: creating threads/Makefile
+config.status: creating api/Makefile
+config.status: creating mpi/Makefile
+config.status: creating libbench2/Makefile
+config.status: creating tests/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/FAQ/Makefile
+config.status: creating tools/Makefile
+config.status: creating tools/fftw_wisdom.1
+config.status: creating tools/fftw-wisdom-to-conf
+config.status: creating m4/Makefile
+config.status: creating fftw.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: error: in `/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/fftw-3.3.10':
+config.status: error: Something went wrong bootstrapping makefile fragments
+    for automatic dependency tracking.  If GNU make was not used, consider
+    re-running the configure script with MAKE="gmake" (or whatever is
+    necessary).  You can also try re-running configure with the
+    '--disable-dependency-tracking' option to at least be able to build
+    the package (albeit without support for automatic dependency tracking).
+See `config.log' for more details
+configure: WARNING: cache variable lt_cv_path_LD contains a newline
+Makefile:341: *** missing separator.  Stop.
+Makefile:341: *** missing separator.  Stop.
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/scripts/tool_kit.sh: line 662: /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/fftw-3.3.10/install_successful: No such file or directory
+MPI is detected and it appears to be OpenMPI
+Compiling with 32 processes for target native.
+==================== Finding GCC from system paths ====================
+path to gcc is /tmp/pts-compiler-mask-cp2k1.4.1/gcc
+path to g++ is /tmp/pts-compiler-mask-cp2k1.4.1/g++
+path to gfortran is /tmp/pts-compiler-mask-cp2k1.4.1/gfortran
+Found include directory /usr/include
+Step gcc took 0.00 seconds.
+Step intel took 0.00 seconds.
+==================== Getting proc arch info using OpenBLAS tools ====================
+OpenBLAS detected LIBCORE = zen
+OpenBLAS detected ARCH    = x86_64
+==================== Finding CMake from system paths ====================
+path to cmake is /usr/bin/cmake
+Step cmake took 0.00 seconds.
+==================== Finding OpenMPI from system paths ====================
+path to mpirun is /usr/bin/mpirun
+path to mpicc is /usr/bin/mpicc
+path to mpic++ is /usr/bin/mpic++
+path to mpif90 is /usr/bin/mpif90
+Step openmpi took 0.00 seconds.
+==================== Finding LAPACK from system paths ====================
+libopenblas is found in ld search path
+Step openblas took 0.00 seconds.
+==================== Installing FFTW ====================
+fftw-3.3.10.tar.gz is found
+Installing from scratch into /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/fftw-3.3.10
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if /tmp/pts-compiler-mask-cp2k1.4.1/gcc supports -fno-rtti -fno-exceptions... no
+checking for /tmp/pts-compiler-mask-cp2k1.4.1/gcc option to produce PIC... -fPIC -DPIC
+checking if /tmp/pts-compiler-mask-cp2k1.4.1/gcc PIC flag -fPIC -DPIC works... yes
+checking if /tmp/pts-compiler-mask-cp2k1.4.1/gcc static flag -static works... yes
+checking if /tmp/pts-compiler-mask-cp2k1.4.1/gcc supports -c -o file.o... yes
+checking if /tmp/pts-compiler-mask-cp2k1.4.1/gcc supports -c -o file.o... (cached) yes
+checking whether the /tmp/pts-compiler-mask-cp2k1.4.1/gcc linker (/usr/bin/gcc-13 -print-prog-name=ld
+ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... unsupported
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking for ranlib... (cached) ranlib
+checking for ocamlbuild... no
+checking for mpicc... /usr/bin/mpicc
+checking for MPI_Init... yes
+checking for mpi.h... yes
+checking for mpirun... /usr/bin/mpirun
+checking size of MPI_Fint... 4
+checking whether C compiler accepts -mavx... yes
+checking whether C compiler accepts -mavx2... yes
+checking whether C compiler accepts -mfma... yes
+checking for ANSI C header files... (cached) yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking fenv.h usability... yes
+checking fenv.h presence... yes
+checking for fenv.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking altivec.h usability... no
+checking altivec.h presence... no
+checking for altivec.h... no
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for size_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for long double... yes
+checking for hrtime_t... no
+checking size of int... 4
+checking size of unsigned int... 4
+checking size of long... 8
+checking size of unsigned long... 8
+checking size of long long... 8
+checking size of unsigned long long... 8
+checking size of size_t... 8
+checking size of ptrdiff_t... 8
+checking for ptrdiff_t... yes
+checking for uintptr_t... yes
+checking size of float... 4
+checking size of double... 8
+checking size of fftw_r2r_kind... 4
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for working strtod... yes
+checking for vprintf... yes
+checking for _doprnt... no
+checking for sin in -lm... yes
+checking for BSDgettimeofday... no
+checking for gettimeofday... yes
+checking for gethrtime... no
+checking for read_real_time... no
+checking for time_base_to_time... no
+checking for drand48... yes
+checking for sqrt... yes
+checking for memset... yes
+checking for posix_memalign... yes
+checking for memalign... yes
+checking for _mm_malloc... no
+checking for _mm_free... no
+checking for clock_gettime... yes
+checking for mach_absolute_time... no
+checking for sysctl... no
+checking for abort... yes
+checking for sinl... yes
+checking for cosl... yes
+checking for snprintf... yes
+checking for memmove... yes
+checking for strchr... yes
+checking for getpagesize... yes
+checking whether sinl is declared... yes
+checking whether cosl is declared... yes
+checking whether sinq is declared... no
+checking whether cosq is declared... no
+checking whether memalign is declared... yes
+checking whether drand48 is declared... yes
+checking whether srand48 is declared... yes
+checking whether posix_memalign is declared... yes
+checking for _rtc intrinsic... no
+checking for isnan... yes
+checking whether C compiler accepts -mpreferred-stack-boundary=4... yes
+checking whether the stack is at least 8-byte aligned by gcc... checking whether C compiler accepts -malign-double... yes
+yes
+checking whether we are using the GNU Fortran 77 compiler... yes
+checking whether /tmp/pts-compiler-mask-cp2k1.4.1/gfortran accepts -g... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking for /tmp/pts-compiler-mask-cp2k1.4.1/gfortran option to produce PIC... -fPIC
+checking if /tmp/pts-compiler-mask-cp2k1.4.1/gfortran PIC flag -fPIC works... yes
+checking if /tmp/pts-compiler-mask-cp2k1.4.1/gfortran static flag -static works... yes
+checking if /tmp/pts-compiler-mask-cp2k1.4.1/gfortran supports -c -o file.o... yes
+checking if /tmp/pts-compiler-mask-cp2k1.4.1/gfortran supports -c -o file.o... (cached) yes
+checking whether the /tmp/pts-compiler-mask-cp2k1.4.1/gfortran linker (/usr/bin/gcc-13 -print-prog-name=ld
+ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... unsupported
+checking how to get verbose linking output from /tmp/pts-compiler-mask-cp2k1.4.1/gfortran... -v
+checking for Fortran 77 libraries of /tmp/pts-compiler-mask-cp2k1.4.1/gfortran...  -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -lgfortran -lm -lgomp -lquadmath -lpthread
+checking for dummy main to link with Fortran 77 libraries... none
+checking for Fortran 77 name-mangling scheme... lower case, underscore, no extra underscore
+checking for OpenMP flag of C compiler... -fopenmp
+checking whether a cycle counter is available... yes
+configure: WARNING: cache variable lt_cv_path_LD contains a newline
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating support/Makefile
+config.status: creating genfft/Makefile
+config.status: creating kernel/Makefile
+config.status: creating simd-support/Makefile
+config.status: creating dft/Makefile
+config.status: creating dft/scalar/Makefile
+config.status: creating dft/scalar/codelets/Makefile
+config.status: creating dft/simd/Makefile
+config.status: creating dft/simd/common/Makefile
+config.status: creating dft/simd/sse2/Makefile
+config.status: creating dft/simd/avx/Makefile
+config.status: creating dft/simd/avx-128-fma/Makefile
+config.status: creating dft/simd/avx2/Makefile
+config.status: creating dft/simd/avx2-128/Makefile
+config.status: creating dft/simd/avx512/Makefile
+config.status: creating dft/simd/kcvi/Makefile
+config.status: creating dft/simd/altivec/Makefile
+config.status: creating dft/simd/vsx/Makefile
+config.status: creating dft/simd/neon/Makefile
+config.status: creating dft/simd/generic-simd128/Makefile
+config.status: creating dft/simd/generic-simd256/Makefile
+config.status: creating rdft/Makefile
+config.status: creating rdft/scalar/Makefile
+config.status: creating rdft/scalar/r2cf/Makefile
+config.status: creating rdft/scalar/r2cb/Makefile
+config.status: creating rdft/scalar/r2r/Makefile
+config.status: creating rdft/simd/Makefile
+config.status: creating rdft/simd/common/Makefile
+config.status: creating rdft/simd/sse2/Makefile
+config.status: creating rdft/simd/avx/Makefile
+config.status: creating rdft/simd/avx-128-fma/Makefile
+config.status: creating rdft/simd/avx2/Makefile
+config.status: creating rdft/simd/avx2-128/Makefile
+config.status: creating rdft/simd/avx512/Makefile
+config.status: creating rdft/simd/kcvi/Makefile
+config.status: creating rdft/simd/altivec/Makefile
+config.status: creating rdft/simd/vsx/Makefile
+config.status: creating rdft/simd/neon/Makefile
+config.status: creating rdft/simd/generic-simd128/Makefile
+config.status: creating rdft/simd/generic-simd256/Makefile
+config.status: creating reodft/Makefile
+config.status: creating threads/Makefile
+config.status: creating api/Makefile
+config.status: creating mpi/Makefile
+config.status: creating libbench2/Makefile
+config.status: creating tests/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/FAQ/Makefile
+config.status: creating tools/Makefile
+config.status: creating tools/fftw_wisdom.1
+config.status: creating tools/fftw-wisdom-to-conf
+config.status: creating m4/Makefile
+config.status: creating fftw.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: error: in `/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/fftw-3.3.10':
+config.status: error: Something went wrong bootstrapping makefile fragments
+    for automatic dependency tracking.  If GNU make was not used, consider
+    re-running the configure script with MAKE="gmake" (or whatever is
+    necessary).  You can also try re-running configure with the
+    '--disable-dependency-tracking' option to at least be able to build
+    the package (albeit without support for automatic dependency tracking).
+See `config.log' for more details
+configure: WARNING: cache variable lt_cv_path_LD contains a newline
+Makefile:341: *** missing separator.  Stop.
+Makefile:341: *** missing separator.  Stop.
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/scripts/tool_kit.sh: line 662: /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/fftw-3.3.10/install_successful: No such file or directory
+cp: cannot stat 'install/arch/*': No such file or directory
+Discovering programs ...
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/Makefile:51: /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/arch/local.psmp: No such file or directory
+make[2]: *** No rule to make target '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/arch/local.psmp'.  Stop.
+make[1]: *** [/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/Makefile:128: psmp] Error 2
+make: *** [Makefile:123: all] Error 2
