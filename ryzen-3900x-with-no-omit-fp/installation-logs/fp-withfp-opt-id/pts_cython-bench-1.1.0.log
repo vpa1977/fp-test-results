@@ -1,0 +1,127 @@
+Collecting cython
+  Obtaining dependency information for cython from https://files.pythonhosted.org/packages/26/2c/6a887c957aa53e44f928119dea628a5dfacc8e875424034f5fecac9daba4/Cython-3.0.8-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading Cython-3.0.8-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.2 kB)
+Downloading Cython-3.0.8-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.6/3.6 MB 7.9 MB/s eta 0:00:00
+Installing collected packages: cython
+  WARNING: The scripts cygdb, cython and cythonize are installed in '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cython-bench-1.1.0/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed cython-3.0.8
+/usr/lib/python3/dist-packages/pythran/tables.py:4530: FutureWarning: In the future `np.bool` will be defined as the corresponding NumPy scalar.
+  if not hasattr(numpy, method):
+/usr/lib/python3/dist-packages/pythran/tables.py:4563: FutureWarning: In the future `np.bytes` will be defined as the corresponding NumPy scalar.
+  obj = getattr(themodule, elem)
+warning: hexiom2.pxd:63:25: Declarations should not be declared inline.
+warning: spectralnorm.pxd:4:25: Declarations should not be declared inline.
+Compiling bpnn3.py because it changed.
+Compiling chaos.py because it changed.
+Compiling coroutines.py because it changed.
+Compiling fstrings.py because it changed.
+Compiling generators.py because it changed.
+Compiling hexiom2.py because it changed.
+Compiling meteor_contest.py because it changed.
+Compiling nbody.py because it changed.
+Compiling nqueens.py because it changed.
+Compiling richards.py because it changed.
+Compiling spectralnorm.py because it changed.
+Compiling util.py because it changed.
+[ 1/12] Cythonizing bpnn3.py
+[ 2/12] Cythonizing chaos.py
+[ 3/12] Cythonizing coroutines.py
+[ 4/12] Cythonizing fstrings.py
+[ 5/12] Cythonizing generators.py
+[ 6/12] Cythonizing hexiom2.py
+[ 7/12] Cythonizing meteor_contest.py
+[ 8/12] Cythonizing nbody.py
+[ 9/12] Cythonizing nqueens.py
+[10/12] Cythonizing richards.py
+[11/12] Cythonizing spectralnorm.py
+[12/12] Cythonizing util.py
+running build_ext
+building 'bpnn3' extension
+INFO: C compiler: x86_64-linux-gnu-gcc -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -g -fwrapv -O2 -fPIC
+
+creating build
+creating build/temp.linux-x86_64-cpython-311
+INFO: compile options: '-I/usr/include/python3.11 -c'
+INFO: x86_64-linux-gnu-gcc: bpnn3.c
+creating build/lib.linux-x86_64-cpython-311
+INFO: x86_64-linux-gnu-gcc -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -g -fwrapv -O2 build/temp.linux-x86_64-cpython-311/bpnn3.o -L/usr/lib/x86_64-linux-gnu -o build/lib.linux-x86_64-cpython-311/bpnn3.cpython-311-x86_64-linux-gnu.so
+building 'chaos' extension
+INFO: C compiler: x86_64-linux-gnu-gcc -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -g -fwrapv -O2 -fPIC
+
+INFO: compile options: '-I/usr/include/python3.11 -c'
+INFO: x86_64-linux-gnu-gcc: chaos.c
+INFO: x86_64-linux-gnu-gcc -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -g -fwrapv -O2 build/temp.linux-x86_64-cpython-311/chaos.o -L/usr/lib/x86_64-linux-gnu -o build/lib.linux-x86_64-cpython-311/chaos.cpython-311-x86_64-linux-gnu.so
+building 'coroutines' extension
+INFO: C compiler: x86_64-linux-gnu-gcc -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -g -fwrapv -O2 -fPIC
+
+INFO: compile options: '-I/usr/include/python3.11 -c'
+INFO: x86_64-linux-gnu-gcc: coroutines.c
+INFO: x86_64-linux-gnu-gcc -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -g -fwrapv -O2 build/temp.linux-x86_64-cpython-311/coroutines.o -L/usr/lib/x86_64-linux-gnu -o build/lib.linux-x86_64-cpython-311/coroutines.cpython-311-x86_64-linux-gnu.so
+building 'fstrings' extension
+INFO: C compiler: x86_64-linux-gnu-gcc -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -g -fwrapv -O2 -fPIC
+
+INFO: compile options: '-I/usr/include/python3.11 -c'
+INFO: x86_64-linux-gnu-gcc: fstrings.c
+INFO: x86_64-linux-gnu-gcc -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -g -fwrapv -O2 build/temp.linux-x86_64-cpython-311/fstrings.o -L/usr/lib/x86_64-linux-gnu -o build/lib.linux-x86_64-cpython-311/fstrings.cpython-311-x86_64-linux-gnu.so
+building 'generators' extension
+INFO: C compiler: x86_64-linux-gnu-gcc -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -g -fwrapv -O2 -fPIC
+
+INFO: compile options: '-I/usr/include/python3.11 -c'
+INFO: x86_64-linux-gnu-gcc: generators.c
+INFO: x86_64-linux-gnu-gcc -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -g -fwrapv -O2 build/temp.linux-x86_64-cpython-311/generators.o -L/usr/lib/x86_64-linux-gnu -o build/lib.linux-x86_64-cpython-311/generators.cpython-311-x86_64-linux-gnu.so
+building 'hexiom2' extension
+INFO: C compiler: x86_64-linux-gnu-gcc -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -g -fwrapv -O2 -fPIC
+
+INFO: compile options: '-I/usr/include/python3.11 -c'
+INFO: x86_64-linux-gnu-gcc: hexiom2.c
+INFO: x86_64-linux-gnu-gcc -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -g -fwrapv -O2 build/temp.linux-x86_64-cpython-311/hexiom2.o -L/usr/lib/x86_64-linux-gnu -o build/lib.linux-x86_64-cpython-311/hexiom2.cpython-311-x86_64-linux-gnu.so
+building 'meteor_contest' extension
+INFO: C compiler: x86_64-linux-gnu-gcc -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -g -fwrapv -O2 -fPIC
+
+INFO: compile options: '-I/usr/include/python3.11 -c'
+INFO: x86_64-linux-gnu-gcc: meteor_contest.c
+INFO: x86_64-linux-gnu-gcc -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -g -fwrapv -O2 build/temp.linux-x86_64-cpython-311/meteor_contest.o -L/usr/lib/x86_64-linux-gnu -o build/lib.linux-x86_64-cpython-311/meteor_contest.cpython-311-x86_64-linux-gnu.so
+building 'nbody' extension
+INFO: C compiler: x86_64-linux-gnu-gcc -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -g -fwrapv -O2 -fPIC
+
+INFO: compile options: '-I/usr/include/python3.11 -c'
+INFO: x86_64-linux-gnu-gcc: nbody.c
+INFO: x86_64-linux-gnu-gcc -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -g -fwrapv -O2 build/temp.linux-x86_64-cpython-311/nbody.o -L/usr/lib/x86_64-linux-gnu -o build/lib.linux-x86_64-cpython-311/nbody.cpython-311-x86_64-linux-gnu.so
+building 'nqueens' extension
+INFO: C compiler: x86_64-linux-gnu-gcc -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -g -fwrapv -O2 -fPIC
+
+INFO: compile options: '-I/usr/include/python3.11 -c'
+INFO: x86_64-linux-gnu-gcc: nqueens.c
+INFO: x86_64-linux-gnu-gcc -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -g -fwrapv -O2 build/temp.linux-x86_64-cpython-311/nqueens.o -L/usr/lib/x86_64-linux-gnu -o build/lib.linux-x86_64-cpython-311/nqueens.cpython-311-x86_64-linux-gnu.so
+building 'richards' extension
+INFO: C compiler: x86_64-linux-gnu-gcc -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -g -fwrapv -O2 -fPIC
+
+INFO: compile options: '-I/usr/include/python3.11 -c'
+INFO: x86_64-linux-gnu-gcc: richards.c
+INFO: x86_64-linux-gnu-gcc -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -g -fwrapv -O2 build/temp.linux-x86_64-cpython-311/richards.o -L/usr/lib/x86_64-linux-gnu -o build/lib.linux-x86_64-cpython-311/richards.cpython-311-x86_64-linux-gnu.so
+building 'spectralnorm' extension
+INFO: C compiler: x86_64-linux-gnu-gcc -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -g -fwrapv -O2 -fPIC
+
+INFO: compile options: '-I/usr/include/python3.11 -c'
+INFO: x86_64-linux-gnu-gcc: spectralnorm.c
+INFO: x86_64-linux-gnu-gcc -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -g -fwrapv -O2 build/temp.linux-x86_64-cpython-311/spectralnorm.o -L/usr/lib/x86_64-linux-gnu -o build/lib.linux-x86_64-cpython-311/spectralnorm.cpython-311-x86_64-linux-gnu.so
+building 'util' extension
+INFO: C compiler: x86_64-linux-gnu-gcc -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -g -fwrapv -O2 -fPIC
+
+INFO: compile options: '-I/usr/include/python3.11 -c'
+INFO: x86_64-linux-gnu-gcc: util.c
+INFO: x86_64-linux-gnu-gcc -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -g -fwrapv -O2 build/temp.linux-x86_64-cpython-311/util.o -L/usr/lib/x86_64-linux-gnu -o build/lib.linux-x86_64-cpython-311/util.cpython-311-x86_64-linux-gnu.so
+copying build/lib.linux-x86_64-cpython-311/bpnn3.cpython-311-x86_64-linux-gnu.so -> 
+copying build/lib.linux-x86_64-cpython-311/chaos.cpython-311-x86_64-linux-gnu.so -> 
+copying build/lib.linux-x86_64-cpython-311/coroutines.cpython-311-x86_64-linux-gnu.so -> 
+copying build/lib.linux-x86_64-cpython-311/fstrings.cpython-311-x86_64-linux-gnu.so -> 
+copying build/lib.linux-x86_64-cpython-311/generators.cpython-311-x86_64-linux-gnu.so -> 
+copying build/lib.linux-x86_64-cpython-311/hexiom2.cpython-311-x86_64-linux-gnu.so -> 
+copying build/lib.linux-x86_64-cpython-311/meteor_contest.cpython-311-x86_64-linux-gnu.so -> 
+copying build/lib.linux-x86_64-cpython-311/nbody.cpython-311-x86_64-linux-gnu.so -> 
+copying build/lib.linux-x86_64-cpython-311/nqueens.cpython-311-x86_64-linux-gnu.so -> 
+copying build/lib.linux-x86_64-cpython-311/richards.cpython-311-x86_64-linux-gnu.so -> 
+copying build/lib.linux-x86_64-cpython-311/spectralnorm.cpython-311-x86_64-linux-gnu.so -> 
+copying build/lib.linux-x86_64-cpython-311/util.cpython-311-x86_64-linux-gnu.so -> 

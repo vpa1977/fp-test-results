@@ -1,0 +1,27 @@
+#####
+fp-withfp-opt-id - Run 1
+2024-02-19 10:23:53
+#####
+obj2mesh -n 15 -r 16384 lens.obj > lens.msh
+oconv -f -n 6 -r 16384 materials.rad cube2f.rad > cube2f_instance.oct
+oconv -f -n 6 -r 16384 materials.rad cube4f.rad > cube4f_instance.oct
+oconv -n 6 -r 16384 materials.rad scene.rad > scene.oct
+echo "-ss 1.0" "-lr -10 -u- -pd 0.0" | cat optionsbase - > optionsUnix
+rm -f serial.unf
+time rpict @viewpoint @optionsUnix -x 2048 -y 2048 -t 60 -o serial.unf scene.oct
+rpict: 21591 rays, 0.00% after 0.000u 0.000s 0.000r hours on fp (PID 777453)
+rpict: 65556293 rays, 0.05% after 0.019u 0.000s 0.019r hours on fp (PID 777453)
+rpict: 120667520 rays, 13.13% after 0.036u 0.000s 0.036r hours on fp (PID 777453)
+rpict: 176673842 rays, 30.57% after 0.052u 0.000s 0.052r hours on fp (PID 777453)
+rpict: 230624679 rays, 44.29% after 0.070u 0.000s 0.069r hours on fp (PID 777453)
+rpict: 287954558 rays, 50.29% after 0.086u 0.000s 0.086r hours on fp (PID 777453)
+rpict: 360269404 rays, 58.25% after 0.103u 0.000s 0.103r hours on fp (PID 777453)
+rpict: 426862624 rays, 64.50% after 0.120u 0.000s 0.120r hours on fp (PID 777453)
+rpict: 490770300 rays, 69.58% after 0.136u 0.000s 0.136r hours on fp (PID 777453)
+rpict: 554025052 rays, 76.46% after 0.153u 0.000s 0.153r hours on fp (PID 777453)
+rpict: 570890201 rays, 100.00% after 0.158u 0.000s 0.158r hours on fp (PID 777453)
+568.19user 0.05system 9:28.26elapsed 99%CPU (0avgtext+0avgdata 17472maxresident)k
+5632inputs+14408outputs (4major+12829minor)pagefaults 0swaps
+pfilt -1 -e +0 -x /4 -y /4 -r .6 -m .15 serial.unf > serial.pic
+ra_ppm serial.pic > serial.ppm
+

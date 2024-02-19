@@ -1,0 +1,991 @@
+install prefix            /home/ubuntu/.phoronix-test-suite/installed-tests/pts/dav1d-1.15.1//ffmpeg_/
+source path               .
+C compiler                gcc
+C library                 glibc
+ARCH                      x86 (generic)
+big-endian                no
+runtime cpu detection     yes
+standalone assembly       yes
+x86 assembler             nasm
+MMX enabled               yes
+MMXEXT enabled            yes
+3DNow! enabled            yes
+3DNow! extended enabled   yes
+SSE enabled               yes
+SSSE3 enabled             yes
+AESNI enabled             yes
+AVX enabled               yes
+AVX2 enabled              yes
+AVX-512 enabled           yes
+AVX-512ICL enabled        yes
+XOP enabled               yes
+FMA3 enabled              yes
+FMA4 enabled              yes
+i686 features enabled     yes
+CMOV is fast              yes
+EBX available             yes
+EBP available             yes
+debug symbols             yes
+strip symbols             yes
+optimize for size         no
+optimizations             yes
+static                    yes
+shared                    no
+postprocessing support    no
+network support           yes
+threading support         pthreads
+safe bitstream reader     yes
+texi2html enabled         no
+perl enabled              yes
+pod2man enabled           yes
+makeinfo enabled          yes
+makeinfo supports HTML    yes
+xmllint enabled           yes
+
+External libraries:
+alsa                    libxcb                  sndio
+bzlib                   lzma                    xlib
+iconv                   sdl2
+
+External libraries providing hardware acceleration:
+v4l2_m2m
+
+Libraries:
+avcodec                 avformat                swscale
+avdevice                avutil
+avfilter                swresample
+
+Programs:
+ffmpeg                  ffplay                  ffprobe
+
+Enabled decoders:
+aac                     ffwavesynth             pfm
+aac_fixed               fic                     pgm
+aac_latm                fits                    pgmyuv
+aasc                    flac                    pgssub
+ac3                     flic                    pgx
+ac3_fixed               flv                     phm
+acelp_kelvin            fmvc                    photocd
+adpcm_4xm               fourxm                  pictor
+adpcm_adx               fraps                   pixlet
+adpcm_afc               frwu                    pjs
+adpcm_agm               ftr                     ppm
+adpcm_aica              g723_1                  prores
+adpcm_argo              g729                    prosumer
+adpcm_ct                gdv                     psd
+adpcm_dtk               gem                     ptx
+adpcm_ea                gif                     qcelp
+adpcm_ea_maxis_xa       gremlin_dpcm            qdm2
+adpcm_ea_r1             gsm                     qdmc
+adpcm_ea_r2             gsm_ms                  qdraw
+adpcm_ea_r3             h261                    qoi
+adpcm_ea_xas            h263                    qpeg
+adpcm_g722              h263_v4l2m2m            qtrle
+adpcm_g726              h263i                   r10k
+adpcm_g726le            h263p                   r210
+adpcm_ima_acorn         h264                    ra_144
+adpcm_ima_alp           h264_v4l2m2m            ra_288
+adpcm_ima_amv           hap                     ralf
+adpcm_ima_apc           hca                     rawvideo
+adpcm_ima_apm           hcom                    realtext
+adpcm_ima_cunning       hdr                     rka
+adpcm_ima_dat4          hevc                    rl2
+adpcm_ima_dk3           hevc_v4l2m2m            roq
+adpcm_ima_dk4           hnm4_video              roq_dpcm
+adpcm_ima_ea_eacs       hq_hqa                  rpza
+adpcm_ima_ea_sead       hqx                     rtv1
+adpcm_ima_iss           huffyuv                 rv10
+adpcm_ima_moflex        hymt                    rv20
+adpcm_ima_mtf           iac                     rv30
+adpcm_ima_oki           idcin                   rv40
+adpcm_ima_qt            idf                     s302m
+adpcm_ima_rad           iff_ilbm                sami
+adpcm_ima_smjpeg        ilbc                    sanm
+adpcm_ima_ssi           imc                     sbc
+adpcm_ima_wav           imm4                    scpr
+adpcm_ima_ws            imm5                    sdx2_dpcm
+adpcm_ms                indeo2                  sga
+adpcm_mtaf              indeo3                  sgi
+adpcm_psx               indeo4                  sgirle
+adpcm_sbpro_2           indeo5                  sheervideo
+adpcm_sbpro_3           interplay_acm           shorten
+adpcm_sbpro_4           interplay_dpcm          simbiosis_imx
+adpcm_swf               interplay_video         sipr
+adpcm_thp               ipu                     siren
+adpcm_thp_le            jacosub                 smackaud
+adpcm_vima              jpeg2000                smacker
+adpcm_xa                jpegls                  smc
+adpcm_xmd               jv                      smvjpeg
+adpcm_yamaha            kgv1                    snow
+adpcm_zork              kmvc                    sol_dpcm
+agm                     lagarith                sonic
+aic                     loco                    sp5x
+alac                    m101                    speedhq
+alias_pix               mace3                   speex
+als                     mace6                   srt
+amrnb                   magicyuv                ssa
+amrwb                   mdec                    stl
+amv                     media100                subrip
+anm                     metasound               subviewer
+ansi                    microdvd                subviewer1
+anull                   mimic                   sunrast
+apac                    misc4                   svq1
+ape                     mjpeg                   svq3
+aptx                    mjpegb                  tak
+aptx_hd                 mlp                     targa
+arbc                    mmvideo                 targa_y216
+argo                    mobiclip                text
+ass                     motionpixels            theora
+asv1                    movtext                 thp
+asv2                    mp1                     tiertexseqvideo
+atrac1                  mp1float                tiff
+atrac3                  mp2                     tmv
+atrac3al                mp2float                truehd
+atrac3p                 mp3                     truemotion1
+atrac3pal               mp3adu                  truemotion2
+atrac9                  mp3adufloat             truemotion2rt
+aura                    mp3float                truespeech
+aura2                   mp3on4                  tscc2
+av1                     mp3on4float             tta
+avrn                    mpc7                    twinvq
+avrp                    mpc8                    txd
+avs                     mpeg1_v4l2m2m           ulti
+avui                    mpeg1video              utvideo
+ayuv                    mpeg2_v4l2m2m           v210
+bethsoftvid             mpeg2video              v210x
+bfi                     mpeg4                   v308
+bink                    mpeg4_v4l2m2m           v408
+binkaudio_dct           mpegvideo               v410
+binkaudio_rdft          mpl2                    vb
+bintext                 msa1                    vble
+bitpacked               msmpeg4v1               vbn
+bmp                     msmpeg4v2               vc1
+bmv_audio               msmpeg4v3               vc1_v4l2m2m
+bmv_video               msnsiren                vc1image
+bonk                    msp2                    vcr1
+brender_pix             msrle                   vmdaudio
+c93                     mss1                    vmdvideo
+cavs                    mss2                    vmix
+cbd2_dpcm               msvideo1                vmnc
+ccaption                mszh                    vnull
+cdgraphics              mts2                    vorbis
+cdtoons                 mv30                    vp3
+cdxl                    mvc1                    vp4
+cfhd                    mvc2                    vp5
+cinepak                 mvdv                    vp6
+clearvideo              mxpeg                   vp6a
+cljr                    nellymoser              vp6f
+cllc                    notchlc                 vp7
+comfortnoise            nuv                     vp8
+cook                    on2avc                  vp8_v4l2m2m
+cpia                    opus                    vp9
+cri                     osq                     vp9_v4l2m2m
+cscd                    paf_audio               vplayer
+cyuv                    paf_video               vqa
+dca                     pam                     vqc
+dds                     pbm                     wady_dpcm
+derf_dpcm               pcm_alaw                wavarc
+dfa                     pcm_bluray              wavpack
+dfpwm                   pcm_dvd                 wbmp
+dirac                   pcm_f16le               webp
+dnxhd                   pcm_f24le               webvtt
+dolby_e                 pcm_f32be               wmalossless
+dpx                     pcm_f32le               wmapro
+dsd_lsbf                pcm_f64be               wmav1
+dsd_lsbf_planar         pcm_f64le               wmav2
+dsd_msbf                pcm_lxf                 wmavoice
+dsd_msbf_planar         pcm_mulaw               wmv1
+dsicinaudio             pcm_s16be               wmv2
+dsicinvideo             pcm_s16be_planar        wmv3
+dss_sp                  pcm_s16le               wmv3image
+dst                     pcm_s16le_planar        wnv1
+dvaudio                 pcm_s24be               wrapped_avframe
+dvbsub                  pcm_s24daud             ws_snd1
+dvdsub                  pcm_s24le               xan_dpcm
+dvvideo                 pcm_s24le_planar        xan_wc3
+dxtory                  pcm_s32be               xan_wc4
+dxv                     pcm_s32le               xbin
+eac3                    pcm_s32le_planar        xbm
+eacmv                   pcm_s64be               xface
+eamad                   pcm_s64le               xl
+eatgq                   pcm_s8                  xma1
+eatgv                   pcm_s8_planar           xma2
+eatqi                   pcm_sga                 xpm
+eightbps                pcm_u16be               xsub
+eightsvx_exp            pcm_u16le               xwd
+eightsvx_fib            pcm_u24be               y41p
+escape124               pcm_u24le               ylc
+escape130               pcm_u32be               yop
+evrc                    pcm_u32le               yuv4
+fastaudio               pcm_u8                  zero12v
+ffv1                    pcm_vidc
+ffvhuff                 pcx
+
+Enabled encoders:
+a64multi                hevc_v4l2m2m            ppm
+a64multi5               huffyuv                 prores
+aac                     jpeg2000                prores_aw
+ac3                     jpegls                  prores_ks
+ac3_fixed               ljpeg                   qoi
+adpcm_adx               magicyuv                qtrle
+adpcm_argo              mjpeg                   r10k
+adpcm_g722              mlp                     r210
+adpcm_g726              movtext                 ra_144
+adpcm_g726le            mp2                     rawvideo
+adpcm_ima_alp           mp2fixed                roq
+adpcm_ima_amv           mpeg1video              roq_dpcm
+adpcm_ima_apm           mpeg2video              rpza
+adpcm_ima_qt            mpeg4                   rv10
+adpcm_ima_ssi           mpeg4_v4l2m2m           rv20
+adpcm_ima_wav           msmpeg4v2               s302m
+adpcm_ima_ws            msmpeg4v3               sbc
+adpcm_ms                msrle                   sgi
+adpcm_swf               msvideo1                smc
+adpcm_yamaha            nellymoser              snow
+alac                    opus                    sonic
+alias_pix               pam                     sonic_ls
+amv                     pbm                     speedhq
+anull                   pcm_alaw                srt
+aptx                    pcm_bluray              ssa
+aptx_hd                 pcm_dvd                 subrip
+ass                     pcm_f32be               sunrast
+asv1                    pcm_f32le               svq1
+asv2                    pcm_f64be               targa
+avrp                    pcm_f64le               text
+avui                    pcm_mulaw               tiff
+ayuv                    pcm_s16be               truehd
+bitpacked               pcm_s16be_planar        tta
+bmp                     pcm_s16le               ttml
+cfhd                    pcm_s16le_planar        utvideo
+cinepak                 pcm_s24be               v210
+cljr                    pcm_s24daud             v308
+comfortnoise            pcm_s24le               v408
+dca                     pcm_s24le_planar        v410
+dfpwm                   pcm_s32be               vbn
+dnxhd                   pcm_s32le               vc2
+dpx                     pcm_s32le_planar        vnull
+dvbsub                  pcm_s64be               vorbis
+dvdsub                  pcm_s64le               vp8_v4l2m2m
+dvvideo                 pcm_s8                  wavpack
+eac3                    pcm_s8_planar           wbmp
+ffv1                    pcm_u16be               webvtt
+ffvhuff                 pcm_u16le               wmav1
+fits                    pcm_u24be               wmav2
+flac                    pcm_u24le               wmv1
+flv                     pcm_u32be               wmv2
+g723_1                  pcm_u32le               wrapped_avframe
+gif                     pcm_u8                  xbm
+h261                    pcm_vidc                xface
+h263                    pcx                     xsub
+h263_v4l2m2m            pfm                     xwd
+h263p                   pgm                     y41p
+h264_v4l2m2m            pgmyuv                  yuv4
+hdr                     phm
+
+Enabled hwaccels:
+
+Enabled parsers:
+aac                     dvdsub                  mpegaudio
+aac_latm                evc                     mpegvideo
+ac3                     flac                    opus
+adx                     ftr                     png
+amr                     g723_1                  pnm
+av1                     g729                    qoi
+avs2                    gif                     rv34
+avs3                    gsm                     sbc
+bmp                     h261                    sipr
+cavsvideo               h263                    tak
+cook                    h264                    vc1
+cri                     hdr                     vorbis
+dca                     hevc                    vp3
+dirac                   ipu                     vp8
+dnxhd                   jpeg2000                vp9
+dolby_e                 jpegxl                  vvc
+dpx                     misc4                   webp
+dvaudio                 mjpeg                   xbm
+dvbsub                  mlp                     xma
+dvd_nav                 mpeg4video              xwd
+
+Enabled demuxers:
+aa                      idf                     pcm_s16be
+aac                     iff                     pcm_s16le
+aax                     ifv                     pcm_s24be
+ac3                     ilbc                    pcm_s24le
+ac4                     image2                  pcm_s32be
+ace                     image2_alias_pix        pcm_s32le
+acm                     image2_brender_pix      pcm_s8
+act                     image2pipe              pcm_u16be
+adf                     image_bmp_pipe          pcm_u16le
+adp                     image_cri_pipe          pcm_u24be
+ads                     image_dds_pipe          pcm_u24le
+adx                     image_dpx_pipe          pcm_u32be
+aea                     image_exr_pipe          pcm_u32le
+afc                     image_gem_pipe          pcm_u8
+aiff                    image_gif_pipe          pcm_vidc
+aix                     image_hdr_pipe          pdv
+alp                     image_j2k_pipe          pjs
+amr                     image_jpeg_pipe         pmp
+amrnb                   image_jpegls_pipe       pp_bnk
+amrwb                   image_jpegxl_pipe       pva
+anm                     image_pam_pipe          pvf
+apac                    image_pbm_pipe          qcp
+apc                     image_pcx_pipe          r3d
+ape                     image_pfm_pipe          rawvideo
+apm                     image_pgm_pipe          realtext
+apng                    image_pgmyuv_pipe       redspark
+aptx                    image_pgx_pipe          rka
+aptx_hd                 image_phm_pipe          rl2
+aqtitle                 image_photocd_pipe      rm
+argo_asf                image_pictor_pipe       roq
+argo_brp                image_png_pipe          rpl
+argo_cvg                image_ppm_pipe          rsd
+asf                     image_psd_pipe          rso
+asf_o                   image_qdraw_pipe        rtp
+ass                     image_qoi_pipe          rtsp
+ast                     image_sgi_pipe          s337m
+au                      image_sunrast_pipe      sami
+av1                     image_svg_pipe          sap
+avi                     image_tiff_pipe         sbc
+avr                     image_vbn_pipe          sbg
+avs                     image_webp_pipe         scc
+avs2                    image_xbm_pipe          scd
+avs3                    image_xpm_pipe          sdns
+bethsoftvid             image_xwd_pipe          sdp
+bfi                     ingenient               sdr2
+bfstm                   ipmovie                 sds
+bink                    ipu                     sdx
+binka                   ircam                   segafilm
+bintext                 iss                     ser
+bit                     iv8                     sga
+bitpacked               ivf                     shorten
+bmv                     ivr                     siff
+boa                     jacosub                 simbiosis_imx
+bonk                    jpegxl_anim             sln
+brstm                   jv                      smacker
+c93                     kux                     smjpeg
+caf                     kvag                    smush
+cavsvideo               laf                     sol
+cdg                     live_flv                sox
+cdxl                    lmlm4                   spdif
+cine                    loas                    srt
+codec2                  lrc                     stl
+codec2raw               luodat                  str
+concat                  lvf                     subviewer
+data                    lxf                     subviewer1
+daud                    m4v                     sup
+dcstr                   matroska                svag
+derf                    mca                     svs
+dfa                     mcc                     swf
+dfpwm                   mgsts                   tak
+dhav                    microdvd                tedcaptions
+dirac                   mjpeg                   thp
+dnxhd                   mjpeg_2000              threedostr
+dsf                     mlp                     tiertexseq
+dsicin                  mlv                     tmv
+dss                     mm                      truehd
+dts                     mmf                     tta
+dtshd                   mods                    tty
+dv                      moflex                  txd
+dvbsub                  mov                     ty
+dvbtxt                  mp3                     usm
+dxa                     mpc                     v210
+ea                      mpc8                    v210x
+ea_cdata                mpegps                  vag
+eac3                    mpegts                  vc1
+epaf                    mpegtsraw               vc1t
+evc                     mpegvideo               vividas
+ffmetadata              mpjpeg                  vivo
+filmstrip               mpl2                    vmd
+fits                    mpsub                   vobsub
+flac                    msf                     voc
+flic                    msnwc_tcp               vpk
+flv                     msp                     vplayer
+fourxm                  mtaf                    vqf
+frm                     mtv                     vvc
+fsb                     musx                    w64
+fwse                    mv                      wady
+g722                    mvi                     wav
+g723_1                  mxf                     wavarc
+g726                    mxg                     wc3
+g726le                  nc                      webm_dash_manifest
+g729                    nistsphere              webvtt
+gdv                     nsp                     wsaud
+genh                    nsv                     wsd
+gif                     nut                     wsvqa
+gsm                     nuv                     wtv
+gxf                     obu                     wv
+h261                    ogg                     wve
+h263                    oma                     xa
+h264                    osq                     xbin
+hca                     paf                     xmd
+hcom                    pcm_alaw                xmv
+hevc                    pcm_f32be               xvag
+hls                     pcm_f32le               xwma
+hnm                     pcm_f64be               yop
+ico                     pcm_f64le               yuv4mpegpipe
+idcin                   pcm_mulaw
+
+Enabled muxers:
+a64                     h261                    pcm_s16le
+ac3                     h263                    pcm_s24be
+ac4                     h264                    pcm_s24le
+adts                    hash                    pcm_s32be
+adx                     hds                     pcm_s32le
+aiff                    hevc                    pcm_s8
+alp                     hls                     pcm_u16be
+amr                     ico                     pcm_u16le
+amv                     ilbc                    pcm_u24be
+apm                     image2                  pcm_u24le
+apng                    image2pipe              pcm_u32be
+aptx                    ipod                    pcm_u32le
+aptx_hd                 ircam                   pcm_u8
+argo_asf                ismv                    pcm_vidc
+argo_cvg                ivf                     psp
+asf                     jacosub                 rawvideo
+asf_stream              kvag                    rm
+ass                     latm                    roq
+ast                     lrc                     rso
+au                      m4v                     rtp
+avi                     matroska                rtp_mpegts
+avif                    matroska_audio          rtsp
+avm2                    md5                     sap
+avs2                    microdvd                sbc
+avs3                    mjpeg                   scc
+bit                     mkvtimestamp_v2         segafilm
+caf                     mlp                     segment
+cavsvideo               mmf                     smjpeg
+codec2                  mov                     smoothstreaming
+codec2raw               mp2                     sox
+crc                     mp3                     spdif
+dash                    mp4                     spx
+data                    mpeg1system             srt
+daud                    mpeg1vcd                stream_segment
+dfpwm                   mpeg1video              streamhash
+dirac                   mpeg2dvd                sup
+dnxhd                   mpeg2svcd               swf
+dts                     mpeg2video              tee
+dv                      mpeg2vob                tg2
+eac3                    mpegts                  tgp
+evc                     mpjpeg                  truehd
+f4v                     mxf                     tta
+ffmetadata              mxf_d10                 ttml
+fifo                    mxf_opatom              uncodedframecrc
+fifo_test               null                    vc1
+filmstrip               nut                     vc1t
+fits                    obu                     voc
+flac                    oga                     vvc
+flv                     ogg                     w64
+framecrc                ogv                     wav
+framehash               oma                     webm
+framemd5                opus                    webm_chunk
+g722                    pcm_alaw                webm_dash_manifest
+g723_1                  pcm_f32be               webp
+g726                    pcm_f32le               webvtt
+g726le                  pcm_f64be               wsaud
+gif                     pcm_f64le               wtv
+gsm                     pcm_mulaw               wv
+gxf                     pcm_s16be               yuv4mpegpipe
+
+Enabled protocols:
+async                   gopher                  rtmp
+cache                   hls                     rtmpt
+concat                  http                    rtp
+concatf                 httpproxy               srtp
+crypto                  icecast                 subfile
+data                    md5                     tcp
+fd                      mmsh                    tee
+ffrtmphttp              mmst                    udp
+file                    pipe                    udplite
+ftp                     prompeg                 unix
+
+Enabled filters:
+a3dscope                colortemperature        nlmeans
+abench                  compand                 noformat
+abitscope               compensationdelay       noise
+acompressor             concat                  normalize
+acontrast               convolution             null
+acopy                   convolve                nullsink
+acrossfade              copy                    nullsrc
+acrossover              corr                    oscilloscope
+acrusher                crop                    overlay
+acue                    crossfeed               pad
+addroi                  crystalizer             pal100bars
+adeclick                cue                     pal75bars
+adeclip                 curves                  palettegen
+adecorrelate            datascope               paletteuse
+adelay                  dblur                   pan
+adenorm                 dcshift                 perms
+aderivative             dctdnoiz                photosensitivity
+adrawgraph              deband                  pixdesctest
+adrc                    deblock                 pixelize
+adynamicequalizer       decimate                pixscope
+adynamicsmooth          deconvolve              premultiply
+aecho                   dedot                   prewitt
+aemphasis               deesser                 pseudocolor
+aeval                   deflate                 psnr
+aevalsrc                deflicker               qp
+aexciter                dejudder                random
+afade                   derain                  readeia608
+afdelaysrc              deshake                 readvitc
+afftdn                  despill                 realtime
+afftfilt                detelecine              remap
+afifo                   dialoguenhance          removegrain
+afir                    dilation                removelogo
+afireqsrc               displace                replaygain
+afirsrc                 dnn_classify            reverse
+aformat                 dnn_detect              rgbashift
+afreqshift              dnn_processing          rgbtestsrc
+afwtdn                  doubleweave             roberts
+agate                   drawbox                 rotate
+agraphmonitor           drawgraph               scale
+ahistogram              drawgrid                scale2ref
+aiir                    drmeter                 scdet
+aintegral               dynaudnorm              scharr
+ainterleave             earwax                  scroll
+alatency                ebur128                 segment
+alimiter                edgedetect              select
+allpass                 elbg                    selectivecolor
+allrgb                  entropy                 sendcmd
+allyuv                  epx                     separatefields
+aloop                   equalizer               setdar
+alphaextract            erosion                 setfield
+alphamerge              estdif                  setparams
+amerge                  exposure                setpts
+ametadata               extractplanes           setrange
+amix                    extrastereo             setsar
+amovie                  fade                    settb
+amplify                 feedback                shear
+amultiply               fftdnoiz                showcqt
+anequalizer             fftfilt                 showcwt
+anlmdn                  field                   showfreqs
+anlmf                   fieldhint               showinfo
+anlms                   fieldmatch              showpalette
+anoisesrc               fieldorder              showspatial
+anull                   fifo                    showspectrum
+anullsink               fillborders             showspectrumpic
+anullsrc                firequalizer            showvolume
+apad                    flanger                 showwaves
+aperms                  floodfill               showwavespic
+aphasemeter             format                  shuffleframes
+aphaser                 fps                     shufflepixels
+aphaseshift             framepack               shuffleplanes
+apsnr                   framerate               sidechaincompress
+apsyclip                framestep               sidechaingate
+apulsator               freezedetect            sidedata
+arealtime               freezeframes            sierpinski
+aresample               gblur                   signalstats
+areverse                geq                     silencedetect
+arls                    gradfun                 silenceremove
+arnndn                  gradients               sinc
+asdr                    graphmonitor            sine
+asegment                grayworld               siti
+aselect                 greyedge                smptebars
+asendcmd                guided                  smptehdbars
+asetnsamples            haas                    sobel
+asetpts                 haldclut                spectrumsynth
+asetrate                haldclutsrc             speechnorm
+asettb                  hdcd                    split
+ashowinfo               headphone               sr
+asidedata               hflip                   ssim
+asisdr                  highpass                ssim360
+asoftclip               highshelf               stereotools
+aspectralstats          hilbert                 stereowiden
+asplit                  histogram               streamselect
+astats                  hqx                     superequalizer
+astreamselect           hstack                  surround
+asubboost               hsvhold                 swaprect
+asubcut                 hsvkey                  swapuv
+asupercut               hue                     tblend
+asuperpass              huesaturation           telecine
+asuperstop              hwdownload              testsrc
+atadenoise              hwmap                   testsrc2
+atempo                  hwupload                thistogram
+atilt                   hysteresis              threshold
+atrim                   identity                thumbnail
+avectorscope            idet                    tile
+avgblur                 il                      tiltshelf
+avsynctest              inflate                 tlut2
+axcorrelate             interleave              tmedian
+backgroundkey           join                    tmidequalizer
+bandpass                kirsch                  tmix
+bandreject              lagfun                  tonemap
+bass                    latency                 tpad
+bbox                    lenscorrection          transpose
+bench                   life                    treble
+bilateral               limitdiff               tremolo
+biquad                  limiter                 trim
+bitplanenoise           loop                    unpremultiply
+blackdetect             loudnorm                unsharp
+blend                   lowpass                 untile
+blockdetect             lowshelf                v360
+blurdetect              lumakey                 varblur
+bm3d                    lut                     vectorscope
+bwdif                   lut1d                   vflip
+cas                     lut2                    vfrdet
+ccrepack                lut3d                   vibrance
+cellauto                lutrgb                  vibrato
+channelmap              lutyuv                  vif
+channelsplit            mandelbrot              vignette
+chorus                  maskedclamp             virtualbass
+chromahold              maskedmax               vmafmotion
+chromakey               maskedmerge             volume
+chromanr                maskedmin               volumedetect
+chromashift             maskedthreshold         vstack
+ciescope                maskfun                 w3fdif
+codecview               mcompand                waveform
+color                   median                  weave
+colorbalance            mergeplanes             xbr
+colorchannelmixer       mestimate               xcorrelate
+colorchart              metadata                xfade
+colorcontrast           midequalizer            xmedian
+colorcorrect            minterpolate            xstack
+colorhold               mix                     yadif
+colorize                monochrome              yaepblur
+colorkey                morpho                  yuvtestsrc
+colorlevels             movie                   zoneplate
+colormap                msad                    zoompan
+colorspace              multiply
+colorspectrum           negate
+
+Enabled bsfs:
+aac_adtstoasc           h264_redundant_pps      pcm_rechunk
+av1_frame_merge         hapqa_extract           pgs_frame_merge
+av1_frame_split         hevc_metadata           prores_metadata
+av1_metadata            hevc_mp4toannexb        remove_extradata
+chomp                   imx_dump_header         setts
+dca_core                media100_to_mjpegb      text2movsub
+dts2pts                 mjpeg2jpeg              trace_headers
+dump_extradata          mjpega_dump_header      truehd_core
+dv_error_marker         mov2textsub             vp9_metadata
+eac3_core               mp3_header_decompress   vp9_raw_reorder
+evc_frame_merge         mpeg2_metadata          vp9_superframe
+extract_extradata       mpeg4_unpack_bframes    vp9_superframe_split
+filter_units            noise                   vvc_metadata
+h264_metadata           null                    vvc_mp4toannexb
+h264_mp4toannexb        opus_metadata
+
+Enabled indevs:
+alsa                    oss                     xcbgrab
+fbdev                   sndio
+lavfi                   v4l2
+
+Enabled outdevs:
+alsa                    sdl2                    xv
+fbdev                   sndio
+oss                     v4l2
+
+License: LGPL version 2.1 or later
+ffbuild/config.mak:21: *** missing separator.  Stop.
+ffbuild/config.mak:21: *** missing separator.  Stop.
+/home/ubuntu/.phoronix-test-suite/test-profiles/pts/dav1d-1.15.1/install.sh: line 11: ./ffmpeg_/bin/ffmpeg: No such file or directory
+/home/ubuntu/.phoronix-test-suite/test-profiles/pts/dav1d-1.15.1/install.sh: line 12: ./ffmpeg_/bin/ffmpeg: No such file or directory
+/home/ubuntu/.phoronix-test-suite/test-profiles/pts/dav1d-1.15.1/install.sh: line 13: ./ffmpeg_/bin/ffmpeg: No such file or directory
+/home/ubuntu/.phoronix-test-suite/test-profiles/pts/dav1d-1.15.1/install.sh: line 14: ./ffmpeg_/bin/ffmpeg: No such file or directory
+The Meson build system
+Version: 1.0.1
+Source dir: /home/ubuntu/.phoronix-test-suite/installed-tests/pts/dav1d-1.15.1/dav1d-1.4.0
+Build dir: /home/ubuntu/.phoronix-test-suite/installed-tests/pts/dav1d-1.15.1/dav1d-1.4.0/build
+Build type: native build
+Project name: dav1d
+Project version: 1.4.0
+C compiler for the host machine: cc (gcc 13.2.0 "/usr/bin/gcc-13 -fno-omit-frame-pointer --version")
+C linker for the host machine: cc ld.bfd 2.41
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Fetching value of define "__ILP32__" :  
+Run-time dependency threads found: YES
+Checking for function "clock_gettime" : YES 
+Checking for function "posix_memalign" : YES 
+Library dl found: YES
+Checking for function "dlsym" with dependency -ldl: YES 
+Library m found: YES
+Check usable header "stdatomic.h" : YES 
+Check usable header "unistd.h" : YES 
+Check usable header "io.h" : NO 
+Check usable header "pthread_np.h" : NO 
+Checking for function "getopt_long" : YES 
+Checking for function "pthread_getaffinity_np" with dependency threads: YES 
+Checking for function "pthread_setaffinity_np" with dependency threads: YES 
+Checking if "_Generic" compiles: YES 
+Compiler for C supports arguments -fvisibility=hidden: YES 
+Compiler for C supports arguments -Wundef: YES 
+Compiler for C supports arguments -Werror=vla: YES 
+Compiler for C supports arguments -Wno-maybe-uninitialized: YES 
+Compiler for C supports arguments -Wno-missing-field-initializers: YES 
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Compiler for C supports arguments -Werror=missing-prototypes: YES 
+Compiler for C supports arguments -Wshorten-64-to-32: NO 
+Compiler for C supports arguments -fomit-frame-pointer: YES 
+Compiler for C supports arguments -ffast-math: YES 
+Fetching value of define "__AVX__" :  
+Program nasm found: YES (/usr/bin/nasm)
+Configuring config.asm using configuration
+Configuring config.h using configuration
+Configuring version.h using configuration
+Header "xxhash.h" has symbol "XXH3_createState" : NO 
+Configuring cli_config.h using configuration
+Compiler for C supports arguments -Werror=c11-extensions: NO 
+Compiler for C supports arguments -Werror=c99-c11-compat: YES 
+First supported argument: -Werror=c99-c11-compat
+Program objcopy found: YES (/usr/bin/objcopy)
+Build targets in project: 19
+
+dav1d 1.4.0
+
+  User defined options
+    buildtype: release
+
+Found ninja-1.11.1 at /usr/bin/ninja
+Generating targets:   0%|                                                    | 0/19 [00:00<?, ?it/s]                                                                                                    Writing build.ninja:   0%|                                                  | 0/182 [00:00<?, ?it/s]                                                                                                    WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
+ninja: Entering directory `build'
+[1/150] Generating include/vcs_version.h with a custom command
+fatal: not a git repository: '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/dav1d-1.15.1/dav1d-1.4.0/.git'
+[2/150] Compiling C object src/libdav1d_bitdepth_8.a.p/ipred_prepare_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_8.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=8 -MD -MQ src/libdav1d_bitdepth_8.a.p/ipred_prepare_tmpl.c.o -MF src/libdav1d_bitdepth_8.a.p/ipred_prepare_tmpl.c.o.d -o src/libdav1d_bitdepth_8.a.p/ipred_prepare_tmpl.c.o -c ../src/ipred_prepare_tmpl.c
+[3/150] Compiling C object src/libdav1d_bitdepth_8.a.p/lr_apply_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_8.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=8 -MD -MQ src/libdav1d_bitdepth_8.a.p/lr_apply_tmpl.c.o -MF src/libdav1d_bitdepth_8.a.p/lr_apply_tmpl.c.o.d -o src/libdav1d_bitdepth_8.a.p/lr_apply_tmpl.c.o -c ../src/lr_apply_tmpl.c
+[4/150] Generating 'src/libdav1d.so.7.0.0.p/cpuid.obj'.
+[5/150] Compiling C object src/libdav1d_bitdepth_16.a.p/fg_apply_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_16.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=16 -MD -MQ src/libdav1d_bitdepth_16.a.p/fg_apply_tmpl.c.o -MF src/libdav1d_bitdepth_16.a.p/fg_apply_tmpl.c.o.d -o src/libdav1d_bitdepth_16.a.p/fg_apply_tmpl.c.o -c ../src/fg_apply_tmpl.c
+[6/150] Compiling C object src/libdav1d_bitdepth_16.a.p/ipred_prepare_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_16.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=16 -MD -MQ src/libdav1d_bitdepth_16.a.p/ipred_prepare_tmpl.c.o -MF src/libdav1d_bitdepth_16.a.p/ipred_prepare_tmpl.c.o.d -o src/libdav1d_bitdepth_16.a.p/ipred_prepare_tmpl.c.o -c ../src/ipred_prepare_tmpl.c
+[7/150] Compiling C object src/libdav1d_bitdepth_8.a.p/fg_apply_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_8.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=8 -MD -MQ src/libdav1d_bitdepth_8.a.p/fg_apply_tmpl.c.o -MF src/libdav1d_bitdepth_8.a.p/fg_apply_tmpl.c.o.d -o src/libdav1d_bitdepth_8.a.p/fg_apply_tmpl.c.o -c ../src/fg_apply_tmpl.c
+[8/150] Compiling C object src/libdav1d_bitdepth_8.a.p/cdef_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_8.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=8 -MD -MQ src/libdav1d_bitdepth_8.a.p/cdef_tmpl.c.o -MF src/libdav1d_bitdepth_8.a.p/cdef_tmpl.c.o.d -o src/libdav1d_bitdepth_8.a.p/cdef_tmpl.c.o -c ../src/cdef_tmpl.c
+[9/150] Compiling C object src/libdav1d_bitdepth_8.a.p/loopfilter_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_8.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=8 -MD -MQ src/libdav1d_bitdepth_8.a.p/loopfilter_tmpl.c.o -MF src/libdav1d_bitdepth_8.a.p/loopfilter_tmpl.c.o.d -o src/libdav1d_bitdepth_8.a.p/loopfilter_tmpl.c.o -c ../src/loopfilter_tmpl.c
+[10/150] Compiling C object src/libdav1d_bitdepth_8.a.p/cdef_apply_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_8.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=8 -MD -MQ src/libdav1d_bitdepth_8.a.p/cdef_apply_tmpl.c.o -MF src/libdav1d_bitdepth_8.a.p/cdef_apply_tmpl.c.o.d -o src/libdav1d_bitdepth_8.a.p/cdef_apply_tmpl.c.o -c ../src/cdef_apply_tmpl.c
+[11/150] Compiling C object src/libdav1d_bitdepth_16.a.p/lr_apply_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_16.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=16 -MD -MQ src/libdav1d_bitdepth_16.a.p/lr_apply_tmpl.c.o -MF src/libdav1d_bitdepth_16.a.p/lr_apply_tmpl.c.o.d -o src/libdav1d_bitdepth_16.a.p/lr_apply_tmpl.c.o -c ../src/lr_apply_tmpl.c
+[12/150] Compiling C object src/libdav1d_bitdepth_16.a.p/cdef_apply_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_16.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=16 -MD -MQ src/libdav1d_bitdepth_16.a.p/cdef_apply_tmpl.c.o -MF src/libdav1d_bitdepth_16.a.p/cdef_apply_tmpl.c.o.d -o src/libdav1d_bitdepth_16.a.p/cdef_apply_tmpl.c.o -c ../src/cdef_apply_tmpl.c
+[13/150] Compiling C object src/libdav1d_bitdepth_8.a.p/lf_apply_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_8.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=8 -MD -MQ src/libdav1d_bitdepth_8.a.p/lf_apply_tmpl.c.o -MF src/libdav1d_bitdepth_8.a.p/lf_apply_tmpl.c.o.d -o src/libdav1d_bitdepth_8.a.p/lf_apply_tmpl.c.o -c ../src/lf_apply_tmpl.c
+[14/150] Compiling C object src/libdav1d_bitdepth_16.a.p/loopfilter_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_16.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=16 -MD -MQ src/libdav1d_bitdepth_16.a.p/loopfilter_tmpl.c.o -MF src/libdav1d_bitdepth_16.a.p/loopfilter_tmpl.c.o.d -o src/libdav1d_bitdepth_16.a.p/loopfilter_tmpl.c.o -c ../src/loopfilter_tmpl.c
+[15/150] Compiling C object src/libdav1d_bitdepth_16.a.p/lf_apply_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_16.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=16 -MD -MQ src/libdav1d_bitdepth_16.a.p/lf_apply_tmpl.c.o -MF src/libdav1d_bitdepth_16.a.p/lf_apply_tmpl.c.o.d -o src/libdav1d_bitdepth_16.a.p/lf_apply_tmpl.c.o -c ../src/lf_apply_tmpl.c
+[16/150] Generating 'src/libdav1d.so.7.0.0.p/msac.obj'.
+[17/150] Generating 'src/libdav1d.so.7.0.0.p/pal.obj'.
+[18/150] Compiling C object src/libdav1d_bitdepth_8.a.p/filmgrain_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_8.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=8 -MD -MQ src/libdav1d_bitdepth_8.a.p/filmgrain_tmpl.c.o -MF src/libdav1d_bitdepth_8.a.p/filmgrain_tmpl.c.o.d -o src/libdav1d_bitdepth_8.a.p/filmgrain_tmpl.c.o -c ../src/filmgrain_tmpl.c
+[19/150] Generating 'src/libdav1d.so.7.0.0.p/refmvs.obj'.
+[20/150] Compiling C object src/libdav1d_bitdepth_16.a.p/filmgrain_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_16.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=16 -MD -MQ src/libdav1d_bitdepth_16.a.p/filmgrain_tmpl.c.o -MF src/libdav1d_bitdepth_16.a.p/filmgrain_tmpl.c.o.d -o src/libdav1d_bitdepth_16.a.p/filmgrain_tmpl.c.o -c ../src/filmgrain_tmpl.c
+[21/150] Compiling C object src/libdav1d_bitdepth_16.a.p/cdef_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_16.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=16 -MD -MQ src/libdav1d_bitdepth_16.a.p/cdef_tmpl.c.o -MF src/libdav1d_bitdepth_16.a.p/cdef_tmpl.c.o.d -o src/libdav1d_bitdepth_16.a.p/cdef_tmpl.c.o -c ../src/cdef_tmpl.c
+[22/150] Compiling C object src/libdav1d_bitdepth_16.a.p/looprestoration_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_16.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=16 -MD -MQ src/libdav1d_bitdepth_16.a.p/looprestoration_tmpl.c.o -MF src/libdav1d_bitdepth_16.a.p/looprestoration_tmpl.c.o.d -o src/libdav1d_bitdepth_16.a.p/looprestoration_tmpl.c.o -c ../src/looprestoration_tmpl.c
+[23/150] Generating 'src/libdav1d.so.7.0.0.p/cdef_avx512.obj'.
+[24/150] Compiling C object src/libdav1d_bitdepth_8.a.p/ipred_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_8.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=8 -MD -MQ src/libdav1d_bitdepth_8.a.p/ipred_tmpl.c.o -MF src/libdav1d_bitdepth_8.a.p/ipred_tmpl.c.o.d -o src/libdav1d_bitdepth_8.a.p/ipred_tmpl.c.o -c ../src/ipred_tmpl.c
+[25/150] Compiling C object src/libdav1d_bitdepth_16.a.p/ipred_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_16.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=16 -MD -MQ src/libdav1d_bitdepth_16.a.p/ipred_tmpl.c.o -MF src/libdav1d_bitdepth_16.a.p/ipred_tmpl.c.o.d -o src/libdav1d_bitdepth_16.a.p/ipred_tmpl.c.o -c ../src/ipred_tmpl.c
+[26/150] Compiling C object src/libdav1d_bitdepth_8.a.p/itx_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_8.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=8 -MD -MQ src/libdav1d_bitdepth_8.a.p/itx_tmpl.c.o -MF src/libdav1d_bitdepth_8.a.p/itx_tmpl.c.o.d -o src/libdav1d_bitdepth_8.a.p/itx_tmpl.c.o -c ../src/itx_tmpl.c
+[27/150] Compiling C object src/libdav1d_bitdepth_8.a.p/looprestoration_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_8.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=8 -MD -MQ src/libdav1d_bitdepth_8.a.p/looprestoration_tmpl.c.o -MF src/libdav1d_bitdepth_8.a.p/looprestoration_tmpl.c.o.d -o src/libdav1d_bitdepth_8.a.p/looprestoration_tmpl.c.o -c ../src/looprestoration_tmpl.c
+[28/150] Compiling C object src/libdav1d_bitdepth_16.a.p/itx_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_16.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=16 -MD -MQ src/libdav1d_bitdepth_16.a.p/itx_tmpl.c.o -MF src/libdav1d_bitdepth_16.a.p/itx_tmpl.c.o.d -o src/libdav1d_bitdepth_16.a.p/itx_tmpl.c.o -c ../src/itx_tmpl.c
+[29/150] Generating 'src/libdav1d.so.7.0.0.p/cdef16_avx512.obj'.
+[30/150] Generating 'src/libdav1d.so.7.0.0.p/filmgrain_avx512.obj'.
+[31/150] Generating 'src/libdav1d.so.7.0.0.p/looprestoration_avx512.obj'.
+[32/150] Generating 'src/libdav1d.so.7.0.0.p/looprestoration_avx2.obj'.
+[33/150] Generating 'src/libdav1d.so.7.0.0.p/loopfilter_avx512.obj'.
+[34/150] Generating 'src/libdav1d.so.7.0.0.p/ipred_avx512.obj'.
+[35/150] Compiling C object src/libdav1d_bitdepth_8.a.p/mc_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_8.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=8 -MD -MQ src/libdav1d_bitdepth_8.a.p/mc_tmpl.c.o -MF src/libdav1d_bitdepth_8.a.p/mc_tmpl.c.o.d -o src/libdav1d_bitdepth_8.a.p/mc_tmpl.c.o -c ../src/mc_tmpl.c
+[36/150] Generating 'src/libdav1d.so.7.0.0.p/filmgrain16_avx512.obj'.
+[37/150] Generating 'src/libdav1d.so.7.0.0.p/ipred16_avx512.obj'.
+[38/150] Compiling C object src/libdav1d_bitdepth_8.a.p/recon_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_8.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=8 -MD -MQ src/libdav1d_bitdepth_8.a.p/recon_tmpl.c.o -MF src/libdav1d_bitdepth_8.a.p/recon_tmpl.c.o.d -o src/libdav1d_bitdepth_8.a.p/recon_tmpl.c.o -c ../src/recon_tmpl.c
+[39/150] Compiling C object src/libdav1d_bitdepth_16.a.p/recon_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_16.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=16 -MD -MQ src/libdav1d_bitdepth_16.a.p/recon_tmpl.c.o -MF src/libdav1d_bitdepth_16.a.p/recon_tmpl.c.o.d -o src/libdav1d_bitdepth_16.a.p/recon_tmpl.c.o -c ../src/recon_tmpl.c
+[40/150] Generating 'src/libdav1d.so.7.0.0.p/loopfilter16_avx512.obj'.
+[41/150] Compiling C object src/libdav1d_bitdepth_16.a.p/mc_tmpl.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d_bitdepth_16.a.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=16 -MD -MQ src/libdav1d_bitdepth_16.a.p/mc_tmpl.c.o -MF src/libdav1d_bitdepth_16.a.p/mc_tmpl.c.o.d -o src/libdav1d_bitdepth_16.a.p/mc_tmpl.c.o -c ../src/mc_tmpl.c
+[42/150] Generating 'src/libdav1d.so.7.0.0.p/cdef16_avx2.obj'.
+[43/150] Generating 'src/libdav1d.so.7.0.0.p/loopfilter_avx2.obj'.
+[44/150] Generating 'src/libdav1d.so.7.0.0.p/cdef_avx2.obj'.
+[45/150] Generating 'src/libdav1d.so.7.0.0.p/looprestoration16_avx512.obj'.
+[46/150] Generating 'src/libdav1d.so.7.0.0.p/filmgrain_avx2.obj'.
+[47/150] Generating 'src/libdav1d.so.7.0.0.p/loopfilter_sse.obj'.
+[48/150] Generating 'src/libdav1d.so.7.0.0.p/cdef16_sse.obj'.
+[49/150] Generating 'src/libdav1d.so.7.0.0.p/mc_avx512.obj'.
+[50/150] Generating 'src/libdav1d.so.7.0.0.p/loopfilter16_avx2.obj'.
+[51/150] Compiling C object src/libdav1d.so.7.0.0.p/cpu.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/cpu.c.o -MF src/libdav1d.so.7.0.0.p/cpu.c.o.d -o src/libdav1d.so.7.0.0.p/cpu.c.o -c ../src/cpu.c
+[52/150] Compiling C object src/libdav1d.so.7.0.0.p/data.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/data.c.o -MF src/libdav1d.so.7.0.0.p/data.c.o.d -o src/libdav1d.so.7.0.0.p/data.c.o -c ../src/data.c
+[53/150] Compiling C object src/libdav1d.so.7.0.0.p/dequant_tables.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/dequant_tables.c.o -MF src/libdav1d.so.7.0.0.p/dequant_tables.c.o.d -o src/libdav1d.so.7.0.0.p/dequant_tables.c.o -c ../src/dequant_tables.c
+[54/150] Generating 'src/libdav1d.so.7.0.0.p/looprestoration_sse.obj'.
+[55/150] Compiling C object src/libdav1d.so.7.0.0.p/intra_edge.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/intra_edge.c.o -MF src/libdav1d.so.7.0.0.p/intra_edge.c.o.d -o src/libdav1d.so.7.0.0.p/intra_edge.c.o -c ../src/intra_edge.c
+[56/150] Generating 'src/libdav1d.so.7.0.0.p/looprestoration16_avx2.obj'.
+[57/150] Compiling C object src/libdav1d.so.7.0.0.p/getbits.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/getbits.c.o -MF src/libdav1d.so.7.0.0.p/getbits.c.o.d -o src/libdav1d.so.7.0.0.p/getbits.c.o -c ../src/getbits.c
+[58/150] Generating 'src/libdav1d.so.7.0.0.p/ipred_avx2.obj'.
+[59/150] Generating 'src/libdav1d.so.7.0.0.p/mc16_avx512.obj'.
+[60/150] Compiling C object src/libdav1d.so.7.0.0.p/log.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/log.c.o -MF src/libdav1d.so.7.0.0.p/log.c.o.d -o src/libdav1d.so.7.0.0.p/log.c.o -c ../src/log.c
+[61/150] Generating 'src/libdav1d.so.7.0.0.p/filmgrain_sse.obj'.
+[62/150] Compiling C object src/libdav1d.so.7.0.0.p/mem.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/mem.c.o -MF src/libdav1d.so.7.0.0.p/mem.c.o.d -o src/libdav1d.so.7.0.0.p/mem.c.o -c ../src/mem.c
+[63/150] Compiling C object src/libdav1d.so.7.0.0.p/lib.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/lib.c.o -MF src/libdav1d.so.7.0.0.p/lib.c.o.d -o src/libdav1d.so.7.0.0.p/lib.c.o -c ../src/lib.c
+[64/150] Generating 'src/libdav1d.so.7.0.0.p/loopfilter16_sse.obj'.
+[65/150] Compiling C object src/libdav1d.so.7.0.0.p/pal.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/pal.c.o -MF src/libdav1d.so.7.0.0.p/pal.c.o.d -o src/libdav1d.so.7.0.0.p/pal.c.o -c ../src/pal.c
+[66/150] Compiling C object src/libdav1d.so.7.0.0.p/lf_mask.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/lf_mask.c.o -MF src/libdav1d.so.7.0.0.p/lf_mask.c.o.d -o src/libdav1d.so.7.0.0.p/lf_mask.c.o -c ../src/lf_mask.c
+[67/150] Compiling C object src/libdav1d.so.7.0.0.p/msac.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/msac.c.o -MF src/libdav1d.so.7.0.0.p/msac.c.o.d -o src/libdav1d.so.7.0.0.p/msac.c.o -c ../src/msac.c
+[68/150] Compiling C object src/libdav1d.so.7.0.0.p/picture.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/picture.c.o -MF src/libdav1d.so.7.0.0.p/picture.c.o.d -o src/libdav1d.so.7.0.0.p/picture.c.o -c ../src/picture.c
+[69/150] Generating 'src/libdav1d.so.7.0.0.p/filmgrain16_avx2.obj'.
+[70/150] Generating 'src/libdav1d.so.7.0.0.p/cdef_sse.obj'.
+[71/150] Compiling C object src/libdav1d.so.7.0.0.p/ref.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/ref.c.o -MF src/libdav1d.so.7.0.0.p/ref.c.o.d -o src/libdav1d.so.7.0.0.p/ref.c.o -c ../src/ref.c
+[72/150] Compiling C object src/libdav1d.so.7.0.0.p/scan.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/scan.c.o -MF src/libdav1d.so.7.0.0.p/scan.c.o.d -o src/libdav1d.so.7.0.0.p/scan.c.o -c ../src/scan.c
+[73/150] Compiling C object src/libdav1d.so.7.0.0.p/qm.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/qm.c.o -MF src/libdav1d.so.7.0.0.p/qm.c.o.d -o src/libdav1d.so.7.0.0.p/qm.c.o -c ../src/qm.c
+[74/150] Compiling C object src/libdav1d.so.7.0.0.p/itx_1d.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/itx_1d.c.o -MF src/libdav1d.so.7.0.0.p/itx_1d.c.o.d -o src/libdav1d.so.7.0.0.p/itx_1d.c.o -c ../src/itx_1d.c
+[75/150] Compiling C object src/libdav1d.so.7.0.0.p/tables.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/tables.c.o -MF src/libdav1d.so.7.0.0.p/tables.c.o.d -o src/libdav1d.so.7.0.0.p/tables.c.o -c ../src/tables.c
+[76/150] Compiling C object src/libdav1d.so.7.0.0.p/x86_cpu.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/x86_cpu.c.o -MF src/libdav1d.so.7.0.0.p/x86_cpu.c.o.d -o src/libdav1d.so.7.0.0.p/x86_cpu.c.o -c ../src/x86/cpu.c
+[77/150] Compiling C object tools/libdav1d_input.a.p/input_input.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itools/libdav1d_input.a.p -Itools -I../tools -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -MD -MQ tools/libdav1d_input.a.p/input_input.c.o -MF tools/libdav1d_input.a.p/input_input.c.o.d -o tools/libdav1d_input.a.p/input_input.c.o -c ../tools/input/input.c
+[78/150] Compiling C object src/libdav1d.so.7.0.0.p/warpmv.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/warpmv.c.o -MF src/libdav1d.so.7.0.0.p/warpmv.c.o.d -o src/libdav1d.so.7.0.0.p/warpmv.c.o -c ../src/warpmv.c
+[79/150] Compiling C object tools/libdav1d_input.a.p/input_ivf.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itools/libdav1d_input.a.p -Itools -I../tools -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -MD -MQ tools/libdav1d_input.a.p/input_ivf.c.o -MF tools/libdav1d_input.a.p/input_ivf.c.o.d -o tools/libdav1d_input.a.p/input_ivf.c.o -c ../tools/input/ivf.c
+[80/150] Compiling C object src/libdav1d.so.7.0.0.p/wedge.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/wedge.c.o -MF src/libdav1d.so.7.0.0.p/wedge.c.o.d -o src/libdav1d.so.7.0.0.p/wedge.c.o -c ../src/wedge.c
+[81/150] Compiling C object tools/libdav1d_output.a.p/output_null.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itools/libdav1d_output.a.p -Itools -I../tools -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -MD -MQ tools/libdav1d_output.a.p/output_null.c.o -MF tools/libdav1d_output.a.p/output_null.c.o.d -o tools/libdav1d_output.a.p/output_null.c.o -c ../tools/output/null.c
+[82/150] Compiling C object tools/libdav1d_input.a.p/input_annexb.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itools/libdav1d_input.a.p -Itools -I../tools -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -MD -MQ tools/libdav1d_input.a.p/input_annexb.c.o -MF tools/libdav1d_input.a.p/input_annexb.c.o.d -o tools/libdav1d_input.a.p/input_annexb.c.o -c ../tools/input/annexb.c
+[83/150] Compiling C object tools/libdav1d_input.a.p/input_section5.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itools/libdav1d_input.a.p -Itools -I../tools -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -MD -MQ tools/libdav1d_input.a.p/input_section5.c.o -MF tools/libdav1d_input.a.p/input_section5.c.o.d -o tools/libdav1d_input.a.p/input_section5.c.o -c ../tools/input/section5.c
+[84/150] Compiling C object tools/libdav1d_output.a.p/output_md5.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itools/libdav1d_output.a.p -Itools -I../tools -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -MD -MQ tools/libdav1d_output.a.p/output_md5.c.o -MF tools/libdav1d_output.a.p/output_md5.c.o.d -o tools/libdav1d_output.a.p/output_md5.c.o -c ../tools/output/md5.c
+[85/150] Compiling C object tools/libdav1d_output.a.p/output_y4m2.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itools/libdav1d_output.a.p -Itools -I../tools -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -MD -MQ tools/libdav1d_output.a.p/output_y4m2.c.o -MF tools/libdav1d_output.a.p/output_y4m2.c.o.d -o tools/libdav1d_output.a.p/output_y4m2.c.o -c ../tools/output/y4m2.c
+[86/150] Linking static target tools/libdav1d_input.a
+[87/150] Compiling C object tools/libdav1d_output.a.p/output_output.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itools/libdav1d_output.a.p -Itools -I../tools -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -MD -MQ tools/libdav1d_output.a.p/output_output.c.o -MF tools/libdav1d_output.a.p/output_output.c.o.d -o tools/libdav1d_output.a.p/output_output.c.o -c ../tools/output/output.c
+[88/150] Compiling C object tools/libdav1d_output.a.p/output_yuv.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itools/libdav1d_output.a.p -Itools -I../tools -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -MD -MQ tools/libdav1d_output.a.p/output_yuv.c.o -MF tools/libdav1d_output.a.p/output_yuv.c.o.d -o tools/libdav1d_output.a.p/output_yuv.c.o -c ../tools/output/yuv.c
+[89/150] Linking static target tools/libdav1d_output.a
+[90/150] Compiling C object tools/dav1d.p/dav1d.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itools/dav1d.p -Itools -I../tools -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -pthread -MD -MQ tools/dav1d.p/dav1d.c.o -MF tools/dav1d.p/dav1d.c.o.d -o tools/dav1d.p/dav1d.c.o -c ../tools/dav1d.c
+[91/150] Compiling C object tests/libcheckasm_bitdepth_8.a.p/checkasm_cdef.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/libcheckasm_bitdepth_8.a.p -Itests -I../tests -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=8 -MD -MQ tests/libcheckasm_bitdepth_8.a.p/checkasm_cdef.c.o -MF tests/libcheckasm_bitdepth_8.a.p/checkasm_cdef.c.o.d -o tests/libcheckasm_bitdepth_8.a.p/checkasm_cdef.c.o -c ../tests/checkasm/cdef.c
+[92/150] Compiling C object tools/dav1d.p/dav1d_cli_parse.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itools/dav1d.p -Itools -I../tools -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -pthread -MD -MQ tools/dav1d.p/dav1d_cli_parse.c.o -MF tools/dav1d.p/dav1d_cli_parse.c.o.d -o tools/dav1d.p/dav1d_cli_parse.c.o -c ../tools/dav1d_cli_parse.c
+[93/150] Generating 'src/libdav1d.so.7.0.0.p/looprestoration16_sse.obj'.
+[94/150] Compiling C object src/libdav1d.so.7.0.0.p/thread_task.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/thread_task.c.o -MF src/libdav1d.so.7.0.0.p/thread_task.c.o.d -o src/libdav1d.so.7.0.0.p/thread_task.c.o -c ../src/thread_task.c
+[95/150] Compiling C object src/libdav1d.so.7.0.0.p/refmvs.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/refmvs.c.o -MF src/libdav1d.so.7.0.0.p/refmvs.c.o.d -o src/libdav1d.so.7.0.0.p/refmvs.c.o -c ../src/refmvs.c
+[96/150] Compiling C object tests/libcheckasm_bitdepth_8.a.p/checkasm_loopfilter.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/libcheckasm_bitdepth_8.a.p -Itests -I../tests -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=8 -MD -MQ tests/libcheckasm_bitdepth_8.a.p/checkasm_loopfilter.c.o -MF tests/libcheckasm_bitdepth_8.a.p/checkasm_loopfilter.c.o.d -o tests/libcheckasm_bitdepth_8.a.p/checkasm_loopfilter.c.o -c ../tests/checkasm/loopfilter.c
+[97/150] Generating 'src/libdav1d.so.7.0.0.p/ipred_sse.obj'.
+[98/150] Compiling C object tests/libcheckasm_bitdepth_8.a.p/checkasm_ipred.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/libcheckasm_bitdepth_8.a.p -Itests -I../tests -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=8 -MD -MQ tests/libcheckasm_bitdepth_8.a.p/checkasm_ipred.c.o -MF tests/libcheckasm_bitdepth_8.a.p/checkasm_ipred.c.o.d -o tests/libcheckasm_bitdepth_8.a.p/checkasm_ipred.c.o -c ../tests/checkasm/ipred.c
+[99/150] Compiling C object tests/libcheckasm_bitdepth_8.a.p/checkasm_filmgrain.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/libcheckasm_bitdepth_8.a.p -Itests -I../tests -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=8 -MD -MQ tests/libcheckasm_bitdepth_8.a.p/checkasm_filmgrain.c.o -MF tests/libcheckasm_bitdepth_8.a.p/checkasm_filmgrain.c.o.d -o tests/libcheckasm_bitdepth_8.a.p/checkasm_filmgrain.c.o -c ../tests/checkasm/filmgrain.c
+[100/150] Compiling C object tests/libcheckasm_bitdepth_8.a.p/checkasm_looprestoration.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/libcheckasm_bitdepth_8.a.p -Itests -I../tests -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=8 -MD -MQ tests/libcheckasm_bitdepth_8.a.p/checkasm_looprestoration.c.o -MF tests/libcheckasm_bitdepth_8.a.p/checkasm_looprestoration.c.o.d -o tests/libcheckasm_bitdepth_8.a.p/checkasm_looprestoration.c.o -c ../tests/checkasm/looprestoration.c
+[101/150] Compiling C object tests/libcheckasm_bitdepth_16.a.p/checkasm_cdef.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/libcheckasm_bitdepth_16.a.p -Itests -I../tests -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=16 -MD -MQ tests/libcheckasm_bitdepth_16.a.p/checkasm_cdef.c.o -MF tests/libcheckasm_bitdepth_16.a.p/checkasm_cdef.c.o.d -o tests/libcheckasm_bitdepth_16.a.p/checkasm_cdef.c.o -c ../tests/checkasm/cdef.c
+[102/150] Generating 'tests/checkasm.p/checkasm.obj'.
+[103/150] Compiling C object tests/libcheckasm_bitdepth_8.a.p/checkasm_itx.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/libcheckasm_bitdepth_8.a.p -Itests -I../tests -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=8 -MD -MQ tests/libcheckasm_bitdepth_8.a.p/checkasm_itx.c.o -MF tests/libcheckasm_bitdepth_8.a.p/checkasm_itx.c.o.d -o tests/libcheckasm_bitdepth_8.a.p/checkasm_itx.c.o -c ../tests/checkasm/itx.c
+[104/150] Generating 'src/libdav1d.so.7.0.0.p/ipred16_sse.obj'.
+[105/150] Compiling C object src/libdav1d.so.7.0.0.p/obu.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/obu.c.o -MF src/libdav1d.so.7.0.0.p/obu.c.o.d -o src/libdav1d.so.7.0.0.p/obu.c.o -c ../src/obu.c
+[106/150] Compiling C object tests/libcheckasm_bitdepth_16.a.p/checkasm_looprestoration.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/libcheckasm_bitdepth_16.a.p -Itests -I../tests -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=16 -MD -MQ tests/libcheckasm_bitdepth_16.a.p/checkasm_looprestoration.c.o -MF tests/libcheckasm_bitdepth_16.a.p/checkasm_looprestoration.c.o.d -o tests/libcheckasm_bitdepth_16.a.p/checkasm_looprestoration.c.o -c ../tests/checkasm/looprestoration.c
+[107/150] Compiling C object tests/checkasm.p/checkasm_pal.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/checkasm.p -Itests -I../tests -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -pthread -MD -MQ tests/checkasm.p/checkasm_pal.c.o -MF tests/checkasm.p/checkasm_pal.c.o.d -o tests/checkasm.p/checkasm_pal.c.o -c ../tests/checkasm/pal.c
+[108/150] Compiling C object tests/libcheckasm_bitdepth_16.a.p/checkasm_itx.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/libcheckasm_bitdepth_16.a.p -Itests -I../tests -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=16 -MD -MQ tests/libcheckasm_bitdepth_16.a.p/checkasm_itx.c.o -MF tests/libcheckasm_bitdepth_16.a.p/checkasm_itx.c.o.d -o tests/libcheckasm_bitdepth_16.a.p/checkasm_itx.c.o -c ../tests/checkasm/itx.c
+[109/150] Compiling C object tests/common.h_test.p/header_test.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/common.h_test.p -Itests -I../tests -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -DDAV1D_TEST_HEADER="common.h" -Werror=c99-c11-compat -MD -MQ tests/common.h_test.p/header_test.c.o -MF tests/common.h_test.p/header_test.c.o.d -o tests/common.h_test.p/header_test.c.o -c ../tests/header_test.c
+[110/150] Compiling C object tests/libcheckasm_bitdepth_16.a.p/checkasm_loopfilter.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/libcheckasm_bitdepth_16.a.p -Itests -I../tests -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=16 -MD -MQ tests/libcheckasm_bitdepth_16.a.p/checkasm_loopfilter.c.o -MF tests/libcheckasm_bitdepth_16.a.p/checkasm_loopfilter.c.o.d -o tests/libcheckasm_bitdepth_16.a.p/checkasm_loopfilter.c.o -c ../tests/checkasm/loopfilter.c
+[111/150] Generating 'src/libdav1d.so.7.0.0.p/ipred16_avx2.obj'.
+[112/150] Generating 'src/libdav1d.so.7.0.0.p/mc_avx2.obj'.
+[113/150] Compiling C object tests/checkasm.p/checkasm_refmvs.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/checkasm.p -Itests -I../tests -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -pthread -MD -MQ tests/checkasm.p/checkasm_refmvs.c.o -MF tests/checkasm.p/checkasm_refmvs.c.o.d -o tests/checkasm.p/checkasm_refmvs.c.o -c ../tests/checkasm/refmvs.c
+[114/150] Compiling C object tests/libcheckasm_bitdepth_16.a.p/checkasm_filmgrain.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/libcheckasm_bitdepth_16.a.p -Itests -I../tests -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=16 -MD -MQ tests/libcheckasm_bitdepth_16.a.p/checkasm_filmgrain.c.o -MF tests/libcheckasm_bitdepth_16.a.p/checkasm_filmgrain.c.o.d -o tests/libcheckasm_bitdepth_16.a.p/checkasm_filmgrain.c.o -c ../tests/checkasm/filmgrain.c
+[115/150] Compiling C object tests/checkasm.p/checkasm_msac.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/checkasm.p -Itests -I../tests -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -pthread -MD -MQ tests/checkasm.p/checkasm_msac.c.o -MF tests/checkasm.p/checkasm_msac.c.o.d -o tests/checkasm.p/checkasm_msac.c.o -c ../tests/checkasm/msac.c
+[116/150] Compiling C object tests/libcheckasm_bitdepth_16.a.p/checkasm_ipred.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/libcheckasm_bitdepth_16.a.p -Itests -I../tests -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=16 -MD -MQ tests/libcheckasm_bitdepth_16.a.p/checkasm_ipred.c.o -MF tests/libcheckasm_bitdepth_16.a.p/checkasm_ipred.c.o.d -o tests/libcheckasm_bitdepth_16.a.p/checkasm_ipred.c.o -c ../tests/checkasm/ipred.c
+[117/150] Compiling C object tests/data.h_test.p/header_test.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/data.h_test.p -Itests -I../tests -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -DDAV1D_TEST_HEADER="data.h" -Werror=c99-c11-compat -MD -MQ tests/data.h_test.p/header_test.c.o -MF tests/data.h_test.p/header_test.c.o.d -o tests/data.h_test.p/header_test.c.o -c ../tests/header_test.c
+[118/150] Compiling C object tests/headers.h_test.p/header_test.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/headers.h_test.p -Itests -I../tests -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -DDAV1D_TEST_HEADER="headers.h" -Werror=c99-c11-compat -MD -MQ tests/headers.h_test.p/header_test.c.o -MF tests/headers.h_test.p/header_test.c.o.d -o tests/headers.h_test.p/header_test.c.o -c ../tests/header_test.c
+[119/150] Compiling C object tests/dav1d.h_test.p/header_test.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/dav1d.h_test.p -Itests -I../tests -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -DDAV1D_TEST_HEADER="dav1d.h" -Werror=c99-c11-compat -MD -MQ tests/dav1d.h_test.p/header_test.c.o -MF tests/dav1d.h_test.p/header_test.c.o.d -o tests/dav1d.h_test.p/header_test.c.o -c ../tests/header_test.c
+[120/150] Compiling C object tests/libcheckasm_bitdepth_8.a.p/checkasm_mc.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/libcheckasm_bitdepth_8.a.p -Itests -I../tests -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=8 -MD -MQ tests/libcheckasm_bitdepth_8.a.p/checkasm_mc.c.o -MF tests/libcheckasm_bitdepth_8.a.p/checkasm_mc.c.o.d -o tests/libcheckasm_bitdepth_8.a.p/checkasm_mc.c.o -c ../tests/checkasm/mc.c
+[121/150] Compiling C object tests/checkasm.p/checkasm_checkasm.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/checkasm.p -Itests -I../tests -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -pthread -MD -MQ tests/checkasm.p/checkasm_checkasm.c.o -MF tests/checkasm.p/checkasm_checkasm.c.o.d -o tests/checkasm.p/checkasm_checkasm.c.o -c ../tests/checkasm/checkasm.c
+[122/150] Compiling C object tests/picture.h_test.p/header_test.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/picture.h_test.p -Itests -I../tests -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -DDAV1D_TEST_HEADER="picture.h" -Werror=c99-c11-compat -MD -MQ tests/picture.h_test.p/header_test.c.o -MF tests/picture.h_test.p/header_test.c.o.d -o tests/picture.h_test.p/header_test.c.o -c ../tests/header_test.c
+[123/150] Linking target tests/common.h_test
+/usr/bin/gcc-13 -fno-omit-frame-pointer -o tests/common.h_test tests/common.h_test.p/header_test.c.o -Wl,--as-needed -Wl,--no-undefined -Wl,-O1
+[124/150] Linking target tests/data.h_test
+/usr/bin/gcc-13 -fno-omit-frame-pointer -o tests/data.h_test tests/data.h_test.p/header_test.c.o -Wl,--as-needed -Wl,--no-undefined -Wl,-O1
+[125/150] Linking target tests/headers.h_test
+/usr/bin/gcc-13 -fno-omit-frame-pointer -o tests/headers.h_test tests/headers.h_test.p/header_test.c.o -Wl,--as-needed -Wl,--no-undefined -Wl,-O1
+[126/150] Linking target tests/dav1d.h_test
+/usr/bin/gcc-13 -fno-omit-frame-pointer -o tests/dav1d.h_test tests/dav1d.h_test.p/header_test.c.o -Wl,--as-needed -Wl,--no-undefined -Wl,-O1
+[127/150] Linking target tests/picture.h_test
+/usr/bin/gcc-13 -fno-omit-frame-pointer -o tests/picture.h_test tests/picture.h_test.p/header_test.c.o -Wl,--as-needed -Wl,--no-undefined -Wl,-O1
+[128/150] Compiling C object tests/libfuzzer/dav1d_fuzzer.p/main.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/libfuzzer/dav1d_fuzzer.p -Itests/libfuzzer -I../tests/libfuzzer -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -pthread -MD -MQ tests/libfuzzer/dav1d_fuzzer.p/main.c.o -MF tests/libfuzzer/dav1d_fuzzer.p/main.c.o.d -o tests/libfuzzer/dav1d_fuzzer.p/main.c.o -c ../tests/libfuzzer/main.c
+[129/150] Generating 'src/libdav1d.so.7.0.0.p/filmgrain16_sse.obj'.
+[130/150] Compiling C object tests/libfuzzer/dav1d_fuzzer_mt.p/main.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/libfuzzer/dav1d_fuzzer_mt.p -Itests/libfuzzer -I../tests/libfuzzer -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -pthread -DDAV1D_MT_FUZZING -MD -MQ tests/libfuzzer/dav1d_fuzzer_mt.p/main.c.o -MF tests/libfuzzer/dav1d_fuzzer_mt.p/main.c.o.d -o tests/libfuzzer/dav1d_fuzzer_mt.p/main.c.o -c ../tests/libfuzzer/main.c
+[131/150] Compiling C object tests/libfuzzer/dav1d_fuzzer.p/dav1d_fuzzer.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/libfuzzer/dav1d_fuzzer.p -Itests/libfuzzer -I../tests/libfuzzer -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -pthread -MD -MQ tests/libfuzzer/dav1d_fuzzer.p/dav1d_fuzzer.c.o -MF tests/libfuzzer/dav1d_fuzzer.p/dav1d_fuzzer.c.o.d -o tests/libfuzzer/dav1d_fuzzer.p/dav1d_fuzzer.c.o -c ../tests/libfuzzer/dav1d_fuzzer.c
+[132/150] Compiling C object tests/libfuzzer/dav1d_fuzzer_mt.p/dav1d_fuzzer.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/libfuzzer/dav1d_fuzzer_mt.p -Itests/libfuzzer -I../tests/libfuzzer -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -pthread -DDAV1D_MT_FUZZING -MD -MQ tests/libfuzzer/dav1d_fuzzer_mt.p/dav1d_fuzzer.c.o -MF tests/libfuzzer/dav1d_fuzzer_mt.p/dav1d_fuzzer.c.o.d -o tests/libfuzzer/dav1d_fuzzer_mt.p/dav1d_fuzzer.c.o -c ../tests/libfuzzer/dav1d_fuzzer.c
+[133/150] Compiling C object tests/libcheckasm_bitdepth_16.a.p/checkasm_mc.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Itests/libcheckasm_bitdepth_16.a.p -Itests -I../tests -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -DBITDEPTH=16 -MD -MQ tests/libcheckasm_bitdepth_16.a.p/checkasm_mc.c.o -MF tests/libcheckasm_bitdepth_16.a.p/checkasm_mc.c.o.d -o tests/libcheckasm_bitdepth_16.a.p/checkasm_mc.c.o -c ../tests/checkasm/mc.c
+[134/150] Generating 'src/libdav1d.so.7.0.0.p/itx16_sse.obj'.
+[135/150] Generating 'src/libdav1d.so.7.0.0.p/mc16_avx2.obj'.
+[136/150] Generating 'src/libdav1d.so.7.0.0.p/itx16_avx512.obj'.
+[137/150] Compiling C object src/libdav1d.so.7.0.0.p/decode.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/decode.c.o -MF src/libdav1d.so.7.0.0.p/decode.c.o.d -o src/libdav1d.so.7.0.0.p/decode.c.o -c ../src/decode.c
+[138/150] Generating 'src/libdav1d.so.7.0.0.p/itx_sse.obj'.
+[139/150] Generating 'src/libdav1d.so.7.0.0.p/itx_avx2.obj'.
+[140/150] Compiling C object src/libdav1d.so.7.0.0.p/cdf.c.o
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Isrc/libdav1d.so.7.0.0.p -Isrc -I../src -I. -I.. -Iinclude/dav1d -I../include/dav1d -Iinclude -I../include -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O3 -D_GNU_SOURCE -fvisibility=hidden -Wundef -Werror=vla -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wstrict-prototypes -Werror=missing-prototypes -fomit-frame-pointer -ffast-math -fPIC -pthread -MD -MQ src/libdav1d.so.7.0.0.p/cdf.c.o -MF src/libdav1d.so.7.0.0.p/cdf.c.o.d -o src/libdav1d.so.7.0.0.p/cdf.c.o -c ../src/cdf.c
+[141/150] Generating 'src/libdav1d.so.7.0.0.p/mc_sse.obj'.
+[142/150] Generating 'src/libdav1d.so.7.0.0.p/itx_avx512.obj'.
+[143/150] Generating 'src/libdav1d.so.7.0.0.p/mc16_sse.obj'.
+[144/150] Generating 'src/libdav1d.so.7.0.0.p/itx16_avx2.obj'.
+[145/150] Linking target src/libdav1d.so.7.0.0
+/usr/bin/gcc-13 -fno-omit-frame-pointer -o src/libdav1d.so.7.0.0 src/libdav1d.so.7.0.0.p/cpuid.obj src/libdav1d.so.7.0.0.p/msac.obj src/libdav1d.so.7.0.0.p/pal.obj src/libdav1d.so.7.0.0.p/refmvs.obj src/libdav1d.so.7.0.0.p/itx_avx512.obj src/libdav1d.so.7.0.0.p/cdef_avx2.obj src/libdav1d.so.7.0.0.p/itx_avx2.obj src/libdav1d.so.7.0.0.p/looprestoration_avx2.obj src/libdav1d.so.7.0.0.p/cdef_sse.obj src/libdav1d.so.7.0.0.p/itx_sse.obj src/libdav1d.so.7.0.0.p/cdef_avx512.obj src/libdav1d.so.7.0.0.p/filmgrain_avx512.obj src/libdav1d.so.7.0.0.p/ipred_avx512.obj src/libdav1d.so.7.0.0.p/loopfilter_avx512.obj src/libdav1d.so.7.0.0.p/looprestoration_avx512.obj src/libdav1d.so.7.0.0.p/mc_avx512.obj src/libdav1d.so.7.0.0.p/filmgrain_avx2.obj src/libdav1d.so.7.0.0.p/ipred_avx2.obj src/libdav1d.so.7.0.0.p/loopfilter_avx2.obj src/libdav1d.so.7.0.0.p/mc_avx2.obj src/libdav1d.so.7.0.0.p/filmgrain_sse.obj src/libdav1d.so.7.0.0.p/ipred_sse.obj src/libdav1d.so.7.0.0.p/loopfilter_sse.obj src/libdav1d.so.7.0.0.p/looprestoration_sse.obj src/libdav1d.so.7.0.0.p/mc_sse.obj src/libdav1d.so.7.0.0.p/cdef16_avx512.obj src/libdav1d.so.7.0.0.p/filmgrain16_avx512.obj src/libdav1d.so.7.0.0.p/ipred16_avx512.obj src/libdav1d.so.7.0.0.p/itx16_avx512.obj src/libdav1d.so.7.0.0.p/loopfilter16_avx512.obj src/libdav1d.so.7.0.0.p/looprestoration16_avx512.obj src/libdav1d.so.7.0.0.p/mc16_avx512.obj src/libdav1d.so.7.0.0.p/cdef16_avx2.obj src/libdav1d.so.7.0.0.p/filmgrain16_avx2.obj src/libdav1d.so.7.0.0.p/ipred16_avx2.obj src/libdav1d.so.7.0.0.p/itx16_avx2.obj src/libdav1d.so.7.0.0.p/loopfilter16_avx2.obj src/libdav1d.so.7.0.0.p/looprestoration16_avx2.obj src/libdav1d.so.7.0.0.p/mc16_avx2.obj src/libdav1d.so.7.0.0.p/cdef16_sse.obj src/libdav1d.so.7.0.0.p/filmgrain16_sse.obj src/libdav1d.so.7.0.0.p/ipred16_sse.obj src/libdav1d.so.7.0.0.p/itx16_sse.obj src/libdav1d.so.7.0.0.p/loopfilter16_sse.obj src/libdav1d.so.7.0.0.p/looprestoration16_sse.obj src/libdav1d.so.7.0.0.p/mc16_sse.obj src/libdav1d_bitdepth_8.a.p/cdef_apply_tmpl.c.o src/libdav1d_bitdepth_8.a.p/cdef_tmpl.c.o src/libdav1d_bitdepth_8.a.p/fg_apply_tmpl.c.o src/libdav1d_bitdepth_8.a.p/filmgrain_tmpl.c.o src/libdav1d_bitdepth_8.a.p/ipred_prepare_tmpl.c.o src/libdav1d_bitdepth_8.a.p/ipred_tmpl.c.o src/libdav1d_bitdepth_8.a.p/itx_tmpl.c.o src/libdav1d_bitdepth_8.a.p/lf_apply_tmpl.c.o src/libdav1d_bitdepth_8.a.p/loopfilter_tmpl.c.o src/libdav1d_bitdepth_8.a.p/looprestoration_tmpl.c.o src/libdav1d_bitdepth_8.a.p/lr_apply_tmpl.c.o src/libdav1d_bitdepth_8.a.p/mc_tmpl.c.o src/libdav1d_bitdepth_8.a.p/recon_tmpl.c.o src/libdav1d_bitdepth_16.a.p/cdef_apply_tmpl.c.o src/libdav1d_bitdepth_16.a.p/cdef_tmpl.c.o src/libdav1d_bitdepth_16.a.p/fg_apply_tmpl.c.o src/libdav1d_bitdepth_16.a.p/filmgrain_tmpl.c.o src/libdav1d_bitdepth_16.a.p/ipred_prepare_tmpl.c.o src/libdav1d_bitdepth_16.a.p/ipred_tmpl.c.o src/libdav1d_bitdepth_16.a.p/itx_tmpl.c.o src/libdav1d_bitdepth_16.a.p/lf_apply_tmpl.c.o src/libdav1d_bitdepth_16.a.p/loopfilter_tmpl.c.o src/libdav1d_bitdepth_16.a.p/looprestoration_tmpl.c.o src/libdav1d_bitdepth_16.a.p/lr_apply_tmpl.c.o src/libdav1d_bitdepth_16.a.p/mc_tmpl.c.o src/libdav1d_bitdepth_16.a.p/recon_tmpl.c.o src/libdav1d.so.7.0.0.p/cdf.c.o src/libdav1d.so.7.0.0.p/cpu.c.o src/libdav1d.so.7.0.0.p/data.c.o src/libdav1d.so.7.0.0.p/decode.c.o src/libdav1d.so.7.0.0.p/dequant_tables.c.o src/libdav1d.so.7.0.0.p/getbits.c.o src/libdav1d.so.7.0.0.p/intra_edge.c.o src/libdav1d.so.7.0.0.p/itx_1d.c.o src/libdav1d.so.7.0.0.p/lf_mask.c.o src/libdav1d.so.7.0.0.p/lib.c.o src/libdav1d.so.7.0.0.p/log.c.o src/libdav1d.so.7.0.0.p/mem.c.o src/libdav1d.so.7.0.0.p/msac.c.o src/libdav1d.so.7.0.0.p/obu.c.o src/libdav1d.so.7.0.0.p/pal.c.o src/libdav1d.so.7.0.0.p/picture.c.o src/libdav1d.so.7.0.0.p/qm.c.o src/libdav1d.so.7.0.0.p/ref.c.o src/libdav1d.so.7.0.0.p/refmvs.c.o src/libdav1d.so.7.0.0.p/scan.c.o src/libdav1d.so.7.0.0.p/tables.c.o src/libdav1d.so.7.0.0.p/thread_task.c.o src/libdav1d.so.7.0.0.p/warpmv.c.o src/libdav1d.so.7.0.0.p/wedge.c.o src/libdav1d.so.7.0.0.p/x86_cpu.c.o -Wl,--as-needed -Wl,--no-undefined -Wl,-O1 -shared -fPIC -Wl,--start-group -Wl,-soname,libdav1d.so.7 -pthread -ldl -Wl,--end-group
+[146/150] Linking target tests/checkasm
+/usr/bin/gcc-13 -fno-omit-frame-pointer -o tests/checkasm tests/checkasm.p/checkasm.obj tests/libcheckasm_bitdepth_8.a.p/checkasm_cdef.c.o tests/libcheckasm_bitdepth_8.a.p/checkasm_filmgrain.c.o tests/libcheckasm_bitdepth_8.a.p/checkasm_ipred.c.o tests/libcheckasm_bitdepth_8.a.p/checkasm_itx.c.o tests/libcheckasm_bitdepth_8.a.p/checkasm_loopfilter.c.o tests/libcheckasm_bitdepth_8.a.p/checkasm_looprestoration.c.o tests/libcheckasm_bitdepth_8.a.p/checkasm_mc.c.o tests/libcheckasm_bitdepth_16.a.p/checkasm_cdef.c.o tests/libcheckasm_bitdepth_16.a.p/checkasm_filmgrain.c.o tests/libcheckasm_bitdepth_16.a.p/checkasm_ipred.c.o tests/libcheckasm_bitdepth_16.a.p/checkasm_itx.c.o tests/libcheckasm_bitdepth_16.a.p/checkasm_loopfilter.c.o tests/libcheckasm_bitdepth_16.a.p/checkasm_looprestoration.c.o tests/libcheckasm_bitdepth_16.a.p/checkasm_mc.c.o src/libdav1d_bitdepth_8.a.p/cdef_apply_tmpl.c.o src/libdav1d_bitdepth_8.a.p/cdef_tmpl.c.o src/libdav1d_bitdepth_8.a.p/fg_apply_tmpl.c.o src/libdav1d_bitdepth_8.a.p/filmgrain_tmpl.c.o src/libdav1d_bitdepth_8.a.p/ipred_prepare_tmpl.c.o src/libdav1d_bitdepth_8.a.p/ipred_tmpl.c.o src/libdav1d_bitdepth_8.a.p/itx_tmpl.c.o src/libdav1d_bitdepth_8.a.p/lf_apply_tmpl.c.o src/libdav1d_bitdepth_8.a.p/loopfilter_tmpl.c.o src/libdav1d_bitdepth_8.a.p/looprestoration_tmpl.c.o src/libdav1d_bitdepth_8.a.p/lr_apply_tmpl.c.o src/libdav1d_bitdepth_8.a.p/mc_tmpl.c.o src/libdav1d_bitdepth_8.a.p/recon_tmpl.c.o src/libdav1d_bitdepth_16.a.p/cdef_apply_tmpl.c.o src/libdav1d_bitdepth_16.a.p/cdef_tmpl.c.o src/libdav1d_bitdepth_16.a.p/fg_apply_tmpl.c.o src/libdav1d_bitdepth_16.a.p/filmgrain_tmpl.c.o src/libdav1d_bitdepth_16.a.p/ipred_prepare_tmpl.c.o src/libdav1d_bitdepth_16.a.p/ipred_tmpl.c.o src/libdav1d_bitdepth_16.a.p/itx_tmpl.c.o src/libdav1d_bitdepth_16.a.p/lf_apply_tmpl.c.o src/libdav1d_bitdepth_16.a.p/loopfilter_tmpl.c.o src/libdav1d_bitdepth_16.a.p/looprestoration_tmpl.c.o src/libdav1d_bitdepth_16.a.p/lr_apply_tmpl.c.o src/libdav1d_bitdepth_16.a.p/mc_tmpl.c.o src/libdav1d_bitdepth_16.a.p/recon_tmpl.c.o src/libdav1d.so.7.0.0.p/cpuid.obj src/libdav1d.so.7.0.0.p/msac.obj src/libdav1d.so.7.0.0.p/pal.obj src/libdav1d.so.7.0.0.p/refmvs.obj src/libdav1d.so.7.0.0.p/itx_avx512.obj src/libdav1d.so.7.0.0.p/cdef_avx2.obj src/libdav1d.so.7.0.0.p/itx_avx2.obj src/libdav1d.so.7.0.0.p/looprestoration_avx2.obj src/libdav1d.so.7.0.0.p/cdef_sse.obj src/libdav1d.so.7.0.0.p/itx_sse.obj src/libdav1d.so.7.0.0.p/cdef_avx512.obj src/libdav1d.so.7.0.0.p/filmgrain_avx512.obj src/libdav1d.so.7.0.0.p/ipred_avx512.obj src/libdav1d.so.7.0.0.p/loopfilter_avx512.obj src/libdav1d.so.7.0.0.p/looprestoration_avx512.obj src/libdav1d.so.7.0.0.p/mc_avx512.obj src/libdav1d.so.7.0.0.p/filmgrain_avx2.obj src/libdav1d.so.7.0.0.p/ipred_avx2.obj src/libdav1d.so.7.0.0.p/loopfilter_avx2.obj src/libdav1d.so.7.0.0.p/mc_avx2.obj src/libdav1d.so.7.0.0.p/filmgrain_sse.obj src/libdav1d.so.7.0.0.p/ipred_sse.obj src/libdav1d.so.7.0.0.p/loopfilter_sse.obj src/libdav1d.so.7.0.0.p/looprestoration_sse.obj src/libdav1d.so.7.0.0.p/mc_sse.obj src/libdav1d.so.7.0.0.p/cdef16_avx512.obj src/libdav1d.so.7.0.0.p/filmgrain16_avx512.obj src/libdav1d.so.7.0.0.p/ipred16_avx512.obj src/libdav1d.so.7.0.0.p/itx16_avx512.obj src/libdav1d.so.7.0.0.p/loopfilter16_avx512.obj src/libdav1d.so.7.0.0.p/looprestoration16_avx512.obj src/libdav1d.so.7.0.0.p/mc16_avx512.obj src/libdav1d.so.7.0.0.p/cdef16_avx2.obj src/libdav1d.so.7.0.0.p/filmgrain16_avx2.obj src/libdav1d.so.7.0.0.p/ipred16_avx2.obj src/libdav1d.so.7.0.0.p/itx16_avx2.obj src/libdav1d.so.7.0.0.p/loopfilter16_avx2.obj src/libdav1d.so.7.0.0.p/looprestoration16_avx2.obj src/libdav1d.so.7.0.0.p/mc16_avx2.obj src/libdav1d.so.7.0.0.p/cdef16_sse.obj src/libdav1d.so.7.0.0.p/filmgrain16_sse.obj src/libdav1d.so.7.0.0.p/ipred16_sse.obj src/libdav1d.so.7.0.0.p/itx16_sse.obj src/libdav1d.so.7.0.0.p/loopfilter16_sse.obj src/libdav1d.so.7.0.0.p/looprestoration16_sse.obj src/libdav1d.so.7.0.0.p/mc16_sse.obj src/libdav1d.so.7.0.0.p/cdf.c.o src/libdav1d.so.7.0.0.p/cpu.c.o src/libdav1d.so.7.0.0.p/data.c.o src/libdav1d.so.7.0.0.p/decode.c.o src/libdav1d.so.7.0.0.p/dequant_tables.c.o src/libdav1d.so.7.0.0.p/getbits.c.o src/libdav1d.so.7.0.0.p/intra_edge.c.o src/libdav1d.so.7.0.0.p/itx_1d.c.o src/libdav1d.so.7.0.0.p/lf_mask.c.o src/libdav1d.so.7.0.0.p/lib.c.o src/libdav1d.so.7.0.0.p/log.c.o src/libdav1d.so.7.0.0.p/mem.c.o src/libdav1d.so.7.0.0.p/msac.c.o src/libdav1d.so.7.0.0.p/obu.c.o src/libdav1d.so.7.0.0.p/pal.c.o src/libdav1d.so.7.0.0.p/picture.c.o src/libdav1d.so.7.0.0.p/qm.c.o src/libdav1d.so.7.0.0.p/ref.c.o src/libdav1d.so.7.0.0.p/refmvs.c.o src/libdav1d.so.7.0.0.p/scan.c.o src/libdav1d.so.7.0.0.p/tables.c.o src/libdav1d.so.7.0.0.p/thread_task.c.o src/libdav1d.so.7.0.0.p/warpmv.c.o src/libdav1d.so.7.0.0.p/wedge.c.o src/libdav1d.so.7.0.0.p/x86_cpu.c.o tests/checkasm.p/checkasm_checkasm.c.o tests/checkasm.p/checkasm_msac.c.o tests/checkasm.p/checkasm_pal.c.o tests/checkasm.p/checkasm_refmvs.c.o -Wl,--as-needed -Wl,--no-undefined -Wl,-O1 -pthread -Wl,--start-group -ldl -lm -Wl,--end-group
+[147/150] Generating symbol file src/libdav1d.so.7.0.0.p/libdav1d.so.7.0.0.symbols
+[148/150] Linking target tests/libfuzzer/dav1d_fuzzer_mt
+/usr/bin/gcc-13 -fno-omit-frame-pointer -o tests/libfuzzer/dav1d_fuzzer_mt tests/libfuzzer/dav1d_fuzzer_mt.p/dav1d_fuzzer.c.o tests/libfuzzer/dav1d_fuzzer_mt.p/main.c.o -Wl,--as-needed -Wl,--no-undefined -Wl,-O1 -Wl,-rpath,$ORIGIN/../../src -Wl,-rpath-link,/home/ubuntu/.phoronix-test-suite/installed-tests/pts/dav1d-1.15.1/dav1d-1.4.0/build/src -Wl,--start-group src/libdav1d.so.7.0.0 -Wl,--end-group -pthread
+[149/150] Linking target tests/libfuzzer/dav1d_fuzzer
+/usr/bin/gcc-13 -fno-omit-frame-pointer -o tests/libfuzzer/dav1d_fuzzer tests/libfuzzer/dav1d_fuzzer.p/dav1d_fuzzer.c.o tests/libfuzzer/dav1d_fuzzer.p/main.c.o -Wl,--as-needed -Wl,--no-undefined -Wl,-O1 -Wl,-rpath,$ORIGIN/../../src -Wl,-rpath-link,/home/ubuntu/.phoronix-test-suite/installed-tests/pts/dav1d-1.15.1/dav1d-1.4.0/build/src -Wl,--start-group src/libdav1d.so.7.0.0 -Wl,--end-group -pthread
+[150/150] Linking target tools/dav1d
+/usr/bin/gcc-13 -fno-omit-frame-pointer -o tools/dav1d tools/dav1d.p/dav1d.c.o tools/dav1d.p/dav1d_cli_parse.c.o -Wl,--as-needed -Wl,--no-undefined -Wl,-O1 -Wl,-rpath,$ORIGIN/../src -Wl,-rpath-link,/home/ubuntu/.phoronix-test-suite/installed-tests/pts/dav1d-1.15.1/dav1d-1.4.0/build/src -Wl,--start-group src/libdav1d.so.7.0.0 tools/libdav1d_input.a tools/libdav1d_output.a -pthread -lm -Wl,--end-group

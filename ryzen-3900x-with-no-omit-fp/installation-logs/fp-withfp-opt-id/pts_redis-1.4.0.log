@@ -1,0 +1,598 @@
+(cd hiredis && make clean) > /dev/null || true
+(cd linenoise && make clean) > /dev/null || true
+(cd lua && make clean) > /dev/null || true
+(cd jemalloc && [ -f Makefile ] && make distclean) > /dev/null || true
+(cd hdr_histogram && make clean) > /dev/null || true
+(rm -f .make-*)
+(echo "" > .make-cflags)
+(echo "" > .make-ldflags)
+[32;1mMAKE[0m [37;1mhiredis[0m
+cd hiredis && make static 
+make[1]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/redis-1.4.0/redis-7.0.4/deps/hiredis'
+cc -std=c99 -c -O3 -fPIC   -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb -pedantic alloc.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=c99 -c -O3 -fPIC -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb -pedantic alloc.c
+cc -std=c99 -c -O3 -fPIC   -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb -pedantic net.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=c99 -c -O3 -fPIC -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb -pedantic net.c
+cc -std=c99 -c -O3 -fPIC   -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb -pedantic hiredis.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=c99 -c -O3 -fPIC -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb -pedantic hiredis.c
+cc -std=c99 -c -O3 -fPIC   -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb -pedantic sds.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=c99 -c -O3 -fPIC -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb -pedantic sds.c
+cc -std=c99 -c -O3 -fPIC   -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb -pedantic async.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=c99 -c -O3 -fPIC -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb -pedantic async.c
+cc -std=c99 -c -O3 -fPIC   -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb -pedantic read.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=c99 -c -O3 -fPIC -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb -pedantic read.c
+cc -std=c99 -c -O3 -fPIC   -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb -pedantic sockcompat.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=c99 -c -O3 -fPIC -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb -pedantic sockcompat.c
+ar rcs libhiredis.a alloc.o net.o hiredis.o sds.o async.o read.o sockcompat.o
+make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/redis-1.4.0/redis-7.0.4/deps/hiredis'
+[32;1mMAKE[0m [37;1mjemalloc[0m
+cd jemalloc && ./configure --with-version=5.2.1-0-g0 --with-lg-quantum=3 --with-jemalloc-prefix=je_ CFLAGS="-std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops " LDFLAGS="" 
+checking for xsltproc... false
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether compiler is cray... no
+checking whether compiler supports -std=gnu11... yes
+checking whether compiler supports -Wall... yes
+checking whether compiler supports -Wextra... yes
+checking whether compiler supports -Wshorten-64-to-32... no
+checking whether compiler supports -Wsign-compare... yes
+checking whether compiler supports -Wundef... yes
+checking whether compiler supports -Wno-format-zero-length... yes
+checking whether compiler supports -pipe... yes
+checking whether compiler supports -g3... yes
+checking how to run the C preprocessor... gcc -E
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking whether g++ supports C++14 features by default... yes
+checking whether compiler supports -Wall... yes
+checking whether compiler supports -Wextra... yes
+checking whether compiler supports -g3... yes
+checking whether libstdc++ linkage is compilable... yes
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking whether byte ordering is bigendian... no
+checking size of void *... 8
+checking size of int... 4
+checking size of long... 8
+checking size of long long... 8
+checking size of intmax_t... 8
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking whether pause instruction is compilable... yes
+checking number of significant virtual address bits... 48
+checking for ar... ar
+checking for nm... nm
+checking for gawk... gawk
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking whether malloc_usable_size definition can use const argument... no
+checking for library containing log... -lm
+checking whether __attribute__ syntax is compilable... yes
+checking whether compiler supports -fvisibility=hidden... yes
+checking whether compiler supports -fvisibility=hidden... yes
+checking whether compiler supports -Werror... yes
+checking whether compiler supports -herror_on_warning... no
+checking whether tls_model attribute is compilable... yes
+checking whether compiler supports -Werror... yes
+checking whether compiler supports -herror_on_warning... no
+checking whether alloc_size attribute is compilable... yes
+checking whether compiler supports -Werror... yes
+checking whether compiler supports -herror_on_warning... no
+checking whether format(gnu_printf, ...) attribute is compilable... yes
+checking whether compiler supports -Werror... yes
+checking whether compiler supports -herror_on_warning... no
+checking whether format(printf, ...) attribute is compilable... yes
+checking whether compiler supports -Werror... yes
+checking whether compiler supports -herror_on_warning... no
+checking whether format(printf, ...) attribute is compilable... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for ranlib... ranlib
+checking for ld... /usr/bin/ld
+checking for autoconf... /usr/bin/autoconf
+checking for memalign... yes
+checking for valloc... yes
+checking whether compiler supports -O3... yes
+checking whether compiler supports -O3... yes
+checking whether compiler supports -funroll-loops... yes
+checking configured backtracing method... N/A
+checking for sbrk... yes
+checking whether utrace(2) is compilable... no
+checking whether a program using __builtin_unreachable is compilable... yes
+checking whether a program using __builtin_ffsl is compilable... yes
+checking whether a program using __builtin_popcountl is compilable... yes
+checking LG_PAGE... 12
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for pthread_create in -lpthread... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking for dlsym... yes
+checking whether pthread_atfork(3) is compilable... yes
+checking whether pthread_setname_np(3) is compilable... yes
+checking for library containing clock_gettime... none required
+checking whether clock_gettime(CLOCK_MONOTONIC_COARSE, ...) is compilable... yes
+checking whether clock_gettime(CLOCK_MONOTONIC, ...) is compilable... yes
+checking whether mach_absolute_time() is compilable... no
+checking whether compiler supports -Werror... yes
+checking whether syscall(2) is compilable... yes
+checking for secure_getenv... yes
+checking for sched_getcpu... yes
+checking for sched_setaffinity... yes
+checking for issetugid... no
+checking for _malloc_thread_cleanup... no
+checking for _pthread_mutex_init_calloc_cb... no
+checking for TLS... yes
+checking whether C11 atomics is compilable... no
+checking whether GCC __atomic atomics is compilable... yes
+checking whether GCC 8-bit __atomic atomics is compilable... yes
+checking whether GCC __sync atomics is compilable... yes
+checking whether GCC 8-bit __sync atomics is compilable... yes
+checking whether Darwin OSAtomic*() is compilable... no
+checking whether madvise(2) is compilable... yes
+checking whether madvise(..., MADV_FREE) is compilable... yes
+checking whether madvise(..., MADV_DONTNEED) is compilable... yes
+checking whether madvise(..., MADV_DO[NT]DUMP) is compilable... yes
+checking whether madvise(..., MADV_[NO]HUGEPAGE) is compilable... yes
+checking for __builtin_clz... yes
+checking whether Darwin os_unfair_lock_*() is compilable... no
+checking whether glibc malloc hook is compilable... no
+checking whether glibc memalign hook is compilable... no
+checking whether pthreads adaptive mutexes is compilable... yes
+checking whether compiler supports -D_GNU_SOURCE... yes
+checking whether compiler supports -Werror... yes
+checking whether compiler supports -herror_on_warning... no
+checking whether strerror_r returns char with gnu source is compilable... yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating jemalloc.pc
+config.status: creating doc/html.xsl
+config.status: creating doc/manpages.xsl
+config.status: creating doc/jemalloc.xml
+config.status: creating include/jemalloc/jemalloc_macros.h
+config.status: creating include/jemalloc/jemalloc_protos.h
+config.status: creating include/jemalloc/jemalloc_typedefs.h
+config.status: creating include/jemalloc/internal/jemalloc_preamble.h
+config.status: creating test/test.sh
+config.status: creating test/include/test/jemalloc_test.h
+config.status: creating config.stamp
+config.status: creating bin/jemalloc-config
+config.status: creating bin/jemalloc.sh
+config.status: creating bin/jeprof
+config.status: creating include/jemalloc/jemalloc_defs.h
+config.status: creating include/jemalloc/internal/jemalloc_internal_defs.h
+config.status: creating test/include/test/jemalloc_test_defs.h
+config.status: executing include/jemalloc/internal/public_symbols.txt commands
+config.status: executing include/jemalloc/internal/private_symbols.awk commands
+config.status: executing include/jemalloc/internal/private_symbols_jet.awk commands
+config.status: executing include/jemalloc/internal/public_namespace.h commands
+config.status: executing include/jemalloc/internal/public_unnamespace.h commands
+config.status: executing include/jemalloc/jemalloc_protos_jet.h commands
+config.status: executing include/jemalloc/jemalloc_rename.h commands
+config.status: executing include/jemalloc/jemalloc_mangle.h commands
+config.status: executing include/jemalloc/jemalloc_mangle_jet.h commands
+config.status: executing include/jemalloc/jemalloc.h commands
+===============================================================================
+jemalloc version   : 5.2.1-0-g0
+library revision   : 2
+
+CONFIG             : --with-version=5.2.1-0-g0 --with-lg-quantum=3 --with-jemalloc-prefix=je_ 'CFLAGS=-std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops ' LDFLAGS=
+CC                 : gcc
+CONFIGURE_CFLAGS   : -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -pipe -g3 -fvisibility=hidden -O3 -funroll-loops
+SPECIFIED_CFLAGS   : -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops 
+EXTRA_CFLAGS       : 
+CPPFLAGS           : -D_GNU_SOURCE -D_REENTRANT
+CXX                : g++
+CONFIGURE_CXXFLAGS : -Wall -Wextra -g3 -fvisibility=hidden -O3
+SPECIFIED_CXXFLAGS : 
+EXTRA_CXXFLAGS     : 
+LDFLAGS            : 
+EXTRA_LDFLAGS      : 
+DSO_LDFLAGS        : -shared -Wl,-soname,$(@F)
+LIBS               : -lm -lstdc++ -pthread
+RPATH_EXTRA        : 
+
+XSLTPROC           : false
+XSLROOT            : 
+
+PREFIX             : /usr/local
+BINDIR             : /usr/local/bin
+DATADIR            : /usr/local/share
+INCLUDEDIR         : /usr/local/include
+LIBDIR             : /usr/local/lib
+MANDIR             : /usr/local/share/man
+
+srcroot            : 
+abs_srcroot        : /home/ubuntu/.phoronix-test-suite/installed-tests/pts/redis-1.4.0/redis-7.0.4/deps/jemalloc/
+objroot            : 
+abs_objroot        : /home/ubuntu/.phoronix-test-suite/installed-tests/pts/redis-1.4.0/redis-7.0.4/deps/jemalloc/
+
+JEMALLOC_PREFIX    : je_
+JEMALLOC_PRIVATE_NAMESPACE
+                   : je_
+install_suffix     : 
+malloc_conf        : 
+documentation      : 1
+shared libs        : 1
+static libs        : 1
+autogen            : 0
+debug              : 0
+stats              : 1
+experimetal_smallocx : 0
+prof               : 0
+prof-libunwind     : 0
+prof-libgcc        : 0
+prof-gcc           : 0
+fill               : 1
+utrace             : 0
+xmalloc            : 0
+log                : 0
+lazy_lock          : 0
+cache-oblivious    : 1
+cxx                : 1
+===============================================================================
+cd jemalloc && make CFLAGS="-std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops " LDFLAGS="" lib/libjemalloc.a
+make[1]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/redis-1.4.0/redis-7.0.4/deps/jemalloc'
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/jemalloc.sym.o src/jemalloc.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/jemalloc.sym.o src/jemalloc.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/jemalloc.sym.o -o src/jemalloc.sym.d src/jemalloc.c
+nm -a src/jemalloc.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/jemalloc.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/arena.sym.o src/arena.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/arena.sym.o src/arena.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/arena.sym.o -o src/arena.sym.d src/arena.c
+nm -a src/arena.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/arena.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/background_thread.sym.o src/background_thread.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/background_thread.sym.o src/background_thread.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/background_thread.sym.o -o src/background_thread.sym.d src/background_thread.c
+nm -a src/background_thread.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/background_thread.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/base.sym.o src/base.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/base.sym.o src/base.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/base.sym.o -o src/base.sym.d src/base.c
+nm -a src/base.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/base.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/bin.sym.o src/bin.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/bin.sym.o src/bin.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/bin.sym.o -o src/bin.sym.d src/bin.c
+nm -a src/bin.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/bin.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/bitmap.sym.o src/bitmap.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/bitmap.sym.o src/bitmap.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/bitmap.sym.o -o src/bitmap.sym.d src/bitmap.c
+nm -a src/bitmap.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/bitmap.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/ckh.sym.o src/ckh.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/ckh.sym.o src/ckh.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/ckh.sym.o -o src/ckh.sym.d src/ckh.c
+nm -a src/ckh.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/ckh.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/ctl.sym.o src/ctl.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/ctl.sym.o src/ctl.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/ctl.sym.o -o src/ctl.sym.d src/ctl.c
+nm -a src/ctl.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/ctl.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/div.sym.o src/div.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/div.sym.o src/div.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/div.sym.o -o src/div.sym.d src/div.c
+nm -a src/div.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/div.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/extent.sym.o src/extent.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/extent.sym.o src/extent.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/extent.sym.o -o src/extent.sym.d src/extent.c
+nm -a src/extent.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/extent.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/extent_dss.sym.o src/extent_dss.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/extent_dss.sym.o src/extent_dss.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/extent_dss.sym.o -o src/extent_dss.sym.d src/extent_dss.c
+nm -a src/extent_dss.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/extent_dss.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/extent_mmap.sym.o src/extent_mmap.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/extent_mmap.sym.o src/extent_mmap.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/extent_mmap.sym.o -o src/extent_mmap.sym.d src/extent_mmap.c
+nm -a src/extent_mmap.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/extent_mmap.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/hash.sym.o src/hash.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/hash.sym.o src/hash.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/hash.sym.o -o src/hash.sym.d src/hash.c
+nm -a src/hash.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/hash.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/hook.sym.o src/hook.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/hook.sym.o src/hook.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/hook.sym.o -o src/hook.sym.d src/hook.c
+nm -a src/hook.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/hook.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/large.sym.o src/large.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/large.sym.o src/large.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/large.sym.o -o src/large.sym.d src/large.c
+nm -a src/large.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/large.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/log.sym.o src/log.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/log.sym.o src/log.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/log.sym.o -o src/log.sym.d src/log.c
+nm -a src/log.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/log.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/malloc_io.sym.o src/malloc_io.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/malloc_io.sym.o src/malloc_io.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/malloc_io.sym.o -o src/malloc_io.sym.d src/malloc_io.c
+nm -a src/malloc_io.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/malloc_io.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/mutex.sym.o src/mutex.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/mutex.sym.o src/mutex.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/mutex.sym.o -o src/mutex.sym.d src/mutex.c
+nm -a src/mutex.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/mutex.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/mutex_pool.sym.o src/mutex_pool.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/mutex_pool.sym.o src/mutex_pool.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/mutex_pool.sym.o -o src/mutex_pool.sym.d src/mutex_pool.c
+nm -a src/mutex_pool.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/mutex_pool.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/nstime.sym.o src/nstime.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/nstime.sym.o src/nstime.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/nstime.sym.o -o src/nstime.sym.d src/nstime.c
+nm -a src/nstime.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/nstime.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/pages.sym.o src/pages.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/pages.sym.o src/pages.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/pages.sym.o -o src/pages.sym.d src/pages.c
+nm -a src/pages.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/pages.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/prng.sym.o src/prng.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/prng.sym.o src/prng.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/prng.sym.o -o src/prng.sym.d src/prng.c
+nm -a src/prng.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/prng.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/prof.sym.o src/prof.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/prof.sym.o src/prof.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/prof.sym.o -o src/prof.sym.d src/prof.c
+nm -a src/prof.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/prof.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/rtree.sym.o src/rtree.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/rtree.sym.o src/rtree.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/rtree.sym.o -o src/rtree.sym.d src/rtree.c
+nm -a src/rtree.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/rtree.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/safety_check.sym.o src/safety_check.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/safety_check.sym.o src/safety_check.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/safety_check.sym.o -o src/safety_check.sym.d src/safety_check.c
+nm -a src/safety_check.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/safety_check.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/stats.sym.o src/stats.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/stats.sym.o src/stats.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/stats.sym.o -o src/stats.sym.d src/stats.c
+nm -a src/stats.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/stats.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/sc.sym.o src/sc.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/sc.sym.o src/sc.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/sc.sym.o -o src/sc.sym.d src/sc.c
+nm -a src/sc.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/sc.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/sz.sym.o src/sz.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/sz.sym.o src/sz.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/sz.sym.o -o src/sz.sym.d src/sz.c
+nm -a src/sz.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/sz.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/tcache.sym.o src/tcache.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/tcache.sym.o src/tcache.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/tcache.sym.o -o src/tcache.sym.d src/tcache.c
+nm -a src/tcache.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/tcache.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/test_hooks.sym.o src/test_hooks.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/test_hooks.sym.o src/test_hooks.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/test_hooks.sym.o -o src/test_hooks.sym.d src/test_hooks.c
+nm -a src/test_hooks.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/test_hooks.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/ticker.sym.o src/ticker.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/ticker.sym.o src/ticker.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/ticker.sym.o -o src/ticker.sym.d src/ticker.c
+nm -a src/ticker.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/ticker.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/tsd.sym.o src/tsd.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/tsd.sym.o src/tsd.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/tsd.sym.o -o src/tsd.sym.d src/tsd.c
+nm -a src/tsd.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/tsd.sym
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/witness.sym.o src/witness.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/witness.sym.o src/witness.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -MT src/witness.sym.o -o src/witness.sym.d src/witness.c
+nm -a src/witness.sym.o | gawk -f include/jemalloc/internal/private_symbols.awk > src/witness.sym
+/bin/sh include/jemalloc/internal/private_namespace.sh src/jemalloc.sym src/arena.sym src/background_thread.sym src/base.sym src/bin.sym src/bitmap.sym src/ckh.sym src/ctl.sym src/div.sym src/extent.sym src/extent_dss.sym src/extent_mmap.sym src/hash.sym src/hook.sym src/large.sym src/log.sym src/malloc_io.sym src/mutex.sym src/mutex_pool.sym src/nstime.sym src/pages.sym src/prng.sym src/prof.sym src/rtree.sym src/safety_check.sym src/stats.sym src/sc.sym src/sz.sym src/tcache.sym src/test_hooks.sym src/ticker.sym src/tsd.sym src/witness.sym > include/jemalloc/internal/private_namespace.gen.h
+cp include/jemalloc/internal/private_namespace.gen.h include/jemalloc/internal/private_namespace.gen.h
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/jemalloc.o src/jemalloc.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/jemalloc.o src/jemalloc.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/jemalloc.o -o src/jemalloc.d src/jemalloc.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/arena.o src/arena.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/arena.o src/arena.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/arena.o -o src/arena.d src/arena.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/background_thread.o src/background_thread.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/background_thread.o src/background_thread.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/background_thread.o -o src/background_thread.d src/background_thread.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/base.o src/base.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/base.o src/base.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/base.o -o src/base.d src/base.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/bin.o src/bin.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/bin.o src/bin.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/bin.o -o src/bin.d src/bin.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/bitmap.o src/bitmap.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/bitmap.o src/bitmap.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/bitmap.o -o src/bitmap.d src/bitmap.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/ckh.o src/ckh.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/ckh.o src/ckh.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/ckh.o -o src/ckh.d src/ckh.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/ctl.o src/ctl.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/ctl.o src/ctl.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/ctl.o -o src/ctl.d src/ctl.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/div.o src/div.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/div.o src/div.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/div.o -o src/div.d src/div.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/extent.o src/extent.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/extent.o src/extent.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/extent.o -o src/extent.d src/extent.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/extent_dss.o src/extent_dss.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/extent_dss.o src/extent_dss.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/extent_dss.o -o src/extent_dss.d src/extent_dss.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/extent_mmap.o src/extent_mmap.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/extent_mmap.o src/extent_mmap.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/extent_mmap.o -o src/extent_mmap.d src/extent_mmap.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/hash.o src/hash.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/hash.o src/hash.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/hash.o -o src/hash.d src/hash.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/hook.o src/hook.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/hook.o src/hook.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/hook.o -o src/hook.d src/hook.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/large.o src/large.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/large.o src/large.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/large.o -o src/large.d src/large.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/log.o src/log.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/log.o src/log.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/log.o -o src/log.d src/log.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/malloc_io.o src/malloc_io.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/malloc_io.o src/malloc_io.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/malloc_io.o -o src/malloc_io.d src/malloc_io.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/mutex.o src/mutex.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/mutex.o src/mutex.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/mutex.o -o src/mutex.d src/mutex.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/mutex_pool.o src/mutex_pool.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/mutex_pool.o src/mutex_pool.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/mutex_pool.o -o src/mutex_pool.d src/mutex_pool.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/nstime.o src/nstime.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/nstime.o src/nstime.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/nstime.o -o src/nstime.d src/nstime.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/pages.o src/pages.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/pages.o src/pages.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/pages.o -o src/pages.d src/pages.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/prng.o src/prng.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/prng.o src/prng.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/prng.o -o src/prng.d src/prng.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/prof.o src/prof.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/prof.o src/prof.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/prof.o -o src/prof.d src/prof.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/rtree.o src/rtree.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/rtree.o src/rtree.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/rtree.o -o src/rtree.d src/rtree.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/safety_check.o src/safety_check.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/safety_check.o src/safety_check.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/safety_check.o -o src/safety_check.d src/safety_check.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/stats.o src/stats.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/stats.o src/stats.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/stats.o -o src/stats.d src/stats.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/sc.o src/sc.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/sc.o src/sc.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/sc.o -o src/sc.d src/sc.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/sz.o src/sz.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/sz.o src/sz.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/sz.o -o src/sz.d src/sz.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/tcache.o src/tcache.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/tcache.o src/tcache.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/tcache.o -o src/tcache.d src/tcache.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/test_hooks.o src/test_hooks.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/test_hooks.o src/test_hooks.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/test_hooks.o -o src/test_hooks.d src/test_hooks.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/ticker.o src/ticker.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/ticker.o src/ticker.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/ticker.o -o src/ticker.d src/ticker.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/tsd.o src/tsd.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/tsd.o src/tsd.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/tsd.o -o src/tsd.d src/tsd.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/witness.o src/witness.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/witness.o src/witness.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/witness.o -o src/witness.d src/witness.c
+g++ -Wall -Wextra -g3 -fvisibility=hidden -O3 -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/jemalloc_cpp.o src/jemalloc_cpp.cpp
+/usr/bin/g++-13 -fno-omit-frame-pointer -Wall -Wextra -g3 -fvisibility=hidden -O3 -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/jemalloc_cpp.o src/jemalloc_cpp.cpp
+/usr/bin/g++-13 -fno-omit-frame-pointer -MM -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -MT src/jemalloc_cpp.o -o src/jemalloc_cpp.d src/jemalloc_cpp.cpp
+ar crus lib/libjemalloc.a src/jemalloc.o src/arena.o src/background_thread.o src/base.o src/bin.o src/bitmap.o src/ckh.o src/ctl.o src/div.o src/extent.o src/extent_dss.o src/extent_mmap.o src/hash.o src/hook.o src/large.o src/log.o src/malloc_io.o src/mutex.o src/mutex_pool.o src/nstime.o src/pages.o src/prng.o src/prof.o src/rtree.o src/safety_check.o src/stats.o src/sc.o src/sz.o src/tcache.o src/test_hooks.o src/ticker.o src/tsd.o src/witness.o src/jemalloc_cpp.o
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/redis-1.4.0/redis-7.0.4/deps/jemalloc'
+[32;1mMAKE[0m [37;1mlinenoise[0m
+cd linenoise && make
+make[1]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/redis-1.4.0/redis-7.0.4/deps/linenoise'
+cc  -Wall -Os -g  -c linenoise.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -Os -g -c linenoise.c
+make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/redis-1.4.0/redis-7.0.4/deps/linenoise'
+[32;1mMAKE[0m [37;1mlua[0m
+cd lua/src && make all CFLAGS="-Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2 " MYLDFLAGS="" AR="ar rc"
+make[1]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/redis-1.4.0/redis-7.0.4/deps/lua/src'
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lapi.o lapi.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o lapi.o lapi.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lcode.o lcode.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o lcode.o lcode.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o ldebug.o ldebug.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o ldebug.o ldebug.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o ldo.o ldo.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o ldo.o ldo.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o ldump.o ldump.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o ldump.o ldump.c
+ldump.c: In function ‘DumpString’:
+ldump.c:63:26: warning: the comparison will always evaluate as ‘false’ for the pointer operand in ‘s + 24’ must not be NULL [-Waddress]
+   63 |  if (s==NULL || getstr(s)==NULL)
+      |                          ^~
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lfunc.o lfunc.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o lfunc.o lfunc.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lgc.o lgc.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o lgc.o lgc.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o llex.o llex.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o llex.o llex.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lmem.o lmem.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o lmem.o lmem.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lobject.o lobject.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o lobject.o lobject.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lopcodes.o lopcodes.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o lopcodes.o lopcodes.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lparser.o lparser.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o lparser.o lparser.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lstate.o lstate.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o lstate.o lstate.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lstring.o lstring.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o lstring.o lstring.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o ltable.o ltable.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o ltable.o ltable.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o ltm.o ltm.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o ltm.o ltm.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lundump.o lundump.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o lundump.o lundump.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lvm.o lvm.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o lvm.o lvm.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lzio.o lzio.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o lzio.o lzio.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o strbuf.o strbuf.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o strbuf.o strbuf.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o fpconv.o fpconv.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o fpconv.o fpconv.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lauxlib.o lauxlib.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o lauxlib.o lauxlib.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lbaselib.o lbaselib.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o lbaselib.o lbaselib.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o ldblib.o ldblib.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o ldblib.o ldblib.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o liolib.o liolib.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o liolib.o liolib.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lmathlib.o lmathlib.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o lmathlib.o lmathlib.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o loslib.o loslib.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o loslib.o loslib.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o ltablib.o ltablib.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o ltablib.o ltablib.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lstrlib.o lstrlib.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o lstrlib.o lstrlib.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o loadlib.o loadlib.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o loadlib.o loadlib.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o linit.o linit.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o linit.o linit.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lua_cjson.o lua_cjson.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o lua_cjson.o lua_cjson.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lua_struct.o lua_struct.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o lua_struct.o lua_struct.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lua_cmsgpack.o lua_cmsgpack.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o lua_cmsgpack.o lua_cmsgpack.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lua_bit.o lua_bit.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o lua_bit.o lua_bit.c
+ar rc liblua.a lapi.o lcode.o ldebug.o ldo.o ldump.o lfunc.o lgc.o llex.o lmem.o lobject.o lopcodes.o lparser.o lstate.o lstring.o ltable.o ltm.o lundump.o lvm.o lzio.o strbuf.o fpconv.o lauxlib.o lbaselib.o ldblib.o liolib.o lmathlib.o loslib.o ltablib.o lstrlib.o loadlib.o linit.o lua_cjson.o lua_struct.o lua_cmsgpack.o lua_bit.o	# DLL needs all object files
+ranlib liblua.a
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lua.o lua.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o lua.o lua.c
+cc -o lua  lua.o liblua.a -lm 
+/usr/bin/gcc-13 -fno-omit-frame-pointer -o lua lua.o liblua.a -lm
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o luac.o luac.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o luac.o luac.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o print.o print.c
+/usr/bin/gcc-13 -fno-omit-frame-pointer -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC= -DLUA_USE_MKSTEMP -O2 -c -o print.o print.c
+cc -o luac  luac.o print.o liblua.a -lm 
+/usr/bin/gcc-13 -fno-omit-frame-pointer -o luac luac.o print.o liblua.a -lm
+make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/redis-1.4.0/redis-7.0.4/deps/lua/src'
+cd src && make all
+make[1]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/redis-1.4.0/redis-7.0.4/src'
+    [34mCC[0m [33mMakefile.dep[0m
+Makefile.dep:1: *** missing separator.  Stop.
+make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/redis-1.4.0/redis-7.0.4/src'
+make: *** [Makefile:6: all] Error 2

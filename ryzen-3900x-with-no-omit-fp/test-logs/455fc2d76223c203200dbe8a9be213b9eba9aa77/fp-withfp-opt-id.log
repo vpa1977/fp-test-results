@@ -1,0 +1,1935 @@
+#####
+fp-withfp-opt-id - Run 1
+2024-02-18 22:57:52
+#####
+IOR-3.3.0: MPI Coordinated Test of Parallel I/O
+Began               : Sun Feb 18 21:41:29 2024
+Command line        : ./src/ior -v -w -r -i 100 -e -q -b 256m -o testFile
+Machine             : Linux fp
+Start time skew across all tasks: 0.00 sec
+TestID              : 0
+StartTime           : Sun Feb 18 21:41:29 2024
+Path                : /home/ubuntu/.phoronix-test-suite/installed-tests/pts/ior-1.1.1/ior-3.3.0
+FS                  : 420.0 GiB   Used FS: 74.6%   Inodes: 26.7 Mi   Used Inodes: 3.5%
+Participating tasks: 12
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile
+access              : single-shared-file
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 12
+clients per node    : 12
+repetitions         : 100
+xfersize            : 262144 bytes
+blocksize           : 256 MiB
+aggregate filesize  : 3 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+Commencing write performance test: Sun Feb 18 21:41:29 2024
+write     52.07      208.28     0.057615    262144     256.00     0.000059   59.00      0.000030   59.00      0   
+Commencing read performance test: Sun Feb 18 21:42:28 2024
+
+read      37043      148196     0.000075    262144     256.00     0.000034   0.082917   0.022470   0.082932   0   
+remove    -          -          -           -          -          -          -          -          0.573014   0   
+Commencing write performance test: Sun Feb 18 21:42:28 2024
+write     70.75      282.99     0.042404    262144     256.00     0.000071   43.42      0.000031   43.42      1   
+Commencing read performance test: Sun Feb 18 21:43:12 2024
+
+read      38069      152299     0.000074    262144     256.00     0.000033   0.080683   0.017738   0.080697   1   
+remove    -          -          -           -          -          -          -          -          0.576064   1   
+Commencing write performance test: Sun Feb 18 21:43:12 2024
+write     59.18      236.73     0.050690    262144     256.00     0.000069   51.91      0.000029   51.91      2   
+Commencing read performance test: Sun Feb 18 21:44:04 2024
+
+read      37161      148668     0.000053    262144     256.00     0.000035   0.082654   0.030652   0.082668   2   
+remove    -          -          -           -          -          -          -          -          0.579019   2   
+Commencing write performance test: Sun Feb 18 21:44:05 2024
+write     68.51      274.02     0.043792    262144     256.00     0.000074   44.84      0.000030   44.84      3   
+Commencing read performance test: Sun Feb 18 21:44:50 2024
+
+read      38144      152604     0.000077    262144     256.00     0.000034   0.080522   0.019015   0.080537   3   
+remove    -          -          -           -          -          -          -          -          0.576651   3   
+Commencing write performance test: Sun Feb 18 21:44:50 2024
+write     67.38      269.51     0.044526    262144     256.00     0.000070   45.59      0.000030   45.59      4   
+Commencing read performance test: Sun Feb 18 21:45:36 2024
+
+read      37748      151019     0.000068    262144     256.00     0.000036   0.081367   0.017887   0.081383   4   
+remove    -          -          -           -          -          -          -          -          0.573695   4   
+Commencing write performance test: Sun Feb 18 21:45:37 2024
+write     65.70      262.79     0.045664    262144     256.00     0.000069   46.76      0.000031   46.76      5   
+Commencing read performance test: Sun Feb 18 21:46:23 2024
+
+read      36910      147670     0.000075    262144     256.00     0.000032   0.083213   0.022558   0.083228   5   
+remove    -          -          -           -          -          -          -          -          0.576327   5   
+Commencing write performance test: Sun Feb 18 21:46:24 2024
+write     69.49      277.96     0.043171    262144     256.00     0.000071   44.21      0.000031   44.21      6   
+Commencing read performance test: Sun Feb 18 21:47:08 2024
+
+read      37591      150396     0.000080    262144     256.00     0.000034   0.081704   0.025075   0.081721   6   
+remove    -          -          -           -          -          -          -          -          0.576828   6   
+Commencing write performance test: Sun Feb 18 21:47:09 2024
+write     68.05      272.22     0.044082    262144     256.00     0.000074   45.14      0.000030   45.14      7   
+Commencing read performance test: Sun Feb 18 21:47:54 2024
+
+read      37848      151416     0.000074    262144     256.00     0.000034   0.081154   0.017318   0.081166   7   
+remove    -          -          -           -          -          -          -          -          0.581788   7   
+Commencing write performance test: Sun Feb 18 21:47:55 2024
+write     61.47      245.90     0.048801    262144     256.00     0.000071   49.97      0.000030   49.97      8   
+Commencing read performance test: Sun Feb 18 21:48:45 2024
+
+read      36903      147637     0.000080    262144     256.00     0.000035   0.083231   0.033119   0.083246   8   
+remove    -          -          -           -          -          -          -          -          0.574516   8   
+Commencing write performance test: Sun Feb 18 21:48:45 2024
+write     59.57      238.27     0.050362    262144     256.00     0.000074   51.57      0.000031   51.57      9   
+Commencing read performance test: Sun Feb 18 21:49:37 2024
+
+read      36862      147472     0.000080    262144     256.00     0.000033   0.083324   0.022218   0.083339   9   
+remove    -          -          -           -          -          -          -          -          0.574513   9   
+Commencing write performance test: Sun Feb 18 21:49:38 2024
+write     68.73      274.91     0.043651    262144     256.00     0.000062   44.70      0.000029   44.70      10  
+Commencing read performance test: Sun Feb 18 21:50:22 2024
+
+read      37337      149371     0.000077    262144     256.00     0.000035   0.082265   0.021705   0.082278   10  
+remove    -          -          -           -          -          -          -          -          0.578079   10  
+Commencing write performance test: Sun Feb 18 21:50:23 2024
+write     72.02      288.09     0.041654    262144     256.00     0.000073   42.65      0.000028   42.65      11  
+Commencing read performance test: Sun Feb 18 21:51:06 2024
+
+read      38370      153509     0.000077    262144     256.00     0.000035   0.080047   0.001176   0.080062   11  
+remove    -          -          -           -          -          -          -          -          0.574599   11  
+Commencing write performance test: Sun Feb 18 21:51:06 2024
+write     70.36      281.43     0.042639    262144     256.00     0.000075   43.66      0.000029   43.66      12  
+Commencing read performance test: Sun Feb 18 21:51:50 2024
+
+read      37182      148749     0.000076    262144     256.00     0.000032   0.082609   0.032265   0.082621   12  
+remove    -          -          -           -          -          -          -          -          0.577566   12  
+Commencing write performance test: Sun Feb 18 21:51:51 2024
+write     69.98      279.92     0.042870    262144     256.00     0.000064   43.90      0.000030   43.90      13  
+Commencing read performance test: Sun Feb 18 21:52:34 2024
+
+read      37254      149041     0.000067    262144     256.00     0.000034   0.082447   0.029222   0.082461   13  
+remove    -          -          -           -          -          -          -          -          0.577482   13  
+Commencing write performance test: Sun Feb 18 21:52:35 2024
+write     75.34      301.34     0.039822    262144     256.00     0.000074   40.78      0.000029   40.78      14  
+Commencing read performance test: Sun Feb 18 21:53:16 2024
+
+read      36906      147644     0.000081    262144     256.00     0.000032   0.083227   0.021824   0.083239   14  
+remove    -          -          -           -          -          -          -          -          0.630933   14  
+Commencing write performance test: Sun Feb 18 21:53:17 2024
+write     70.75      283.00     0.042403    262144     256.00     0.000070   43.42      0.000029   43.42      15  
+Commencing read performance test: Sun Feb 18 21:54:00 2024
+
+read      37941      151794     0.000074    262144     256.00     0.000036   0.080952   0.017616   0.080967   15  
+remove    -          -          -           -          -          -          -          -          0.574730   15  
+Commencing write performance test: Sun Feb 18 21:54:01 2024
+write     71.19      284.77     0.042139    262144     256.00     0.000069   43.15      0.000030   43.15      16  
+Commencing read performance test: Sun Feb 18 21:54:44 2024
+
+read      38035      152168     0.000077    262144     256.00     0.000035   0.080753   0.017954   0.080767   16  
+remove    -          -          -           -          -          -          -          -          0.570863   16  
+Commencing write performance test: Sun Feb 18 21:54:44 2024
+write     71.33      285.34     0.042056    262144     256.00     0.000069   43.07      0.000029   43.07      17  
+Commencing read performance test: Sun Feb 18 21:55:28 2024
+
+read      38208      152855     0.000077    262144     256.00     0.000032   0.080390   0.003601   0.080401   17  
+remove    -          -          -           -          -          -          -          -          0.575897   17  
+Commencing write performance test: Sun Feb 18 21:55:28 2024
+write     67.43      269.71     0.044492    262144     256.00     0.000071   45.56      0.000031   45.56      18  
+Commencing read performance test: Sun Feb 18 21:56:14 2024
+
+read      37216      148887     0.000050    262144     256.00     0.000033   0.082533   0.030807   0.082545   18  
+remove    -          -          -           -          -          -          -          -          0.574289   18  
+Commencing write performance test: Sun Feb 18 21:56:14 2024
+write     68.39      273.57     0.043864    262144     256.00     0.000071   44.92      0.000032   44.92      19  
+Commencing read performance test: Sun Feb 18 21:56:59 2024
+
+read      36747      147009     0.000056    262144     256.00     0.000032   0.083587   0.025885   0.083599   19  
+remove    -          -          -           -          -          -          -          -          0.577807   19  
+Commencing write performance test: Sun Feb 18 21:57:00 2024
+write     72.61      290.44     0.041316    262144     256.00     0.000073   42.31      0.000031   42.31      20  
+Commencing read performance test: Sun Feb 18 21:57:42 2024
+
+read      38215      152888     0.000078    262144     256.00     0.000033   0.080373   0.001604   0.080386   20  
+remove    -          -          -           -          -          -          -          -          0.577086   20  
+Commencing write performance test: Sun Feb 18 21:57:43 2024
+write     71.64      286.58     0.041873    262144     256.00     0.000063   42.88      0.000030   42.88      21  
+Commencing read performance test: Sun Feb 18 21:58:26 2024
+
+read      37062      148274     0.000080    262144     256.00     0.000033   0.082873   0.030902   0.082887   21  
+remove    -          -          -           -          -          -          -          -          0.576647   21  
+Commencing write performance test: Sun Feb 18 21:58:26 2024
+write     69.82      279.28     0.042967    262144     256.00     0.000070   44.00      0.000033   44.00      22  
+Commencing read performance test: Sun Feb 18 21:59:10 2024
+
+read      38338      153378     0.000078    262144     256.00     0.000034   0.080116   0.004397   0.080130   22  
+remove    -          -          -           -          -          -          -          -          0.577686   22  
+Commencing write performance test: Sun Feb 18 21:59:11 2024
+write     65.45      261.78     0.045840    262144     256.00     0.000067   46.94      0.000032   46.94      23  
+Commencing read performance test: Sun Feb 18 21:59:58 2024
+
+read      38129      152549     0.000075    262144     256.00     0.000036   0.080551   0.018505   0.080568   23  
+remove    -          -          -           -          -          -          -          -          0.576438   23  
+Commencing write performance test: Sun Feb 18 21:59:59 2024
+write     69.11      276.46     0.043406    262144     256.00     0.000071   44.45      0.000033   44.45      24  
+Commencing read performance test: Sun Feb 18 22:00:43 2024
+
+read      37078      148334     0.000067    262144     256.00     0.000032   0.082840   0.021365   0.082853   24  
+remove    -          -          -           -          -          -          -          -          0.575970   24  
+Commencing write performance test: Sun Feb 18 22:00:44 2024
+write     69.02      276.06     0.043468    262144     256.00     0.000070   44.51      0.000031   44.51      25  
+Commencing read performance test: Sun Feb 18 22:01:28 2024
+
+read      38007      152057     0.000079    262144     256.00     0.000034   0.080812   0.017668   0.080827   25  
+remove    -          -          -           -          -          -          -          -          0.586734   25  
+Commencing write performance test: Sun Feb 18 22:01:29 2024
+write     75.38      301.52     0.039798    262144     256.00     0.000073   40.75      0.000030   40.75      26  
+Commencing read performance test: Sun Feb 18 22:02:10 2024
+
+read      37239      148987     0.000076    262144     256.00     0.000036   0.082477   0.020327   0.082493   26  
+remove    -          -          -           -          -          -          -          -          0.576976   26  
+Commencing write performance test: Sun Feb 18 22:02:10 2024
+write     69.20      276.80     0.043353    262144     256.00     0.000072   44.39      0.000030   44.39      27  
+Commencing read performance test: Sun Feb 18 22:02:55 2024
+
+read      37056      148251     0.000080    262144     256.00     0.000033   0.082886   0.031067   0.082901   27  
+remove    -          -          -           -          -          -          -          -          0.611590   27  
+Commencing write performance test: Sun Feb 18 22:02:56 2024
+write     75.53      302.11     0.039721    262144     256.00     0.000081   40.67      0.000031   40.67      28  
+Commencing read performance test: Sun Feb 18 22:03:36 2024
+
+read      36975      147923     0.000077    262144     256.00     0.000033   0.083070   0.022492   0.083084   28  
+remove    -          -          -           -          -          -          -          -          0.577621   28  
+Commencing write performance test: Sun Feb 18 22:03:37 2024
+write     72.51      290.05     0.041372    262144     256.00     0.000069   42.37      0.000029   42.37      29  
+Commencing read performance test: Sun Feb 18 22:04:19 2024
+
+read      36919      147697     0.000081    262144     256.00     0.000034   0.083198   0.022735   0.083209   29  
+remove    -          -          -           -          -          -          -          -          0.589128   29  
+Commencing write performance test: Sun Feb 18 22:04:20 2024
+write     72.85      291.39     0.041182    262144     256.00     0.000070   42.17      0.000026   42.17      30  
+Commencing read performance test: Sun Feb 18 22:05:02 2024
+
+read      37146      148618     0.000075    262144     256.00     0.000041   0.082682   0.022183   0.082701   30  
+remove    -          -          -           -          -          -          -          -          0.573002   30  
+Commencing write performance test: Sun Feb 18 22:05:03 2024
+write     70.20      280.82     0.042732    262144     256.00     0.000070   43.76      0.000033   43.76      31  
+Commencing read performance test: Sun Feb 18 22:05:46 2024
+
+read      37200      148818     0.000074    262144     256.00     0.000034   0.082571   0.022165   0.082581   31  
+remove    -          -          -           -          -          -          -          -          0.574185   31  
+Commencing write performance test: Sun Feb 18 22:05:47 2024
+write     57.92      231.66     0.051799    262144     256.00     0.000073   53.04      0.000030   53.04      32  
+Commencing read performance test: Sun Feb 18 22:06:40 2024
+
+read      38052      152242     0.000062    262144     256.00     0.000034   0.080714   0.017071   0.080731   32  
+remove    -          -          -           -          -          -          -          -          0.574852   32  
+Commencing write performance test: Sun Feb 18 22:06:41 2024
+write     67.82      271.28     0.044235    262144     256.00     0.000066   45.30      0.000030   45.30      33  
+Commencing read performance test: Sun Feb 18 22:07:26 2024
+
+read      38128      152538     0.000079    262144     256.00     0.000032   0.080557   0.016947   0.080571   33  
+remove    -          -          -           -          -          -          -          -          0.588701   33  
+Commencing write performance test: Sun Feb 18 22:07:27 2024
+write     56.10      224.41     0.053473    262144     256.00     0.000071   54.76      0.000033   54.76      34  
+Commencing read performance test: Sun Feb 18 22:08:22 2024
+
+read      37993      151989     0.000075    262144     256.00     0.000033   0.080848   0.018547   0.080857   34  
+remove    -          -          -           -          -          -          -          -          0.579025   34  
+Commencing write performance test: Sun Feb 18 22:08:22 2024
+write     68.87      275.48     0.043561    262144     256.00     0.000070   44.61      0.000027   44.61      35  
+Commencing read performance test: Sun Feb 18 22:09:07 2024
+
+read      38100      152422     0.000074    262144     256.00     0.000034   0.080618   0.021212   0.080631   35  
+remove    -          -          -           -          -          -          -          -          0.587067   35  
+Commencing write performance test: Sun Feb 18 22:09:08 2024
+write     69.29      277.15     0.043297    262144     256.00     0.000073   44.34      0.000031   44.34      36  
+Commencing read performance test: Sun Feb 18 22:09:52 2024
+
+read      37198      148812     0.000074    262144     256.00     0.000036   0.082574   0.026291   0.082585   36  
+remove    -          -          -           -          -          -          -          -          0.574312   36  
+Commencing write performance test: Sun Feb 18 22:09:52 2024
+write     69.45      277.79     0.043199    262144     256.00     0.000071   44.24      0.000032   44.24      37  
+Commencing read performance test: Sun Feb 18 22:10:37 2024
+
+read      37975      151926     0.000074    262144     256.00     0.000034   0.080882   0.023263   0.080896   37  
+remove    -          -          -           -          -          -          -          -          0.577227   37  
+Commencing write performance test: Sun Feb 18 22:10:37 2024
+write     70.97      283.88     0.042272    262144     256.00     0.000074   43.29      0.000032   43.29      38  
+Commencing read performance test: Sun Feb 18 22:11:21 2024
+
+read      37010      148066     0.000074    262144     256.00     0.000038   0.082990   0.019968   0.083005   38  
+remove    -          -          -           -          -          -          -          -          0.577496   38  
+Commencing write performance test: Sun Feb 18 22:11:21 2024
+write     70.40      281.59     0.042615    262144     256.00     0.000071   43.64      0.000031   43.64      39  
+Commencing read performance test: Sun Feb 18 22:12:05 2024
+
+read      37022      148115     0.000081    262144     256.00     0.000033   0.082963   0.021857   0.082978   39  
+remove    -          -          -           -          -          -          -          -          0.632469   39  
+Commencing write performance test: Sun Feb 18 22:12:06 2024
+write     69.66      278.65     0.043064    262144     256.00     0.000073   44.10      0.000029   44.10      40  
+Commencing read performance test: Sun Feb 18 22:12:50 2024
+
+read      36945      147804     0.000059    262144     256.00     0.000033   0.083137   0.022265   0.083151   40  
+remove    -          -          -           -          -          -          -          -          0.580646   40  
+Commencing write performance test: Sun Feb 18 22:12:50 2024
+write     67.74      270.96     0.044287    262144     256.00     0.000073   45.35      0.000030   45.35      41  
+Commencing read performance test: Sun Feb 18 22:13:36 2024
+
+read      37388      149579     0.000061    262144     256.00     0.000037   0.082151   0.020116   0.082165   41  
+remove    -          -          -           -          -          -          -          -          0.576135   41  
+Commencing write performance test: Sun Feb 18 22:13:36 2024
+write     61.04      244.15     0.049151    262144     256.00     0.000060   50.33      0.000031   50.33      42  
+Commencing read performance test: Sun Feb 18 22:14:27 2024
+
+read      38060      152268     0.000074    262144     256.00     0.000035   0.080700   0.017774   0.080716   42  
+remove    -          -          -           -          -          -          -          -          0.573714   42  
+Commencing write performance test: Sun Feb 18 22:14:27 2024
+write     56.67      226.67     0.052941    262144     256.00     0.000069   54.21      0.000030   54.21      43  
+Commencing read performance test: Sun Feb 18 22:15:22 2024
+
+read      38068      152293     0.000074    262144     256.00     0.000033   0.080687   0.016947   0.080699   43  
+remove    -          -          -           -          -          -          -          -          0.578309   43  
+Commencing write performance test: Sun Feb 18 22:15:22 2024
+write     56.67      226.70     0.052934    262144     256.00     0.000072   54.20      0.000033   54.20      44  
+Commencing read performance test: Sun Feb 18 22:16:17 2024
+
+read      38081      152352     0.000077    262144     256.00     0.000035   0.080655   0.022535   0.080671   44  
+remove    -          -          -           -          -          -          -          -          0.574291   44  
+Commencing write performance test: Sun Feb 18 22:16:17 2024
+write     60.81      243.23     0.049335    262144     256.00     0.000068   50.52      0.000031   50.52      45  
+Commencing read performance test: Sun Feb 18 22:17:08 2024
+
+read      36998      148025     0.000075    262144     256.00     0.000034   0.083013   0.021718   0.083031   45  
+remove    -          -          -           -          -          -          -          -          0.574464   45  
+Commencing write performance test: Sun Feb 18 22:17:08 2024
+write     66.38      265.52     0.045195    262144     256.00     0.000072   46.28      0.000029   46.28      46  
+Commencing read performance test: Sun Feb 18 22:17:55 2024
+
+read      36520      146114     0.000076    262144     256.00     0.000038   0.084099   0.041196   0.084118   46  
+remove    -          -          -           -          -          -          -          -          0.572743   46  
+Commencing write performance test: Sun Feb 18 22:17:55 2024
+write     66.32      265.29     0.045234    262144     256.00     0.000074   46.32      0.000029   46.32      47  
+Commencing read performance test: Sun Feb 18 22:18:42 2024
+
+read      36920      147702     0.000060    262144     256.00     0.000032   0.083195   0.022137   0.083207   47  
+remove    -          -          -           -          -          -          -          -          0.576576   47  
+Commencing write performance test: Sun Feb 18 22:18:42 2024
+write     74.06      296.23     0.040509    262144     256.00     0.000074   41.48      0.000031   41.48      48  
+Commencing read performance test: Sun Feb 18 22:19:24 2024
+
+read      38307      153256     0.000075    262144     256.00     0.000035   0.080179   0.003819   0.080194   48  
+remove    -          -          -           -          -          -          -          -          0.575900   48  
+Commencing write performance test: Sun Feb 18 22:19:24 2024
+write     55.79      223.17     0.053770    262144     256.00     0.000071   55.06      0.000032   55.06      49  
+Commencing read performance test: Sun Feb 18 22:20:19 2024
+
+read      37158      148654     0.000063    262144     256.00     0.000034   0.082662   0.022144   0.082674   49  
+remove    -          -          -           -          -          -          -          -          0.576794   49  
+Commencing write performance test: Sun Feb 18 22:20:20 2024
+write     64.16      256.65     0.046757    262144     256.00     0.000073   47.88      0.000032   47.88      50  
+Commencing read performance test: Sun Feb 18 22:21:08 2024
+
+read      36871      147510     0.000077    262144     256.00     0.000032   0.083303   0.022026   0.083317   50  
+remove    -          -          -           -          -          -          -          -          0.573951   50  
+Commencing write performance test: Sun Feb 18 22:21:09 2024
+write     63.71      254.84     0.047088    262144     256.00     0.000069   48.22      0.000030   48.22      51  
+Commencing read performance test: Sun Feb 18 22:21:57 2024
+
+read      37974      151923     0.000074    262144     256.00     0.000032   0.080883   0.023556   0.080897   51  
+remove    -          -          -           -          -          -          -          -          0.578182   51  
+Commencing write performance test: Sun Feb 18 22:21:58 2024
+write     72.92      291.68     0.041140    262144     256.00     0.000072   42.13      0.000032   42.13      52  
+Commencing read performance test: Sun Feb 18 22:22:40 2024
+
+read      38180      152746     0.000074    262144     256.00     0.000036   0.080447   0.017222   0.080461   52  
+remove    -          -          -           -          -          -          -          -          0.573871   52  
+Commencing write performance test: Sun Feb 18 22:22:40 2024
+write     75.31      301.26     0.039833    262144     256.00     0.000061   40.79      0.000033   40.79      53  
+Commencing read performance test: Sun Feb 18 22:23:21 2024
+
+read      38056      152248     0.000079    262144     256.00     0.000034   0.080710   0.016811   0.080724   53  
+remove    -          -          -           -          -          -          -          -          0.576379   53  
+Commencing write performance test: Sun Feb 18 22:23:22 2024
+write     70.62      282.47     0.042483    262144     256.00     0.000072   43.50      0.000029   43.50      54  
+Commencing read performance test: Sun Feb 18 22:24:05 2024
+
+read      37924      151725     0.000077    262144     256.00     0.000033   0.080988   0.017708   0.081004   54  
+remove    -          -          -           -          -          -          -          -          0.579479   54  
+Commencing write performance test: Sun Feb 18 22:24:06 2024
+write     68.85      275.40     0.043573    262144     256.00     0.000063   44.62      0.000027   44.62      55  
+Commencing read performance test: Sun Feb 18 22:24:51 2024
+
+read      37622      150509     0.000063    262144     256.00     0.000033   0.081643   0.017291   0.081655   55  
+remove    -          -          -           -          -          -          -          -          0.575760   55  
+Commencing write performance test: Sun Feb 18 22:24:51 2024
+write     55.46      221.86     0.054088    262144     256.00     0.000062   55.39      0.000030   55.39      56  
+Commencing read performance test: Sun Feb 18 22:25:47 2024
+
+read      38479      153944     0.000078    262144     256.00     0.000033   0.079821   0.000425   0.079836   56  
+remove    -          -          -           -          -          -          -          -          0.577111   56  
+Commencing write performance test: Sun Feb 18 22:25:47 2024
+write     62.65      250.59     0.047886    262144     256.00     0.000076   49.04      0.000030   49.04      57  
+Commencing read performance test: Sun Feb 18 22:26:36 2024
+
+read      37809      151261     0.000062    262144     256.00     0.000033   0.081237   0.017745   0.081251   57  
+remove    -          -          -           -          -          -          -          -          0.583183   57  
+Commencing write performance test: Sun Feb 18 22:26:37 2024
+write     59.66      238.63     0.050287    262144     256.00     0.000063   51.49      0.000030   51.49      58  
+Commencing read performance test: Sun Feb 18 22:27:28 2024
+
+read      38412      153667     0.000077    262144     256.00     0.000034   0.079965   0.001629   0.079975   58  
+remove    -          -          -           -          -          -          -          -          0.573859   58  
+Commencing write performance test: Sun Feb 18 22:27:29 2024
+write     66.48      265.91     0.045129    262144     256.00     0.000071   46.21      0.000031   46.21      59  
+Commencing read performance test: Sun Feb 18 22:28:15 2024
+
+read      37122      148504     0.000066    262144     256.00     0.000035   0.082745   0.022049   0.082755   59  
+remove    -          -          -           -          -          -          -          -          0.576672   59  
+Commencing write performance test: Sun Feb 18 22:28:16 2024
+write     65.99      263.97     0.045459    262144     256.00     0.000071   46.55      0.000028   46.55      60  
+Commencing read performance test: Sun Feb 18 22:29:03 2024
+
+read      37320      149300     0.000076    262144     256.00     0.000035   0.082304   0.020676   0.082316   60  
+remove    -          -          -           -          -          -          -          -          0.575775   60  
+Commencing write performance test: Sun Feb 18 22:29:03 2024
+write     73.29      293.17     0.040932    262144     256.00     0.000071   41.91      0.000031   41.91      61  
+Commencing read performance test: Sun Feb 18 22:29:45 2024
+
+read      37000      148018     0.000075    262144     256.00     0.000033   0.083017   0.021849   0.083028   61  
+remove    -          -          -           -          -          -          -          -          0.575273   61  
+Commencing write performance test: Sun Feb 18 22:29:46 2024
+write     75.28      301.10     0.039853    262144     256.00     0.000072   40.81      0.000032   40.81      62  
+Commencing read performance test: Sun Feb 18 22:30:27 2024
+
+read      37230      148943     0.000078    262144     256.00     0.000034   0.082501   0.026162   0.082515   62  
+remove    -          -          -           -          -          -          -          -          0.577357   62  
+Commencing write performance test: Sun Feb 18 22:30:27 2024
+write     73.50      293.99     0.040818    262144     256.00     0.000074   41.80      0.000032   41.80      63  
+Commencing read performance test: Sun Feb 18 22:31:09 2024
+
+read      37944      151801     0.000079    262144     256.00     0.000033   0.080948   0.020880   0.080962   63  
+remove    -          -          -           -          -          -          -          -          0.576446   63  
+Commencing write performance test: Sun Feb 18 22:31:10 2024
+write     75.40      301.59     0.039789    262144     256.00     0.000074   40.74      0.000029   40.74      64  
+Commencing read performance test: Sun Feb 18 22:31:50 2024
+
+read      37829      151336     0.000065    262144     256.00     0.000033   0.081197   0.019634   0.081207   64  
+remove    -          -          -           -          -          -          -          -          0.578505   64  
+Commencing write performance test: Sun Feb 18 22:31:51 2024
+write     71.35      285.41     0.042045    262144     256.00     0.000075   43.05      0.000030   43.05      65  
+Commencing read performance test: Sun Feb 18 22:32:34 2024
+
+read      37160      148665     0.000081    262144     256.00     0.000032   0.082655   0.030836   0.082668   65  
+remove    -          -          -           -          -          -          -          -          0.615341   65  
+Commencing write performance test: Sun Feb 18 22:32:35 2024
+write     64.62      258.49     0.046423    262144     256.00     0.000078   47.54      0.000030   47.54      66  
+Commencing read performance test: Sun Feb 18 22:33:22 2024
+
+read      37216      148891     0.000081    262144     256.00     0.000035   0.082530   0.032124   0.082545   66  
+remove    -          -          -           -          -          -          -          -          0.592775   66  
+Commencing write performance test: Sun Feb 18 22:33:23 2024
+write     78.56      314.23     0.038189    262144     256.00     0.000075   39.11      0.000034   39.11      67  
+Commencing read performance test: Sun Feb 18 22:34:02 2024
+
+read      37277      149131     0.000067    262144     256.00     0.000038   0.082397   0.029620   0.082409   67  
+remove    -          -          -           -          -          -          -          -          0.580134   67  
+Commencing write performance test: Sun Feb 18 22:34:03 2024
+write     79.61      318.43     0.037685    262144     256.00     0.000068   38.59      0.000032   38.59      68  
+Commencing read performance test: Sun Feb 18 22:34:41 2024
+
+read      38226      152928     0.000062    262144     256.00     0.000033   0.080351   0.018070   0.080365   68  
+remove    -          -          -           -          -          -          -          -          0.580942   68  
+Commencing write performance test: Sun Feb 18 22:34:42 2024
+write     70.36      281.43     0.042640    262144     256.00     0.000058   43.66      0.000028   43.66      69  
+Commencing read performance test: Sun Feb 18 22:35:26 2024
+
+read      37230      148945     0.000066    262144     256.00     0.000033   0.082500   0.029377   0.082513   69  
+remove    -          -          -           -          -          -          -          -          0.580603   69  
+Commencing write performance test: Sun Feb 18 22:35:26 2024
+write     75.06      300.24     0.039969    262144     256.00     0.000074   40.93      0.000031   40.93      70  
+Commencing read performance test: Sun Feb 18 22:36:07 2024
+
+read      37800      151220     0.000077    262144     256.00     0.000033   0.081259   0.023517   0.081269   70  
+remove    -          -          -           -          -          -          -          -          0.599341   70  
+Commencing write performance test: Sun Feb 18 22:36:08 2024
+write     74.20      296.82     0.040429    262144     256.00     0.000063   41.40      0.000034   41.40      71  
+Commencing read performance test: Sun Feb 18 22:36:49 2024
+
+read      37788      151186     0.000061    262144     256.00     0.000036   0.081277   0.025393   0.081295   71  
+remove    -          -          -           -          -          -          -          -          0.581916   71  
+Commencing write performance test: Sun Feb 18 22:36:50 2024
+write     78.84      315.38     0.038050    262144     256.00     0.000074   38.96      0.000031   38.96      72  
+Commencing read performance test: Sun Feb 18 22:37:29 2024
+
+read      37003      148043     0.000081    262144     256.00     0.000034   0.083003   0.021952   0.083019   72  
+remove    -          -          -           -          -          -          -          -          0.593966   72  
+Commencing write performance test: Sun Feb 18 22:37:30 2024
+write     68.89      275.55     0.043550    262144     256.00     0.000062   44.60      0.000033   44.60      73  
+Commencing read performance test: Sun Feb 18 22:38:14 2024
+
+read      38358      153461     0.000078    262144     256.00     0.000035   0.080072   0.003688   0.080089   73  
+remove    -          -          -           -          -          -          -          -          0.575803   73  
+Commencing write performance test: Sun Feb 18 22:38:15 2024
+write     64.30      257.20     0.046657    262144     256.00     0.000069   47.78      0.000030   47.78      74  
+Commencing read performance test: Sun Feb 18 22:39:03 2024
+
+read      38127      152542     0.000061    262144     256.00     0.000037   0.080555   0.018627   0.080572   74  
+remove    -          -          -           -          -          -          -          -          0.575321   74  
+Commencing write performance test: Sun Feb 18 22:39:03 2024
+write     64.58      258.31     0.046456    262144     256.00     0.000070   47.57      0.000029   47.57      75  
+Commencing read performance test: Sun Feb 18 22:39:51 2024
+
+read      36571      146307     0.000076    262144     256.00     0.000033   0.083988   0.041355   0.084001   75  
+remove    -          -          -           -          -          -          -          -          0.575153   75  
+Commencing write performance test: Sun Feb 18 22:39:52 2024
+write     70.56      282.22     0.042520    262144     256.00     0.000072   43.54      0.000031   43.54      76  
+Commencing read performance test: Sun Feb 18 22:40:35 2024
+
+read      37151      148628     0.000053    262144     256.00     0.000032   0.082676   0.031805   0.082689   76  
+remove    -          -          -           -          -          -          -          -          0.575621   76  
+Commencing write performance test: Sun Feb 18 22:40:36 2024
+write     69.59      278.34     0.043112    262144     256.00     0.000070   44.15      0.000029   44.15      77  
+Commencing read performance test: Sun Feb 18 22:41:20 2024
+
+read      38148      152620     0.000078    262144     256.00     0.000035   0.080513   0.018313   0.080528   77  
+remove    -          -          -           -          -          -          -          -          0.577489   77  
+Commencing write performance test: Sun Feb 18 22:41:21 2024
+write     71.72      286.90     0.041827    262144     256.00     0.000072   42.83      0.000062   42.83      78  
+Commencing read performance test: Sun Feb 18 22:42:03 2024
+
+read      38284      153165     0.000078    262144     256.00     0.000033   0.080227   0.002473   0.080242   78  
+remove    -          -          -           -          -          -          -          -          0.576909   78  
+Commencing write performance test: Sun Feb 18 22:42:04 2024
+write     67.79      271.16     0.044254    262144     256.00     0.000067   45.32      0.000031   45.32      79  
+Commencing read performance test: Sun Feb 18 22:42:49 2024
+
+read      37010      148072     0.000075    262144     256.00     0.000034   0.082987   0.022617   0.083004   79  
+remove    -          -          -           -          -          -          -          -          0.580635   79  
+Commencing write performance test: Sun Feb 18 22:42:50 2024
+write     64.33      257.34     0.046631    262144     256.00     0.000075   47.75      0.000031   47.75      80  
+Commencing read performance test: Sun Feb 18 22:43:38 2024
+
+read      36904      147639     0.000066    262144     256.00     0.000034   0.083230   0.027291   0.083243   80  
+remove    -          -          -           -          -          -          -          -          0.605525   80  
+Commencing write performance test: Sun Feb 18 22:43:39 2024
+write     65.86      263.45     0.045549    262144     256.00     0.000066   46.64      0.000030   46.64      81  
+Commencing read performance test: Sun Feb 18 22:44:25 2024
+
+read      38286      153168     0.000076    262144     256.00     0.000033   0.080226   0.002552   0.080239   81  
+remove    -          -          -           -          -          -          -          -          0.577693   81  
+Commencing write performance test: Sun Feb 18 22:44:26 2024
+write     59.84      239.38     0.050130    262144     256.00     0.000074   51.33      0.000030   51.33      82  
+Commencing read performance test: Sun Feb 18 22:45:17 2024
+
+read      38215      152887     0.000078    262144     256.00     0.000033   0.080373   0.003742   0.080386   82  
+remove    -          -          -           -          -          -          -          -          0.578176   82  
+Commencing write performance test: Sun Feb 18 22:45:18 2024
+write     68.83      275.33     0.043584    262144     256.00     0.000062   44.63      0.000043   44.63      83  
+Commencing read performance test: Sun Feb 18 22:46:02 2024
+
+read      37831      151351     0.000066    262144     256.00     0.000033   0.081189   0.020337   0.081202   83  
+remove    -          -          -           -          -          -          -          -          0.586222   83  
+Commencing write performance test: Sun Feb 18 22:46:03 2024
+write     65.41      261.66     0.045861    262144     256.00     0.000073   46.96      0.000029   46.96      84  
+Commencing read performance test: Sun Feb 18 22:46:50 2024
+
+read      36947      147812     0.000059    262144     256.00     0.000035   0.083133   0.022992   0.083147   84  
+remove    -          -          -           -          -          -          -          -          0.574303   84  
+Commencing write performance test: Sun Feb 18 22:46:51 2024
+write     78.40      313.58     0.038268    262144     256.00     0.000072   39.19      0.000034   39.19      85  
+Commencing read performance test: Sun Feb 18 22:47:30 2024
+
+read      36853      147436     0.000065    262144     256.00     0.000034   0.083345   0.021645   0.083359   85  
+remove    -          -          -           -          -          -          -          -          0.577350   85  
+Commencing write performance test: Sun Feb 18 22:47:31 2024
+write     60.69      242.76     0.049433    262144     256.00     0.000074   50.62      0.000030   50.62      86  
+Commencing read performance test: Sun Feb 18 22:48:21 2024
+
+read      37010      148071     0.000081    262144     256.00     0.000034   0.082987   0.021644   0.083004   86  
+remove    -          -          -           -          -          -          -          -          0.584321   86  
+Commencing write performance test: Sun Feb 18 22:48:22 2024
+write     80.94      323.77     0.037063    262144     256.00     0.000063   37.95      0.000029   37.95      87  
+Commencing read performance test: Sun Feb 18 22:49:00 2024
+
+read      37029      148144     0.000060    262144     256.00     0.000035   0.082946   0.021796   0.082962   87  
+remove    -          -          -           -          -          -          -          -          0.579345   87  
+Commencing write performance test: Sun Feb 18 22:49:00 2024
+write     70.39      281.58     0.042617    262144     256.00     0.000070   43.64      0.000034   43.64      88  
+Commencing read performance test: Sun Feb 18 22:49:44 2024
+
+read      38399      153623     0.000078    262144     256.00     0.000035   0.079988   0.004371   0.080002   88  
+remove    -          -          -           -          -          -          -          -          0.578196   88  
+Commencing write performance test: Sun Feb 18 22:49:45 2024
+write     71.62      286.50     0.041885    262144     256.00     0.000070   42.89      0.000029   42.89      89  
+Commencing read performance test: Sun Feb 18 22:50:28 2024
+
+read      36899      147620     0.000055    262144     256.00     0.000033   0.083241   0.026826   0.083254   89  
+remove    -          -          -           -          -          -          -          -          0.577899   89  
+Commencing write performance test: Sun Feb 18 22:50:28 2024
+write     65.80      263.22     0.045589    262144     256.00     0.000073   46.68      0.000031   46.68      90  
+Commencing read performance test: Sun Feb 18 22:51:15 2024
+
+read      37778      151134     0.000077    262144     256.00     0.000034   0.081306   0.017469   0.081317   90  
+remove    -          -          -           -          -          -          -          -          0.580964   90  
+Commencing write performance test: Sun Feb 18 22:51:16 2024
+write     73.66      294.64     0.040728    262144     256.00     0.000060   41.71      0.000028   41.71      91  
+Commencing read performance test: Sun Feb 18 22:51:57 2024
+
+read      36939      147781     0.000081    262144     256.00     0.000033   0.083150   0.022597   0.083164   91  
+remove    -          -          -           -          -          -          -          -          0.583620   91  
+Commencing write performance test: Sun Feb 18 22:51:58 2024
+write     73.37      293.48     0.040889    262144     256.00     0.000073   41.87      0.000030   41.87      92  
+Commencing read performance test: Sun Feb 18 22:52:40 2024
+
+read      37967      151894     0.000079    262144     256.00     0.000032   0.080899   0.018668   0.080911   92  
+remove    -          -          -           -          -          -          -          -          0.589631   92  
+Commencing write performance test: Sun Feb 18 22:52:41 2024
+write     70.49      281.96     0.042559    262144     256.00     0.000071   43.58      0.000031   43.58      93  
+Commencing read performance test: Sun Feb 18 22:53:24 2024
+
+read      37703      150837     0.000079    262144     256.00     0.000032   0.081465   0.020014   0.081479   93  
+remove    -          -          -           -          -          -          -          -          0.591503   93  
+Commencing write performance test: Sun Feb 18 22:53:25 2024
+write     68.55      274.18     0.043766    262144     256.00     0.000074   44.82      0.000031   44.82      94  
+Commencing read performance test: Sun Feb 18 22:54:10 2024
+
+read      37374      149525     0.000074    262144     256.00     0.000035   0.082180   0.020886   0.082195   94  
+remove    -          -          -           -          -          -          -          -          0.576073   94  
+Commencing write performance test: Sun Feb 18 22:54:10 2024
+write     70.28      281.13     0.042685    262144     256.00     0.000069   43.71      0.000030   43.71      95  
+Commencing read performance test: Sun Feb 18 22:54:54 2024
+
+read      36441      145785     0.000042    262144     256.00     0.000031   0.084289   0.041397   0.084301   95  
+remove    -          -          -           -          -          -          -          -          0.577664   95  
+Commencing write performance test: Sun Feb 18 22:54:55 2024
+write     70.33      281.34     0.042654    262144     256.00     0.000071   43.68      0.000029   43.68      96  
+Commencing read performance test: Sun Feb 18 22:55:38 2024
+
+read      36832      147358     0.000059    262144     256.00     0.000033   0.083389   0.022479   0.083405   96  
+remove    -          -          -           -          -          -          -          -          0.578655   96  
+Commencing write performance test: Sun Feb 18 22:55:39 2024
+write     70.83      283.30     0.042358    262144     256.00     0.000072   43.37      0.000030   43.37      97  
+Commencing read performance test: Sun Feb 18 22:56:22 2024
+
+read      36819      147297     0.000065    262144     256.00     0.000034   0.083423   0.022153   0.083436   97  
+remove    -          -          -           -          -          -          -          -          0.581869   97  
+Commencing write performance test: Sun Feb 18 22:56:23 2024
+write     72.00      288.00     0.041667    262144     256.00     0.000061   42.67      0.000031   42.67      98  
+Commencing read performance test: Sun Feb 18 22:57:06 2024
+
+read      36976      147931     0.000073    262144     256.00     0.000036   0.083066   0.022662   0.083081   98  
+remove    -          -          -           -          -          -          -          -          0.576882   98  
+Commencing write performance test: Sun Feb 18 22:57:06 2024
+write     71.70      286.81     0.041839    262144     256.00     0.000073   42.84      0.000032   42.84      99  
+Commencing read performance test: Sun Feb 18 22:57:49 2024
+
+read      38225      152922     0.000075    262144     256.00     0.000033   0.080355   0.018491   0.080367   99  
+remove    -          -          -           -          -          -          -          -          0.575855   99  
+Max Write: 80.94 MiB/sec (84.87 MB/sec)
+Max Read:  38479.09 MiB/sec (40348.25 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write          80.94      52.07      68.54       5.66     323.77     208.28     274.14      22.62   45.15102         NA            NA     0     12  12  100   0     0        1         0    0      1 268435456   262144    3072.0 POSIX      0
+read        38479.09   36440.97   37513.11     553.95  153916.35  145763.87  150052.43    2215.79    0.08191         NA            NA     0     12  12  100   0     0        1         0    0      1 268435456   262144    3072.0 POSIX      0
+Finished            : Sun Feb 18 22:57:50 2024
+
+#####
+fp-withfp-opt-id - Run 2
+2024-02-19 00:15:39
+#####
+IOR-3.3.0: MPI Coordinated Test of Parallel I/O
+Began               : Sun Feb 18 22:57:54 2024
+Command line        : ./src/ior -v -w -r -i 100 -e -q -b 256m -o testFile
+Machine             : Linux fp
+Start time skew across all tasks: 0.00 sec
+TestID              : 0
+StartTime           : Sun Feb 18 22:57:54 2024
+Path                : /home/ubuntu/.phoronix-test-suite/installed-tests/pts/ior-1.1.1/ior-3.3.0
+FS                  : 420.0 GiB   Used FS: 74.6%   Inodes: 26.7 Mi   Used Inodes: 3.5%
+Participating tasks: 12
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile
+access              : single-shared-file
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 12
+clients per node    : 12
+repetitions         : 100
+xfersize            : 262144 bytes
+blocksize           : 256 MiB
+aggregate filesize  : 3 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+Commencing write performance test: Sun Feb 18 22:57:54 2024
+write     79.00      316.02     0.037973    262144     256.00     0.000512   38.88      0.000017   38.88      0   
+Commencing read performance test: Sun Feb 18 22:58:33 2024
+
+read      37808      151253     0.000074    262144     256.00     0.000016   0.081241   0.017893   0.081253   0   
+remove    -          -          -           -          -          -          -          -          0.575800   0   
+Commencing write performance test: Sun Feb 18 22:58:34 2024
+write     70.60      282.41     0.042491    262144     256.00     0.000051   43.51      0.000028   43.51      1   
+Commencing read performance test: Sun Feb 18 22:59:17 2024
+
+read      38185      152770     0.000074    262144     256.00     0.000018   0.080435   0.018572   0.080451   1   
+remove    -          -          -           -          -          -          -          -          0.576957   1   
+Commencing write performance test: Sun Feb 18 22:59:18 2024
+write     73.23      292.92     0.040966    262144     256.00     0.000060   41.95      0.000017   41.95      2   
+Commencing read performance test: Sun Feb 18 23:00:00 2024
+
+read      37930      151748     0.000074    262144     256.00     0.000018   0.080976   0.017725   0.080992   2   
+remove    -          -          -           -          -          -          -          -          0.575906   2   
+Commencing write performance test: Sun Feb 18 23:00:01 2024
+write     73.60      294.42     0.040759    262144     256.00     0.000050   41.74      0.000016   41.74      3   
+Commencing read performance test: Sun Feb 18 23:00:42 2024
+
+read      37222      148916     0.000073    262144     256.00     0.000018   0.082516   0.022438   0.082531   3   
+remove    -          -          -           -          -          -          -          -          0.581692   3   
+Commencing write performance test: Sun Feb 18 23:00:43 2024
+write     65.69      262.78     0.045666    262144     256.00     0.000052   46.76      0.000017   46.76      4   
+Commencing read performance test: Sun Feb 18 23:01:30 2024
+
+read      37007      148056     0.000062    262144     256.00     0.000019   0.082995   0.020459   0.083011   4   
+remove    -          -          -           -          -          -          -          -          0.580780   4   
+Commencing write performance test: Sun Feb 18 23:01:31 2024
+write     70.92      283.69     0.042300    262144     256.00     0.000056   43.31      0.000014   43.31      5   
+Commencing read performance test: Sun Feb 18 23:02:14 2024
+
+read      38077      152340     0.000075    262144     256.00     0.000017   0.080662   0.006452   0.080678   5   
+remove    -          -          -           -          -          -          -          -          0.577006   5   
+Commencing write performance test: Sun Feb 18 23:02:14 2024
+write     72.25      288.98     0.041525    262144     256.00     0.000051   42.52      0.000017   42.52      6   
+Commencing read performance test: Sun Feb 18 23:02:57 2024
+
+read      38225      152930     0.000078    262144     256.00     0.000021   0.080350   0.017074   0.080366   6   
+remove    -          -          -           -          -          -          -          -          0.598526   6   
+Commencing write performance test: Sun Feb 18 23:02:58 2024
+write     70.26      281.03     0.042700    262144     256.00     0.000052   43.72      0.000017   43.72      7   
+Commencing read performance test: Sun Feb 18 23:03:41 2024
+
+read      38198      152814     0.000074    262144     256.00     0.000019   0.080411   0.018718   0.080423   7   
+remove    -          -          -           -          -          -          -          -          0.588066   7   
+Commencing write performance test: Sun Feb 18 23:03:42 2024
+write     66.94      267.75     0.044818    262144     256.00     0.000053   45.89      0.000015   45.89      8   
+Commencing read performance test: Sun Feb 18 23:04:28 2024
+
+read      38362      153484     0.000078    262144     256.00     0.000019   0.080060   0.002855   0.080080   8   
+remove    -          -          -           -          -          -          -          -          0.579909   8   
+Commencing write performance test: Sun Feb 18 23:04:29 2024
+write     65.76      263.03     0.045623    262144     256.00     0.000055   46.72      0.000017   46.72      9   
+Commencing read performance test: Sun Feb 18 23:05:15 2024
+
+read      36975      147931     0.000077    262144     256.00     0.000019   0.083066   0.025139   0.083082   9   
+remove    -          -          -           -          -          -          -          -          0.581241   9   
+Commencing write performance test: Sun Feb 18 23:05:16 2024
+write     66.41      265.63     0.045175    262144     256.00     0.000062   46.26      0.000015   46.26      10  
+Commencing read performance test: Sun Feb 18 23:06:02 2024
+
+read      37396      149614     0.000078    262144     256.00     0.000019   0.082131   0.020850   0.082148   10  
+remove    -          -          -           -          -          -          -          -          0.587563   10  
+Commencing write performance test: Sun Feb 18 23:06:03 2024
+write     53.22      212.88     0.056370    262144     256.00     0.000054   57.72      0.000017   57.72      11  
+Commencing read performance test: Sun Feb 18 23:07:01 2024
+
+read      37174      148723     0.000062    262144     256.00     0.000020   0.082623   0.019052   0.082638   11  
+remove    -          -          -           -          -          -          -          -          0.586059   11  
+Commencing write performance test: Sun Feb 18 23:07:01 2024
+write     73.34      293.35     0.040907    262144     256.00     0.000055   41.89      0.000016   41.89      12  
+Commencing read performance test: Sun Feb 18 23:07:43 2024
+
+read      37678      150739     0.000066    262144     256.00     0.000019   0.081518   0.020321   0.081534   12  
+remove    -          -          -           -          -          -          -          -          0.577454   12  
+Commencing write performance test: Sun Feb 18 23:07:44 2024
+write     75.93      303.71     0.039512    262144     256.00     0.000053   40.46      0.000015   40.46      13  
+Commencing read performance test: Sun Feb 18 23:08:24 2024
+
+read      36922      147716     0.000081    262144     256.00     0.000019   0.083187   0.021978   0.083202   13  
+remove    -          -          -           -          -          -          -          -          0.606997   13  
+Commencing write performance test: Sun Feb 18 23:08:25 2024
+write     71.77      287.07     0.041801    262144     256.00     0.000052   42.80      0.000015   42.80      14  
+Commencing read performance test: Sun Feb 18 23:09:08 2024
+
+read      37873      151522     0.000078    262144     256.00     0.000020   0.081097   0.018070   0.081113   14  
+remove    -          -          -           -          -          -          -          -          0.578163   14  
+Commencing write performance test: Sun Feb 18 23:09:08 2024
+write     67.22      268.87     0.044632    262144     256.00     0.000052   45.70      0.000015   45.70      15  
+Commencing read performance test: Sun Feb 18 23:09:54 2024
+
+read      38295      153205     0.000078    262144     256.00     0.000021   0.080206   0.000423   0.080218   15  
+remove    -          -          -           -          -          -          -          -          0.575033   15  
+Commencing write performance test: Sun Feb 18 23:09:55 2024
+write     55.12      220.49     0.054424    262144     256.00     0.000050   55.73      0.000018   55.73      16  
+Commencing read performance test: Sun Feb 18 23:10:51 2024
+
+read      37223      148923     0.000067    262144     256.00     0.000020   0.082513   0.029522   0.082529   16  
+remove    -          -          -           -          -          -          -          -          0.580322   16  
+Commencing write performance test: Sun Feb 18 23:10:51 2024
+write     58.11      232.45     0.051623    262144     256.00     0.000059   52.86      0.000017   52.86      17  
+Commencing read performance test: Sun Feb 18 23:11:44 2024
+
+read      37882      151556     0.000077    262144     256.00     0.000018   0.081079   0.017631   0.081095   17  
+remove    -          -          -           -          -          -          -          -          0.581578   17  
+Commencing write performance test: Sun Feb 18 23:11:45 2024
+write     61.60      246.40     0.048702    262144     256.00     0.000050   49.87      0.000016   49.87      18  
+Commencing read performance test: Sun Feb 18 23:12:35 2024
+
+read      37041      148190     0.000059    262144     256.00     0.000018   0.082921   0.022344   0.082936   18  
+remove    -          -          -           -          -          -          -          -          0.580697   18  
+Commencing write performance test: Sun Feb 18 23:12:35 2024
+write     55.65      222.60     0.053908    262144     256.00     0.000060   55.20      0.000016   55.20      19  
+Commencing read performance test: Sun Feb 18 23:13:31 2024
+
+read      36430      145748     0.000079    262144     256.00     0.000018   0.084310   0.041543   0.084326   19  
+remove    -          -          -           -          -          -          -          -          0.588197   19  
+Commencing write performance test: Sun Feb 18 23:13:31 2024
+write     55.18      220.71     0.054370    262144     256.00     0.000057   55.68      0.000017   55.68      20  
+Commencing read performance test: Sun Feb 18 23:14:27 2024
+
+read      38428      153745     0.000077    262144     256.00     0.000020   0.079925   0.002274   0.079942   20  
+remove    -          -          -           -          -          -          -          -          0.575106   20  
+Commencing write performance test: Sun Feb 18 23:14:28 2024
+write     52.82      211.29     0.056793    262144     256.00     0.000056   58.16      0.000017   58.16      21  
+Commencing read performance test: Sun Feb 18 23:15:26 2024
+
+read      37030      148147     0.000065    262144     256.00     0.000019   0.082945   0.021550   0.082960   21  
+remove    -          -          -           -          -          -          -          -          0.574127   21  
+Commencing write performance test: Sun Feb 18 23:15:26 2024
+write     59.99      239.98     0.050005    262144     256.00     0.000053   51.20      0.000016   51.20      22  
+Commencing read performance test: Sun Feb 18 23:16:18 2024
+
+read      37526      150132     0.000071    262144     256.00     0.000021   0.081848   0.019430   0.081864   22  
+remove    -          -          -           -          -          -          -          -          0.577786   22  
+Commencing write performance test: Sun Feb 18 23:16:18 2024
+write     78.54      314.15     0.038198    262144     256.00     0.000057   39.11      0.000016   39.11      23  
+Commencing read performance test: Sun Feb 18 23:16:57 2024
+
+read      36884      147564     0.000077    262144     256.00     0.000018   0.083272   0.021917   0.083287   23  
+remove    -          -          -           -          -          -          -          -          0.590441   23  
+Commencing write performance test: Sun Feb 18 23:16:58 2024
+write     75.74      302.94     0.039611    262144     256.00     0.000060   40.56      0.000019   40.56      24  
+Commencing read performance test: Sun Feb 18 23:17:39 2024
+
+read      38263      153086     0.000078    262144     256.00     0.000022   0.080269   0.002497   0.080287   24  
+remove    -          -          -           -          -          -          -          -          0.577919   24  
+Commencing write performance test: Sun Feb 18 23:17:39 2024
+write     66.10      264.42     0.045383    262144     256.00     0.000052   46.47      0.000015   46.47      25  
+Commencing read performance test: Sun Feb 18 23:18:26 2024
+
+read      36900      147627     0.000074    262144     256.00     0.000017   0.083237   0.021830   0.083252   25  
+remove    -          -          -           -          -          -          -          -          0.581376   25  
+Commencing write performance test: Sun Feb 18 23:18:26 2024
+write     69.05      276.21     0.043446    262144     256.00     0.000051   44.49      0.000020   44.49      26  
+Commencing read performance test: Sun Feb 18 23:19:11 2024
+
+read      37125      148528     0.000080    262144     256.00     0.000020   0.082732   0.031636   0.082746   26  
+remove    -          -          -           -          -          -          -          -          0.589197   26  
+Commencing write performance test: Sun Feb 18 23:19:11 2024
+write     68.57      274.30     0.043748    262144     256.00     0.000054   44.80      0.000018   44.80      27  
+Commencing read performance test: Sun Feb 18 23:19:56 2024
+
+read      37001      148032     0.000077    262144     256.00     0.000018   0.083009   0.022387   0.083025   27  
+remove    -          -          -           -          -          -          -          -          0.590391   27  
+Commencing write performance test: Sun Feb 18 23:19:57 2024
+write     74.46      297.83     0.040291    262144     256.00     0.000056   41.26      0.000016   41.26      28  
+Commencing read performance test: Sun Feb 18 23:20:38 2024
+
+read      37708      150854     0.000061    262144     256.00     0.000017   0.081456   0.020248   0.081468   28  
+remove    -          -          -           -          -          -          -          -          0.578625   28  
+Commencing write performance test: Sun Feb 18 23:20:39 2024
+write     72.12      288.49     0.041595    262144     256.00     0.000058   42.59      0.000017   42.59      29  
+Commencing read performance test: Sun Feb 18 23:21:21 2024
+
+read      37026      148133     0.000073    262144     256.00     0.000019   0.082952   0.021589   0.082968   29  
+remove    -          -          -           -          -          -          -          -          0.581160   29  
+Commencing write performance test: Sun Feb 18 23:21:22 2024
+write     71.28      285.13     0.042086    262144     256.00     0.000058   43.10      0.000016   43.10      30  
+Commencing read performance test: Sun Feb 18 23:22:05 2024
+
+read      37198      148820     0.000080    262144     256.00     0.000022   0.082570   0.029470   0.082586   30  
+remove    -          -          -           -          -          -          -          -          0.593583   30  
+Commencing write performance test: Sun Feb 18 23:22:06 2024
+write     73.28      293.13     0.040938    262144     256.00     0.000048   41.92      0.000016   41.92      31  
+Commencing read performance test: Sun Feb 18 23:22:48 2024
+
+read      36975      147928     0.000065    262144     256.00     0.000018   0.083067   0.021846   0.083083   31  
+remove    -          -          -           -          -          -          -          -          0.579705   31  
+Commencing write performance test: Sun Feb 18 23:22:48 2024
+write     68.86      275.44     0.043567    262144     256.00     0.000055   44.61      0.000016   44.61      32  
+Commencing read performance test: Sun Feb 18 23:23:33 2024
+
+read      38360      153477     0.000077    262144     256.00     0.000020   0.080064   0.022691   0.080082   32  
+remove    -          -          -           -          -          -          -          -          0.609365   32  
+Commencing write performance test: Sun Feb 18 23:23:34 2024
+write     68.62      274.49     0.043717    262144     256.00     0.000051   44.77      0.000017   44.77      33  
+Commencing read performance test: Sun Feb 18 23:24:19 2024
+
+read      36920      147707     0.000077    262144     256.00     0.000021   0.083192   0.021875   0.083207   33  
+remove    -          -          -           -          -          -          -          -          0.578698   33  
+Commencing write performance test: Sun Feb 18 23:24:19 2024
+write     65.26      261.03     0.045972    262144     256.00     0.000057   47.08      0.000016   47.08      34  
+Commencing read performance test: Sun Feb 18 23:25:06 2024
+
+read      37249      149028     0.000067    262144     256.00     0.000021   0.082454   0.030738   0.082471   34  
+remove    -          -          -           -          -          -          -          -          0.577819   34  
+Commencing write performance test: Sun Feb 18 23:25:07 2024
+write     66.05      264.21     0.045418    262144     256.00     0.000055   46.51      0.000016   46.51      35  
+Commencing read performance test: Sun Feb 18 23:25:53 2024
+
+read      37015      148089     0.000077    262144     256.00     0.000019   0.082977   0.026787   0.082993   35  
+remove    -          -          -           -          -          -          -          -          0.577866   35  
+Commencing write performance test: Sun Feb 18 23:25:54 2024
+write     73.84      295.35     0.040630    262144     256.00     0.000053   41.61      0.000017   41.61      36  
+Commencing read performance test: Sun Feb 18 23:26:36 2024
+
+read      37207      148860     0.000073    262144     256.00     0.000019   0.082547   0.022097   0.082565   36  
+remove    -          -          -           -          -          -          -          -          0.580854   36  
+Commencing write performance test: Sun Feb 18 23:26:36 2024
+write     76.21      304.84     0.039365    262144     256.00     0.000052   40.31      0.000015   40.31      37  
+Commencing read performance test: Sun Feb 18 23:27:17 2024
+
+read      36949      147814     0.000075    262144     256.00     0.000020   0.083132   0.022320   0.083142   37  
+remove    -          -          -           -          -          -          -          -          0.577330   37  
+Commencing write performance test: Sun Feb 18 23:27:17 2024
+write     82.10      328.41     0.036540    262144     256.00     0.000052   37.42      0.000016   37.42      38  
+Commencing read performance test: Sun Feb 18 23:27:55 2024
+
+read      36929      147742     0.000073    262144     256.00     0.000017   0.083172   0.022602   0.083187   38  
+remove    -          -          -           -          -          -          -          -          0.577776   38  
+Commencing write performance test: Sun Feb 18 23:27:55 2024
+write     74.87      299.49     0.040069    262144     256.00     0.000055   41.03      0.000016   41.03      39  
+Commencing read performance test: Sun Feb 18 23:28:36 2024
+
+read      36977      147936     0.000081    262144     256.00     0.000018   0.083063   0.022266   0.083078   39  
+remove    -          -          -           -          -          -          -          -          0.691622   39  
+Commencing write performance test: Sun Feb 18 23:28:37 2024
+write     80.03      320.14     0.037484    262144     256.00     0.000054   38.38      0.000014   38.38      40  
+Commencing read performance test: Sun Feb 18 23:29:16 2024
+
+read      37679      150745     0.000077    262144     256.00     0.000018   0.081515   0.019619   0.081532   40  
+remove    -          -          -           -          -          -          -          -          0.575811   40  
+Commencing write performance test: Sun Feb 18 23:29:16 2024
+write     70.72      282.89     0.042419    262144     256.00     0.000056   43.44      0.000016   43.44      41  
+Commencing read performance test: Sun Feb 18 23:30:00 2024
+
+read      38120      152511     0.000079    262144     256.00     0.000019   0.080571   0.018111   0.080588   41  
+remove    -          -          -           -          -          -          -          -          0.581885   41  
+Commencing write performance test: Sun Feb 18 23:30:00 2024
+write     71.64      286.58     0.041873    262144     256.00     0.000054   42.88      0.000016   42.88      42  
+Commencing read performance test: Sun Feb 18 23:30:43 2024
+
+read      36943      147797     0.000073    262144     256.00     0.000018   0.083141   0.026873   0.083156   42  
+remove    -          -          -           -          -          -          -          -          0.578328   42  
+Commencing write performance test: Sun Feb 18 23:30:44 2024
+write     67.40      269.59     0.044512    262144     256.00     0.000053   45.58      0.000015   45.58      43  
+Commencing read performance test: Sun Feb 18 23:31:30 2024
+
+read      37048      148223     0.000069    262144     256.00     0.000020   0.082902   0.031182   0.082919   43  
+remove    -          -          -           -          -          -          -          -          0.580381   43  
+Commencing write performance test: Sun Feb 18 23:31:30 2024
+write     66.12      264.47     0.045374    262144     256.00     0.000059   46.46      0.000018   46.46      44  
+Commencing read performance test: Sun Feb 18 23:32:17 2024
+
+read      38348      153414     0.000078    262144     256.00     0.000017   0.080097   0.002633   0.080109   44  
+remove    -          -          -           -          -          -          -          -          0.578479   44  
+Commencing write performance test: Sun Feb 18 23:32:17 2024
+write     61.76      247.06     0.048572    262144     256.00     0.000050   49.74      0.000016   49.74      45  
+Commencing read performance test: Sun Feb 18 23:33:07 2024
+
+read      38289      153187     0.000077    262144     256.00     0.000017   0.080216   0.002973   0.080232   45  
+remove    -          -          -           -          -          -          -          -          0.575125   45  
+Commencing write performance test: Sun Feb 18 23:33:08 2024
+write     61.70      246.79     0.048625    262144     256.00     0.000051   49.79      0.000016   49.79      46  
+Commencing read performance test: Sun Feb 18 23:33:57 2024
+
+read      36881      147552     0.000077    262144     256.00     0.000020   0.083279   0.019958   0.083295   46  
+remove    -          -          -           -          -          -          -          -          0.579616   46  
+Commencing write performance test: Sun Feb 18 23:33:58 2024
+write     60.39      241.55     0.049679    262144     256.00     0.000056   50.87      0.000017   50.87      47  
+Commencing read performance test: Sun Feb 18 23:34:49 2024
+
+read      38000      152022     0.000079    262144     256.00     0.000018   0.080830   0.017685   0.080842   47  
+remove    -          -          -           -          -          -          -          -          0.580857   47  
+Commencing write performance test: Sun Feb 18 23:34:50 2024
+write     65.14      260.54     0.046057    262144     256.00     0.000053   47.16      0.000020   47.16      48  
+Commencing read performance test: Sun Feb 18 23:35:37 2024
+
+read      37973      151920     0.000056    262144     256.00     0.000017   0.080885   0.023248   0.080899   48  
+remove    -          -          -           -          -          -          -          -          0.577126   48  
+Commencing write performance test: Sun Feb 18 23:35:38 2024
+write     63.30      253.20     0.047393    262144     256.00     0.000053   48.53      0.000015   48.53      49  
+Commencing read performance test: Sun Feb 18 23:36:26 2024
+
+read      38387      153587     0.000078    262144     256.00     0.000021   0.080007   0.003394   0.080027   49  
+remove    -          -          -           -          -          -          -          -          0.576895   49  
+Commencing write performance test: Sun Feb 18 23:36:27 2024
+write     65.50      262.01     0.045799    262144     256.00     0.000054   46.90      0.000015   46.90      50  
+Commencing read performance test: Sun Feb 18 23:37:14 2024
+
+read      38441      153795     0.000078    262144     256.00     0.000022   0.079899   0.000403   0.079915   50  
+remove    -          -          -           -          -          -          -          -          0.576909   50  
+Commencing write performance test: Sun Feb 18 23:37:14 2024
+write     69.81      279.23     0.042975    262144     256.00     0.000052   44.01      0.000016   44.01      51  
+Commencing read performance test: Sun Feb 18 23:37:58 2024
+
+read      37002      148032     0.000063    262144     256.00     0.000018   0.083009   0.022460   0.083022   51  
+remove    -          -          -           -          -          -          -          -          0.577141   51  
+Commencing write performance test: Sun Feb 18 23:37:59 2024
+write     69.06      276.22     0.043443    262144     256.00     0.000057   44.49      0.000014   44.49      52  
+Commencing read performance test: Sun Feb 18 23:38:43 2024
+
+read      38003      152042     0.000062    262144     256.00     0.000017   0.080820   0.017552   0.080835   52  
+remove    -          -          -           -          -          -          -          -          0.588457   52  
+Commencing write performance test: Sun Feb 18 23:38:44 2024
+write     68.00      271.99     0.044119    262144     256.00     0.000050   45.18      0.000016   45.18      53  
+Commencing read performance test: Sun Feb 18 23:39:29 2024
+
+read      37918      151700     0.000062    262144     256.00     0.000020   0.081002   0.017873   0.081016   53  
+remove    -          -          -           -          -          -          -          -          0.582405   53  
+Commencing write performance test: Sun Feb 18 23:39:30 2024
+write     65.98      263.92     0.045468    262144     256.00     0.000060   46.56      0.000016   46.56      54  
+Commencing read performance test: Sun Feb 18 23:40:16 2024
+
+read      38309      153258     0.000076    262144     256.00     0.000019   0.080179   0.004835   0.080191   54  
+remove    -          -          -           -          -          -          -          -          0.576603   54  
+Commencing write performance test: Sun Feb 18 23:40:17 2024
+write     68.24      272.96     0.043963    262144     256.00     0.000046   45.02      0.000016   45.02      55  
+Commencing read performance test: Sun Feb 18 23:41:02 2024
+
+read      37933      151762     0.000063    262144     256.00     0.000019   0.080969   0.016225   0.080985   55  
+remove    -          -          -           -          -          -          -          -          0.583490   55  
+Commencing write performance test: Sun Feb 18 23:41:03 2024
+write     68.00      272.00     0.044117    262144     256.00     0.000058   45.18      0.000014   45.18      56  
+Commencing read performance test: Sun Feb 18 23:41:48 2024
+
+read      37696      150810     0.000074    262144     256.00     0.000018   0.081480   0.020487   0.081495   56  
+remove    -          -          -           -          -          -          -          -          0.584361   56  
+Commencing write performance test: Sun Feb 18 23:41:49 2024
+write     58.87      235.49     0.050958    262144     256.00     0.000061   52.18      0.000017   52.18      57  
+Commencing read performance test: Sun Feb 18 23:42:41 2024
+
+read      38404      153649     0.000078    262144     256.00     0.000022   0.079974   0.004200   0.079991   57  
+remove    -          -          -           -          -          -          -          -          0.577169   57  
+Commencing write performance test: Sun Feb 18 23:42:41 2024
+write     63.88      255.51     0.046964    262144     256.00     0.000053   48.09      0.000018   48.09      58  
+Commencing read performance test: Sun Feb 18 23:43:30 2024
+
+read      37074      148323     0.000076    262144     256.00     0.000019   0.082846   0.022249   0.082862   58  
+remove    -          -          -           -          -          -          -          -          0.578850   58  
+Commencing write performance test: Sun Feb 18 23:43:30 2024
+write     59.25      236.99     0.050635    262144     256.00     0.000058   51.85      0.000016   51.85      59  
+Commencing read performance test: Sun Feb 18 23:44:22 2024
+
+read      38301      153238     0.000078    262144     256.00     0.000019   0.080189   0.022658   0.080206   59  
+remove    -          -          -           -          -          -          -          -          0.605904   59  
+Commencing write performance test: Sun Feb 18 23:44:23 2024
+write     70.74      282.95     0.042410    262144     256.00     0.000056   43.43      0.000015   43.43      60  
+Commencing read performance test: Sun Feb 18 23:45:06 2024
+
+read      36934      147762     0.000065    262144     256.00     0.000019   0.083161   0.021955   0.083176   60  
+remove    -          -          -           -          -          -          -          -          0.579622   60  
+Commencing write performance test: Sun Feb 18 23:45:07 2024
+write     64.76      259.04     0.046325    262144     256.00     0.000050   47.44      0.000017   47.44      61  
+Commencing read performance test: Sun Feb 18 23:45:54 2024
+
+read      36942      147799     0.000077    262144     256.00     0.000019   0.083140   0.021112   0.083157   61  
+remove    -          -          -           -          -          -          -          -          0.581713   61  
+Commencing write performance test: Sun Feb 18 23:45:55 2024
+write     67.62      270.49     0.044365    262144     256.00     0.000058   45.43      0.000017   45.43      62  
+Commencing read performance test: Sun Feb 18 23:46:40 2024
+
+read      37762      151078     0.000066    262144     256.00     0.000021   0.081336   0.016044   0.081352   62  
+remove    -          -          -           -          -          -          -          -          0.578122   62  
+Commencing write performance test: Sun Feb 18 23:46:41 2024
+write     69.08      276.31     0.043429    262144     256.00     0.000047   44.47      0.000016   44.47      63  
+Commencing read performance test: Sun Feb 18 23:47:26 2024
+
+read      37070      148310     0.000074    262144     256.00     0.000019   0.082854   0.021144   0.082869   63  
+remove    -          -          -           -          -          -          -          -          0.578935   63  
+Commencing write performance test: Sun Feb 18 23:47:26 2024
+write     76.42      305.68     0.039257    262144     256.00     0.000058   40.20      0.000017   40.20      64  
+Commencing read performance test: Sun Feb 18 23:48:06 2024
+
+read      38161      152674     0.000078    262144     256.00     0.000019   0.080485   0.017310   0.080502   64  
+remove    -          -          -           -          -          -          -          -          0.581117   64  
+Commencing write performance test: Sun Feb 18 23:48:07 2024
+write     66.57      266.29     0.045064    262144     256.00     0.000053   46.15      0.000015   46.15      65  
+Commencing read performance test: Sun Feb 18 23:48:53 2024
+
+read      37024      148124     0.000060    262144     256.00     0.000019   0.082957   0.021636   0.082972   65  
+remove    -          -          -           -          -          -          -          -          0.579848   65  
+Commencing write performance test: Sun Feb 18 23:48:54 2024
+write     65.96      263.86     0.045479    262144     256.00     0.000058   46.57      0.000017   46.57      66  
+Commencing read performance test: Sun Feb 18 23:49:40 2024
+
+read      37615      150488     0.000074    262144     256.00     0.000017   0.081654   0.020067   0.081670   66  
+remove    -          -          -           -          -          -          -          -          0.575287   66  
+Commencing write performance test: Sun Feb 18 23:49:41 2024
+write     70.57      282.30     0.042508    262144     256.00     0.000055   43.53      0.000016   43.53      67  
+Commencing read performance test: Sun Feb 18 23:50:25 2024
+
+read      38318      153297     0.000078    262144     256.00     0.000020   0.080158   0.002333   0.080170   67  
+remove    -          -          -           -          -          -          -          -          0.576246   67  
+Commencing write performance test: Sun Feb 18 23:50:25 2024
+write     70.69      282.77     0.042438    262144     256.00     0.000054   43.46      0.000016   43.46      68  
+Commencing read performance test: Sun Feb 18 23:51:09 2024
+
+read      38251      153035     0.000078    262144     256.00     0.000019   0.080295   0.022829   0.080312   68  
+remove    -          -          -           -          -          -          -          -          0.622060   68  
+Commencing write performance test: Sun Feb 18 23:51:09 2024
+write     70.74      282.95     0.042410    262144     256.00     0.000057   43.43      0.000015   43.43      69  
+Commencing read performance test: Sun Feb 18 23:51:53 2024
+
+read      36493      146005     0.000042    262144     256.00     0.000020   0.084161   0.041464   0.084180   69  
+remove    -          -          -           -          -          -          -          -          0.577291   69  
+Commencing write performance test: Sun Feb 18 23:51:54 2024
+write     63.92      255.66     0.046937    262144     256.00     0.000060   48.06      0.000016   48.06      70  
+Commencing read performance test: Sun Feb 18 23:52:42 2024
+
+read      38126      152532     0.000078    262144     256.00     0.000018   0.080560   0.016029   0.080575   70  
+remove    -          -          -           -          -          -          -          -          0.577862   70  
+Commencing write performance test: Sun Feb 18 23:52:42 2024
+write     68.35      273.42     0.043889    262144     256.00     0.000054   44.94      0.000015   44.94      71  
+Commencing read performance test: Sun Feb 18 23:53:27 2024
+
+read      38148      152621     0.000079    262144     256.00     0.000017   0.080513   0.018679   0.080528   71  
+remove    -          -          -           -          -          -          -          -          0.630744   71  
+Commencing write performance test: Sun Feb 18 23:53:28 2024
+write     81.68      326.73     0.036728    262144     256.00     0.000059   37.61      0.000017   37.61      72  
+Commencing read performance test: Sun Feb 18 23:54:06 2024
+
+read      37835      151374     0.000077    262144     256.00     0.000021   0.081176   0.016324   0.081195   72  
+remove    -          -          -           -          -          -          -          -          0.577543   72  
+Commencing write performance test: Sun Feb 18 23:54:06 2024
+write     71.98      287.91     0.041679    262144     256.00     0.000054   42.68      0.000015   42.68      73  
+Commencing read performance test: Sun Feb 18 23:54:49 2024
+
+read      36901      147631     0.000048    262144     256.00     0.000019   0.083234   0.034273   0.083250   73  
+remove    -          -          -           -          -          -          -          -          0.577374   73  
+Commencing write performance test: Sun Feb 18 23:54:50 2024
+write     70.12      280.48     0.042784    262144     256.00     0.000053   43.81      0.000018   43.81      74  
+Commencing read performance test: Sun Feb 18 23:55:33 2024
+
+read      37804      151251     0.000075    262144     256.00     0.000018   0.081243   0.014069   0.081261   74  
+remove    -          -          -           -          -          -          -          -          0.580597   74  
+Commencing write performance test: Sun Feb 18 23:55:34 2024
+write     66.07      264.27     0.045409    262144     256.00     0.000056   46.50      0.000017   46.50      75  
+Commencing read performance test: Sun Feb 18 23:56:20 2024
+
+read      37971      151919     0.000074    262144     256.00     0.000022   0.080885   0.023128   0.080905   75  
+remove    -          -          -           -          -          -          -          -          0.577204   75  
+Commencing write performance test: Sun Feb 18 23:56:21 2024
+write     73.09      292.35     0.041046    262144     256.00     0.000056   42.03      0.000017   42.03      76  
+Commencing read performance test: Sun Feb 18 23:57:03 2024
+
+read      38378      153544     0.000077    262144     256.00     0.000018   0.080029   0.002323   0.080046   76  
+remove    -          -          -           -          -          -          -          -          0.577566   76  
+Commencing write performance test: Sun Feb 18 23:57:04 2024
+write     70.56      282.26     0.042514    262144     256.00     0.000058   43.53      0.000019   43.53      77  
+Commencing read performance test: Sun Feb 18 23:57:47 2024
+
+read      37966      151891     0.000075    262144     256.00     0.000018   0.080900   0.017821   0.080914   77  
+remove    -          -          -           -          -          -          -          -          0.575528   77  
+Commencing write performance test: Sun Feb 18 23:57:48 2024
+write     70.63      282.50     0.042477    262144     256.00     0.000058   43.50      0.000014   43.50      78  
+Commencing read performance test: Sun Feb 18 23:58:32 2024
+
+read      36734      146965     0.000078    262144     256.00     0.000018   0.083612   0.030658   0.083627   78  
+remove    -          -          -           -          -          -          -          -          0.582774   78  
+Commencing write performance test: Sun Feb 18 23:58:32 2024
+write     75.63      302.51     0.039669    262144     256.00     0.000058   40.62      0.000018   40.62      79  
+Commencing read performance test: Sun Feb 18 23:59:13 2024
+
+read      37941      151796     0.000077    262144     256.00     0.000020   0.080951   0.017828   0.080967   79  
+remove    -          -          -           -          -          -          -          -          0.577116   79  
+Commencing write performance test: Sun Feb 18 23:59:13 2024
+write     67.63      270.53     0.044358    262144     256.00     0.000058   45.42      0.000030   45.42      80  
+Commencing read performance test: Sun Feb 18 23:59:59 2024
+
+read      36980      147942     0.000077    262144     256.00     0.000018   0.083059   0.021726   0.083071   80  
+remove    -          -          -           -          -          -          -          -          0.575213   80  
+Commencing write performance test: Mon Feb 19 00:00:00 2024
+write     68.67      274.67     0.043689    262144     256.00     0.000054   44.74      0.000015   44.74      81  
+Commencing read performance test: Mon Feb 19 00:00:44 2024
+
+read      36995      148016     0.000077    262144     256.00     0.000022   0.083018   0.021857   0.083038   81  
+remove    -          -          -           -          -          -          -          -          0.575988   81  
+Commencing write performance test: Mon Feb 19 00:00:45 2024
+write     68.98      275.93     0.043490    262144     256.00     0.000057   44.53      0.000017   44.53      82  
+Commencing read performance test: Mon Feb 19 00:01:29 2024
+
+read      37445      149806     0.000060    262144     256.00     0.000021   0.082026   0.020674   0.082039   82  
+remove    -          -          -           -          -          -          -          -          0.576964   82  
+Commencing write performance test: Mon Feb 19 00:01:30 2024
+write     61.90      247.59     0.048467    262144     256.00     0.000059   49.63      0.000016   49.63      83  
+Commencing read performance test: Mon Feb 19 00:02:20 2024
+
+read      37881      151552     0.000074    262144     256.00     0.000021   0.081081   0.017811   0.081096   83  
+remove    -          -          -           -          -          -          -          -          0.575622   83  
+Commencing write performance test: Mon Feb 19 00:02:20 2024
+write     81.26      325.03     0.036919    262144     256.00     0.000055   37.81      0.000018   37.81      84  
+Commencing read performance test: Mon Feb 19 00:02:58 2024
+
+read      37875      151527     0.000079    262144     256.00     0.000017   0.081094   0.019755   0.081110   84  
+remove    -          -          -           -          -          -          -          -          0.602460   84  
+Commencing write performance test: Mon Feb 19 00:02:59 2024
+write     72.74      290.98     0.041241    262144     256.00     0.000054   42.23      0.000017   42.23      85  
+Commencing read performance test: Mon Feb 19 00:03:41 2024
+
+read      36982      147958     0.000077    262144     256.00     0.000019   0.083051   0.027350   0.083067   85  
+remove    -          -          -           -          -          -          -          -          0.579001   85  
+Commencing write performance test: Mon Feb 19 00:03:42 2024
+write     59.22      236.86     0.050662    262144     256.00     0.000059   51.88      0.000016   51.88      86  
+Commencing read performance test: Mon Feb 19 00:04:34 2024
+
+read      38391      153596     0.000078    262144     256.00     0.000020   0.080002   0.002138   0.080019   86  
+remove    -          -          -           -          -          -          -          -          0.578355   86  
+Commencing write performance test: Mon Feb 19 00:04:34 2024
+write     55.92      223.70     0.053643    262144     256.00     0.000058   54.93      0.000018   54.93      87  
+Commencing read performance test: Mon Feb 19 00:05:29 2024
+
+read      37056      148253     0.000077    262144     256.00     0.000019   0.082885   0.026481   0.082901   87  
+remove    -          -          -           -          -          -          -          -          0.577938   87  
+Commencing write performance test: Mon Feb 19 00:05:30 2024
+write     62.43      249.74     0.048051    262144     256.00     0.000056   49.20      0.000016   49.20      88  
+Commencing read performance test: Mon Feb 19 00:06:19 2024
+
+read      36874      147519     0.000081    262144     256.00     0.000020   0.083298   0.031181   0.083311   88  
+remove    -          -          -           -          -          -          -          -          0.650482   88  
+Commencing write performance test: Mon Feb 19 00:06:20 2024
+write     61.10      244.38     0.049104    262144     256.00     0.000060   50.28      0.000016   50.28      89  
+Commencing read performance test: Mon Feb 19 00:07:10 2024
+
+read      36948      147811     0.000081    262144     256.00     0.000021   0.083133   0.021920   0.083145   89  
+remove    -          -          -           -          -          -          -          -          0.590204   89  
+Commencing write performance test: Mon Feb 19 00:07:11 2024
+write     53.54      214.15     0.056035    262144     256.00     0.000057   57.38      0.000018   57.38      90  
+Commencing read performance test: Mon Feb 19 00:08:08 2024
+
+read      37013      148079     0.000066    262144     256.00     0.000018   0.082983   0.022278   0.082999   90  
+remove    -          -          -           -          -          -          -          -          0.578074   90  
+Commencing write performance test: Mon Feb 19 00:08:09 2024
+write     55.71      222.85     0.053849    262144     256.00     0.000058   55.14      0.000016   55.14      91  
+Commencing read performance test: Mon Feb 19 00:09:04 2024
+
+read      38135      152575     0.000075    262144     256.00     0.000023   0.080537   0.018434   0.080555   91  
+remove    -          -          -           -          -          -          -          -          0.577755   91  
+Commencing write performance test: Mon Feb 19 00:09:05 2024
+write     76.15      304.59     0.039397    262144     256.00     0.000053   40.34      0.000018   40.34      92  
+Commencing read performance test: Mon Feb 19 00:09:45 2024
+
+read      36882      147555     0.000077    262144     256.00     0.000021   0.083278   0.026549   0.083293   92  
+remove    -          -          -           -          -          -          -          -          0.580806   92  
+Commencing write performance test: Mon Feb 19 00:09:46 2024
+write     63.98      255.94     0.046886    262144     256.00     0.000057   48.01      0.000017   48.01      93  
+Commencing read performance test: Mon Feb 19 00:10:34 2024
+
+read      38225      152933     0.000078    262144     256.00     0.000019   0.080349   0.017919   0.080365   93  
+remove    -          -          -           -          -          -          -          -          0.641507   93  
+Commencing write performance test: Mon Feb 19 00:10:34 2024
+write     56.57      226.28     0.053032    262144     256.00     0.000056   54.30      0.000017   54.30      94  
+Commencing read performance test: Mon Feb 19 00:11:29 2024
+
+read      36864      147483     0.000060    262144     256.00     0.000020   0.083318   0.021934   0.083333   94  
+remove    -          -          -           -          -          -          -          -          0.580114   94  
+Commencing write performance test: Mon Feb 19 00:11:29 2024
+write     59.87      239.49     0.050107    262144     256.00     0.000049   51.31      0.000016   51.31      95  
+Commencing read performance test: Mon Feb 19 00:12:21 2024
+
+read      37753      151039     0.000079    262144     256.00     0.000019   0.081356   0.020367   0.081371   95  
+remove    -          -          -           -          -          -          -          -          0.578829   95  
+Commencing write performance test: Mon Feb 19 00:12:21 2024
+write     54.98      219.92     0.054565    262144     256.00     0.000057   55.88      0.000015   55.88      96  
+Commencing read performance test: Mon Feb 19 00:13:17 2024
+
+read      37299      149226     0.000062    262144     256.00     0.000017   0.082345   0.018858   0.082361   96  
+remove    -          -          -           -          -          -          -          -          0.578268   96  
+Commencing write performance test: Mon Feb 19 00:13:18 2024
+write     67.99      271.95     0.044126    262144     256.00     0.000060   45.18      0.000015   45.18      97  
+Commencing read performance test: Mon Feb 19 00:14:03 2024
+
+read      37854      151447     0.000077    262144     256.00     0.000018   0.081137   0.017763   0.081153   97  
+remove    -          -          -           -          -          -          -          -          0.580549   97  
+Commencing write performance test: Mon Feb 19 00:14:04 2024
+write     66.81      267.22     0.044907    262144     256.00     0.000062   45.98      0.000018   45.98      98  
+Commencing read performance test: Mon Feb 19 00:14:50 2024
+
+read      37634      150563     0.000079    262144     256.00     0.000019   0.081614   0.026030   0.081628   98  
+remove    -          -          -           -          -          -          -          -          0.586063   98  
+Commencing write performance test: Mon Feb 19 00:14:50 2024
+write     67.31      269.25     0.044569    262144     256.00     0.000063   45.64      0.000018   45.64      99  
+Commencing read performance test: Mon Feb 19 00:15:36 2024
+
+read      36866      147489     0.000066    262144     256.00     0.000019   0.083315   0.022672   0.083328   99  
+remove    -          -          -           -          -          -          -          -          0.579231   99  
+Max Write: 82.10 MiB/sec (86.09 MB/sec)
+Max Read:  38440.70 MiB/sec (40308.00 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write          82.10      52.82      67.52       6.64     328.41     211.29     270.09      26.55   45.95676         NA            NA     0     12  12  100   0     0        1         0    0      1 268435456   262144    3072.0 POSIX      0
+read        38440.70   36430.08   37546.52     569.05  153762.81  145720.31  150186.08    2276.20    0.08184         NA            NA     0     12  12  100   0     0        1         0    0      1 268435456   262144    3072.0 POSIX      0
+Finished            : Mon Feb 19 00:15:37 2024
+
+#####
+fp-withfp-opt-id - Run 3
+2024-02-19 01:32:20
+#####
+IOR-3.3.0: MPI Coordinated Test of Parallel I/O
+Began               : Mon Feb 19 00:15:41 2024
+Command line        : ./src/ior -v -w -r -i 100 -e -q -b 256m -o testFile
+Machine             : Linux fp
+Start time skew across all tasks: 0.00 sec
+TestID              : 0
+StartTime           : Mon Feb 19 00:15:41 2024
+Path                : /home/ubuntu/.phoronix-test-suite/installed-tests/pts/ior-1.1.1/ior-3.3.0
+FS                  : 420.0 GiB   Used FS: 74.6%   Inodes: 26.7 Mi   Used Inodes: 3.5%
+Participating tasks: 12
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : testFile
+access              : single-shared-file
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 12
+clients per node    : 12
+repetitions         : 100
+xfersize            : 262144 bytes
+blocksize           : 256 MiB
+aggregate filesize  : 3 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+Commencing write performance test: Mon Feb 19 00:15:41 2024
+write     59.12      236.49     0.050741    262144     256.00     0.000516   51.96      0.000034   51.96      0   
+Commencing read performance test: Mon Feb 19 00:16:33 2024
+
+read      36991      147988     0.000066    262144     256.00     0.000036   0.083034   0.022433   0.083047   0   
+remove    -          -          -           -          -          -          -          -          0.577499   0   
+Commencing write performance test: Mon Feb 19 00:16:34 2024
+write     74.77      299.08     0.040123    262144     256.00     0.000063   41.09      0.000032   41.09      1   
+Commencing read performance test: Mon Feb 19 00:17:15 2024
+
+read      36920      147700     0.000065    262144     256.00     0.000035   0.083195   0.021961   0.083208   1   
+remove    -          -          -           -          -          -          -          -          0.574950   1   
+Commencing write performance test: Mon Feb 19 00:17:15 2024
+write     75.72      302.88     0.039619    262144     256.00     0.000062   40.57      0.000032   40.57      2   
+Commencing read performance test: Mon Feb 19 00:17:56 2024
+
+read      37077      148330     0.000052    262144     256.00     0.000034   0.082842   0.029562   0.082854   2   
+remove    -          -          -           -          -          -          -          -          0.574843   2   
+Commencing write performance test: Mon Feb 19 00:17:57 2024
+write     76.35      305.40     0.039293    262144     256.00     0.000077   40.24      0.000033   40.24      3   
+Commencing read performance test: Mon Feb 19 00:18:37 2024
+
+read      37656      150644     0.000060    262144     256.00     0.000036   0.081570   0.020533   0.081581   3   
+remove    -          -          -           -          -          -          -          -          0.579052   3   
+Commencing write performance test: Mon Feb 19 00:18:38 2024
+write     68.05      272.20     0.044085    262144     256.00     0.000078   45.14      0.000033   45.14      4   
+Commencing read performance test: Mon Feb 19 00:19:23 2024
+
+read      36925      147725     0.000081    262144     256.00     0.000036   0.083181   0.032428   0.083196   4   
+remove    -          -          -           -          -          -          -          -          0.683424   4   
+Commencing write performance test: Mon Feb 19 00:19:24 2024
+write     73.61      294.43     0.040757    262144     256.00     0.000080   41.73      0.000034   41.73      5   
+Commencing read performance test: Mon Feb 19 00:20:05 2024
+
+read      38298      153215     0.000077    262144     256.00     0.000035   0.080201   0.002449   0.080213   5   
+remove    -          -          -           -          -          -          -          -          0.578683   5   
+Commencing write performance test: Mon Feb 19 00:20:06 2024
+write     61.65      246.59     0.048663    262144     256.00     0.000076   49.83      0.000033   49.83      6   
+Commencing read performance test: Mon Feb 19 00:20:56 2024
+
+read      36976      147921     0.000077    262144     256.00     0.000034   0.083071   0.022514   0.083081   6   
+remove    -          -          -           -          -          -          -          -          0.580962   6   
+Commencing write performance test: Mon Feb 19 00:20:56 2024
+write     70.37      281.48     0.042631    262144     256.00     0.000070   43.65      0.000033   43.65      7   
+Commencing read performance test: Mon Feb 19 00:21:40 2024
+
+read      37065      148284     0.000074    262144     256.00     0.000037   0.082868   0.022088   0.082880   7   
+remove    -          -          -           -          -          -          -          -          0.581157   7   
+Commencing write performance test: Mon Feb 19 00:21:41 2024
+write     61.38      245.54     0.048872    262144     256.00     0.000072   50.04      0.000032   50.04      8   
+Commencing read performance test: Mon Feb 19 00:22:31 2024
+
+read      37258      149056     0.000077    262144     256.00     0.000039   0.082439   0.027207   0.082452   8   
+remove    -          -          -           -          -          -          -          -          0.577803   8   
+Commencing write performance test: Mon Feb 19 00:22:31 2024
+write     66.78      267.12     0.044924    262144     256.00     0.000071   46.00      0.000035   46.00      9   
+Commencing read performance test: Mon Feb 19 00:23:17 2024
+
+read      37831      151350     0.000075    262144     256.00     0.000036   0.081190   0.010064   0.081203   9   
+remove    -          -          -           -          -          -          -          -          0.575635   9   
+Commencing write performance test: Mon Feb 19 00:23:18 2024
+write     82.19      328.75     0.036502    262144     256.00     0.000069   37.38      0.000037   37.38      10  
+Commencing read performance test: Mon Feb 19 00:23:55 2024
+
+read      37640      150580     0.000063    262144     256.00     0.000037   0.081604   0.025336   0.081615   10  
+remove    -          -          -           -          -          -          -          -          0.577647   10  
+Commencing write performance test: Mon Feb 19 00:23:56 2024
+write     71.69      286.76     0.041847    262144     256.00     0.000070   42.85      0.000033   42.85      11  
+Commencing read performance test: Mon Feb 19 00:24:39 2024
+
+read      37908      151659     0.000074    262144     256.00     0.000036   0.081024   0.017723   0.081038   11  
+remove    -          -          -           -          -          -          -          -          0.580720   11  
+Commencing write performance test: Mon Feb 19 00:24:40 2024
+write     74.72      298.88     0.040150    262144     256.00     0.000073   41.11      0.000030   41.11      12  
+Commencing read performance test: Mon Feb 19 00:25:21 2024
+
+read      37858      151454     0.000074    262144     256.00     0.000034   0.081133   0.017670   0.081146   12  
+remove    -          -          -           -          -          -          -          -          0.578338   12  
+Commencing write performance test: Mon Feb 19 00:25:21 2024
+write     72.39      289.56     0.041443    262144     256.00     0.000071   42.44      0.000034   42.44      13  
+Commencing read performance test: Mon Feb 19 00:26:04 2024
+
+read      38302      153251     0.000077    262144     256.00     0.000042   0.080182   0.002567   0.080204   13  
+remove    -          -          -           -          -          -          -          -          0.577289   13  
+Commencing write performance test: Mon Feb 19 00:26:05 2024
+write     69.46      277.82     0.043193    262144     256.00     0.000072   44.23      0.000033   44.23      14  
+Commencing read performance test: Mon Feb 19 00:26:49 2024
+
+read      36813      147276     0.000065    262144     256.00     0.000036   0.083435   0.018987   0.083448   14  
+remove    -          -          -           -          -          -          -          -          0.578457   14  
+Commencing write performance test: Mon Feb 19 00:26:49 2024
+write     74.28      297.10     0.040390    262144     256.00     0.000072   41.36      0.000033   41.36      15  
+Commencing read performance test: Mon Feb 19 00:27:31 2024
+
+read      36978      147935     0.000077    262144     256.00     0.000035   0.083063   0.022635   0.083077   15  
+remove    -          -          -           -          -          -          -          -          0.578784   15  
+Commencing write performance test: Mon Feb 19 00:27:31 2024
+write     70.14      280.57     0.042769    262144     256.00     0.000072   43.80      0.000031   43.80      16  
+Commencing read performance test: Mon Feb 19 00:28:15 2024
+
+read      36909      147657     0.000077    262144     256.00     0.000035   0.083220   0.022537   0.083231   16  
+remove    -          -          -           -          -          -          -          -          0.575860   16  
+Commencing write performance test: Mon Feb 19 00:28:16 2024
+write     70.74      282.95     0.042411    262144     256.00     0.000073   43.43      0.000029   43.43      17  
+Commencing read performance test: Mon Feb 19 00:28:59 2024
+
+read      36905      147651     0.000053    262144     256.00     0.000095   0.083223   0.031731   0.083240   17  
+remove    -          -          -           -          -          -          -          -          0.588226   17  
+Commencing write performance test: Mon Feb 19 00:29:00 2024
+write     73.12      292.49     0.041028    262144     256.00     0.000068   42.01      0.000033   42.01      18  
+Commencing read performance test: Mon Feb 19 00:29:42 2024
+
+read      37153      148637     0.000080    262144     256.00     0.000036   0.082671   0.031900   0.082686   18  
+remove    -          -          -           -          -          -          -          -          0.623380   18  
+Commencing write performance test: Mon Feb 19 00:29:43 2024
+write     76.19      304.76     0.039375    262144     256.00     0.000075   40.32      0.000035   40.32      19  
+Commencing read performance test: Mon Feb 19 00:30:23 2024
+
+read      38317      153286     0.000075    262144     256.00     0.000035   0.080164   0.003641   0.080173   19  
+remove    -          -          -           -          -          -          -          -          0.580319   19  
+Commencing write performance test: Mon Feb 19 00:30:24 2024
+write     74.63      298.53     0.040197    262144     256.00     0.000072   41.16      0.000032   41.16      20  
+Commencing read performance test: Mon Feb 19 00:31:05 2024
+
+read      37269      149098     0.000079    262144     256.00     0.000036   0.082416   0.032166   0.082428   20  
+remove    -          -          -           -          -          -          -          -          0.576433   20  
+Commencing write performance test: Mon Feb 19 00:31:06 2024
+write     67.51      270.02     0.044441    262144     256.00     0.000072   45.51      0.000034   45.51      21  
+Commencing read performance test: Mon Feb 19 00:31:51 2024
+
+read      37000      148025     0.000073    262144     256.00     0.000036   0.083013   0.022519   0.083026   21  
+remove    -          -          -           -          -          -          -          -          0.573893   21  
+Commencing write performance test: Mon Feb 19 00:31:52 2024
+write     65.16      260.63     0.046042    262144     256.00     0.000070   47.15      0.000034   47.15      22  
+Commencing read performance test: Mon Feb 19 00:32:39 2024
+
+read      37029      148138     0.000081    262144     256.00     0.000036   0.082950   0.020214   0.082963   22  
+remove    -          -          -           -          -          -          -          -          0.592208   22  
+Commencing write performance test: Mon Feb 19 00:32:39 2024
+write     62.55      250.21     0.047960    262144     256.00     0.000073   49.11      0.000033   49.11      23  
+Commencing read performance test: Mon Feb 19 00:33:29 2024
+
+read      38286      153167     0.000077    262144     256.00     0.000035   0.080226   0.003547   0.080239   23  
+remove    -          -          -           -          -          -          -          -          0.581890   23  
+Commencing write performance test: Mon Feb 19 00:33:29 2024
+write     61.73      246.91     0.048600    262144     256.00     0.000073   49.77      0.000031   49.77      24  
+Commencing read performance test: Mon Feb 19 00:34:19 2024
+
+read      38238      152976     0.000078    262144     256.00     0.000036   0.080327   0.002366   0.080339   24  
+remove    -          -          -           -          -          -          -          -          0.576415   24  
+Commencing write performance test: Mon Feb 19 00:34:20 2024
+write     56.64      226.54     0.052970    262144     256.00     0.000074   54.24      0.000032   54.24      25  
+Commencing read performance test: Mon Feb 19 00:35:14 2024
+
+read      37256      149053     0.000072    262144     256.00     0.000035   0.082440   0.023435   0.082456   25  
+remove    -          -          -           -          -          -          -          -          0.576945   25  
+Commencing write performance test: Mon Feb 19 00:35:15 2024
+write     64.62      258.48     0.046426    262144     256.00     0.000069   47.54      0.000031   47.54      26  
+Commencing read performance test: Mon Feb 19 00:36:02 2024
+
+read      37222      148914     0.000060    262144     256.00     0.000035   0.082517   0.021457   0.082532   26  
+remove    -          -          -           -          -          -          -          -          0.587197   26  
+Commencing write performance test: Mon Feb 19 00:36:03 2024
+write     69.59      278.35     0.043112    262144     256.00     0.000073   44.15      0.000030   44.15      27  
+Commencing read performance test: Mon Feb 19 00:36:47 2024
+
+read      38022      152110     0.000061    262144     256.00     0.000036   0.080783   0.018466   0.080796   27  
+remove    -          -          -           -          -          -          -          -          0.578266   27  
+Commencing write performance test: Mon Feb 19 00:36:48 2024
+write     75.87      303.49     0.039540    262144     256.00     0.000073   40.49      0.000029   40.49      28  
+Commencing read performance test: Mon Feb 19 00:37:28 2024
+
+read      37779      151138     0.000077    262144     256.00     0.000036   0.081303   0.017951   0.081315   28  
+remove    -          -          -           -          -          -          -          -          0.579304   28  
+Commencing write performance test: Mon Feb 19 00:37:29 2024
+write     73.50      294.02     0.040814    262144     256.00     0.000073   41.79      0.000032   41.79      29  
+Commencing read performance test: Mon Feb 19 00:38:11 2024
+
+read      38134      152555     0.000077    262144     256.00     0.000035   0.080548   0.004479   0.080559   29  
+remove    -          -          -           -          -          -          -          -          0.580171   29  
+Commencing write performance test: Mon Feb 19 00:38:11 2024
+write     66.21      264.84     0.045311    262144     256.00     0.000074   46.40      0.000029   46.40      30  
+Commencing read performance test: Mon Feb 19 00:38:58 2024
+
+read      37017      148085     0.000073    262144     256.00     0.000034   0.082979   0.022050   0.082989   30  
+remove    -          -          -           -          -          -          -          -          0.580475   30  
+Commencing write performance test: Mon Feb 19 00:38:58 2024
+write     68.48      273.90     0.043811    262144     256.00     0.000070   44.86      0.000033   44.86      31  
+Commencing read performance test: Mon Feb 19 00:39:43 2024
+
+read      37181      148750     0.000065    262144     256.00     0.000036   0.082608   0.021419   0.082624   31  
+remove    -          -          -           -          -          -          -          -          0.576585   31  
+Commencing write performance test: Mon Feb 19 00:39:44 2024
+write     71.71      286.85     0.041834    262144     256.00     0.000074   42.84      0.000032   42.84      32  
+Commencing read performance test: Mon Feb 19 00:40:27 2024
+
+read      36975      147921     0.000063    262144     256.00     0.000034   0.083072   0.022521   0.083083   32  
+remove    -          -          -           -          -          -          -          -          0.577080   32  
+Commencing write performance test: Mon Feb 19 00:40:27 2024
+write     67.46      269.83     0.044472    262144     256.00     0.000070   45.54      0.000032   45.54      33  
+Commencing read performance test: Mon Feb 19 00:41:13 2024
+
+read      38160      152666     0.000079    262144     256.00     0.000036   0.080490   0.017090   0.080502   33  
+remove    -          -          -           -          -          -          -          -          0.590147   33  
+Commencing write performance test: Mon Feb 19 00:41:14 2024
+write     67.06      268.24     0.044736    262144     256.00     0.000069   45.81      0.000034   45.81      34  
+Commencing read performance test: Mon Feb 19 00:41:59 2024
+
+read      36994      148001     0.000065    262144     256.00     0.000035   0.083026   0.022474   0.083040   34  
+remove    -          -          -           -          -          -          -          -          0.579450   34  
+Commencing write performance test: Mon Feb 19 00:42:00 2024
+write     57.00      228.00     0.052633    262144     256.00     0.000067   53.90      0.000031   53.90      35  
+Commencing read performance test: Mon Feb 19 00:42:54 2024
+
+read      36989      147976     0.000066    262144     256.00     0.000034   0.083041   0.021960   0.083052   35  
+remove    -          -          -           -          -          -          -          -          0.581293   35  
+Commencing write performance test: Mon Feb 19 00:42:55 2024
+write     62.71      250.83     0.047842    262144     256.00     0.000070   48.99      0.000034   48.99      36  
+Commencing read performance test: Mon Feb 19 00:43:44 2024
+
+read      36915      147683     0.000060    262144     256.00     0.000039   0.083205   0.021493   0.083219   36  
+remove    -          -          -           -          -          -          -          -          0.576513   36  
+Commencing write performance test: Mon Feb 19 00:43:44 2024
+write     55.96      223.84     0.053610    262144     256.00     0.000073   54.90      0.000032   54.90      37  
+Commencing read performance test: Mon Feb 19 00:44:39 2024
+
+read      37225      148925     0.000080    262144     256.00     0.000036   0.082511   0.031802   0.082525   37  
+remove    -          -          -           -          -          -          -          -          0.598979   37  
+Commencing write performance test: Mon Feb 19 00:44:40 2024
+write     61.63      246.51     0.048679    262144     256.00     0.000073   49.85      0.000035   49.85      38  
+Commencing read performance test: Mon Feb 19 00:45:30 2024
+
+read      38404      153644     0.000077    262144     256.00     0.000039   0.079977   0.004937   0.079991   38  
+remove    -          -          -           -          -          -          -          -          0.579512   38  
+Commencing write performance test: Mon Feb 19 00:45:30 2024
+write     63.86      255.44     0.046977    262144     256.00     0.000073   48.10      0.000029   48.10      39  
+Commencing read performance test: Mon Feb 19 00:46:18 2024
+
+read      37620      150506     0.000066    262144     256.00     0.000035   0.081644   0.018028   0.081659   39  
+remove    -          -          -           -          -          -          -          -          0.593107   39  
+Commencing write performance test: Mon Feb 19 00:46:19 2024
+write     66.07      264.26     0.045410    262144     256.00     0.000075   46.50      0.000032   46.50      40  
+Commencing read performance test: Mon Feb 19 00:47:06 2024
+
+read      37946      151812     0.000074    262144     256.00     0.000036   0.080942   0.017607   0.080957   40  
+remove    -          -          -           -          -          -          -          -          0.580607   40  
+Commencing write performance test: Mon Feb 19 00:47:06 2024
+write     73.05      292.20     0.041068    262144     256.00     0.000072   42.05      0.000030   42.05      41  
+Commencing read performance test: Mon Feb 19 00:47:48 2024
+
+read      36889      147581     0.000077    262144     256.00     0.000036   0.083263   0.022243   0.083276   41  
+remove    -          -          -           -          -          -          -          -          0.581226   41  
+Commencing write performance test: Mon Feb 19 00:47:49 2024
+write     66.75      267.00     0.044944    262144     256.00     0.000074   46.02      0.000032   46.02      42  
+Commencing read performance test: Mon Feb 19 00:48:35 2024
+
+read      38355      153448     0.000078    262144     256.00     0.000037   0.080079   0.002481   0.080094   42  
+remove    -          -          -           -          -          -          -          -          0.580910   42  
+Commencing write performance test: Mon Feb 19 00:48:36 2024
+write     71.07      284.28     0.042212    262144     256.00     0.000180   43.23      0.000032   43.23      43  
+Commencing read performance test: Mon Feb 19 00:49:19 2024
+
+read      37853      151437     0.000065    262144     256.00     0.000037   0.081143   0.020086   0.081156   43  
+remove    -          -          -           -          -          -          -          -          0.578357   43  
+Commencing write performance test: Mon Feb 19 00:49:20 2024
+write     77.38      309.53     0.038768    262144     256.00     0.000072   39.70      0.000034   39.70      44  
+Commencing read performance test: Mon Feb 19 00:49:59 2024
+
+read      37781      151147     0.000076    262144     256.00     0.000034   0.081298   0.016653   0.081311   44  
+remove    -          -          -           -          -          -          -          -          0.577384   44  
+Commencing write performance test: Mon Feb 19 00:50:00 2024
+write     73.18      292.73     0.040994    262144     256.00     0.000069   41.98      0.000031   41.98      45  
+Commencing read performance test: Mon Feb 19 00:50:42 2024
+
+read      36873      147516     0.000081    262144     256.00     0.000035   0.083299   0.021798   0.083312   45  
+remove    -          -          -           -          -          -          -          -          0.592213   45  
+Commencing write performance test: Mon Feb 19 00:50:43 2024
+write     73.02      292.07     0.041087    262144     256.00     0.000078   42.07      0.000032   42.07      46  
+Commencing read performance test: Mon Feb 19 00:51:25 2024
+
+read      38040      152183     0.000075    262144     256.00     0.000035   0.080745   0.017304   0.080757   46  
+remove    -          -          -           -          -          -          -          -          0.577904   46  
+Commencing write performance test: Mon Feb 19 00:51:25 2024
+write     57.30      229.19     0.052359    262144     256.00     0.000070   53.62      0.000031   53.62      47  
+Commencing read performance test: Mon Feb 19 00:52:19 2024
+
+read      38361      153472     0.000078    262144     256.00     0.000034   0.080067   0.003988   0.080081   47  
+remove    -          -          -           -          -          -          -          -          0.579998   47  
+Commencing write performance test: Mon Feb 19 00:52:20 2024
+write     63.06      252.22     0.047577    262144     256.00     0.000077   48.72      0.000033   48.72      48  
+Commencing read performance test: Mon Feb 19 00:53:08 2024
+
+read      37973      151919     0.000062    262144     256.00     0.000036   0.080885   0.017539   0.080900   48  
+remove    -          -          -           -          -          -          -          -          0.587070   48  
+Commencing write performance test: Mon Feb 19 00:53:09 2024
+write     52.73      210.91     0.056895    262144     256.00     0.000075   58.26      0.000033   58.26      49  
+Commencing read performance test: Mon Feb 19 00:54:07 2024
+
+read      37882      151551     0.000077    262144     256.00     0.000038   0.081082   0.017708   0.081094   49  
+remove    -          -          -           -          -          -          -          -          0.579750   49  
+Commencing write performance test: Mon Feb 19 00:54:08 2024
+write     62.38      249.51     0.048095    262144     256.00     0.000073   49.25      0.000031   49.25      50  
+Commencing read performance test: Mon Feb 19 00:54:57 2024
+
+read      38320      153305     0.000076    262144     256.00     0.000035   0.080154   0.003199   0.080168   50  
+remove    -          -          -           -          -          -          -          -          0.577081   50  
+Commencing write performance test: Mon Feb 19 00:54:58 2024
+write     60.74      242.97     0.049389    262144     256.00     0.000074   50.57      0.000032   50.57      51  
+Commencing read performance test: Mon Feb 19 00:55:48 2024
+
+read      38365      153485     0.000078    262144     256.00     0.000035   0.080060   0.000332   0.080074   51  
+remove    -          -          -           -          -          -          -          -          0.579109   51  
+Commencing write performance test: Mon Feb 19 00:55:49 2024
+write     73.69      294.75     0.040712    262144     256.00     0.000073   41.69      0.000032   41.69      52  
+Commencing read performance test: Mon Feb 19 00:56:31 2024
+
+read      38226      152926     0.000077    262144     256.00     0.000034   0.080352   0.003287   0.080365   52  
+remove    -          -          -           -          -          -          -          -          0.579059   52  
+Commencing write performance test: Mon Feb 19 00:56:31 2024
+write     76.36      305.43     0.039288    262144     256.00     0.000077   40.23      0.000033   40.23      53  
+Commencing read performance test: Mon Feb 19 00:57:12 2024
+
+read      37752      151027     0.000070    262144     256.00     0.000034   0.081363   0.014222   0.081373   53  
+remove    -          -          -           -          -          -          -          -          0.577746   53  
+Commencing write performance test: Mon Feb 19 00:57:12 2024
+write     70.93      283.74     0.042293    262144     256.00     0.000075   43.31      0.000032   43.31      54  
+Commencing read performance test: Mon Feb 19 00:57:56 2024
+
+read      38393      153600     0.000070    262144     256.00     0.000036   0.080000   0.022190   0.080014   54  
+remove    -          -          -           -          -          -          -          -          0.582207   54  
+Commencing write performance test: Mon Feb 19 00:57:56 2024
+write     78.37      313.47     0.038281    262144     256.00     0.000070   39.20      0.000033   39.20      55  
+Commencing read performance test: Mon Feb 19 00:58:35 2024
+
+read      37191      148787     0.000081    262144     256.00     0.000034   0.082588   0.020553   0.082600   55  
+remove    -          -          -           -          -          -          -          -          0.589291   55  
+Commencing write performance test: Mon Feb 19 00:58:36 2024
+write     76.13      304.52     0.039406    262144     256.00     0.000063   40.35      0.000030   40.35      56  
+Commencing read performance test: Mon Feb 19 00:59:16 2024
+
+read      36984      147957     0.000074    262144     256.00     0.000033   0.083051   0.021298   0.083064   56  
+remove    -          -          -           -          -          -          -          -          0.579025   56  
+Commencing write performance test: Mon Feb 19 00:59:17 2024
+write     75.95      303.81     0.039498    262144     256.00     0.000071   40.45      0.000033   40.45      57  
+Commencing read performance test: Mon Feb 19 00:59:58 2024
+
+read      37969      151896     0.000062    262144     256.00     0.000034   0.080897   0.017819   0.080909   57  
+remove    -          -          -           -          -          -          -          -          0.578997   57  
+Commencing write performance test: Mon Feb 19 00:59:58 2024
+write     80.34      321.36     0.037342    262144     256.00     0.000069   38.24      0.000032   38.24      58  
+Commencing read performance test: Mon Feb 19 01:00:36 2024
+
+read      36892      147595     0.000065    262144     256.00     0.000038   0.083255   0.019834   0.083270   58  
+remove    -          -          -           -          -          -          -          -          0.578720   58  
+Commencing write performance test: Mon Feb 19 01:00:37 2024
+write     75.94      303.78     0.039502    262144     256.00     0.000073   40.45      0.000032   40.45      59  
+Commencing read performance test: Mon Feb 19 01:01:18 2024
+
+read      36929      147739     0.000060    262144     256.00     0.000034   0.083174   0.022010   0.083186   59  
+remove    -          -          -           -          -          -          -          -          0.585719   59  
+Commencing write performance test: Mon Feb 19 01:01:18 2024
+write     73.41      293.66     0.040864    262144     256.00     0.000073   41.84      0.000032   41.84      60  
+Commencing read performance test: Mon Feb 19 01:02:00 2024
+
+read      37916      151683     0.000074    262144     256.00     0.000037   0.081011   0.023430   0.081021   60  
+remove    -          -          -           -          -          -          -          -          0.583534   60  
+Commencing write performance test: Mon Feb 19 01:02:01 2024
+write     67.62      270.50     0.044363    262144     256.00     0.000075   45.43      0.000035   45.43      61  
+Commencing read performance test: Mon Feb 19 01:02:46 2024
+
+read      37892      151594     0.000062    262144     256.00     0.000035   0.081059   0.017806   0.081072   61  
+remove    -          -          -           -          -          -          -          -          0.580128   61  
+Commencing write performance test: Mon Feb 19 01:02:47 2024
+write     68.56      274.25     0.043756    262144     256.00     0.000075   44.81      0.000034   44.81      62  
+Commencing read performance test: Mon Feb 19 01:03:32 2024
+
+read      38228      152940     0.000078    262144     256.00     0.000038   0.080345   0.002511   0.080360   62  
+remove    -          -          -           -          -          -          -          -          0.582346   62  
+Commencing write performance test: Mon Feb 19 01:03:32 2024
+write     66.06      264.23     0.045415    262144     256.00     0.000068   46.51      0.000033   46.51      63  
+Commencing read performance test: Mon Feb 19 01:04:19 2024
+
+read      37656      150656     0.000077    262144     256.00     0.000038   0.081563   0.022200   0.081580   63  
+remove    -          -          -           -          -          -          -          -          0.578052   63  
+Commencing write performance test: Mon Feb 19 01:04:19 2024
+write     70.51      282.04     0.042547    262144     256.00     0.000075   43.57      0.000032   43.57      64  
+Commencing read performance test: Mon Feb 19 01:05:03 2024
+
+read      36900      147624     0.000059    262144     256.00     0.000038   0.083239   0.022560   0.083251   64  
+remove    -          -          -           -          -          -          -          -          0.578130   64  
+Commencing write performance test: Mon Feb 19 01:05:04 2024
+write     74.47      297.87     0.040286    262144     256.00     0.000078   41.25      0.000033   41.25      65  
+Commencing read performance test: Mon Feb 19 01:05:45 2024
+
+read      36959      147863     0.000065    262144     256.00     0.000039   0.083104   0.021661   0.083120   65  
+remove    -          -          -           -          -          -          -          -          0.581524   65  
+Commencing write performance test: Mon Feb 19 01:05:46 2024
+write     71.95      287.80     0.041696    262144     256.00     0.000073   42.70      0.000031   42.70      66  
+Commencing read performance test: Mon Feb 19 01:06:28 2024
+
+read      38175      152719     0.000079    262144     256.00     0.000035   0.080462   0.018694   0.080471   66  
+remove    -          -          -           -          -          -          -          -          0.595742   66  
+Commencing write performance test: Mon Feb 19 01:06:29 2024
+write     75.46      301.84     0.039756    262144     256.00     0.000076   40.71      0.000032   40.71      67  
+Commencing read performance test: Mon Feb 19 01:07:10 2024
+
+read      36826      147330     0.000073    262144     256.00     0.000035   0.083405   0.019706   0.083418   67  
+remove    -          -          -           -          -          -          -          -          0.576938   67  
+Commencing write performance test: Mon Feb 19 01:07:10 2024
+write     78.57      314.29     0.038182    262144     256.00     0.000078   39.10      0.000031   39.10      68  
+Commencing read performance test: Mon Feb 19 01:07:49 2024
+
+read      37969      151900     0.000076    262144     256.00     0.000038   0.080896   0.018439   0.080908   68  
+remove    -          -          -           -          -          -          -          -          0.576220   68  
+Commencing write performance test: Mon Feb 19 01:07:50 2024
+write     72.96      291.85     0.041117    262144     256.00     0.000074   42.10      0.000029   42.10      69  
+Commencing read performance test: Mon Feb 19 01:08:32 2024
+
+read      36916      147686     0.000065    262144     256.00     0.000034   0.083204   0.021279   0.083216   69  
+remove    -          -          -           -          -          -          -          -          0.581401   69  
+Commencing write performance test: Mon Feb 19 01:08:33 2024
+write     68.47      273.87     0.043816    262144     256.00     0.000072   44.87      0.000031   44.87      70  
+Commencing read performance test: Mon Feb 19 01:09:18 2024
+
+read      37871      151507     0.000079    262144     256.00     0.000034   0.081105   0.017742   0.081117   70  
+remove    -          -          -           -          -          -          -          -          0.588092   70  
+Commencing write performance test: Mon Feb 19 01:09:18 2024
+write     64.23      256.91     0.046708    262144     256.00     0.000076   47.83      0.000031   47.83      71  
+Commencing read performance test: Mon Feb 19 01:10:06 2024
+
+read      37978      151935     0.000074    262144     256.00     0.000036   0.080877   0.017631   0.080890   71  
+remove    -          -          -           -          -          -          -          -          0.581396   71  
+Commencing write performance test: Mon Feb 19 01:10:07 2024
+write     54.20      216.81     0.055349    262144     256.00     0.000074   56.68      0.000029   56.68      72  
+Commencing read performance test: Mon Feb 19 01:11:04 2024
+
+read      37167      148691     0.000077    262144     256.00     0.000038   0.082641   0.021181   0.082655   72  
+remove    -          -          -           -          -          -          -          -          0.580575   72  
+Commencing write performance test: Mon Feb 19 01:11:04 2024
+write     53.61      214.43     0.055963    262144     256.00     0.000072   57.31      0.000029   57.31      73  
+Commencing read performance test: Mon Feb 19 01:12:02 2024
+
+read      36929      147737     0.000059    262144     256.00     0.000032   0.083175   0.022813   0.083188   73  
+remove    -          -          -           -          -          -          -          -          0.578311   73  
+Commencing write performance test: Mon Feb 19 01:12:02 2024
+write     62.75      250.99     0.047811    262144     256.00     0.000075   48.96      0.000035   48.96      74  
+Commencing read performance test: Mon Feb 19 01:12:51 2024
+
+read      37281      149149     0.000080    262144     256.00     0.000039   0.082388   0.025774   0.082401   74  
+remove    -          -          -           -          -          -          -          -          0.590357   74  
+Commencing write performance test: Mon Feb 19 01:12:52 2024
+write     61.64      246.57     0.048667    262144     256.00     0.000074   49.84      0.000032   49.84      75  
+Commencing read performance test: Mon Feb 19 01:13:42 2024
+
+read      37999      152020     0.000077    262144     256.00     0.000035   0.080831   0.017636   0.080843   75  
+remove    -          -          -           -          -          -          -          -          0.579128   75  
+Commencing write performance test: Mon Feb 19 01:13:42 2024
+write     63.08      252.33     0.047557    262144     256.00     0.000076   48.70      0.000034   48.70      76  
+Commencing read performance test: Mon Feb 19 01:14:31 2024
+
+read      36953      147835     0.000061    262144     256.00     0.000035   0.083119   0.020515   0.083133   76  
+remove    -          -          -           -          -          -          -          -          0.577887   76  
+Commencing write performance test: Mon Feb 19 01:14:32 2024
+write     62.82      251.28     0.047755    262144     256.00     0.000070   48.90      0.000030   48.90      77  
+Commencing read performance test: Mon Feb 19 01:15:21 2024
+
+read      36946      147808     0.000076    262144     256.00     0.000036   0.083135   0.027741   0.083149   77  
+remove    -          -          -           -          -          -          -          -          0.580682   77  
+Commencing write performance test: Mon Feb 19 01:15:21 2024
+write     62.63      250.51     0.047902    262144     256.00     0.000073   49.05      0.000033   49.05      78  
+Commencing read performance test: Mon Feb 19 01:16:10 2024
+
+read      37005      148044     0.000050    262144     256.00     0.000035   0.083002   0.032415   0.083017   78  
+remove    -          -          -           -          -          -          -          -          0.626783   78  
+Commencing write performance test: Mon Feb 19 01:16:11 2024
+write     70.01      280.02     0.042854    262144     256.00     0.000075   43.88      0.000039   43.88      79  
+Commencing read performance test: Mon Feb 19 01:16:55 2024
+
+read      37254      149040     0.000080    262144     256.00     0.000039   0.082448   0.032923   0.082462   79  
+remove    -          -          -           -          -          -          -          -          0.603184   79  
+Commencing write performance test: Mon Feb 19 01:16:56 2024
+write     70.27      281.08     0.042692    262144     256.00     0.000074   43.72      0.000034   43.72      80  
+Commencing read performance test: Mon Feb 19 01:17:39 2024
+
+read      37083      148357     0.000074    262144     256.00     0.000034   0.082827   0.021056   0.082842   80  
+remove    -          -          -           -          -          -          -          -          0.581373   80  
+Commencing write performance test: Mon Feb 19 01:17:40 2024
+write     76.37      305.50     0.039280    262144     256.00     0.000073   40.22      0.000029   40.22      81  
+Commencing read performance test: Mon Feb 19 01:18:20 2024
+
+read      38459      153859     0.000056    262144     256.00     0.000034   0.079865   0.022354   0.079877   81  
+remove    -          -          -           -          -          -          -          -          0.580519   81  
+Commencing write performance test: Mon Feb 19 01:18:21 2024
+write     75.84      303.34     0.039559    262144     256.00     0.000075   40.51      0.000031   40.51      82  
+Commencing read performance test: Mon Feb 19 01:19:01 2024
+
+read      37000      148021     0.000081    262144     256.00     0.000033   0.083015   0.033282   0.083027   82  
+remove    -          -          -           -          -          -          -          -          0.616130   82  
+Commencing write performance test: Mon Feb 19 01:19:02 2024
+write     65.88      263.51     0.045540    262144     256.00     0.000076   46.63      0.000031   46.63      83  
+Commencing read performance test: Mon Feb 19 01:19:49 2024
+
+read      37722      150914     0.000065    262144     256.00     0.000034   0.081424   0.018904   0.081438   83  
+remove    -          -          -           -          -          -          -          -          0.580866   83  
+Commencing write performance test: Mon Feb 19 01:19:49 2024
+write     69.96      279.82     0.042884    262144     256.00     0.000078   43.91      0.000035   43.91      84  
+Commencing read performance test: Mon Feb 19 01:20:33 2024
+
+read      37834      151359     0.000076    262144     256.00     0.000038   0.081184   0.017779   0.081198   84  
+remove    -          -          -           -          -          -          -          -          0.576483   84  
+Commencing write performance test: Mon Feb 19 01:20:34 2024
+write     69.30      277.18     0.043293    262144     256.00     0.000065   44.33      0.000031   44.33      85  
+Commencing read performance test: Mon Feb 19 01:21:18 2024
+
+read      37119      148498     0.000081    262144     256.00     0.000035   0.082749   0.027742   0.082762   85  
+remove    -          -          -           -          -          -          -          -          0.598850   85  
+Commencing write performance test: Mon Feb 19 01:21:19 2024
+write     64.94      259.78     0.046193    262144     256.00     0.000080   47.30      0.000034   47.30      86  
+Commencing read performance test: Mon Feb 19 01:22:06 2024
+
+read      37895      151595     0.000077    262144     256.00     0.000035   0.081058   0.017569   0.081067   86  
+remove    -          -          -           -          -          -          -          -          0.579888   86  
+Commencing write performance test: Mon Feb 19 01:22:07 2024
+write     69.14      276.58     0.043388    262144     256.00     0.000075   44.43      0.000033   44.43      87  
+Commencing read performance test: Mon Feb 19 01:22:51 2024
+
+read      37969      151908     0.000077    262144     256.00     0.000037   0.080891   0.017766   0.080908   87  
+remove    -          -          -           -          -          -          -          -          0.579343   87  
+Commencing write performance test: Mon Feb 19 01:22:52 2024
+write     49.32      197.28     0.060826    262144     256.00     0.000072   62.29      0.000034   62.29      88  
+Commencing read performance test: Mon Feb 19 01:23:54 2024
+
+read      38387      153575     0.000078    262144     256.00     0.000036   0.080013   0.002512   0.080027   88  
+remove    -          -          -           -          -          -          -          -          0.579158   88  
+Commencing write performance test: Mon Feb 19 01:23:55 2024
+write     57.59      230.34     0.052096    262144     256.00     0.000078   53.35      0.000032   53.35      89  
+Commencing read performance test: Mon Feb 19 01:24:48 2024
+
+read      38150      152626     0.000076    262144     256.00     0.000036   0.080511   0.018923   0.080524   89  
+remove    -          -          -           -          -          -          -          -          0.585609   89  
+Commencing write performance test: Mon Feb 19 01:24:49 2024
+write     65.97      263.88     0.045474    262144     256.00     0.000077   46.57      0.000035   46.57      90  
+Commencing read performance test: Mon Feb 19 01:25:35 2024
+
+read      37197      148815     0.000052    262144     256.00     0.000038   0.082572   0.030943   0.082586   90  
+remove    -          -          -           -          -          -          -          -          0.577768   90  
+Commencing write performance test: Mon Feb 19 01:25:36 2024
+write     60.16      240.62     0.049871    262144     256.00     0.000066   51.07      0.000033   51.07      91  
+Commencing read performance test: Mon Feb 19 01:26:27 2024
+
+read      37030      148147     0.000055    262144     256.00     0.000036   0.082945   0.026534   0.082959   91  
+remove    -          -          -           -          -          -          -          -          0.577373   91  
+Commencing write performance test: Mon Feb 19 01:26:28 2024
+write     70.27      281.09     0.042690    262144     256.00     0.000076   43.71      0.000031   43.71      92  
+Commencing read performance test: Mon Feb 19 01:27:12 2024
+
+read      38285      153167     0.000078    262144     256.00     0.000034   0.080226   0.005062   0.080239   92  
+remove    -          -          -           -          -          -          -          -          0.582122   92  
+Commencing write performance test: Mon Feb 19 01:27:12 2024
+write     65.70      262.79     0.045664    262144     256.00     0.000072   46.76      0.000034   46.76      93  
+Commencing read performance test: Mon Feb 19 01:27:59 2024
+
+read      37023      148114     0.000051    262144     256.00     0.000035   0.082963   0.031036   0.082976   93  
+remove    -          -          -           -          -          -          -          -          0.577269   93  
+Commencing write performance test: Mon Feb 19 01:28:00 2024
+write     82.10      328.38     0.036543    262144     256.00     0.000074   37.42      0.000035   37.42      94  
+Commencing read performance test: Mon Feb 19 01:28:37 2024
+
+read      38116      152484     0.000074    262144     256.00     0.000034   0.080586   0.017012   0.080597   94  
+remove    -          -          -           -          -          -          -          -          0.583767   94  
+Commencing write performance test: Mon Feb 19 01:28:38 2024
+write     75.91      303.65     0.039519    262144     256.00     0.000073   40.47      0.000034   40.47      95  
+Commencing read performance test: Mon Feb 19 01:29:18 2024
+
+read      38118      152500     0.000077    262144     256.00     0.000036   0.080577   0.018635   0.080591   95  
+remove    -          -          -           -          -          -          -          -          0.580374   95  
+Commencing write performance test: Mon Feb 19 01:29:19 2024
+write     70.66      282.65     0.042455    262144     256.00     0.000068   43.47      0.000033   43.47      96  
+Commencing read performance test: Mon Feb 19 01:30:02 2024
+
+read      38215      152884     0.000073    262144     256.00     0.000034   0.080375   0.005309   0.080386   96  
+remove    -          -          -           -          -          -          -          -          0.575872   96  
+Commencing write performance test: Mon Feb 19 01:30:03 2024
+write     65.55      262.20     0.045767    262144     256.00     0.000072   46.87      0.000033   46.87      97  
+Commencing read performance test: Mon Feb 19 01:30:50 2024
+
+read      37804      151239     0.000060    262144     256.00     0.000036   0.081249   0.020260   0.081262   97  
+remove    -          -          -           -          -          -          -          -          0.577041   97  
+Commencing write performance test: Mon Feb 19 01:30:51 2024
+write     68.21      272.86     0.043979    262144     256.00     0.000065   45.03      0.000031   45.03      98  
+Commencing read performance test: Mon Feb 19 01:31:36 2024
+
+read      37343      149401     0.000077    262144     256.00     0.000035   0.082249   0.020969   0.082264   98  
+remove    -          -          -           -          -          -          -          -          0.581876   98  
+Commencing write performance test: Mon Feb 19 01:31:36 2024
+write     71.47      285.88     0.041975    262144     256.00     0.000073   42.98      0.000030   42.98      99  
+Commencing read performance test: Mon Feb 19 01:32:19 2024
+
+read      36967      147905     0.000064    262144     256.00     0.000043   0.083080   0.023000   0.083101   99  
+remove    -          -          -           -          -          -          -          -          0.587342   99  
+Max Write: 82.19 MiB/sec (86.18 MB/sec)
+Max Read:  38458.95 MiB/sec (40327.13 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write          82.19      49.32      68.49       6.74     328.75     197.28     273.94      26.94   45.32229         NA            NA     0     12  12  100   0     0        1         0    0      1 268435456   262144    3072.0 POSIX      0
+read        38458.95   36813.23   37550.03     540.36  153835.79  147252.92  150200.11    2161.44    0.08183         NA            NA     0     12  12  100   0     0        1         0    0      1 268435456   262144    3072.0 POSIX      0
+Finished            : Mon Feb 19 01:32:20 2024
+
