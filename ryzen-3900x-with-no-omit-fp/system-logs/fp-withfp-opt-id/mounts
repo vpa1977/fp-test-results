@@ -11,7 +11,7 @@ tmpfs /run/lock tmpfs rw,nosuid,nodev,noexec,relatime,size=5120k,inode64 0 0
 cgroup2 /sys/fs/cgroup cgroup2 rw,nosuid,nodev,noexec,relatime,nsdelegate,memory_recursiveprot 0 0
 pstore /sys/fs/pstore pstore rw,nosuid,nodev,noexec,relatime 0 0
 bpf /sys/fs/bpf bpf rw,nosuid,nodev,noexec,relatime,mode=700 0 0
-systemd-1 /proc/sys/fs/binfmt_misc autofs rw,relatime,fd=29,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=41785 0 0
+systemd-1 /proc/sys/fs/binfmt_misc autofs rw,relatime,fd=29,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=26701 0 0
 hugetlbfs /dev/hugepages hugetlbfs rw,relatime,pagesize=2M 0 0
 mqueue /dev/mqueue mqueue rw,nosuid,nodev,noexec,relatime 0 0
 debugfs /sys/kernel/debug debugfs rw,nosuid,nodev,noexec,relatime 0 0
@@ -35,4 +35,5 @@ binfmt_misc /proc/sys/fs/binfmt_misc binfmt_misc rw,nosuid,nodev,noexec,relatime
 ramfs /run/credentials/systemd-resolved.service ramfs ro,nosuid,nodev,noexec,relatime,mode=700 0 0
 tmpfs /run/snapd/ns tmpfs rw,nosuid,nodev,noexec,relatime,size=3279808k,mode=755,inode64 0 0
 nsfs /run/snapd/ns/lxd.mnt nsfs rw 0 0
+tmpfs /run/user/113 tmpfs rw,nosuid,nodev,relatime,size=3279804k,nr_inodes=819951,mode=700,uid=113,gid=117,inode64 0 0
 tmpfs /run/user/1000 tmpfs rw,nosuid,nodev,relatime,size=3279804k,nr_inodes=819951,mode=700,uid=1000,gid=1000,inode64 0 0

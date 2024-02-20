@@ -39,22 +39,32 @@ CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
 -- Performing Test COMPILER_SUPPORTS_CXX11 - Success
 -- Performing Test COMPILER_SUPPORTS_CXX0X
 -- Performing Test COMPILER_SUPPORTS_CXX0X - Success
-CMake Error at CMakeLists.txt:21 (find_package):
-  By not providing "FindOpenCV.cmake" in CMAKE_MODULE_PATH this project has
-  asked CMake to find a package configuration file provided by "OpenCV", but
-  CMake did not find one.
-
-  Could not find a package configuration file provided by "OpenCV" with any
-  of the following names:
-
-    OpenCVConfig.cmake
-    opencv-config.cmake
-
-  Add the installation prefix of "OpenCV" to CMAKE_PREFIX_PATH or set
-  "OpenCV_DIR" to a directory containing one of the above files.  If "OpenCV"
-  provides a separate development package or SDK, be sure it has been
-  installed.
-
-
--- Configuring incomplete, errors occurred!
-make: *** No targets specified and no makefile found.  Stop.
+-- Found OpenCV: /usr (found version "4.6.0") 
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ubuntu/.phoronix-test-suite/installed-tests/pts/opencv-bench-1.0.0/opencv-benchmarks-0.1
+[ 10%] Building CXX object CMakeFiles/contours2.dir/src/contours2.cpp.o
+[ 30%] Building CXX object CMakeFiles/edge.dir/src/edge.cpp.o
+[ 30%] Building CXX object CMakeFiles/discrete_fourier_transform.dir/src/discrete_fourier_transform.cpp.o
+[ 40%] Building CXX object CMakeFiles/morphology_2.dir/src/morphology_2.cpp.o
+[ 50%] Building CXX object CMakeFiles/smoothing.dir/src/smoothing.cpp.o
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/opencv-bench-1.0.0/opencv-benchmarks-0.1/src/discrete_fourier_transform.cpp: In function ‘int main(int, char**)’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/opencv-bench-1.0.0/opencv-benchmarks-0.1/src/discrete_fourier_transform.cpp:39:30: error: ‘CV_LOAD_IMAGE_GRAYSCALE’ was not declared in this scope
+   39 |     Mat I = imread(filename, CV_LOAD_IMAGE_GRAYSCALE);
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/opencv-bench-1.0.0/opencv-benchmarks-0.1/src/discrete_fourier_transform.cpp:84:33: error: ‘CV_MINMAX’ was not declared in this scope; did you mean ‘CV_MMX’?
+   84 |     normalize(magI, magI, 0, 1, CV_MINMAX); // Transform the matrix with float values into a
+      |                                 ^~~~~~~~~
+      |                                 CV_MMX
+make[2]: *** [CMakeFiles/discrete_fourier_transform.dir/build.make:76: CMakeFiles/discrete_fourier_transform.dir/src/discrete_fourier_transform.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:117: CMakeFiles/discrete_fourier_transform.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 60%] Linking CXX executable bin/edge
+[ 70%] Linking CXX executable bin/smoothing
+[ 80%] Linking CXX executable bin/morphology_2
+[ 90%] Linking CXX executable bin/contours2
+[ 90%] Built target edge
+[ 90%] Built target morphology_2
+[ 90%] Built target contours2
+[ 90%] Built target smoothing
+make: *** [Makefile:91: all] Error 2

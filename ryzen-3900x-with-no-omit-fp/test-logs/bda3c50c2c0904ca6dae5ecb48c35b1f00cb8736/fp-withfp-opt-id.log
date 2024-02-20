@@ -34,3 +34,51 @@ fp-withfp-opt-id - Run 3
 #####
 ./rust-mandel: 3: ./target/release/mandel: not found
 
+#####
+fp-withfp-opt-id - Run 1
+2024-02-20 00:04:11
+#####
+Configuration: re1: -2.00, re2: 1.00, img1: -1.50, img2: 1.50, max_iter: 4096, img_size: 4096, num_threads: 24
+mandel-rust version: 0.4.0
+Number of repetitive runs: 1
+Rustc version: 1.71.1
+Time taken for this run (serial): 28166.74461 ms
+Time taken for this run (scoped_thread_pool): 1396.48675 ms
+Time taken for this run (rayon_join): 1430.06430 ms
+Time taken for this run (rayon_par_iter): 1700.83217 ms
+Time taken for this run (rust_scoped_pool): 1405.71386 ms
+Time taken for this run (job_steal): 1410.59718 ms
+Time taken for this run (job_steal_join): 1433.42415 ms
+
+#####
+fp-withfp-opt-id - Run 2
+2024-02-20 00:04:51
+#####
+Configuration: re1: -2.00, re2: 1.00, img1: -1.50, img2: 1.50, max_iter: 4096, img_size: 4096, num_threads: 24
+mandel-rust version: 0.4.0
+Number of repetitive runs: 1
+Rustc version: 1.71.1
+Time taken for this run (serial): 27703.68599 ms
+Time taken for this run (scoped_thread_pool): 1412.11119 ms
+Time taken for this run (rayon_join): 1420.51777 ms
+Time taken for this run (rayon_par_iter): 1486.32650 ms
+Time taken for this run (rust_scoped_pool): 1392.10084 ms
+Time taken for this run (job_steal): 1415.82298 ms
+Time taken for this run (job_steal_join): 1425.21838 ms
+
+#####
+fp-withfp-opt-id - Run 3
+2024-02-20 00:05:30
+#####
+Configuration: re1: -2.00, re2: 1.00, img1: -1.50, img2: 1.50, max_iter: 4096, img_size: 4096, num_threads: 24
+mandel-rust version: 0.4.0
+Number of repetitive runs: 1
+Rustc version: 1.71.1
+Time taken for this run (serial): 27697.49652 ms
+Time taken for this run (scoped_thread_pool): 1394.91708 ms
+Time taken for this run (rayon_join): 1441.83871 ms
+Time taken for this run (rayon_par_iter): 1406.96960 ms
+Time taken for this run (rust_scoped_pool): 1395.51342 ms
+Time taken for this run (job_steal): 1411.05659 ms
+Time taken for this run (job_steal_join): 1429.25972 ms
+

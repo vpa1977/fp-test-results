@@ -33,18 +33,15 @@ checking for a sed that does not truncate output... /usr/bin/sed
 checking for grep that handles long lines and -e... /usr/bin/grep
 checking for egrep... /usr/bin/grep -E
 checking for fgrep... /usr/bin/grep -F
-checking for ld used by gcc... /usr/bin/gcc-13 -fno-omit-frame-pointer -print-prog-name=ld
-ld
-checking if the linker (/usr/bin/gcc-13 -fno-omit-frame-pointer -print-prog-name=ld
-ld) is GNU ld... no
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
 checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
 checking the name lister (/usr/bin/nm -B) interface... BSD nm
 checking whether ln -s works... yes
 checking the maximum length of command line arguments... 1572864
 checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
 checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
-checking for /usr/bin/gcc-13 -fno-omit-frame-pointer -print-prog-name=ld
-ld option to reload object files... -r
+checking for /usr/bin/ld option to reload object files... -r
 checking for objdump... objdump
 checking how to recognize dependent libraries... pass_all
 checking for dlltool... no
@@ -75,30 +72,26 @@ checking if gcc PIC flag -fPIC -DPIC works... yes
 checking if gcc static flag -static works... yes
 checking if gcc supports -c -o file.o... yes
 checking if gcc supports -c -o file.o... (cached) yes
-checking whether the gcc linker (/usr/bin/gcc-13 -fno-omit-frame-pointer -print-prog-name=ld
-ld -m elf_x86_64) supports shared libraries... yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
 checking dynamic linker characteristics... GNU/Linux ld.so
-checking how to hardcode library paths into programs... unsupported
+checking how to hardcode library paths into programs... immediate
 checking whether stripping libraries is possible... yes
 checking if libtool supports shared libraries... yes
 checking whether to build shared libraries... yes
 checking whether to build static libraries... yes
 checking how to run the C++ preprocessor... g++ -E
-checking for ld used by g++... /usr/bin/gcc-13 -fno-omit-frame-pointer -print-prog-name=ld
-ld -m elf_x86_64
-checking if the linker (/usr/bin/gcc-13 -fno-omit-frame-pointer -print-prog-name=ld
-ld -m elf_x86_64) is GNU ld... no
-checking whether the g++ linker (/usr/bin/gcc-13 -fno-omit-frame-pointer -print-prog-name=ld
-ld -m elf_x86_64) supports shared libraries... yes
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
 checking for g++ option to produce PIC... -fPIC -DPIC
 checking if g++ PIC flag -fPIC -DPIC works... yes
 checking if g++ static flag -static works... yes
 checking if g++ supports -c -o file.o... yes
 checking if g++ supports -c -o file.o... (cached) yes
-checking whether the g++ linker (/usr/bin/gcc-13 -fno-omit-frame-pointer -print-prog-name=ld
-ld -m elf_x86_64) supports shared libraries... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
 checking dynamic linker characteristics... (cached) GNU/Linux ld.so
-checking how to hardcode library paths into programs... unsupported
+checking how to hardcode library paths into programs... immediate
 checking whether C compiler accepts -maltivec... no
 checking whether C compiler accepts -mavx2... yes
 checking whether C compiler accepts -msse4.1... yes
@@ -120,8 +113,6 @@ checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
 checking whether more special flags are required for pthreads... no
 checking for PTHREAD_PRIO_INHERIT... yes
 checking for yasm... yasm
-configure: WARNING: cache variable lt_cv_path_LD contains a newline
-configure: WARNING: cache variable lt_cv_path_LDCXX contains a newline
 checking that generated files are newer than configure... done
 configure: creating ./config.status
 config.status: creating Makefile
@@ -130,17 +121,94 @@ config.status: creating src/kvazaar.pc
 config.status: creating tests/Makefile
 config.status: creating config.h
 config.status: executing depfiles commands
-config.status: error: in `/home/ubuntu/.phoronix-test-suite/installed-tests/pts/kvazaar-1.2.0/kvazaar-2.2.0':
-config.status: error: Something went wrong bootstrapping makefile fragments
-    for automatic dependency tracking.  If GNU make was not used, consider
-    re-running the configure script with MAKE="gmake" (or whatever is
-    necessary).  You can also try re-running configure with the
-    '--disable-dependency-tracking' option to at least be able to build
-    the package (albeit without support for automatic dependency tracking).
-See `config.log' for more details
-configure: WARNING: cache variable lt_cv_path_LD contains a newline
-configure: WARNING: cache variable lt_cv_path_LDCXX contains a newline
-Makefile:290: *** missing separator.  Stop.
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/kvazaar-1.2.0/kvazaar-2.2.0'
+Making all in src
+make[2]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/kvazaar-1.2.0/kvazaar-2.2.0/src'
+  CC       kvazaar-encmain.o
+  CC       kvazaar-cli.o
+  CC       kvazaar-yuv_io.o
+  CC       libkvazaar_la-bitstream.lo
+  CC       libkvazaar_la-cabac.lo
+  CC       libkvazaar_la-checkpoint.lo
+  CC       libkvazaar_la-cfg.lo
+  CC       libkvazaar_la-constraint.lo
+  CC       libkvazaar_la-context.lo
+  CC       libkvazaar_la-cu.lo
+  CC       libkvazaar_la-encoder.lo
+  CC       libkvazaar_la-encoderstate.lo
+  CC       libkvazaar_la-encoder_state-bitstream.lo
+  CC       libkvazaar_la-encoder_state-ctors_dtors.lo
+  CC       libkvazaar_la-encoder_state-geometry.lo
+  CC       libkvazaar_la-encode_coding_tree.lo
+  CC       libkvazaar_la-fast_coeff_cost.lo
+  CC       libkvazaar_la-filter.lo
+  CC       libkvazaar_la-image.lo
+  CC       libkvazaar_la-imagelist.lo
+  CC       libkvazaar_la-input_frame_buffer.lo
+  CC       libkvazaar_la-inter.lo
+  CC       libkvazaar_la-intra.lo
+  CC       libkvazaar_la-kvazaar.lo
+  CC       libkvazaar_la-ml_intra_cu_depth_pred.lo
+  CC       libkvazaar_la-nal.lo
+  CC       libkvazaar_la-rate_control.lo
+  CC       libkvazaar_la-rdo.lo
+  CC       libkvazaar_la-sao.lo
+  CC       libkvazaar_la-scalinglist.lo
+  CC       libkvazaar_la-search.lo
+  CC       libkvazaar_la-search_inter.lo
+  CC       libkvazaar_la-search_intra.lo
+  CC       libkvazaar_la-tables.lo
+  CC       libkvazaar_la-threadqueue.lo
+  CC       libkvazaar_la-transform.lo
+  CC       libkvazaar_la-videoframe.lo
+  CC       libkvazaar_la-strategyselector.lo
+  YASM     strategies/x86_asm/picture-x86-asm-sad.lo
+  YASM     strategies/x86_asm/picture-x86-asm-satd.lo
+  CC       strategies/generic/libkvazaar_la-dct-generic.lo
+  CC       strategies/generic/libkvazaar_la-intra-generic.lo
+  CC       strategies/generic/libkvazaar_la-ipol-generic.lo
+  CC       strategies/generic/libkvazaar_la-nal-generic.lo
+  CC       strategies/generic/libkvazaar_la-picture-generic.lo
+  CC       strategies/generic/libkvazaar_la-quant-generic.lo
+  CC       strategies/generic/libkvazaar_la-sao-generic.lo
+  CC       strategies/generic/libkvazaar_la-encode_coding_tree-generic.lo
+  CC       strategies/libkvazaar_la-strategies-dct.lo
+  CC       strategies/libkvazaar_la-strategies-intra.lo
+  CC       strategies/libkvazaar_la-strategies-ipol.lo
+  CC       strategies/libkvazaar_la-strategies-nal.lo
+  CC       strategies/libkvazaar_la-strategies-picture.lo
+  CC       strategies/libkvazaar_la-strategies-quant.lo
+  CC       strategies/libkvazaar_la-strategies-sao.lo
+  CC       strategies/libkvazaar_la-strategies-encode.lo
+  CC       strategies/x86_asm/libkvazaar_la-picture-x86-asm.lo
+  CC       extras/libkvazaar_la-libmd5.lo
+  CC       strategies/altivec/libaltivec_la-picture-altivec.lo
+  CC       strategies/avx2/libavx2_la-dct-avx2.lo
+  CC       strategies/avx2/libavx2_la-intra-avx2.lo
+  CC       strategies/avx2/libavx2_la-ipol-avx2.lo
+  CC       strategies/avx2/libavx2_la-picture-avx2.lo
+  CC       strategies/avx2/libavx2_la-quant-avx2.lo
+  CC       strategies/avx2/libavx2_la-sao-avx2.lo
+  CC       strategies/avx2/libavx2_la-encode_coding_tree-avx2.lo
+  CC       strategies/sse2/libsse2_la-picture-sse2.lo
+  CC       strategies/sse41/libsse41_la-picture-sse41.lo
+  CCLD     libasm.la
+  CCLD     libaltivec.la
+  CCLD     libsse2.la
+  CCLD     libsse41.la
+  CCLD     libavx2.la
+  GEN      libkvazaar.la
+  GEN      kvazaar
+make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/kvazaar-1.2.0/kvazaar-2.2.0/src'
+Making all in tests
+make[2]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/kvazaar-1.2.0/kvazaar-2.2.0/tests'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/kvazaar-1.2.0/kvazaar-2.2.0/tests'
+make[2]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/kvazaar-1.2.0/kvazaar-2.2.0'
+make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/kvazaar-1.2.0/kvazaar-2.2.0'
+make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/kvazaar-1.2.0/kvazaar-2.2.0'
 
 7-Zip [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
 p7zip Version 16.02 (locale=en_US.utf8,Utf16=on,HugeFiles=on,64 bits,32 CPUs AMD Ryzen 9 3900X 12-Core Processor             (870F10),ASM,AES-NI)

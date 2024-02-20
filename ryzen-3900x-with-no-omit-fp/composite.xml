@@ -3,7 +3,7 @@
 <PhoronixTestSuite>
   <Generated>
     <Title>fp-withfp-opt-name</Title>
-    <LastModified>2024-02-19 21:37:27</LastModified>
+    <LastModified>2024-02-20 05:33:13</LastModified>
     <TestClient>Phoronix Test Suite v10.8.4</TestClient>
     <Description>AMD Ryzen 9 3900X 12-Core testing with a MSI X570-A PRO (MS-7C37) v3.0 (H.70 BIOS) and NVIDIA GeForce RTX 3060 on Ubuntu 23.10 via the Phoronix Test Suite.</Description>
     <Notes></Notes>
@@ -185,7 +185,7 @@
         <Identifier>fp-withfp-opt-id</Identifier>
         <Value></Value>
         <RawString></RawString>
-        <JSON>{"test-run-times":"10.35:10.34:10.33","error":"The test quit with a non-zero exit status. E: error: exception occurred: Segmentation fault"}</JSON>
+        <JSON>{"test-run-times":"10.61:10.25:10.24","error":"The test quit with a non-zero exit status. E: error: exception occurred: Segmentation fault"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -203,7 +203,7 @@
         <Identifier>fp-withfp-opt-id</Identifier>
         <Value></Value>
         <RawString></RawString>
-        <JSON>{"test-run-times":"2.62:2.64:2.64","error":"The test quit with a non-zero exit status. E: error: exception occurred: Segmentation fault"}</JSON>
+        <JSON>{"test-run-times":"2.64:2.65:2.64","error":"The test quit with a non-zero exit status. E: error: exception occurred: Segmentation fault"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -221,7 +221,7 @@
         <Identifier>fp-withfp-opt-id</Identifier>
         <Value></Value>
         <RawString></RawString>
-        <JSON>{"test-run-times":"5.10:5.10:5.11","error":"The test quit with a non-zero exit status. E: error: exception occurred: Segmentation fault"}</JSON>
+        <JSON>{"test-run-times":"5.06:5.06:5.04","error":"The test quit with a non-zero exit status. E: error: exception occurred: Segmentation fault"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -453,9 +453,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.01:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/glibc-bench: 3: \/glibc-2.37\/build\/elf\/ld.so: not found"}</JSON>
+        <Value>78.9362</Value>
+        <RawString>78.96:78.9333:78.9152</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.33:1.33:1.33"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -471,9 +471,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: .\/glibc-bench: 3: \/glibc-2.37\/build\/elf\/ld.so: not found"}</JSON>
+        <Value>67.1402</Value>
+        <RawString>65.8724:66.7515:68.7967</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"3.33:3.35:3.38"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -489,9 +489,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.01:0.01:0.00","error":"The test quit with a non-zero exit status. E: .\/glibc-bench: 3: \/glibc-2.37\/build\/elf\/ld.so: not found"}</JSON>
+        <Value>10.64397</Value>
+        <RawString>12.2351:10.9869:11.3624:11.3633:7.66102:11.3608:11.3649:10.9868:11.4513:12.2466:7.92392:8.78465</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.28:1.27:1.29:1.28:1.27:1.28:1.28:1.27:1.28:1.28:1.28:1.28"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -507,9 +507,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.01:0.00:0.01","error":"The test quit with a non-zero exit status. E: .\/glibc-bench: 3: \/glibc-2.37\/build\/elf\/ld.so: not found"}</JSON>
+        <Value>6.09013</Value>
+        <RawString>6.16351:5.87932:6.15724:6.16045</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.28:1.27:1.28:1.28"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -525,9 +525,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -lmpi"},"test-run-times":"0.06:0.06:0.05","error":"The test quit with a non-zero exit status."}</JSON>
+        <Value>801.60</Value>
+        <RawString>799.16:801.83:803.82</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O3 -march=native -lmpi_usempif08 -lmpi_mpifh -lmpi -lopen-rte -lopen-pal -lhwloc -levent_core -levent_pthreads -lm -lz"},"install-footnote":"Open MPI 4.1.5","test-run-times":"11.21:11.15:11.13"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -543,9 +543,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -lmpi"},"test-run-times":"0.06:0.06:0.06","error":"The test quit with a non-zero exit status."}</JSON>
+        <Value>29664.35</Value>
+        <RawString>29688.7:29637.09:29667.25</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O3 -march=native -lmpi_usempif08 -lmpi_mpifh -lmpi -lopen-rte -lopen-pal -lhwloc -levent_core -levent_pthreads -lm -lz"},"install-footnote":"Open MPI 4.1.5","test-run-times":"69.96:70.05:69.98"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -617,7 +617,7 @@
         <Identifier>fp-withfp-opt-id</Identifier>
         <Value></Value>
         <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O2 -fopenmp -march=native -mtune=native -fbacktrace -frecursive -m64 -msse3 -mssse3 -msse4.1 -mavx -mavx2 -fno-tree-vectorize -lm -lpthread -lgfortran -lc"},"test-run-times":"0.06","error":"The test quit with a non-zero exit status. E: mpirun was unable to launch the specified application as it could not access"}</JSON>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O2 -fPIC -fopenmp -march=native -mtune=native -fbacktrace"},"test-run-times":"0.06","error":"The test quit with a non-zero exit status. E: mpirun was unable to launch the specified application as it could not access"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -635,7 +635,7 @@
         <Identifier>fp-withfp-opt-id</Identifier>
         <Value></Value>
         <RawString></RawString>
-        <JSON>{"test-run-times":"0.04:0.04:0.04","error":"The test run did not produce a result. E: FATAL ERROR: No simulation config file specified on command line."}</JSON>
+        <JSON>{"test-run-times":"0.04:0.04:0.05","error":"The test run did not produce a result. E: FATAL ERROR: No simulation config file specified on command line."}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -743,7 +743,7 @@
         <Identifier>fp-withfp-opt-id</Identifier>
         <Value></Value>
         <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"0.51:0.51:0.51","error":"The test run did not produce a result."}</JSON>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"0.65:0.54:0.54","error":"The test run did not produce a result."}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -761,7 +761,7 @@
         <Identifier>fp-withfp-opt-id</Identifier>
         <Value></Value>
         <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"0.53:0.53:0.51","error":"The test run did not produce a result."}</JSON>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"0.54:0.54:0.55","error":"The test run did not produce a result."}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -779,7 +779,7 @@
         <Identifier>fp-withfp-opt-id</Identifier>
         <Value></Value>
         <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"0.53:0.53:0.51","error":"The test run did not produce a result."}</JSON>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"0.54:0.54:0.54","error":"The test run did not produce a result."}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -797,7 +797,7 @@
         <Identifier>fp-withfp-opt-id</Identifier>
         <Value></Value>
         <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"0.53:0.51:0.53","error":"The test run did not produce a result."}</JSON>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"0.54:0.54:0.54","error":"The test run did not produce a result."}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -815,7 +815,7 @@
         <Identifier>fp-withfp-opt-id</Identifier>
         <Value></Value>
         <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"0.51:0.54:0.55","error":"The test run did not produce a result."}</JSON>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"0.54:0.54:0.54","error":"The test run did not produce a result."}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -833,7 +833,7 @@
         <Identifier>fp-withfp-opt-id</Identifier>
         <Value></Value>
         <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"0.53:0.51:0.51","error":"The test run did not produce a result."}</JSON>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"0.55:0.54:0.54","error":"The test run did not produce a result."}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -851,7 +851,7 @@
         <Identifier>fp-withfp-opt-id</Identifier>
         <Value></Value>
         <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"0.53:0.53:0.51","error":"The test run did not produce a result."}</JSON>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"0.55:0.55:0.54","error":"The test run did not produce a result."}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -869,7 +869,7 @@
         <Identifier>fp-withfp-opt-id</Identifier>
         <Value></Value>
         <RawString></RawString>
-        <JSON>{"test-run-times":"0.84:0.79:0.89","error":"The test run did not produce a result."}</JSON>
+        <JSON>{"test-run-times":"1.23:0.87:0.85","error":"The test run did not produce a result."}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1031,7 +1031,7 @@
         <Identifier>fp-withfp-opt-id</Identifier>
         <Value></Value>
         <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread"},"test-run-times":"0.01:0.01:0.00","error":"The test quit with a non-zero exit status. E: Failed to open input file summer_nature_1080p.ivf: No such file or directory"}</JSON>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread"},"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: Failed to open input file summer_nature_1080p.ivf: No such file or directory"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1047,9 +1047,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.01:0.01","error":"The test quit with a non-zero exit status. E: .\/kvazaar: 2: .\/kvazaar-2.2.0\/src\/kvazaar: not found"}</JSON>
+        <Value>10.27</Value>
+        <RawString>10.29:10.24:10.27</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"58.36:58.62:58.47"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1065,9 +1065,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.01:0.01:0.00","error":"The test quit with a non-zero exit status. E: .\/kvazaar: 2: .\/kvazaar-2.2.0\/src\/kvazaar: not found"}</JSON>
+        <Value>10.53</Value>
+        <RawString>10.54:10.5:10.54</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"56.99:57.20:56.99"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1083,9 +1083,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.01:0.01:0.00","error":"The test quit with a non-zero exit status. E: .\/kvazaar: 2: .\/kvazaar-2.2.0\/src\/kvazaar: not found"}</JSON>
+        <Value>33.67</Value>
+        <RawString>34.62:32.79:33.4:33.88</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"17.37:18.34:18.00:17.75"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1101,9 +1101,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.01:0.01:0.00","error":"The test quit with a non-zero exit status. E: .\/kvazaar: 2: .\/kvazaar-2.2.0\/src\/kvazaar: not found"}</JSON>
+        <Value>35.09</Value>
+        <RawString>35.89:35.3:34.08:35.08</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"16.76:17.03:17.64:17.13"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1119,9 +1119,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.01:0.01","error":"The test quit with a non-zero exit status. E: .\/kvazaar: 2: .\/kvazaar-2.2.0\/src\/kvazaar: not found"}</JSON>
+        <Value>25.76</Value>
+        <RawString>25.79:25.75:25.75</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"23.31:23.35:23.35"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1137,9 +1137,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.01:0.01:0.00","error":"The test quit with a non-zero exit status. E: .\/kvazaar: 2: .\/kvazaar-2.2.0\/src\/kvazaar: not found"}</JSON>
+        <Value>32.52</Value>
+        <RawString>32.52:32.57:32.46</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"18.50:18.47:18.53"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1155,9 +1155,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.01:0.00:0.01","error":"The test quit with a non-zero exit status. E: .\/kvazaar: 2: .\/kvazaar-2.2.0\/src\/kvazaar: not found"}</JSON>
+        <Value>42.01</Value>
+        <RawString>42.07:42:41.97</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"14.31:14.33:14.34"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1173,9 +1173,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.01:0.00:0.01","error":"The test quit with a non-zero exit status. E: .\/kvazaar: 2: .\/kvazaar-2.2.0\/src\/kvazaar: not found"}</JSON>
+        <Value>57.19</Value>
+        <RawString>57.13:58.55:55.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"10.53:10.28:10.76"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1191,9 +1191,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.01:0.00","error":"The test quit with a non-zero exit status. E: .\/kvazaar: 2: .\/kvazaar-2.2.0\/src\/kvazaar: not found"}</JSON>
+        <Value>122.34</Value>
+        <RawString>122.32:122.65:122.05</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"4.93:4.92:4.94"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1209,9 +1209,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.01","error":"The test quit with a non-zero exit status. E: .\/kvazaar: 2: .\/kvazaar-2.2.0\/src\/kvazaar: not found"}</JSON>
+        <Value>159.22</Value>
+        <RawString>162.03:151.39:157.47:162.64:161.89:160.41:158.74</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"3.73:3.99:3.84:3.72:3.73:3.77:3.81"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1283,7 +1283,7 @@
         <Identifier>fp-withfp-opt-id</Identifier>
         <Value></Value>
         <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-ldl -m64 -lm -lpthread -O3 -flto"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/x264: 2: .\/x264_\/bin\/x264: not found"}</JSON>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-ldl -lavformat -lavcodec -lavutil -lswscale -m64 -lm -lpthread -O3 -flto"},"test-run-times":"0.03:0.03:0.03","error":"The test quit with a non-zero exit status."}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1299,9 +1299,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"0.01:0.01:0.00","error":"The test quit with a non-zero exit status. E: .\/x265: 2: .\/x265_3.4\/build\/x265: not found"}</JSON>
+        <Value>19.56</Value>
+        <RawString>19.41:19.41:19.86</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"31.10:31.13:30.40"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1317,9 +1317,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"0.00:0.01:0.00","error":"The test quit with a non-zero exit status. E: .\/x265: 2: .\/x265_3.4\/build\/x265: not found"}</JSON>
+        <Value>58.38</Value>
+        <RawString>58.24:58.11:58.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"10.40:10.40:10.29"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1391,7 +1391,7 @@
         <Identifier>fp-withfp-opt-id</Identifier>
         <Value></Value>
         <RawString></RawString>
-        <JSON>{"test-run-times":"0.01:0.01:0.00","error":"The test quit with a non-zero exit status. E: .\/stockfish: 3: .\/stockfish: not found"}</JSON>
+        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: .\/stockfish: 3: .\/stockfish: not found"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1443,9 +1443,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status."}</JSON>
+        <Value>1110.934</Value>
+        <RawString>1248.423:1099.841:1095.269:1093.6:1089.604:1096.799:1093.204:1097.906:1083.764</RawString>
+        <JSON>{"test-run-times":"1248.42:1099.84:1095.27:1093.60:1089.60:1096.80:1093.20:1097.91:1083.76"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1461,9 +1461,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.59:0.59:0.59","error":"The test quit with a non-zero exit status. E: \/bin\/sh: 1: flex: not found"}</JSON>
+        <Value>86.138</Value>
+        <RawString>87.51:85.486:85.418</RawString>
+        <JSON>{"test-run-times":"87.51:85.49:85.42"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1551,9 +1551,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: .\/rust-mandel: 3: .\/target\/release\/mandel: not found"}</JSON>
+        <Value>36.474</Value>
+        <RawString>36.961:36.271:36.191</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-m64 -lgcc_s -lutil -lrt -lpthread -lm -ldl -lc -pie -nodefaultlibs"},"test-run-times":"36.96:36.27:36.19"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1589,7 +1589,7 @@
         <Identifier>fp-withfp-opt-id</Identifier>
         <Value></Value>
         <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O3 -march=native -fopenmp -msse4.1 -fPIC -pie -ldl"},"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: Error: Fuction 'batch' at (oneDNN-3.3\/tests\/benchdnn\/common.cpp:438) returned '1'"}</JSON>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O3 -march=native -fopenmp -msse4.1 -fPIC -pie -ldl"},"test-run-times":"0.02:0.01:0.01","error":"The test quit with a non-zero exit status. E: Error: Fuction 'batch' at (oneDNN-3.3\/tests\/benchdnn\/common.cpp:438) returned '1'"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1715,7 +1715,7 @@
         <Identifier>fp-withfp-opt-id</Identifier>
         <Value></Value>
         <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-rdynamic"},"test-run-times":"0.00:0.01:0.00","error":"The test quit with a non-zero exit status. E: .\/opencv-bench: 3: .\/main.py: not found"}</JSON>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-std=c++11 -rdynamic"},"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: .\/opencv-bench: 3: .\/main.py: not found"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1857,9 +1857,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: .\/cpuminer-opt: 3: .\/cpuminer: not found"}</JSON>
+        <Value>365.42</Value>
+        <RawString>365.73:366.08:364.44</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.51:30.48:29.87"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1875,9 +1875,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: .\/cpuminer-opt: 3: .\/cpuminer: not found"}</JSON>
+        <Value>4052.91</Value>
+        <RawString>4050.92:4046.7:4061.1</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.49:30.23:29.53"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1893,9 +1893,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: .\/cpuminer-opt: 3: .\/cpuminer: not found"}</JSON>
+        <Value>18350</Value>
+        <RawString>18340:18360:18350</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.92:30.04:29.95"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1911,9 +1911,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: .\/cpuminer-opt: 3: .\/cpuminer: not found"}</JSON>
+        <Value>39630</Value>
+        <RawString>39590:39690:39610</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.72:30.47:29.51"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -2057,7 +2057,7 @@
         <Identifier>fp-withfp-opt-id</Identifier>
         <Value></Value>
         <RawString></RawString>
-        <JSON>{"test-run-times":"0.17:0.17:0.17","error":"The test run did not produce a result. E: [   0.018][d][osc] lua-settings\/osc.conf not found. "}</JSON>
+        <JSON>{"test-run-times":"0.19:0.17:0.17","error":"The test run did not produce a result. E: [   0.016][d][osc] lua-settings\/osc.conf not found. "}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -2379,9 +2379,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pie -fPIC -fstack-protector -O3"},"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: .\/mysqlslap: 3: .\/bin\/mysqlslap: not found"}</JSON>
+        <Value>554</Value>
+        <RawString>470.14574518101:584.45353594389:574.71264367816:506.58561296859:562.42969628796:567.21497447533:551.26791620728:568.82821387941:570.12542759407:578.36899942163:572.0823798627:544.9591280654</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pie -fPIC -fstack-protector -O3 -lnuma -lpcre2-8 -lcrypt -lsystemd -lz -lm -lssl -lcrypto -lpthread -ldl"},"test-run-times":"218.19:175.84:178.80:202.59:182.71:181.03:186.25:180.44:179.89:177.56:179.58:188.24"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -2397,9 +2397,9 @@
     <Data>
       <Entry>
         <Identifier>fp-withfp-opt-id</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pie -fPIC -fstack-protector -O3"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/mysqlslap: 3: .\/bin\/mysqlslap: not found"}</JSON>
+        <Value>496</Value>
+        <RawString>491.88391539597:500:496.27791563275</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pie -fPIC -fstack-protector -O3 -lnuma -lpcre2-8 -lcrypt -lsystemd -lz -lm -lssl -lcrypto -lpthread -ldl"},"test-run-times":"208.84:205.42:206.51"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -2453,7 +2453,7 @@
         <Identifier>fp-withfp-opt-id</Identifier>
         <Value></Value>
         <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.01:0.00","error":"The test quit with a non-zero exit status."}</JSON>
+        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status."}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -2580,6 +2580,252 @@
         <Value>26.143</Value>
         <RawString>26.437:26.111:25.881</RawString>
         <JSON>{"install-footnote":"Inkscape 1.2.2 (b0a8486541, 2022-12-01)","test-run-times":"26.44:26.11:25.88"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/redis-1.4.0</Identifier>
+    <Title>Redis</Title>
+    <AppVersion>7.0.4</AppVersion>
+    <Arguments>-t get</Arguments>
+    <Description>Test: GET</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-withfp-opt-id</Identifier>
+        <Value>3579297.67</Value>
+        <RawString>3508834.75:3555493:3673565.25</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"20.27:20.08:19.62"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fp-withfp-opt-id</Identifier>
+        <Value>2895829.33</Value>
+        <RawString>2893738:2886721.25:2907028.75</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"23.30:23.34:23.22"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/redis-1.4.0</Identifier>
+    <Title>Redis</Title>
+    <AppVersion>7.0.4</AppVersion>
+    <Arguments>-t set</Arguments>
+    <Description>Test: SET</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-withfp-opt-id</Identifier>
+        <Value>2245109.67</Value>
+        <RawString>2288370.5:2212405.25:2234553.25</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"27.87:28.61:28.39"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fp-withfp-opt-id</Identifier>
+        <Value>2257683.46</Value>
+        <RawString>2192986.5:2318076:2277505.75:2310898:2208875:2237759.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"28.82:27.59:27.97:27.65:28.65:28.36"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-ffsll</Arguments>
+    <Description>Benchmark: ffsll</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-withfp-opt-id</Identifier>
+        <Value>6.85720</Value>
+        <RawString>6.79791:6.97586:6.79784</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.27:1.28:1.27"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-ffs</Arguments>
+    <Description>Benchmark: ffs</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-withfp-opt-id</Identifier>
+        <Value>6.04698</Value>
+        <RawString>6.21157:5.96498:5.96438</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.29:1.27:1.27"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-tanh</Arguments>
+    <Description>Benchmark: tanh</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-withfp-opt-id</Identifier>
+        <Value>42.1008</Value>
+        <RawString>42.2282:42.2291:41.8452</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.29:1.29:1.28"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-asinh</Arguments>
+    <Description>Benchmark: asinh</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-withfp-opt-id</Identifier>
+        <Value>35.9389</Value>
+        <RawString>34.263:36.184:36.2008:37.2831:35.8529:35.8372:35.9516</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.27:1.29:1.29:1.29:1.28:1.29:1.28"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-atanh</Arguments>
+    <Description>Benchmark: atanh</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-withfp-opt-id</Identifier>
+        <Value>47.4232</Value>
+        <RawString>47.418:47.4246:47.427</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.28:1.29:1.28"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-sincos</Arguments>
+    <Description>Benchmark: sincos</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-withfp-opt-id</Identifier>
+        <Value>42.6864</Value>
+        <RawString>42.8215:42.804:42.4337</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.36:2.36:2.35"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-sinh</Arguments>
+    <Description>Benchmark: sinh</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-withfp-opt-id</Identifier>
+        <Value>32.0383</Value>
+        <RawString>31.563:32.4079:32.144</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.29:1.29:1.28"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-modf</Arguments>
+    <Description>Benchmark: modf</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-withfp-opt-id</Identifier>
+        <Value>8.83815</Value>
+        <RawString>8.88658:8.81317:8.81469</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.28:1.28:1.28"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-exp</Arguments>
+    <Description>Benchmark: exp</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-withfp-opt-id</Identifier>
+        <Value>17.1314</Value>
+        <RawString>16.664:17.4624:17.2678</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"4.28:4.29:4.29"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-log2</Arguments>
+    <Description>Benchmark: log2</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-withfp-opt-id</Identifier>
+        <Value>24.0111</Value>
+        <RawString>23.8897:24.0872:24.0564</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.28:1.28:1.29"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-pow</Arguments>
+    <Description>Benchmark: pow</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-withfp-opt-id</Identifier>
+        <Value>41.7884</Value>
+        <RawString>41.0383:42.0523:42.2747</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.30:2.30:2.31"}</JSON>
       </Entry>
     </Data>
   </Result>

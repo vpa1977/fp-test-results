@@ -1,7 +1,4 @@
-Compiler Version is /usr/bin/gcc-13 -fno-omit-frame-pointer -dumpversion
-13
-/home/ubuntu/.phoronix-test-suite/test-profiles/pts/npb-1.4.5/install.sh: line 64: [: /usr/bin/gcc-13 -fno-omit-frame-pointer -dumpversion
-13: integer expression expected
+Compiler Version is 13
    =========================================
    =      NAS Parallel Benchmarks 3.4      =
    =      MPI/Fortran/C                    =
@@ -11,12 +8,11 @@ cd BT; make CLASS=A SUBTYPE= VERSION=
 make[1]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/BT'
 make[2]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/sys'
 cc -g  -o setparams setparams.c
-/usr/bin/gcc-13 -fno-omit-frame-pointer -g -o setparams setparams.c
 make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/sys'
 ../sys/setparams bt A 
-mpif90 -c -I/usr/include/ -O3 -march=native mpinpb.f90
-mpif90 -c -I/usr/include/ -O3 -march=native bt_data.f90
-mpif90 -c -I/usr/include/ -O3 -march=native bt.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch mpinpb.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch bt_data.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch bt.f90
 bt.f90:151:22:
 
   148 |        call mpi_bcast(niter, 1, MPI_INTEGER,  &
@@ -24,15 +20,7 @@ bt.f90:151:22:
 ......
   151 |        call mpi_bcast(dt, 1, dp_type,  &
       |                      1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (REAL(8)/INTEGER(4)).
-bt.f90:163:22:
-
-  148 |        call mpi_bcast(niter, 1, MPI_INTEGER,  &
-      |                      2
-......
-  163 |        call mpi_bcast(timeron, 1, MPI_LOGICAL,  &
-      |                      1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (LOGICAL(4)/INTEGER(4)).
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (REAL(8)/INTEGER(4)).
 bt.f90:306:23:
 
   250 |        call mpi_reduce(t, tmax, 1,  &
@@ -40,7 +28,7 @@ bt.f90:306:23:
 ......
   306 |        call MPI_Reduce(t1, tsum,  t_last+2, dp_type, MPI_SUM,  &
       |                       1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 bt.f90:306:27:
 
   250 |        call mpi_reduce(t, tmax, 1,  &
@@ -48,7 +36,7 @@ bt.f90:306:27:
 ......
   306 |        call MPI_Reduce(t1, tsum,  t_last+2, dp_type, MPI_SUM,  &
       |                           1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 bt.f90:308:23:
 
   250 |        call mpi_reduce(t, tmax, 1,  &
@@ -56,7 +44,7 @@ bt.f90:308:23:
 ......
   308 |        call MPI_Reduce(t1, tming, t_last+2, dp_type, MPI_MIN,  &
       |                       1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 bt.f90:308:27:
 
   250 |        call mpi_reduce(t, tmax, 1,  &
@@ -64,7 +52,7 @@ bt.f90:308:27:
 ......
   308 |        call MPI_Reduce(t1, tming, t_last+2, dp_type, MPI_MIN,  &
       |                           1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 bt.f90:310:23:
 
   250 |        call mpi_reduce(t, tmax, 1,  &
@@ -72,7 +60,7 @@ bt.f90:310:23:
 ......
   310 |        call MPI_Reduce(t1, tmaxg, t_last+2, dp_type, MPI_MAX,  &
       |                       1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 bt.f90:310:27:
 
   250 |        call mpi_reduce(t, tmax, 1,  &
@@ -80,10 +68,32 @@ bt.f90:310:27:
 ......
   310 |        call MPI_Reduce(t1, tmaxg, t_last+2, dp_type, MPI_MAX,  &
       |                           1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
-make[1]: *** [Makefile:48: bt.o] Error 1
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch make_set.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch initialize.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch exact_solution.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch exact_rhs.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch set_constants.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch adi.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch define.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch copy_faces.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch rhs.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch solve_subs.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch x_solve.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch y_solve.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch z_solve.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch add.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch error.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch verify.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch setup_mpi.f90
+cd ../common; mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch get_active_nprocs.f90
+cd ../common; mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch print_results.f90
+cd ../common; mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch timers.f90
+make[2]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/BT'
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch btio.f90
+mpif77 -O3 -march=native -fallow-argument-mismatch -o ../bin/bt.A.x bt.o bt_data.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o mpinpb.o ../common/get_active_nprocs.o ../common/print_results.o ../common/timers.o btio.o -L/usr/lib/x86_64-linux-gnu/libmpi.so
+make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/BT'
 make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/BT'
-make: *** [Makefile:12: bt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.4      =
    =      MPI/Fortran/C                    =
@@ -95,8 +105,8 @@ make[2]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/p
 make[2]: Nothing to be done for 'all'.
 make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/sys'
 ../sys/setparams bt C 
-mpif90 -c -I/usr/include/ -O3 -march=native bt_data.f90
-mpif90 -c -I/usr/include/ -O3 -march=native bt.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch bt_data.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch bt.f90
 bt.f90:151:22:
 
   148 |        call mpi_bcast(niter, 1, MPI_INTEGER,  &
@@ -104,15 +114,7 @@ bt.f90:151:22:
 ......
   151 |        call mpi_bcast(dt, 1, dp_type,  &
       |                      1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (REAL(8)/INTEGER(4)).
-bt.f90:163:22:
-
-  148 |        call mpi_bcast(niter, 1, MPI_INTEGER,  &
-      |                      2
-......
-  163 |        call mpi_bcast(timeron, 1, MPI_LOGICAL,  &
-      |                      1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (LOGICAL(4)/INTEGER(4)).
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (REAL(8)/INTEGER(4)).
 bt.f90:306:23:
 
   250 |        call mpi_reduce(t, tmax, 1,  &
@@ -120,7 +122,7 @@ bt.f90:306:23:
 ......
   306 |        call MPI_Reduce(t1, tsum,  t_last+2, dp_type, MPI_SUM,  &
       |                       1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 bt.f90:306:27:
 
   250 |        call mpi_reduce(t, tmax, 1,  &
@@ -128,7 +130,7 @@ bt.f90:306:27:
 ......
   306 |        call MPI_Reduce(t1, tsum,  t_last+2, dp_type, MPI_SUM,  &
       |                           1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 bt.f90:308:23:
 
   250 |        call mpi_reduce(t, tmax, 1,  &
@@ -136,7 +138,7 @@ bt.f90:308:23:
 ......
   308 |        call MPI_Reduce(t1, tming, t_last+2, dp_type, MPI_MIN,  &
       |                       1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 bt.f90:308:27:
 
   250 |        call mpi_reduce(t, tmax, 1,  &
@@ -144,7 +146,7 @@ bt.f90:308:27:
 ......
   308 |        call MPI_Reduce(t1, tming, t_last+2, dp_type, MPI_MIN,  &
       |                           1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 bt.f90:310:23:
 
   250 |        call mpi_reduce(t, tmax, 1,  &
@@ -152,7 +154,7 @@ bt.f90:310:23:
 ......
   310 |        call MPI_Reduce(t1, tmaxg, t_last+2, dp_type, MPI_MAX,  &
       |                       1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 bt.f90:310:27:
 
   250 |        call mpi_reduce(t, tmax, 1,  &
@@ -160,10 +162,28 @@ bt.f90:310:27:
 ......
   310 |        call MPI_Reduce(t1, tmaxg, t_last+2, dp_type, MPI_MAX,  &
       |                           1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
-make[1]: *** [Makefile:48: bt.o] Error 1
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch make_set.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch initialize.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch exact_solution.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch exact_rhs.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch set_constants.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch adi.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch define.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch copy_faces.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch rhs.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch x_solve.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch y_solve.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch z_solve.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch add.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch error.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch verify.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch setup_mpi.f90
+make[2]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/BT'
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch btio.f90
+mpif77 -O3 -march=native -fallow-argument-mismatch -o ../bin/bt.C.x bt.o bt_data.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o mpinpb.o ../common/get_active_nprocs.o ../common/print_results.o ../common/timers.o btio.o -L/usr/lib/x86_64-linux-gnu/libmpi.so
+make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/BT'
 make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/BT'
-make: *** [Makefile:12: bt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.4      =
    =      MPI/Fortran/C                    =
@@ -175,9 +195,9 @@ make[2]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/p
 make[2]: Nothing to be done for 'all'.
 make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/sys'
 ../sys/setparams ep C 
-mpif90 -c -I/usr/include/ -O3 -march=native ep_data.f90
-mpif90 -c -I/usr/include/ -O3 -march=native mpinpb.f90
-mpif90 -c -I/usr/include/ -O3 -march=native ep.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch ep_data.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch mpinpb.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch ep.f90
 ep.f90:254:25:
 
   248 |       call mpi_allreduce(sx, x, 1, dp_type,  &
@@ -185,10 +205,10 @@ ep.f90:254:25:
 ......
   254 |       call mpi_allreduce(q, x, nq, dp_type,  &
       |                         1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
-make[1]: *** [Makefile:16: ep.o] Error 1
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+cd ../common; mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch randi8.f90
+mpif77 -O3 -march=native -fallow-argument-mismatch -o ../bin/ep.C.x ep.o ep_data.o mpinpb.o ../common/print_results.o ../common/randi8.o ../common/timers.o -L/usr/lib/x86_64-linux-gnu/libmpi.so
 make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/EP'
-make: *** [Makefile:40: ep] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.4      =
    =      MPI/Fortran/C                    =
@@ -200,8 +220,8 @@ make[2]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/p
 make[2]: Nothing to be done for 'all'.
 make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/sys'
 ../sys/setparams ep D 
-mpif90 -c -I/usr/include/ -O3 -march=native ep_data.f90
-mpif90 -c -I/usr/include/ -O3 -march=native ep.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch ep_data.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch ep.f90
 ep.f90:254:25:
 
   248 |       call mpi_allreduce(sx, x, 1, dp_type,  &
@@ -209,10 +229,9 @@ ep.f90:254:25:
 ......
   254 |       call mpi_allreduce(q, x, nq, dp_type,  &
       |                         1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
-make[1]: *** [Makefile:16: ep.o] Error 1
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+mpif77 -O3 -march=native -fallow-argument-mismatch -o ../bin/ep.D.x ep.o ep_data.o mpinpb.o ../common/print_results.o ../common/randi8.o ../common/timers.o -L/usr/lib/x86_64-linux-gnu/libmpi.so
 make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/EP'
-make: *** [Makefile:40: ep] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.4      =
    =      MPI/Fortran/C                    =
@@ -224,9 +243,9 @@ make[2]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/p
 make[2]: Nothing to be done for 'all'.
 make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/sys'
 ../sys/setparams ft A 
-mpif90 -c -I/usr/include/ -O3 -march=native mpinpb.f90
-mpif90 -c -I/usr/include/ -O3 -march=native ft_data.f90
-mpif90 -c -I/usr/include/ -O3 -march=native ft.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch mpinpb.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch ft_data.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch ft.f90
 ft.f90:1767:22:
 
   776 |       call MPI_Reduce(t1, tsum,  t_max+2, MPI_DOUBLE_PRECISION,  &
@@ -234,7 +253,7 @@ ft.f90:1767:22:
 ......
  1767 |       call MPI_Reduce(chk, allchk, 1, dc_type, MPI_SUM,  &
       |                      1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (COMPLEX(8)/REAL(8)).
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (COMPLEX(8)/REAL(8)).
 ft.f90:1767:27:
 
   776 |       call MPI_Reduce(t1, tsum,  t_max+2, MPI_DOUBLE_PRECISION,  &
@@ -242,7 +261,7 @@ ft.f90:1767:27:
 ......
  1767 |       call MPI_Reduce(chk, allchk, 1, dc_type, MPI_SUM,  &
       |                           1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (COMPLEX(8)/REAL(8)).
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (COMPLEX(8)/REAL(8)).
 ft.f90:485:21:
 
   480 |       call MPI_BCAST(np1, 1, MPI_INTEGER, 0, comm_solve, ierr)
@@ -250,10 +269,9 @@ ft.f90:485:21:
 ......
   485 |       call MPI_BCAST(timers_enabled, 1, MPI_LOGICAL, 0, comm_solve,  &
       |                     1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (LOGICAL(4)/INTEGER(4)).
-make[1]: *** [Makefile:17: ft.o] Error 1
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (LOGICAL(4)/INTEGER(4)).
+mpif77 -O3 -march=native -fallow-argument-mismatch -o ../bin/ft.A.x ft.o ft_data.o mpinpb.o ../common/get_active_nprocs.o ../common/randi8.o ../common/print_results.o ../common/timers.o -L/usr/lib/x86_64-linux-gnu/libmpi.so
 make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/FT'
-make: *** [Makefile:28: ft] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.4      =
    =      MPI/Fortran/C                    =
@@ -265,8 +283,8 @@ make[2]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/p
 make[2]: Nothing to be done for 'all'.
 make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/sys'
 ../sys/setparams ft B 
-mpif90 -c -I/usr/include/ -O3 -march=native ft_data.f90
-mpif90 -c -I/usr/include/ -O3 -march=native ft.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch ft_data.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch ft.f90
 ft.f90:1767:22:
 
   776 |       call MPI_Reduce(t1, tsum,  t_max+2, MPI_DOUBLE_PRECISION,  &
@@ -274,7 +292,7 @@ ft.f90:1767:22:
 ......
  1767 |       call MPI_Reduce(chk, allchk, 1, dc_type, MPI_SUM,  &
       |                      1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (COMPLEX(8)/REAL(8)).
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (COMPLEX(8)/REAL(8)).
 ft.f90:1767:27:
 
   776 |       call MPI_Reduce(t1, tsum,  t_max+2, MPI_DOUBLE_PRECISION,  &
@@ -282,7 +300,7 @@ ft.f90:1767:27:
 ......
  1767 |       call MPI_Reduce(chk, allchk, 1, dc_type, MPI_SUM,  &
       |                           1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (COMPLEX(8)/REAL(8)).
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (COMPLEX(8)/REAL(8)).
 ft.f90:485:21:
 
   480 |       call MPI_BCAST(np1, 1, MPI_INTEGER, 0, comm_solve, ierr)
@@ -290,10 +308,9 @@ ft.f90:485:21:
 ......
   485 |       call MPI_BCAST(timers_enabled, 1, MPI_LOGICAL, 0, comm_solve,  &
       |                     1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (LOGICAL(4)/INTEGER(4)).
-make[1]: *** [Makefile:17: ft.o] Error 1
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (LOGICAL(4)/INTEGER(4)).
+mpif77 -O3 -march=native -fallow-argument-mismatch -o ../bin/ft.B.x ft.o ft_data.o mpinpb.o ../common/get_active_nprocs.o ../common/randi8.o ../common/print_results.o ../common/timers.o -L/usr/lib/x86_64-linux-gnu/libmpi.so
 make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/FT'
-make: *** [Makefile:28: ft] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.4      =
    =      MPI/Fortran/C                    =
@@ -305,8 +322,8 @@ make[2]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/p
 make[2]: Nothing to be done for 'all'.
 make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/sys'
 ../sys/setparams ft C 
-mpif90 -c -I/usr/include/ -O3 -march=native ft_data.f90
-mpif90 -c -I/usr/include/ -O3 -march=native ft.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch ft_data.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch ft.f90
 ft.f90:1767:22:
 
   776 |       call MPI_Reduce(t1, tsum,  t_max+2, MPI_DOUBLE_PRECISION,  &
@@ -314,7 +331,7 @@ ft.f90:1767:22:
 ......
  1767 |       call MPI_Reduce(chk, allchk, 1, dc_type, MPI_SUM,  &
       |                      1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (COMPLEX(8)/REAL(8)).
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (COMPLEX(8)/REAL(8)).
 ft.f90:1767:27:
 
   776 |       call MPI_Reduce(t1, tsum,  t_max+2, MPI_DOUBLE_PRECISION,  &
@@ -322,7 +339,7 @@ ft.f90:1767:27:
 ......
  1767 |       call MPI_Reduce(chk, allchk, 1, dc_type, MPI_SUM,  &
       |                           1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (COMPLEX(8)/REAL(8)).
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (COMPLEX(8)/REAL(8)).
 ft.f90:485:21:
 
   480 |       call MPI_BCAST(np1, 1, MPI_INTEGER, 0, comm_solve, ierr)
@@ -330,10 +347,9 @@ ft.f90:485:21:
 ......
   485 |       call MPI_BCAST(timers_enabled, 1, MPI_LOGICAL, 0, comm_solve,  &
       |                     1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (LOGICAL(4)/INTEGER(4)).
-make[1]: *** [Makefile:17: ft.o] Error 1
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (LOGICAL(4)/INTEGER(4)).
+mpif77 -O3 -march=native -fallow-argument-mismatch -o ../bin/ft.C.x ft.o ft_data.o mpinpb.o ../common/get_active_nprocs.o ../common/randi8.o ../common/print_results.o ../common/timers.o -L/usr/lib/x86_64-linux-gnu/libmpi.so
 make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/FT'
-make: *** [Makefile:28: ft] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.4      =
    =      MPI/Fortran/C                    =
@@ -345,12 +361,12 @@ make[2]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/p
 make[2]: Nothing to be done for 'all'.
 make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/sys'
 ../sys/setparams lu A 
-mpif90 -c -I/usr/include/ -O3 -march=native mpinpb.f90
-mpif90 -c -I/usr/include/ -O3 -march=native lu_data.f90
-mpif90 -c -I/usr/include/ -O3 -march=native lu.f90
-mpif90 -c -I/usr/include/ -O3 -march=native init_comm.f90
-mpif90 -c -I/usr/include/ -O3 -march=native read_input.f90
-mpif90 -c -I/usr/include/ -O3 -march=native bcast_inputs.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch mpinpb.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch lu_data.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch lu.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch init_comm.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch read_input.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch bcast_inputs.f90
 bcast_inputs.f90:32:21:
 
    29 |       call MPI_BCAST(ipr, 1, MPI_INTEGER, root, comm_solve, ierr)
@@ -358,34 +374,33 @@ bcast_inputs.f90:32:21:
 ......
    32 |       call MPI_BCAST(dt, 1, dp_type, root, comm_solve, ierr)
       |                     1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (REAL(8)/INTEGER(4)).
-bcast_inputs.f90:33:21:
-
-   29 |       call MPI_BCAST(ipr, 1, MPI_INTEGER, root, comm_solve, ierr)
-      |                     2
-......
-   33 |       call MPI_BCAST(omega, 1, dp_type, root, comm_solve, ierr)
-      |                     1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (REAL(8)/INTEGER(4)).
-bcast_inputs.f90:34:21:
-
-   29 |       call MPI_BCAST(ipr, 1, MPI_INTEGER, root, comm_solve, ierr)
-      |                     2
-......
-   34 |       call MPI_BCAST(tolrsd, 5, dp_type, root, comm_solve, ierr)
-      |                     1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (REAL(8)/INTEGER(4)).
-bcast_inputs.f90:38:21:
-
-   29 |       call MPI_BCAST(ipr, 1, MPI_INTEGER, root, comm_solve, ierr)
-      |                     2
-......
-   38 |       call MPI_BCAST(timeron, 1, MPI_LOGICAL, root, comm_solve,  &
-      |                     1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (LOGICAL(4)/INTEGER(4)).
-make[1]: *** [Makefile:24: bcast_inputs.o] Error 1
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (REAL(8)/INTEGER(4)).
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch proc_grid.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch neighbors.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch nodedim.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch subdomain.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch setcoeff.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch setbv.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch exact.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch setiv.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch erhs.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch ssor.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch exchange_1.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch exchange_3.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch exchange_4.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch exchange_5.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch exchange_6.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch rhs.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch l2norm.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch jacld.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch blts.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch jacu.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch buts.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch error.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch pintgr.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch verify.f90
+mpif77 -O3 -march=native -fallow-argument-mismatch -o ../bin/lu.A.x lu.o lu_data.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o mpinpb.o error.o pintgr.o verify.o ../common/get_active_nprocs.o ../common/print_results.o ../common/timers.o -L/usr/lib/x86_64-linux-gnu/libmpi.so
 make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/LU'
-make: *** [Makefile:20: lu] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.4      =
    =      MPI/Fortran/C                    =
@@ -397,11 +412,11 @@ make[2]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/p
 make[2]: Nothing to be done for 'all'.
 make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/sys'
 ../sys/setparams lu C 
-mpif90 -c -I/usr/include/ -O3 -march=native lu_data.f90
-mpif90 -c -I/usr/include/ -O3 -march=native lu.f90
-mpif90 -c -I/usr/include/ -O3 -march=native init_comm.f90
-mpif90 -c -I/usr/include/ -O3 -march=native read_input.f90
-mpif90 -c -I/usr/include/ -O3 -march=native bcast_inputs.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch lu_data.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch lu.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch init_comm.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch read_input.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch bcast_inputs.f90
 bcast_inputs.f90:32:21:
 
    29 |       call MPI_BCAST(ipr, 1, MPI_INTEGER, root, comm_solve, ierr)
@@ -409,34 +424,32 @@ bcast_inputs.f90:32:21:
 ......
    32 |       call MPI_BCAST(dt, 1, dp_type, root, comm_solve, ierr)
       |                     1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (REAL(8)/INTEGER(4)).
-bcast_inputs.f90:33:21:
-
-   29 |       call MPI_BCAST(ipr, 1, MPI_INTEGER, root, comm_solve, ierr)
-      |                     2
-......
-   33 |       call MPI_BCAST(omega, 1, dp_type, root, comm_solve, ierr)
-      |                     1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (REAL(8)/INTEGER(4)).
-bcast_inputs.f90:34:21:
-
-   29 |       call MPI_BCAST(ipr, 1, MPI_INTEGER, root, comm_solve, ierr)
-      |                     2
-......
-   34 |       call MPI_BCAST(tolrsd, 5, dp_type, root, comm_solve, ierr)
-      |                     1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (REAL(8)/INTEGER(4)).
-bcast_inputs.f90:38:21:
-
-   29 |       call MPI_BCAST(ipr, 1, MPI_INTEGER, root, comm_solve, ierr)
-      |                     2
-......
-   38 |       call MPI_BCAST(timeron, 1, MPI_LOGICAL, root, comm_solve,  &
-      |                     1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (LOGICAL(4)/INTEGER(4)).
-make[1]: *** [Makefile:24: bcast_inputs.o] Error 1
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (REAL(8)/INTEGER(4)).
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch proc_grid.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch neighbors.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch subdomain.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch setcoeff.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch setbv.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch exact.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch setiv.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch erhs.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch ssor.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch exchange_1.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch exchange_3.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch exchange_4.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch exchange_5.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch exchange_6.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch rhs.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch l2norm.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch jacld.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch blts.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch jacu.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch buts.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch error.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch pintgr.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch verify.f90
+mpif77 -O3 -march=native -fallow-argument-mismatch -o ../bin/lu.C.x lu.o lu_data.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o mpinpb.o error.o pintgr.o verify.o ../common/get_active_nprocs.o ../common/print_results.o ../common/timers.o -L/usr/lib/x86_64-linux-gnu/libmpi.so
 make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/LU'
-make: *** [Makefile:20: lu] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.4      =
    =      MPI/Fortran/C                    =
@@ -448,9 +461,9 @@ make[2]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/p
 make[2]: Nothing to be done for 'all'.
 make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/sys'
 ../sys/setparams sp A 
-mpif90 -c -I/usr/include/ -O3 -march=native mpinpb.f90
-mpif90 -c -I/usr/include/ -O3 -march=native sp_data.f90
-mpif90 -c -I/usr/include/ -O3 -march=native sp.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch mpinpb.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch sp_data.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch sp.f90
 sp.f90:118:22:
 
   115 |        call mpi_bcast(niter, 1, MPI_INTEGER,  &
@@ -458,15 +471,7 @@ sp.f90:118:22:
 ......
   118 |        call mpi_bcast(dt, 1, dp_type,  &
       |                      1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (REAL(8)/INTEGER(4)).
-sp.f90:124:22:
-
-  115 |        call mpi_bcast(niter, 1, MPI_INTEGER,  &
-      |                      2
-......
-  124 |        call mpi_bcast(timeron, 1, MPI_LOGICAL,  &
-      |                      1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (LOGICAL(4)/INTEGER(4)).
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (REAL(8)/INTEGER(4)).
 sp.f90:226:23:
 
   192 |        call mpi_reduce(t, tmax, 1,  &
@@ -474,7 +479,7 @@ sp.f90:226:23:
 ......
   226 |        call MPI_Reduce(t1, tsum,  t_last+2, dp_type, MPI_SUM,  &
       |                       1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 sp.f90:226:27:
 
   192 |        call mpi_reduce(t, tmax, 1,  &
@@ -482,7 +487,7 @@ sp.f90:226:27:
 ......
   226 |        call MPI_Reduce(t1, tsum,  t_last+2, dp_type, MPI_SUM,  &
       |                           1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 sp.f90:228:23:
 
   192 |        call mpi_reduce(t, tmax, 1,  &
@@ -490,7 +495,7 @@ sp.f90:228:23:
 ......
   228 |        call MPI_Reduce(t1, tming, t_last+2, dp_type, MPI_MIN,  &
       |                       1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 sp.f90:228:27:
 
   192 |        call mpi_reduce(t, tmax, 1,  &
@@ -498,7 +503,7 @@ sp.f90:228:27:
 ......
   228 |        call MPI_Reduce(t1, tming, t_last+2, dp_type, MPI_MIN,  &
       |                           1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 sp.f90:230:23:
 
   192 |        call mpi_reduce(t, tmax, 1,  &
@@ -506,7 +511,7 @@ sp.f90:230:23:
 ......
   230 |        call MPI_Reduce(t1, tmaxg, t_last+2, dp_type, MPI_MAX,  &
       |                       1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 sp.f90:230:27:
 
   192 |        call mpi_reduce(t, tmax, 1,  &
@@ -514,10 +519,32 @@ sp.f90:230:27:
 ......
   230 |        call MPI_Reduce(t1, tmaxg, t_last+2, dp_type, MPI_MAX,  &
       |                           1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
-make[1]: *** [Makefile:23: sp.o] Error 1
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch make_set.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch initialize.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch exact_solution.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch exact_rhs.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch set_constants.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch adi.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch define.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch copy_faces.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch rhs.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch lhsx.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch lhsy.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch lhsz.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch x_solve.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch ninvr.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch y_solve.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch pinvr.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch z_solve.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch tzetar.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch add.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch txinvr.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch error.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch verify.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch setup_mpi.f90
+mpif77 -O3 -march=native -fallow-argument-mismatch -o ../bin/sp.A.x sp.o sp_data.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o lhsx.o lhsy.o lhsz.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o setup_mpi.o mpinpb.o ../common/get_active_nprocs.o ../common/print_results.o ../common/timers.o -L/usr/lib/x86_64-linux-gnu/libmpi.so
 make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/SP'
-make: *** [Makefile:16: sp] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.4      =
    =      MPI/Fortran/C                    =
@@ -529,8 +556,8 @@ make[2]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/p
 make[2]: Nothing to be done for 'all'.
 make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/sys'
 ../sys/setparams sp B 
-mpif90 -c -I/usr/include/ -O3 -march=native sp_data.f90
-mpif90 -c -I/usr/include/ -O3 -march=native sp.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch sp_data.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch sp.f90
 sp.f90:118:22:
 
   115 |        call mpi_bcast(niter, 1, MPI_INTEGER,  &
@@ -538,15 +565,7 @@ sp.f90:118:22:
 ......
   118 |        call mpi_bcast(dt, 1, dp_type,  &
       |                      1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (REAL(8)/INTEGER(4)).
-sp.f90:124:22:
-
-  115 |        call mpi_bcast(niter, 1, MPI_INTEGER,  &
-      |                      2
-......
-  124 |        call mpi_bcast(timeron, 1, MPI_LOGICAL,  &
-      |                      1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (LOGICAL(4)/INTEGER(4)).
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (REAL(8)/INTEGER(4)).
 sp.f90:226:23:
 
   192 |        call mpi_reduce(t, tmax, 1,  &
@@ -554,7 +573,7 @@ sp.f90:226:23:
 ......
   226 |        call MPI_Reduce(t1, tsum,  t_last+2, dp_type, MPI_SUM,  &
       |                       1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 sp.f90:226:27:
 
   192 |        call mpi_reduce(t, tmax, 1,  &
@@ -562,7 +581,7 @@ sp.f90:226:27:
 ......
   226 |        call MPI_Reduce(t1, tsum,  t_last+2, dp_type, MPI_SUM,  &
       |                           1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 sp.f90:228:23:
 
   192 |        call mpi_reduce(t, tmax, 1,  &
@@ -570,7 +589,7 @@ sp.f90:228:23:
 ......
   228 |        call MPI_Reduce(t1, tming, t_last+2, dp_type, MPI_MIN,  &
       |                       1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 sp.f90:228:27:
 
   192 |        call mpi_reduce(t, tmax, 1,  &
@@ -578,7 +597,7 @@ sp.f90:228:27:
 ......
   228 |        call MPI_Reduce(t1, tming, t_last+2, dp_type, MPI_MIN,  &
       |                           1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 sp.f90:230:23:
 
   192 |        call mpi_reduce(t, tmax, 1,  &
@@ -586,7 +605,7 @@ sp.f90:230:23:
 ......
   230 |        call MPI_Reduce(t1, tmaxg, t_last+2, dp_type, MPI_MAX,  &
       |                       1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 sp.f90:230:27:
 
   192 |        call mpi_reduce(t, tmax, 1,  &
@@ -594,10 +613,32 @@ sp.f90:230:27:
 ......
   230 |        call MPI_Reduce(t1, tmaxg, t_last+2, dp_type, MPI_MAX,  &
       |                           1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
-make[1]: *** [Makefile:23: sp.o] Error 1
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch make_set.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch initialize.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch exact_solution.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch exact_rhs.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch set_constants.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch adi.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch define.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch copy_faces.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch rhs.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch lhsx.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch lhsy.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch lhsz.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch x_solve.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch ninvr.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch y_solve.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch pinvr.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch z_solve.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch tzetar.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch add.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch txinvr.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch error.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch verify.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch setup_mpi.f90
+mpif77 -O3 -march=native -fallow-argument-mismatch -o ../bin/sp.B.x sp.o sp_data.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o lhsx.o lhsy.o lhsz.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o setup_mpi.o mpinpb.o ../common/get_active_nprocs.o ../common/print_results.o ../common/timers.o -L/usr/lib/x86_64-linux-gnu/libmpi.so
 make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/SP'
-make: *** [Makefile:16: sp] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.4      =
    =      MPI/Fortran/C                    =
@@ -609,8 +650,8 @@ make[2]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/p
 make[2]: Nothing to be done for 'all'.
 make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/sys'
 ../sys/setparams sp C 
-mpif90 -c -I/usr/include/ -O3 -march=native sp_data.f90
-mpif90 -c -I/usr/include/ -O3 -march=native sp.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch sp_data.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch sp.f90
 sp.f90:118:22:
 
   115 |        call mpi_bcast(niter, 1, MPI_INTEGER,  &
@@ -618,15 +659,7 @@ sp.f90:118:22:
 ......
   118 |        call mpi_bcast(dt, 1, dp_type,  &
       |                      1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (REAL(8)/INTEGER(4)).
-sp.f90:124:22:
-
-  115 |        call mpi_bcast(niter, 1, MPI_INTEGER,  &
-      |                      2
-......
-  124 |        call mpi_bcast(timeron, 1, MPI_LOGICAL,  &
-      |                      1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (LOGICAL(4)/INTEGER(4)).
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (REAL(8)/INTEGER(4)).
 sp.f90:226:23:
 
   192 |        call mpi_reduce(t, tmax, 1,  &
@@ -634,7 +667,7 @@ sp.f90:226:23:
 ......
   226 |        call MPI_Reduce(t1, tsum,  t_last+2, dp_type, MPI_SUM,  &
       |                       1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 sp.f90:226:27:
 
   192 |        call mpi_reduce(t, tmax, 1,  &
@@ -642,7 +675,7 @@ sp.f90:226:27:
 ......
   226 |        call MPI_Reduce(t1, tsum,  t_last+2, dp_type, MPI_SUM,  &
       |                           1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 sp.f90:228:23:
 
   192 |        call mpi_reduce(t, tmax, 1,  &
@@ -650,7 +683,7 @@ sp.f90:228:23:
 ......
   228 |        call MPI_Reduce(t1, tming, t_last+2, dp_type, MPI_MIN,  &
       |                       1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 sp.f90:228:27:
 
   192 |        call mpi_reduce(t, tmax, 1,  &
@@ -658,7 +691,7 @@ sp.f90:228:27:
 ......
   228 |        call MPI_Reduce(t1, tming, t_last+2, dp_type, MPI_MIN,  &
       |                           1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 sp.f90:230:23:
 
   192 |        call mpi_reduce(t, tmax, 1,  &
@@ -666,7 +699,7 @@ sp.f90:230:23:
 ......
   230 |        call MPI_Reduce(t1, tmaxg, t_last+2, dp_type, MPI_MAX,  &
       |                       1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 sp.f90:230:27:
 
   192 |        call mpi_reduce(t, tmax, 1,  &
@@ -674,10 +707,32 @@ sp.f90:230:27:
 ......
   230 |        call MPI_Reduce(t1, tmaxg, t_last+2, dp_type, MPI_MAX,  &
       |                           1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
-make[1]: *** [Makefile:23: sp.o] Error 1
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch make_set.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch initialize.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch exact_solution.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch exact_rhs.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch set_constants.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch adi.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch define.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch copy_faces.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch rhs.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch lhsx.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch lhsy.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch lhsz.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch x_solve.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch ninvr.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch y_solve.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch pinvr.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch z_solve.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch tzetar.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch add.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch txinvr.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch error.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch verify.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch setup_mpi.f90
+mpif77 -O3 -march=native -fallow-argument-mismatch -o ../bin/sp.C.x sp.o sp_data.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o lhsx.o lhsy.o lhsz.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o setup_mpi.o mpinpb.o ../common/get_active_nprocs.o ../common/print_results.o ../common/timers.o -L/usr/lib/x86_64-linux-gnu/libmpi.so
 make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/SP'
-make: *** [Makefile:16: sp] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.4      =
    =      MPI/Fortran/C                    =
@@ -689,14 +744,13 @@ make[2]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/p
 make[2]: Nothing to be done for 'all'.
 make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/sys'
 ../sys/setparams is D 
-/usr/bin/mpicc.openmpi -c -I/usr/include/ -O3 -march=native is.c
-/usr/bin/gcc-13 -fno-omit-frame-pointer -c -I/usr/include/ -O3 -march=native is.c -I/usr/lib/x86_64-linux-gnu/openmpi/include -I/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
-cd ../common; /usr/bin/mpicc.openmpi -c -I/usr/include/ -O3 -march=native c_print_results.c
-/usr/bin/gcc-13 -fno-omit-frame-pointer -c -I/usr/include/ -O3 -march=native c_print_results.c -I/usr/lib/x86_64-linux-gnu/openmpi/include -I/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
-cd ../common; /usr/bin/mpicc.openmpi -c -I/usr/include/ -O3 -march=native c_timers.c
-/usr/bin/gcc-13 -fno-omit-frame-pointer -c -I/usr/include/ -O3 -march=native c_timers.c -I/usr/lib/x86_64-linux-gnu/openmpi/include -I/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
-/usr/bin/mpicc.openmpi -O3 -march=native -o ../bin/is.D.x is.o ../common/c_print_results.o ../common/c_timers.o -L/usr/lib/x86_64-linux-gnu/libmpi.so
-/usr/bin/gcc-13 -fno-omit-frame-pointer -O3 -march=native -o ../bin/is.D.x is.o ../common/c_print_results.o ../common/c_timers.o -L/usr/lib/x86_64-linux-gnu/libmpi.so -I/usr/lib/x86_64-linux-gnu/openmpi/include -I/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -L/usr/lib/x86_64-linux-gnu/openmpi/lib -lmpi
+/usr/bin/mpicc.openmpi -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch is.c
+cc1: warning: command-line option ‘-fallow-argument-mismatch’ is valid for Fortran but not for C
+cd ../common; /usr/bin/mpicc.openmpi -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch c_print_results.c
+cc1: warning: command-line option ‘-fallow-argument-mismatch’ is valid for Fortran but not for C
+cd ../common; /usr/bin/mpicc.openmpi -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch c_timers.c
+cc1: warning: command-line option ‘-fallow-argument-mismatch’ is valid for Fortran but not for C
+/usr/bin/mpicc.openmpi -O3 -march=native -fallow-argument-mismatch -o ../bin/is.D.x is.o ../common/c_print_results.o ../common/c_timers.o -L/usr/lib/x86_64-linux-gnu/libmpi.so
 make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/IS'
    =========================================
    =      NAS Parallel Benchmarks 3.4      =
@@ -709,9 +763,9 @@ make[2]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/p
 make[2]: Nothing to be done for 'all'.
 make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/sys'
 ../sys/setparams mg C 
-mpif90 -c -I/usr/include/ -O3 -march=native mpinpb.f90
-mpif90 -c -I/usr/include/ -O3 -march=native mg_data.f90
-mpif90 -c -I/usr/include/ -O3 -march=native mg.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch mpinpb.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch mg_data.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch mg.f90
 mg.f90:2241:28:
 
  1089 |       call mpi_allreduce(rnmu,ss,1,dp_type,  &
@@ -719,7 +773,7 @@ mg.f90:2241:28:
 ......
  2241 |          call mpi_allreduce(jg(0,i,1), jg_temp,4,MPI_INTEGER,  &
       |                            1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (INTEGER(4)/REAL(8)).
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (INTEGER(4)/REAL(8)).
 mg.f90:2241:39:
 
  1089 |       call mpi_allreduce(rnmu,ss,1,dp_type,  &
@@ -727,23 +781,7 @@ mg.f90:2241:39:
 ......
  2241 |          call mpi_allreduce(jg(0,i,1), jg_temp,4,MPI_INTEGER,  &
       |                                       1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (INTEGER(4)/REAL(8)).
-mg.f90:2265:28:
-
- 1089 |       call mpi_allreduce(rnmu,ss,1,dp_type,  &
-      |                         2   
-......
- 2265 |          call mpi_allreduce(jg(0,i,0), jg_temp,4,MPI_INTEGER,  &
-      |                            1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (INTEGER(4)/REAL(8)).
-mg.f90:2265:39:
-
- 1089 |       call mpi_allreduce(rnmu,ss,1,dp_type,  &
-      |                              2         
-......
- 2265 |          call mpi_allreduce(jg(0,i,0), jg_temp,4,MPI_INTEGER,  &
-      |                                       1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (INTEGER(4)/REAL(8)).
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (INTEGER(4)/REAL(8)).
 mg.f90:167:21:
 
   160 |       call mpi_bcast(lt, 1, MPI_INTEGER, 0, comm_work, ierr)
@@ -751,7 +789,7 @@ mg.f90:167:21:
 ......
   167 |       call mpi_bcast(timeron, 1, MPI_LOGICAL, 0, comm_work, ierr)
       |                     1
-Error: Type mismatch between actual argument at (1) and actual argument at (2) (LOGICAL(4)/INTEGER(4)).
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (LOGICAL(4)/INTEGER(4)).
 mg.f90:380:22:
 
   299 |       call mpi_reduce(t0,t,1,dp_type,  &
@@ -759,7 +797,7 @@ mg.f90:380:22:
 ......
   380 |       call MPI_Reduce(t1, tsum,  t_last+2, dp_type, MPI_SUM,  &
       |                      1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 mg.f90:380:26:
 
   299 |       call mpi_reduce(t0,t,1,dp_type,  &
@@ -767,7 +805,7 @@ mg.f90:380:26:
 ......
   380 |       call MPI_Reduce(t1, tsum,  t_last+2, dp_type, MPI_SUM,  &
       |                          1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 mg.f90:382:22:
 
   299 |       call mpi_reduce(t0,t,1,dp_type,  &
@@ -775,7 +813,7 @@ mg.f90:382:22:
 ......
   382 |       call MPI_Reduce(t1, tming, t_last+2, dp_type, MPI_MIN,  &
       |                      1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 mg.f90:382:26:
 
   299 |       call mpi_reduce(t0,t,1,dp_type,  &
@@ -783,7 +821,7 @@ mg.f90:382:26:
 ......
   382 |       call MPI_Reduce(t1, tming, t_last+2, dp_type, MPI_MIN,  &
       |                          1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 mg.f90:384:22:
 
   299 |       call mpi_reduce(t0,t,1,dp_type,  &
@@ -791,7 +829,7 @@ mg.f90:384:22:
 ......
   384 |       call MPI_Reduce(t1, tmaxg, t_last+2, dp_type, MPI_MAX,  &
       |                      1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 mg.f90:384:26:
 
   299 |       call mpi_reduce(t0,t,1,dp_type,  &
@@ -799,10 +837,9 @@ mg.f90:384:26:
 ......
   384 |       call MPI_Reduce(t1, tmaxg, t_last+2, dp_type, MPI_MAX,  &
       |                          1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
-make[1]: *** [Makefile:17: mg.o] Error 1
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+mpif77 -O3 -march=native -fallow-argument-mismatch -o ../bin/mg.C.x mg.o mg_data.o mpinpb.o ../common/print_results.o ../common/get_active_nprocs.o ../common/randi8.o ../common/timers.o -L/usr/lib/x86_64-linux-gnu/libmpi.so
 make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/MG'
-make: *** [Makefile:24: mg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.4      =
    =      MPI/Fortran/C                    =
@@ -814,9 +851,9 @@ make[2]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/p
 make[2]: Nothing to be done for 'all'.
 make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/sys'
 ../sys/setparams cg C 
-mpif90 -c -I/usr/include/ -O3 -march=native mpinpb.f90
-mpif90 -c -I/usr/include/ -O3 -march=native cg_data.f90
-mpif90 -c -I/usr/include/ -O3 -march=native cg.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch mpinpb.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch cg_data.f90
+mpif90 -c -I/usr/include/ -O3 -march=native -fallow-argument-mismatch cg.f90
 cg.f90:897:28:
 
   819 |          call mpi_irecv( rho,  &
@@ -824,7 +861,7 @@ cg.f90:897:28:
 ......
   897 |             call mpi_irecv( q,               &
       |                            1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 cg.f90:1089:25:
 
   819 |          call mpi_irecv( rho,  &
@@ -832,7 +869,7 @@ cg.f90:1089:25:
 ......
  1089 |          call mpi_irecv( r,               &
       |                         1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 cg.f90:250:28:
 
   250 |             call mpi_irecv( norm_temp2,  &
@@ -840,7 +877,7 @@ cg.f90:250:28:
 ......
   819 |          call mpi_irecv( rho,  &
       |                         2   
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 cg.f90:258:28:
 
   258 |             call mpi_send(  norm_temp1,  &
@@ -848,7 +885,7 @@ cg.f90:258:28:
 ......
   827 |          call mpi_send(  sum,  &
       |                         2   
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 cg.f90:337:28:
 
   337 |             call mpi_irecv( norm_temp2,  &
@@ -856,7 +893,7 @@ cg.f90:337:28:
 ......
   819 |          call mpi_irecv( rho,  &
       |                         2   
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 cg.f90:345:28:
 
   345 |             call mpi_send(  norm_temp1,  &
@@ -864,7 +901,7 @@ cg.f90:345:28:
 ......
   827 |          call mpi_send(  sum,  &
       |                         2   
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 cg.f90:460:22:
 
   388 |       call mpi_reduce( t,  &
@@ -872,7 +909,7 @@ cg.f90:460:22:
 ......
   460 |       call MPI_Reduce(t1, tsum,  t_last+2, dp_type, MPI_SUM,  &
       |                      1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 cg.f90:460:26:
 
   389 |      &                 tmax,  &
@@ -880,7 +917,7 @@ cg.f90:460:26:
 ......
   460 |       call MPI_Reduce(t1, tsum,  t_last+2, dp_type, MPI_SUM,  &
       |                          1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 cg.f90:462:22:
 
   388 |       call mpi_reduce( t,  &
@@ -888,7 +925,7 @@ cg.f90:462:22:
 ......
   462 |       call MPI_Reduce(t1, tming, t_last+2, dp_type, MPI_MIN,  &
       |                      1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 cg.f90:462:26:
 
   389 |      &                 tmax,  &
@@ -896,7 +933,7 @@ cg.f90:462:26:
 ......
   462 |       call MPI_Reduce(t1, tming, t_last+2, dp_type, MPI_MIN,  &
       |                          1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 cg.f90:464:22:
 
   388 |       call mpi_reduce( t,  &
@@ -904,7 +941,7 @@ cg.f90:464:22:
 ......
   464 |       call MPI_Reduce(t1, tmaxg, t_last+2, dp_type, MPI_MAX,  &
       |                      1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
 cg.f90:464:26:
 
   389 |      &                 tmax,  &
@@ -912,7 +949,6 @@ cg.f90:464:26:
 ......
   464 |       call MPI_Reduce(t1, tmaxg, t_last+2, dp_type, MPI_MAX,  &
       |                          1
-Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
-make[1]: *** [Makefile:17: cg.o] Error 1
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+mpif77 -O3 -march=native -fallow-argument-mismatch -o ../bin/cg.C.x cg.o cg_data.o mpinpb.o ../common/print_results.o ../common/get_active_nprocs.o ../common/randi8.o ../common/timers.o -L/usr/lib/x86_64-linux-gnu/libmpi.so
 make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/npb-1.4.5/NPB3.4.1/NPB3.4-MPI/CG'
-make: *** [Makefile:36: cg] Error 2

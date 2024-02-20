@@ -1,46 +1,35 @@
 Module                  Size  Used by
-twofish_generic        20480  0
-twofish_avx_x86_64     49152  0
-twofish_x86_64_3way    32768  1 twofish_avx_x86_64
-twofish_x86_64         16384  2 twofish_x86_64_3way,twofish_avx_x86_64
-twofish_common         94208  4 twofish_x86_64,twofish_generic,twofish_x86_64_3way,twofish_avx_x86_64
-serpent_avx2           45056  0
-serpent_avx_x86_64     49152  1 serpent_avx2
-serpent_sse2_x86_64    49152  0
-serpent_generic        24576  3 serpent_avx2,serpent_sse2_x86_64,serpent_avx_x86_64
-algif_skcipher         12288  0
-af_alg                 32768  1 algif_skcipher
-tls                   151552  0
+tls                   151552  1
 cfg80211             1314816  0
 binfmt_misc            24576  1
 nls_iso8859_1          12288  1
 intel_rapl_msr         20480  0
 intel_rapl_common      36864  1 intel_rapl_msr
-snd_hda_codec_realtek   192512  1
 edac_mce_amd           40960  0
+snd_hda_codec_realtek   192512  1
 snd_hda_codec_generic   122880  1 snd_hda_codec_realtek
 ledtrig_audio          12288  1 snd_hda_codec_generic
 snd_hda_codec_hdmi     94208  1
 kvm_amd               208896  0
-snd_hda_intel          61440  0
 ccp                   135168  1 kvm_amd
+snd_hda_intel          61440  6
 snd_intel_dspcfg       32768  1 snd_hda_intel
 snd_intel_sdw_acpi     16384  1 snd_intel_dspcfg
-snd_hda_codec         212992  4 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec_realtek
 kvm                  1404928  1 kvm_amd
+snd_hda_codec         212992  4 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec_realtek
 snd_hda_core          147456  5 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek
 snd_hwdep              20480  1 snd_hda_codec
+irqbypass              12288  1 kvm
 snd_pcm               196608  4 snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_core
 snd_timer              49152  1 snd_pcm
-irqbypass              12288  1 kvm
-snd                   143360  8 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hwdep,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek,snd_timer,snd_pcm
 rapl                   20480  0
 wmi_bmof               12288  0
-soundcore              16384  1 snd
+snd                   143360  20 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hwdep,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek,snd_timer,snd_pcm
 k10temp                16384  0
 i2c_piix4              28672  0
-input_leds             12288  0
+soundcore              16384  1 snd
 joydev                 32768  0
+input_leds             12288  0
 mac_hid                12288  0
 dm_multipath           45056  0
 msr                    12288  0
@@ -65,34 +54,34 @@ raid1                  57344  0
 raid0                  24576  0
 multipath              16384  0
 linear                 16384  0
-nouveau              2838528  0
+nouveau              2838528  3
 hid_generic            12288  0
 mxm_wmi                12288  1 nouveau
 video                  73728  1 nouveau
 i2c_algo_bit           16384  1 nouveau
 drm_ttm_helper         12288  1 nouveau
 ttm                   110592  2 drm_ttm_helper,nouveau
-usbhid                 77824  0
 drm_display_helper    241664  1 nouveau
-uas                    28672  3
 crct10dif_pclmul       12288  1
-hid                   180224  2 usbhid,hid_generic
-cec                    94208  1 drm_display_helper
+usbhid                 77824  0
 crc32_pclmul           12288  0
-usb_storage            86016  1 uas
+uas                    28672  3
 polyval_clmulni        12288  0
-rc_core                77824  1 cec
+cec                    94208  1 drm_display_helper
+hid                   180224  2 usbhid,hid_generic
 polyval_generic        12288  1 polyval_clmulni
+usb_storage            86016  1 uas
 ghash_clmulni_intel    16384  0
-drm_kms_helper        270336  4 drm_display_helper,nouveau
+rc_core                77824  1 cec
 aesni_intel           356352  0
-crypto_simd            16384  5 serpent_avx2,serpent_sse2_x86_64,aesni_intel,serpent_avx_x86_64,twofish_avx_x86_64
+drm_kms_helper        270336  4 drm_display_helper,nouveau
+crypto_simd            16384  1 aesni_intel
+drm                   761856  8 drm_kms_helper,drm_display_helper,drm_ttm_helper,ttm,nouveau
 cryptd                 24576  2 crypto_simd,ghash_clmulni_intel
-drm                   761856  6 drm_kms_helper,drm_display_helper,drm_ttm_helper,ttm,nouveau
-ahci                   49152  0
 r8169                 114688  0
+ahci                   49152  0
 xhci_pci               24576  0
+realtek                36864  1
 libahci                57344  1 ahci
 xhci_pci_renesas       20480  1 xhci_pci
-realtek                36864  1
 wmi                    40960  4 video,wmi_bmof,mxm_wmi,nouveau
