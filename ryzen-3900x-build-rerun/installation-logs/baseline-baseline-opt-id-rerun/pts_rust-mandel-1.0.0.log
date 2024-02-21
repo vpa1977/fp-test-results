@@ -1,0 +1,181 @@
+Archive:  mandel-rust-20181001.zip
+193449714ec356082849a6e00f167131e991d67c
+ extracting: mandel-rust-master/.gitignore  
+  inflating: mandel-rust-master/.travis.yml  
+  inflating: mandel-rust-master/CHANGELOG.md  
+  inflating: mandel-rust-master/Cargo.toml  
+  inflating: mandel-rust-master/LICENSE  
+  inflating: mandel-rust-master/README.md  
+ extracting: mandel-rust-master/mandel.png  
+   creating: mandel-rust-master/mandel_method/
+  inflating: mandel-rust-master/mandel_method/Cargo.toml  
+   creating: mandel-rust-master/mandel_method/src/
+  inflating: mandel-rust-master/mandel_method/src/lib.rs  
+   creating: mandel-rust-master/mandel_util/
+  inflating: mandel-rust-master/mandel_util/Cargo.toml  
+  inflating: mandel-rust-master/mandel_util/build.rs  
+   creating: mandel-rust-master/mandel_util/src/
+  inflating: mandel-rust-master/mandel_util/src/lib.rs  
+   creating: mandel-rust-master/plot/
+  inflating: mandel-rust-master/plot/job_steal.txt  
+  inflating: mandel-rust-master/plot/job_steal_join.txt  
+  inflating: mandel-rust-master/plot/mandel_bench1.png  
+  inflating: mandel-rust-master/plot/mandel_bench2.png  
+  inflating: mandel-rust-master/plot/plot.sh  
+  inflating: mandel-rust-master/plot/rayon_join.txt  
+  inflating: mandel-rust-master/plot/rayon_par_iter.txt  
+  inflating: mandel-rust-master/plot/rust_scoped_pool.txt  
+  inflating: mandel-rust-master/plot/scoped_thread_pool.txt  
+  inflating: mandel-rust-master/plot/serial.txt  
+  inflating: mandel-rust-master/run_bench.sh  
+   creating: mandel-rust-master/src/
+  inflating: mandel-rust-master/src/main.rs  
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded rayon v0.4.3
+  Downloaded variance v0.1.3
+  Downloaded num v0.1.42
+  Downloaded scoped-pool v1.0.0
+  Downloaded ansi_term v0.6.3
+  Downloaded num_cpus v1.16.0
+  Downloaded num-rational v0.1.42
+  Downloaded num-integer v0.1.46
+  Downloaded rustc_version v0.1.7
+  Downloaded num-bigint v0.1.44
+  Downloaded num-traits v0.2.18
+  Downloaded num-complex v0.1.43
+  Downloaded rustc-serialize v0.3.25
+  Downloaded jobsteal v0.5.1
+  Downloaded deque v0.3.2
+  Downloaded rand v0.4.6
+  Downloaded libc v0.2.153
+  Downloaded scopeguard v0.1.2
+  Downloaded scoped_threadpool v0.1.9
+  Downloaded time v0.1.45
+  Downloaded semver v0.1.20
+  Downloaded num-iter v0.1.44
+  Downloaded strsim v0.4.1
+  Downloaded rand v0.3.23
+  Downloaded autocfg v1.1.0
+  Downloaded crossbeam v0.2.12
+  Downloaded clap v1.3.2
+   Compiling libc v0.2.153
+   Compiling autocfg v1.1.0
+   Compiling rustc-serialize v0.3.25
+   Compiling semver v0.1.20
+   Compiling ansi_term v0.6.3
+   Compiling strsim v0.4.1
+   Compiling crossbeam v0.2.12
+   Compiling scopeguard v0.1.2
+   Compiling deque v0.3.2
+   Compiling variance v0.1.3
+   Compiling scoped_threadpool v0.1.9
+   Compiling clap v1.3.2
+   Compiling rustc_version v0.1.7
+   Compiling scoped-pool v1.0.0
+   Compiling mandel_util v0.4.0 (/home/ubuntu/.phoronix-test-suite/installed-tests/pts/rust-mandel-1.0.0/mandel-rust-master/mandel_util)
+   Compiling num-traits v0.2.18
+   Compiling rand v0.4.6
+   Compiling num_cpus v1.16.0
+   Compiling time v0.1.45
+   Compiling rand v0.3.23
+   Compiling num-integer v0.1.46
+   Compiling num-complex v0.1.43
+   Compiling rayon v0.4.3
+   Compiling jobsteal v0.5.1
+   Compiling num-bigint v0.1.44
+   Compiling num-iter v0.1.44
+   Compiling num-rational v0.1.42
+   Compiling num v0.1.42
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> mandel_util/src/lib.rs:124:5
+    |
+124 |     try!(buffer.write(b"P3\n"));
+    |     ^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> mandel_util/src/lib.rs:125:5
+    |
+125 |     try!(write!(buffer, "# mandelbrot, max_iter: {}\n", mandel_config.max_iter));
+    |     ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> mandel_util/src/lib.rs:130:5
+    |
+130 |     try!(write!(buffer, "{0} {0}\n", mandel_config.img_size));
+    |     ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> mandel_util/src/lib.rs:131:5
+    |
+131 |     try!(buffer.write(b"255\n"));
+    |     ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> mandel_util/src/lib.rs:122:37
+    |
+122 |     let mut buffer = BufWriter::new(try!(File::create(file_name)));
+    |                                     ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> mandel_util/src/lib.rs:128:9
+    |
+128 |         try!(write!(buffer, "# computation time: {} ms\n", time_in_ms));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> mandel_util/src/lib.rs:146:9
+    |
+146 |         try!(buffer.write(b"\n"));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> mandel_util/src/lib.rs:140:17
+    |
+140 |                 try!(buffer.write(b"0 0 0 "));
+    |                 ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> mandel_util/src/lib.rs:142:17
+    |
+142 |                 try!(write!(buffer, "255 {} 0 ", (img_value % 16) * 16));
+    |                 ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> mandel_util/src/lib.rs:171:5
+    |
+171 |     try!(write!(buffer, "{} {} {} {}\n", num_threads, time_in_ms, min_time, max_time));
+    |     ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> mandel_util/src/lib.rs:160:9
+    |
+160 |         try!(fs::create_dir("plot"));
+    |         ^^^
+
+warning: use of deprecated macro `try`: use the `?` operator instead
+   --> mandel_util/src/lib.rs:164:37
+    |
+164 |     let mut buffer = BufWriter::new(try!(
+    |                                     ^^^
+
+warning: trait objects without an explicit `dyn` are deprecated
+   --> mandel_util/src/lib.rs:177:43
+    |
+177 | pub fn do_run(method: &str, mandel_func: &Fn(&MandelConfig, &mut [u32]) -> (),
+    |                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = warning: this is accepted in the current edition (Rust 2015) but is a hard error in Rust 2021!
+    = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2021/warnings-promoted-to-error.html>
+    = note: `#[warn(bare_trait_objects)]` on by default
+help: use `dyn`
+    |
+177 | pub fn do_run(method: &str, mandel_func: &dyn Fn(&MandelConfig, &mut [u32]) -> (),
+    |                                           +++
+
+   Compiling mandel_method v0.4.0 (/home/ubuntu/.phoronix-test-suite/installed-tests/pts/rust-mandel-1.0.0/mandel-rust-master/mandel_method)
+warning: `mandel_util` (lib) generated 13 warnings (run `cargo fix --lib -p mandel_util` to apply 1 suggestion)
+   Compiling mandel v0.4.0 (/home/ubuntu/.phoronix-test-suite/installed-tests/pts/rust-mandel-1.0.0/mandel-rust-master)
+    Finished release [optimized] target(s) in 37.48s

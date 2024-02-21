@@ -1,0 +1,938 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>baseline-baseline-opt-name-rerun</Title>
+    <LastModified>2024-02-21 00:18:05</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.4</TestClient>
+    <Description>AMD Ryzen 9 3900X 12-Core testing with a MSI X570-A PRO (MS-7C37) v3.0 (H.70 BIOS) and NVIDIA GeForce RTX 3060 on Ubuntu 23.10 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+    <Hardware>Processor: AMD Ryzen 9 3900X 12-Core @ 3.80GHz (12 Cores / 24 Threads), Motherboard: MSI X570-A PRO (MS-7C37) v3.0 (H.70 BIOS), Chipset: AMD Starship/Matisse, Memory: 2 x 16GB DDR4-3200MT/s F4-3200C16-16GVK, Disk: 2000GB Seagate ST2000DM006-2DM1 + 2000GB Western Digital WD20EZAZ-00G + 500GB Samsung SSD 860 + 8002GB Seagate ST8000DM004-2CX1 + 1000GB CT1000BX500SSD1 + 512GB TS512GESD310C, Graphics: NVIDIA GeForce RTX 3060, Audio: NVIDIA GA104 HD Audio, Monitor: DELL P2314H, Network: Realtek RTL8111/8168/8411</Hardware>
+    <Software>OS: Ubuntu 23.10, Kernel: 6.5.0-9-generic (x86_64), Display Server: X Server 1.21.1.7, Compiler: GCC 13.2.0, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>ubuntu</User>
+    <TimeStamp>2024-02-20 20:56:17</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --enable-libphobos-checking=release --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=2 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=\/build\/gcc-13-XYspKM\/gcc-13-13.2.0\/debian\/tmp-nvptx\/usr,amdgcn-amdhsa=\/build\/gcc-13-XYspKM\/gcc-13-13.2.0\/debian\/tmp-gcn\/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v","cpu-scaling-governor":"acpi-cpufreq schedutil (Boost: Enabled)","cpu-microcode":"0x8701013","kernel-extra-details":"Transparent Huge Pages: madvise","security":"gather_data_sampling: Not affected + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Not affected + retbleed: Mitigation of untrained return thunk; SMT enabled with STIBP protection + spec_rstack_overflow: Mitigation of safe RET + spec_store_bypass: Mitigation of SSB disabled via prctl + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines IBPB: conditional STIBP: always-on RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-cos</Arguments>
+    <Description>Benchmark: cos</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>78.9651</Value>
+        <RawString>79.3296:78.0665:79.4992</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.29:1.32:1.29"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-exp</Arguments>
+    <Description>Benchmark: exp</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>16.9762</Value>
+        <RawString>16.5876:17.1975:17.1435</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"4.28:4.29:4.29"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-ffs</Arguments>
+    <Description>Benchmark: ffs</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>5.92080</Value>
+        <RawString>5.9317:5.89815:5.93256</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.27:1.27:1.27"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-pow</Arguments>
+    <Description>Benchmark: pow</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>40.7483</Value>
+        <RawString>40.5664:40.8588:40.8196</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.28:2.31:2.28"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-sin</Arguments>
+    <Description>Benchmark: sin</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>66.8602</Value>
+        <RawString>68.7452:65.1487:65.139:65.8667:68.1411:68.1202</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"3.42:3.34:3.34:3.34:3.42:3.42"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-log2</Arguments>
+    <Description>Benchmark: log2</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>23.4992</Value>
+        <RawString>23.8435:23.8248:22.8294</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.28:1.28:1.27"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-modf</Arguments>
+    <Description>Benchmark: modf</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>8.41561</Value>
+        <RawString>8.47115:8.34019:8.43549</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.27:1.27:1.27"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-sinh</Arguments>
+    <Description>Benchmark: sinh</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>30.4667</Value>
+        <RawString>30.1464:30.7871:30.4666</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.27:1.27:1.27"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-sqrt</Arguments>
+    <Description>Benchmark: sqrt</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>9.70027</Value>
+        <RawString>11.2249:11.2273:7.79246:7.88054:7.83738:7.88263:11.2287:11.3066:8.65943:7.7899:11.1832:11.3387:7.79124:11.1794:11.1816</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.28:1.28:1.28:1.28:1.28:1.28:1.28:1.28:1.28:1.28:1.28:1.28:1.28:1.28:1.28"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-tanh</Arguments>
+    <Description>Benchmark: tanh</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>40.0149</Value>
+        <RawString>39.951:40.1188:39.9748</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.27:1.27:1.27"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-asinh</Arguments>
+    <Description>Benchmark: asinh</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>34.4501</Value>
+        <RawString>34.1649:33.8887:35.2968</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.27:1.27:1.27"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-atanh</Arguments>
+    <Description>Benchmark: atanh</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>46.8335</Value>
+        <RawString>46.662:47.1944:46.6442</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.28:1.29:1.28"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-ffsll</Arguments>
+    <Description>Benchmark: ffsll</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>6.82929</Value>
+        <RawString>6.74198:7.01372:6.73217</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.27:1.28:1.27"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-sincos</Arguments>
+    <Description>Benchmark: sincos</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>40.3883</Value>
+        <RawString>40.0674:40.5155:40.5819</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.27:2.29:2.29"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-pthread_once</Arguments>
+    <Description>Benchmark: pthread_once</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>6.08313</Value>
+        <RawString>6.12592:6.06345:6.06003</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.28:1.28:1.28"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset slow</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Slow</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>10.41</Value>
+        <RawString>10.44:10.42:10.36</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"57.55:57.64:57.95"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset medium</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Medium</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>10.67</Value>
+        <RawString>10.68:10.67:10.67</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"56.23:56.27:56.30"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset slow</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Slow</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>34.82</Value>
+        <RawString>35.59:34.62:34.25</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"16.89:17.37:17.55"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset medium</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Medium</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>36.68</Value>
+        <RawString>35.4:36.79:37.2:37.31</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"16.98:16.34:16.17:16.12"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset veryfast</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Very Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>25.96</Value>
+        <RawString>26:25.93:25.95</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"23.12:23.18:23.17"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset superfast</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Super Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>32.77</Value>
+        <RawString>32.71:32.81:32.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"18.39:18.33:18.34"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset ultrafast</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Ultra Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>42.40</Value>
+        <RawString>42.24:42.33:42.62</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"14.25:14.22:14.13"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset veryfast</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Very Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>57.85</Value>
+        <RawString>58.39:57.92:57.24</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"10.31:10.39:10.51"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset superfast</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Super Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>123.45</Value>
+        <RawString>123.27:123.8:123.29</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"4.89:4.88:4.89"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset ultrafast</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Ultra Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>159.37</Value>
+        <RawString>162.86:156.17:159.07</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"3.71:3.87:3.80"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-gcc-1.4.0</Identifier>
+    <Title>Timed GCC Compilation</Title>
+    <AppVersion>13.2</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>1072.557</Value>
+        <RawString>1067.842:1077.005:1072.825</RawString>
+        <JSON>{"test-run-times":"1067.84:1077.01:1072.83"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-linux-kernel-1.15.0</Identifier>
+    <Title>Timed Linux Kernel Compilation</Title>
+    <AppVersion>6.1</AppVersion>
+    <Arguments>defconfig</Arguments>
+    <Description>Build: defconfig</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>85.790</Value>
+        <RawString>88.751:84.751:84.817:84.84</RawString>
+        <JSON>{"test-run-times":"88.75:84.75:84.82:84.84"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-linux-kernel-1.15.0</Identifier>
+    <Title>Timed Linux Kernel Compilation</Title>
+    <AppVersion>6.1</AppVersion>
+    <Arguments>allmodconfig</Arguments>
+    <Description>Build: allmodconfig</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>996.438</Value>
+        <RawString>997.965:995.575:995.775</RawString>
+        <JSON>{"test-run-times":"997.97:995.57:995.78"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/rust-mandel-1.0.0</Identifier>
+    <Title>Rust Mandelbrot</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Complete Serial/Parallel Mandelbrot</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>37.359</Value>
+        <RawString>37.329:37.241:37.507</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-m64 -lgcc_s -lutil -lrt -lpthread -lm -ldl -lc -pie -nodefaultlibs"},"test-run-times":"37.33:37.24:37.51"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/radiance-1.0.0</Identifier>
+    <Title>Radiance Benchmark</Title>
+    <AppVersion>5.0</AppVersion>
+    <Arguments>make all</Arguments>
+    <Description>Test: Serial</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>546.774</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"546.77"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/radiance-1.0.0</Identifier>
+    <Title>Radiance Benchmark</Title>
+    <AppVersion>5.0</AppVersion>
+    <Arguments>make smp</Arguments>
+    <Description>Test: SMP Parallel</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>176.761</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"176.76"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/redis-1.4.0</Identifier>
+    <Title>Redis</Title>
+    <AppVersion>7.0.4</AppVersion>
+    <Arguments>-t get -c 50</Arguments>
+    <Description>Test: GET - Parallel Connections: 50</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>3533197.33</Value>
+        <RawString>3474182.75:3533132.75:3592276.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"20.41:20.17:19.93"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/redis-1.4.0</Identifier>
+    <Title>Redis</Title>
+    <AppVersion>7.0.4</AppVersion>
+    <Arguments>-t set -c 50</Arguments>
+    <Description>Test: SET - Parallel Connections: 50</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>2283655</Value>
+        <RawString>2273254:2245907:2331805</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"28.01:28.28:27.46"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/redis-1.4.0</Identifier>
+    <Title>Redis</Title>
+    <AppVersion>7.0.4</AppVersion>
+    <Arguments>-t get -c 500</Arguments>
+    <Description>Test: GET - Parallel Connections: 500</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>3052530.17</Value>
+        <RawString>2978903.5:3084380.75:3094306.25</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"23.18:22.61:22.56"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/redis-1.4.0</Identifier>
+    <Title>Redis</Title>
+    <AppVersion>7.0.4</AppVersion>
+    <Arguments>-t lpop -c 50</Arguments>
+    <Description>Test: LPOP - Parallel Connections: 50</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>3317809.82</Value>
+        <RawString>3673835.25:3304751.75:3086651.25:3004320:3028705.25:3552713.75:3251456.25:3175466.5:3502444.5:3509820:3546414.25:3494855.25:3246554.25:3063968:3325191</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"19.62:21.14:22.21:22.66:22.52:20.09:21.39:21.76:20.29:20.26:20.11:20.32:21.42:22.33:21.05"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/redis-1.4.0</Identifier>
+    <Title>Redis</Title>
+    <AppVersion>7.0.4</AppVersion>
+    <Arguments>-t sadd -c 50</Arguments>
+    <Description>Test: SADD - Parallel Connections: 50</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>2575262.33</Value>
+        <RawString>2605545.75:2549765.25:2570476</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"25.20:25.63:25.47"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/redis-1.4.0</Identifier>
+    <Title>Redis</Title>
+    <AppVersion>7.0.4</AppVersion>
+    <Arguments>-t set -c 500</Arguments>
+    <Description>Test: SET - Parallel Connections: 500</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>2274211.46</Value>
+        <RawString>2238178:2351544.75:2220387.25:2217433:2319151:2298574.75</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"28.74:27.67:28.92:28.95:27.96:28.16"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/redis-1.4.0</Identifier>
+    <Title>Redis</Title>
+    <AppVersion>7.0.4</AppVersion>
+    <Arguments>-t get -c 1000</Arguments>
+    <Description>Test: GET - Parallel Connections: 1000</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>3067348.83</Value>
+        <RawString>3126814.75:2987803.75:3087428</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"22.83:23.57:23.04"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/redis-1.4.0</Identifier>
+    <Title>Redis</Title>
+    <AppVersion>7.0.4</AppVersion>
+    <Arguments>-t lpop -c 500</Arguments>
+    <Description>Test: LPOP - Parallel Connections: 500</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>3533232.07</Value>
+        <RawString>3465786:3614609.75:3443587.75:3636693.5:3625355:3486083.5:3460509</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"20.81:20.23:20.92:20.14:20.19:20.74:20.84"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/redis-1.4.0</Identifier>
+    <Title>Redis</Title>
+    <AppVersion>7.0.4</AppVersion>
+    <Arguments>-t lpush -c 50</Arguments>
+    <Description>Test: LPUSH - Parallel Connections: 50</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>2211015.42</Value>
+        <RawString>2224832.75:2174235.5:2233978</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"28.49:29.01:28.40"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/redis-1.4.0</Identifier>
+    <Title>Redis</Title>
+    <AppVersion>7.0.4</AppVersion>
+    <Arguments>-t sadd -c 500</Arguments>
+    <Description>Test: SADD - Parallel Connections: 500</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>2654395.08</Value>
+        <RawString>2582157.25:2678715:2702313</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"25.77:25.07:24.91"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/redis-1.4.0</Identifier>
+    <Title>Redis</Title>
+    <AppVersion>7.0.4</AppVersion>
+    <Arguments>-t set -c 1000</Arguments>
+    <Description>Test: SET - Parallel Connections: 1000</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>2216546.58</Value>
+        <RawString>2211922.25:2241220.75:2196496.75</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"29.47:29.18:29.65"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/redis-1.4.0</Identifier>
+    <Title>Redis</Title>
+    <AppVersion>7.0.4</AppVersion>
+    <Arguments>-t lpop -c 1000</Arguments>
+    <Description>Test: LPOP - Parallel Connections: 1000</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>1922403</Value>
+        <RawString>1890666:1930376:1946166</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"33.38:32.83:32.53"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/redis-1.4.0</Identifier>
+    <Title>Redis</Title>
+    <AppVersion>7.0.4</AppVersion>
+    <Arguments>-t lpush -c 500</Arguments>
+    <Description>Test: LPUSH - Parallel Connections: 500</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>2205499.90</Value>
+        <RawString>2249961.5:2143385.5:2147251.5:2244406.75:2242494.25</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"28.62:29.73:29.68:28.68:28.70"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/redis-1.4.0</Identifier>
+    <Title>Redis</Title>
+    <AppVersion>7.0.4</AppVersion>
+    <Arguments>-t sadd -c 1000</Arguments>
+    <Description>Test: SADD - Parallel Connections: 1000</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>2651183.69</Value>
+        <RawString>2557983:2687642.25:2684511.75:2674597.75</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"26.40:25.46:25.51:25.58"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/redis-1.4.0</Identifier>
+    <Title>Redis</Title>
+    <AppVersion>7.0.4</AppVersion>
+    <Arguments>-t lpush -c 1000</Arguments>
+    <Description>Test: LPUSH - Parallel Connections: 1000</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>2162316.75</Value>
+        <RawString>2132234.25:2216703.75:2138012.25</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"30.29:29.48:30.31"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/redis-1.1.1</Identifier>
+    <Title>Redis Memtier / Redis Benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>redis-benchmark lpush,lpop lpop</Arguments>
+    <Description>Test: LPUSH and LPOP: lpop</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>1124146.74</Value>
+        <RawString>1154334.5:1092896.25:1186521:1093135.12:1154068.12:1061683.88:1150615.62:1075153.25:1161710.12:1065870.88:1183432:1081899.88:1174398.12:1077354.12:1180498.25:1092776.75</RawString>
+        <JSON>{"install-footnote":"Redis server v=7.0.12 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=3d29ed9834115c9c","test-run-times":"62.84:62.61:63.11:63.02:63.02:62.72:62.83:62.65"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/redis-1.1.1</Identifier>
+    <Title>Redis Memtier / Redis Benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>redis-benchmark lpush,lpop lpush</Arguments>
+    <Description>Test: LPUSH and LPOP: lpush</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value>1072510.67</Value>
+        <RawString>1065870.88:1082485.38:1069175.75</RawString>
+        <JSON>{"install-footnote":"Redis server v=7.0.12 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=3d29ed9834115c9c","test-run-times":"62.81:62.87:63.00"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/redis-1.1.1</Identifier>
+    <Title>Redis Memtier / Redis Benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>memtier 0:1</Arguments>
+    <Description>Test: GET</Description>
+    <Scale></Scale>
+    <Proportion></Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"install-footnote":"Redis server v=7.0.12 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=3d29ed9834115c9c","test-run-times":"45.02:45.02:45.02","error":"The test run did not produce a result. E: sed: can't read redis-1.1.1-1708474234-3.log: No such file or directory"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/redis-1.1.1</Identifier>
+    <Title>Redis Memtier / Redis Benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>memtier 1:10</Arguments>
+    <Description>Test: MIX</Description>
+    <Scale></Scale>
+    <Proportion></Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"install-footnote":"Redis server v=7.0.12 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=3d29ed9834115c9c","test-run-times":"45.02:45.02:45.02","error":"The test run did not produce a result. E: sed: can't read redis-1.1.1-1708474387-3.log: No such file or directory"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/redis-1.1.1</Identifier>
+    <Title>Redis Memtier / Redis Benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>memtier 1:0</Arguments>
+    <Description>Test: SET</Description>
+    <Scale></Scale>
+    <Proportion></Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-opt-id-rerun</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"install-footnote":"Redis server v=7.0.12 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=3d29ed9834115c9c","test-run-times":"45.02:45.02:45.02","error":"The test run did not produce a result. E: sed: can't read redis-1.1.1-1708474540-3.log: No such file or directory"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
