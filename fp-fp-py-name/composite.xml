@@ -1,0 +1,3818 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>fp-fp-py-name</Title>
+    <LastModified>2024-02-25 03:32:52</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.4</TestClient>
+    <Description>AMD Ryzen 9 3900X 12-Core testing with a MSI X570-A PRO (MS-7C37) v3.0 (H.70 BIOS) and NVIDIA GeForce RTX 3060 on Ubuntu 23.10 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>fp-fp-py-id</Identifier>
+    <Hardware>Processor: AMD Ryzen 9 3900X 12-Core @ 3.80GHz (12 Cores / 24 Threads), Motherboard: MSI X570-A PRO (MS-7C37) v3.0 (H.70 BIOS), Chipset: AMD Starship/Matisse, Memory: 2 x 16GB DDR4-3200MT/s F4-3200C16-16GVK, Disk: 2000GB Seagate ST2000DM006-2DM1 + 2000GB Western Digital WD20EZAZ-00G + 500GB Samsung SSD 860 + 8002GB Seagate ST8000DM004-2CX1 + 1000GB CT1000BX500SSD1 + 512GB TS512GESD310C, Graphics: NVIDIA GeForce RTX 3060, Audio: NVIDIA GA104 HD Audio, Monitor: DELL P2314H, Network: Realtek RTL8111/8168/8411</Hardware>
+    <Software>OS: Ubuntu 23.10, Kernel: 6.5.0-9-generic (x86_64), Display Server: X Server 1.21.1.7, Compiler: GCC 13.2.0 + CUDA 12.2, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>ubuntu</User>
+    <TimeStamp>2024-02-24 09:36:33</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --enable-libphobos-checking=release --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=2 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=\/build\/gcc-13-b9QCDx\/gcc-13-13.2.0\/debian\/tmp-nvptx\/usr,amdgcn-amdhsa=\/build\/gcc-13-b9QCDx\/gcc-13-13.2.0\/debian\/tmp-gcn\/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v","cpu-scaling-governor":"acpi-cpufreq schedutil (Boost: Enabled)","cpu-microcode":"0x8701013","kernel-extra-details":"Transparent Huge Pages: madvise","environment-variables":"CXXFLAGS=-fno-omit-frame-pointer QMAKE_CFLAGS=-fno-omit-frame-pointer CFLAGS=-fno-omit-frame-pointer CFLAGS_OVERRIDE=-fno-omit-frame-pointer QMAKE_CXXFLAGS=-fno-omit-frame-pointer FFLAGS=-fno-omit-frame-pointer","python":"Python 3.11.6","security":"gather_data_sampling: Not affected + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Not affected + retbleed: Mitigation of untrained return thunk; SMT enabled with STIBP protection + spec_rstack_overflow: Mitigation of safe RET + spec_store_bypass: Mitigation of SSB disabled via prctl + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines IBPB: conditional STIBP: always-on RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/numpy-1.2.1</Identifier>
+    <Title>Numpy Benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description></Description>
+    <Scale>Score</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>428.61</Value>
+        <RawString>427.08:430.2:428.55</RawString>
+        <JSON>{"test-run-times":"177.06:180.46:181.42"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 1 resnet50</Arguments>
+    <Description>Device: CPU - Batch Size: 1 - Model: ResNet-50</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"3.74:2.85:2.84","error":"The test quit with a non-zero exit status. E: ValueError: invalid literal for int() with base 10: \"NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.\""}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 1 resnet152</Arguments>
+    <Description>Device: CPU - Batch Size: 1 - Model: ResNet-152</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"3.17:3.20:3.20","error":"The test quit with a non-zero exit status. E: ValueError: invalid literal for int() with base 10: \"NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.\""}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 16 resnet50</Arguments>
+    <Description>Device: CPU - Batch Size: 16 - Model: ResNet-50</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"2.82:2.85:2.84","error":"The test quit with a non-zero exit status. E: ValueError: invalid literal for int() with base 10: \"NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.\""}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 32 resnet50</Arguments>
+    <Description>Device: CPU - Batch Size: 32 - Model: ResNet-50</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"2.84:2.86:2.85","error":"The test quit with a non-zero exit status. E: ValueError: invalid literal for int() with base 10: \"NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.\""}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 64 resnet50</Arguments>
+    <Description>Device: CPU - Batch Size: 64 - Model: ResNet-50</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"2.83:2.84:2.84","error":"The test quit with a non-zero exit status. E: ValueError: invalid literal for int() with base 10: \"NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.\""}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 16 resnet152</Arguments>
+    <Description>Device: CPU - Batch Size: 16 - Model: ResNet-152</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"3.20:3.18:3.19","error":"The test quit with a non-zero exit status. E: ValueError: invalid literal for int() with base 10: \"NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.\""}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 256 resnet50</Arguments>
+    <Description>Device: CPU - Batch Size: 256 - Model: ResNet-50</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"2.86:2.87:2.84","error":"The test quit with a non-zero exit status. E: ValueError: invalid literal for int() with base 10: \"NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.\""}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 32 resnet152</Arguments>
+    <Description>Device: CPU - Batch Size: 32 - Model: ResNet-152</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"3.17:3.17:3.19","error":"The test quit with a non-zero exit status. E: ValueError: invalid literal for int() with base 10: \"NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.\""}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 512 resnet50</Arguments>
+    <Description>Device: CPU - Batch Size: 512 - Model: ResNet-50</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"2.85:2.83:2.81","error":"The test quit with a non-zero exit status. E: ValueError: invalid literal for int() with base 10: \"NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.\""}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 64 resnet152</Arguments>
+    <Description>Device: CPU - Batch Size: 64 - Model: ResNet-152</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"3.21:3.19:3.18","error":"The test quit with a non-zero exit status. E: ValueError: invalid literal for int() with base 10: \"NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.\""}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 256 resnet152</Arguments>
+    <Description>Device: CPU - Batch Size: 256 - Model: ResNet-152</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"3.33:3.17:3.20","error":"The test quit with a non-zero exit status. E: ValueError: invalid literal for int() with base 10: \"NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.\""}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 512 resnet152</Arguments>
+    <Description>Device: CPU - Batch Size: 512 - Model: ResNet-152</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"3.18:3.16:3.15","error":"The test quit with a non-zero exit status. E: ValueError: invalid literal for int() with base 10: \"NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.\""}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 1 efficientnet_v2_l</Arguments>
+    <Description>Device: CPU - Batch Size: 1 - Model: Efficientnet_v2_l</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"3.85:3.86:3.82","error":"The test quit with a non-zero exit status. E: ValueError: invalid literal for int() with base 10: \"NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.\""}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 16 efficientnet_v2_l</Arguments>
+    <Description>Device: CPU - Batch Size: 16 - Model: Efficientnet_v2_l</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"3.82:3.82:3.81","error":"The test quit with a non-zero exit status. E: ValueError: invalid literal for int() with base 10: \"NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.\""}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 32 efficientnet_v2_l</Arguments>
+    <Description>Device: CPU - Batch Size: 32 - Model: Efficientnet_v2_l</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"3.82:3.82:3.82","error":"The test quit with a non-zero exit status. E: ValueError: invalid literal for int() with base 10: \"NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.\""}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 64 efficientnet_v2_l</Arguments>
+    <Description>Device: CPU - Batch Size: 64 - Model: Efficientnet_v2_l</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"3.82:3.81:3.81","error":"The test quit with a non-zero exit status. E: ValueError: invalid literal for int() with base 10: \"NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.\""}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 256 efficientnet_v2_l</Arguments>
+    <Description>Device: CPU - Batch Size: 256 - Model: Efficientnet_v2_l</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"3.81:3.84:3.83","error":"The test quit with a non-zero exit status. E: ValueError: invalid literal for int() with base 10: \"NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.\""}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 512 efficientnet_v2_l</Arguments>
+    <Description>Device: CPU - Batch Size: 512 - Model: Efficientnet_v2_l</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"3.81:3.82:3.81","error":"The test quit with a non-zero exit status. E: ValueError: invalid literal for int() with base 10: \"NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.\""}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 1 resnet50</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 1 - Model: ResNet-50</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"1.76:1.74:1.75","error":"The test quit with a non-zero exit status. E: RuntimeError: No CUDA GPUs are available"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 1 resnet152</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 1 - Model: ResNet-152</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"2.10:2.08:2.09","error":"The test quit with a non-zero exit status. E: RuntimeError: No CUDA GPUs are available"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 16 resnet50</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 16 - Model: ResNet-50</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"1.75:1.75:1.74","error":"The test quit with a non-zero exit status. E: RuntimeError: No CUDA GPUs are available"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 32 resnet50</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 32 - Model: ResNet-50</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"1.74:1.75:1.74","error":"The test quit with a non-zero exit status. E: RuntimeError: No CUDA GPUs are available"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 64 resnet50</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 64 - Model: ResNet-50</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"1.74:1.75:1.75","error":"The test quit with a non-zero exit status. E: RuntimeError: No CUDA GPUs are available"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 16 resnet152</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 16 - Model: ResNet-152</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"2.12:2.12:2.09","error":"The test quit with a non-zero exit status. E: RuntimeError: No CUDA GPUs are available"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 256 resnet50</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 256 - Model: ResNet-50</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"1.74:1.73:1.74","error":"The test quit with a non-zero exit status. E: RuntimeError: No CUDA GPUs are available"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 32 resnet152</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 32 - Model: ResNet-152</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"2.09:2.09:2.09","error":"The test quit with a non-zero exit status. E: RuntimeError: No CUDA GPUs are available"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 512 resnet50</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 512 - Model: ResNet-50</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"1.76:1.74:1.74","error":"The test quit with a non-zero exit status. E: RuntimeError: No CUDA GPUs are available"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 64 resnet152</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 64 - Model: ResNet-152</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"2.08:2.07:2.06","error":"The test quit with a non-zero exit status. E: RuntimeError: No CUDA GPUs are available"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 256 resnet152</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 256 - Model: ResNet-152</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"2.07:2.08:2.07","error":"The test quit with a non-zero exit status. E: RuntimeError: No CUDA GPUs are available"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 512 resnet152</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 512 - Model: ResNet-152</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"2.08:2.08:2.07","error":"The test quit with a non-zero exit status. E: RuntimeError: No CUDA GPUs are available"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 1 efficientnet_v2_l</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 1 - Model: Efficientnet_v2_l</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"2.70:2.70:2.71","error":"The test quit with a non-zero exit status. E: RuntimeError: No CUDA GPUs are available"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 16 efficientnet_v2_l</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 16 - Model: Efficientnet_v2_l</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"2.70:2.63:2.78","error":"The test quit with a non-zero exit status. E: RuntimeError: No CUDA GPUs are available"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 32 efficientnet_v2_l</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 32 - Model: Efficientnet_v2_l</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"2.70:2.69:2.71","error":"The test quit with a non-zero exit status. E: RuntimeError: No CUDA GPUs are available"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 64 efficientnet_v2_l</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 64 - Model: Efficientnet_v2_l</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"2.71:2.70:2.73","error":"The test quit with a non-zero exit status. E: RuntimeError: No CUDA GPUs are available"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 256 efficientnet_v2_l</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 256 - Model: Efficientnet_v2_l</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"2.62:2.70:2.72","error":"The test quit with a non-zero exit status. E: RuntimeError: No CUDA GPUs are available"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 512 efficientnet_v2_l</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 512 - Model: Efficientnet_v2_l</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"2.78:2.72:2.72","error":"The test quit with a non-zero exit status. E: RuntimeError: No CUDA GPUs are available"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pybench-1.1.3</Identifier>
+    <Title>PyBench</Title>
+    <AppVersion>2018-02-16</AppVersion>
+    <Arguments></Arguments>
+    <Description>Total For Average Test Times</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>790</Value>
+        <RawString>792:791:788</RawString>
+        <JSON>{"test-run-times":"18.50:18.69:18.43"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>go</Arguments>
+    <Description>Benchmark: go</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>131</Value>
+        <RawString>132:131:131</RawString>
+        <JSON>{"test-run-times":"50.26:24.07:24.06"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>2to3</Arguments>
+    <Description>Benchmark: 2to3</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>224</Value>
+        <RawString>223:224:224</RawString>
+        <JSON>{"test-run-times":"41.65:41.76:41.75"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>chaos</Arguments>
+    <Description>Benchmark: chaos</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>63.6</Value>
+        <RawString>63.2:63.6:63.9</RawString>
+        <JSON>{"test-run-times":"24.03:24.15:24.22"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>float</Arguments>
+    <Description>Benchmark: float</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>66.9</Value>
+        <RawString>67.1:66.8:66.8</RawString>
+        <JSON>{"test-run-times":"24.74:24.66:24.68"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>nbody</Arguments>
+    <Description>Benchmark: nbody</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>77.1</Value>
+        <RawString>77:77.2:77</RawString>
+        <JSON>{"test-run-times":"27.91:27.95:27.88"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>pathlib</Arguments>
+    <Description>Benchmark: pathlib</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>20.2</Value>
+        <RawString>20.2:20.2:20.2</RawString>
+        <JSON>{"test-run-times":"35.61:34.92:34.84"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>raytrace</Arguments>
+    <Description>Benchmark: raytrace</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>274</Value>
+        <RawString>274:274:273</RawString>
+        <JSON>{"test-run-times":"47.56:47.53:47.31"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>json_loads</Arguments>
+    <Description>Benchmark: json_loads</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>20.8</Value>
+        <RawString>20.8:20.8:20.7</RawString>
+        <JSON>{"test-run-times":"20.02:20.05:19.94"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>crypto_pyaes</Arguments>
+    <Description>Benchmark: crypto_pyaes</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>66.6</Value>
+        <RawString>66.6:66.6:66.6</RawString>
+        <JSON>{"test-run-times":"24.50:24.56:24.54"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>regex_compile</Arguments>
+    <Description>Benchmark: regex_compile</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>120</Value>
+        <RawString>120:119:120</RawString>
+        <JSON>{"test-run-times":"24.66:24.65:24.67"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>python_startup</Arguments>
+    <Description>Benchmark: python_startup</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>7.64</Value>
+        <RawString>7.63:7.63:7.65</RawString>
+        <JSON>{"test-run-times":"64.91:64.90:65.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>django_template</Arguments>
+    <Description>Benchmark: django_template</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>29.5</Value>
+        <RawString>29.6:29.5:29.4</RawString>
+        <JSON>{"test-run-times":"27.51:27.48:27.37"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>pickle_pure_python</Arguments>
+    <Description>Benchmark: pickle_pure_python</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>263</Value>
+        <RawString>264:262:263</RawString>
+        <JSON>{"test-run-times":"30.47:30.30:30.41"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b jax -s 16384 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: JAX - Project Size: 16384 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.10:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b jax -s 16384 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: JAX - Project Size: 16384 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b jax -s 65536 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: JAX - Project Size: 65536 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b jax -s 65536 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: JAX - Project Size: 65536 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b jax -s 16384 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: JAX - Project Size: 16384 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.10:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b jax -s 16384 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: JAX - Project Size: 16384 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b jax -s 65536 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: JAX - Project Size: 65536 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b jax -s 65536 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: JAX - Project Size: 65536 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b jax -s 262144 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: JAX - Project Size: 262144 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.10:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b jax -s 262144 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: JAX - Project Size: 262144 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b jax -s 262144 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: JAX - Project Size: 262144 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b jax -s 262144 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: JAX - Project Size: 262144 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b jax -s 1048576 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: JAX - Project Size: 1048576 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b jax -s 1048576 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: JAX - Project Size: 1048576 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b jax -s 4194304 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: JAX - Project Size: 4194304 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.10","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b jax -s 4194304 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: JAX - Project Size: 4194304 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.10:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numba -s 16384 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Numba - Project Size: 16384 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numba -s 16384 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Numba - Project Size: 16384 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numba -s 65536 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Numba - Project Size: 65536 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.10","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numba -s 65536 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Numba - Project Size: 65536 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numpy -s 16384 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Numpy - Project Size: 16384 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>0.003</Value>
+        <RawString>0.003:0.003:0.003</RawString>
+        <JSON>{"test-run-times":"3.00:3.01:3.00"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numpy -s 16384 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Numpy - Project Size: 16384 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>0.008</Value>
+        <RawString>0.008:0.008:0.008</RawString>
+        <JSON>{"test-run-times":"14.12:12.75:12.56"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numpy -s 65536 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Numpy - Project Size: 65536 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>0.015</Value>
+        <RawString>0.015:0.015:0.015</RawString>
+        <JSON>{"test-run-times":"2.15:2.13:2.13"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numpy -s 65536 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Numpy - Project Size: 65536 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>0.032</Value>
+        <RawString>0.032:0.032:0.032</RawString>
+        <JSON>{"test-run-times":"5.97:5.99:5.98"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b jax -s 1048576 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: JAX - Project Size: 1048576 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b jax -s 1048576 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: JAX - Project Size: 1048576 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b jax -s 4194304 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: JAX - Project Size: 4194304 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.10:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b jax -s 4194304 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: JAX - Project Size: 4194304 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numba -s 16384 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Numba - Project Size: 16384 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numba -s 16384 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Numba - Project Size: 16384 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numba -s 65536 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Numba - Project Size: 65536 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numba -s 65536 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Numba - Project Size: 65536 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numpy -s 16384 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Numpy - Project Size: 16384 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>0.002</Value>
+        <RawString>0.003:0.003:0.002:0.002:0.002:0.002:0.002:0.002:0.002:0.003:0.002:0.002:0.003:0.002:0.002</RawString>
+        <JSON>{"test-run-times":"2.95:2.97:2.92:2.92:2.91:2.93:2.89:2.89:2.90:2.96:2.89:2.91:2.98:2.92:2.92"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numpy -s 16384 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Numpy - Project Size: 16384 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>0.008</Value>
+        <RawString>0.008:0.008:0.008</RawString>
+        <JSON>{"test-run-times":"12.51:12.46:12.59"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numpy -s 65536 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Numpy - Project Size: 65536 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>0.015</Value>
+        <RawString>0.015:0.015:0.015</RawString>
+        <JSON>{"test-run-times":"2.15:2.11:2.13"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numpy -s 65536 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Numpy - Project Size: 65536 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>0.033</Value>
+        <RawString>0.033:0.033:0.033</RawString>
+        <JSON>{"test-run-times":"6.22:6.18:6.19"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b aesara -s 16384 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Aesara - Project Size: 16384 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b aesara -s 16384 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Aesara - Project Size: 16384 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b aesara -s 65536 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Aesara - Project Size: 65536 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b aesara -s 65536 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Aesara - Project Size: 65536 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numba -s 262144 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Numba - Project Size: 262144 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.10:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numba -s 262144 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Numba - Project Size: 262144 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numpy -s 262144 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Numpy - Project Size: 262144 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>0.058</Value>
+        <RawString>0.058:0.058:0.058</RawString>
+        <JSON>{"test-run-times":"7.95:7.98:7.93"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numpy -s 262144 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Numpy - Project Size: 262144 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>0.132</Value>
+        <RawString>0.132:0.132:0.132</RawString>
+        <JSON>{"test-run-times":"23.56:23.49:23.48"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b aesara -s 16384 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Aesara - Project Size: 16384 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b aesara -s 16384 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Aesara - Project Size: 16384 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b aesara -s 65536 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Aesara - Project Size: 65536 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b aesara -s 65536 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Aesara - Project Size: 65536 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numba -s 262144 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Numba - Project Size: 262144 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numba -s 262144 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Numba - Project Size: 262144 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numpy -s 262144 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Numpy - Project Size: 262144 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>0.058</Value>
+        <RawString>0.058:0.058:0.058</RawString>
+        <JSON>{"test-run-times":"7.97:7.95:7.97"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numpy -s 262144 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Numpy - Project Size: 262144 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>0.128</Value>
+        <RawString>0.129:0.129:0.125</RawString>
+        <JSON>{"test-run-times":"22.90:22.89:22.32"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b aesara -s 262144 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Aesara - Project Size: 262144 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b aesara -s 262144 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Aesara - Project Size: 262144 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.10:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numba -s 1048576 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Numba - Project Size: 1048576 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numba -s 1048576 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Numba - Project Size: 1048576 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numba -s 4194304 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Numba - Project Size: 4194304 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numba -s 4194304 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Numba - Project Size: 4194304 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numpy -s 1048576 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Numpy - Project Size: 1048576 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>0.262</Value>
+        <RawString>0.262:0.262:0.261</RawString>
+        <JSON>{"test-run-times":"9.57:9.59:9.54"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numpy -s 1048576 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Numpy - Project Size: 1048576 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>0.618</Value>
+        <RawString>0.618:0.618:0.617</RawString>
+        <JSON>{"test-run-times":"28.00:27.97:27.97"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numpy -s 4194304 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Numpy - Project Size: 4194304 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>1.405</Value>
+        <RawString>1.402:1.413:1.401</RawString>
+        <JSON>{"test-run-times":"48.39:48.77:48.33"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numpy -s 4194304 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Numpy - Project Size: 4194304 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>2.626</Value>
+        <RawString>2.624:2.629:2.625</RawString>
+        <JSON>{"test-run-times":"117.61:117.79:117.73"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b pytorch -s 16384 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: PyTorch - Project Size: 16384 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b pytorch -s 16384 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: PyTorch - Project Size: 16384 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b pytorch -s 65536 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: PyTorch - Project Size: 65536 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b pytorch -s 65536 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: PyTorch - Project Size: 65536 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b aesara -s 262144 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Aesara - Project Size: 262144 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b aesara -s 262144 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Aesara - Project Size: 262144 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numba -s 1048576 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Numba - Project Size: 1048576 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numba -s 1048576 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Numba - Project Size: 1048576 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numba -s 4194304 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Numba - Project Size: 4194304 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numba -s 4194304 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Numba - Project Size: 4194304 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numpy -s 1048576 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Numpy - Project Size: 1048576 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>0.260</Value>
+        <RawString>0.259:0.261:0.259</RawString>
+        <JSON>{"test-run-times":"9.62:9.55:9.45"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numpy -s 1048576 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Numpy - Project Size: 1048576 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>0.622</Value>
+        <RawString>0.613:0.618:0.635</RawString>
+        <JSON>{"test-run-times":"27.75:28.01:28.86"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numpy -s 4194304 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Numpy - Project Size: 4194304 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>1.411</Value>
+        <RawString>1.413:1.409:1.411</RawString>
+        <JSON>{"test-run-times":"48.77:48.64:48.68"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numpy -s 4194304 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Numpy - Project Size: 4194304 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>2.620</Value>
+        <RawString>2.622:2.629:2.608</RawString>
+        <JSON>{"test-run-times":"117.64:117.85:116.85"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b pytorch -s 16384 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: PyTorch - Project Size: 16384 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b pytorch -s 16384 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: PyTorch - Project Size: 16384 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b pytorch -s 65536 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: PyTorch - Project Size: 65536 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b pytorch -s 65536 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: PyTorch - Project Size: 65536 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.10:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b aesara -s 1048576 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Aesara - Project Size: 1048576 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b aesara -s 1048576 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Aesara - Project Size: 1048576 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b aesara -s 4194304 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Aesara - Project Size: 4194304 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b aesara -s 4194304 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Aesara - Project Size: 4194304 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.10:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b pytorch -s 262144 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: PyTorch - Project Size: 262144 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b pytorch -s 262144 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: PyTorch - Project Size: 262144 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b aesara -s 1048576 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Aesara - Project Size: 1048576 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.10","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b aesara -s 1048576 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Aesara - Project Size: 1048576 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b aesara -s 4194304 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Aesara - Project Size: 4194304 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b aesara -s 4194304 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Aesara - Project Size: 4194304 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.10:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b pytorch -s 262144 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: PyTorch - Project Size: 262144 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b pytorch -s 262144 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: PyTorch - Project Size: 262144 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b pytorch -s 1048576 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: PyTorch - Project Size: 1048576 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b pytorch -s 1048576 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: PyTorch - Project Size: 1048576 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b pytorch -s 4194304 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: PyTorch - Project Size: 4194304 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.10","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b pytorch -s 4194304 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: PyTorch - Project Size: 4194304 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b pytorch -s 1048576 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: PyTorch - Project Size: 1048576 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b pytorch -s 1048576 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: PyTorch - Project Size: 1048576 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b pytorch -s 4194304 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: PyTorch - Project Size: 4194304 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b pytorch -s 4194304 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: PyTorch - Project Size: 4194304 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b tensorflow -s 16384 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: TensorFlow - Project Size: 16384 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b tensorflow -s 16384 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: TensorFlow - Project Size: 16384 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b tensorflow -s 65536 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: TensorFlow - Project Size: 65536 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b tensorflow -s 65536 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: TensorFlow - Project Size: 65536 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b tensorflow -s 16384 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: TensorFlow - Project Size: 16384 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b tensorflow -s 16384 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: TensorFlow - Project Size: 16384 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b tensorflow -s 65536 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: TensorFlow - Project Size: 65536 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b tensorflow -s 65536 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: TensorFlow - Project Size: 65536 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.11:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b tensorflow -s 262144 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: TensorFlow - Project Size: 262144 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b tensorflow -s 262144 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: TensorFlow - Project Size: 262144 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b tensorflow -s 262144 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: TensorFlow - Project Size: 262144 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b tensorflow -s 262144 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: TensorFlow - Project Size: 262144 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b tensorflow -s 1048576 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: TensorFlow - Project Size: 1048576 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b tensorflow -s 1048576 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: TensorFlow - Project Size: 1048576 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b tensorflow -s 4194304 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: TensorFlow - Project Size: 4194304 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b tensorflow -s 4194304 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: TensorFlow - Project Size: 4194304 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.10:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b tensorflow -s 1048576 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: TensorFlow - Project Size: 1048576 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b tensorflow -s 1048576 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: TensorFlow - Project Size: 1048576 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b tensorflow -s 4194304 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: TensorFlow - Project Size: 4194304 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b tensorflow -s 4194304 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: TensorFlow - Project Size: 4194304 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>glm.py</Arguments>
+    <Description>Benchmark: GLM</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>295.096</Value>
+        <RawString>294.202:297.23:293.856</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"296.02:294.20:297.23:293.86"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>saga.py</Arguments>
+    <Description>Benchmark: SAGA</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>873.822</Value>
+        <RawString>862.698:878.24:880.529</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"5089.83:862.70:878.24:880.53"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>tree.py</Arguments>
+    <Description>Benchmark: Tree</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>52.969</Value>
+        <RawString>53.86:52.192:56.043:52.627:52.798:53.754:56.868:52.384:52.554:52.915:49.513:53.687:50.689:51.175:53.477</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"52.24:53.86:52.19:56.04:52.63:52.80:53.75:56.87:52.38:52.55:52.92:49.51:53.69:50.69:51.17:53.48"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>lasso.py</Arguments>
+    <Description>Benchmark: Lasso</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>509.537</Value>
+        <RawString>505.224:516.468:506.918</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"508.22:505.22:516.47:506.92"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>glmnet.py</Arguments>
+    <Description>Benchmark: Glmnet</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"0.39:0.40:0.39","error":"The test quit with a non-zero exit status. E: ModuleNotFoundError: No module named 'glmnet'"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>sparsify.py</Arguments>
+    <Description>Benchmark: Sparsify</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>125.442</Value>
+        <RawString>129.113:123.121:122.638:127.775:124.564</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"128.09:129.11:123.12:122.64:127.77:124.56"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>plot_ward.py</Arguments>
+    <Description>Benchmark: Plot Ward</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>57.545</Value>
+        <RawString>57.813:57.712:57.111</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"55.73:57.81:57.71:57.11"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>mnist.py</Arguments>
+    <Description>Benchmark: MNIST Dataset</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>65.877</Value>
+        <RawString>65.605:66.793:65.234</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"84.75:65.60:66.79:65.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>plot_neighbors.py</Arguments>
+    <Description>Benchmark: Plot Neighbors</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>142.451</Value>
+        <RawString>142.907:141.279:143.167</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"141.61:142.91:141.28:143.17"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>sgd_regression.py</Arguments>
+    <Description>Benchmark: SGD Regression</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>107.527</Value>
+        <RawString>107.925:106.55:108.106</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"107.78:107.92:106.55:108.11"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>online_ocsvm.py</Arguments>
+    <Description>Benchmark: SGDOneClassSVM</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>382.611</Value>
+        <RawString>384.248:400.64:373.195:378.829:374.757:386.142:380.465</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"527.97:384.25:400.64:373.19:378.83:374.76:386.14:380.47"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>plot_lasso_path.py</Arguments>
+    <Description>Benchmark: Plot Lasso Path</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"0.62:0.62:0.60","error":"The test quit with a non-zero exit status. E: AttributeError: type object 'Axis' has no attribute '_set_ticklabels'. Did you mean: 'set_ticklabels'?"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>isolation_forest.py</Arguments>
+    <Description>Benchmark: Isolation Forest</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>336.372</Value>
+        <RawString>744.546:282.282:282.636:285.589:282.527:291.067:282.379:290.996:285.328</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"766.06:2246.81:744.55:282.28:282.64:285.59:282.53:291.07:282.38:291.00:285.33"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>plot_fastkmeans.py</Arguments>
+    <Description>Benchmark: Plot Fast KMeans</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"0.61:0.63:0.61","error":"The test quit with a non-zero exit status. E: AttributeError: type object 'Axis' has no attribute '_set_ticklabels'. Did you mean: 'set_ticklabels'?"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>text_vectorizers.py</Arguments>
+    <Description>Benchmark: Text Vectorizers</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>63.875</Value>
+        <RawString>63.817:64.031:63.777</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"77.34:63.82:64.03:63.78"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>plot_hierarchical.py</Arguments>
+    <Description>Benchmark: Plot Hierarchical</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>208.391</Value>
+        <RawString>209.183:208.232:207.757</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"206.74:209.18:208.23:207.76"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>plot_omp_lars.py</Arguments>
+    <Description>Benchmark: Plot OMP vs. LARS</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>92.582</Value>
+        <RawString>93.361:92.545:91.841</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"91.80:93.36:92.55:91.84"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>feature_expansions.py</Arguments>
+    <Description>Benchmark: Feature Expansions</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>133.092</Value>
+        <RawString>133.711:130.74:134.824</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"134.01:133.71:130.74:134.82"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>lof.py</Arguments>
+    <Description>Benchmark: LocalOutlierFactor</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>56.754</Value>
+        <RawString>59.105:59.076:53.588:59.014:53.786:54.111:53.912:59.309:59.276:53.624:59.735:59.268:59.843:53.881:53.787</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"77.98:59.10:59.08:53.59:59.01:53.79:54.11:53.91:59.31:59.28:53.62:59.74:59.27:59.84:53.88:53.79"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>tsne_mnist.py</Arguments>
+    <Description>Benchmark: TSNE MNIST Dataset</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>236.786</Value>
+        <RawString>235.699:237.346:237.314</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"226.43:235.70:237.35:237.31"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>isotonic.py --iterations 100 --log_min_problem_size 1 --log_max_problem_size 10 --dataset logistic</Arguments>
+    <Description>Benchmark: Isotonic / Logistic</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>1471.834</Value>
+        <RawString>1488.441:1443.03:1484.032</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"1480.18:1488.44:1443.03:1484.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>plot_incremental_pca.py</Arguments>
+    <Description>Benchmark: Plot Incremental PCA</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>31.057</Value>
+        <RawString>31.112:30.924:31.135</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"556.46:31.11:30.92:31.14"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>hist_gradient_boosting.py</Arguments>
+    <Description>Benchmark: Hist Gradient Boosting</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>111.255</Value>
+        <RawString>111.713:110.847:111.206</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"111.41:111.71:110.85:111.21"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>plot_parallel_pairwise.py</Arguments>
+    <Description>Benchmark: Plot Parallel Pairwise</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"0.81:0.79:0.82","error":"The test quit with a non-zero exit status. E: numpy.core._exceptions._ArrayMemoryError: Unable to allocate 74.5 GiB for an array with shape (100000, 100000) and data type float64"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>isotonic.py --iterations 100 --log_min_problem_size 1 --log_max_problem_size 10 --dataset pathological</Arguments>
+    <Description>Benchmark: Isotonic / Pathological</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"531.07:517.80:516.97","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>rcv1_logreg_convergence.py</Arguments>
+    <Description>Benchmark: RCV1 Logreg Convergencet</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"12.51:12.01:11.79","error":"The test quit with a non-zero exit status. E: IndexError: list index out of range"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>sample_without_replacement.py</Arguments>
+    <Description>Benchmark: Sample Without Replacement</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>161.460</Value>
+        <RawString>160.84:160.84:162.699</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"163.51:160.84:160.84:162.70"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>covertype.py</Arguments>
+    <Description>Benchmark: Covertype Dataset Benchmark</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>370.694</Value>
+        <RawString>371.064:376.39:364.628</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"381.93:371.06:376.39:364.63"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>hist_gradient_boosting_adult.py</Arguments>
+    <Description>Benchmark: Hist Gradient Boosting Adult</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>105.647</Value>
+        <RawString>106.76:105.455:104.726</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"111.51:106.76:105.45:104.73"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>isotonic.py --iterations 100 --log_min_problem_size 1 --log_max_problem_size 10 --dataset perturbed_logarithm</Arguments>
+    <Description>Benchmark: Isotonic / Perturbed Logarithm</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>1828.300</Value>
+        <RawString>1804.327:1859.819:1820.753</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"1866.77:1804.33:1859.82:1820.75"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>hist_gradient_boosting_threading.py</Arguments>
+    <Description>Benchmark: Hist Gradient Boosting Threading</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>110.374</Value>
+        <RawString>110.067:110.496:110.558</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"110.27:110.07:110.50:110.56"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>plot_svd.py</Arguments>
+    <Description>Benchmark: Plot Singular Value Decomposition</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"0.62:0.59:0.61","error":"The test quit with a non-zero exit status. E: AttributeError: type object 'Axis' has no attribute '_set_ticklabels'. Did you mean: 'set_ticklabels'?"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>hist_gradient_boosting_higgsboson.py</Arguments>
+    <Description>Benchmark: Hist Gradient Boosting Higgs Boson</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>60.454</Value>
+        <RawString>60.493:60.954:59.916</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"5729.52:60.49:60.95:59.92"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>20newsgroups.py -e logistic_regression</Arguments>
+    <Description>Benchmark: 20 Newsgroups / Logistic Regression</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>41.728</Value>
+        <RawString>41.755:41.303:42.126</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"48.97:41.75:41.30:42.13"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>plot_polynomial_kernel_approximation.py</Arguments>
+    <Description>Benchmark: Plot Polynomial Kernel Approximation</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>150.376</Value>
+        <RawString>151.415:147.986:151.728</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"149.23:151.41:147.99:151.73"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>plot_nmf.py</Arguments>
+    <Description>Benchmark: Plot Non-Negative Matrix Factorization</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"59.53:58.95:60.07","error":"The test quit with a non-zero exit status. E: KeyError: &lt;Axes: &gt;"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>hist_gradient_boosting_categorical_only.py</Arguments>
+    <Description>Benchmark: Hist Gradient Boosting Categorical Only</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>18.865</Value>
+        <RawString>18.73:18.762:19.103</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"18.85:18.73:18.76:19.10"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>kernel_pca_solvers_time_vs_n_samples.py</Arguments>
+    <Description>Benchmark: Kernel PCA Solvers / Time vs. N Samples</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>72.909</Value>
+        <RawString>72.617:73.155:72.954</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"72.27:72.62:73.16:72.95"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>kernel_pca_solvers_time_vs_n_components.py</Arguments>
+    <Description>Benchmark: Kernel PCA Solvers / Time vs. N Components</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>37.889</Value>
+        <RawString>38.395:37.201:38.072</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"37.72:38.39:37.20:38.07"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>random_projections.py --n-times 100</Arguments>
+    <Description>Benchmark: Sparse Random Projections / 100 Iterations</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>fp-fp-py-id</Identifier>
+        <Value>631.071</Value>
+        <RawString>647.722:628.747:613.573:634.241</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"627.97:647.72:628.75:613.57:634.24"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

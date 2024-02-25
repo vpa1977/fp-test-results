@@ -1,0 +1,265 @@
+#####
+fp-fp-py-id - Run 1
+2024-02-24 10:03:47
+#####
+Creating the virtual environment venv/cpython3.11-75be9883f070
+Execute: /usr/bin/python3.11 -m venv --without-pip venv/cpython3.11-75be9883f070
+Execute: venv/cpython3.11-75be9883f070/bin/python -c 'import sys; print(sys.hexversion)'
+Python hexversion: 30b06f0
+Execute: venv/cpython3.11-75be9883f070/bin/python -m ensurepip --verbose
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/venv/cpython3.11-75be9883f070/bin/python: No module named ensurepip
+Command venv/cpython3.11-75be9883f070/bin/python -m ensurepip --verbose failed with exit code 1
+Download https://bootstrap.pypa.io/get-pip.py into venv/get-pip.py
+Execute: venv/cpython3.11-75be9883f070/bin/python -u venv/get-pip.py
+Collecting pip
+  Downloading pip-24.0-py3-none-any.whl.metadata (3.6 kB)
+Collecting setuptools
+  Downloading setuptools-69.1.1-py3-none-any.whl.metadata (6.2 kB)
+Collecting wheel
+  Downloading wheel-0.42.0-py3-none-any.whl.metadata (2.2 kB)
+Downloading pip-24.0-py3-none-any.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 5.7 MB/s eta 0:00:00
+Downloading setuptools-69.1.1-py3-none-any.whl (819 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 819.3/819.3 kB 5.2 MB/s eta 0:00:00
+Downloading wheel-0.42.0-py3-none-any.whl (65 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.4/65.4 kB 8.8 MB/s eta 0:00:00
+Installing collected packages: wheel, setuptools, pip
+Successfully installed pip-24.0 setuptools-69.1.1 wheel-0.42.0
+Execute: venv/cpython3.11-75be9883f070/bin/python -m pip --version
+pip 24.0 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/venv/cpython3.11-75be9883f070/lib/python3.11/site-packages/pip (python 3.11)
+Execute: venv/cpython3.11-75be9883f070/bin/python -m pip install -U 'setuptools>=18.5' 'pip>=6.0'
+Requirement already satisfied: setuptools>=18.5 in ./venv/cpython3.11-75be9883f070/lib/python3.11/site-packages (69.1.1)
+Requirement already satisfied: pip>=6.0 in ./venv/cpython3.11-75be9883f070/lib/python3.11/site-packages (24.0)
+
+Execute: venv/cpython3.11-75be9883f070/bin/python -m pip install -U wheel
+Requirement already satisfied: wheel in ./venv/cpython3.11-75be9883f070/lib/python3.11/site-packages (0.42.0)
+
+Execute: venv/cpython3.11-75be9883f070/bin/python -m pip install backports-abc==0.5 singledispatch==3.4.0.3 certifi==2019.11.28 MarkupSafe==1.1.1 webencodings==0.5.1 mpmath==1.1.0 six==1.13.0 pyperf==1.7.0 Chameleon==3.6.2 Django==3.0 Genshi==0.7.3 Mako==1.1.0 SQLAlchemy==1.3.12 'mercurial==5.1.1; python_version < '"'"'3.0'"'"'' html5lib==1.0.1 pyaes==1.6.1 sympy==1.5 tornado==6.0.3
+Ignoring mercurial: markers 'python_version < "3.0"' don't match your environment
+Collecting backports-abc==0.5
+  Downloading backports_abc-0.5-py2.py3-none-any.whl (5.2 kB)
+Collecting singledispatch==3.4.0.3
+  Downloading singledispatch-3.4.0.3-py2.py3-none-any.whl (12 kB)
+Collecting certifi==2019.11.28
+  Downloading certifi-2019.11.28-py2.py3-none-any.whl (156 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 156.0/156.0 kB 8.2 MB/s eta 0:00:00
+Collecting MarkupSafe==1.1.1
+  Downloading MarkupSafe-1.1.1.tar.gz (19 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting webencodings==0.5.1
+  Downloading webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+Collecting mpmath==1.1.0
+  Downloading mpmath-1.1.0.tar.gz (512 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 512.6/512.6 kB 4.0 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting six==1.13.0
+  Downloading six-1.13.0-py2.py3-none-any.whl (10 kB)
+Collecting pyperf==1.7.0
+  Downloading pyperf-1.7.0-py2.py3-none-any.whl (87 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.8/87.8 kB 866.6 kB/s eta 0:00:00
+Collecting Chameleon==3.6.2
+  Downloading Chameleon-3.6.2.tar.gz (121 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.5/121.5 kB 9.4 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting Django==3.0
+  Downloading Django-3.0-py3-none-any.whl (7.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.4/7.4 MB 5.4 MB/s eta 0:00:00
+Collecting Genshi==0.7.3
+  Downloading Genshi-0.7.3-py3-none-any.whl (178 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 178.9/178.9 kB 4.4 MB/s eta 0:00:00
+Collecting Mako==1.1.0
+  Downloading Mako-1.1.0.tar.gz (463 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 463.9/463.9 kB 5.3 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting SQLAlchemy==1.3.12
+  Downloading SQLAlchemy-1.3.12.tar.gz (6.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.0/6.0 MB 10.8 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting html5lib==1.0.1
+  Downloading html5lib-1.0.1-py2.py3-none-any.whl (117 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.3/117.3 kB 9.4 MB/s eta 0:00:00
+Collecting pyaes==1.6.1
+  Downloading pyaes-1.6.1.tar.gz (28 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting sympy==1.5
+  Downloading sympy-1.5-py2.py3-none-any.whl (5.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.6/5.6 MB 6.6 MB/s eta 0:00:00
+Collecting tornado==6.0.3
+  Downloading tornado-6.0.3.tar.gz (482 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 482.4/482.4 kB 9.8 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting pytz (from Django==3.0)
+  Downloading pytz-2024.1-py2.py3-none-any.whl.metadata (22 kB)
+Collecting sqlparse>=0.2.2 (from Django==3.0)
+  Downloading sqlparse-0.4.4-py3-none-any.whl.metadata (4.0 kB)
+Collecting asgiref~=3.2 (from Django==3.0)
+  Downloading asgiref-3.7.2-py3-none-any.whl.metadata (9.2 kB)
+Downloading asgiref-3.7.2-py3-none-any.whl (24 kB)
+Downloading sqlparse-0.4.4-py3-none-any.whl (41 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.2/41.2 kB 5.8 MB/s eta 0:00:00
+Downloading pytz-2024.1-py2.py3-none-any.whl (505 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 505.5/505.5 kB 10.5 MB/s eta 0:00:00
+Building wheels for collected packages: MarkupSafe, mpmath, Chameleon, Mako, SQLAlchemy, pyaes, tornado
+  Building wheel for MarkupSafe (setup.py): started
+  Building wheel for MarkupSafe (setup.py): finished with status 'done'
+  Created wheel for MarkupSafe: filename=MarkupSafe-1.1.1-cp311-cp311-linux_x86_64.whl size=30441 sha256=70514c4eaa0e7413688d2ef8af1910cbb24581e983755a0b2113e87d5f9e71ea
+  Stored in directory: /home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/.cache/pip/wheels/42/2c/24/ee2a56da668805256e7c1b1d51ae9b177360788cabcdf5b9c1
+  Building wheel for mpmath (setup.py): started
+  Building wheel for mpmath (setup.py): finished with status 'done'
+  Created wheel for mpmath: filename=mpmath-1.1.0-py3-none-any.whl size=532235 sha256=99f1b20db55e281d48207fb55a69074ec49cb3c55c48d856418423d500bba1a9
+  Stored in directory: /home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/.cache/pip/wheels/b9/19/c8/3b24bf255a7614d7cc1de9d0f89926bc9c03885637e01510ba
+  Building wheel for Chameleon (setup.py): started
+  Building wheel for Chameleon (setup.py): finished with status 'done'
+  Created wheel for Chameleon: filename=Chameleon-3.6.2-py3-none-any.whl size=184232 sha256=e3221a2751ac402d05dc75fef9e7b6557fa2dd09d7f01c4c83751baebedce883
+  Stored in directory: /home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/.cache/pip/wheels/a5/93/c1/7daed05dff737c6d76c0b00c2aeff8f5d38d7d21b74ec95c34
+  Building wheel for Mako (setup.py): started
+  Building wheel for Mako (setup.py): finished with status 'done'
+  Created wheel for Mako: filename=Mako-1.1.0-py3-none-any.whl size=75354 sha256=353418e1218418c5a928597a55f9e426812b4b15754cdf6682283b5dd1b23604
+  Stored in directory: /home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/.cache/pip/wheels/0c/07/7f/163ef47faef07191d771b682e88c802cab7bf893cf0eb4d565
+  Building wheel for SQLAlchemy (setup.py): started
+  Building wheel for SQLAlchemy (setup.py): finished with status 'done'
+  Created wheel for SQLAlchemy: filename=SQLAlchemy-1.3.12-cp311-cp311-linux_x86_64.whl size=1205989 sha256=2f183b3f8362ff54dd44738a44d3830077cefcbfbd2bdb012e1da5e63b09b1e0
+  Stored in directory: /home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/.cache/pip/wheels/68/ec/66/16a77de6f36a052650d92394e24610a69ec9cc874ac924b66a
+  Building wheel for pyaes (setup.py): started
+  Building wheel for pyaes (setup.py): finished with status 'done'
+  Created wheel for pyaes: filename=pyaes-1.6.1-py3-none-any.whl size=26346 sha256=549b59290fedcd181ae0ee3ff699e33591a3370216080d34ede2bad982fc7915
+  Stored in directory: /home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/.cache/pip/wheels/4e/52/33/010d0843550bffb6a591b11629070ae140c0ad4f53e68a3bd3
+  Building wheel for tornado (setup.py): started
+  Building wheel for tornado (setup.py): finished with status 'done'
+  Created wheel for tornado: filename=tornado-6.0.3-cp311-cp311-linux_x86_64.whl size=418783 sha256=745fda078ba1dbdc1dbee0d567c33ace4f74e8ed5348a627b8855c18893130b4
+  Stored in directory: /home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/.cache/pip/wheels/91/da/70/c42365d54720f4f07f5e437e8b7460e0dc6201ae5735288f51
+Successfully built MarkupSafe mpmath Chameleon Mako SQLAlchemy pyaes tornado
+Installing collected packages: webencodings, pytz, pyaes, mpmath, Genshi, Chameleon, certifi, backports-abc, tornado, sympy, sqlparse, SQLAlchemy, six, MarkupSafe, asgiref, singledispatch, pyperf, Mako, html5lib, Django
+Successfully installed Chameleon-3.6.2 Django-3.0 Genshi-0.7.3 Mako-1.1.0 MarkupSafe-1.1.1 SQLAlchemy-1.3.12 asgiref-3.7.2 backports-abc-0.5 certifi-2019.11.28 html5lib-1.0.1 mpmath-1.1.0 pyaes-1.6.1 pyperf-1.7.0 pytz-2024.1 singledispatch-3.4.0.3 six-1.13.0 sqlparse-0.4.4 sympy-1.5 tornado-6.0.3 webencodings-0.5.1
+
+Execute: venv/cpython3.11-75be9883f070/bin/python -m pip install -U dulwich==0.19.14
+Collecting dulwich==0.19.14
+  Downloading dulwich-0.19.14-py3-none-any.whl (419 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 419.7/419.7 kB 8.9 MB/s eta 0:00:00
+Collecting urllib3>=1.24.1 (from dulwich==0.19.14)
+  Downloading urllib3-2.2.1-py3-none-any.whl.metadata (6.4 kB)
+Requirement already satisfied: certifi in ./venv/cpython3.11-75be9883f070/lib/python3.11/site-packages (from dulwich==0.19.14) (2019.11.28)
+Downloading urllib3-2.2.1-py3-none-any.whl (121 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.1/121.1 kB 8.8 MB/s eta 0:00:00
+Installing collected packages: urllib3, dulwich
+Successfully installed dulwich-0.19.14 urllib3-2.2.1
+Execute: venv/cpython3.11-75be9883f070/bin/python -m pip install -U psutil==5.6.7
+Collecting psutil==5.6.7
+  Downloading psutil-5.6.7.tar.gz (448 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 448.3/448.3 kB 9.3 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Building wheels for collected packages: psutil
+  Building wheel for psutil (setup.py): started
+  Building wheel for psutil (setup.py): finished with status 'done'
+  Created wheel for psutil: filename=psutil-5.6.7-cp311-cp311-linux_x86_64.whl size=267554 sha256=2aa4868032178880c48c7f58b94168229962badeba4a36ef2c74cf59f5f9ae6a
+  Stored in directory: /home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/.cache/pip/wheels/f4/96/0d/7d819edb7d336ae939a5b928388ba888715db7cc39df554ce3
+Successfully built psutil
+Installing collected packages: psutil
+Successfully installed psutil-5.6.7
+Execute: venv/cpython3.11-75be9883f070/bin/python -m pip install pyperformance==1.0.0
+Collecting pyperformance==1.0.0
+  Downloading pyperformance-1.0.0-py3-none-any.whl (2.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 5.9 MB/s eta 0:00:00
+Requirement already satisfied: pyperf in ./venv/cpython3.11-75be9883f070/lib/python3.11/site-packages (from pyperformance==1.0.0) (1.7.0)
+Requirement already satisfied: six in ./venv/cpython3.11-75be9883f070/lib/python3.11/site-packages (from pyperformance==1.0.0) (1.13.0)
+Installing collected packages: pyperformance
+Successfully installed pyperformance-1.0.0
+
+Execute: venv/cpython3.11-75be9883f070/bin/python -m pip --version
+pip 24.0 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/venv/cpython3.11-75be9883f070/lib/python3.11/site-packages/pip (python 3.11)
+
+Execute: venv/cpython3.11-75be9883f070/bin/python -m pip freeze
+asgiref==3.7.2
+backports-abc==0.5
+certifi==2019.11.28
+Chameleon==3.6.2
+Django==3.0
+dulwich==0.19.14
+Genshi==0.7.3
+html5lib==1.0.1
+Mako==1.1.0
+MarkupSafe==1.1.1
+mpmath==1.1.0
+psutil==5.6.7
+pyaes==1.6.1
+pyperf==1.7.0
+pyperformance==1.0.0
+pytz==2024.1
+singledispatch==3.4.0.3
+six==1.13.0
+SQLAlchemy==1.3.12
+sqlparse==0.4.4
+sympy==1.5
+tornado==6.0.3
+urllib3==2.2.1
+webencodings==0.5.1
+Python benchmark suite 1.0.0
+
+[1/1] go...
+INFO:root:Running `/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/venv/cpython3.11-75be9883f070/bin/python -u /home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/venv/cpython3.11-75be9883f070/lib/python3.11/site-packages/pyperformance/benchmarks/bm_go.py --rigorous --output /tmp/tmpmqr76l75`
+.........................................
+go: Mean +- std dev: 132 ms +- 3 ms
+
+Performance version: 1.0.0
+Python version: 3.11.6 (64-bit)
+Report on Linux-6.5.0-9-generic-x86_64-with-glibc2.38
+Number of logical CPUs: 24
+Start date: 2024-02-24 10:03:21.769816
+End date: 2024-02-24 10:03:46.164355
+
+### go ###
+Mean +- std dev: 132 ms +- 3 ms
+
+
+#####
+fp-fp-py-id - Run 2
+2024-02-24 10:04:15
+#####
+Python benchmark suite 1.0.0
+
+[1/1] go...
+INFO:root:Running `/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/venv/cpython3.11-75be9883f070/bin/python -u /home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/venv/cpython3.11-75be9883f070/lib/python3.11/site-packages/pyperformance/benchmarks/bm_go.py --rigorous --output /tmp/tmp0ovkdlnp`
+.........................................
+go: Mean +- std dev: 131 ms +- 3 ms
+
+Performance version: 1.0.0
+Python version: 3.11.6 (64-bit)
+Report on Linux-6.5.0-9-generic-x86_64-with-glibc2.38
+Number of logical CPUs: 24
+Start date: 2024-02-24 10:03:49.919925
+End date: 2024-02-24 10:04:14.245932
+
+### go ###
+Mean +- std dev: 131 ms +- 3 ms
+
+
+#####
+fp-fp-py-id - Run 3
+2024-02-24 10:04:41
+#####
+Python benchmark suite 1.0.0
+
+[1/1] go...
+INFO:root:Running `/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/venv/cpython3.11-75be9883f070/bin/python -u /home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/venv/cpython3.11-75be9883f070/lib/python3.11/site-packages/pyperformance/benchmarks/bm_go.py --rigorous --output /tmp/tmp1mgzfqm0`
+.........................................
+go: Mean +- std dev: 131 ms +- 3 ms
+
+Performance version: 1.0.0
+Python version: 3.11.6 (64-bit)
+Report on Linux-6.5.0-9-generic-x86_64-with-glibc2.38
+Number of logical CPUs: 24
+Start date: 2024-02-24 10:04:17.998045
+End date: 2024-02-24 10:04:42.320939
+
+### go ###
+Mean +- std dev: 131 ms +- 3 ms
+
+

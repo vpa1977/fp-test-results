@@ -1,0 +1,60 @@
+#####
+fp-fp-py-id - Run 1
+2024-02-24 09:46:26
+#####
+Benchmarking on 12 threads
+Traceback (most recent call last):
+  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/pytorch-benchmark.py", line 10, in <module>
+    results = benchmark(model, sample, num_runs=1000, print_details=True, batch_size=1)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/.local/lib/python3.11/site-packages/pytorch_benchmark/benchmark.py", line 317, in benchmark
+    machine_info = get_machine_info()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/.local/lib/python3.11/site-packages/pytorch_benchmark/machine_info.py", line 15, in get_machine_info
+    gpus = getGPUs()
+           ^^^^^^^^^
+  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/.local/lib/python3.11/site-packages/GPUtil/GPUtil.py", line 102, in getGPUs
+    deviceIds = int(vals[i])
+                ^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: "NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running."
+
+#####
+fp-fp-py-id - Run 2
+2024-02-24 09:46:34
+#####
+Benchmarking on 12 threads
+Traceback (most recent call last):
+  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/pytorch-benchmark.py", line 10, in <module>
+    results = benchmark(model, sample, num_runs=1000, print_details=True, batch_size=1)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/.local/lib/python3.11/site-packages/pytorch_benchmark/benchmark.py", line 317, in benchmark
+    machine_info = get_machine_info()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/.local/lib/python3.11/site-packages/pytorch_benchmark/machine_info.py", line 15, in get_machine_info
+    gpus = getGPUs()
+           ^^^^^^^^^
+  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/.local/lib/python3.11/site-packages/GPUtil/GPUtil.py", line 102, in getGPUs
+    deviceIds = int(vals[i])
+                ^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: "NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running."
+
+#####
+fp-fp-py-id - Run 3
+2024-02-24 09:46:39
+#####
+Benchmarking on 12 threads
+Traceback (most recent call last):
+  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/pytorch-benchmark.py", line 10, in <module>
+    results = benchmark(model, sample, num_runs=1000, print_details=True, batch_size=1)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/.local/lib/python3.11/site-packages/pytorch_benchmark/benchmark.py", line 317, in benchmark
+    machine_info = get_machine_info()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/.local/lib/python3.11/site-packages/pytorch_benchmark/machine_info.py", line 15, in get_machine_info
+    gpus = getGPUs()
+           ^^^^^^^^^
+  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/.local/lib/python3.11/site-packages/GPUtil/GPUtil.py", line 102, in getGPUs
+    deviceIds = int(vals[i])
+                ^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: "NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running."
+

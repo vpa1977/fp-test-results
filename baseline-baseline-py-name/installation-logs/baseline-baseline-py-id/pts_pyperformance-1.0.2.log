@@ -1,0 +1,555 @@
+Archive:  pyperformance-1.0.0.zip
+10961a7a18362ce99dd70a3faf31fcb40b7ecf9f
+  inflating: pyperformance-1.0.0/.appveyor.yml  
+  inflating: pyperformance-1.0.0/.github/ISSUE_TEMPLATE.md  
+  inflating: pyperformance-1.0.0/.gitignore  
+  inflating: pyperformance-1.0.0/.travis.yml  
+  inflating: pyperformance-1.0.0/AUTHORS  
+  inflating: pyperformance-1.0.0/COPYING  
+  inflating: pyperformance-1.0.0/MANIFEST.in  
+  inflating: pyperformance-1.0.0/README.rst  
+  inflating: pyperformance-1.0.0/TODO.rst  
+  inflating: pyperformance-1.0.0/azure-pipelines.yml  
+   creating: pyperformance-1.0.0/doc/
+  inflating: pyperformance-1.0.0/doc/Makefile  
+  inflating: pyperformance-1.0.0/doc/benchmark.conf  
+  inflating: pyperformance-1.0.0/doc/benchmark.conf.sample  
+  inflating: pyperformance-1.0.0/doc/benchmarks.rst  
+  inflating: pyperformance-1.0.0/doc/changelog.rst  
+  inflating: pyperformance-1.0.0/doc/conf.py  
+  inflating: pyperformance-1.0.0/doc/cpython_results_2017.rst  
+ extracting: pyperformance-1.0.0/doc/html5lib.json.gz  
+   creating: pyperformance-1.0.0/doc/images/
+  inflating: pyperformance-1.0.0/doc/images/bm_chaos.png  
+  inflating: pyperformance-1.0.0/doc/images/bm_raytrace.jpg  
+  inflating: pyperformance-1.0.0/doc/images/html5lib.png  
+  inflating: pyperformance-1.0.0/doc/images/sympy_sum.png  
+  inflating: pyperformance-1.0.0/doc/index.rst  
+  inflating: pyperformance-1.0.0/doc/make.bat  
+ extracting: pyperformance-1.0.0/doc/sympy_sum.json.gz  
+  inflating: pyperformance-1.0.0/doc/usage.rst  
+   creating: pyperformance-1.0.0/pyperformance/
+  inflating: pyperformance-1.0.0/pyperformance/__init__.py  
+  inflating: pyperformance-1.0.0/pyperformance/__main__.py  
+   creating: pyperformance-1.0.0/pyperformance/benchmarks/
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/__init__.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_2to3.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_chameleon.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_chaos.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_crypto_pyaes.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_deltablue.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_django_template.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_dulwich_log.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_fannkuch.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_float.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_genshi.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_go.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_hexiom.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_hg_startup.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_html5lib.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_json_dumps.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_json_loads.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_logging.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_mako.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_mdp.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_meteor_contest.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_nbody.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_nqueens.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_pathlib.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_pickle.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_pidigits.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_pyflate.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_python_startup.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_raytrace.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_regex_compile.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_regex_dna.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_regex_effbot.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_regex_v8.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_richards.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_scimark.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_spectral_norm.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_sqlalchemy_declarative.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_sqlalchemy_imperative.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_sqlite_synth.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_sympy.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_telco.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_tornado_http.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_unpack_sequence.py  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/bm_xml_etree.py  
+   creating: pyperformance-1.0.0/pyperformance/benchmarks/data/
+   creating: pyperformance-1.0.0/pyperformance/benchmarks/data/2to3/
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/2to3/README.txt  
+ extracting: pyperformance-1.0.0/pyperformance/benchmarks/data/2to3/__init__.py.txt  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/2to3/context_processors.py.txt  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/2to3/exceptions.py.txt  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/2to3/mail.py.txt  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/2to3/paginator.py.txt  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/2to3/signals.py.txt  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/2to3/template_loader.py.txt  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/2to3/urlresolvers.py.txt  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/2to3/xheaders.py.txt  
+   creating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/COMMIT_EDITMSG  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/FETCH_HEAD  
+ extracting: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/HEAD  
+ extracting: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/ORIG_HEAD  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/config  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/description  
+   creating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/hooks/
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/hooks/applypatch-msg.sample  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/hooks/commit-msg.sample  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/hooks/post-update.sample  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/hooks/pre-applypatch.sample  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/hooks/pre-commit.sample  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/hooks/pre-push.sample  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/hooks/pre-rebase.sample  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/hooks/prepare-commit-msg.sample  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/hooks/update.sample  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/index  
+   creating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/info/
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/info/exclude  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/info/refs  
+   creating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/logs/
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/logs/HEAD  
+   creating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/logs/refs/
+   creating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/logs/refs/heads/
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/logs/refs/heads/master  
+   creating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes/
+   creating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes/origin/
+ extracting: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes/origin/HEAD  
+ extracting: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes/origin/bind_modules  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes/origin/master  
+ extracting: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes/origin/zero_timeout  
+   creating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/objects/
+   creating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/objects/info/
+ extracting: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/objects/info/packs  
+   creating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/objects/pack/
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/objects/pack/pack-7e1b1ace85030071ca314cd565ae038bacc302a4.idx  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/objects/pack/pack-7e1b1ace85030071ca314cd565ae038bacc302a4.pack  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/packed-refs  
+   creating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/refs/
+   creating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/refs/remotes/
+   creating: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/refs/remotes/origin/
+ extracting: pyperformance-1.0.0/pyperformance/benchmarks/data/asyncio.git/refs/remotes/origin/HEAD  
+ extracting: pyperformance-1.0.0/pyperformance/benchmarks/data/interpreter.tar.bz2  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/telco-bench.b  
+  inflating: pyperformance-1.0.0/pyperformance/benchmarks/data/w3_tr_html5.html  
+  inflating: pyperformance-1.0.0/pyperformance/cli.py  
+  inflating: pyperformance-1.0.0/pyperformance/cli_run.py  
+  inflating: pyperformance-1.0.0/pyperformance/compare.py  
+  inflating: pyperformance-1.0.0/pyperformance/compile.py  
+  inflating: pyperformance-1.0.0/pyperformance/requirements.txt  
+  inflating: pyperformance-1.0.0/pyperformance/run.py  
+   creating: pyperformance-1.0.0/pyperformance/tests/
+  inflating: pyperformance-1.0.0/pyperformance/tests/__init__.py  
+   creating: pyperformance-1.0.0/pyperformance/tests/data/
+  inflating: pyperformance-1.0.0/pyperformance/tests/data/mem1.json  
+  inflating: pyperformance-1.0.0/pyperformance/tests/data/mem2.json  
+  inflating: pyperformance-1.0.0/pyperformance/tests/data/py2.json  
+  inflating: pyperformance-1.0.0/pyperformance/tests/data/py3.json  
+  inflating: pyperformance-1.0.0/pyperformance/tests/data/py3_performance03.json  
+  inflating: pyperformance-1.0.0/pyperformance/tests/test_compare.py  
+  inflating: pyperformance-1.0.0/pyperformance/utils.py  
+  inflating: pyperformance-1.0.0/pyperformance/venv.py  
+  inflating: pyperformance-1.0.0/runtests.py  
+  inflating: pyperformance-1.0.0/setup.py  
+  inflating: pyperformance-1.0.0/tox.ini  
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/pyperformance
+copying pyperformance/__init__.py -> build/lib/pyperformance
+copying pyperformance/__main__.py -> build/lib/pyperformance
+copying pyperformance/compile.py -> build/lib/pyperformance
+copying pyperformance/run.py -> build/lib/pyperformance
+copying pyperformance/cli.py -> build/lib/pyperformance
+copying pyperformance/venv.py -> build/lib/pyperformance
+copying pyperformance/compare.py -> build/lib/pyperformance
+copying pyperformance/cli_run.py -> build/lib/pyperformance
+copying pyperformance/utils.py -> build/lib/pyperformance
+creating build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_spectral_norm.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_unpack_sequence.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_xml_etree.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/__init__.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_logging.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_telco.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_sympy.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_django_template.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_pyflate.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_float.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_crypto_pyaes.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_tornado_http.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_regex_v8.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_hg_startup.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_regex_compile.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_mako.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_python_startup.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_chaos.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_meteor_contest.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_go.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_nqueens.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_pathlib.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_chameleon.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_scimark.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_mdp.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_hexiom.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_json_dumps.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_dulwich_log.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_raytrace.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_genshi.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_pidigits.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_fannkuch.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_pickle.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_sqlalchemy_imperative.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_json_loads.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_nbody.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_html5lib.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_regex_dna.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_sqlalchemy_declarative.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_sqlite_synth.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_richards.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_deltablue.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_2to3.py -> build/lib/pyperformance/benchmarks
+copying pyperformance/benchmarks/bm_regex_effbot.py -> build/lib/pyperformance/benchmarks
+creating build/lib/pyperformance/tests
+copying pyperformance/tests/__init__.py -> build/lib/pyperformance/tests
+copying pyperformance/tests/test_compare.py -> build/lib/pyperformance/tests
+copying pyperformance/requirements.txt -> build/lib/pyperformance
+creating build/lib/pyperformance/benchmarks/data
+copying pyperformance/benchmarks/data/interpreter.tar.bz2 -> build/lib/pyperformance/benchmarks/data
+copying pyperformance/benchmarks/data/telco-bench.b -> build/lib/pyperformance/benchmarks/data
+copying pyperformance/benchmarks/data/w3_tr_html5.html -> build/lib/pyperformance/benchmarks/data
+creating build/lib/pyperformance/benchmarks/data/asyncio.git
+copying pyperformance/benchmarks/data/asyncio.git/description -> build/lib/pyperformance/benchmarks/data/asyncio.git
+copying pyperformance/benchmarks/data/asyncio.git/ORIG_HEAD -> build/lib/pyperformance/benchmarks/data/asyncio.git
+copying pyperformance/benchmarks/data/asyncio.git/HEAD -> build/lib/pyperformance/benchmarks/data/asyncio.git
+copying pyperformance/benchmarks/data/asyncio.git/index -> build/lib/pyperformance/benchmarks/data/asyncio.git
+copying pyperformance/benchmarks/data/asyncio.git/COMMIT_EDITMSG -> build/lib/pyperformance/benchmarks/data/asyncio.git
+copying pyperformance/benchmarks/data/asyncio.git/FETCH_HEAD -> build/lib/pyperformance/benchmarks/data/asyncio.git
+copying pyperformance/benchmarks/data/asyncio.git/config -> build/lib/pyperformance/benchmarks/data/asyncio.git
+copying pyperformance/benchmarks/data/asyncio.git/packed-refs -> build/lib/pyperformance/benchmarks/data/asyncio.git
+creating build/lib/pyperformance/benchmarks/data/asyncio.git/info
+copying pyperformance/benchmarks/data/asyncio.git/info/refs -> build/lib/pyperformance/benchmarks/data/asyncio.git/info
+copying pyperformance/benchmarks/data/asyncio.git/info/exclude -> build/lib/pyperformance/benchmarks/data/asyncio.git/info
+creating build/lib/pyperformance/benchmarks/data/asyncio.git/refs
+creating build/lib/pyperformance/benchmarks/data/asyncio.git/refs/remotes
+creating build/lib/pyperformance/benchmarks/data/asyncio.git/refs/remotes/origin
+copying pyperformance/benchmarks/data/asyncio.git/refs/remotes/origin/HEAD -> build/lib/pyperformance/benchmarks/data/asyncio.git/refs/remotes/origin
+creating build/lib/pyperformance/benchmarks/data/asyncio.git/logs
+copying pyperformance/benchmarks/data/asyncio.git/logs/HEAD -> build/lib/pyperformance/benchmarks/data/asyncio.git/logs
+creating build/lib/pyperformance/benchmarks/data/asyncio.git/logs/refs
+creating build/lib/pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes
+creating build/lib/pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes/origin
+copying pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes/origin/master -> build/lib/pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes/origin
+copying pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes/origin/bind_modules -> build/lib/pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes/origin
+copying pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes/origin/HEAD -> build/lib/pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes/origin
+copying pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes/origin/zero_timeout -> build/lib/pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes/origin
+creating build/lib/pyperformance/benchmarks/data/asyncio.git/logs/refs/heads
+copying pyperformance/benchmarks/data/asyncio.git/logs/refs/heads/master -> build/lib/pyperformance/benchmarks/data/asyncio.git/logs/refs/heads
+creating build/lib/pyperformance/benchmarks/data/asyncio.git/hooks
+copying pyperformance/benchmarks/data/asyncio.git/hooks/pre-applypatch.sample -> build/lib/pyperformance/benchmarks/data/asyncio.git/hooks
+copying pyperformance/benchmarks/data/asyncio.git/hooks/prepare-commit-msg.sample -> build/lib/pyperformance/benchmarks/data/asyncio.git/hooks
+copying pyperformance/benchmarks/data/asyncio.git/hooks/commit-msg.sample -> build/lib/pyperformance/benchmarks/data/asyncio.git/hooks
+copying pyperformance/benchmarks/data/asyncio.git/hooks/pre-rebase.sample -> build/lib/pyperformance/benchmarks/data/asyncio.git/hooks
+copying pyperformance/benchmarks/data/asyncio.git/hooks/pre-push.sample -> build/lib/pyperformance/benchmarks/data/asyncio.git/hooks
+copying pyperformance/benchmarks/data/asyncio.git/hooks/pre-commit.sample -> build/lib/pyperformance/benchmarks/data/asyncio.git/hooks
+copying pyperformance/benchmarks/data/asyncio.git/hooks/post-update.sample -> build/lib/pyperformance/benchmarks/data/asyncio.git/hooks
+copying pyperformance/benchmarks/data/asyncio.git/hooks/update.sample -> build/lib/pyperformance/benchmarks/data/asyncio.git/hooks
+copying pyperformance/benchmarks/data/asyncio.git/hooks/applypatch-msg.sample -> build/lib/pyperformance/benchmarks/data/asyncio.git/hooks
+creating build/lib/pyperformance/benchmarks/data/asyncio.git/objects
+creating build/lib/pyperformance/benchmarks/data/asyncio.git/objects/info
+copying pyperformance/benchmarks/data/asyncio.git/objects/info/packs -> build/lib/pyperformance/benchmarks/data/asyncio.git/objects/info
+creating build/lib/pyperformance/benchmarks/data/asyncio.git/objects/pack
+copying pyperformance/benchmarks/data/asyncio.git/objects/pack/pack-7e1b1ace85030071ca314cd565ae038bacc302a4.idx -> build/lib/pyperformance/benchmarks/data/asyncio.git/objects/pack
+copying pyperformance/benchmarks/data/asyncio.git/objects/pack/pack-7e1b1ace85030071ca314cd565ae038bacc302a4.pack -> build/lib/pyperformance/benchmarks/data/asyncio.git/objects/pack
+creating build/lib/pyperformance/benchmarks/data/2to3
+copying pyperformance/benchmarks/data/2to3/urlresolvers.py.txt -> build/lib/pyperformance/benchmarks/data/2to3
+copying pyperformance/benchmarks/data/2to3/mail.py.txt -> build/lib/pyperformance/benchmarks/data/2to3
+copying pyperformance/benchmarks/data/2to3/README.txt -> build/lib/pyperformance/benchmarks/data/2to3
+copying pyperformance/benchmarks/data/2to3/context_processors.py.txt -> build/lib/pyperformance/benchmarks/data/2to3
+copying pyperformance/benchmarks/data/2to3/__init__.py.txt -> build/lib/pyperformance/benchmarks/data/2to3
+copying pyperformance/benchmarks/data/2to3/template_loader.py.txt -> build/lib/pyperformance/benchmarks/data/2to3
+copying pyperformance/benchmarks/data/2to3/xheaders.py.txt -> build/lib/pyperformance/benchmarks/data/2to3
+copying pyperformance/benchmarks/data/2to3/exceptions.py.txt -> build/lib/pyperformance/benchmarks/data/2to3
+copying pyperformance/benchmarks/data/2to3/paginator.py.txt -> build/lib/pyperformance/benchmarks/data/2to3
+copying pyperformance/benchmarks/data/2to3/signals.py.txt -> build/lib/pyperformance/benchmarks/data/2to3
+creating build/lib/pyperformance/tests/data
+copying pyperformance/tests/data/py2.json -> build/lib/pyperformance/tests/data
+copying pyperformance/tests/data/mem1.json -> build/lib/pyperformance/tests/data
+copying pyperformance/tests/data/mem2.json -> build/lib/pyperformance/tests/data
+copying pyperformance/tests/data/py3.json -> build/lib/pyperformance/tests/data
+copying pyperformance/tests/data/py3_performance03.json -> build/lib/pyperformance/tests/data
+running install
+/usr/lib/python3/dist-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+/usr/lib/python3/dist-packages/setuptools/_distutils/cmd.py:66: EasyInstallDeprecationWarning: easy_install command is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` and ``easy_install``.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://github.com/pypa/setuptools/issues/917 for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running bdist_egg
+running egg_info
+creating pyperformance.egg-info
+writing pyperformance.egg-info/PKG-INFO
+writing dependency_links to pyperformance.egg-info/dependency_links.txt
+writing entry points to pyperformance.egg-info/entry_points.txt
+writing requirements to pyperformance.egg-info/requires.txt
+writing top-level names to pyperformance.egg-info/top_level.txt
+writing manifest file 'pyperformance.egg-info/SOURCES.txt'
+reading manifest file 'pyperformance.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no files found matching 'requirements.txt'
+warning: no files found matching 'pyperformance'
+adding license file 'COPYING'
+adding license file 'AUTHORS'
+writing manifest file 'pyperformance.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_py
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/egg
+creating build/bdist.linux-x86_64/egg/pyperformance
+copying build/lib/pyperformance/__init__.py -> build/bdist.linux-x86_64/egg/pyperformance
+copying build/lib/pyperformance/__main__.py -> build/bdist.linux-x86_64/egg/pyperformance
+copying build/lib/pyperformance/compile.py -> build/bdist.linux-x86_64/egg/pyperformance
+copying build/lib/pyperformance/run.py -> build/bdist.linux-x86_64/egg/pyperformance
+copying build/lib/pyperformance/cli.py -> build/bdist.linux-x86_64/egg/pyperformance
+copying build/lib/pyperformance/venv.py -> build/bdist.linux-x86_64/egg/pyperformance
+creating build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_spectral_norm.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_unpack_sequence.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_xml_etree.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/__init__.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_logging.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_telco.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_sympy.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_django_template.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_pyflate.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_float.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_crypto_pyaes.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_tornado_http.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_regex_v8.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_hg_startup.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_regex_compile.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_mako.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_python_startup.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_chaos.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_meteor_contest.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_go.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_nqueens.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_pathlib.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_chameleon.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_scimark.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_mdp.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_hexiom.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_json_dumps.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+creating build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data
+copying build/lib/pyperformance/benchmarks/data/interpreter.tar.bz2 -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data
+creating build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git
+creating build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/info
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/info/refs -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/info
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/info/exclude -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/info
+creating build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/refs
+creating build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/refs/remotes
+creating build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/refs/remotes/origin
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/refs/remotes/origin/HEAD -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/refs/remotes/origin
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/description -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/ORIG_HEAD -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/HEAD -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git
+creating build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/logs
+creating build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/logs/refs
+creating build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes
+creating build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes/origin
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes/origin/master -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes/origin
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes/origin/bind_modules -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes/origin
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes/origin/HEAD -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes/origin
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes/origin/zero_timeout -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/logs/refs/remotes/origin
+creating build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/logs/refs/heads
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/logs/refs/heads/master -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/logs/refs/heads
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/logs/HEAD -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/logs
+creating build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/hooks
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/hooks/pre-applypatch.sample -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/hooks
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/hooks/prepare-commit-msg.sample -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/hooks
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/hooks/commit-msg.sample -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/hooks
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/hooks/pre-rebase.sample -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/hooks
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/hooks/pre-push.sample -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/hooks
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/hooks/pre-commit.sample -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/hooks
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/hooks/post-update.sample -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/hooks
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/hooks/update.sample -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/hooks
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/hooks/applypatch-msg.sample -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/hooks
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/index -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git
+creating build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/objects
+creating build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/objects/info
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/objects/info/packs -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/objects/info
+creating build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/objects/pack
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/objects/pack/pack-7e1b1ace85030071ca314cd565ae038bacc302a4.idx -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/objects/pack
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/objects/pack/pack-7e1b1ace85030071ca314cd565ae038bacc302a4.pack -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git/objects/pack
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/COMMIT_EDITMSG -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/FETCH_HEAD -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/config -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git
+copying build/lib/pyperformance/benchmarks/data/asyncio.git/packed-refs -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/asyncio.git
+copying build/lib/pyperformance/benchmarks/data/telco-bench.b -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data
+creating build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/2to3
+copying build/lib/pyperformance/benchmarks/data/2to3/urlresolvers.py.txt -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/2to3
+copying build/lib/pyperformance/benchmarks/data/2to3/mail.py.txt -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/2to3
+copying build/lib/pyperformance/benchmarks/data/2to3/README.txt -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/2to3
+copying build/lib/pyperformance/benchmarks/data/2to3/context_processors.py.txt -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/2to3
+copying build/lib/pyperformance/benchmarks/data/2to3/__init__.py.txt -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/2to3
+copying build/lib/pyperformance/benchmarks/data/2to3/template_loader.py.txt -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/2to3
+copying build/lib/pyperformance/benchmarks/data/2to3/xheaders.py.txt -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/2to3
+copying build/lib/pyperformance/benchmarks/data/2to3/exceptions.py.txt -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/2to3
+copying build/lib/pyperformance/benchmarks/data/2to3/paginator.py.txt -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/2to3
+copying build/lib/pyperformance/benchmarks/data/2to3/signals.py.txt -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data/2to3
+copying build/lib/pyperformance/benchmarks/data/w3_tr_html5.html -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks/data
+copying build/lib/pyperformance/benchmarks/bm_dulwich_log.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_raytrace.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_genshi.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_pidigits.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_fannkuch.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_pickle.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_sqlalchemy_imperative.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_json_loads.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_nbody.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_html5lib.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_regex_dna.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_sqlalchemy_declarative.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_sqlite_synth.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_richards.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_deltablue.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_2to3.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/benchmarks/bm_regex_effbot.py -> build/bdist.linux-x86_64/egg/pyperformance/benchmarks
+copying build/lib/pyperformance/compare.py -> build/bdist.linux-x86_64/egg/pyperformance
+copying build/lib/pyperformance/cli_run.py -> build/bdist.linux-x86_64/egg/pyperformance
+creating build/bdist.linux-x86_64/egg/pyperformance/tests
+copying build/lib/pyperformance/tests/__init__.py -> build/bdist.linux-x86_64/egg/pyperformance/tests
+copying build/lib/pyperformance/tests/test_compare.py -> build/bdist.linux-x86_64/egg/pyperformance/tests
+creating build/bdist.linux-x86_64/egg/pyperformance/tests/data
+copying build/lib/pyperformance/tests/data/py2.json -> build/bdist.linux-x86_64/egg/pyperformance/tests/data
+copying build/lib/pyperformance/tests/data/mem1.json -> build/bdist.linux-x86_64/egg/pyperformance/tests/data
+copying build/lib/pyperformance/tests/data/mem2.json -> build/bdist.linux-x86_64/egg/pyperformance/tests/data
+copying build/lib/pyperformance/tests/data/py3.json -> build/bdist.linux-x86_64/egg/pyperformance/tests/data
+copying build/lib/pyperformance/tests/data/py3_performance03.json -> build/bdist.linux-x86_64/egg/pyperformance/tests/data
+copying build/lib/pyperformance/requirements.txt -> build/bdist.linux-x86_64/egg/pyperformance
+copying build/lib/pyperformance/utils.py -> build/bdist.linux-x86_64/egg/pyperformance
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/__init__.py to __init__.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/__main__.py to __main__.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/compile.py to compile.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/run.py to run.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/cli.py to cli.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/venv.py to venv.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_spectral_norm.py to bm_spectral_norm.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_unpack_sequence.py to bm_unpack_sequence.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_xml_etree.py to bm_xml_etree.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/__init__.py to __init__.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_logging.py to bm_logging.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_telco.py to bm_telco.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_sympy.py to bm_sympy.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_django_template.py to bm_django_template.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_pyflate.py to bm_pyflate.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_float.py to bm_float.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_crypto_pyaes.py to bm_crypto_pyaes.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_tornado_http.py to bm_tornado_http.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_regex_v8.py to bm_regex_v8.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_hg_startup.py to bm_hg_startup.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_regex_compile.py to bm_regex_compile.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_mako.py to bm_mako.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_python_startup.py to bm_python_startup.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_chaos.py to bm_chaos.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_meteor_contest.py to bm_meteor_contest.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_go.py to bm_go.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_nqueens.py to bm_nqueens.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_pathlib.py to bm_pathlib.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_chameleon.py to bm_chameleon.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_scimark.py to bm_scimark.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_mdp.py to bm_mdp.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_hexiom.py to bm_hexiom.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_json_dumps.py to bm_json_dumps.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_dulwich_log.py to bm_dulwich_log.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_raytrace.py to bm_raytrace.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_genshi.py to bm_genshi.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_pidigits.py to bm_pidigits.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_fannkuch.py to bm_fannkuch.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_pickle.py to bm_pickle.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_sqlalchemy_imperative.py to bm_sqlalchemy_imperative.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_json_loads.py to bm_json_loads.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_nbody.py to bm_nbody.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_html5lib.py to bm_html5lib.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_regex_dna.py to bm_regex_dna.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_sqlalchemy_declarative.py to bm_sqlalchemy_declarative.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_sqlite_synth.py to bm_sqlite_synth.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_richards.py to bm_richards.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_deltablue.py to bm_deltablue.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_2to3.py to bm_2to3.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/benchmarks/bm_regex_effbot.py to bm_regex_effbot.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/compare.py to compare.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/cli_run.py to cli_run.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/tests/__init__.py to __init__.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/tests/test_compare.py to test_compare.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pyperformance/utils.py to utils.cpython-311.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying pyperformance.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying pyperformance.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying pyperformance.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying pyperformance.egg-info/entry_points.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying pyperformance.egg-info/requires.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying pyperformance.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+zip_safe flag not set; analyzing archive contents...
+pyperformance.__pycache__.venv.cpython-311: module references __file__
+pyperformance.benchmarks.__pycache__.bm_2to3.cpython-311: module references __file__
+pyperformance.benchmarks.__pycache__.bm_dulwich_log.cpython-311: module references __file__
+pyperformance.benchmarks.__pycache__.bm_html5lib.cpython-311: module references __file__
+pyperformance.benchmarks.__pycache__.bm_pyflate.cpython-311: module references __file__
+pyperformance.benchmarks.__pycache__.bm_telco.cpython-311: module references __file__
+pyperformance.tests.__pycache__.test_compare.cpython-311: module references __file__
+creating dist
+creating 'dist/pyperformance-1.0.0-py3.11.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+Processing pyperformance-1.0.0-py3.11.egg
+removing '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/.local/lib/python3.11/site-packages/pyperformance-1.0.0-py3.11.egg' (and everything under it)
+creating /home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/.local/lib/python3.11/site-packages/pyperformance-1.0.0-py3.11.egg
+Extracting pyperformance-1.0.0-py3.11.egg to /home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/.local/lib/python3.11/site-packages
+Adding pyperformance 1.0.0 to easy-install.pth file
+Installing pyperformance script to /home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/.local/bin
+
+Installed /home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/.local/lib/python3.11/site-packages/pyperformance-1.0.0-py3.11.egg
+Processing dependencies for pyperformance==1.0.0
+Searching for six==1.16.0
+Best match: six 1.16.0
+Adding six 1.16.0 to easy-install.pth file
+
+Using /usr/lib/python3/dist-packages
+Searching for pyperf==2.6.2
+Best match: pyperf 2.6.2
+Processing pyperf-2.6.2-py3.11.egg
+Adding pyperf 2.6.2 to easy-install.pth file
+Installing pyperf script to /home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/.local/bin
+
+Using /home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/.local/lib/python3.11/site-packages/pyperf-2.6.2-py3.11.egg
+Searching for psutil==5.9.8
+Best match: psutil 5.9.8
+Processing psutil-5.9.8-py3.11-linux-x86_64.egg
+Adding psutil 5.9.8 to easy-install.pth file
+
+Using /home/ubuntu/.phoronix-test-suite/installed-tests/pts/pyperformance-1.0.2/.local/lib/python3.11/site-packages/psutil-5.9.8-py3.11-linux-x86_64.egg
+Finished processing dependencies for pyperformance==1.0.0

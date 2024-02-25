@@ -1,0 +1,434 @@
+Slot:	00:00.0
+Class:	Host bridge [0600]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Starship/Matisse Root Complex [1480]
+SVendor:	Micro-Star International Co., Ltd. [MSI] [1462]
+SDevice:	X570-A PRO motherboard [7c37]
+ProgIf:	00
+
+Slot:	00:00.2
+Class:	IOMMU [0806]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Starship/Matisse IOMMU [1481]
+SVendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+SDevice:	Starship/Matisse IOMMU [1481]
+ProgIf:	00
+
+Slot:	00:01.0
+Class:	Host bridge [0600]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Starship/Matisse PCIe Dummy Host Bridge [1482]
+ProgIf:	00
+IOMMUGroup:	0
+
+Slot:	00:01.2
+Class:	PCI bridge [0604]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Starship/Matisse GPP Bridge [1483]
+SVendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+SDevice:	Starship/Matisse GPP Bridge [1453]
+ProgIf:	00
+Driver:	pcieport
+IOMMUGroup:	1
+
+Slot:	00:02.0
+Class:	Host bridge [0600]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Starship/Matisse PCIe Dummy Host Bridge [1482]
+ProgIf:	00
+IOMMUGroup:	2
+
+Slot:	00:03.0
+Class:	Host bridge [0600]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Starship/Matisse PCIe Dummy Host Bridge [1482]
+ProgIf:	00
+IOMMUGroup:	3
+
+Slot:	00:03.1
+Class:	PCI bridge [0604]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Starship/Matisse GPP Bridge [1483]
+SVendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+SDevice:	Starship/Matisse GPP Bridge [1453]
+ProgIf:	00
+Driver:	pcieport
+IOMMUGroup:	4
+
+Slot:	00:04.0
+Class:	Host bridge [0600]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Starship/Matisse PCIe Dummy Host Bridge [1482]
+ProgIf:	00
+IOMMUGroup:	5
+
+Slot:	00:05.0
+Class:	Host bridge [0600]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Starship/Matisse PCIe Dummy Host Bridge [1482]
+ProgIf:	00
+IOMMUGroup:	6
+
+Slot:	00:07.0
+Class:	Host bridge [0600]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Starship/Matisse PCIe Dummy Host Bridge [1482]
+ProgIf:	00
+IOMMUGroup:	7
+
+Slot:	00:07.1
+Class:	PCI bridge [0604]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B] [1484]
+SVendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+SDevice:	Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B] [1484]
+ProgIf:	00
+Driver:	pcieport
+IOMMUGroup:	8
+
+Slot:	00:08.0
+Class:	Host bridge [0600]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Starship/Matisse PCIe Dummy Host Bridge [1482]
+ProgIf:	00
+IOMMUGroup:	9
+
+Slot:	00:08.1
+Class:	PCI bridge [0604]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B] [1484]
+SVendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+SDevice:	Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B] [1484]
+ProgIf:	00
+Driver:	pcieport
+IOMMUGroup:	10
+
+Slot:	00:08.2
+Class:	PCI bridge [0604]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B] [1484]
+SVendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+SDevice:	Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B] [1484]
+ProgIf:	00
+Driver:	pcieport
+IOMMUGroup:	11
+
+Slot:	00:08.3
+Class:	PCI bridge [0604]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B] [1484]
+SVendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+SDevice:	Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B] [1484]
+ProgIf:	00
+Driver:	pcieport
+IOMMUGroup:	12
+
+Slot:	00:14.0
+Class:	SMBus [0c05]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	FCH SMBus Controller [790b]
+SVendor:	Micro-Star International Co., Ltd. [MSI] [1462]
+SDevice:	X570-A PRO motherboard [7c37]
+Rev:	61
+ProgIf:	00
+Driver:	piix4_smbus
+Module:	i2c_piix4
+Module:	sp5100_tco
+IOMMUGroup:	13
+
+Slot:	00:14.3
+Class:	ISA bridge [0601]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	FCH LPC Bridge [790e]
+SVendor:	Micro-Star International Co., Ltd. [MSI] [1462]
+SDevice:	X570-A PRO motherboard [7c37]
+Rev:	51
+ProgIf:	00
+IOMMUGroup:	13
+
+Slot:	00:18.0
+Class:	Host bridge [0600]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Matisse/Vermeer Data Fabric: Device 18h; Function 0 [1440]
+ProgIf:	00
+IOMMUGroup:	14
+
+Slot:	00:18.1
+Class:	Host bridge [0600]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Matisse/Vermeer Data Fabric: Device 18h; Function 1 [1441]
+ProgIf:	00
+IOMMUGroup:	14
+
+Slot:	00:18.2
+Class:	Host bridge [0600]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Matisse/Vermeer Data Fabric: Device 18h; Function 2 [1442]
+ProgIf:	00
+IOMMUGroup:	14
+
+Slot:	00:18.3
+Class:	Host bridge [0600]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Matisse/Vermeer Data Fabric: Device 18h; Function 3 [1443]
+ProgIf:	00
+Driver:	k10temp
+Module:	k10temp
+IOMMUGroup:	14
+
+Slot:	00:18.4
+Class:	Host bridge [0600]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Matisse/Vermeer Data Fabric: Device 18h; Function 4 [1444]
+ProgIf:	00
+IOMMUGroup:	14
+
+Slot:	00:18.5
+Class:	Host bridge [0600]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Matisse/Vermeer Data Fabric: Device 18h; Function 5 [1445]
+ProgIf:	00
+IOMMUGroup:	14
+
+Slot:	00:18.6
+Class:	Host bridge [0600]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Matisse/Vermeer Data Fabric: Device 18h; Function 6 [1446]
+ProgIf:	00
+IOMMUGroup:	14
+
+Slot:	00:18.7
+Class:	Host bridge [0600]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Matisse/Vermeer Data Fabric: Device 18h; Function 7 [1447]
+ProgIf:	00
+IOMMUGroup:	14
+
+Slot:	20:00.0
+Class:	PCI bridge [0604]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Matisse Switch Upstream [57ad]
+ProgIf:	00
+Driver:	pcieport
+IOMMUGroup:	15
+
+Slot:	21:04.0
+Class:	PCI bridge [0604]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Matisse PCIe GPP Bridge [57a3]
+SVendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+SDevice:	Matisse PCIe GPP Bridge [1453]
+ProgIf:	00
+Driver:	pcieport
+IOMMUGroup:	16
+
+Slot:	21:05.0
+Class:	PCI bridge [0604]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Matisse PCIe GPP Bridge [57a3]
+SVendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+SDevice:	Matisse PCIe GPP Bridge [1453]
+ProgIf:	00
+Driver:	pcieport
+IOMMUGroup:	17
+
+Slot:	21:08.0
+Class:	PCI bridge [0604]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Matisse PCIe GPP Bridge [57a4]
+SVendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+SDevice:	Matisse PCIe GPP Bridge [1484]
+ProgIf:	00
+Driver:	pcieport
+IOMMUGroup:	18
+
+Slot:	21:09.0
+Class:	PCI bridge [0604]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Matisse PCIe GPP Bridge [57a4]
+SVendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+SDevice:	Matisse PCIe GPP Bridge [1484]
+ProgIf:	00
+Driver:	pcieport
+IOMMUGroup:	19
+
+Slot:	21:0a.0
+Class:	PCI bridge [0604]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Matisse PCIe GPP Bridge [57a4]
+SVendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+SDevice:	Matisse PCIe GPP Bridge [1484]
+ProgIf:	00
+Driver:	pcieport
+IOMMUGroup:	20
+
+Slot:	26:00.0
+Class:	SATA controller [0106]
+Vendor:	ASMedia Technology Inc. [1b21]
+Device:	ASM1062 Serial ATA Controller [0612]
+SVendor:	ASMedia Technology Inc. [1b21]
+SDevice:	ASM1062 Serial ATA Controller [1060]
+Rev:	02
+ProgIf:	01
+Driver:	ahci
+Module:	ahci
+IOMMUGroup:	21
+
+Slot:	27:00.0
+Class:	Ethernet controller [0200]
+Vendor:	Realtek Semiconductor Co., Ltd. [10ec]
+Device:	RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller [8168]
+SVendor:	Micro-Star International Co., Ltd. [MSI] [1462]
+SDevice:	X570-A PRO motherboard [7c37]
+Rev:	15
+ProgIf:	00
+Driver:	r8169
+Module:	r8169
+IOMMUGroup:	22
+
+Slot:	2a:00.0
+Class:	Non-Essential Instrumentation [1300]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Starship/Matisse Reserved SPP [1485]
+SVendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+SDevice:	Starship/Matisse Reserved SPP [1485]
+ProgIf:	00
+IOMMUGroup:	18
+
+Slot:	2a:00.1
+Class:	USB controller [0c03]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Matisse USB 3.0 Host Controller [149c]
+SVendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+SDevice:	Matisse USB 3.0 Host Controller [1486]
+ProgIf:	30
+Driver:	xhci_hcd
+Module:	xhci_pci
+IOMMUGroup:	18
+
+Slot:	2a:00.3
+Class:	USB controller [0c03]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Matisse USB 3.0 Host Controller [149c]
+SVendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+SDevice:	Matisse USB 3.0 Host Controller [148c]
+ProgIf:	30
+Driver:	xhci_hcd
+Module:	xhci_pci
+IOMMUGroup:	18
+
+Slot:	2b:00.0
+Class:	SATA controller [0106]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	FCH SATA Controller [AHCI mode] [7901]
+SVendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+SDevice:	FCH SATA Controller [AHCI mode] [7901]
+Rev:	51
+ProgIf:	01
+Driver:	ahci
+Module:	ahci
+IOMMUGroup:	19
+
+Slot:	2c:00.0
+Class:	SATA controller [0106]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	FCH SATA Controller [AHCI mode] [7901]
+SVendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+SDevice:	FCH SATA Controller [AHCI mode] [7901]
+Rev:	51
+ProgIf:	01
+Driver:	ahci
+Module:	ahci
+IOMMUGroup:	20
+
+Slot:	2d:00.0
+Class:	VGA compatible controller [0300]
+Vendor:	NVIDIA Corporation [10de]
+Device:	GA104 [GeForce RTX 3060] [2487]
+SVendor:	PNY [196e]
+SDevice:	GA104 [GeForce RTX 3060] [13a7]
+Rev:	a1
+ProgIf:	00
+Driver:	nouveau
+Module:	nvidiafb
+Module:	nouveau
+Module:	nvidia_drm
+Module:	nvidia
+IOMMUGroup:	23
+
+Slot:	2d:00.1
+Class:	Audio device [0403]
+Vendor:	NVIDIA Corporation [10de]
+Device:	GA104 High Definition Audio Controller [228b]
+SVendor:	PNY [196e]
+SDevice:	GA104 High Definition Audio Controller [13a7]
+Rev:	a1
+ProgIf:	00
+Driver:	snd_hda_intel
+Module:	snd_hda_intel
+IOMMUGroup:	23
+
+Slot:	2e:00.0
+Class:	Non-Essential Instrumentation [1300]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Starship/Matisse PCIe Dummy Function [148a]
+SVendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+SDevice:	Starship/Matisse PCIe Dummy Function [148a]
+ProgIf:	00
+IOMMUGroup:	24
+
+Slot:	2f:00.0
+Class:	Non-Essential Instrumentation [1300]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Starship/Matisse Reserved SPP [1485]
+SVendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+SDevice:	Starship/Matisse Reserved SPP [1485]
+ProgIf:	00
+IOMMUGroup:	25
+
+Slot:	2f:00.3
+Class:	USB controller [0c03]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Matisse USB 3.0 Host Controller [149c]
+SVendor:	Micro-Star International Co., Ltd. [MSI] [1462]
+SDevice:	X570-A PRO motherboard [7c37]
+ProgIf:	30
+Driver:	xhci_hcd
+Module:	xhci_pci
+IOMMUGroup:	26
+
+Slot:	2f:00.4
+Class:	Audio device [0403]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Starship/Matisse HD Audio Controller [1487]
+SVendor:	Micro-Star International Co., Ltd. [MSI] [1462]
+SDevice:	X570-A PRO motherboard [9c37]
+ProgIf:	00
+Driver:	snd_hda_intel
+Module:	snd_hda_intel
+IOMMUGroup:	27
+
+Slot:	30:00.0
+Class:	SATA controller [0106]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	FCH SATA Controller [AHCI mode] [7901]
+SVendor:	Micro-Star International Co., Ltd. [MSI] [1462]
+SDevice:	X570-A PRO motherboard [7c37]
+Rev:	51
+ProgIf:	01
+Driver:	ahci
+Module:	ahci
+IOMMUGroup:	28
+
+Slot:	31:00.0
+Class:	SATA controller [0106]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	FCH SATA Controller [AHCI mode] [7901]
+SVendor:	Micro-Star International Co., Ltd. [MSI] [1462]
+SDevice:	X570-A PRO motherboard [7c37]
+Rev:	51
+ProgIf:	01
+Driver:	ahci
+Module:	ahci
+IOMMUGroup:	29
+

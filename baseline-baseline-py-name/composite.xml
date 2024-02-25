@@ -1,0 +1,3818 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>baseline-baseline-py-name</Title>
+    <LastModified>2024-02-24 01:40:21</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.4</TestClient>
+    <Description>AMD Ryzen 9 3900X 12-Core testing with a MSI X570-A PRO (MS-7C37) v3.0 (H.70 BIOS) and NVIDIA GeForce RTX 3060 12GB on Ubuntu 23.10 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>baseline-baseline-py-id</Identifier>
+    <Hardware>Processor: AMD Ryzen 9 3900X 12-Core @ 3.80GHz (12 Cores / 24 Threads), Motherboard: MSI X570-A PRO (MS-7C37) v3.0 (H.70 BIOS), Chipset: AMD Starship/Matisse, Memory: 2 x 16GB DDR4-3200MT/s F4-3200C16-16GVK, Disk: 2000GB Seagate ST2000DM006-2DM1 + 2000GB Western Digital WD20EZAZ-00G + 500GB Samsung SSD 860 + 8002GB Seagate ST8000DM004-2CX1 + 1000GB CT1000BX500SSD1 + 512GB TS512GESD310C, Graphics: NVIDIA GeForce RTX 3060 12GB, Audio: NVIDIA GA104 HD Audio, Monitor: DELL P2314H, Network: Realtek RTL8111/8168/8411</Hardware>
+    <Software>OS: Ubuntu 23.10, Kernel: 6.5.0-9-generic (x86_64), Display Server: X Server 1.21.1.7, Display Driver: NVIDIA, OpenCL: OpenCL 3.0 CUDA 12.2.146, Compiler: GCC 13.2.0 + CUDA 12.2, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>ubuntu</User>
+    <TimeStamp>2024-02-23 06:44:24</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --enable-libphobos-checking=release --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=2 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=\/build\/gcc-13-XYspKM\/gcc-13-13.2.0\/debian\/tmp-nvptx\/usr,amdgcn-amdhsa=\/build\/gcc-13-XYspKM\/gcc-13-13.2.0\/debian\/tmp-gcn\/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v","cpu-scaling-governor":"acpi-cpufreq schedutil (Boost: Enabled)","cpu-microcode":"0x8701013","kernel-extra-details":"Transparent Huge Pages: madvise","python":"Python 3.11.6","security":"gather_data_sampling: Not affected + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Not affected + retbleed: Mitigation of untrained return thunk; SMT enabled with STIBP protection + spec_rstack_overflow: Mitigation of safe RET + spec_store_bypass: Mitigation of SSB disabled via prctl + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines IBPB: conditional STIBP: always-on RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/numpy-1.2.1</Identifier>
+    <Title>Numpy Benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description></Description>
+    <Scale>Score</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>426.28</Value>
+        <RawString>426.21:428.4:424.24</RawString>
+        <JSON>{"test-run-times":"180.67:173.99:176.17"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 1 resnet50</Arguments>
+    <Description>Device: CPU - Batch Size: 1 - Model: ResNet-50</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>32.36</Value>
+        <RawString>32.389870351558:32.527209525599:32.154218979601</RawString>
+        <JSON>{"min-result":31.89,"max-result":32.7,"test-run-times":"37.11:36.95:37.33"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 1 resnet152</Arguments>
+    <Description>Device: CPU - Batch Size: 1 - Model: ResNet-152</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>12.72</Value>
+        <RawString>12.753468037192:12.748029669087:12.671102866429</RawString>
+        <JSON>{"min-result":11.99,"max-result":12.8,"test-run-times":"90.16:90.22:90.62"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 16 resnet50</Arguments>
+    <Description>Device: CPU - Batch Size: 16 - Model: ResNet-50</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>24.28</Value>
+        <RawString>24.212891191054:24.247279105756:24.382323042728</RawString>
+        <JSON>{"min-result":20.22,"max-result":24.56,"test-run-times":"82.99:83.27:82.44"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 32 resnet50</Arguments>
+    <Description>Device: CPU - Batch Size: 32 - Model: ResNet-50</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>24.29</Value>
+        <RawString>24.206130227288:24.489029042681:24.162527528591</RawString>
+        <JSON>{"min-result":22.24,"max-result":24.66,"test-run-times":"83.08:82.21:82.91"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 64 resnet50</Arguments>
+    <Description>Device: CPU - Batch Size: 64 - Model: ResNet-50</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>24.24</Value>
+        <RawString>24.175166701001:24.23209100407:24.322649579792</RawString>
+        <JSON>{"min-result":23.59,"max-result":24.49,"test-run-times":"83.32:83.27:82.50"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 16 resnet152</Arguments>
+    <Description>Device: CPU - Batch Size: 16 - Model: ResNet-152</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>9.88</Value>
+        <RawString>9.8904859515294:9.9428448948896:9.8131233201967</RawString>
+        <JSON>{"min-result":9.31,"max-result":10.01,"test-run-times":"201.60:200.40:203.20"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 256 resnet50</Arguments>
+    <Description>Device: CPU - Batch Size: 256 - Model: ResNet-50</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>24.42</Value>
+        <RawString>24.48171065521:24.40428490292:24.382245554241</RawString>
+        <JSON>{"min-result":20.15,"max-result":24.74,"test-run-times":"82.44:82.79:82.81"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 32 resnet152</Arguments>
+    <Description>Device: CPU - Batch Size: 32 - Model: ResNet-152</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>9.84</Value>
+        <RawString>9.7529501957159:9.84171084831:9.9161011173278</RawString>
+        <JSON>{"min-result":9.6,"max-result":9.98,"test-run-times":"204.27:201.86:201.71"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 512 resnet50</Arguments>
+    <Description>Device: CPU - Batch Size: 512 - Model: ResNet-50</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>24.13</Value>
+        <RawString>24.157351951439:24.105064978177:24.11461826077</RawString>
+        <JSON>{"min-result":23.58,"max-result":24.41,"test-run-times":"83.24:83.24:83.16"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 64 resnet152</Arguments>
+    <Description>Device: CPU - Batch Size: 64 - Model: ResNet-152</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>9.88</Value>
+        <RawString>9.8112276199313:9.912225376178:9.9108958596132</RawString>
+        <JSON>{"min-result":8.8,"max-result":9.98,"test-run-times":"202.84:201.17:201.50"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 256 resnet152</Arguments>
+    <Description>Device: CPU - Batch Size: 256 - Model: ResNet-152</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>9.77</Value>
+        <RawString>9.8978022330688:9.6593130858406:9.7611178002503</RawString>
+        <JSON>{"min-result":9.17,"max-result":10,"test-run-times":"201.80:204.83:203.36"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 512 resnet152</Arguments>
+    <Description>Device: CPU - Batch Size: 512 - Model: ResNet-152</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>9.87</Value>
+        <RawString>9.8943627360891:9.8255421757378:9.8819890592792</RawString>
+        <JSON>{"min-result":9.09,"max-result":9.96,"test-run-times":"201.50:202.66:202.36"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 1 efficientnet_v2_l</Arguments>
+    <Description>Device: CPU - Batch Size: 1 - Model: Efficientnet_v2_l</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>7.31</Value>
+        <RawString>7.3097321967331:7.3055743030213:7.3033737414384</RawString>
+        <JSON>{"min-result":7.16,"max-result":7.34,"test-run-times":"155.53:155.60:155.66"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 16 efficientnet_v2_l</Arguments>
+    <Description>Device: CPU - Batch Size: 16 - Model: Efficientnet_v2_l</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>5.63</Value>
+        <RawString>5.5979832954881:5.6200406795962:5.6685277472507</RawString>
+        <JSON>{"min-result":5.39,"max-result":5.71,"test-run-times":"352.87:352.64:350.70"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 32 efficientnet_v2_l</Arguments>
+    <Description>Device: CPU - Batch Size: 32 - Model: Efficientnet_v2_l</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>5.63</Value>
+        <RawString>5.6534929294271:5.610234472842:5.629025706195</RawString>
+        <JSON>{"min-result":5.31,"max-result":5.68,"test-run-times":"351.26:352.19:351.87"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 64 efficientnet_v2_l</Arguments>
+    <Description>Device: CPU - Batch Size: 64 - Model: Efficientnet_v2_l</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>5.62</Value>
+        <RawString>5.6358935876638:5.6064917368309:5.6277400910703</RawString>
+        <JSON>{"min-result":5.35,"max-result":5.66,"test-run-times":"351.67:352.07:351.95"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 256 efficientnet_v2_l</Arguments>
+    <Description>Device: CPU - Batch Size: 256 - Model: Efficientnet_v2_l</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>5.61</Value>
+        <RawString>5.6212275659036:5.5738877946886:5.6229505919528</RawString>
+        <JSON>{"min-result":5.44,"max-result":5.65,"test-run-times":"351.32:354.62:351.86"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cpu 512 efficientnet_v2_l</Arguments>
+    <Description>Device: CPU - Batch Size: 512 - Model: Efficientnet_v2_l</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>5.61</Value>
+        <RawString>5.5937471937482:5.6127021946747:5.6356709789806</RawString>
+        <JSON>{"min-result":5.45,"max-result":5.66,"test-run-times":"353.63:352.09:351.36"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 1 resnet50</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 1 - Model: ResNet-50</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>210.88</Value>
+        <RawString>208.26273568201:208.16092001358:216.22784984483</RawString>
+        <JSON>{"min-result":195.21,"max-result":218.16,"test-run-times":"8.58:8.58:8.34"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 1 resnet152</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 1 - Model: ResNet-152</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>73.91</Value>
+        <RawString>74.104246873693:72.855455127669:74.767816125463</RawString>
+        <JSON>{"min-result":68.9,"max-result":75.9,"test-run-times":"18.50:18.76:18.38"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 16 resnet50</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 16 - Model: ResNet-50</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>200.30</Value>
+        <RawString>200.28653349912:200.74011036127:199.88341472284</RawString>
+        <JSON>{"min-result":182.88,"max-result":202.36,"test-run-times":"14.20:14.19:14.25"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 32 resnet50</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 32 - Model: ResNet-50</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>199.46</Value>
+        <RawString>198.05249000623:201.54057159962:198.78325150883</RawString>
+        <JSON>{"min-result":182.77,"max-result":206.03,"test-run-times":"14.31:14.13:14.31"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 64 resnet50</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 64 - Model: ResNet-50</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>201.41</Value>
+        <RawString>202.38947790876:201.48007369278:200.37087802933</RawString>
+        <JSON>{"min-result":184.02,"max-result":203.68,"test-run-times":"14.10:14.14:14.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 16 resnet152</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 16 - Model: ResNet-152</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>73.01</Value>
+        <RawString>72.044506139787:72.052245871357:74.93976355445</RawString>
+        <JSON>{"min-result":68.06,"max-result":75.3,"test-run-times":"34.43:34.25:33.00"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 256 resnet50</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 256 - Model: ResNet-50</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>202.72</Value>
+        <RawString>206.11910191051:201.85311388449:200.19587439476</RawString>
+        <JSON>{"min-result":183.1,"max-result":207.93,"test-run-times":"13.83:14.13:14.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 32 resnet152</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 32 - Model: ResNet-152</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>74.15</Value>
+        <RawString>75.008731852324:75.210621772599:72.242863426777</RawString>
+        <JSON>{"min-result":68.27,"max-result":75.61,"test-run-times":"32.91:32.90:34.18"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 512 resnet50</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 512 - Model: ResNet-50</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>203.18</Value>
+        <RawString>200.86937737125:202.19116863846:206.47195164333</RawString>
+        <JSON>{"min-result":183.76,"max-result":207.98,"test-run-times":"14.20:14.11:13.84"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 64 resnet152</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 64 - Model: ResNet-152</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>71.81</Value>
+        <RawString>70.981321453667:72.489381781433:71.964200520654</RawString>
+        <JSON>{"min-result":67.31,"max-result":72.89,"test-run-times":"34.67:33.92:34.25"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 256 resnet152</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 256 - Model: ResNet-152</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>71.74</Value>
+        <RawString>71.301959782205:72.145318066104:71.764960459163</RawString>
+        <JSON>{"min-result":67.87,"max-result":72.6,"test-run-times":"34.55:34.21:34.42"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 512 resnet152</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 512 - Model: ResNet-152</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>72.31</Value>
+        <RawString>74.176500416083:71.37250055715:71.369157790613</RawString>
+        <JSON>{"min-result":67.38,"max-result":74.62,"test-run-times":"33.31:34.53:34.46"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 1 efficientnet_v2_l</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 1 - Model: Efficientnet_v2_l</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>39.35</Value>
+        <RawString>39.209154397922:40.235156364979:38.615419900175</RawString>
+        <JSON>{"min-result":36.65,"max-result":40.42,"test-run-times":"32.37:31.69:32.82"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 16 efficientnet_v2_l</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 16 - Model: Efficientnet_v2_l</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>38.95</Value>
+        <RawString>38.802148892971:39.060295702463:38.979102333057</RawString>
+        <JSON>{"min-result":37.12,"max-result":39.27,"test-run-times":"61.10:61.73:61.53"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 32 efficientnet_v2_l</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 32 - Model: Efficientnet_v2_l</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>37.71</Value>
+        <RawString>37.268221940641:37.798836939071:38.071658025045</RawString>
+        <JSON>{"min-result":35.52,"max-result":38.25,"test-run-times":"63.56:62.61:62.28"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 64 efficientnet_v2_l</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 64 - Model: Efficientnet_v2_l</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>37.88</Value>
+        <RawString>39.188923393128:37.741263038979:36.423494652639:37.46656533349:37.192734732362:38.667630790414:39.038934904472:37.652696970775:37.56074548686</RawString>
+        <JSON>{"min-result":35.67,"max-result":39.63,"test-run-times":"60.45:62.76:64.79:63.10:63.73:61.35:60.91:62.84:63.14"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 256 efficientnet_v2_l</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 256 - Model: Efficientnet_v2_l</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>37.36</Value>
+        <RawString>37.484874519756:37.533983483161:37.073864009659</RawString>
+        <JSON>{"min-result":35.47,"max-result":37.85,"test-run-times":"63.15:63.07:63.89"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pytorch-1.0.1</Identifier>
+    <Title>PyTorch</Title>
+    <AppVersion>2.1</AppVersion>
+    <Arguments>cuda 512 efficientnet_v2_l</Arguments>
+    <Description>Device: NVIDIA CUDA GPU - Batch Size: 512 - Model: Efficientnet_v2_l</Description>
+    <Scale>batches/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>37.43</Value>
+        <RawString>37.3909400527:37.477174783993:37.414845087819</RawString>
+        <JSON>{"min-result":35.81,"max-result":38.02,"test-run-times":"63.36:62.88:63.16"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pybench-1.1.3</Identifier>
+    <Title>PyBench</Title>
+    <AppVersion>2018-02-16</AppVersion>
+    <Arguments></Arguments>
+    <Description>Total For Average Test Times</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>774</Value>
+        <RawString>775:772:775</RawString>
+        <JSON>{"test-run-times":"18.14:18.06:18.38"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>go</Arguments>
+    <Description>Benchmark: go</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>129</Value>
+        <RawString>129:129:129</RawString>
+        <JSON>{"test-run-times":"23.69:23.73:23.79"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>2to3</Arguments>
+    <Description>Benchmark: 2to3</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>221</Value>
+        <RawString>221:221:221</RawString>
+        <JSON>{"test-run-times":"41.33:41.32:41.34"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>chaos</Arguments>
+    <Description>Benchmark: chaos</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>62.8</Value>
+        <RawString>62.9:62.8:62.8</RawString>
+        <JSON>{"test-run-times":"23.83:23.84:23.82"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>float</Arguments>
+    <Description>Benchmark: float</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>67.4</Value>
+        <RawString>67.5:67.4:67.4</RawString>
+        <JSON>{"test-run-times":"24.94:24.88:24.90"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>nbody</Arguments>
+    <Description>Benchmark: nbody</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>76.2</Value>
+        <RawString>76.3:76.2:76.1</RawString>
+        <JSON>{"test-run-times":"27.63:27.59:27.52"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>pathlib</Arguments>
+    <Description>Benchmark: pathlib</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>19.7</Value>
+        <RawString>19.7:19.7:19.7</RawString>
+        <JSON>{"test-run-times":"34.18:34.28:34.27"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>raytrace</Arguments>
+    <Description>Benchmark: raytrace</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>262</Value>
+        <RawString>261:262:262</RawString>
+        <JSON>{"test-run-times":"45.56:45.67:45.66"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>json_loads</Arguments>
+    <Description>Benchmark: json_loads</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>19.5</Value>
+        <RawString>19.4:19.6:19.5</RawString>
+        <JSON>{"test-run-times":"18.92:35.45:35.48"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>crypto_pyaes</Arguments>
+    <Description>Benchmark: crypto_pyaes</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>65.1</Value>
+        <RawString>65.1:65:65.2</RawString>
+        <JSON>{"test-run-times":"24.03:23.97:24.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>regex_compile</Arguments>
+    <Description>Benchmark: regex_compile</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>116</Value>
+        <RawString>116:116:116</RawString>
+        <JSON>{"test-run-times":"24.03:24.04:24.08"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>python_startup</Arguments>
+    <Description>Benchmark: python_startup</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>7.61</Value>
+        <RawString>7.6:7.61:7.62</RawString>
+        <JSON>{"test-run-times":"64.59:64.60:64.66"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>django_template</Arguments>
+    <Description>Benchmark: django_template</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>28.5</Value>
+        <RawString>28.5:28.5:28.4</RawString>
+        <JSON>{"test-run-times":"26.77:26.74:26.69"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>pickle_pure_python</Arguments>
+    <Description>Benchmark: pickle_pure_python</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>259</Value>
+        <RawString>259:259:258</RawString>
+        <JSON>{"test-run-times":"29.90:29.96:29.86"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b jax -s 16384 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: JAX - Project Size: 16384 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b jax -s 16384 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: JAX - Project Size: 16384 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b jax -s 65536 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: JAX - Project Size: 65536 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b jax -s 65536 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: JAX - Project Size: 65536 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b jax -s 16384 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: JAX - Project Size: 16384 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b jax -s 16384 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: JAX - Project Size: 16384 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.10:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b jax -s 65536 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: JAX - Project Size: 65536 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b jax -s 65536 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: JAX - Project Size: 65536 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b jax -s 262144 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: JAX - Project Size: 262144 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b jax -s 262144 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: JAX - Project Size: 262144 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b jax -s 262144 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: JAX - Project Size: 262144 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b jax -s 262144 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: JAX - Project Size: 262144 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b jax -s 1048576 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: JAX - Project Size: 1048576 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b jax -s 1048576 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: JAX - Project Size: 1048576 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b jax -s 4194304 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: JAX - Project Size: 4194304 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b jax -s 4194304 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: JAX - Project Size: 4194304 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numba -s 16384 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Numba - Project Size: 16384 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numba -s 16384 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Numba - Project Size: 16384 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.10","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numba -s 65536 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Numba - Project Size: 65536 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numba -s 65536 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Numba - Project Size: 65536 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numpy -s 16384 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Numpy - Project Size: 16384 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>0.003</Value>
+        <RawString>0.003:0.003:0.003</RawString>
+        <JSON>{"test-run-times":"3.07:3.06:3.05"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numpy -s 16384 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Numpy - Project Size: 16384 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>0.009</Value>
+        <RawString>0.009:0.009:0.009</RawString>
+        <JSON>{"test-run-times":"13.16:13.36:13.24"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numpy -s 65536 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Numpy - Project Size: 65536 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>0.015</Value>
+        <RawString>0.015:0.015:0.015</RawString>
+        <JSON>{"test-run-times":"2.12:2.13:2.13"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numpy -s 65536 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Numpy - Project Size: 65536 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>0.032</Value>
+        <RawString>0.032:0.032:0.033</RawString>
+        <JSON>{"test-run-times":"5.97:5.96:6.13"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b jax -s 1048576 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: JAX - Project Size: 1048576 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b jax -s 1048576 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: JAX - Project Size: 1048576 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b jax -s 4194304 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: JAX - Project Size: 4194304 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b jax -s 4194304 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: JAX - Project Size: 4194304 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.10:0.10:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numba -s 16384 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Numba - Project Size: 16384 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numba -s 16384 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Numba - Project Size: 16384 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numba -s 65536 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Numba - Project Size: 65536 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numba -s 65536 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Numba - Project Size: 65536 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numpy -s 16384 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Numpy - Project Size: 16384 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>0.003</Value>
+        <RawString>0.003:0.003:0.003</RawString>
+        <JSON>{"test-run-times":"3.09:3.08:3.06"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numpy -s 16384 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Numpy - Project Size: 16384 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>0.009</Value>
+        <RawString>0.009:0.009:0.009</RawString>
+        <JSON>{"test-run-times":"13.24:13.32:13.21"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numpy -s 65536 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Numpy - Project Size: 65536 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>0.015</Value>
+        <RawString>0.015:0.015:0.015</RawString>
+        <JSON>{"test-run-times":"2.15:2.14:2.18"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numpy -s 65536 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Numpy - Project Size: 65536 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>0.033</Value>
+        <RawString>0.033:0.033:0.033</RawString>
+        <JSON>{"test-run-times":"6.16:6.16:6.22"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b aesara -s 16384 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Aesara - Project Size: 16384 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b aesara -s 16384 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Aesara - Project Size: 16384 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b aesara -s 65536 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Aesara - Project Size: 65536 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b aesara -s 65536 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Aesara - Project Size: 65536 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numba -s 262144 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Numba - Project Size: 262144 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numba -s 262144 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Numba - Project Size: 262144 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.10","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numpy -s 262144 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Numpy - Project Size: 262144 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>0.061</Value>
+        <RawString>0.062:0.061:0.06</RawString>
+        <JSON>{"test-run-times":"8.43:8.39:8.16"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numpy -s 262144 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Numpy - Project Size: 262144 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>0.131</Value>
+        <RawString>0.132:0.132:0.13</RawString>
+        <JSON>{"test-run-times":"23.60:23.63:23.29"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b aesara -s 16384 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Aesara - Project Size: 16384 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b aesara -s 16384 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Aesara - Project Size: 16384 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b aesara -s 65536 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Aesara - Project Size: 65536 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b aesara -s 65536 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Aesara - Project Size: 65536 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numba -s 262144 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Numba - Project Size: 262144 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numba -s 262144 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Numba - Project Size: 262144 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numpy -s 262144 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Numpy - Project Size: 262144 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>0.062</Value>
+        <RawString>0.061:0.063:0.062</RawString>
+        <JSON>{"test-run-times":"8.51:8.55:8.48"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numpy -s 262144 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Numpy - Project Size: 262144 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>0.131</Value>
+        <RawString>0.131:0.131:0.132</RawString>
+        <JSON>{"test-run-times":"23.52:23.52:23.73"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b aesara -s 262144 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Aesara - Project Size: 262144 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b aesara -s 262144 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Aesara - Project Size: 262144 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numba -s 1048576 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Numba - Project Size: 1048576 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numba -s 1048576 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Numba - Project Size: 1048576 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numba -s 4194304 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Numba - Project Size: 4194304 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numba -s 4194304 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Numba - Project Size: 4194304 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numpy -s 1048576 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Numpy - Project Size: 1048576 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>0.263</Value>
+        <RawString>0.268:0.261:0.261</RawString>
+        <JSON>{"test-run-times":"9.79:9.58:9.59"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numpy -s 1048576 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Numpy - Project Size: 1048576 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>0.619</Value>
+        <RawString>0.62:0.619:0.617</RawString>
+        <JSON>{"test-run-times":"28.15:28.14:28.06"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numpy -s 4194304 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Numpy - Project Size: 4194304 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>1.402</Value>
+        <RawString>1.408:1.401:1.398</RawString>
+        <JSON>{"test-run-times":"48.45:48.23:48.15"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b numpy -s 4194304 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Numpy - Project Size: 4194304 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>2.670</Value>
+        <RawString>2.651:2.684:2.675</RawString>
+        <JSON>{"test-run-times":"119.72:121.35:120.97"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b pytorch -s 16384 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: PyTorch - Project Size: 16384 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b pytorch -s 16384 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: PyTorch - Project Size: 16384 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.11:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b pytorch -s 65536 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: PyTorch - Project Size: 65536 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b pytorch -s 65536 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: PyTorch - Project Size: 65536 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b aesara -s 262144 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Aesara - Project Size: 262144 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b aesara -s 262144 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Aesara - Project Size: 262144 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numba -s 1048576 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Numba - Project Size: 1048576 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numba -s 1048576 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Numba - Project Size: 1048576 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numba -s 4194304 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Numba - Project Size: 4194304 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numba -s 4194304 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Numba - Project Size: 4194304 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numpy -s 1048576 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Numpy - Project Size: 1048576 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>0.263</Value>
+        <RawString>0.264:0.266:0.26</RawString>
+        <JSON>{"test-run-times":"9.66:9.74:9.49"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numpy -s 1048576 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Numpy - Project Size: 1048576 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>0.631</Value>
+        <RawString>0.63:0.628:0.636</RawString>
+        <JSON>{"test-run-times":"28.76:28.62:29.01"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numpy -s 4194304 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Numpy - Project Size: 4194304 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>1.422</Value>
+        <RawString>1.422:1.429:1.414</RawString>
+        <JSON>{"test-run-times":"49.02:49.20:48.74"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b numpy -s 4194304 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Numpy - Project Size: 4194304 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>2.662</Value>
+        <RawString>2.654:2.659:2.673</RawString>
+        <JSON>{"test-run-times":"119.85:120.22:120.84"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b pytorch -s 16384 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: PyTorch - Project Size: 16384 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b pytorch -s 16384 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: PyTorch - Project Size: 16384 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b pytorch -s 65536 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: PyTorch - Project Size: 65536 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b pytorch -s 65536 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: PyTorch - Project Size: 65536 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b aesara -s 1048576 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Aesara - Project Size: 1048576 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b aesara -s 1048576 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Aesara - Project Size: 1048576 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b aesara -s 4194304 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: Aesara - Project Size: 4194304 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b aesara -s 4194304 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: Aesara - Project Size: 4194304 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b pytorch -s 262144 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: PyTorch - Project Size: 262144 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b pytorch -s 262144 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: PyTorch - Project Size: 262144 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b aesara -s 1048576 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Aesara - Project Size: 1048576 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b aesara -s 1048576 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Aesara - Project Size: 1048576 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b aesara -s 4194304 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: Aesara - Project Size: 4194304 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b aesara -s 4194304 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: Aesara - Project Size: 4194304 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b pytorch -s 262144 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: PyTorch - Project Size: 262144 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b pytorch -s 262144 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: PyTorch - Project Size: 262144 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b pytorch -s 1048576 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: PyTorch - Project Size: 1048576 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b pytorch -s 1048576 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: PyTorch - Project Size: 1048576 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b pytorch -s 4194304 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: PyTorch - Project Size: 4194304 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b pytorch -s 4194304 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: PyTorch - Project Size: 4194304 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b pytorch -s 1048576 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: PyTorch - Project Size: 1048576 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b pytorch -s 1048576 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: PyTorch - Project Size: 1048576 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b pytorch -s 4194304 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: PyTorch - Project Size: 4194304 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b pytorch -s 4194304 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: PyTorch - Project Size: 4194304 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b tensorflow -s 16384 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: TensorFlow - Project Size: 16384 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b tensorflow -s 16384 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: TensorFlow - Project Size: 16384 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b tensorflow -s 65536 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: TensorFlow - Project Size: 65536 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b tensorflow -s 65536 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: TensorFlow - Project Size: 65536 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b tensorflow -s 16384 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: TensorFlow - Project Size: 16384 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b tensorflow -s 16384 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: TensorFlow - Project Size: 16384 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b tensorflow -s 65536 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: TensorFlow - Project Size: 65536 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b tensorflow -s 65536 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: TensorFlow - Project Size: 65536 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b tensorflow -s 262144 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: TensorFlow - Project Size: 262144 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b tensorflow -s 262144 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: TensorFlow - Project Size: 262144 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b tensorflow -s 262144 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: TensorFlow - Project Size: 262144 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b tensorflow -s 262144 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: TensorFlow - Project Size: 262144 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b tensorflow -s 1048576 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: TensorFlow - Project Size: 1048576 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b tensorflow -s 1048576 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: TensorFlow - Project Size: 1048576 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b tensorflow -s 4194304 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: CPU - Backend: TensorFlow - Project Size: 4194304 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device cpu -b tensorflow -s 4194304 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: CPU - Backend: TensorFlow - Project Size: 4194304 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b tensorflow -s 1048576 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: TensorFlow - Project Size: 1048576 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b tensorflow -s 1048576 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: TensorFlow - Project Size: 1048576 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b tensorflow -s 4194304 benchmarks/equation_of_state/</Arguments>
+    <Description>Device: GPU - Backend: TensorFlow - Project Size: 4194304 - Benchmark: Equation of State</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyhpc-3.0.0</Identifier>
+    <Title>PyHPC Benchmarks</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments>--device gpu -b tensorflow -s 4194304 benchmarks/isoneutral_mixing/</Arguments>
+    <Description>Device: GPU - Backend: TensorFlow - Project Size: 4194304 - Benchmark: Isoneutral Mixing</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.09:0.09:0.09","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>glm.py</Arguments>
+    <Description>Benchmark: GLM</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>293.598</Value>
+        <RawString>295.164:291.588:294.042</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"290.69:295.16:291.59:294.04"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>saga.py</Arguments>
+    <Description>Benchmark: SAGA</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>868.018</Value>
+        <RawString>877.847:837.585:888.854:845.371:883.92:874.532</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"2424.52:877.85:837.58:888.85:845.37:883.92:874.53"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>tree.py</Arguments>
+    <Description>Benchmark: Tree</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>48.338</Value>
+        <RawString>47.222:49.933:47.734:48.463</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"51.15:47.22:49.93:47.73:48.46"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>lasso.py</Arguments>
+    <Description>Benchmark: Lasso</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>511.848</Value>
+        <RawString>513.277:505.701:516.566</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"502.16:513.28:505.70:516.57"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>glmnet.py</Arguments>
+    <Description>Benchmark: Glmnet</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"0.39:0.38:0.39","error":"The test quit with a non-zero exit status. E: ModuleNotFoundError: No module named 'glmnet'"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>sparsify.py</Arguments>
+    <Description>Benchmark: Sparsify</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>127.282</Value>
+        <RawString>128.918:123.527:130.132:124.505:129.327</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"123.65:128.92:123.53:130.13:124.50:129.33"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>plot_ward.py</Arguments>
+    <Description>Benchmark: Plot Ward</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>57.824</Value>
+        <RawString>57.945:57.407:58.12</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"58.04:57.94:57.41:58.12"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>mnist.py</Arguments>
+    <Description>Benchmark: MNIST Dataset</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>65.763</Value>
+        <RawString>67.765:64.832:64.084:66.369</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"111.52:67.76:64.83:64.08:66.37"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>plot_neighbors.py</Arguments>
+    <Description>Benchmark: Plot Neighbors</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>147.752</Value>
+        <RawString>145.483:144.272:153.717:147.77:145.648:151.584:145.789</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"147.94:145.48:144.27:153.72:147.77:145.65:151.58:145.79"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>sgd_regression.py</Arguments>
+    <Description>Benchmark: SGD Regression</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>106.315</Value>
+        <RawString>104.861:109.644:103.527:107.898:103.743:108.214</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"107.77:104.86:109.64:103.53:107.90:103.74:108.21"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>online_ocsvm.py</Arguments>
+    <Description>Benchmark: SGDOneClassSVM</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>379.739</Value>
+        <RawString>387.86:373.94:377.418</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"456.53:387.86:373.94:377.42"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>plot_lasso_path.py</Arguments>
+    <Description>Benchmark: Plot Lasso Path</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"0.60:0.61:0.59","error":"The test quit with a non-zero exit status. E: AttributeError: type object 'Axis' has no attribute '_set_ticklabels'. Did you mean: 'set_ticklabels'?"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>isolation_forest.py</Arguments>
+    <Description>Benchmark: Isolation Forest</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>289.371</Value>
+        <RawString>286.801:290.966:290.347</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"354.45:286.80:290.97:290.35"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>plot_fastkmeans.py</Arguments>
+    <Description>Benchmark: Plot Fast KMeans</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"0.60:0.61:0.60","error":"The test quit with a non-zero exit status. E: AttributeError: type object 'Axis' has no attribute '_set_ticklabels'. Did you mean: 'set_ticklabels'?"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>text_vectorizers.py</Arguments>
+    <Description>Benchmark: Text Vectorizers</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>60.814</Value>
+        <RawString>60.759:60.524:61.158</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"61.39:60.76:60.52:61.16"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>plot_hierarchical.py</Arguments>
+    <Description>Benchmark: Plot Hierarchical</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>211.286</Value>
+        <RawString>212.415:211.57:209.872</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"210.36:212.41:211.57:209.87"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>plot_omp_lars.py</Arguments>
+    <Description>Benchmark: Plot OMP vs. LARS</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>91.499</Value>
+        <RawString>91.395:91.441:91.661</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"92.00:91.39:91.44:91.66"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>feature_expansions.py</Arguments>
+    <Description>Benchmark: Feature Expansions</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>131.277</Value>
+        <RawString>129.842:132.821:131.169</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"128.66:129.84:132.82:131.17"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>lof.py</Arguments>
+    <Description>Benchmark: LocalOutlierFactor</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>53.464</Value>
+        <RawString>53.149:53.763:53.481</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"71.17:53.15:53.76:53.48"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>tsne_mnist.py</Arguments>
+    <Description>Benchmark: TSNE MNIST Dataset</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>236.865</Value>
+        <RawString>236.106:236.862:237.627</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"226.24:236.11:236.86:237.63"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>isotonic.py --iterations 100 --log_min_problem_size 1 --log_max_problem_size 10 --dataset logistic</Arguments>
+    <Description>Benchmark: Isotonic / Logistic</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>1470.806</Value>
+        <RawString>1455.619:1495.129:1461.67</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"1419.73:1455.62:1495.13:1461.67"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>plot_incremental_pca.py</Arguments>
+    <Description>Benchmark: Plot Incremental PCA</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>31.006</Value>
+        <RawString>30.983:30.978:31.056</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"567.17:30.98:30.98:31.06"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>hist_gradient_boosting.py</Arguments>
+    <Description>Benchmark: Hist Gradient Boosting</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>109.984</Value>
+        <RawString>109.799:109.725:110.427</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"109.56:109.80:109.72:110.43"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>plot_parallel_pairwise.py</Arguments>
+    <Description>Benchmark: Plot Parallel Pairwise</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"0.82:0.78:0.80","error":"The test quit with a non-zero exit status. E: numpy.core._exceptions._ArrayMemoryError: Unable to allocate 74.5 GiB for an array with shape (100000, 100000) and data type float64"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>isotonic.py --iterations 100 --log_min_problem_size 1 --log_max_problem_size 10 --dataset pathological</Arguments>
+    <Description>Benchmark: Isotonic / Pathological</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"496.19:509.92:504.55","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>rcv1_logreg_convergence.py</Arguments>
+    <Description>Benchmark: RCV1 Logreg Convergencet</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"12.45:12.07:12.01","error":"The test quit with a non-zero exit status. E: IndexError: list index out of range"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>sample_without_replacement.py</Arguments>
+    <Description>Benchmark: Sample Without Replacement</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>158.262</Value>
+        <RawString>159.245:158.375:157.167</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"157.42:159.25:158.38:157.17"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>covertype.py</Arguments>
+    <Description>Benchmark: Covertype Dataset Benchmark</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>376.145</Value>
+        <RawString>383.45:366.883:378.103</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"371.04:383.45:366.88:378.10"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>hist_gradient_boosting_adult.py</Arguments>
+    <Description>Benchmark: Hist Gradient Boosting Adult</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>103.497</Value>
+        <RawString>103.145:104.849:102.496</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"108.91:103.14:104.85:102.50"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>isotonic.py --iterations 100 --log_min_problem_size 1 --log_max_problem_size 10 --dataset perturbed_logarithm</Arguments>
+    <Description>Benchmark: Isotonic / Perturbed Logarithm</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>1788.259</Value>
+        <RawString>1770.435:1757.818:1836.525</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"1774.58:1770.43:1757.82:1836.52"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>hist_gradient_boosting_threading.py</Arguments>
+    <Description>Benchmark: Hist Gradient Boosting Threading</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>110.215</Value>
+        <RawString>110.404:109.958:110.282</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"110.20:110.40:109.96:110.28"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>plot_svd.py</Arguments>
+    <Description>Benchmark: Plot Singular Value Decomposition</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"0.61:0.60:0.60","error":"The test quit with a non-zero exit status. E: AttributeError: type object 'Axis' has no attribute '_set_ticklabels'. Did you mean: 'set_ticklabels'?"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>hist_gradient_boosting_higgsboson.py</Arguments>
+    <Description>Benchmark: Hist Gradient Boosting Higgs Boson</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"5068.27:52.77:54.89","error":"The test quit with a non-zero exit status. E: EOFError: Compressed file ended before the end-of-stream marker was reached"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>20newsgroups.py -e logistic_regression</Arguments>
+    <Description>Benchmark: 20 Newsgroups / Logistic Regression</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>41.519</Value>
+        <RawString>41.822:41.155:41.579</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"40.92:41.82:41.15:41.58"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>plot_polynomial_kernel_approximation.py</Arguments>
+    <Description>Benchmark: Plot Polynomial Kernel Approximation</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>150.732</Value>
+        <RawString>148.295:151.794:152.108</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"150.94:148.29:151.79:152.11"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>plot_nmf.py</Arguments>
+    <Description>Benchmark: Plot Non-Negative Matrix Factorization</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"58.53:59.66:58.21","error":"The test quit with a non-zero exit status. E: KeyError: &lt;Axes: &gt;"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>hist_gradient_boosting_categorical_only.py</Arguments>
+    <Description>Benchmark: Hist Gradient Boosting Categorical Only</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>18.579</Value>
+        <RawString>18.568:18.695:18.475</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"18.60:18.57:18.69:18.47"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>kernel_pca_solvers_time_vs_n_samples.py</Arguments>
+    <Description>Benchmark: Kernel PCA Solvers / Time vs. N Samples</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>72.541</Value>
+        <RawString>72.44:72.556:72.626</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"72.60:72.44:72.56:72.63"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>kernel_pca_solvers_time_vs_n_components.py</Arguments>
+    <Description>Benchmark: Kernel PCA Solvers / Time vs. N Components</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>37.242</Value>
+        <RawString>37.126:36.952:37.649</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"37.34:37.13:36.95:37.65"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/scikit-learn-2.0.0</Identifier>
+    <Title>Scikit-Learn</Title>
+    <AppVersion>1.2.2</AppVersion>
+    <Arguments>random_projections.py --n-times 100</Arguments>
+    <Description>Benchmark: Sparse Random Projections / 100 Iterations</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-py-id</Identifier>
+        <Value>613.547</Value>
+        <RawString>609.922:621.153:609.565</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O0"},"test-run-times":"631.32:609.92:621.15:609.56"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
