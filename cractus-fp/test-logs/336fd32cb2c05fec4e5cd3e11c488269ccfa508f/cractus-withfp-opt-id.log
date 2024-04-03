@@ -1,0 +1,108 @@
+#####
+cractus-withfp-opt-id - Run 1
+2024-02-22 03:23:21
+#####
+sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 64
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second: 47576.60
+
+General statistics:
+    total time:                          90.0014s
+    total number of events:              4282046
+
+Latency (ms):
+         min:                                    1.01
+         avg:                                    1.34
+         max:                                   33.69
+         95th percentile:                        1.34
+         sum:                              5758070.33
+
+Threads fairness:
+    events (avg/stddev):           66906.9688/75.87
+    execution time (avg/stddev):   89.9698/0.01
+
+
+#####
+cractus-withfp-opt-id - Run 2
+2024-02-22 03:24:55
+#####
+sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 64
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second: 47560.36
+
+General statistics:
+    total time:                          90.0014s
+    total number of events:              4280584
+
+Latency (ms):
+         min:                                    1.01
+         avg:                                    1.35
+         max:                                   19.34
+         95th percentile:                        1.34
+         sum:                              5758147.48
+
+Threads fairness:
+    events (avg/stddev):           66884.1250/49.61
+    execution time (avg/stddev):   89.9711/0.01
+
+
+#####
+cractus-withfp-opt-id - Run 3
+2024-02-22 03:26:27
+#####
+sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 64
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second: 47575.86
+
+General statistics:
+    total time:                          90.0013s
+    total number of events:              4281974
+
+Latency (ms):
+         min:                                    1.01
+         avg:                                    1.34
+         max:                                   21.65
+         95th percentile:                        1.34
+         sum:                              5757816.24
+
+Threads fairness:
+    events (avg/stddev):           66905.8438/63.41
+    execution time (avg/stddev):   89.9659/0.02
+
+

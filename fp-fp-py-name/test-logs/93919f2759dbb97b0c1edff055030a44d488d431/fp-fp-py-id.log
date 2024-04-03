@@ -1,72 +1,1480 @@
 #####
 fp-fp-py-id - Run 1
-2024-02-24 09:55:32
+2024-02-25 22:53:46
 #####
 Benchmarking on 12 threads
-Traceback (most recent call last):
-  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/pytorch-benchmark.py", line 8, in <module>
-    model = resnet50().to("cuda")
-            ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1160, in to
-    return self._apply(convert)
-           ^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 810, in _apply
-    module._apply(fn)
-  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 833, in _apply
-    param_applied = fn(param)
-                    ^^^^^^^^^
-  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1158, in convert
-    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/.local/lib/python3.11/site-packages/torch/cuda/__init__.py", line 298, in _lazy_init
-    torch._C._cuda_init()
-RuntimeError: No CUDA GPUs are available
+Warming up with batch_size=1:   0%|          | 0/1 [00:00<?, ?it/s]Warming up with batch_size=1: 100%|██████████| 1/1 [00:00<00:00,  4.97it/s]Warming up with batch_size=1: 100%|██████████| 1/1 [00:00<00:00,  4.97it/s]
+Warning: module Bottleneck is treated as a zero-op.
+Warning: module ResNet is treated as a zero-op.
+Warning! No positional inputs found for a module, assuming batch size is 1.
+ResNet(
+  25.56 M, 100.000% Params, 4.12 GMac, 100.000% MACs, 
+  (conv1): Conv2d(9.41 k, 0.037% Params, 118.01 MMac, 2.863% MACs, 3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(128, 0.001% Params, 1.61 MMac, 0.039% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(0, 0.000% Params, 802.82 KMac, 0.019% MACs, inplace=True)
+  (maxpool): MaxPool2d(0, 0.000% Params, 802.82 KMac, 0.019% MACs, kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer1): Sequential(
+    215.81 k, 0.844% Params, 680.39 MMac, 16.507% MACs, 
+    (0): Bottleneck(
+      75.01 k, 0.293% Params, 236.43 MMac, 5.736% MACs, 
+      (conv1): Conv2d(4.1 k, 0.016% Params, 12.85 MMac, 0.312% MACs, 64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, 0.001% Params, 401.41 KMac, 0.010% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(36.86 k, 0.144% Params, 115.61 MMac, 2.805% MACs, 64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, 0.001% Params, 401.41 KMac, 0.010% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(16.38 k, 0.064% Params, 51.38 MMac, 1.247% MACs, 64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, 0.002% Params, 1.61 MMac, 0.039% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 1.2 MMac, 0.029% MACs, inplace=True)
+      (downsample): Sequential(
+        16.9 k, 0.066% Params, 52.99 MMac, 1.285% MACs, 
+        (0): Conv2d(16.38 k, 0.064% Params, 51.38 MMac, 1.247% MACs, 64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(512, 0.002% Params, 1.61 MMac, 0.039% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      70.4 k, 0.275% Params, 221.98 MMac, 5.385% MACs, 
+      (conv1): Conv2d(16.38 k, 0.064% Params, 51.38 MMac, 1.247% MACs, 256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, 0.001% Params, 401.41 KMac, 0.010% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(36.86 k, 0.144% Params, 115.61 MMac, 2.805% MACs, 64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, 0.001% Params, 401.41 KMac, 0.010% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(16.38 k, 0.064% Params, 51.38 MMac, 1.247% MACs, 64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, 0.002% Params, 1.61 MMac, 0.039% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 1.2 MMac, 0.029% MACs, inplace=True)
+    )
+    (2): Bottleneck(
+      70.4 k, 0.275% Params, 221.98 MMac, 5.385% MACs, 
+      (conv1): Conv2d(16.38 k, 0.064% Params, 51.38 MMac, 1.247% MACs, 256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, 0.001% Params, 401.41 KMac, 0.010% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(36.86 k, 0.144% Params, 115.61 MMac, 2.805% MACs, 64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, 0.001% Params, 401.41 KMac, 0.010% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(16.38 k, 0.064% Params, 51.38 MMac, 1.247% MACs, 64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, 0.002% Params, 1.61 MMac, 0.039% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 1.2 MMac, 0.029% MACs, inplace=True)
+    )
+  )
+  (layer2): Sequential(
+    1.22 M, 4.772% Params, 1.04 GMac, 25.147% MACs, 
+    (0): Bottleneck(
+      379.39 k, 1.484% Params, 376.02 MMac, 9.122% MACs, 
+      (conv1): Conv2d(32.77 k, 0.128% Params, 102.76 MMac, 2.493% MACs, 256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, 0.001% Params, 802.82 KMac, 0.019% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(147.46 k, 0.577% Params, 115.61 MMac, 2.805% MACs, 128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1.02 k, 0.004% Params, 802.82 KMac, 0.019% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 903.17 KMac, 0.022% MACs, inplace=True)
+      (downsample): Sequential(
+        132.1 k, 0.517% Params, 103.56 MMac, 2.512% MACs, 
+        (0): Conv2d(131.07 k, 0.513% Params, 102.76 MMac, 2.493% MACs, 256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(1.02 k, 0.004% Params, 802.82 KMac, 0.019% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      280.06 k, 1.096% Params, 220.17 MMac, 5.341% MACs, 
+      (conv1): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(147.46 k, 0.577% Params, 115.61 MMac, 2.805% MACs, 128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1.02 k, 0.004% Params, 802.82 KMac, 0.019% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 602.11 KMac, 0.015% MACs, inplace=True)
+    )
+    (2): Bottleneck(
+      280.06 k, 1.096% Params, 220.17 MMac, 5.341% MACs, 
+      (conv1): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(147.46 k, 0.577% Params, 115.61 MMac, 2.805% MACs, 128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1.02 k, 0.004% Params, 802.82 KMac, 0.019% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 602.11 KMac, 0.015% MACs, inplace=True)
+    )
+    (3): Bottleneck(
+      280.06 k, 1.096% Params, 220.17 MMac, 5.341% MACs, 
+      (conv1): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(147.46 k, 0.577% Params, 115.61 MMac, 2.805% MACs, 128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1.02 k, 0.004% Params, 802.82 KMac, 0.019% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 602.11 KMac, 0.015% MACs, inplace=True)
+    )
+  )
+  (layer3): Sequential(
+    7.1 M, 27.775% Params, 1.47 GMac, 35.678% MACs, 
+    (0): Bottleneck(
+      1.51 M, 5.918% Params, 374.26 MMac, 9.080% MACs, 
+      (conv1): Conv2d(131.07 k, 0.513% Params, 102.76 MMac, 2.493% MACs, 512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, 0.002% Params, 401.41 KMac, 0.010% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(589.82 k, 2.308% Params, 115.61 MMac, 2.805% MACs, 256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 451.58 KMac, 0.011% MACs, inplace=True)
+      (downsample): Sequential(
+        526.34 k, 2.059% Params, 103.16 MMac, 2.503% MACs, 
+        (0): Conv2d(524.29 k, 2.051% Params, 102.76 MMac, 2.493% MACs, 512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      1.12 M, 4.371% Params, 219.27 MMac, 5.320% MACs, 
+      (conv1): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(589.82 k, 2.308% Params, 115.61 MMac, 2.805% MACs, 256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 301.06 KMac, 0.007% MACs, inplace=True)
+    )
+    (2): Bottleneck(
+      1.12 M, 4.371% Params, 219.27 MMac, 5.320% MACs, 
+      (conv1): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(589.82 k, 2.308% Params, 115.61 MMac, 2.805% MACs, 256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 301.06 KMac, 0.007% MACs, inplace=True)
+    )
+    (3): Bottleneck(
+      1.12 M, 4.371% Params, 219.27 MMac, 5.320% MACs, 
+      (conv1): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(589.82 k, 2.308% Params, 115.61 MMac, 2.805% MACs, 256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 301.06 KMac, 0.007% MACs, inplace=True)
+    )
+    (4): Bottleneck(
+      1.12 M, 4.371% Params, 219.27 MMac, 5.320% MACs, 
+      (conv1): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(589.82 k, 2.308% Params, 115.61 MMac, 2.805% MACs, 256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 301.06 KMac, 0.007% MACs, inplace=True)
+    )
+    (5): Bottleneck(
+      1.12 M, 4.371% Params, 219.27 MMac, 5.320% MACs, 
+      (conv1): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(589.82 k, 2.308% Params, 115.61 MMac, 2.805% MACs, 256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 301.06 KMac, 0.007% MACs, inplace=True)
+    )
+  )
+  (layer4): Sequential(
+    14.96 M, 58.554% Params, 811.02 MMac, 19.676% MACs, 
+    (0): Bottleneck(
+      6.04 M, 23.632% Params, 373.38 MMac, 9.059% MACs, 
+      (conv1): Conv2d(524.29 k, 2.051% Params, 102.76 MMac, 2.493% MACs, 1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(1.02 k, 0.004% Params, 200.7 KMac, 0.005% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(2.36 M, 9.231% Params, 115.61 MMac, 2.805% MACs, 512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(1.02 k, 0.004% Params, 50.18 KMac, 0.001% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(1.05 M, 4.103% Params, 51.38 MMac, 1.247% MACs, 512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(4.1 k, 0.016% Params, 200.7 KMac, 0.005% MACs, 2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 225.79 KMac, 0.005% MACs, inplace=True)
+      (downsample): Sequential(
+        2.1 M, 8.222% Params, 102.96 MMac, 2.498% MACs, 
+        (0): Conv2d(2.1 M, 8.206% Params, 102.76 MMac, 2.493% MACs, 1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(4.1 k, 0.016% Params, 200.7 KMac, 0.005% MACs, 2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      4.46 M, 17.461% Params, 218.82 MMac, 5.309% MACs, 
+      (conv1): Conv2d(1.05 M, 4.103% Params, 51.38 MMac, 1.247% MACs, 2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(1.02 k, 0.004% Params, 50.18 KMac, 0.001% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(2.36 M, 9.231% Params, 115.61 MMac, 2.805% MACs, 512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(1.02 k, 0.004% Params, 50.18 KMac, 0.001% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(1.05 M, 4.103% Params, 51.38 MMac, 1.247% MACs, 512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(4.1 k, 0.016% Params, 200.7 KMac, 0.005% MACs, 2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 150.53 KMac, 0.004% MACs, inplace=True)
+    )
+    (2): Bottleneck(
+      4.46 M, 17.461% Params, 218.82 MMac, 5.309% MACs, 
+      (conv1): Conv2d(1.05 M, 4.103% Params, 51.38 MMac, 1.247% MACs, 2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(1.02 k, 0.004% Params, 50.18 KMac, 0.001% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(2.36 M, 9.231% Params, 115.61 MMac, 2.805% MACs, 512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(1.02 k, 0.004% Params, 50.18 KMac, 0.001% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(1.05 M, 4.103% Params, 51.38 MMac, 1.247% MACs, 512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(4.1 k, 0.016% Params, 200.7 KMac, 0.005% MACs, 2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 150.53 KMac, 0.004% MACs, inplace=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(0, 0.000% Params, 100.35 KMac, 0.002% MACs, output_size=(1, 1))
+  (fc): Linear(2.05 M, 8.017% Params, 2.05 MMac, 0.050% MACs, in_features=2048, out_features=1000, bias=True)
+)
+Warming up with batch_size=1:   0%|          | 0/100 [00:00<?, ?it/s]Warming up with batch_size=1:  28%|██▊       | 28/100 [00:00<00:00, 275.37it/s]Warming up with batch_size=1:  56%|█████▌    | 56/100 [00:00<00:00, 276.13it/s]Warming up with batch_size=1:  84%|████████▍ | 84/100 [00:00<00:00, 277.31it/s]Warming up with batch_size=1: 100%|██████████| 100/100 [00:00<00:00, 277.17it/s]
+STAGE:2024-02-25 22:53:33 5649:5649 ActivityProfilerController.cpp:312] Completed Stage: Warm Up
+STAGE:2024-02-25 22:53:33 5649:5649 ActivityProfilerController.cpp:318] Completed Stage: Collection
+STAGE:2024-02-25 22:53:33 5649:5649 ActivityProfilerController.cpp:322] Completed Stage: Post Processing
+Measuring inference for batch_size=1:   0%|          | 0/1000 [00:00<?, ?it/s]Measuring inference for batch_size=1:   2%|▏         | 21/1000 [00:00<00:04, 206.06it/s]Measuring inference for batch_size=1:   4%|▍         | 42/1000 [00:00<00:04, 206.31it/s]Measuring inference for batch_size=1:   6%|▋         | 63/1000 [00:00<00:04, 206.46it/s]Measuring inference for batch_size=1:   8%|▊         | 84/1000 [00:00<00:04, 206.57it/s]Measuring inference for batch_size=1:  10%|█         | 105/1000 [00:00<00:04, 206.68it/s]Measuring inference for batch_size=1:  13%|█▎        | 126/1000 [00:00<00:04, 206.66it/s]Measuring inference for batch_size=1:  15%|█▍        | 147/1000 [00:00<00:04, 206.69it/s]Measuring inference for batch_size=1:  17%|█▋        | 168/1000 [00:00<00:04, 206.72it/s]Measuring inference for batch_size=1:  19%|█▉        | 189/1000 [00:00<00:03, 206.77it/s]Measuring inference for batch_size=1:  21%|██        | 210/1000 [00:01<00:03, 206.83it/s]Measuring inference for batch_size=1:  23%|██▎       | 231/1000 [00:01<00:03, 206.85it/s]Measuring inference for batch_size=1:  25%|██▌       | 252/1000 [00:01<00:03, 206.89it/s]Measuring inference for batch_size=1:  27%|██▋       | 273/1000 [00:01<00:03, 206.88it/s]Measuring inference for batch_size=1:  29%|██▉       | 294/1000 [00:01<00:03, 206.93it/s]Measuring inference for batch_size=1:  32%|███▏      | 315/1000 [00:01<00:03, 206.89it/s]Measuring inference for batch_size=1:  34%|███▎      | 336/1000 [00:01<00:03, 206.83it/s]Measuring inference for batch_size=1:  36%|███▌      | 357/1000 [00:01<00:03, 206.82it/s]Measuring inference for batch_size=1:  38%|███▊      | 378/1000 [00:01<00:03, 206.80it/s]Measuring inference for batch_size=1:  40%|███▉      | 399/1000 [00:01<00:02, 206.77it/s]Measuring inference for batch_size=1:  42%|████▏     | 420/1000 [00:02<00:02, 206.76it/s]Measuring inference for batch_size=1:  44%|████▍     | 441/1000 [00:02<00:02, 206.77it/s]Measuring inference for batch_size=1:  46%|████▌     | 462/1000 [00:02<00:02, 206.81it/s]Measuring inference for batch_size=1:  48%|████▊     | 483/1000 [00:02<00:02, 206.85it/s]Measuring inference for batch_size=1:  50%|█████     | 504/1000 [00:02<00:02, 206.88it/s]Measuring inference for batch_size=1:  52%|█████▎    | 525/1000 [00:02<00:02, 206.91it/s]Measuring inference for batch_size=1:  55%|█████▍    | 546/1000 [00:02<00:02, 206.87it/s]Measuring inference for batch_size=1:  57%|█████▋    | 567/1000 [00:02<00:02, 206.77it/s]Measuring inference for batch_size=1:  59%|█████▉    | 588/1000 [00:02<00:01, 206.73it/s]Measuring inference for batch_size=1:  61%|██████    | 609/1000 [00:02<00:01, 206.77it/s]Measuring inference for batch_size=1:  63%|██████▎   | 630/1000 [00:03<00:01, 206.67it/s]Measuring inference for batch_size=1:  65%|██████▌   | 651/1000 [00:03<00:01, 206.53it/s]Measuring inference for batch_size=1:  67%|██████▋   | 672/1000 [00:03<00:01, 206.51it/s]Measuring inference for batch_size=1:  69%|██████▉   | 693/1000 [00:03<00:01, 206.58it/s]Measuring inference for batch_size=1:  71%|███████▏  | 714/1000 [00:03<00:01, 206.70it/s]Measuring inference for batch_size=1:  74%|███████▎  | 735/1000 [00:03<00:01, 206.80it/s]Measuring inference for batch_size=1:  76%|███████▌  | 756/1000 [00:03<00:01, 206.85it/s]Measuring inference for batch_size=1:  78%|███████▊  | 777/1000 [00:03<00:01, 206.87it/s]Measuring inference for batch_size=1:  80%|███████▉  | 798/1000 [00:03<00:00, 206.87it/s]Measuring inference for batch_size=1:  82%|████████▏ | 819/1000 [00:03<00:00, 206.78it/s]Measuring inference for batch_size=1:  84%|████████▍ | 840/1000 [00:04<00:00, 206.76it/s]Measuring inference for batch_size=1:  86%|████████▌ | 861/1000 [00:04<00:00, 206.83it/s]Measuring inference for batch_size=1:  88%|████████▊ | 882/1000 [00:04<00:00, 206.85it/s]Measuring inference for batch_size=1:  90%|█████████ | 903/1000 [00:04<00:00, 206.83it/s]Measuring inference for batch_size=1:  92%|█████████▏| 924/1000 [00:04<00:00, 206.81it/s]Measuring inference for batch_size=1:  94%|█████████▍| 945/1000 [00:04<00:00, 206.77it/s]Measuring inference for batch_size=1:  97%|█████████▋| 966/1000 [00:04<00:00, 206.77it/s]Measuring inference for batch_size=1:  99%|█████████▊| 987/1000 [00:04<00:00, 206.78it/s]Measuring inference for batch_size=1: 100%|██████████| 1000/1000 [00:04<00:00, 206.76it/s]
+Unable to measure energy consumption. Device must be a NVIDIA Jetson.
+Warming up with batch_size=32:   0%|          | 0/100 [00:00<?, ?it/s]Warming up with batch_size=32:  21%|██        | 21/100 [00:00<00:00, 202.16it/s]Warming up with batch_size=32:  42%|████▏     | 42/100 [00:00<00:00, 202.51it/s]Warming up with batch_size=32:  63%|██████▎   | 63/100 [00:00<00:00, 202.42it/s]Warming up with batch_size=32:  84%|████████▍ | 84/100 [00:00<00:00, 202.46it/s]Warming up with batch_size=32: 100%|██████████| 100/100 [00:00<00:00, 202.46it/s]
+STAGE:2024-02-25 22:53:39 5649:5649 ActivityProfilerController.cpp:312] Completed Stage: Warm Up
+STAGE:2024-02-25 22:53:39 5649:5649 ActivityProfilerController.cpp:318] Completed Stage: Collection
+STAGE:2024-02-25 22:53:39 5649:5649 ActivityProfilerController.cpp:322] Completed Stage: Post Processing
+Measuring inference for batch_size=32:   0%|          | 0/1000 [00:00<?, ?it/s]Measuring inference for batch_size=32:   2%|▏         | 20/1000 [00:00<00:04, 199.16it/s]Measuring inference for batch_size=32:   4%|▍         | 40/1000 [00:00<00:04, 199.57it/s]Measuring inference for batch_size=32:   6%|▌         | 60/1000 [00:00<00:04, 199.76it/s]Measuring inference for batch_size=32:   8%|▊         | 81/1000 [00:00<00:04, 199.86it/s]Measuring inference for batch_size=32:  10%|█         | 101/1000 [00:00<00:04, 199.83it/s]Measuring inference for batch_size=32:  12%|█▏        | 121/1000 [00:00<00:04, 199.73it/s]Measuring inference for batch_size=32:  14%|█▍        | 141/1000 [00:00<00:04, 199.69it/s]Measuring inference for batch_size=32:  16%|█▌        | 161/1000 [00:00<00:04, 199.71it/s]Measuring inference for batch_size=32:  18%|█▊        | 181/1000 [00:00<00:04, 199.66it/s]Measuring inference for batch_size=32:  20%|██        | 201/1000 [00:01<00:04, 199.68it/s]Measuring inference for batch_size=32:  22%|██▏       | 221/1000 [00:01<00:03, 199.77it/s]Measuring inference for batch_size=32:  24%|██▍       | 241/1000 [00:01<00:03, 199.81it/s]Measuring inference for batch_size=32:  26%|██▌       | 261/1000 [00:01<00:03, 199.84it/s]Measuring inference for batch_size=32:  28%|██▊       | 281/1000 [00:01<00:03, 199.76it/s]Measuring inference for batch_size=32:  30%|███       | 301/1000 [00:01<00:03, 199.69it/s]Measuring inference for batch_size=32:  32%|███▏      | 321/1000 [00:01<00:03, 199.62it/s]Measuring inference for batch_size=32:  34%|███▍      | 341/1000 [00:01<00:03, 199.58it/s]Measuring inference for batch_size=32:  36%|███▌      | 361/1000 [00:01<00:03, 199.59it/s]Measuring inference for batch_size=32:  38%|███▊      | 381/1000 [00:01<00:03, 199.60it/s]Measuring inference for batch_size=32:  40%|████      | 401/1000 [00:02<00:02, 199.68it/s]Measuring inference for batch_size=32:  42%|████▏     | 421/1000 [00:02<00:02, 199.75it/s]Measuring inference for batch_size=32:  44%|████▍     | 441/1000 [00:02<00:02, 199.73it/s]Measuring inference for batch_size=32:  46%|████▌     | 461/1000 [00:02<00:02, 199.74it/s]Measuring inference for batch_size=32:  48%|████▊     | 481/1000 [00:02<00:02, 199.74it/s]Measuring inference for batch_size=32:  50%|█████     | 501/1000 [00:02<00:02, 199.69it/s]Measuring inference for batch_size=32:  52%|█████▏    | 521/1000 [00:02<00:02, 199.76it/s]Measuring inference for batch_size=32:  54%|█████▍    | 541/1000 [00:02<00:02, 199.76it/s]Measuring inference for batch_size=32:  56%|█████▌    | 562/1000 [00:02<00:02, 199.84it/s]Measuring inference for batch_size=32:  58%|█████▊    | 582/1000 [00:02<00:02, 199.86it/s]Measuring inference for batch_size=32:  60%|██████    | 602/1000 [00:03<00:01, 199.87it/s]Measuring inference for batch_size=32:  62%|██████▏   | 623/1000 [00:03<00:01, 199.91it/s]Measuring inference for batch_size=32:  64%|██████▍   | 643/1000 [00:03<00:01, 199.93it/s]Measuring inference for batch_size=32:  66%|██████▋   | 663/1000 [00:03<00:01, 199.95it/s]Measuring inference for batch_size=32:  68%|██████▊   | 684/1000 [00:03<00:01, 199.98it/s]Measuring inference for batch_size=32:  70%|███████   | 705/1000 [00:03<00:01, 200.00it/s]Measuring inference for batch_size=32:  73%|███████▎  | 726/1000 [00:03<00:01, 200.02it/s]Measuring inference for batch_size=32:  75%|███████▍  | 747/1000 [00:03<00:01, 200.05it/s]Measuring inference for batch_size=32:  77%|███████▋  | 768/1000 [00:03<00:01, 199.95it/s]Measuring inference for batch_size=32:  79%|███████▉  | 788/1000 [00:03<00:01, 199.92it/s]Measuring inference for batch_size=32:  81%|████████  | 808/1000 [00:04<00:00, 199.91it/s]Measuring inference for batch_size=32:  83%|████████▎ | 828/1000 [00:04<00:00, 199.89it/s]Measuring inference for batch_size=32:  85%|████████▍ | 848/1000 [00:04<00:00, 199.92it/s]Measuring inference for batch_size=32:  87%|████████▋ | 868/1000 [00:04<00:00, 199.91it/s]Measuring inference for batch_size=32:  89%|████████▉ | 889/1000 [00:04<00:00, 199.94it/s]Measuring inference for batch_size=32:  91%|█████████ | 909/1000 [00:04<00:00, 199.96it/s]Measuring inference for batch_size=32:  93%|█████████▎| 929/1000 [00:04<00:00, 199.92it/s]Measuring inference for batch_size=32:  95%|█████████▌| 950/1000 [00:04<00:00, 199.97it/s]Measuring inference for batch_size=32:  97%|█████████▋| 970/1000 [00:04<00:00, 199.94it/s]Measuring inference for batch_size=32:  99%|█████████▉| 990/1000 [00:04<00:00, 199.91it/s]Measuring inference for batch_size=32: 100%|██████████| 1000/1000 [00:05<00:00, 199.82it/s]
+Unable to measure energy consumption. Device must be a NVIDIA Jetson.
+device: cuda
+flops: 4121925096
+machine_info:
+  cpu:
+    architecture: x86_64
+    cores:
+      physical: 12
+      total: 24
+    frequency: 3.80 GHz
+    model: AMD Ryzen 9 3900X 12-Core Processor
+  gpus:
+  - memory: 12288.0 MB
+    name: NVIDIA GeForce RTX 3060
+  memory:
+    available: 29.98 GB
+    total: 31.28 GB
+    used: 916.46 MB
+  system:
+    node: fp
+    release: 6.5.0-9-generic
+    system: Linux
+memory:
+  batch_size_1:
+    max_inference: 242.08 MB
+    max_inference_bytes: 253842944
+    post_inference: 105.85 MB
+    post_inference_bytes: 110994944
+    pre_inference: 105.85 MB
+    pre_inference_bytes: 110994944
+  batch_size_32:
+    max_inference: 244.95 MB
+    max_inference_bytes: 256853504
+    post_inference: 105.85 MB
+    post_inference_bytes: 110994944
+    pre_inference: 105.85 MB
+    pre_inference_bytes: 110994944
+params: 25557032
+timing:
+  batch_size_1:
+    cpu_to_gpu:
+      human_readable:
+        batch_latency: 92.968 us +/- 2.550 us [91.314 us, 137.806 us]
+        batches_per_second: 10.76 K +/- 253.12 [7.26 K, 10.95 K]
+      metrics:
+        batches_per_second_max: 10951.185378590078
+        batches_per_second_mean: 10763.239349777792
+        batches_per_second_min: 7256.581314878893
+        batches_per_second_std: 253.12154082256694
+        seconds_per_batch_max: 0.00013780593872070312
+        seconds_per_batch_mean: 9.296822547912598e-05
+        seconds_per_batch_min: 9.131431579589844e-05
+        seconds_per_batch_std: 2.549775305299112e-06
+    gpu_to_cpu:
+      human_readable:
+        batch_latency: 23.510 us +/- 0.501 us [22.650 us, 29.325 us]
+        batches_per_second: 42.55 K +/- 787.01 [34.10 K, 44.15 K]
+      metrics:
+        batches_per_second_max: 44150.56842105263
+        batches_per_second_mean: 42551.38757620603
+        batches_per_second_min: 34100.03252032521
+        batches_per_second_std: 787.0066223814861
+        seconds_per_batch_max: 2.9325485229492188e-05
+        seconds_per_batch_mean: 2.3510217666625975e-05
+        seconds_per_batch_min: 2.2649765014648438e-05
+        seconds_per_batch_std: 5.006857712607856e-07
+    on_device_inference:
+      human_readable:
+        batch_latency: -4708804.417 us +/- 12.930 ms [-4925536.156 us, -4682911.873
+          us]
+        batches_per_second: -0.21 +/- 0.00 [-0.21, -0.20]
+      metrics:
+        batches_per_second_max: -0.20302358329917583
+        batches_per_second_mean: -0.21236971089751286
+        batches_per_second_min: -0.2135423486815403
+        batches_per_second_std: 0.0005749353725615536
+        seconds_per_batch_max: -4.6829118728637695
+        seconds_per_batch_mean: -4.708804417133331
+        seconds_per_batch_min: -4.925536155700684
+        seconds_per_batch_std: 0.012930333621156104
+    total:
+      human_readable:
+        batch_latency: 4.833 ms +/- 14.438 us [4.805 ms, 5.105 ms]
+        batches_per_second: 206.92 +/- 0.61 [195.87, 208.10]
+      metrics:
+        batches_per_second_max: 208.10240635078145
+        batches_per_second_mean: 206.92247240927475
+        batches_per_second_min: 195.8673764826749
+        batches_per_second_std: 0.6054870172773033
+        seconds_per_batch_max: 0.005105495452880859
+        seconds_per_batch_mean: 0.004832770109176636
+        seconds_per_batch_min: 0.004805326461791992
+        seconds_per_batch_std: 1.4438451892411626e-05
+  batch_size_32:
+    cpu_to_gpu:
+      human_readable:
+        batch_latency: 143.778 us +/- 4.112 us [142.097 us, 245.333 us]
+        batches_per_second: 6.96 K +/- 148.78 [4.08 K, 7.04 K]
+      metrics:
+        batches_per_second_max: 7037.422818791946
+        batches_per_second_mean: 6959.309657421638
+        batches_per_second_min: 4076.0971817298346
+        batches_per_second_std: 148.78478699437926
+        seconds_per_batch_max: 0.0002453327178955078
+        seconds_per_batch_mean: 0.00014377784729003906
+        seconds_per_batch_min: 0.00014209747314453125
+        seconds_per_batch_std: 4.111595248660181e-06
+    gpu_to_cpu:
+      human_readable:
+        batch_latency: 23.476 us +/- 0.392 us [22.650 us, 28.849 us]
+        batches_per_second: 42.61 K +/- 669.74 [34.66 K, 44.15 K]
+      metrics:
+        batches_per_second_max: 44150.56842105263
+        batches_per_second_mean: 42607.61858572026
+        batches_per_second_min: 34663.669421487604
+        batches_per_second_std: 669.7354511519643
+        seconds_per_batch_max: 2.8848648071289062e-05
+        seconds_per_batch_mean: 2.347612380981445e-05
+        seconds_per_batch_min: 2.2649765014648438e-05
+        seconds_per_batch_std: 3.919679752319337e-07
+    on_device_inference:
+      human_readable:
+        batch_latency: -4827979.320 us +/- 14.390 ms [-5147007.942 us, -4805024.147
+          us]
+        batches_per_second: -0.21 +/- 0.00 [-0.21, -0.19]
+      metrics:
+        batches_per_second_max: -0.19428763491913792
+        batches_per_second_mean: -0.20712777139037572
+        batches_per_second_min: -0.20811549940229432
+        batches_per_second_std: 0.0005976822271159531
+        seconds_per_batch_max: -4.805024147033691
+        seconds_per_batch_mean: -4.8279793195724485
+        seconds_per_batch_min: -5.147007942199707
+        seconds_per_batch_std: 0.014390184899478608
+    total:
+      human_readable:
+        batch_latency: 5.001 ms +/- 17.283 us [4.977 ms, 5.427 ms]
+        batches_per_second: 199.97 +/- 0.66 [184.26, 200.92]
+      metrics:
+        batches_per_second_max: 200.92474251497006
+        batches_per_second_mean: 199.97395086600162
+        batches_per_second_min: 184.2597197205992
+        batches_per_second_std: 0.657600702719754
+        seconds_per_batch_max: 0.005427122116088867
+        seconds_per_batch_mean: 0.005000708103179932
+        seconds_per_batch_min: 0.004976987838745117
+        seconds_per_batch_std: 1.72825118732395e-05
+
 
 #####
 fp-fp-py-id - Run 2
-2024-02-24 09:55:38
+2024-02-25 22:54:05
 #####
 Benchmarking on 12 threads
-Traceback (most recent call last):
-  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/pytorch-benchmark.py", line 8, in <module>
-    model = resnet50().to("cuda")
-            ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1160, in to
-    return self._apply(convert)
-           ^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 810, in _apply
-    module._apply(fn)
-  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 833, in _apply
-    param_applied = fn(param)
-                    ^^^^^^^^^
-  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1158, in convert
-    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/.local/lib/python3.11/site-packages/torch/cuda/__init__.py", line 298, in _lazy_init
-    torch._C._cuda_init()
-RuntimeError: No CUDA GPUs are available
+Warming up with batch_size=1:   0%|          | 0/1 [00:00<?, ?it/s]Warming up with batch_size=1: 100%|██████████| 1/1 [00:00<00:00,  4.99it/s]Warming up with batch_size=1: 100%|██████████| 1/1 [00:00<00:00,  4.98it/s]
+Warning: module Bottleneck is treated as a zero-op.
+Warning: module ResNet is treated as a zero-op.
+Warning! No positional inputs found for a module, assuming batch size is 1.
+ResNet(
+  25.56 M, 100.000% Params, 4.12 GMac, 100.000% MACs, 
+  (conv1): Conv2d(9.41 k, 0.037% Params, 118.01 MMac, 2.863% MACs, 3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(128, 0.001% Params, 1.61 MMac, 0.039% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(0, 0.000% Params, 802.82 KMac, 0.019% MACs, inplace=True)
+  (maxpool): MaxPool2d(0, 0.000% Params, 802.82 KMac, 0.019% MACs, kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer1): Sequential(
+    215.81 k, 0.844% Params, 680.39 MMac, 16.507% MACs, 
+    (0): Bottleneck(
+      75.01 k, 0.293% Params, 236.43 MMac, 5.736% MACs, 
+      (conv1): Conv2d(4.1 k, 0.016% Params, 12.85 MMac, 0.312% MACs, 64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, 0.001% Params, 401.41 KMac, 0.010% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(36.86 k, 0.144% Params, 115.61 MMac, 2.805% MACs, 64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, 0.001% Params, 401.41 KMac, 0.010% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(16.38 k, 0.064% Params, 51.38 MMac, 1.247% MACs, 64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, 0.002% Params, 1.61 MMac, 0.039% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 1.2 MMac, 0.029% MACs, inplace=True)
+      (downsample): Sequential(
+        16.9 k, 0.066% Params, 52.99 MMac, 1.285% MACs, 
+        (0): Conv2d(16.38 k, 0.064% Params, 51.38 MMac, 1.247% MACs, 64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(512, 0.002% Params, 1.61 MMac, 0.039% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      70.4 k, 0.275% Params, 221.98 MMac, 5.385% MACs, 
+      (conv1): Conv2d(16.38 k, 0.064% Params, 51.38 MMac, 1.247% MACs, 256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, 0.001% Params, 401.41 KMac, 0.010% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(36.86 k, 0.144% Params, 115.61 MMac, 2.805% MACs, 64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, 0.001% Params, 401.41 KMac, 0.010% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(16.38 k, 0.064% Params, 51.38 MMac, 1.247% MACs, 64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, 0.002% Params, 1.61 MMac, 0.039% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 1.2 MMac, 0.029% MACs, inplace=True)
+    )
+    (2): Bottleneck(
+      70.4 k, 0.275% Params, 221.98 MMac, 5.385% MACs, 
+      (conv1): Conv2d(16.38 k, 0.064% Params, 51.38 MMac, 1.247% MACs, 256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, 0.001% Params, 401.41 KMac, 0.010% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(36.86 k, 0.144% Params, 115.61 MMac, 2.805% MACs, 64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, 0.001% Params, 401.41 KMac, 0.010% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(16.38 k, 0.064% Params, 51.38 MMac, 1.247% MACs, 64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, 0.002% Params, 1.61 MMac, 0.039% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 1.2 MMac, 0.029% MACs, inplace=True)
+    )
+  )
+  (layer2): Sequential(
+    1.22 M, 4.772% Params, 1.04 GMac, 25.147% MACs, 
+    (0): Bottleneck(
+      379.39 k, 1.484% Params, 376.02 MMac, 9.122% MACs, 
+      (conv1): Conv2d(32.77 k, 0.128% Params, 102.76 MMac, 2.493% MACs, 256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, 0.001% Params, 802.82 KMac, 0.019% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(147.46 k, 0.577% Params, 115.61 MMac, 2.805% MACs, 128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1.02 k, 0.004% Params, 802.82 KMac, 0.019% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 903.17 KMac, 0.022% MACs, inplace=True)
+      (downsample): Sequential(
+        132.1 k, 0.517% Params, 103.56 MMac, 2.512% MACs, 
+        (0): Conv2d(131.07 k, 0.513% Params, 102.76 MMac, 2.493% MACs, 256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(1.02 k, 0.004% Params, 802.82 KMac, 0.019% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      280.06 k, 1.096% Params, 220.17 MMac, 5.341% MACs, 
+      (conv1): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(147.46 k, 0.577% Params, 115.61 MMac, 2.805% MACs, 128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1.02 k, 0.004% Params, 802.82 KMac, 0.019% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 602.11 KMac, 0.015% MACs, inplace=True)
+    )
+    (2): Bottleneck(
+      280.06 k, 1.096% Params, 220.17 MMac, 5.341% MACs, 
+      (conv1): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(147.46 k, 0.577% Params, 115.61 MMac, 2.805% MACs, 128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1.02 k, 0.004% Params, 802.82 KMac, 0.019% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 602.11 KMac, 0.015% MACs, inplace=True)
+    )
+    (3): Bottleneck(
+      280.06 k, 1.096% Params, 220.17 MMac, 5.341% MACs, 
+      (conv1): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(147.46 k, 0.577% Params, 115.61 MMac, 2.805% MACs, 128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1.02 k, 0.004% Params, 802.82 KMac, 0.019% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 602.11 KMac, 0.015% MACs, inplace=True)
+    )
+  )
+  (layer3): Sequential(
+    7.1 M, 27.775% Params, 1.47 GMac, 35.678% MACs, 
+    (0): Bottleneck(
+      1.51 M, 5.918% Params, 374.26 MMac, 9.080% MACs, 
+      (conv1): Conv2d(131.07 k, 0.513% Params, 102.76 MMac, 2.493% MACs, 512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, 0.002% Params, 401.41 KMac, 0.010% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(589.82 k, 2.308% Params, 115.61 MMac, 2.805% MACs, 256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 451.58 KMac, 0.011% MACs, inplace=True)
+      (downsample): Sequential(
+        526.34 k, 2.059% Params, 103.16 MMac, 2.503% MACs, 
+        (0): Conv2d(524.29 k, 2.051% Params, 102.76 MMac, 2.493% MACs, 512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      1.12 M, 4.371% Params, 219.27 MMac, 5.320% MACs, 
+      (conv1): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(589.82 k, 2.308% Params, 115.61 MMac, 2.805% MACs, 256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 301.06 KMac, 0.007% MACs, inplace=True)
+    )
+    (2): Bottleneck(
+      1.12 M, 4.371% Params, 219.27 MMac, 5.320% MACs, 
+      (conv1): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(589.82 k, 2.308% Params, 115.61 MMac, 2.805% MACs, 256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 301.06 KMac, 0.007% MACs, inplace=True)
+    )
+    (3): Bottleneck(
+      1.12 M, 4.371% Params, 219.27 MMac, 5.320% MACs, 
+      (conv1): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(589.82 k, 2.308% Params, 115.61 MMac, 2.805% MACs, 256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 301.06 KMac, 0.007% MACs, inplace=True)
+    )
+    (4): Bottleneck(
+      1.12 M, 4.371% Params, 219.27 MMac, 5.320% MACs, 
+      (conv1): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(589.82 k, 2.308% Params, 115.61 MMac, 2.805% MACs, 256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 301.06 KMac, 0.007% MACs, inplace=True)
+    )
+    (5): Bottleneck(
+      1.12 M, 4.371% Params, 219.27 MMac, 5.320% MACs, 
+      (conv1): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(589.82 k, 2.308% Params, 115.61 MMac, 2.805% MACs, 256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 301.06 KMac, 0.007% MACs, inplace=True)
+    )
+  )
+  (layer4): Sequential(
+    14.96 M, 58.554% Params, 811.02 MMac, 19.676% MACs, 
+    (0): Bottleneck(
+      6.04 M, 23.632% Params, 373.38 MMac, 9.059% MACs, 
+      (conv1): Conv2d(524.29 k, 2.051% Params, 102.76 MMac, 2.493% MACs, 1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(1.02 k, 0.004% Params, 200.7 KMac, 0.005% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(2.36 M, 9.231% Params, 115.61 MMac, 2.805% MACs, 512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(1.02 k, 0.004% Params, 50.18 KMac, 0.001% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(1.05 M, 4.103% Params, 51.38 MMac, 1.247% MACs, 512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(4.1 k, 0.016% Params, 200.7 KMac, 0.005% MACs, 2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 225.79 KMac, 0.005% MACs, inplace=True)
+      (downsample): Sequential(
+        2.1 M, 8.222% Params, 102.96 MMac, 2.498% MACs, 
+        (0): Conv2d(2.1 M, 8.206% Params, 102.76 MMac, 2.493% MACs, 1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(4.1 k, 0.016% Params, 200.7 KMac, 0.005% MACs, 2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      4.46 M, 17.461% Params, 218.82 MMac, 5.309% MACs, 
+      (conv1): Conv2d(1.05 M, 4.103% Params, 51.38 MMac, 1.247% MACs, 2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(1.02 k, 0.004% Params, 50.18 KMac, 0.001% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(2.36 M, 9.231% Params, 115.61 MMac, 2.805% MACs, 512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(1.02 k, 0.004% Params, 50.18 KMac, 0.001% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(1.05 M, 4.103% Params, 51.38 MMac, 1.247% MACs, 512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(4.1 k, 0.016% Params, 200.7 KMac, 0.005% MACs, 2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 150.53 KMac, 0.004% MACs, inplace=True)
+    )
+    (2): Bottleneck(
+      4.46 M, 17.461% Params, 218.82 MMac, 5.309% MACs, 
+      (conv1): Conv2d(1.05 M, 4.103% Params, 51.38 MMac, 1.247% MACs, 2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(1.02 k, 0.004% Params, 50.18 KMac, 0.001% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(2.36 M, 9.231% Params, 115.61 MMac, 2.805% MACs, 512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(1.02 k, 0.004% Params, 50.18 KMac, 0.001% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(1.05 M, 4.103% Params, 51.38 MMac, 1.247% MACs, 512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(4.1 k, 0.016% Params, 200.7 KMac, 0.005% MACs, 2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 150.53 KMac, 0.004% MACs, inplace=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(0, 0.000% Params, 100.35 KMac, 0.002% MACs, output_size=(1, 1))
+  (fc): Linear(2.05 M, 8.017% Params, 2.05 MMac, 0.050% MACs, in_features=2048, out_features=1000, bias=True)
+)
+Warming up with batch_size=1:   0%|          | 0/100 [00:00<?, ?it/s]Warming up with batch_size=1:  28%|██▊       | 28/100 [00:00<00:00, 274.42it/s]Warming up with batch_size=1:  56%|█████▌    | 56/100 [00:00<00:00, 275.56it/s]Warming up with batch_size=1:  84%|████████▍ | 84/100 [00:00<00:00, 276.71it/s]Warming up with batch_size=1: 100%|██████████| 100/100 [00:00<00:00, 276.53it/s]
+STAGE:2024-02-25 22:53:52 5695:5695 ActivityProfilerController.cpp:312] Completed Stage: Warm Up
+STAGE:2024-02-25 22:53:52 5695:5695 ActivityProfilerController.cpp:318] Completed Stage: Collection
+STAGE:2024-02-25 22:53:52 5695:5695 ActivityProfilerController.cpp:322] Completed Stage: Post Processing
+Measuring inference for batch_size=1:   0%|          | 0/1000 [00:00<?, ?it/s]Measuring inference for batch_size=1:   2%|▏         | 21/1000 [00:00<00:04, 207.33it/s]Measuring inference for batch_size=1:   4%|▍         | 42/1000 [00:00<00:04, 207.76it/s]Measuring inference for batch_size=1:   6%|▋         | 63/1000 [00:00<00:04, 207.94it/s]Measuring inference for batch_size=1:   8%|▊         | 84/1000 [00:00<00:04, 208.03it/s]Measuring inference for batch_size=1:  10%|█         | 105/1000 [00:00<00:04, 208.13it/s]Measuring inference for batch_size=1:  13%|█▎        | 126/1000 [00:00<00:04, 208.18it/s]Measuring inference for batch_size=1:  15%|█▍        | 147/1000 [00:00<00:04, 208.22it/s]Measuring inference for batch_size=1:  17%|█▋        | 168/1000 [00:00<00:03, 208.28it/s]Measuring inference for batch_size=1:  19%|█▉        | 189/1000 [00:00<00:03, 208.27it/s]Measuring inference for batch_size=1:  21%|██        | 210/1000 [00:01<00:03, 208.24it/s]Measuring inference for batch_size=1:  23%|██▎       | 231/1000 [00:01<00:03, 208.27it/s]Measuring inference for batch_size=1:  25%|██▌       | 252/1000 [00:01<00:03, 208.29it/s]Measuring inference for batch_size=1:  27%|██▋       | 273/1000 [00:01<00:03, 208.37it/s]Measuring inference for batch_size=1:  29%|██▉       | 294/1000 [00:01<00:03, 208.41it/s]Measuring inference for batch_size=1:  32%|███▏      | 315/1000 [00:01<00:03, 208.42it/s]Measuring inference for batch_size=1:  34%|███▎      | 336/1000 [00:01<00:03, 208.34it/s]Measuring inference for batch_size=1:  36%|███▌      | 357/1000 [00:01<00:03, 208.28it/s]Measuring inference for batch_size=1:  38%|███▊      | 378/1000 [00:01<00:02, 208.29it/s]Measuring inference for batch_size=1:  40%|███▉      | 399/1000 [00:01<00:02, 208.35it/s]Measuring inference for batch_size=1:  42%|████▏     | 420/1000 [00:02<00:02, 208.36it/s]Measuring inference for batch_size=1:  44%|████▍     | 441/1000 [00:02<00:02, 208.35it/s]Measuring inference for batch_size=1:  46%|████▌     | 462/1000 [00:02<00:02, 208.32it/s]Measuring inference for batch_size=1:  48%|████▊     | 483/1000 [00:02<00:02, 208.26it/s]Measuring inference for batch_size=1:  50%|█████     | 504/1000 [00:02<00:02, 208.22it/s]Measuring inference for batch_size=1:  52%|█████▎    | 525/1000 [00:02<00:02, 208.21it/s]Measuring inference for batch_size=1:  55%|█████▍    | 546/1000 [00:02<00:02, 208.20it/s]Measuring inference for batch_size=1:  57%|█████▋    | 567/1000 [00:02<00:02, 208.18it/s]Measuring inference for batch_size=1:  59%|█████▉    | 588/1000 [00:02<00:01, 208.16it/s]Measuring inference for batch_size=1:  61%|██████    | 609/1000 [00:02<00:01, 208.18it/s]Measuring inference for batch_size=1:  63%|██████▎   | 630/1000 [00:03<00:01, 208.18it/s]Measuring inference for batch_size=1:  65%|██████▌   | 651/1000 [00:03<00:01, 207.41it/s]Measuring inference for batch_size=1:  67%|██████▋   | 672/1000 [00:03<00:01, 204.78it/s]Measuring inference for batch_size=1:  69%|██████▉   | 693/1000 [00:03<00:01, 203.04it/s]Measuring inference for batch_size=1:  71%|███████▏  | 714/1000 [00:03<00:01, 201.82it/s]Measuring inference for batch_size=1:  74%|███████▎  | 735/1000 [00:03<00:01, 201.00it/s]Measuring inference for batch_size=1:  76%|███████▌  | 756/1000 [00:03<00:01, 200.46it/s]Measuring inference for batch_size=1:  78%|███████▊  | 777/1000 [00:03<00:01, 200.00it/s]Measuring inference for batch_size=1:  80%|███████▉  | 798/1000 [00:03<00:01, 199.83it/s]Measuring inference for batch_size=1:  82%|████████▏ | 818/1000 [00:03<00:00, 199.66it/s]Measuring inference for batch_size=1:  84%|████████▍ | 838/1000 [00:04<00:00, 199.53it/s]Measuring inference for batch_size=1:  86%|████████▌ | 858/1000 [00:04<00:00, 199.49it/s]Measuring inference for batch_size=1:  88%|████████▊ | 878/1000 [00:04<00:00, 199.51it/s]Measuring inference for batch_size=1:  90%|████████▉ | 898/1000 [00:04<00:00, 199.32it/s]Measuring inference for batch_size=1:  92%|█████████▏| 918/1000 [00:04<00:00, 199.32it/s]Measuring inference for batch_size=1:  94%|█████████▍| 938/1000 [00:04<00:00, 199.28it/s]Measuring inference for batch_size=1:  96%|█████████▌| 958/1000 [00:04<00:00, 199.30it/s]Measuring inference for batch_size=1:  98%|█████████▊| 978/1000 [00:04<00:00, 199.22it/s]Measuring inference for batch_size=1: 100%|█████████▉| 998/1000 [00:04<00:00, 199.21it/s]Measuring inference for batch_size=1: 100%|██████████| 1000/1000 [00:04<00:00, 204.92it/s]
+Unable to measure energy consumption. Device must be a NVIDIA Jetson.
+Warming up with batch_size=32:   0%|          | 0/100 [00:00<?, ?it/s]Warming up with batch_size=32:  21%|██        | 21/100 [00:00<00:00, 203.03it/s]Warming up with batch_size=32:  42%|████▏     | 42/100 [00:00<00:00, 203.38it/s]Warming up with batch_size=32:  63%|██████▎   | 63/100 [00:00<00:00, 203.50it/s]Warming up with batch_size=32:  84%|████████▍ | 84/100 [00:00<00:00, 203.48it/s]Warming up with batch_size=32: 100%|██████████| 100/100 [00:00<00:00, 203.41it/s]
+STAGE:2024-02-25 22:53:57 5695:5695 ActivityProfilerController.cpp:312] Completed Stage: Warm Up
+STAGE:2024-02-25 22:53:57 5695:5695 ActivityProfilerController.cpp:318] Completed Stage: Collection
+STAGE:2024-02-25 22:53:57 5695:5695 ActivityProfilerController.cpp:322] Completed Stage: Post Processing
+Measuring inference for batch_size=32:   0%|          | 0/1000 [00:00<?, ?it/s]Measuring inference for batch_size=32:   2%|▏         | 20/1000 [00:00<00:04, 199.75it/s]Measuring inference for batch_size=32:   4%|▍         | 41/1000 [00:00<00:04, 200.37it/s]Measuring inference for batch_size=32:   6%|▌         | 62/1000 [00:00<00:04, 200.60it/s]Measuring inference for batch_size=32:   8%|▊         | 83/1000 [00:00<00:04, 200.66it/s]Measuring inference for batch_size=32:  10%|█         | 104/1000 [00:00<00:04, 200.70it/s]Measuring inference for batch_size=32:  12%|█▎        | 125/1000 [00:00<00:04, 200.74it/s]Measuring inference for batch_size=32:  15%|█▍        | 146/1000 [00:00<00:04, 200.74it/s]Measuring inference for batch_size=32:  17%|█▋        | 167/1000 [00:00<00:04, 200.73it/s]Measuring inference for batch_size=32:  19%|█▉        | 188/1000 [00:00<00:04, 200.77it/s]Measuring inference for batch_size=32:  21%|██        | 209/1000 [00:01<00:03, 200.76it/s]Measuring inference for batch_size=32:  23%|██▎       | 230/1000 [00:01<00:03, 200.76it/s]Measuring inference for batch_size=32:  25%|██▌       | 251/1000 [00:01<00:03, 200.71it/s]Measuring inference for batch_size=32:  27%|██▋       | 272/1000 [00:01<00:03, 200.62it/s]Measuring inference for batch_size=32:  29%|██▉       | 293/1000 [00:01<00:03, 200.63it/s]Measuring inference for batch_size=32:  31%|███▏      | 314/1000 [00:01<00:03, 200.64it/s]Measuring inference for batch_size=32:  34%|███▎      | 335/1000 [00:01<00:03, 200.65it/s]Measuring inference for batch_size=32:  36%|███▌      | 356/1000 [00:01<00:03, 200.64it/s]Measuring inference for batch_size=32:  38%|███▊      | 377/1000 [00:01<00:03, 200.62it/s]Measuring inference for batch_size=32:  40%|███▉      | 398/1000 [00:01<00:03, 200.67it/s]Measuring inference for batch_size=32:  42%|████▏     | 419/1000 [00:02<00:02, 200.72it/s]Measuring inference for batch_size=32:  44%|████▍     | 440/1000 [00:02<00:02, 200.77it/s]Measuring inference for batch_size=32:  46%|████▌     | 461/1000 [00:02<00:02, 200.82it/s]Measuring inference for batch_size=32:  48%|████▊     | 482/1000 [00:02<00:02, 200.84it/s]Measuring inference for batch_size=32:  50%|█████     | 503/1000 [00:02<00:02, 200.86it/s]Measuring inference for batch_size=32:  52%|█████▏    | 524/1000 [00:02<00:02, 200.90it/s]Measuring inference for batch_size=32:  55%|█████▍    | 545/1000 [00:02<00:02, 200.92it/s]Measuring inference for batch_size=32:  57%|█████▋    | 566/1000 [00:02<00:02, 200.97it/s]Measuring inference for batch_size=32:  59%|█████▊    | 587/1000 [00:02<00:02, 200.97it/s]Measuring inference for batch_size=32:  61%|██████    | 608/1000 [00:03<00:01, 200.92it/s]Measuring inference for batch_size=32:  63%|██████▎   | 629/1000 [00:03<00:01, 200.94it/s]Measuring inference for batch_size=32:  65%|██████▌   | 650/1000 [00:03<00:01, 200.93it/s]Measuring inference for batch_size=32:  67%|██████▋   | 671/1000 [00:03<00:01, 200.91it/s]Measuring inference for batch_size=32:  69%|██████▉   | 692/1000 [00:03<00:01, 200.93it/s]Measuring inference for batch_size=32:  71%|███████▏  | 713/1000 [00:03<00:01, 200.99it/s]Measuring inference for batch_size=32:  73%|███████▎  | 734/1000 [00:03<00:01, 201.03it/s]Measuring inference for batch_size=32:  76%|███████▌  | 755/1000 [00:03<00:01, 201.01it/s]Measuring inference for batch_size=32:  78%|███████▊  | 776/1000 [00:03<00:01, 201.01it/s]Measuring inference for batch_size=32:  80%|███████▉  | 797/1000 [00:03<00:01, 200.99it/s]Measuring inference for batch_size=32:  82%|████████▏ | 818/1000 [00:04<00:00, 200.99it/s]Measuring inference for batch_size=32:  84%|████████▍ | 839/1000 [00:04<00:00, 200.94it/s]Measuring inference for batch_size=32:  86%|████████▌ | 860/1000 [00:04<00:00, 200.94it/s]Measuring inference for batch_size=32:  88%|████████▊ | 881/1000 [00:04<00:00, 200.91it/s]Measuring inference for batch_size=32:  90%|█████████ | 902/1000 [00:04<00:00, 200.90it/s]Measuring inference for batch_size=32:  92%|█████████▏| 923/1000 [00:04<00:00, 200.87it/s]Measuring inference for batch_size=32:  94%|█████████▍| 944/1000 [00:04<00:00, 200.87it/s]Measuring inference for batch_size=32:  96%|█████████▋| 965/1000 [00:04<00:00, 200.90it/s]Measuring inference for batch_size=32:  99%|█████████▊| 986/1000 [00:04<00:00, 200.88it/s]Measuring inference for batch_size=32: 100%|██████████| 1000/1000 [00:04<00:00, 200.82it/s]
+Unable to measure energy consumption. Device must be a NVIDIA Jetson.
+device: cuda
+flops: 4121925096
+machine_info:
+  cpu:
+    architecture: x86_64
+    cores:
+      physical: 12
+      total: 24
+    frequency: 3.80 GHz
+    model: AMD Ryzen 9 3900X 12-Core Processor
+  gpus:
+  - memory: 12288.0 MB
+    name: NVIDIA GeForce RTX 3060
+  memory:
+    available: 29.99 GB
+    total: 31.28 GB
+    used: 913.15 MB
+  system:
+    node: fp
+    release: 6.5.0-9-generic
+    system: Linux
+memory:
+  batch_size_1:
+    max_inference: 242.08 MB
+    max_inference_bytes: 253842944
+    post_inference: 105.85 MB
+    post_inference_bytes: 110994944
+    pre_inference: 105.85 MB
+    pre_inference_bytes: 110994944
+  batch_size_32:
+    max_inference: 244.95 MB
+    max_inference_bytes: 256853504
+    post_inference: 105.85 MB
+    post_inference_bytes: 110994944
+    pre_inference: 105.85 MB
+    pre_inference_bytes: 110994944
+params: 25557032
+timing:
+  batch_size_1:
+    cpu_to_gpu:
+      human_readable:
+        batch_latency: 93.457 us +/- 2.985 us [91.314 us, 138.044 us]
+        batches_per_second: 10.71 K +/- 302.06 [7.24 K, 10.95 K]
+      metrics:
+        batches_per_second_max: 10951.185378590078
+        batches_per_second_mean: 10709.734066484158
+        batches_per_second_min: 7244.048359240069
+        batches_per_second_std: 302.056755897181
+        seconds_per_batch_max: 0.0001380443572998047
+        seconds_per_batch_mean: 9.345650672912598e-05
+        seconds_per_batch_min: 9.131431579589844e-05
+        seconds_per_batch_std: 2.9846613873272603e-06
+    gpu_to_cpu:
+      human_readable:
+        batch_latency: 23.713 us +/- 0.747 us [22.650 us, 30.756 us]
+        batches_per_second: 42.21 K +/- 1.18 K [32.51 K, 44.15 K]
+      metrics:
+        batches_per_second_max: 44150.56842105263
+        batches_per_second_mean: 42208.217392413906
+        batches_per_second_min: 32513.98449612403
+        batches_per_second_std: 1181.2284931589006
+        seconds_per_batch_max: 3.075599670410156e-05
+        seconds_per_batch_mean: 2.3712873458862305e-05
+        seconds_per_batch_min: 2.2649765014648438e-05
+        seconds_per_batch_std: 7.472937039338647e-07
+    on_device_inference:
+      human_readable:
+        batch_latency: -4750536.294 us +/- 103.284 ms [-4934624.195 us, -4647071.838
+          us]
+        batches_per_second: -0.21 +/- 0.00 [-0.22, -0.20]
+      metrics:
+        batches_per_second_max: -0.20264967715134438
+        batches_per_second_mean: -0.21060081678397344
+        batches_per_second_min: -0.2151892707449175
+        batches_per_second_std: 0.004519873700733678
+        seconds_per_batch_max: -4.647071838378906
+        seconds_per_batch_mean: -4.750536293506622
+        seconds_per_batch_min: -4.934624195098877
+        seconds_per_batch_std: 0.10328372198591927
+    total:
+      human_readable:
+        batch_latency: 4.876 ms +/- 105.301 us [4.770 ms, 5.071 ms]
+        batches_per_second: 205.17 +/- 4.37 [197.19, 209.63]
+      metrics:
+        batches_per_second_max: 209.6313474610156
+        batches_per_second_mean: 205.1748230708323
+        batches_per_second_min: 197.19341795956746
+        batches_per_second_std: 4.374195006301666
+        seconds_per_batch_max: 0.005071163177490234
+        seconds_per_batch_mean: 0.0048761372566223146
+        seconds_per_batch_min: 0.0047702789306640625
+        seconds_per_batch_std: 0.0001053005095486723
+  batch_size_32:
+    cpu_to_gpu:
+      human_readable:
+        batch_latency: 143.625 us +/- 4.186 us [141.859 us, 252.724 us]
+        batches_per_second: 6.97 K +/- 144.96 [3.96 K, 7.05 K]
+      metrics:
+        batches_per_second_max: 7049.250420168068
+        batches_per_second_mean: 6966.65325452067
+        batches_per_second_min: 3956.890566037736
+        batches_per_second_std: 144.96031374971673
+        seconds_per_batch_max: 0.00025272369384765625
+        seconds_per_batch_mean: 0.00014362525939941407
+        seconds_per_batch_min: 0.0001418590545654297
+        seconds_per_batch_std: 4.185502741192311e-06
+    gpu_to_cpu:
+      human_readable:
+        batch_latency: 23.659 us +/- 0.607 us [22.888 us, 29.564 us]
+        batches_per_second: 42.29 K +/- 947.34 [33.83 K, 43.69 K]
+      metrics:
+        batches_per_second_max: 43690.666666666664
+        batches_per_second_mean: 42291.861149611155
+        batches_per_second_min: 33825.032258064515
+        batches_per_second_std: 947.3402144284217
+        seconds_per_batch_max: 2.956390380859375e-05
+        seconds_per_batch_mean: 2.365875244140625e-05
+        seconds_per_batch_min: 2.288818359375e-05
+        seconds_per_batch_std: 6.069228605512858e-07
+    on_device_inference:
+      human_readable:
+        batch_latency: -4803017.856 us +/- 13.653 ms [-5129600.048 us, -4777152.061
+          us]
+        batches_per_second: -0.21 +/- 0.00 [-0.21, -0.19]
+      metrics:
+        batches_per_second_max: -0.19494697259627214
+        batches_per_second_mean: -0.20820405271884374
+        batches_per_second_min: -0.20932974021636558
+        batches_per_second_std: 0.0005703447440437382
+        seconds_per_batch_max: -4.777152061462402
+        seconds_per_batch_mean: -4.8030178561210635
+        seconds_per_batch_min: -5.1296000480651855
+        seconds_per_batch_std: 0.01365307961463733
+    total:
+      human_readable:
+        batch_latency: 4.976 ms +/- 16.902 us [4.949 ms, 5.417 ms]
+        batches_per_second: 200.97 +/- 0.64 [184.59, 202.08]
+      metrics:
+        batches_per_second_max: 202.07670071304682
+        batches_per_second_mean: 200.9730947347408
+        batches_per_second_min: 184.59220139072264
+        batches_per_second_std: 0.6449673688407622
+        seconds_per_batch_max: 0.005417346954345703
+        seconds_per_batch_mean: 0.004975844621658326
+        seconds_per_batch_min: 0.004948616027832031
+        seconds_per_batch_std: 1.690173669391412e-05
+
 
 #####
 fp-fp-py-id - Run 3
-2024-02-24 09:55:42
+2024-02-25 22:54:22
 #####
 Benchmarking on 12 threads
-Traceback (most recent call last):
-  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/pytorch-benchmark.py", line 8, in <module>
-    model = resnet50().to("cuda")
-            ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1160, in to
-    return self._apply(convert)
-           ^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 810, in _apply
-    module._apply(fn)
-  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 833, in _apply
-    param_applied = fn(param)
-                    ^^^^^^^^^
-  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1158, in convert
-    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/.phoronix-test-suite/installed-tests/pts/pytorch-1.0.1/.local/lib/python3.11/site-packages/torch/cuda/__init__.py", line 298, in _lazy_init
-    torch._C._cuda_init()
-RuntimeError: No CUDA GPUs are available
+Warming up with batch_size=1:   0%|          | 0/1 [00:00<?, ?it/s]Warming up with batch_size=1: 100%|██████████| 1/1 [00:00<00:00,  5.15it/s]Warming up with batch_size=1: 100%|██████████| 1/1 [00:00<00:00,  5.15it/s]
+Warning: module Bottleneck is treated as a zero-op.
+Warning: module ResNet is treated as a zero-op.
+Warning! No positional inputs found for a module, assuming batch size is 1.
+ResNet(
+  25.56 M, 100.000% Params, 4.12 GMac, 100.000% MACs, 
+  (conv1): Conv2d(9.41 k, 0.037% Params, 118.01 MMac, 2.863% MACs, 3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(128, 0.001% Params, 1.61 MMac, 0.039% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(0, 0.000% Params, 802.82 KMac, 0.019% MACs, inplace=True)
+  (maxpool): MaxPool2d(0, 0.000% Params, 802.82 KMac, 0.019% MACs, kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer1): Sequential(
+    215.81 k, 0.844% Params, 680.39 MMac, 16.507% MACs, 
+    (0): Bottleneck(
+      75.01 k, 0.293% Params, 236.43 MMac, 5.736% MACs, 
+      (conv1): Conv2d(4.1 k, 0.016% Params, 12.85 MMac, 0.312% MACs, 64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, 0.001% Params, 401.41 KMac, 0.010% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(36.86 k, 0.144% Params, 115.61 MMac, 2.805% MACs, 64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, 0.001% Params, 401.41 KMac, 0.010% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(16.38 k, 0.064% Params, 51.38 MMac, 1.247% MACs, 64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, 0.002% Params, 1.61 MMac, 0.039% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 1.2 MMac, 0.029% MACs, inplace=True)
+      (downsample): Sequential(
+        16.9 k, 0.066% Params, 52.99 MMac, 1.285% MACs, 
+        (0): Conv2d(16.38 k, 0.064% Params, 51.38 MMac, 1.247% MACs, 64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(512, 0.002% Params, 1.61 MMac, 0.039% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      70.4 k, 0.275% Params, 221.98 MMac, 5.385% MACs, 
+      (conv1): Conv2d(16.38 k, 0.064% Params, 51.38 MMac, 1.247% MACs, 256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, 0.001% Params, 401.41 KMac, 0.010% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(36.86 k, 0.144% Params, 115.61 MMac, 2.805% MACs, 64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, 0.001% Params, 401.41 KMac, 0.010% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(16.38 k, 0.064% Params, 51.38 MMac, 1.247% MACs, 64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, 0.002% Params, 1.61 MMac, 0.039% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 1.2 MMac, 0.029% MACs, inplace=True)
+    )
+    (2): Bottleneck(
+      70.4 k, 0.275% Params, 221.98 MMac, 5.385% MACs, 
+      (conv1): Conv2d(16.38 k, 0.064% Params, 51.38 MMac, 1.247% MACs, 256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, 0.001% Params, 401.41 KMac, 0.010% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(36.86 k, 0.144% Params, 115.61 MMac, 2.805% MACs, 64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, 0.001% Params, 401.41 KMac, 0.010% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(16.38 k, 0.064% Params, 51.38 MMac, 1.247% MACs, 64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, 0.002% Params, 1.61 MMac, 0.039% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 1.2 MMac, 0.029% MACs, inplace=True)
+    )
+  )
+  (layer2): Sequential(
+    1.22 M, 4.772% Params, 1.04 GMac, 25.147% MACs, 
+    (0): Bottleneck(
+      379.39 k, 1.484% Params, 376.02 MMac, 9.122% MACs, 
+      (conv1): Conv2d(32.77 k, 0.128% Params, 102.76 MMac, 2.493% MACs, 256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, 0.001% Params, 802.82 KMac, 0.019% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(147.46 k, 0.577% Params, 115.61 MMac, 2.805% MACs, 128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1.02 k, 0.004% Params, 802.82 KMac, 0.019% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 903.17 KMac, 0.022% MACs, inplace=True)
+      (downsample): Sequential(
+        132.1 k, 0.517% Params, 103.56 MMac, 2.512% MACs, 
+        (0): Conv2d(131.07 k, 0.513% Params, 102.76 MMac, 2.493% MACs, 256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(1.02 k, 0.004% Params, 802.82 KMac, 0.019% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      280.06 k, 1.096% Params, 220.17 MMac, 5.341% MACs, 
+      (conv1): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(147.46 k, 0.577% Params, 115.61 MMac, 2.805% MACs, 128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1.02 k, 0.004% Params, 802.82 KMac, 0.019% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 602.11 KMac, 0.015% MACs, inplace=True)
+    )
+    (2): Bottleneck(
+      280.06 k, 1.096% Params, 220.17 MMac, 5.341% MACs, 
+      (conv1): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(147.46 k, 0.577% Params, 115.61 MMac, 2.805% MACs, 128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1.02 k, 0.004% Params, 802.82 KMac, 0.019% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 602.11 KMac, 0.015% MACs, inplace=True)
+    )
+    (3): Bottleneck(
+      280.06 k, 1.096% Params, 220.17 MMac, 5.341% MACs, 
+      (conv1): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(147.46 k, 0.577% Params, 115.61 MMac, 2.805% MACs, 128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1.02 k, 0.004% Params, 802.82 KMac, 0.019% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 602.11 KMac, 0.015% MACs, inplace=True)
+    )
+  )
+  (layer3): Sequential(
+    7.1 M, 27.775% Params, 1.47 GMac, 35.678% MACs, 
+    (0): Bottleneck(
+      1.51 M, 5.918% Params, 374.26 MMac, 9.080% MACs, 
+      (conv1): Conv2d(131.07 k, 0.513% Params, 102.76 MMac, 2.493% MACs, 512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, 0.002% Params, 401.41 KMac, 0.010% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(589.82 k, 2.308% Params, 115.61 MMac, 2.805% MACs, 256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 451.58 KMac, 0.011% MACs, inplace=True)
+      (downsample): Sequential(
+        526.34 k, 2.059% Params, 103.16 MMac, 2.503% MACs, 
+        (0): Conv2d(524.29 k, 2.051% Params, 102.76 MMac, 2.493% MACs, 512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      1.12 M, 4.371% Params, 219.27 MMac, 5.320% MACs, 
+      (conv1): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(589.82 k, 2.308% Params, 115.61 MMac, 2.805% MACs, 256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 301.06 KMac, 0.007% MACs, inplace=True)
+    )
+    (2): Bottleneck(
+      1.12 M, 4.371% Params, 219.27 MMac, 5.320% MACs, 
+      (conv1): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(589.82 k, 2.308% Params, 115.61 MMac, 2.805% MACs, 256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 301.06 KMac, 0.007% MACs, inplace=True)
+    )
+    (3): Bottleneck(
+      1.12 M, 4.371% Params, 219.27 MMac, 5.320% MACs, 
+      (conv1): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(589.82 k, 2.308% Params, 115.61 MMac, 2.805% MACs, 256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 301.06 KMac, 0.007% MACs, inplace=True)
+    )
+    (4): Bottleneck(
+      1.12 M, 4.371% Params, 219.27 MMac, 5.320% MACs, 
+      (conv1): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(589.82 k, 2.308% Params, 115.61 MMac, 2.805% MACs, 256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 301.06 KMac, 0.007% MACs, inplace=True)
+    )
+    (5): Bottleneck(
+      1.12 M, 4.371% Params, 219.27 MMac, 5.320% MACs, 
+      (conv1): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(589.82 k, 2.308% Params, 115.61 MMac, 2.805% MACs, 256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 301.06 KMac, 0.007% MACs, inplace=True)
+    )
+  )
+  (layer4): Sequential(
+    14.96 M, 58.554% Params, 811.02 MMac, 19.676% MACs, 
+    (0): Bottleneck(
+      6.04 M, 23.632% Params, 373.38 MMac, 9.059% MACs, 
+      (conv1): Conv2d(524.29 k, 2.051% Params, 102.76 MMac, 2.493% MACs, 1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(1.02 k, 0.004% Params, 200.7 KMac, 0.005% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(2.36 M, 9.231% Params, 115.61 MMac, 2.805% MACs, 512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(1.02 k, 0.004% Params, 50.18 KMac, 0.001% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(1.05 M, 4.103% Params, 51.38 MMac, 1.247% MACs, 512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(4.1 k, 0.016% Params, 200.7 KMac, 0.005% MACs, 2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 225.79 KMac, 0.005% MACs, inplace=True)
+      (downsample): Sequential(
+        2.1 M, 8.222% Params, 102.96 MMac, 2.498% MACs, 
+        (0): Conv2d(2.1 M, 8.206% Params, 102.76 MMac, 2.493% MACs, 1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(4.1 k, 0.016% Params, 200.7 KMac, 0.005% MACs, 2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      4.46 M, 17.461% Params, 218.82 MMac, 5.309% MACs, 
+      (conv1): Conv2d(1.05 M, 4.103% Params, 51.38 MMac, 1.247% MACs, 2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(1.02 k, 0.004% Params, 50.18 KMac, 0.001% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(2.36 M, 9.231% Params, 115.61 MMac, 2.805% MACs, 512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(1.02 k, 0.004% Params, 50.18 KMac, 0.001% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(1.05 M, 4.103% Params, 51.38 MMac, 1.247% MACs, 512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(4.1 k, 0.016% Params, 200.7 KMac, 0.005% MACs, 2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 150.53 KMac, 0.004% MACs, inplace=True)
+    )
+    (2): Bottleneck(
+      4.46 M, 17.461% Params, 218.82 MMac, 5.309% MACs, 
+      (conv1): Conv2d(1.05 M, 4.103% Params, 51.38 MMac, 1.247% MACs, 2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(1.02 k, 0.004% Params, 50.18 KMac, 0.001% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(2.36 M, 9.231% Params, 115.61 MMac, 2.805% MACs, 512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(1.02 k, 0.004% Params, 50.18 KMac, 0.001% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(1.05 M, 4.103% Params, 51.38 MMac, 1.247% MACs, 512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(4.1 k, 0.016% Params, 200.7 KMac, 0.005% MACs, 2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 150.53 KMac, 0.004% MACs, inplace=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(0, 0.000% Params, 100.35 KMac, 0.002% MACs, output_size=(1, 1))
+  (fc): Linear(2.05 M, 8.017% Params, 2.05 MMac, 0.050% MACs, in_features=2048, out_features=1000, bias=True)
+)
+Warming up with batch_size=1:   0%|          | 0/100 [00:00<?, ?it/s]Warming up with batch_size=1:  29%|██▉       | 29/100 [00:00<00:00, 287.87it/s]Warming up with batch_size=1:  58%|█████▊    | 58/100 [00:00<00:00, 288.99it/s]Warming up with batch_size=1:  88%|████████▊ | 88/100 [00:00<00:00, 290.41it/s]Warming up with batch_size=1: 100%|██████████| 100/100 [00:00<00:00, 290.13it/s]
+STAGE:2024-02-25 22:54:10 5741:5741 ActivityProfilerController.cpp:312] Completed Stage: Warm Up
+STAGE:2024-02-25 22:54:10 5741:5741 ActivityProfilerController.cpp:318] Completed Stage: Collection
+STAGE:2024-02-25 22:54:10 5741:5741 ActivityProfilerController.cpp:322] Completed Stage: Post Processing
+Measuring inference for batch_size=1:   0%|          | 0/1000 [00:00<?, ?it/s]Measuring inference for batch_size=1:   2%|▏         | 22/1000 [00:00<00:04, 219.77it/s]Measuring inference for batch_size=1:   4%|▍         | 45/1000 [00:00<00:04, 220.17it/s]Measuring inference for batch_size=1:   7%|▋         | 68/1000 [00:00<00:04, 220.43it/s]Measuring inference for batch_size=1:   9%|▉         | 91/1000 [00:00<00:04, 220.48it/s]Measuring inference for batch_size=1:  11%|█▏        | 114/1000 [00:00<00:04, 220.58it/s]Measuring inference for batch_size=1:  14%|█▎        | 137/1000 [00:00<00:03, 220.59it/s]Measuring inference for batch_size=1:  16%|█▌        | 160/1000 [00:00<00:03, 220.57it/s]Measuring inference for batch_size=1:  18%|█▊        | 183/1000 [00:00<00:03, 220.53it/s]Measuring inference for batch_size=1:  21%|██        | 206/1000 [00:00<00:03, 220.40it/s]Measuring inference for batch_size=1:  23%|██▎       | 229/1000 [00:01<00:03, 220.41it/s]Measuring inference for batch_size=1:  25%|██▌       | 252/1000 [00:01<00:03, 220.47it/s]Measuring inference for batch_size=1:  28%|██▊       | 275/1000 [00:01<00:03, 220.43it/s]Measuring inference for batch_size=1:  30%|██▉       | 298/1000 [00:01<00:03, 220.41it/s]Measuring inference for batch_size=1:  32%|███▏      | 321/1000 [00:01<00:03, 220.41it/s]Measuring inference for batch_size=1:  34%|███▍      | 344/1000 [00:01<00:02, 220.28it/s]Measuring inference for batch_size=1:  37%|███▋      | 367/1000 [00:01<00:02, 220.15it/s]Measuring inference for batch_size=1:  39%|███▉      | 390/1000 [00:01<00:02, 220.09it/s]Measuring inference for batch_size=1:  41%|████▏     | 413/1000 [00:01<00:02, 220.02it/s]Measuring inference for batch_size=1:  44%|████▎     | 436/1000 [00:01<00:02, 220.02it/s]Measuring inference for batch_size=1:  46%|████▌     | 459/1000 [00:02<00:02, 219.98it/s]Measuring inference for batch_size=1:  48%|████▊     | 481/1000 [00:02<00:02, 219.98it/s]Measuring inference for batch_size=1:  50%|█████     | 504/1000 [00:02<00:02, 220.02it/s]Measuring inference for batch_size=1:  53%|█████▎    | 527/1000 [00:02<00:02, 220.00it/s]Measuring inference for batch_size=1:  55%|█████▌    | 550/1000 [00:02<00:02, 220.12it/s]Measuring inference for batch_size=1:  57%|█████▋    | 573/1000 [00:02<00:01, 220.13it/s]Measuring inference for batch_size=1:  60%|█████▉    | 596/1000 [00:02<00:01, 220.24it/s]Measuring inference for batch_size=1:  62%|██████▏   | 619/1000 [00:02<00:01, 220.27it/s]Measuring inference for batch_size=1:  64%|██████▍   | 642/1000 [00:02<00:01, 220.35it/s]Measuring inference for batch_size=1:  66%|██████▋   | 665/1000 [00:03<00:01, 220.36it/s]Measuring inference for batch_size=1:  69%|██████▉   | 688/1000 [00:03<00:01, 220.34it/s]Measuring inference for batch_size=1:  71%|███████   | 711/1000 [00:03<00:01, 220.31it/s]Measuring inference for batch_size=1:  73%|███████▎  | 734/1000 [00:03<00:01, 220.32it/s]Measuring inference for batch_size=1:  76%|███████▌  | 757/1000 [00:03<00:01, 220.37it/s]Measuring inference for batch_size=1:  78%|███████▊  | 780/1000 [00:03<00:00, 220.34it/s]Measuring inference for batch_size=1:  80%|████████  | 803/1000 [00:03<00:00, 220.31it/s]Measuring inference for batch_size=1:  83%|████████▎ | 826/1000 [00:03<00:00, 220.31it/s]Measuring inference for batch_size=1:  85%|████████▍ | 849/1000 [00:03<00:00, 220.32it/s]Measuring inference for batch_size=1:  87%|████████▋ | 872/1000 [00:03<00:00, 220.32it/s]Measuring inference for batch_size=1:  90%|████████▉ | 895/1000 [00:04<00:00, 220.32it/s]Measuring inference for batch_size=1:  92%|█████████▏| 918/1000 [00:04<00:00, 220.30it/s]Measuring inference for batch_size=1:  94%|█████████▍| 941/1000 [00:04<00:00, 220.28it/s]Measuring inference for batch_size=1:  96%|█████████▋| 964/1000 [00:04<00:00, 220.21it/s]Measuring inference for batch_size=1:  99%|█████████▊| 987/1000 [00:04<00:00, 220.21it/s]Measuring inference for batch_size=1: 100%|██████████| 1000/1000 [00:04<00:00, 220.27it/s]
+Unable to measure energy consumption. Device must be a NVIDIA Jetson.
+Warming up with batch_size=32:   0%|          | 0/100 [00:00<?, ?it/s]Warming up with batch_size=32:  22%|██▏       | 22/100 [00:00<00:00, 212.46it/s]Warming up with batch_size=32:  44%|████▍     | 44/100 [00:00<00:00, 212.57it/s]Warming up with batch_size=32:  66%|██████▌   | 66/100 [00:00<00:00, 212.61it/s]Warming up with batch_size=32:  88%|████████▊ | 88/100 [00:00<00:00, 212.60it/s]Warming up with batch_size=32: 100%|██████████| 100/100 [00:00<00:00, 212.56it/s]
+STAGE:2024-02-25 22:54:15 5741:5741 ActivityProfilerController.cpp:312] Completed Stage: Warm Up
+STAGE:2024-02-25 22:54:15 5741:5741 ActivityProfilerController.cpp:318] Completed Stage: Collection
+STAGE:2024-02-25 22:54:15 5741:5741 ActivityProfilerController.cpp:322] Completed Stage: Post Processing
+Measuring inference for batch_size=32:   0%|          | 0/1000 [00:00<?, ?it/s]Measuring inference for batch_size=32:   2%|▏         | 21/1000 [00:00<00:04, 209.22it/s]Measuring inference for batch_size=32:   4%|▍         | 43/1000 [00:00<00:04, 209.84it/s]Measuring inference for batch_size=32:   6%|▋         | 65/1000 [00:00<00:04, 210.07it/s]Measuring inference for batch_size=32:   9%|▊         | 87/1000 [00:00<00:04, 210.06it/s]Measuring inference for batch_size=32:  11%|█         | 109/1000 [00:00<00:04, 210.10it/s]Measuring inference for batch_size=32:  13%|█▎        | 131/1000 [00:00<00:04, 210.12it/s]Measuring inference for batch_size=32:  15%|█▌        | 153/1000 [00:00<00:04, 210.14it/s]Measuring inference for batch_size=32:  18%|█▊        | 175/1000 [00:00<00:03, 210.18it/s]Measuring inference for batch_size=32:  20%|█▉        | 197/1000 [00:00<00:03, 210.06it/s]Measuring inference for batch_size=32:  22%|██▏       | 219/1000 [00:01<00:03, 210.03it/s]Measuring inference for batch_size=32:  24%|██▍       | 241/1000 [00:01<00:03, 210.07it/s]Measuring inference for batch_size=32:  26%|██▋       | 263/1000 [00:01<00:03, 210.08it/s]Measuring inference for batch_size=32:  28%|██▊       | 285/1000 [00:01<00:03, 210.15it/s]Measuring inference for batch_size=32:  31%|███       | 307/1000 [00:01<00:03, 210.17it/s]Measuring inference for batch_size=32:  33%|███▎      | 329/1000 [00:01<00:03, 210.06it/s]Measuring inference for batch_size=32:  35%|███▌      | 351/1000 [00:01<00:03, 210.03it/s]Measuring inference for batch_size=32:  37%|███▋      | 373/1000 [00:01<00:02, 210.03it/s]Measuring inference for batch_size=32:  40%|███▉      | 395/1000 [00:01<00:02, 210.03it/s]Measuring inference for batch_size=32:  42%|████▏     | 417/1000 [00:01<00:02, 209.99it/s]Measuring inference for batch_size=32:  44%|████▍     | 439/1000 [00:02<00:02, 210.07it/s]Measuring inference for batch_size=32:  46%|████▌     | 461/1000 [00:02<00:02, 210.17it/s]Measuring inference for batch_size=32:  48%|████▊     | 483/1000 [00:02<00:02, 210.21it/s]Measuring inference for batch_size=32:  50%|█████     | 505/1000 [00:02<00:02, 210.15it/s]Measuring inference for batch_size=32:  53%|█████▎    | 527/1000 [00:02<00:02, 210.23it/s]Measuring inference for batch_size=32:  55%|█████▍    | 549/1000 [00:02<00:02, 210.28it/s]Measuring inference for batch_size=32:  57%|█████▋    | 571/1000 [00:02<00:02, 210.27it/s]Measuring inference for batch_size=32:  59%|█████▉    | 593/1000 [00:02<00:01, 210.27it/s]Measuring inference for batch_size=32:  62%|██████▏   | 615/1000 [00:02<00:01, 210.26it/s]Measuring inference for batch_size=32:  64%|██████▎   | 637/1000 [00:03<00:01, 210.28it/s]Measuring inference for batch_size=32:  66%|██████▌   | 659/1000 [00:03<00:01, 210.30it/s]Measuring inference for batch_size=32:  68%|██████▊   | 681/1000 [00:03<00:01, 210.34it/s]Measuring inference for batch_size=32:  70%|███████   | 703/1000 [00:03<00:01, 210.36it/s]Measuring inference for batch_size=32:  72%|███████▎  | 725/1000 [00:03<00:01, 210.30it/s]Measuring inference for batch_size=32:  75%|███████▍  | 747/1000 [00:03<00:01, 210.32it/s]Measuring inference for batch_size=32:  77%|███████▋  | 769/1000 [00:03<00:01, 210.35it/s]Measuring inference for batch_size=32:  79%|███████▉  | 791/1000 [00:03<00:00, 209.32it/s]Measuring inference for batch_size=32:  81%|████████  | 812/1000 [00:03<00:00, 209.19it/s]Measuring inference for batch_size=32:  83%|████████▎ | 834/1000 [00:03<00:00, 209.44it/s]Measuring inference for batch_size=32:  86%|████████▌ | 855/1000 [00:04<00:00, 209.59it/s]Measuring inference for batch_size=32:  88%|████████▊ | 876/1000 [00:04<00:00, 209.66it/s]Measuring inference for batch_size=32:  90%|████████▉ | 898/1000 [00:04<00:00, 209.78it/s]Measuring inference for batch_size=32:  92%|█████████▏| 920/1000 [00:04<00:00, 209.89it/s]Measuring inference for batch_size=32:  94%|█████████▍| 941/1000 [00:04<00:00, 209.84it/s]Measuring inference for batch_size=32:  96%|█████████▌| 962/1000 [00:04<00:00, 209.85it/s]Measuring inference for batch_size=32:  98%|█████████▊| 984/1000 [00:04<00:00, 209.95it/s]Measuring inference for batch_size=32: 100%|██████████| 1000/1000 [00:04<00:00, 210.03it/s]
+Unable to measure energy consumption. Device must be a NVIDIA Jetson.
+device: cuda
+flops: 4121925096
+machine_info:
+  cpu:
+    architecture: x86_64
+    cores:
+      physical: 12
+      total: 24
+    frequency: 3.80 GHz
+    model: AMD Ryzen 9 3900X 12-Core Processor
+  gpus:
+  - memory: 12288.0 MB
+    name: NVIDIA GeForce RTX 3060
+  memory:
+    available: 29.98 GB
+    total: 31.28 GB
+    used: 916.34 MB
+  system:
+    node: fp
+    release: 6.5.0-9-generic
+    system: Linux
+memory:
+  batch_size_1:
+    max_inference: 242.08 MB
+    max_inference_bytes: 253842944
+    post_inference: 105.85 MB
+    post_inference_bytes: 110994944
+    pre_inference: 105.85 MB
+    pre_inference_bytes: 110994944
+  batch_size_32:
+    max_inference: 244.95 MB
+    max_inference_bytes: 256853504
+    post_inference: 105.85 MB
+    post_inference_bytes: 110994944
+    pre_inference: 105.85 MB
+    pre_inference_bytes: 110994944
+params: 25557032
+timing:
+  batch_size_1:
+    cpu_to_gpu:
+      human_readable:
+        batch_latency: 90.874 us +/- 2.474 us [89.407 us, 138.283 us]
+        batches_per_second: 11.01 K +/- 252.40 [7.23 K, 11.18 K]
+      metrics:
+        batches_per_second_max: 11184.810666666666
+        batches_per_second_mean: 11011.03904302505
+        batches_per_second_min: 7231.558620689655
+        batches_per_second_std: 252.39990639267936
+        seconds_per_batch_max: 0.00013828277587890625
+        seconds_per_batch_mean: 9.087395668029786e-05
+        seconds_per_batch_min: 8.940696716308594e-05
+        seconds_per_batch_std: 2.4743850542183843e-06
+    gpu_to_cpu:
+      human_readable:
+        batch_latency: 22.339 us +/- 0.477 us [21.696 us, 27.895 us]
+        batches_per_second: 44.78 K +/- 850.62 [35.85 K, 46.09 K]
+      metrics:
+        batches_per_second_max: 46091.25274725275
+        batches_per_second_mean: 44782.14812804514
+        batches_per_second_min: 35848.75213675214
+        batches_per_second_std: 850.6225414573935
+        seconds_per_batch_max: 2.7894973754882812e-05
+        seconds_per_batch_mean: 2.23393440246582e-05
+        seconds_per_batch_min: 2.1696090698242188e-05
+        seconds_per_batch_std: 4.7664614666354117e-07
+    on_device_inference:
+      human_readable:
+        batch_latency: -4417271.197 us +/- 16.091 ms [-4660448.074 us, -4391007.900
+          us]
+        batches_per_second: -0.23 +/- 0.00 [-0.23, -0.21]
+      metrics:
+        batches_per_second_max: -0.2145716429082715
+        batches_per_second_mean: -0.22638706453765986
+        batches_per_second_min: -0.2277381463936309
+        batches_per_second_std: 0.0008117844744158033
+        seconds_per_batch_max: -4.391007900238037
+        seconds_per_batch_mean: -4.417271196842194
+        seconds_per_batch_min: -4.66044807434082
+        seconds_per_batch_std: 0.016090820816544064
+    total:
+      human_readable:
+        batch_latency: 4.536 ms +/- 17.552 us [4.509 ms, 4.839 ms]
+        batches_per_second: 220.44 +/- 0.83 [206.64, 221.76]
+      metrics:
+        batches_per_second_max: 221.7565824257164
+        batches_per_second_mean: 220.43781925484734
+        batches_per_second_min: 206.6363188491477
+        batches_per_second_std: 0.8342734431805366
+        seconds_per_batch_max: 0.004839420318603516
+        seconds_per_batch_mean: 0.004536493062973023
+        seconds_per_batch_min: 0.004509449005126953
+        seconds_per_batch_std: 1.7552131024086445e-05
+  batch_size_32:
+    cpu_to_gpu:
+      human_readable:
+        batch_latency: 141.792 us +/- 3.882 us [139.952 us, 241.280 us]
+        batches_per_second: 7.06 K +/- 141.84 [4.14 K, 7.15 K]
+      metrics:
+        batches_per_second_max: 7145.321976149915
+        batches_per_second_mean: 7056.341564413529
+        batches_per_second_min: 4144.569169960474
+        batches_per_second_std: 141.83529820783411
+        seconds_per_batch_max: 0.00024127960205078125
+        seconds_per_batch_mean: 0.00014179229736328126
+        seconds_per_batch_min: 0.0001399517059326172
+        seconds_per_batch_std: 3.8815218336178274e-06
+    gpu_to_cpu:
+      human_readable:
+        batch_latency: 22.512 us +/- 0.562 us [21.696 us, 29.325 us]
+        batches_per_second: 44.44 K +/- 986.53 [34.10 K, 46.09 K]
+      metrics:
+        batches_per_second_max: 46091.25274725275
+        batches_per_second_mean: 44444.39404365332
+        batches_per_second_min: 34100.03252032521
+        batches_per_second_std: 986.5322206918665
+        seconds_per_batch_max: 2.9325485229492188e-05
+        seconds_per_batch_mean: 2.251243591308594e-05
+        seconds_per_batch_min: 2.1696090698242188e-05
+        seconds_per_batch_std: 5.619917865204742e-07
+    on_device_inference:
+      human_readable:
+        batch_latency: -4588164.351 us +/- 25.796 ms [-4908512.115 us, -4558815.956
+          us]
+        batches_per_second: -0.22 +/- 0.00 [-0.22, -0.20]
+      metrics:
+        batches_per_second_max: -0.20372772369178782
+        batches_per_second_mean: -0.21795875571230228
+        batches_per_second_min: -0.21935520311112458
+        batches_per_second_std: 0.0011862224683097029
+        seconds_per_batch_max: -4.558815956115723
+        seconds_per_batch_mean: -4.588164351463318
+        seconds_per_batch_min: -4.908512115478516
+        seconds_per_batch_std: 0.025795800598420498
+    total:
+      human_readable:
+        batch_latency: 4.758 ms +/- 27.678 us [4.727 ms, 5.183 ms]
+        batches_per_second: 210.19 +/- 1.18 [192.95, 211.53]
+      metrics:
+        batches_per_second_max: 211.53439580391367
+        batches_per_second_mean: 210.18905275911752
+        batches_per_second_min: 192.94801729689945
+        batches_per_second_std: 1.175968042817729
+        seconds_per_batch_max: 0.005182743072509766
+        seconds_per_batch_mean: 0.004757776498794556
+        seconds_per_batch_min: 0.004727363586425781
+        seconds_per_batch_std: 2.7678243049538674e-05
+
+
+#####
+fp-fp-py-id - Run 4
+2024-02-25 22:54:39
+#####
+Benchmarking on 12 threads
+Warming up with batch_size=1:   0%|          | 0/1 [00:00<?, ?it/s]Warming up with batch_size=1: 100%|██████████| 1/1 [00:00<00:00,  4.97it/s]Warming up with batch_size=1: 100%|██████████| 1/1 [00:00<00:00,  4.96it/s]
+Warning: module Bottleneck is treated as a zero-op.
+Warning: module ResNet is treated as a zero-op.
+Warning! No positional inputs found for a module, assuming batch size is 1.
+ResNet(
+  25.56 M, 100.000% Params, 4.12 GMac, 100.000% MACs, 
+  (conv1): Conv2d(9.41 k, 0.037% Params, 118.01 MMac, 2.863% MACs, 3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(128, 0.001% Params, 1.61 MMac, 0.039% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(0, 0.000% Params, 802.82 KMac, 0.019% MACs, inplace=True)
+  (maxpool): MaxPool2d(0, 0.000% Params, 802.82 KMac, 0.019% MACs, kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer1): Sequential(
+    215.81 k, 0.844% Params, 680.39 MMac, 16.507% MACs, 
+    (0): Bottleneck(
+      75.01 k, 0.293% Params, 236.43 MMac, 5.736% MACs, 
+      (conv1): Conv2d(4.1 k, 0.016% Params, 12.85 MMac, 0.312% MACs, 64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, 0.001% Params, 401.41 KMac, 0.010% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(36.86 k, 0.144% Params, 115.61 MMac, 2.805% MACs, 64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, 0.001% Params, 401.41 KMac, 0.010% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(16.38 k, 0.064% Params, 51.38 MMac, 1.247% MACs, 64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, 0.002% Params, 1.61 MMac, 0.039% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 1.2 MMac, 0.029% MACs, inplace=True)
+      (downsample): Sequential(
+        16.9 k, 0.066% Params, 52.99 MMac, 1.285% MACs, 
+        (0): Conv2d(16.38 k, 0.064% Params, 51.38 MMac, 1.247% MACs, 64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(512, 0.002% Params, 1.61 MMac, 0.039% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      70.4 k, 0.275% Params, 221.98 MMac, 5.385% MACs, 
+      (conv1): Conv2d(16.38 k, 0.064% Params, 51.38 MMac, 1.247% MACs, 256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, 0.001% Params, 401.41 KMac, 0.010% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(36.86 k, 0.144% Params, 115.61 MMac, 2.805% MACs, 64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, 0.001% Params, 401.41 KMac, 0.010% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(16.38 k, 0.064% Params, 51.38 MMac, 1.247% MACs, 64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, 0.002% Params, 1.61 MMac, 0.039% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 1.2 MMac, 0.029% MACs, inplace=True)
+    )
+    (2): Bottleneck(
+      70.4 k, 0.275% Params, 221.98 MMac, 5.385% MACs, 
+      (conv1): Conv2d(16.38 k, 0.064% Params, 51.38 MMac, 1.247% MACs, 256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, 0.001% Params, 401.41 KMac, 0.010% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(36.86 k, 0.144% Params, 115.61 MMac, 2.805% MACs, 64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, 0.001% Params, 401.41 KMac, 0.010% MACs, 64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(16.38 k, 0.064% Params, 51.38 MMac, 1.247% MACs, 64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, 0.002% Params, 1.61 MMac, 0.039% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 1.2 MMac, 0.029% MACs, inplace=True)
+    )
+  )
+  (layer2): Sequential(
+    1.22 M, 4.772% Params, 1.04 GMac, 25.147% MACs, 
+    (0): Bottleneck(
+      379.39 k, 1.484% Params, 376.02 MMac, 9.122% MACs, 
+      (conv1): Conv2d(32.77 k, 0.128% Params, 102.76 MMac, 2.493% MACs, 256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, 0.001% Params, 802.82 KMac, 0.019% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(147.46 k, 0.577% Params, 115.61 MMac, 2.805% MACs, 128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1.02 k, 0.004% Params, 802.82 KMac, 0.019% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 903.17 KMac, 0.022% MACs, inplace=True)
+      (downsample): Sequential(
+        132.1 k, 0.517% Params, 103.56 MMac, 2.512% MACs, 
+        (0): Conv2d(131.07 k, 0.513% Params, 102.76 MMac, 2.493% MACs, 256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(1.02 k, 0.004% Params, 802.82 KMac, 0.019% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      280.06 k, 1.096% Params, 220.17 MMac, 5.341% MACs, 
+      (conv1): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(147.46 k, 0.577% Params, 115.61 MMac, 2.805% MACs, 128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1.02 k, 0.004% Params, 802.82 KMac, 0.019% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 602.11 KMac, 0.015% MACs, inplace=True)
+    )
+    (2): Bottleneck(
+      280.06 k, 1.096% Params, 220.17 MMac, 5.341% MACs, 
+      (conv1): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(147.46 k, 0.577% Params, 115.61 MMac, 2.805% MACs, 128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1.02 k, 0.004% Params, 802.82 KMac, 0.019% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 602.11 KMac, 0.015% MACs, inplace=True)
+    )
+    (3): Bottleneck(
+      280.06 k, 1.096% Params, 220.17 MMac, 5.341% MACs, 
+      (conv1): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(147.46 k, 0.577% Params, 115.61 MMac, 2.805% MACs, 128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, 0.001% Params, 200.7 KMac, 0.005% MACs, 128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(65.54 k, 0.256% Params, 51.38 MMac, 1.247% MACs, 128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1.02 k, 0.004% Params, 802.82 KMac, 0.019% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 602.11 KMac, 0.015% MACs, inplace=True)
+    )
+  )
+  (layer3): Sequential(
+    7.1 M, 27.775% Params, 1.47 GMac, 35.678% MACs, 
+    (0): Bottleneck(
+      1.51 M, 5.918% Params, 374.26 MMac, 9.080% MACs, 
+      (conv1): Conv2d(131.07 k, 0.513% Params, 102.76 MMac, 2.493% MACs, 512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, 0.002% Params, 401.41 KMac, 0.010% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(589.82 k, 2.308% Params, 115.61 MMac, 2.805% MACs, 256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 451.58 KMac, 0.011% MACs, inplace=True)
+      (downsample): Sequential(
+        526.34 k, 2.059% Params, 103.16 MMac, 2.503% MACs, 
+        (0): Conv2d(524.29 k, 2.051% Params, 102.76 MMac, 2.493% MACs, 512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      1.12 M, 4.371% Params, 219.27 MMac, 5.320% MACs, 
+      (conv1): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(589.82 k, 2.308% Params, 115.61 MMac, 2.805% MACs, 256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 301.06 KMac, 0.007% MACs, inplace=True)
+    )
+    (2): Bottleneck(
+      1.12 M, 4.371% Params, 219.27 MMac, 5.320% MACs, 
+      (conv1): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(589.82 k, 2.308% Params, 115.61 MMac, 2.805% MACs, 256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 301.06 KMac, 0.007% MACs, inplace=True)
+    )
+    (3): Bottleneck(
+      1.12 M, 4.371% Params, 219.27 MMac, 5.320% MACs, 
+      (conv1): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(589.82 k, 2.308% Params, 115.61 MMac, 2.805% MACs, 256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 301.06 KMac, 0.007% MACs, inplace=True)
+    )
+    (4): Bottleneck(
+      1.12 M, 4.371% Params, 219.27 MMac, 5.320% MACs, 
+      (conv1): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(589.82 k, 2.308% Params, 115.61 MMac, 2.805% MACs, 256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 301.06 KMac, 0.007% MACs, inplace=True)
+    )
+    (5): Bottleneck(
+      1.12 M, 4.371% Params, 219.27 MMac, 5.320% MACs, 
+      (conv1): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(589.82 k, 2.308% Params, 115.61 MMac, 2.805% MACs, 256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, 0.002% Params, 100.35 KMac, 0.002% MACs, 256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(262.14 k, 1.026% Params, 51.38 MMac, 1.247% MACs, 256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2.05 k, 0.008% Params, 401.41 KMac, 0.010% MACs, 1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 301.06 KMac, 0.007% MACs, inplace=True)
+    )
+  )
+  (layer4): Sequential(
+    14.96 M, 58.554% Params, 811.02 MMac, 19.676% MACs, 
+    (0): Bottleneck(
+      6.04 M, 23.632% Params, 373.38 MMac, 9.059% MACs, 
+      (conv1): Conv2d(524.29 k, 2.051% Params, 102.76 MMac, 2.493% MACs, 1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(1.02 k, 0.004% Params, 200.7 KMac, 0.005% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(2.36 M, 9.231% Params, 115.61 MMac, 2.805% MACs, 512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(1.02 k, 0.004% Params, 50.18 KMac, 0.001% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(1.05 M, 4.103% Params, 51.38 MMac, 1.247% MACs, 512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(4.1 k, 0.016% Params, 200.7 KMac, 0.005% MACs, 2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 225.79 KMac, 0.005% MACs, inplace=True)
+      (downsample): Sequential(
+        2.1 M, 8.222% Params, 102.96 MMac, 2.498% MACs, 
+        (0): Conv2d(2.1 M, 8.206% Params, 102.76 MMac, 2.493% MACs, 1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(4.1 k, 0.016% Params, 200.7 KMac, 0.005% MACs, 2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      4.46 M, 17.461% Params, 218.82 MMac, 5.309% MACs, 
+      (conv1): Conv2d(1.05 M, 4.103% Params, 51.38 MMac, 1.247% MACs, 2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(1.02 k, 0.004% Params, 50.18 KMac, 0.001% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(2.36 M, 9.231% Params, 115.61 MMac, 2.805% MACs, 512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(1.02 k, 0.004% Params, 50.18 KMac, 0.001% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(1.05 M, 4.103% Params, 51.38 MMac, 1.247% MACs, 512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(4.1 k, 0.016% Params, 200.7 KMac, 0.005% MACs, 2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 150.53 KMac, 0.004% MACs, inplace=True)
+    )
+    (2): Bottleneck(
+      4.46 M, 17.461% Params, 218.82 MMac, 5.309% MACs, 
+      (conv1): Conv2d(1.05 M, 4.103% Params, 51.38 MMac, 1.247% MACs, 2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(1.02 k, 0.004% Params, 50.18 KMac, 0.001% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(2.36 M, 9.231% Params, 115.61 MMac, 2.805% MACs, 512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(1.02 k, 0.004% Params, 50.18 KMac, 0.001% MACs, 512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(1.05 M, 4.103% Params, 51.38 MMac, 1.247% MACs, 512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(4.1 k, 0.016% Params, 200.7 KMac, 0.005% MACs, 2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(0, 0.000% Params, 150.53 KMac, 0.004% MACs, inplace=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(0, 0.000% Params, 100.35 KMac, 0.002% MACs, output_size=(1, 1))
+  (fc): Linear(2.05 M, 8.017% Params, 2.05 MMac, 0.050% MACs, in_features=2048, out_features=1000, bias=True)
+)
+Warming up with batch_size=1:   0%|          | 0/100 [00:00<?, ?it/s]Warming up with batch_size=1:  28%|██▊       | 28/100 [00:00<00:00, 272.75it/s]Warming up with batch_size=1:  56%|█████▌    | 56/100 [00:00<00:00, 274.67it/s]Warming up with batch_size=1:  84%|████████▍ | 84/100 [00:00<00:00, 275.49it/s]Warming up with batch_size=1: 100%|██████████| 100/100 [00:00<00:00, 275.28it/s]
+STAGE:2024-02-25 22:54:28 5787:5787 ActivityProfilerController.cpp:312] Completed Stage: Warm Up
+STAGE:2024-02-25 22:54:28 5787:5787 ActivityProfilerController.cpp:318] Completed Stage: Collection
+STAGE:2024-02-25 22:54:28 5787:5787 ActivityProfilerController.cpp:322] Completed Stage: Post Processing
+Measuring inference for batch_size=1:   0%|          | 0/1000 [00:00<?, ?it/s]Measuring inference for batch_size=1:   2%|▏         | 21/1000 [00:00<00:04, 205.69it/s]Measuring inference for batch_size=1:   4%|▍         | 42/1000 [00:00<00:04, 206.10it/s]Measuring inference for batch_size=1:   6%|▋         | 63/1000 [00:00<00:04, 206.18it/s]Measuring inference for batch_size=1:   8%|▊         | 84/1000 [00:00<00:04, 206.18it/s]Measuring inference for batch_size=1:  10%|█         | 105/1000 [00:00<00:04, 206.25it/s]Measuring inference for batch_size=1:  13%|█▎        | 126/1000 [00:00<00:04, 206.20it/s]Measuring inference for batch_size=1:  15%|█▍        | 147/1000 [00:00<00:04, 206.19it/s]Measuring inference for batch_size=1:  17%|█▋        | 168/1000 [00:00<00:04, 206.20it/s]Measuring inference for batch_size=1:  19%|█▉        | 189/1000 [00:00<00:03, 206.20it/s]Measuring inference for batch_size=1:  21%|██        | 210/1000 [00:01<00:03, 206.18it/s]Measuring inference for batch_size=1:  23%|██▎       | 231/1000 [00:01<00:03, 206.22it/s]Measuring inference for batch_size=1:  25%|██▌       | 252/1000 [00:01<00:03, 206.26it/s]Measuring inference for batch_size=1:  27%|██▋       | 273/1000 [00:01<00:03, 206.25it/s]Measuring inference for batch_size=1:  29%|██▉       | 294/1000 [00:01<00:03, 206.33it/s]Measuring inference for batch_size=1:  32%|███▏      | 315/1000 [00:01<00:03, 206.27it/s]Measuring inference for batch_size=1:  34%|███▎      | 336/1000 [00:01<00:03, 206.20it/s]Measuring inference for batch_size=1:  36%|███▌      | 357/1000 [00:01<00:03, 206.24it/s]Measuring inference for batch_size=1:  38%|███▊      | 378/1000 [00:01<00:03, 206.28it/s]Measuring inference for batch_size=1:  40%|███▉      | 399/1000 [00:01<00:02, 206.29it/s]Measuring inference for batch_size=1:  42%|████▏     | 420/1000 [00:02<00:02, 206.35it/s]Measuring inference for batch_size=1:  44%|████▍     | 441/1000 [00:02<00:02, 203.89it/s]Measuring inference for batch_size=1:  46%|████▌     | 462/1000 [00:02<00:02, 201.42it/s]Measuring inference for batch_size=1:  48%|████▊     | 483/1000 [00:02<00:02, 199.82it/s]Measuring inference for batch_size=1:  50%|█████     | 503/1000 [00:02<00:02, 198.67it/s]Measuring inference for batch_size=1:  52%|█████▏    | 523/1000 [00:02<00:02, 197.88it/s]Measuring inference for batch_size=1:  54%|█████▍    | 543/1000 [00:02<00:02, 197.27it/s]Measuring inference for batch_size=1:  56%|█████▋    | 563/1000 [00:02<00:02, 196.91it/s]Measuring inference for batch_size=1:  58%|█████▊    | 583/1000 [00:02<00:02, 196.66it/s]Measuring inference for batch_size=1:  60%|██████    | 603/1000 [00:02<00:02, 196.32it/s]Measuring inference for batch_size=1:  62%|██████▏   | 623/1000 [00:03<00:01, 196.11it/s]Measuring inference for batch_size=1:  64%|██████▍   | 643/1000 [00:03<00:01, 195.97it/s]Measuring inference for batch_size=1:  66%|██████▋   | 663/1000 [00:03<00:01, 195.75it/s]Measuring inference for batch_size=1:  68%|██████▊   | 683/1000 [00:03<00:01, 195.65it/s]Measuring inference for batch_size=1:  70%|███████   | 703/1000 [00:03<00:01, 195.63it/s]Measuring inference for batch_size=1:  72%|███████▏  | 723/1000 [00:03<00:01, 195.62it/s]Measuring inference for batch_size=1:  74%|███████▍  | 743/1000 [00:03<00:01, 195.62it/s]Measuring inference for batch_size=1:  76%|███████▋  | 763/1000 [00:03<00:01, 195.65it/s]Measuring inference for batch_size=1:  78%|███████▊  | 783/1000 [00:03<00:01, 195.65it/s]Measuring inference for batch_size=1:  80%|████████  | 803/1000 [00:03<00:01, 195.77it/s]Measuring inference for batch_size=1:  82%|████████▏ | 823/1000 [00:04<00:00, 195.64it/s]Measuring inference for batch_size=1:  84%|████████▍ | 843/1000 [00:04<00:00, 195.69it/s]Measuring inference for batch_size=1:  86%|████████▋ | 863/1000 [00:04<00:00, 195.66it/s]Measuring inference for batch_size=1:  88%|████████▊ | 883/1000 [00:04<00:00, 195.56it/s]Measuring inference for batch_size=1:  90%|█████████ | 903/1000 [00:04<00:00, 195.61it/s]Measuring inference for batch_size=1:  92%|█████████▏| 923/1000 [00:04<00:00, 195.60it/s]Measuring inference for batch_size=1:  94%|█████████▍| 943/1000 [00:04<00:00, 195.56it/s]Measuring inference for batch_size=1:  96%|█████████▋| 963/1000 [00:04<00:00, 195.60it/s]Measuring inference for batch_size=1:  98%|█████████▊| 983/1000 [00:04<00:00, 195.61it/s]Measuring inference for batch_size=1: 100%|██████████| 1000/1000 [00:04<00:00, 200.04it/s]
+Unable to measure energy consumption. Device must be a NVIDIA Jetson.
+Warming up with batch_size=32:   0%|          | 0/100 [00:00<?, ?it/s]Warming up with batch_size=32:  21%|██        | 21/100 [00:00<00:00, 202.05it/s]Warming up with batch_size=32:  42%|████▏     | 42/100 [00:00<00:00, 202.21it/s]Warming up with batch_size=32:  63%|██████▎   | 63/100 [00:00<00:00, 202.40it/s]Warming up with batch_size=32:  84%|████████▍ | 84/100 [00:00<00:00, 202.45it/s]Warming up with batch_size=32: 100%|██████████| 100/100 [00:00<00:00, 202.35it/s]
+STAGE:2024-02-25 22:54:33 5787:5787 ActivityProfilerController.cpp:312] Completed Stage: Warm Up
+STAGE:2024-02-25 22:54:33 5787:5787 ActivityProfilerController.cpp:318] Completed Stage: Collection
+STAGE:2024-02-25 22:54:33 5787:5787 ActivityProfilerController.cpp:322] Completed Stage: Post Processing
+Measuring inference for batch_size=32:   0%|          | 0/1000 [00:00<?, ?it/s]Measuring inference for batch_size=32:   2%|▏         | 20/1000 [00:00<00:04, 198.37it/s]Measuring inference for batch_size=32:   4%|▍         | 40/1000 [00:00<00:04, 199.00it/s]Measuring inference for batch_size=32:   6%|▌         | 60/1000 [00:00<00:04, 199.15it/s]Measuring inference for batch_size=32:   8%|▊         | 80/1000 [00:00<00:04, 199.26it/s]Measuring inference for batch_size=32:  10%|█         | 100/1000 [00:00<00:04, 199.32it/s]Measuring inference for batch_size=32:  12%|█▏        | 120/1000 [00:00<00:04, 199.37it/s]Measuring inference for batch_size=32:  14%|█▍        | 140/1000 [00:00<00:04, 199.34it/s]Measuring inference for batch_size=32:  16%|█▌        | 160/1000 [00:00<00:04, 199.35it/s]Measuring inference for batch_size=32:  18%|█▊        | 180/1000 [00:00<00:04, 199.44it/s]Measuring inference for batch_size=32:  20%|██        | 200/1000 [00:01<00:04, 199.44it/s]Measuring inference for batch_size=32:  22%|██▏       | 220/1000 [00:01<00:03, 199.40it/s]Measuring inference for batch_size=32:  24%|██▍       | 240/1000 [00:01<00:03, 199.37it/s]Measuring inference for batch_size=32:  26%|██▌       | 260/1000 [00:01<00:03, 199.43it/s]Measuring inference for batch_size=32:  28%|██▊       | 280/1000 [00:01<00:03, 199.45it/s]Measuring inference for batch_size=32:  30%|███       | 300/1000 [00:01<00:03, 199.43it/s]Measuring inference for batch_size=32:  32%|███▏      | 320/1000 [00:01<00:03, 199.39it/s]Measuring inference for batch_size=32:  34%|███▍      | 340/1000 [00:01<00:03, 199.40it/s]Measuring inference for batch_size=32:  36%|███▌      | 360/1000 [00:01<00:03, 199.42it/s]Measuring inference for batch_size=32:  38%|███▊      | 380/1000 [00:01<00:03, 199.39it/s]Measuring inference for batch_size=32:  40%|████      | 400/1000 [00:02<00:03, 199.42it/s]Measuring inference for batch_size=32:  42%|████▏     | 420/1000 [00:02<00:02, 199.41it/s]Measuring inference for batch_size=32:  44%|████▍     | 440/1000 [00:02<00:02, 199.46it/s]Measuring inference for batch_size=32:  46%|████▌     | 460/1000 [00:02<00:02, 199.47it/s]Measuring inference for batch_size=32:  48%|████▊     | 480/1000 [00:02<00:02, 199.48it/s]Measuring inference for batch_size=32:  50%|█████     | 500/1000 [00:02<00:02, 199.48it/s]Measuring inference for batch_size=32:  52%|█████▏    | 520/1000 [00:02<00:02, 199.54it/s]Measuring inference for batch_size=32:  54%|█████▍    | 540/1000 [00:02<00:02, 199.53it/s]Measuring inference for batch_size=32:  56%|█████▌    | 560/1000 [00:02<00:02, 199.53it/s]Measuring inference for batch_size=32:  58%|█████▊    | 580/1000 [00:02<00:02, 199.55it/s]Measuring inference for batch_size=32:  60%|██████    | 600/1000 [00:03<00:02, 199.59it/s]Measuring inference for batch_size=32:  62%|██████▏   | 620/1000 [00:03<00:01, 199.59it/s]Measuring inference for batch_size=32:  64%|██████▍   | 640/1000 [00:03<00:01, 199.59it/s]Measuring inference for batch_size=32:  66%|██████▌   | 660/1000 [00:03<00:01, 199.58it/s]Measuring inference for batch_size=32:  68%|██████▊   | 680/1000 [00:03<00:01, 199.59it/s]Measuring inference for batch_size=32:  70%|███████   | 700/1000 [00:03<00:01, 199.54it/s]Measuring inference for batch_size=32:  72%|███████▏  | 720/1000 [00:03<00:01, 199.45it/s]Measuring inference for batch_size=32:  74%|███████▍  | 740/1000 [00:03<00:01, 199.40it/s]Measuring inference for batch_size=32:  76%|███████▌  | 760/1000 [00:03<00:01, 199.40it/s]Measuring inference for batch_size=32:  78%|███████▊  | 780/1000 [00:03<00:01, 199.48it/s]Measuring inference for batch_size=32:  80%|████████  | 800/1000 [00:04<00:01, 199.42it/s]Measuring inference for batch_size=32:  82%|████████▏ | 820/1000 [00:04<00:00, 199.36it/s]Measuring inference for batch_size=32:  84%|████████▍ | 840/1000 [00:04<00:00, 199.28it/s]Measuring inference for batch_size=32:  86%|████████▌ | 860/1000 [00:04<00:00, 199.37it/s]Measuring inference for batch_size=32:  88%|████████▊ | 880/1000 [00:04<00:00, 199.41it/s]Measuring inference for batch_size=32:  90%|█████████ | 900/1000 [00:04<00:00, 199.48it/s]Measuring inference for batch_size=32:  92%|█████████▏| 920/1000 [00:04<00:00, 199.48it/s]Measuring inference for batch_size=32:  94%|█████████▍| 940/1000 [00:04<00:00, 199.42it/s]Measuring inference for batch_size=32:  96%|█████████▌| 960/1000 [00:04<00:00, 199.39it/s]Measuring inference for batch_size=32:  98%|█████████▊| 980/1000 [00:04<00:00, 199.37it/s]Measuring inference for batch_size=32: 100%|██████████| 1000/1000 [00:05<00:00, 199.32it/s]Measuring inference for batch_size=32: 100%|██████████| 1000/1000 [00:05<00:00, 199.42it/s]
+Unable to measure energy consumption. Device must be a NVIDIA Jetson.
+device: cuda
+flops: 4121925096
+machine_info:
+  cpu:
+    architecture: x86_64
+    cores:
+      physical: 12
+      total: 24
+    frequency: 3.80 GHz
+    model: AMD Ryzen 9 3900X 12-Core Processor
+  gpus:
+  - memory: 12288.0 MB
+    name: NVIDIA GeForce RTX 3060
+  memory:
+    available: 29.99 GB
+    total: 31.28 GB
+    used: 911.03 MB
+  system:
+    node: fp
+    release: 6.5.0-9-generic
+    system: Linux
+memory:
+  batch_size_1:
+    max_inference: 242.08 MB
+    max_inference_bytes: 253842944
+    post_inference: 105.85 MB
+    post_inference_bytes: 110994944
+    pre_inference: 105.85 MB
+    pre_inference_bytes: 110994944
+  batch_size_32:
+    max_inference: 244.95 MB
+    max_inference_bytes: 256853504
+    post_inference: 105.85 MB
+    post_inference_bytes: 110994944
+    pre_inference: 105.85 MB
+    pre_inference_bytes: 110994944
+params: 25557032
+timing:
+  batch_size_1:
+    cpu_to_gpu:
+      human_readable:
+        batch_latency: 94.558 us +/- 3.017 us [91.553 us, 144.720 us]
+        batches_per_second: 10.58 K +/- 296.23 [6.91 K, 10.92 K]
+      metrics:
+        batches_per_second_max: 10922.666666666666
+        batches_per_second_mean: 10584.884830400419
+        batches_per_second_min: 6909.891268533773
+        batches_per_second_std: 296.2263074325141
+        seconds_per_batch_max: 0.00014472007751464844
+        seconds_per_batch_mean: 9.455776214599609e-05
+        seconds_per_batch_min: 9.1552734375e-05
+        seconds_per_batch_std: 3.017169776378335e-06
+    gpu_to_cpu:
+      human_readable:
+        batch_latency: 24.046 us +/- 0.889 us [22.888 us, 32.663 us]
+        batches_per_second: 41.64 K +/- 1.33 K [30.62 K, 43.69 K]
+      metrics:
+        batches_per_second_max: 43690.666666666664
+        batches_per_second_mean: 41635.473514852136
+        batches_per_second_min: 30615.357664233576
+        batches_per_second_std: 1330.995813066074
+        seconds_per_batch_max: 3.266334533691406e-05
+        seconds_per_batch_mean: 2.404618263244629e-05
+        seconds_per_batch_min: 2.288818359375e-05
+        seconds_per_batch_std: 8.887786390398795e-07
+    on_device_inference:
+      human_readable:
+        batch_latency: -4867768.098 us +/- 127.215 ms [-5037024.021 us, -4694848.061
+          us]
+        batches_per_second: -0.21 +/- 0.01 [-0.21, -0.20]
+      metrics:
+        batches_per_second_max: -0.19852992477330936
+        batches_per_second_mean: -0.2055744590151533
+        batches_per_second_min: -0.21299943833976076
+        batches_per_second_std: 0.005414485891171899
+        seconds_per_batch_max: -4.69484806060791
+        seconds_per_batch_mean: -4.86776809835434
+        seconds_per_batch_min: -5.037024021148682
+        seconds_per_batch_std: 0.12721504715606868
+    total:
+      human_readable:
+        batch_latency: 4.995 ms +/- 129.904 us [4.821 ms, 5.165 ms]
+        batches_per_second: 200.33 +/- 5.25 [193.62, 207.43]
+      metrics:
+        batches_per_second_max: 207.43343224530167
+        batches_per_second_mean: 200.33350918034557
+        batches_per_second_min: 193.6160273277016
+        batches_per_second_std: 5.250460879219172
+        seconds_per_batch_max: 0.0051648616790771484
+        seconds_per_batch_mean: 0.004995080709457397
+        seconds_per_batch_min: 0.004820823669433594
+        seconds_per_batch_std: 0.00012990442596491337
+  batch_size_32:
+    cpu_to_gpu:
+      human_readable:
+        batch_latency: 143.776 us +/- 4.288 us [142.097 us, 253.439 us]
+        batches_per_second: 6.96 K +/- 149.60 [3.95 K, 7.04 K]
+      metrics:
+        batches_per_second_max: 7037.422818791946
+        batches_per_second_mean: 6959.587356797871
+        batches_per_second_min: 3945.7234242709314
+        batches_per_second_std: 149.59832036210983
+        seconds_per_batch_max: 0.00025343894958496094
+        seconds_per_batch_mean: 0.00014377593994140624
+        seconds_per_batch_min: 0.00014209747314453125
+        seconds_per_batch_std: 4.288158148278854e-06
+    gpu_to_cpu:
+      human_readable:
+        batch_latency: 23.601 us +/- 0.576 us [22.650 us, 29.325 us]
+        batches_per_second: 42.39 K +/- 920.52 [34.10 K, 44.15 K]
+      metrics:
+        batches_per_second_max: 44150.56842105263
+        batches_per_second_mean: 42393.36492348737
+        batches_per_second_min: 34100.03252032521
+        batches_per_second_std: 920.5244379977883
+        seconds_per_batch_max: 2.9325485229492188e-05
+        seconds_per_batch_mean: 2.360105514526367e-05
+        seconds_per_batch_min: 2.2649765014648438e-05
+        seconds_per_batch_std: 5.760609299089039e-07
+    on_device_inference:
+      human_readable:
+        batch_latency: -4837827.134 us +/- 15.216 ms [-5186367.989 us, -4815264.225
+          us]
+        batches_per_second: -0.21 +/- 0.00 [-0.21, -0.19]
+      metrics:
+        batches_per_second_max: -0.19281315984532668
+        batches_per_second_mean: -0.20670633874972522
+        batches_per_second_min: -0.2076729237010317
+        batches_per_second_std: 0.0006269436569732726
+        seconds_per_batch_max: -4.8152642250061035
+        seconds_per_batch_mean: -4.837827133655548
+        seconds_per_batch_min: -5.186367988586426
+        seconds_per_batch_std: 0.015216266190096037
+    total:
+      human_readable:
+        batch_latency: 5.011 ms +/- 18.425 us [4.987 ms, 5.474 ms]
+        batches_per_second: 199.57 +/- 0.69 [182.69, 200.52]
+      metrics:
+        batches_per_second_max: 200.5212984653631
+        batches_per_second_mean: 199.57474482455896
+        batches_per_second_min: 182.68670238250795
+        batches_per_second_std: 0.6946691013533219
+        seconds_per_batch_max: 0.0054738521575927734
+        seconds_per_batch_mean: 0.00501071810722351
+        seconds_per_batch_min: 0.004987001419067383
+        seconds_per_batch_std: 1.8424514181393543e-05
+
 

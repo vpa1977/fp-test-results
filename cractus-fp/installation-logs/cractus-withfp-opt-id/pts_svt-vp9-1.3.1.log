@@ -1,0 +1,1086 @@
+
+7-Zip [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=en_US.utf8,Utf16=on,HugeFiles=on,64 bits,64 CPUs Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz (50657),ASM,AES-NI)
+
+Scanning the drive for archives:
+1 file, 680772328 bytes (650 MiB)
+
+Extracting archive: Bosphorus_1920x1080_120fps_420_8bit_YUV_RAW.7z
+--
+Path = Bosphorus_1920x1080_120fps_420_8bit_YUV_RAW.7z
+Type = 7z
+Physical Size = 680772328
+Headers Size = 249
+Method = LZMA:16 BZip2
+Solid = -
+Blocks = 2
+
+Everything is Ok
+
+Files: 2
+Size:       1866240249
+Compressed: 680772328
+
+7-Zip [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=en_US.utf8,Utf16=on,HugeFiles=on,64 bits,64 CPUs Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz (50657),ASM,AES-NI)
+
+Scanning the drive for archives:
+1 file, 2804470345 bytes (2675 MiB)
+
+Extracting archive: Bosphorus_3840x2160_120fps_420_8bit_YUV_Y4M.7z
+--
+Path = Bosphorus_3840x2160_120fps_420_8bit_YUV_Y4M.7z
+Type = 7z
+Physical Size = 2804470345
+Headers Size = 215
+Method = BZip2
+Solid = -
+Blocks = 2
+
+Everything is Ok
+
+Files: 2
+Size:       7464963909
+Compressed: 2804470345
+CMake Deprecation Warning at CMakeLists.txt:6 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- Found YASM: /usr/bin/yasm
+-- The C compiler identification is GNU 13.2.0
+-- The ASM_NASM compiler identification is YASM
+-- Found assembler: /usr/bin/yasm
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /tmp/pts-compiler-mask-svt-vp91.3.1/gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- CMAKE_BUILD_TYPE = Release
+-- CMAKE_C_COMPILER = /tmp/pts-compiler-mask-svt-vp91.3.1/gcc
+-- CMAKE_ASM_NASM_COMPILER = /usr/bin/yasm
+-- CMAKE_AR = /usr/bin/ar
+-- CMAKE_RANLIB = /usr/bin/ranlib
+-- CMAKE_INSTALL_PREFIX = /usr/local
+-- Performing Test C_FLAG_Wall
+-- Performing Test C_FLAG_Wall - Success
+-- Performing Test C_FLAG_Wextra
+-- Performing Test C_FLAG_Wextra - Success
+-- Performing Test C_FLAG_Wformat
+-- Performing Test C_FLAG_Wformat - Success
+-- Performing Test C_FLAG_Wformat_security
+-- Performing Test C_FLAG_Wformat_security - Success
+-- Performing Test C_FLAG_fPIE
+-- Performing Test C_FLAG_fPIE - Success
+-- Performing Test C_FLAG_fPIC
+-- Performing Test C_FLAG_fPIC - Success
+-- Performing Test C_FLAG_D_FORTIFY_SOURCE_2
+-- Performing Test C_FLAG_D_FORTIFY_SOURCE_2 - Success
+-- Performing Test C_FLAG_fvisibility_hidden
+-- Performing Test C_FLAG_fvisibility_hidden - Success
+-- Performing Test C_FLAG_GS
+-- Performing Test C_FLAG_GS - Failed
+-- Performing Test C_FLAG_sdl
+-- Performing Test C_FLAG_sdl - Failed
+-- Performing Test C_FLAG_fstack_protector_strong
+-- Performing Test C_FLAG_fstack_protector_strong - Success
+-- Performing Test C_FLAG_msse2
+-- Performing Test C_FLAG_msse2 - Success
+-- Performing Test C_FLAG_mssse3
+-- Performing Test C_FLAG_mssse3 - Success
+-- Performing Test C_FLAG_msse4_1
+-- Performing Test C_FLAG_msse4_1 - Success
+-- Performing Test C_FLAG_mavx2
+-- Performing Test C_FLAG_mavx2 - Success
+-- Configuring done (3.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Build/linux/Release
+[  1%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/VP9_ASM_SSE2.dir/EbAvcStyleMcp_Intrinsic_SSE2.c.o
+[  3%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/inv_txfm.c.o
+[  3%] Building ASM_NASM object Source/Lib/ASM_SSSE3/CMakeFiles/VP9_ASM_SSSE3.dir/vpx_subpixel_8t_ssse3.asm.o
+[  4%] Building C object Source/Lib/C_DEFAULT/CMakeFiles/VP9_C_DEFAULT.dir/EbComputeMean_C.c.o
+[  4%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/VP9_ASM_AVX2.dir/EbPictureOperators_Intrinsic_AVX2.c.o
+[  6%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/VP9_ASM_AVX2.dir/EbAvcStyleMcp_Intrinsic_AVX2.c.o
+[  7%] Building C object Source/Lib/ASM_SSE4_1/CMakeFiles/VP9_ASM_SSE4_1.dir/EbComputeSAD_Intrinsic_SSE4_1.c.o
+[  8%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/fwd_txfm.c.o
+[  8%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/VP9_ASM_AVX2.dir/EbFdct_Intrinsic_AVX2.c.o
+[  9%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/VP9_ASM_AVX2.dir/loopfilter_avx2.c.o
+[  9%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/quantize.c.o
+[ 10%] Building C object Source/Lib/C_DEFAULT/CMakeFiles/VP9_C_DEFAULT.dir/EbAvcStyleMcp_C.c.o
+[ 10%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/VP9_ASM_AVX2.dir/EbComputeSAD_Intrinsic_AVX2.c.o
+[ 11%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/VP9_ASM_AVX2.dir/EbCombinedAveragingSAD_Intrinsic_AVX2.c.o
+[ 13%] Building C object Source/Lib/ASM_SSE4_1/CMakeFiles/VP9_ASM_SSE4_1.dir/EbPictureOperators_Intrinsic_SSE4_1.c.o
+[ 13%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/VP9_ASM_AVX2.dir/EbComputeSAD_SadLoopKernel_AVX512.c.o
+[ 13%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_blockd.c.o
+[ 13%] Building C object Source/Lib/C_DEFAULT/CMakeFiles/VP9_C_DEFAULT.dir/EbComputeSAD_C.c.o
+[ 13%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/bitwriter_buffer.c.o
+[ 13%] Building ASM_NASM object Source/Lib/ASM_SSSE3/CMakeFiles/VP9_ASM_SSSE3.dir/x86_abi_support.asm.o
+[ 13%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/VP9_ASM_AVX2.dir/EbCombinedAveragingSAD_Intrinsic_AVX512.c.o
+[ 14%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_alloccommon.c.o
+[ 14%] Building C object Source/Lib/C_DEFAULT/CMakeFiles/VP9_C_DEFAULT.dir/EbPackUnPack_C.c.o
+[ 17%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/intrapred.c.o
+[ 17%] Building C object Source/Lib/C_DEFAULT/CMakeFiles/VP9_C_DEFAULT.dir/EbMeSadCalculation_C.c.o
+[ 17%] Building C object Source/Lib/ASM_SSSE3/CMakeFiles/VP9_ASM_SSSE3.dir/EbIntraPrediction_Intrinsic_SSSE3.c.o
+[ 19%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/VP9_ASM_SSE2.dir/EbMeSadCalculation_Intrinsic_SSE2.c.o
+[ 19%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/VP9_ASM_AVX2.dir/EbIdct_Intrinsic_AVX2.c.o
+[ 18%] Building ASM_NASM object Source/Lib/ASM_SSSE3/CMakeFiles/VP9_ASM_SSSE3.dir/intrapred_ssse3.asm.o
+[ 19%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/bitwriter.c.o
+[ 20%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/VP9_ASM_SSE2.dir/EbCombinedAveragingSAD_Intrinsic_SSE2.c.o
+[ 21%] Building C object Source/Lib/ASM_SSSE3/CMakeFiles/VP9_ASM_SSSE3.dir/inv_txfm_ssse3.c.o
+[ 21%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/VP9_ASM_AVX2.dir/EbIntraPrediction_Intrinsic_AVX2.c.o
+[ 22%] Building C object Source/Lib/C_DEFAULT/CMakeFiles/VP9_C_DEFAULT.dir/EbPictureOperators_C.c.o
+[ 22%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/VP9_ASM_AVX2.dir/EbNoiseExtractAVX2.c.o
+[ 23%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/VP9_ASM_SSE2.dir/EbPackUnPack_Intrinsic_SSE2.c.o
+[ 23%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/VP9_ASM_SSE2.dir/EbComputeMean_Intrinsic_SSE2.c.o
+[ 23%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/psnr.c.o
+[ 25%] Building ASM_NASM object Source/Lib/ASM_SSE2/CMakeFiles/VP9_ASM_SSE2.dir/intrapred_sse2.asm.o
+[ 26%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/VP9_ASM_AVX2.dir/quantize_avx.c.o
+[ 27%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/subtract.c.o
+[ 27%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/loopfilter.c.o
+[ 30%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/VP9_ASM_SSE2.dir/vp9_dct_intrin_sse2.c.o
+[ 30%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/prob.c.o
+[ 30%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/VP9_ASM_AVX2.dir/fwd_dct32x32_impl_avx2.c.o
+[ 30%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/VP9_ASM_AVX2.dir/EbPackUnPack_Intrinsic_AVX2.c.o
+[ 31%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/VP9_ASM_SSE2.dir/EbPictureOperators_Intrinsic_SSE2.c.o
+[ 31%] Building ASM_NASM object Source/Lib/ASM_SSSE3/CMakeFiles/VP9_ASM_SSSE3.dir/vpx_subpixel_bilinear_ssse3.asm.o
+[ 33%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_context_tree.c.o
+[ 33%] Building ASM_NASM object Source/Lib/ASM_SSE2/CMakeFiles/VP9_ASM_SSE2.dir/EbPictureOperators_SSE2.asm.o
+[ 34%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/VP9_ASM_AVX2.dir/vpx_subpixel_8t_intrin_avx2.c.o
+[ 34%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/VP9_ASM_SSE2.dir/inv_txfm_sse2.c.o
+[ 35%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_common_data.c.o
+[ 35%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/VP9_ASM_SSE2.dir/vp9_idct_intrin_sse2.c.o
+[ 36%] Building ASM_NASM object Source/Lib/ASM_SSE2/CMakeFiles/VP9_ASM_SSE2.dir/x64inc.asm.o
+[ 36%] Building ASM_NASM object Source/Lib/ASM_SSE2/CMakeFiles/VP9_ASM_SSE2.dir/subtract_sse2.asm.o
+[ 37%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/VP9_ASM_SSE2.dir/loopfilter_sse2.c.o
+[ 38%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_bitstream.c.o
+[ 39%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_dct.c.o
+[ 39%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_cost.c.o
+[ 40%] Building ASM_NASM object Source/Lib/ASM_SSE2/CMakeFiles/VP9_ASM_SSE2.dir/x64RegisterUtil.asm.o
+[ 40%] Building ASM_NASM object Source/Lib/ASM_SSE2/CMakeFiles/VP9_ASM_SSE2.dir/x86inc.asm.o
+[ 40%] Building ASM_NASM object Source/Lib/ASM_SSE2/CMakeFiles/VP9_ASM_SSE2.dir/x64Macro.asm.o
+[ 41%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_encodemv.c.o
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_SSE2/x64Macro.asm:43: warning: section flags ignored on section redeclaration
+[ 43%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_entropymode.c.o
+[ 43%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_entropymv.c.o
+[ 43%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_entropy.c.o
+[ 43%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_encoder.c.o
+[ 44%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_filter.c.o
+[ 45%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_loopfilter.c.o
+[ 46%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_pred_common.c.o
+[ 46%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_idct.c.o
+[ 46%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_picklpf.c.o
+[ 47%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_mvref_common.c.o
+[ 49%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_quant_common.c.o
+[ 49%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_ratectrl.c.o
+[ 50%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_rd.c.o
+[ 50%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_quantize.c.o
+[ 50%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_rdopt.c.o
+[ 50%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_reconintra.c.o
+[ 51%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_reconinter.c.o
+[ 52%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_scale.c.o
+[ 53%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_scan.c.o
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/EbNoiseExtractAVX2.c:9:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTables.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureControlSet.h:22,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureDecisionQueue.h:15,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbEncodeContext.h:15,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbSequenceControlSet.h:12,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbMotionEstimationProcess.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbMotionEstimation.h:12,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/EbComputeSAD_SadLoopKernel_AVX512.h:10,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/EbComputeSAD_SadLoopKernel_AVX512.c:7:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/C_DEFAULT/EbAvcStyleMcp_C.c:9:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/C_DEFAULT/EbMeSadCalculation_C.c:9:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/C_DEFAULT/EbPictureOperators_C.c:7:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTables.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureControlSet.h:22,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_bitstream.h:23,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_bitstream.c:31:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+[ 53%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_seg_common.c.o
+[ 54%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_segmentation.c.o
+[ 54%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_tile_common.c.o
+[ 55%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_subexp.c.o
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbModeDecision.h:10,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbEncDecProcess.h:14,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_mvref_common.h:15,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_mvref_common.c:12:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+[ 56%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_tokenize.c.o
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/C_DEFAULT/EbComputeSAD_C.c:7:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+[ 57%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vp9_treewriter.c.o
+[ 58%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vpx_convolve.c.o
+[ 58%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vpx_codec.c.o
+[ 59%] Building C object Source/Lib/VPX/CMakeFiles/libVPX.dir/vpx_image.c.o
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTables.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureControlSet.h:22,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureDecisionQueue.h:15,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbEncodeContext.h:15,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbSequenceControlSet.h:12,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_reconintra.h:18,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_reconintra.c:14:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbModeDecision.h:10,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbEncDecProcess.h:14,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_reconinter.h:17,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_reconinter.c:14:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:23:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h:1322,
+                 from /usr/lib/gcc/x86_64-linux-gnu/13/include/immintrin.h:31,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:11:
+In function ‘_mm_unpacklo_epi32’,
+    inlined from ‘vpx_filter_block1d4_v8_x_avx2’ at /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:787:15,
+    inlined from ‘vpx_filter_block1d4_v8_avx2’ at /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:1094:5,
+    inlined from ‘eb_vp9_convolve8_vert_avx2.constprop’ at /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:1180:1:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/emmintrin.h:1048:19: warning: ‘s[8]’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1048 |   return (__m128i)__builtin_ia32_punpckldq128 ((__v4si)__A, (__v4si)__B);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c: In function ‘eb_vp9_convolve8_vert_avx2.constprop’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:683:13: note: ‘s[8]’ was declared here
+  683 |     __m128i s[10], s45, s56;
+      |             ^
+In function ‘_mm_unpacklo_epi32’,
+    inlined from ‘vpx_filter_block1d4_v8_x_avx2’ at /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:790:15,
+    inlined from ‘vpx_filter_block1d4_v8_avx2’ at /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:1094:5,
+    inlined from ‘eb_vp9_convolve8_vert_avx2.constprop’ at /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:1180:1:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/emmintrin.h:1048:19: warning: ‘s[9]’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1048 |   return (__m128i)__builtin_ia32_punpckldq128 ((__v4si)__A, (__v4si)__B);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c: In function ‘eb_vp9_convolve8_vert_avx2.constprop’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:683:13: note: ‘s[9]’ was declared here
+  683 |     __m128i s[10], s45, s56;
+      |             ^
+In function ‘_mm_unpacklo_epi32’,
+    inlined from ‘vpx_filter_block1d4_v8_x_avx2’ at /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:787:15,
+    inlined from ‘vpx_filter_block1d4_v8_avg_avx2’ at /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:1101:5,
+    inlined from ‘eb_vp9_convolve8_avg_vert_avx2.constprop’ at /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:1182:1:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/emmintrin.h:1048:19: warning: ‘s[8]’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1048 |   return (__m128i)__builtin_ia32_punpckldq128 ((__v4si)__A, (__v4si)__B);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c: In function ‘eb_vp9_convolve8_avg_vert_avx2.constprop’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:683:13: note: ‘s[8]’ was declared here
+  683 |     __m128i s[10], s45, s56;
+      |             ^
+In function ‘_mm_unpacklo_epi32’,
+    inlined from ‘vpx_filter_block1d4_v8_x_avx2’ at /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:790:15,
+    inlined from ‘vpx_filter_block1d4_v8_avg_avx2’ at /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:1101:5,
+    inlined from ‘eb_vp9_convolve8_avg_vert_avx2.constprop’ at /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:1182:1:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/emmintrin.h:1048:19: warning: ‘s[9]’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1048 |   return (__m128i)__builtin_ia32_punpckldq128 ((__v4si)__A, (__v4si)__B);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c: In function ‘eb_vp9_convolve8_avg_vert_avx2.constprop’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:683:13: note: ‘s[9]’ was declared here
+  683 |     __m128i s[10], s45, s56;
+      |             ^
+[ 59%] Built target VP9_ASM_SSSE3
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c: In function ‘eb_vp9_get_entropy_contexts’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:509:24: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  509 |             t_above[i] = !!*(const uint32_t *)&above[i];
+      |             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset [64, 192] into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:509:24: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  509 |             t_above[i] = !!*(const uint32_t *)&above[i];
+      |             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset [68, 196] into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:509:24: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  509 |             t_above[i] = !!*(const uint32_t *)&above[i];
+      |             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset [72, 200] into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:509:24: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  509 |             t_above[i] = !!*(const uint32_t *)&above[i];
+      |             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset [76, 204] into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:509:24: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  509 |             t_above[i] = !!*(const uint32_t *)&above[i];
+      |             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset [80, 208] into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:509:24: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  509 |             t_above[i] = !!*(const uint32_t *)&above[i];
+      |             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset [84, 212] into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:509:24: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  509 |             t_above[i] = !!*(const uint32_t *)&above[i];
+      |             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset [88, 216] into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:509:24: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  509 |             t_above[i] = !!*(const uint32_t *)&above[i];
+      |             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset [92, 220] into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:509:24: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  509 |             t_above[i] = !!*(const uint32_t *)&above[i];
+      |             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset [96, 224] into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:509:24: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  509 |             t_above[i] = !!*(const uint32_t *)&above[i];
+      |             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset [100, 228] into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:509:24: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  509 |             t_above[i] = !!*(const uint32_t *)&above[i];
+      |             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset [104, 232] into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:509:24: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  509 |             t_above[i] = !!*(const uint32_t *)&above[i];
+      |             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset [108, 236] into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:509:24: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  509 |             t_above[i] = !!*(const uint32_t *)&above[i];
+      |             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset [112, 240] into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:509:24: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  509 |             t_above[i] = !!*(const uint32_t *)&above[i];
+      |             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset [116, 244] into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:509:24: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  509 |             t_above[i] = !!*(const uint32_t *)&above[i];
+      |             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset [120, 248] into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:513:23: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  513 |             t_left[i] = !!*(const uint32_t *)&left[i];
+      |             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset [64, 192] into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:513:23: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  513 |             t_left[i] = !!*(const uint32_t *)&left[i];
+      |             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset [68, 196] into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:513:23: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  513 |             t_left[i] = !!*(const uint32_t *)&left[i];
+      |             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset [72, 200] into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:513:23: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  513 |             t_left[i] = !!*(const uint32_t *)&left[i];
+      |             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset [76, 204] into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:513:23: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  513 |             t_left[i] = !!*(const uint32_t *)&left[i];
+      |             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset [80, 208] into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:513:23: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  513 |             t_left[i] = !!*(const uint32_t *)&left[i];
+      |             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset [84, 212] into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:513:23: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  513 |             t_left[i] = !!*(const uint32_t *)&left[i];
+      |             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset [88, 216] into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:513:23: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  513 |             t_left[i] = !!*(const uint32_t *)&left[i];
+      |             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset [92, 220] into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:513:23: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  513 |             t_left[i] = !!*(const uint32_t *)&left[i];
+      |             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset [96, 224] into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:513:23: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  513 |             t_left[i] = !!*(const uint32_t *)&left[i];
+      |             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset [100, 228] into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:513:23: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  513 |             t_left[i] = !!*(const uint32_t *)&left[i];
+      |             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset [104, 232] into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:513:23: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  513 |             t_left[i] = !!*(const uint32_t *)&left[i];
+      |             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset [108, 236] into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:513:23: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  513 |             t_left[i] = !!*(const uint32_t *)&left[i];
+      |             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset [112, 240] into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:513:23: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  513 |             t_left[i] = !!*(const uint32_t *)&left[i];
+      |             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset [116, 244] into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:513:23: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  513 |             t_left[i] = !!*(const uint32_t *)&left[i];
+      |             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset [120, 248] into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:520:22: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  520 |           t_above[i] = !!*(const uint64_t *)&above[i];
+      |           ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset 128 into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:520:22: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  520 |           t_above[i] = !!*(const uint64_t *)&above[i];
+      |           ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset 136 into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:520:22: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  520 |           t_above[i] = !!*(const uint64_t *)&above[i];
+      |           ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset 144 into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:520:22: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  520 |           t_above[i] = !!*(const uint64_t *)&above[i];
+      |           ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset 152 into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:520:22: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  520 |           t_above[i] = !!*(const uint64_t *)&above[i];
+      |           ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset 160 into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:520:22: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  520 |           t_above[i] = !!*(const uint64_t *)&above[i];
+      |           ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset 168 into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:520:22: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  520 |           t_above[i] = !!*(const uint64_t *)&above[i];
+      |           ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset 176 into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:520:22: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  520 |           t_above[i] = !!*(const uint64_t *)&above[i];
+      |           ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset 184 into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:520:22: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  520 |           t_above[i] = !!*(const uint64_t *)&above[i];
+      |           ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset 192 into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:520:22: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  520 |           t_above[i] = !!*(const uint64_t *)&above[i];
+      |           ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset 200 into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:520:22: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  520 |           t_above[i] = !!*(const uint64_t *)&above[i];
+      |           ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset 208 into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:520:22: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  520 |           t_above[i] = !!*(const uint64_t *)&above[i];
+      |           ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset 216 into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:520:22: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  520 |           t_above[i] = !!*(const uint64_t *)&above[i];
+      |           ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset 224 into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:520:22: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  520 |           t_above[i] = !!*(const uint64_t *)&above[i];
+      |           ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset 232 into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:520:22: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  520 |           t_above[i] = !!*(const uint64_t *)&above[i];
+      |           ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:482:47: note: at offset 240 into destination object ‘t_above’ of size [0, 16]
+  482 |                               ENTROPY_CONTEXT t_above[16],
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:524:21: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  524 |           t_left[i] = !!*(const uint64_t *)&left[i];
+      |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset 128 into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:524:21: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  524 |           t_left[i] = !!*(const uint64_t *)&left[i];
+      |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset 136 into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:524:21: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  524 |           t_left[i] = !!*(const uint64_t *)&left[i];
+      |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset 144 into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:524:21: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  524 |           t_left[i] = !!*(const uint64_t *)&left[i];
+      |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset 152 into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:524:21: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  524 |           t_left[i] = !!*(const uint64_t *)&left[i];
+      |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset 160 into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:524:21: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  524 |           t_left[i] = !!*(const uint64_t *)&left[i];
+      |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset 168 into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:524:21: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  524 |           t_left[i] = !!*(const uint64_t *)&left[i];
+      |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset 176 into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:524:21: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  524 |           t_left[i] = !!*(const uint64_t *)&left[i];
+      |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset 184 into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:524:21: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  524 |           t_left[i] = !!*(const uint64_t *)&left[i];
+      |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset 192 into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:524:21: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  524 |           t_left[i] = !!*(const uint64_t *)&left[i];
+      |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset 200 into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+In function ‘_mm_unpacklo_epi32’,
+    inlined from ‘vpx_filter_block1d4_v8_x_avx2’ at /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:787:15,
+    inlined from ‘vpx_filter_block1d4_v8_avx2’ at /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:1094:5,
+    inlined from ‘eb_vp9_convolve8_vert_avx2’ at /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:1180:1:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/emmintrin.h:1048:19: warning: ‘s[8]’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1048 |   return (__m128i)__builtin_ia32_punpckldq128 ((__v4si)__A, (__v4si)__B);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c: In function ‘eb_vp9_convolve8_vert_avx2’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:683:13: note: ‘s[8]’ was declared here
+  683 |     __m128i s[10], s45, s56;
+      |             ^
+In function ‘_mm_unpacklo_epi32’,
+    inlined from ‘vpx_filter_block1d4_v8_x_avx2’ at /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:790:15,
+    inlined from ‘vpx_filter_block1d4_v8_avx2’ at /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:1094:5,
+    inlined from ‘eb_vp9_convolve8_vert_avx2’ at /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:1180:1:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/emmintrin.h:1048:19: warning: ‘s[9]’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1048 |   return (__m128i)__builtin_ia32_punpckldq128 ((__v4si)__A, (__v4si)__B);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c: In function ‘eb_vp9_convolve8_vert_avx2’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:683:13: note: ‘s[9]’ was declared here
+  683 |     __m128i s[10], s45, s56;
+      |             ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:524:21: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  524 |           t_left[i] = !!*(const uint64_t *)&left[i];
+      |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset 208 into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:524:21: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  524 |           t_left[i] = !!*(const uint64_t *)&left[i];
+      |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset 216 into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:524:21: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  524 |           t_left[i] = !!*(const uint64_t *)&left[i];
+      |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset 224 into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:524:21: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  524 |           t_left[i] = !!*(const uint64_t *)&left[i];
+      |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset 232 into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:524:21: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  524 |           t_left[i] = !!*(const uint64_t *)&left[i];
+      |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/VPX/vp9_rd.c:483:47: note: at offset 240 into destination object ‘t_left’ of size [0, 16]
+  483 |                               ENTROPY_CONTEXT t_left[16]) {
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~~~~
+In function ‘_mm_unpacklo_epi32’,
+    inlined from ‘vpx_filter_block1d4_v8_x_avx2’ at /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:787:15,
+    inlined from ‘vpx_filter_block1d4_v8_avg_avx2’ at /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:1101:5,
+    inlined from ‘eb_vp9_convolve8_avg_vert_avx2’ at /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:1182:1:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/emmintrin.h:1048:19: warning: ‘s[8]’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1048 |   return (__m128i)__builtin_ia32_punpckldq128 ((__v4si)__A, (__v4si)__B);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c: In function ‘eb_vp9_convolve8_avg_vert_avx2’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:683:13: note: ‘s[8]’ was declared here
+  683 |     __m128i s[10], s45, s56;
+      |             ^
+In function ‘_mm_unpacklo_epi32’,
+    inlined from ‘vpx_filter_block1d4_v8_x_avx2’ at /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:790:15,
+    inlined from ‘vpx_filter_block1d4_v8_avg_avx2’ at /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:1101:5,
+    inlined from ‘eb_vp9_convolve8_avg_vert_avx2’ at /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:1182:1:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/emmintrin.h:1048:19: warning: ‘s[9]’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1048 |   return (__m128i)__builtin_ia32_punpckldq128 ((__v4si)__A, (__v4si)__B);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c: In function ‘eb_vp9_convolve8_avg_vert_avx2’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/ASM_AVX2/vpx_subpixel_8t_intrin_avx2.c:683:13: note: ‘s[9]’ was declared here
+  683 |     __m128i s[10], s45, s56;
+      |             ^
+[ 59%] Built target VP9_ASM_SSE4_1
+[ 59%] Built target VP9_C_DEFAULT
+[ 59%] Built target VP9_ASM_SSE2
+[ 59%] Built target libVPX
+[ 59%] Built target VP9_ASM_AVX2
+[ 59%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbAvcStyleMcp.c.o
+[ 60%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbBitstreamUnit.c.o
+[ 62%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbEncDecProcess.c.o
+[ 62%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbEncDecResults.c.o
+[ 62%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbEncDecSegments.c.o
+[ 62%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbCodingUnit.c.o
+[ 62%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbEncodeContext.c.o
+[ 63%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbEncDecTasks.c.o
+[ 63%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbEntropyCodingResults.c.o
+[ 64%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbEncHandle.c.o
+[ 65%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbEntropyCodingProcess.c.o
+[ 66%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbInitialRateControlReorderQueue.c.o
+[ 67%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbInitialRateControlProcess.c.o
+[ 68%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbInitialRateControlResults.c.o
+[ 67%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbEntropyCoding.c.o
+[ 68%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbMcp.c.o
+[ 69%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbIntraPrediction.c.o
+[ 71%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbModeDecisionConfigurationProcess.c.o
+[ 71%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbModeDecision.c.o
+[ 71%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbModeDecisionProcess.c.o
+[ 71%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbMotionEstimationProcess.c.o
+[ 74%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbMotionEstimationContext.c.o
+[ 74%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbMotionEstimation.c.o
+[ 74%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbMotionEstimationResults.c.o
+[ 75%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbPictureDecisionReorderQueue.c.o
+[ 75%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbPacketizationReorderQueue.c.o
+[ 77%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbPictureDecisionProcess.c.o
+[ 77%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbPacketizationProcess.c.o
+[ 78%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbPictureManagerProcess.c.o
+[ 78%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbPictureAnalysisProcess.c.o
+[ 78%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbPictureDemuxResults.c.o
+[ 78%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbNeighborArrays.c.o
+[ 79%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbPictureOperators.c.o
+[ 80%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbPredictionStructure.c.o
+[ 80%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbPictureControlSet.c.o
+[ 81%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbPictureDecisionQueue.c.o
+[ 82%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbPictureManagerQueue.c.o
+[ 83%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbPictureDecisionResults.c.o
+[ 85%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbPictureAnalysisResults.c.o
+[ 85%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbPictureBufferDesc.c.o
+[ 85%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbPictureManagerReorderQueue.c.o
+[ 85%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbRateControlProcess.c.o
+[ 86%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbRateControlResults.c.o
+[ 87%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbRateControlTasks.c.o
+[ 87%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbRateControlTables.c.o
+[ 87%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbReferenceObject.c.o
+[ 87%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbSei.c.o
+[ 87%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbTransQuantBuffers.c.o
+[ 90%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbResourceCoordinationResults.c.o
+[ 90%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbRateDistortionCost.c.o
+[ 90%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbResourceCoordinationProcess.c.o
+[ 91%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbSequenceControlSet.c.o
+[ 92%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbSourceBasedOperationsProcess.c.o
+[ 92%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbSystemResourceManager.c.o
+[ 93%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbThreads.c.o
+[ 95%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbUtility.c.o
+[ 95%] Building C object Source/Lib/Codec/CMakeFiles/SvtVp9Enc.dir/EbTime.c.o
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbBitstreamUnit.h:10,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbBitstreamUnit.c:9:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbModeDecisionConfigurationProcess.c:9:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbMotionEstimationProcess.c:8:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbModeDecision.h:10,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbEncDecProcess.h:14,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbEncDecProcess.c:12:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTables.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureControlSet.h:22,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbInitialRateControlProcess.c:10:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbModeDecision.c:11:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbMotionEstimationProcess.c:17:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbComputeSAD.h:105:25: warning: cast between incompatible function types from ‘void (*)()’ to ‘uint32_t (*)(uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  105 |             /*5      */ (EbSadkernelNxMType)nx_m_sad_kernel_void_func,
+      |                         ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbComputeSAD.h:107:25: warning: cast between incompatible function types from ‘void (*)()’ to ‘uint32_t (*)(uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  107 |             /*7      */ (EbSadkernelNxMType)nx_m_sad_kernel_void_func,
+      |                         ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbComputeSAD.h:121:25: warning: cast between incompatible function types from ‘void (*)()’ to ‘uint32_t (*)(uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  121 |             /*5      */ (EbSadavgkernelNxMType)nx_m_sad_kernel_void_func,
+      |                         ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbComputeSAD.h:123:25: warning: cast between incompatible function types from ‘void (*)()’ to ‘uint32_t (*)(uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  123 |             /*7      */ (EbSadavgkernelNxMType)nx_m_sad_kernel_void_func,
+      |                         ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbComputeSAD.h:133:25: warning: cast between incompatible function types from ‘void (*)()’ to ‘uint32_t (*)(uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  133 |             /*5      */ (EbSadavgkernelNxMType)nx_m_sad_kernel_void_func,
+      |                         ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbComputeSAD.h:135:25: warning: cast between incompatible function types from ‘void (*)()’ to ‘uint32_t (*)(uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  135 |             /*7      */ (EbSadavgkernelNxMType)nx_m_sad_kernel_void_func,
+      |                         ^
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTables.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureControlSet.h:22,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTasks.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTasks.c:9:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbEncDecProcess.c:18:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbComputeSAD.h:105:25: warning: cast between incompatible function types from ‘void (*)()’ to ‘uint32_t (*)(uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  105 |             /*5      */ (EbSadkernelNxMType)nx_m_sad_kernel_void_func,
+      |                         ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbComputeSAD.h:107:25: warning: cast between incompatible function types from ‘void (*)()’ to ‘uint32_t (*)(uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  107 |             /*7      */ (EbSadkernelNxMType)nx_m_sad_kernel_void_func,
+      |                         ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbComputeSAD.h:121:25: warning: cast between incompatible function types from ‘void (*)()’ to ‘uint32_t (*)(uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  121 |             /*5      */ (EbSadavgkernelNxMType)nx_m_sad_kernel_void_func,
+      |                         ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbComputeSAD.h:123:25: warning: cast between incompatible function types from ‘void (*)()’ to ‘uint32_t (*)(uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  123 |             /*7      */ (EbSadavgkernelNxMType)nx_m_sad_kernel_void_func,
+      |                         ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbComputeSAD.h:133:25: warning: cast between incompatible function types from ‘void (*)()’ to ‘uint32_t (*)(uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  133 |             /*5      */ (EbSadavgkernelNxMType)nx_m_sad_kernel_void_func,
+      |                         ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbComputeSAD.h:135:25: warning: cast between incompatible function types from ‘void (*)()’ to ‘uint32_t (*)(uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  135 |             /*7      */ (EbSadavgkernelNxMType)nx_m_sad_kernel_void_func,
+      |                         ^
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTables.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbInitialRateControlReorderQueue.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbInitialRateControlReorderQueue.c:7:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbModeDecision.h:10,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbEntropyCodingProcess.h:14,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbEntropyCodingProcess.c:8:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbEncHandle.c:24:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTables.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureControlSet.h:22,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbSourceBasedOperationsProcess.c:10:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbIntraPrediction.h:10,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbIntraPrediction.c:9:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbMcp.h:13,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbMcp.c:8:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbModeDecision.h:10,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbEncDecProcess.h:14,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbModeDecisionProcess.c:8:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureDecisionProcess.c:10:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbNeighborArrays.c:10:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbCodingUnit.c:9:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureManagerProcess.c:10:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPredictionStructure.c:11:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTables.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureControlSet.h:22,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureDecisionQueue.h:15,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbEncodeContext.h:15,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbEncodeContext.c:9:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTables.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureControlSet.h:22,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureDecisionQueue.h:15,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbEncodeContext.h:15,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbSequenceControlSet.h:12,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureOperators.h:15,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbAvcStyleMcp.h:15,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbAvcStyleMcp.c:6:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTables.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTables.c:6:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTables.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureControlSet.h:22,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbMotionEstimation.c:11:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTables.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureControlSet.h:22,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureDecisionQueue.h:15,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbEncodeContext.h:15,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbSequenceControlSet.h:12,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbEntropyCoding.h:13,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbEntropyCoding.c:9:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbIntraPrediction.h:10,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateDistortionCost.h:12,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateDistortionCost.c:19:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTables.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureControlSet.h:22,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureAnalysisProcess.c:11:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.c:6:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTables.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureControlSet.h:22,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureControlSet.c:10:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTables.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureControlSet.h:22,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureDecisionQueue.h:15,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureDecisionQueue.c:7:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTables.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureControlSet.h:22,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureDecisionQueue.h:15,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbEncodeContext.h:15,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbSequenceControlSet.h:12,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureOperators.h:15,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureOperators.c:10:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTables.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureControlSet.h:22,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbReferenceObject.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbReferenceObject.c:10:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTables.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureControlSet.h:22,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlResults.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlResults.c:9:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbMotionEstimation.c:16:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbComputeSAD.h:105:25: warning: cast between incompatible function types from ‘void (*)()’ to ‘uint32_t (*)(uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  105 |             /*5      */ (EbSadkernelNxMType)nx_m_sad_kernel_void_func,
+      |                         ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbComputeSAD.h:107:25: warning: cast between incompatible function types from ‘void (*)()’ to ‘uint32_t (*)(uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  107 |             /*7      */ (EbSadkernelNxMType)nx_m_sad_kernel_void_func,
+      |                         ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbComputeSAD.h:121:25: warning: cast between incompatible function types from ‘void (*)()’ to ‘uint32_t (*)(uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  121 |             /*5      */ (EbSadavgkernelNxMType)nx_m_sad_kernel_void_func,
+      |                         ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbComputeSAD.h:123:25: warning: cast between incompatible function types from ‘void (*)()’ to ‘uint32_t (*)(uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  123 |             /*7      */ (EbSadavgkernelNxMType)nx_m_sad_kernel_void_func,
+      |                         ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbComputeSAD.h:133:25: warning: cast between incompatible function types from ‘void (*)()’ to ‘uint32_t (*)(uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  133 |             /*5      */ (EbSadavgkernelNxMType)nx_m_sad_kernel_void_func,
+      |                         ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbComputeSAD.h:135:25: warning: cast between incompatible function types from ‘void (*)()’ to ‘uint32_t (*)(uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  135 |             /*7      */ (EbSadavgkernelNxMType)nx_m_sad_kernel_void_func,
+      |                         ^
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTables.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureControlSet.h:22,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureDecisionQueue.h:15,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbEncodeContext.h:15,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbSequenceControlSet.h:12,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPacketizationProcess.c:23:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureDecisionProcess.c:18:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbComputeSAD.h:105:25: warning: cast between incompatible function types from ‘void (*)()’ to ‘uint32_t (*)(uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  105 |             /*5      */ (EbSadkernelNxMType)nx_m_sad_kernel_void_func,
+      |                         ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbComputeSAD.h:107:25: warning: cast between incompatible function types from ‘void (*)()’ to ‘uint32_t (*)(uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  107 |             /*7      */ (EbSadkernelNxMType)nx_m_sad_kernel_void_func,
+      |                         ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbComputeSAD.h:121:25: warning: cast between incompatible function types from ‘void (*)()’ to ‘uint32_t (*)(uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  121 |             /*5      */ (EbSadavgkernelNxMType)nx_m_sad_kernel_void_func,
+      |                         ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbComputeSAD.h:123:25: warning: cast between incompatible function types from ‘void (*)()’ to ‘uint32_t (*)(uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  123 |             /*7      */ (EbSadavgkernelNxMType)nx_m_sad_kernel_void_func,
+      |                         ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbComputeSAD.h:133:25: warning: cast between incompatible function types from ‘void (*)()’ to ‘uint32_t (*)(uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  133 |             /*5      */ (EbSadavgkernelNxMType)nx_m_sad_kernel_void_func,
+      |                         ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbComputeSAD.h:135:25: warning: cast between incompatible function types from ‘void (*)()’ to ‘uint32_t (*)(uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint8_t *, uint32_t,  uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  135 |             /*7      */ (EbSadavgkernelNxMType)nx_m_sad_kernel_void_func,
+      |                         ^
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTables.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureControlSet.h:22,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlProcess.h:12,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlProcess.c:9:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTables.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureControlSet.h:22,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureDecisionQueue.h:15,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbEncodeContext.h:15,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbSequenceControlSet.h:12,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbSequenceControlSet.c:9:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbRateControlTables.h:11,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbPictureControlSet.h:22,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbResourceCoordinationProcess.c:12:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbUtility.h:95:17: warning: conflicting types for built-in function ‘log2f64’; expected ‘_Float64(_Float64)’ [-Wbuiltin-declaration-mismatch]
+   95 | extern uint64_t log2f64(uint64_t x);
+      |                 ^~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbEncHandle.c: In function ‘invoke_safe_str_constraint_handler’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbEncHandle.c:2971:17: warning: unused parameter ‘msg’ [-Wunused-parameter]
+ 2971 |     const char *msg,
+      |     ~~~~~~~~~~~~^~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Source/Lib/Codec/EbEncHandle.c:2973:11: warning: unused parameter ‘error’ [-Wunused-parameter]
+ 2973 |     Errno error)
+      |     ~~~~~~^~~~~
+[ 95%] Linking C shared library /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Bin/Release/libSvtVp9Enc.so
+[ 95%] Built target SvtVp9Enc
+[ 97%] Building C object Source/App/CMakeFiles/SvtVp9EncApp.dir/EbAppContext.c.o
+[ 97%] Building C object Source/App/CMakeFiles/SvtVp9EncApp.dir/EbAppFifo.c.o
+[ 97%] Building C object Source/App/CMakeFiles/SvtVp9EncApp.dir/EbAppConfig.c.o
+[ 97%] Building C object Source/App/CMakeFiles/SvtVp9EncApp.dir/EbAppTime.c.o
+[ 99%] Building C object Source/App/CMakeFiles/SvtVp9EncApp.dir/EbAppProcessCmd.c.o
+[ 99%] Building C object Source/App/CMakeFiles/SvtVp9EncApp.dir/EbAppMain.c.o
+[100%] Linking C executable /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-vp9-1.3.1/SVT-VP9-0.3.0/Bin/Release/SvtVp9EncApp
+[100%] Built target SvtVp9EncApp

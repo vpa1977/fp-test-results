@@ -1,0 +1,498 @@
+checking metadata... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether make supports the include directive... yes (GNU style)
+checking for mpicc... mpicc
+checking for gcc... (cached) mpicc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether mpicc accepts -g... yes
+checking for mpicc option to accept ISO C89... none needed
+checking whether mpicc understands -c and -o together... yes
+checking dependency style of mpicc... gcc3
+checking for function MPI_Init... yes
+checking for mpi.h... yes
+checking for ranlib... ranlib
+checking for mpicc option to accept ISO C99... none needed
+checking how to run the C preprocessor... mpicc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/statfs.h usability... yes
+checking sys/statfs.h presence... yes
+checking for sys/statfs.h... yes
+checking sys/statvfs.h usability... yes
+checking sys/statvfs.h presence... yes
+checking for sys/statvfs.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for sys/param.h... (cached) yes
+checking sys/mount.h usability... yes
+checking sys/mount.h presence... yes
+checking for sys/mount.h... yes
+checking for unistd.h... (cached) yes
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking hdfs.h usability... no
+checking hdfs.h presence... no
+checking for hdfs.h... no
+checking beegfs/beegfs.h usability... no
+checking beegfs/beegfs.h presence... no
+checking for beegfs/beegfs.h... no
+checking for size_t... yes
+checking for sysconf... yes
+checking for gettimeofday... yes
+checking for memset... yes
+checking for mkdir... yes
+checking for pow... no
+checking for putenv... yes
+checking for realpath... yes
+checking for regcomp... yes
+checking for sqrt... no
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strerror... yes
+checking for strncasecmp... yes
+checking for strstr... yes
+checking for uname... yes
+checking for statfs... yes
+checking for statvfs... yes
+checking for library containing sqrt... -lm
+checking gpfs.h usability... no
+checking gpfs.h presence... no
+checking for gpfs.h... no
+checking gpfs_fcntl.h usability... no
+checking gpfs_fcntl.h presence... no
+checking for gpfs_fcntl.h... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for Gfarm file system... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating src/test/Makefile
+config.status: creating contrib/Makefile
+config.status: creating doc/Makefile
+config.status: creating src/config.h
+config.status: executing depfiles commands
+Making all in src
+make  all-recursive
+Making all in .
+  CC       ior-ior-main.o
+  CC       ior-aiori.o
+  CC       ior-aiori-DUMMY.o
+  CC       ior-aiori-MPIIO.o
+  CC       ior-aiori-MMAP.o
+  CC       ior-aiori-POSIX.o
+  CC       libaiori_a-ior.o
+  CC       libaiori_a-mdtest.o
+  CC       libaiori_a-utilities.o
+  CC       libaiori_a-parse_options.o
+  CC       libaiori_a-ior-output.o
+  CC       libaiori_a-option.o
+  CC       libaiori_a-aiori.o
+  CC       libaiori_a-aiori-DUMMY.o
+  CC       libaiori_a-aiori-MPIIO.o
+  CC       libaiori_a-aiori-MMAP.o
+  CC       libaiori_a-aiori-POSIX.o
+  CC       mdtest-mdtest-main.o
+  CC       mdtest-aiori.o
+  CC       mdtest-aiori-DUMMY.o
+  CC       mdtest-aiori-MPIIO.o
+  CC       mdtest-aiori-MMAP.o
+  CC       mdtest-aiori-POSIX.o
+parse_options.c: In function ‘createGlobalOptions’:
+parse_options.c:469:33: warning: ‘%s’ directive writing up to 1023 bytes into a region of size 1011 [-Wformat-overflow=]
+  469 |   sprintf(apiStr, "API for I/O [%s]", APIs);
+      |                                 ^~    ~~~~
+parse_options.c:469:3: note: ‘sprintf’ output between 15 and 1038 bytes into a destination of size 1024
+  469 |   sprintf(apiStr, "API for I/O [%s]", APIs);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c: In function ‘create_remove_dirs’:
+mdtest.c:317:32: warning: ‘%s’ directive writing up to 4095 bytes into a region of size 4091 [-Wformat-overflow=]
+  317 |     sprintf(curr_item, "%s/dir.%s%" PRIu64, path, create ? mk_name : rm_name, itemNum);
+      |                                ^~
+mdtest.c:317:5: note: ‘sprintf’ output 7 or more bytes (assuming 4102) into a destination of size 4096
+  317 |     sprintf(curr_item, "%s/dir.%s%" PRIu64, path, create ? mk_name : rm_name, itemNum);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c: In function ‘remove_file’:
+mdtest.c:339:33: warning: ‘%s’ directive writing up to 4095 bytes into a region of size 4090 [-Wformat-overflow=]
+  339 |     sprintf(curr_item, "%s/file.%s"LLU"", path, rm_name, itemNum);
+      |                                 ^~              ~~~~~~~
+mdtest.c:339:5: note: ‘sprintf’ output 8 or more bytes (assuming 4103) into a destination of size 4096
+  339 |     sprintf(curr_item, "%s/file.%s"LLU"", path, rm_name, itemNum);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c: In function ‘create_file’:
+mdtest.c:355:33: warning: ‘%s’ directive writing up to 4095 bytes into a region of size 4090 [-Wformat-overflow=]
+  355 |     sprintf(curr_item, "%s/file.%s"LLU"", path, mk_name, itemNum);
+      |                                 ^~              ~~~~~~~
+mdtest.c:355:5: note: ‘sprintf’ output 8 or more bytes (assuming 4103) into a destination of size 4096
+  355 |     sprintf(curr_item, "%s/file.%s"LLU"", path, mk_name, itemNum);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c: In function ‘collective_helper’:
+mdtest.c:445:37: warning: ‘%s’ directive writing up to 4095 bytes into a region of size 4090 [-Wformat-overflow=]
+  445 |         sprintf(curr_item, "%s/file.%s"LLU"", path, create ? mk_name : rm_name, itemNum+i);
+      |                                     ^~
+mdtest.c:445:9: note: ‘sprintf’ output 8 or more bytes (assuming 4103) into a destination of size 4096
+  445 |         sprintf(curr_item, "%s/file.%s"LLU"", path, create ? mk_name : rm_name, itemNum+i);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c: In function ‘create_remove_items’:
+mdtest.c:509:30: warning: ‘%llu’ directive writing between 1 and 20 bytes into a region of size between 0 and 4095 [-Wformat-overflow=]
+  509 |             sprintf(dir, "%s.%llu/", base_tree_name, currDir);
+      |                              ^~~~
+mdtest.c:509:13: note: ‘sprintf’ output between 4 and 4118 bytes into a destination of size 4096
+  509 |             sprintf(dir, "%s.%llu/", base_tree_name, currDir);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c: In function ‘mdtest_stat’:
+mdtest.c:593:33: warning: ‘%s’ directive writing up to 4095 bytes into a region of size 4091 [-Wformat-overflow=]
+  593 |             sprintf(item, "file.%s"LLU"", stat_name, item_num);
+      |                                 ^~        ~~~~~~~~~
+mdtest.c:593:13: note: ‘sprintf’ output between 7 and 4121 bytes into a destination of size 4096
+  593 |             sprintf(item, "file.%s"LLU"", stat_name, item_num);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:588:32: warning: ‘%s’ directive writing up to 4095 bytes into a region of size 4092 [-Wformat-overflow=]
+  588 |             sprintf(item, "dir.%s"LLU"", stat_name, item_num);
+      |                                ^~        ~~~~~~~~~
+mdtest.c:588:13: note: ‘sprintf’ output between 6 and 4120 bytes into a destination of size 4096
+  588 |             sprintf(item, "dir.%s"LLU"", stat_name, item_num);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:602:27: warning: ‘%lu’ directive writing between 1 and 20 bytes into a region of size between 0 and 4095 [-Wformat-overflow=]
+  602 |             sprintf(temp, "%s."LLU"/%s", base_tree_name, parent_dir, item);
+      |                           ^~~~~
+mdtest.c:89:14: note: format string is defined here
+   89 | #define LLU "%lu"
+      |              ^~~
+mdtest.c:602:27: note: directive argument in the range [1, 18446744073709551615]
+  602 |             sprintf(temp, "%s."LLU"/%s", base_tree_name, parent_dir, item);
+      |                           ^~~~~
+mdtest.c:602:13: note: ‘sprintf’ output between 4 and 8213 bytes into a destination of size 4096
+  602 |             sprintf(temp, "%s."LLU"/%s", base_tree_name, parent_dir, item);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:608:31: warning: ‘%lu’ directive writing between 1 and 20 bytes into a region of size between 0 and 4095 [-Wformat-overflow=]
+  608 |                 sprintf(temp, "%s."LLU"/%s", base_tree_name, parent_dir, item);
+      |                               ^~~~~
+mdtest.c:89:14: note: format string is defined here
+   89 | #define LLU "%lu"
+      |              ^~~
+mdtest.c:608:31: note: directive argument in the range [0, 18446744073709551614]
+  608 |                 sprintf(temp, "%s."LLU"/%s", base_tree_name, parent_dir, item);
+      |                               ^~~~~
+mdtest.c:608:17: note: ‘sprintf’ output between 4 and 8213 bytes into a destination of size 4096
+  608 |                 sprintf(temp, "%s."LLU"/%s", base_tree_name, parent_dir, item);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:614:30: warning: ‘sprintf’ may write a terminating nul past the end of the destination [-Wformat-overflow=]
+  614 |         sprintf( temp, "%s/%s", path, item );
+      |                              ^
+mdtest.c:614:9: note: ‘sprintf’ output 2 or more bytes (assuming 4097) into a destination of size 4096
+  614 |         sprintf( temp, "%s/%s", path, item );
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c: In function ‘mdtest_read’:
+mdtest.c:688:33: warning: ‘%s’ directive writing up to 4095 bytes into a region of size 4091 [-Wformat-overflow=]
+  688 |             sprintf(item, "file.%s"LLU"", read_name, item_num);
+      |                                 ^~        ~~~~~~~~~
+mdtest.c:688:13: note: ‘sprintf’ output between 7 and 4121 bytes into a destination of size 4096
+  688 |             sprintf(item, "file.%s"LLU"", read_name, item_num);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:697:27: warning: ‘%lu’ directive writing between 1 and 20 bytes into a region of size between 0 and 4095 [-Wformat-overflow=]
+  697 |             sprintf(temp, "%s."LLU"/%s", base_tree_name, parent_dir, item);
+      |                           ^~~~~
+mdtest.c:89:14: note: format string is defined here
+   89 | #define LLU "%lu"
+      |              ^~~
+mdtest.c:697:27: note: directive argument in the range [1, 18446744073709551615]
+  697 |             sprintf(temp, "%s."LLU"/%s", base_tree_name, parent_dir, item);
+      |                           ^~~~~
+mdtest.c:697:13: note: ‘sprintf’ output between 4 and 8213 bytes into a destination of size 4096
+  697 |             sprintf(temp, "%s."LLU"/%s", base_tree_name, parent_dir, item);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:703:31: warning: ‘%lu’ directive writing between 1 and 20 bytes into a region of size between 0 and 4095 [-Wformat-overflow=]
+  703 |                 sprintf(temp, "%s."LLU"/%s", base_tree_name, parent_dir, item);
+      |                               ^~~~~
+mdtest.c:89:14: note: format string is defined here
+   89 | #define LLU "%lu"
+      |              ^~~
+mdtest.c:703:31: note: directive argument in the range [0, 18446744073709551614]
+  703 |                 sprintf(temp, "%s."LLU"/%s", base_tree_name, parent_dir, item);
+      |                               ^~~~~
+mdtest.c:703:17: note: ‘sprintf’ output between 4 and 8213 bytes into a destination of size 4096
+  703 |                 sprintf(temp, "%s."LLU"/%s", base_tree_name, parent_dir, item);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:709:30: warning: ‘sprintf’ may write a terminating nul past the end of the destination [-Wformat-overflow=]
+  709 |         sprintf( temp, "%s/%s", path, item );
+      |                              ^
+mdtest.c:709:9: note: ‘sprintf’ output 2 or more bytes (assuming 4097) into a destination of size 4096
+  709 |         sprintf( temp, "%s/%s", path, item );
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c: In function ‘collective_create_remove’:
+mdtest.c:807:35: warning: ‘/mdtest_tree.’ directive writing 13 bytes into a region of size between 1 and 4096 [-Wformat-overflow=]
+  807 |         sprintf(unique_mk_dir, "%s/mdtest_tree.%d.0", testdir,
+      |                                   ^~~~~~~~~~~~~
+mdtest.c:807:9: note: ‘sprintf’ output between 17 and 4112 bytes into a destination of size 4096
+  807 |         sprintf(unique_mk_dir, "%s/mdtest_tree.%d.0", testdir,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  808 |                 (0+(0*nstride))%ntasks);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:809:38: warning: ‘/mdtest_tree.’ directive writing 13 bytes into a region of size between 1 and 4096 [-Wformat-overflow=]
+  809 |         sprintf(unique_chdir_dir, "%s/mdtest_tree.%d.0", testdir,
+      |                                      ^~~~~~~~~~~~~
+mdtest.c:809:35: note: directive argument in the range [-2147483647, 2147483647]
+  809 |         sprintf(unique_chdir_dir, "%s/mdtest_tree.%d.0", testdir,
+      |                                   ^~~~~~~~~~~~~~~~~~~~~
+mdtest.c:809:9: note: ‘sprintf’ output between 17 and 4122 bytes into a destination of size 4096
+  809 |         sprintf(unique_chdir_dir, "%s/mdtest_tree.%d.0", testdir,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  810 |                 (0+(1*nstride))%ntasks);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:811:37: warning: ‘/mdtest_tree.’ directive writing 13 bytes into a region of size between 1 and 4096 [-Wformat-overflow=]
+  811 |         sprintf(unique_stat_dir, "%s/mdtest_tree.%d.0", testdir,
+      |                                     ^~~~~~~~~~~~~
+mdtest.c:811:34: note: directive argument in the range [-2147483647, 2147483647]
+  811 |         sprintf(unique_stat_dir, "%s/mdtest_tree.%d.0", testdir,
+      |                                  ^~~~~~~~~~~~~~~~~~~~~
+mdtest.c:811:9: note: ‘sprintf’ output between 17 and 4122 bytes into a destination of size 4096
+  811 |         sprintf(unique_stat_dir, "%s/mdtest_tree.%d.0", testdir,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  812 |                 (0+(2*nstride))%ntasks);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:813:37: warning: ‘/mdtest_tree.’ directive writing 13 bytes into a region of size between 1 and 4096 [-Wformat-overflow=]
+  813 |         sprintf(unique_read_dir, "%s/mdtest_tree.%d.0", testdir,
+      |                                     ^~~~~~~~~~~~~
+mdtest.c:813:34: note: directive argument in the range [-2147483647, 2147483647]
+  813 |         sprintf(unique_read_dir, "%s/mdtest_tree.%d.0", testdir,
+      |                                  ^~~~~~~~~~~~~~~~~~~~~
+mdtest.c:813:9: note: ‘sprintf’ output between 17 and 4122 bytes into a destination of size 4096
+  813 |         sprintf(unique_read_dir, "%s/mdtest_tree.%d.0", testdir,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  814 |                 (0+(3*nstride))%ntasks);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:815:35: warning: ‘/mdtest_tree.’ directive writing 13 bytes into a region of size between 1 and 4096 [-Wformat-overflow=]
+  815 |         sprintf(unique_rm_dir, "%s/mdtest_tree.%d.0", testdir,
+      |                                   ^~~~~~~~~~~~~
+mdtest.c:815:32: note: directive argument in the range [-2147483647, 2147483647]
+  815 |         sprintf(unique_rm_dir, "%s/mdtest_tree.%d.0", testdir,
+      |                                ^~~~~~~~~~~~~~~~~~~~~
+mdtest.c:815:9: note: ‘sprintf’ output between 17 and 4122 bytes into a destination of size 4096
+  815 |         sprintf(unique_rm_dir, "%s/mdtest_tree.%d.0", testdir,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  816 |                 (0+(4*nstride))%ntasks);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:775:39: warning: ‘/mdtest_tree.’ directive writing 13 bytes into a region of size between 1 and 4096 [-Wformat-overflow=]
+  775 |             sprintf(unique_mk_dir, "%s/mdtest_tree.%d.0", testdir,
+      |                                       ^~~~~~~~~~~~~
+mdtest.c:775:36: note: directive argument in the range [0, 2147483646]
+  775 |             sprintf(unique_mk_dir, "%s/mdtest_tree.%d.0", testdir,
+      |                                    ^~~~~~~~~~~~~~~~~~~~~
+mdtest.c:775:13: note: ‘sprintf’ output between 17 and 4121 bytes into a destination of size 4096
+  775 |             sprintf(unique_mk_dir, "%s/mdtest_tree.%d.0", testdir,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  776 |                     (i+(0*nstride))%ntasks);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:777:42: warning: ‘/mdtest_tree.’ directive writing 13 bytes into a region of size between 1 and 4096 [-Wformat-overflow=]
+  777 |             sprintf(unique_chdir_dir, "%s/mdtest_tree.%d.0", testdir,
+      |                                          ^~~~~~~~~~~~~
+mdtest.c:777:39: note: directive argument in the range [-2147483646, 2147483646]
+  777 |             sprintf(unique_chdir_dir, "%s/mdtest_tree.%d.0", testdir,
+      |                                       ^~~~~~~~~~~~~~~~~~~~~
+mdtest.c:777:13: note: ‘sprintf’ output between 17 and 4122 bytes into a destination of size 4096
+  777 |             sprintf(unique_chdir_dir, "%s/mdtest_tree.%d.0", testdir,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  778 |                     (i+(1*nstride))%ntasks);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:779:41: warning: ‘/mdtest_tree.’ directive writing 13 bytes into a region of size between 1 and 4096 [-Wformat-overflow=]
+  779 |             sprintf(unique_stat_dir, "%s/mdtest_tree.%d.0", testdir,
+      |                                         ^~~~~~~~~~~~~
+mdtest.c:779:38: note: directive argument in the range [-2147483646, 2147483646]
+  779 |             sprintf(unique_stat_dir, "%s/mdtest_tree.%d.0", testdir,
+      |                                      ^~~~~~~~~~~~~~~~~~~~~
+mdtest.c:779:13: note: ‘sprintf’ output between 17 and 4122 bytes into a destination of size 4096
+  779 |             sprintf(unique_stat_dir, "%s/mdtest_tree.%d.0", testdir,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  780 |                     (i+(2*nstride))%ntasks);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:781:41: warning: ‘/mdtest_tree.’ directive writing 13 bytes into a region of size between 1 and 4096 [-Wformat-overflow=]
+  781 |             sprintf(unique_read_dir, "%s/mdtest_tree.%d.0", testdir,
+      |                                         ^~~~~~~~~~~~~
+mdtest.c:781:38: note: directive argument in the range [-2147483646, 2147483646]
+  781 |             sprintf(unique_read_dir, "%s/mdtest_tree.%d.0", testdir,
+      |                                      ^~~~~~~~~~~~~~~~~~~~~
+mdtest.c:781:13: note: ‘sprintf’ output between 17 and 4122 bytes into a destination of size 4096
+  781 |             sprintf(unique_read_dir, "%s/mdtest_tree.%d.0", testdir,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  782 |                     (i+(3*nstride))%ntasks);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:783:39: warning: ‘/mdtest_tree.’ directive writing 13 bytes into a region of size between 1 and 4096 [-Wformat-overflow=]
+  783 |             sprintf(unique_rm_dir, "%s/mdtest_tree.%d.0", testdir,
+      |                                       ^~~~~~~~~~~~~
+mdtest.c:783:36: note: directive argument in the range [-2147483646, 2147483646]
+  783 |             sprintf(unique_rm_dir, "%s/mdtest_tree.%d.0", testdir,
+      |                                    ^~~~~~~~~~~~~~~~~~~~~
+mdtest.c:783:13: note: ‘sprintf’ output between 17 and 4122 bytes into a destination of size 4096
+  783 |             sprintf(unique_rm_dir, "%s/mdtest_tree.%d.0", testdir,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  784 |                     (i+(4*nstride))%ntasks);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c: In function ‘directory_test’:
+mdtest.c:843:39: warning: ‘sprintf’ may write a terminating nul past the end of the destination [-Wformat-overflow=]
+  843 |             sprintf( temp_path, "%s/%s", testdir, path );
+      |                                       ^
+mdtest.c:843:13: note: ‘sprintf’ output 2 or more bytes (assuming 4097) into a destination of size 4096
+  843 |             sprintf( temp_path, "%s/%s", testdir, path );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:873:39: warning: ‘sprintf’ may write a terminating nul past the end of the destination [-Wformat-overflow=]
+  873 |             sprintf( temp_path, "%s/%s", testdir, path );
+      |                                       ^
+mdtest.c:873:13: note: ‘sprintf’ output 2 or more bytes (assuming 4097) into a destination of size 4096
+  873 |             sprintf( temp_path, "%s/%s", testdir, path );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:899:39: warning: ‘sprintf’ may write a terminating nul past the end of the destination [-Wformat-overflow=]
+  899 |             sprintf( temp_path, "%s/%s", testdir, path );
+      |                                       ^
+mdtest.c:899:13: note: ‘sprintf’ output 2 or more bytes (assuming 4097) into a destination of size 4096
+  899 |             sprintf( temp_path, "%s/%s", testdir, path );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:925:39: warning: ‘sprintf’ may write a terminating nul past the end of the destination [-Wformat-overflow=]
+  925 |             sprintf( temp_path, "%s/%s", testdir, path );
+      |                                       ^
+mdtest.c:925:13: note: ‘sprintf’ output 2 or more bytes (assuming 4097) into a destination of size 4096
+  925 |             sprintf( temp_path, "%s/%s", testdir, path );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:948:39: warning: ‘sprintf’ may write a terminating nul past the end of the destination [-Wformat-overflow=]
+  948 |             sprintf( temp_path, "%s/%s", testdir, path );
+      |                                       ^
+mdtest.c:948:13: note: ‘sprintf’ output 2 or more bytes (assuming 4097) into a destination of size 4096
+  948 |             sprintf( temp_path, "%s/%s", testdir, path );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c: In function ‘file_test’:
+mdtest.c:1043:39: warning: ‘sprintf’ may write a terminating nul past the end of the destination [-Wformat-overflow=]
+ 1043 |             sprintf( temp_path, "%s/%s", testdir, path );
+      |                                       ^
+mdtest.c:1043:13: note: ‘sprintf’ output 2 or more bytes (assuming 4097) into a destination of size 4096
+ 1043 |             sprintf( temp_path, "%s/%s", testdir, path );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:1110:39: warning: ‘sprintf’ may write a terminating nul past the end of the destination [-Wformat-overflow=]
+ 1110 |             sprintf( temp_path, "%s/%s", testdir, path );
+      |                                       ^
+mdtest.c:1110:13: note: ‘sprintf’ output 2 or more bytes (assuming 4097) into a destination of size 4096
+ 1110 |             sprintf( temp_path, "%s/%s", testdir, path );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:1133:39: warning: ‘sprintf’ may write a terminating nul past the end of the destination [-Wformat-overflow=]
+ 1133 |             sprintf( temp_path, "%s/%s", testdir, path );
+      |                                       ^
+mdtest.c:1133:13: note: ‘sprintf’ output 2 or more bytes (assuming 4097) into a destination of size 4096
+ 1133 |             sprintf( temp_path, "%s/%s", testdir, path );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:1161:39: warning: ‘sprintf’ may write a terminating nul past the end of the destination [-Wformat-overflow=]
+ 1161 |             sprintf( temp_path, "%s/%s", testdir, path );
+      |                                       ^
+mdtest.c:1161:13: note: ‘sprintf’ output 2 or more bytes (assuming 4097) into a destination of size 4096
+ 1161 |             sprintf( temp_path, "%s/%s", testdir, path );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c: In function ‘create_remove_directory_tree’:
+mdtest.c:1612:30: warning: ‘%d’ directive writing between 1 and 11 bytes into a region of size between 0 and 4095 [-Wformat-overflow=]
+ 1612 |             sprintf(dir, "%s.%d/", base_tree_name, currDir);
+      |                              ^~
+mdtest.c:1612:13: note: ‘sprintf’ output between 4 and 4109 bytes into a destination of size 4096
+ 1612 |             sprintf(dir, "%s.%d/", base_tree_name, currDir);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:1579:28: warning: ‘.’ directive writing 1 byte into a region of size between 0 and 4095 [-Wformat-overflow=]
+ 1579 |         sprintf(dir, "%s/%s.%d/", path, base_tree_name, dirNum);
+      |                            ^
+mdtest.c:1579:9: note: ‘sprintf’ output 5 or more bytes (assuming 4100) into a destination of size 4096
+ 1579 |         sprintf(dir, "%s/%s.%d/", path, base_tree_name, dirNum);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c: In function ‘mdtest_iteration’:
+mdtest.c:1727:29: warning: ‘.0’ directive writing 2 bytes into a region of size between 1 and 4096 [-Wformat-overflow=]
+ 1727 |   sprintf(unique_mk_dir, "%s.0", base_tree_name);
+      |                             ^~
+mdtest.c:1727:3: note: ‘sprintf’ output between 3 and 4098 bytes into a destination of size 4096
+ 1727 |   sprintf(unique_mk_dir, "%s.0", base_tree_name);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:1728:32: warning: ‘.0’ directive writing 2 bytes into a region of size between 1 and 4096 [-Wformat-overflow=]
+ 1728 |   sprintf(unique_chdir_dir, "%s.0", base_tree_name);
+      |                                ^~
+mdtest.c:1728:3: note: ‘sprintf’ output between 3 and 4098 bytes into a destination of size 4096
+ 1728 |   sprintf(unique_chdir_dir, "%s.0", base_tree_name);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:1729:31: warning: ‘.0’ directive writing 2 bytes into a region of size between 1 and 4096 [-Wformat-overflow=]
+ 1729 |   sprintf(unique_stat_dir, "%s.0", base_tree_name);
+      |                               ^~
+mdtest.c:1729:3: note: ‘sprintf’ output between 3 and 4098 bytes into a destination of size 4096
+ 1729 |   sprintf(unique_stat_dir, "%s.0", base_tree_name);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:1730:31: warning: ‘.0’ directive writing 2 bytes into a region of size between 1 and 4096 [-Wformat-overflow=]
+ 1730 |   sprintf(unique_read_dir, "%s.0", base_tree_name);
+      |                               ^~
+mdtest.c:1730:3: note: ‘sprintf’ output between 3 and 4098 bytes into a destination of size 4096
+ 1730 |   sprintf(unique_read_dir, "%s.0", base_tree_name);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c:1731:29: warning: ‘.0’ directive writing 2 bytes into a region of size between 1 and 4096 [-Wformat-overflow=]
+ 1731 |   sprintf(unique_rm_dir, "%s.0", base_tree_name);
+      |                             ^~
+mdtest.c:1731:3: note: ‘sprintf’ output between 3 and 4098 bytes into a destination of size 4096
+ 1731 |   sprintf(unique_rm_dir, "%s.0", base_tree_name);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mdtest.c: In function ‘mdtest_run’:
+mdtest.c:1920:35: warning: ‘%s’ directive writing up to 1023 bytes into a region of size 1011 [-Wformat-overflow=]
+ 1920 |     sprintf(apiStr, "API for I/O [%s]", APIs);
+      |                                   ^~    ~~~~
+mdtest.c:1920:5: note: ‘sprintf’ output between 15 and 1038 bytes into a destination of size 1024
+ 1920 |     sprintf(apiStr, "API for I/O [%s]", APIs);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ior.c: In function ‘GetPlatformName’:
+ior.c:699:35: warning: ‘%s’ directive writing up to 1023 bytes into a region of size between 0 and 1023 [-Wformat-overflow=]
+  699 |         sprintf(platformName, "%s(%s)", nodeName, sysName);
+      |                                   ^~              ~~~~~~~
+ior.c:699:9: note: ‘sprintf’ output between 3 and 2049 bytes into a destination of size 1024
+  699 |         sprintf(platformName, "%s(%s)", nodeName, sysName);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  AR       libaiori.a
+ar: `u' modifier ignored since `D' is the default (see `U')
+  CCLD     ior
+  CCLD     mdtest
+Making all in test
+make[3]: Nothing to be done for 'all'.
+Making all in doc
+make[1]: Nothing to be done for 'all'.
+Making all in contrib
+  CC       cbif.o
+  CCLD     cbif
+make[1]: Nothing to be done for 'all-am'.

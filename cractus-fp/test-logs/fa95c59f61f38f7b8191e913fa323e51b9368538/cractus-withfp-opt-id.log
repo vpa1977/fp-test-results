@@ -1,0 +1,348 @@
+#####
+cractus-withfp-opt-id - Run 1
+2024-02-22 03:27:55
+#####
+-------------------------------------------------------------------------------
+PYBENCH 2.0
+-------------------------------------------------------------------------------
+* using CPython 3.11.6(main,Oct82023,05:06:43)[GCC13.2.0]
+* disabled garbage collection
+* Python version doesn't support sys.setcheckinterval
+* using timer: time.time
+
+Calibrating tests. Please wait... done.
+
+Running 20 round(s) of the suite at warp factor 10:
+
+* Round 1 done in 1.432 seconds.
+* Round 2 done in 1.436 seconds.
+* Round 3 done in 1.432 seconds.
+* Round 4 done in 1.431 seconds.
+* Round 5 done in 1.446 seconds.
+* Round 6 done in 1.430 seconds.
+* Round 7 done in 1.426 seconds.
+* Round 8 done in 1.429 seconds.
+* Round 9 done in 1.427 seconds.
+* Round 10 done in 1.428 seconds.
+* Round 11 done in 1.430 seconds.
+* Round 12 done in 1.432 seconds.
+* Round 13 done in 1.429 seconds.
+* Round 14 done in 1.430 seconds.
+* Round 15 done in 1.429 seconds.
+* Round 16 done in 1.431 seconds.
+* Round 17 done in 1.426 seconds.
+* Round 18 done in 1.428 seconds.
+* Round 19 done in 1.427 seconds.
+* Round 20 done in 1.429 seconds.
+
+-------------------------------------------------------------------------------
+Benchmark: 2024-02-22 03:27:20
+-------------------------------------------------------------------------------
+
+    Rounds: 20
+    Warp:   10
+    Timer:  time.time
+
+    Machine Details:
+       Platform ID:    Linux-6.5.0-9-generic-x86_64-with-glibc2.38
+       Processor:      x86_64
+    
+    Python:
+       Implementation: CPython
+       Executable:     /usr/bin/python3
+       Version:        3.11.6
+       Compiler:       GCC 13.2.0
+       Bits:           64bit
+       Build:          Oct  8 2023 05:06:43 (#main)
+       Unicode:        UCS4
+
+
+Test                             minimum  average  operation  overhead
+-------------------------------------------------------------------------------
+          BuiltinFunctionCalls:     35ms     36ms    0.07us    0.097ms
+           BuiltinMethodLookup:     45ms     46ms    0.04us    0.114ms
+                 CompareFloats:     21ms     21ms    0.02us    0.130ms
+         CompareFloatsIntegers:     31ms     31ms    0.03us    0.098ms
+               CompareIntegers:     32ms     32ms    0.02us    0.198ms
+        CompareInternedStrings:     26ms     27ms    0.02us    0.499ms
+                  CompareLongs:     19ms     19ms    0.02us    0.115ms
+                CompareStrings:     24ms     24ms    0.02us    0.331ms
+    ComplexPythonFunctionCalls:     34ms     34ms    0.17us    0.169ms
+                 ConcatStrings:     24ms     24ms    0.05us    0.185ms
+               CreateInstances:     19ms     19ms    0.17us    0.152ms
+            CreateNewInstances:     14ms     14ms    0.17us    0.119ms
+       CreateStringsWithConcat:     44ms     45ms    0.04us    0.334ms
+                  DictCreation:     27ms     28ms    0.07us    0.132ms
+             DictWithFloatKeys:     36ms     36ms    0.04us    0.250ms
+           DictWithIntegerKeys:     31ms     31ms    0.03us    0.333ms
+            DictWithStringKeys:     24ms     24ms    0.02us    0.329ms
+                      ForLoops:     21ms     21ms    0.85us    0.028ms
+                    IfThenElse:     15ms     15ms    0.01us    0.249ms
+                   ListSlicing:     34ms     35ms    2.47us    0.027ms
+                NestedForLoops:     26ms     27ms    0.02us    0.012ms
+      NestedListComprehensions:     34ms     34ms    2.81us    0.033ms
+          NormalClassAttribute:     40ms     40ms    0.03us    0.172ms
+       NormalInstanceAttribute:     10ms     10ms    0.01us    0.172ms
+           PythonFunctionCalls:     19ms     19ms    0.06us    0.102ms
+             PythonMethodCalls:     15ms     15ms    0.07us    0.056ms
+                     Recursion:     26ms     26ms    0.53us    0.170ms
+                  SecondImport:      9ms      9ms    0.09us    0.065ms
+           SecondPackageImport:      9ms     10ms    0.10us    0.064ms
+         SecondSubmoduleImport:     19ms     19ms    0.19us    0.064ms
+       SimpleComplexArithmetic:     30ms     30ms    0.03us    0.134ms
+        SimpleDictManipulation:     49ms     49ms    0.04us    0.167ms
+         SimpleFloatArithmetic:     27ms     27ms    0.02us    0.202ms
+      SimpleIntFloatArithmetic:     22ms     22ms    0.02us    0.202ms
+       SimpleIntegerArithmetic:     23ms     23ms    0.02us    0.201ms
+      SimpleListComprehensions:     27ms     27ms    2.22us    0.033ms
+        SimpleListManipulation:     16ms     16ms    0.01us    0.220ms
+          SimpleLongArithmetic:     16ms     16ms    0.02us    0.101ms
+                    SmallLists:     25ms     26ms    0.04us    0.134ms
+                   SmallTuples:     28ms     28ms    0.05us    0.151ms
+         SpecialClassAttribute:     38ms     38ms    0.03us    0.171ms
+      SpecialInstanceAttribute:     10ms     10ms    0.01us    0.172ms
+                StringMappings:    105ms    105ms    0.42us    0.139ms
+              StringPredicates:     21ms     21ms    0.03us    0.450ms
+                 StringSlicing:     32ms     32ms    0.06us    0.296ms
+                     TryExcept:     11ms     11ms    0.00us    0.258ms
+                    TryFinally:     12ms     12ms    0.08us    0.138ms
+                TryRaiseExcept:     29ms     29ms    0.46us    0.138ms
+                  TupleSlicing:     48ms     48ms    0.18us    0.014ms
+                   WithFinally:     28ms     29ms    0.18us    0.138ms
+               WithRaiseExcept:     60ms     60ms    0.75us    0.176ms
+-------------------------------------------------------------------------------
+Totals:                           1420ms   1430ms
+
+
+#####
+cractus-withfp-opt-id - Run 2
+2024-02-22 03:28:31
+#####
+-------------------------------------------------------------------------------
+PYBENCH 2.0
+-------------------------------------------------------------------------------
+* using CPython 3.11.6(main,Oct82023,05:06:43)[GCC13.2.0]
+* disabled garbage collection
+* Python version doesn't support sys.setcheckinterval
+* using timer: time.time
+
+Calibrating tests. Please wait... done.
+
+Running 20 round(s) of the suite at warp factor 10:
+
+* Round 1 done in 1.425 seconds.
+* Round 2 done in 1.428 seconds.
+* Round 3 done in 1.432 seconds.
+* Round 4 done in 1.431 seconds.
+* Round 5 done in 1.432 seconds.
+* Round 6 done in 1.424 seconds.
+* Round 7 done in 1.421 seconds.
+* Round 8 done in 1.422 seconds.
+* Round 9 done in 1.423 seconds.
+* Round 10 done in 1.424 seconds.
+* Round 11 done in 1.423 seconds.
+* Round 12 done in 1.423 seconds.
+* Round 13 done in 1.423 seconds.
+* Round 14 done in 1.421 seconds.
+* Round 15 done in 1.443 seconds.
+* Round 16 done in 1.424 seconds.
+* Round 17 done in 1.424 seconds.
+* Round 18 done in 1.422 seconds.
+* Round 19 done in 1.424 seconds.
+* Round 20 done in 1.424 seconds.
+
+-------------------------------------------------------------------------------
+Benchmark: 2024-02-22 03:27:57
+-------------------------------------------------------------------------------
+
+    Rounds: 20
+    Warp:   10
+    Timer:  time.time
+
+    Machine Details:
+       Platform ID:    Linux-6.5.0-9-generic-x86_64-with-glibc2.38
+       Processor:      x86_64
+    
+    Python:
+       Implementation: CPython
+       Executable:     /usr/bin/python3
+       Version:        3.11.6
+       Compiler:       GCC 13.2.0
+       Bits:           64bit
+       Build:          Oct  8 2023 05:06:43 (#main)
+       Unicode:        UCS4
+
+
+Test                             minimum  average  operation  overhead
+-------------------------------------------------------------------------------
+          BuiltinFunctionCalls:     35ms     35ms    0.07us    0.102ms
+           BuiltinMethodLookup:     46ms     46ms    0.04us    0.122ms
+                 CompareFloats:     21ms     21ms    0.02us    0.138ms
+         CompareFloatsIntegers:     31ms     31ms    0.03us    0.103ms
+               CompareIntegers:     32ms     32ms    0.02us    0.206ms
+        CompareInternedStrings:     26ms     26ms    0.02us    0.538ms
+                  CompareLongs:     19ms     19ms    0.02us    0.121ms
+                CompareStrings:     24ms     24ms    0.02us    0.358ms
+    ComplexPythonFunctionCalls:     34ms     34ms    0.17us    0.177ms
+                 ConcatStrings:     23ms     24ms    0.05us    0.197ms
+               CreateInstances:     19ms     19ms    0.17us    0.156ms
+            CreateNewInstances:     14ms     14ms    0.17us    0.118ms
+       CreateStringsWithConcat:     44ms     45ms    0.04us    0.329ms
+                  DictCreation:     27ms     27ms    0.07us    0.135ms
+             DictWithFloatKeys:     36ms     36ms    0.04us    0.248ms
+           DictWithIntegerKeys:     31ms     31ms    0.03us    0.327ms
+            DictWithStringKeys:     24ms     24ms    0.02us    0.335ms
+                      ForLoops:     21ms     21ms    0.84us    0.026ms
+                    IfThenElse:     15ms     15ms    0.01us    0.249ms
+                   ListSlicing:     33ms     33ms    2.37us    0.022ms
+                NestedForLoops:     25ms     25ms    0.02us    0.011ms
+      NestedListComprehensions:     33ms     33ms    2.74us    0.033ms
+          NormalClassAttribute:     39ms     39ms    0.03us    0.173ms
+       NormalInstanceAttribute:     10ms     10ms    0.01us    0.186ms
+           PythonFunctionCalls:     19ms     19ms    0.06us    0.107ms
+             PythonMethodCalls:     15ms     15ms    0.07us    0.061ms
+                     Recursion:     27ms     27ms    0.54us    0.174ms
+                  SecondImport:      9ms      9ms    0.09us    0.067ms
+           SecondPackageImport:     10ms     10ms    0.10us    0.067ms
+         SecondSubmoduleImport:     20ms     20ms    0.20us    0.067ms
+       SimpleComplexArithmetic:     29ms     29ms    0.03us    0.135ms
+        SimpleDictManipulation:     49ms     49ms    0.04us    0.165ms
+         SimpleFloatArithmetic:     26ms     27ms    0.02us    0.199ms
+      SimpleIntFloatArithmetic:     22ms     22ms    0.02us    0.197ms
+       SimpleIntegerArithmetic:     22ms     22ms    0.02us    0.197ms
+      SimpleListComprehensions:     27ms     27ms    2.23us    0.033ms
+        SimpleListManipulation:     16ms     16ms    0.01us    0.219ms
+          SimpleLongArithmetic:     16ms     16ms    0.02us    0.097ms
+                    SmallLists:     25ms     25ms    0.04us    0.131ms
+                   SmallTuples:     28ms     28ms    0.05us    0.148ms
+         SpecialClassAttribute:     40ms     40ms    0.03us    0.172ms
+      SpecialInstanceAttribute:     10ms     10ms    0.01us    0.172ms
+                StringMappings:    105ms    105ms    0.42us    0.138ms
+              StringPredicates:     21ms     21ms    0.03us    0.449ms
+                 StringSlicing:     32ms     32ms    0.06us    0.296ms
+                     TryExcept:     11ms     11ms    0.00us    0.260ms
+                    TryFinally:     13ms     13ms    0.08us    0.141ms
+                TryRaiseExcept:     29ms     30ms    0.46us    0.138ms
+                  TupleSlicing:     48ms     48ms    0.18us    0.014ms
+                   WithFinally:     28ms     29ms    0.18us    0.141ms
+               WithRaiseExcept:     60ms     60ms    0.75us    0.177ms
+-------------------------------------------------------------------------------
+Totals:                           1415ms   1426ms
+
+
+#####
+cractus-withfp-opt-id - Run 3
+2024-02-22 03:29:05
+#####
+-------------------------------------------------------------------------------
+PYBENCH 2.0
+-------------------------------------------------------------------------------
+* using CPython 3.11.6(main,Oct82023,05:06:43)[GCC13.2.0]
+* disabled garbage collection
+* Python version doesn't support sys.setcheckinterval
+* using timer: time.time
+
+Calibrating tests. Please wait... done.
+
+Running 20 round(s) of the suite at warp factor 10:
+
+* Round 1 done in 1.433 seconds.
+* Round 2 done in 1.427 seconds.
+* Round 3 done in 1.430 seconds.
+* Round 4 done in 1.427 seconds.
+* Round 5 done in 1.435 seconds.
+* Round 6 done in 1.426 seconds.
+* Round 7 done in 1.424 seconds.
+* Round 8 done in 1.426 seconds.
+* Round 9 done in 1.425 seconds.
+* Round 10 done in 1.448 seconds.
+* Round 11 done in 1.427 seconds.
+* Round 12 done in 1.424 seconds.
+* Round 13 done in 1.427 seconds.
+* Round 14 done in 1.423 seconds.
+* Round 15 done in 1.423 seconds.
+* Round 16 done in 1.424 seconds.
+* Round 17 done in 1.424 seconds.
+* Round 18 done in 1.426 seconds.
+* Round 19 done in 1.426 seconds.
+* Round 20 done in 1.424 seconds.
+
+-------------------------------------------------------------------------------
+Benchmark: 2024-02-22 03:28:33
+-------------------------------------------------------------------------------
+
+    Rounds: 20
+    Warp:   10
+    Timer:  time.time
+
+    Machine Details:
+       Platform ID:    Linux-6.5.0-9-generic-x86_64-with-glibc2.38
+       Processor:      x86_64
+    
+    Python:
+       Implementation: CPython
+       Executable:     /usr/bin/python3
+       Version:        3.11.6
+       Compiler:       GCC 13.2.0
+       Bits:           64bit
+       Build:          Oct  8 2023 05:06:43 (#main)
+       Unicode:        UCS4
+
+
+Test                             minimum  average  operation  overhead
+-------------------------------------------------------------------------------
+          BuiltinFunctionCalls:     35ms     35ms    0.07us    0.106ms
+           BuiltinMethodLookup:     46ms     47ms    0.04us    0.123ms
+                 CompareFloats:     21ms     21ms    0.02us    0.140ms
+         CompareFloatsIntegers:     31ms     31ms    0.03us    0.102ms
+               CompareIntegers:     32ms     32ms    0.02us    0.213ms
+        CompareInternedStrings:     26ms     26ms    0.02us    0.540ms
+                  CompareLongs:     19ms     19ms    0.02us    0.119ms
+                CompareStrings:     24ms     24ms    0.02us    0.351ms
+    ComplexPythonFunctionCalls:     34ms     34ms    0.17us    0.176ms
+                 ConcatStrings:     23ms     24ms    0.05us    0.199ms
+               CreateInstances:     19ms     19ms    0.17us    0.165ms
+            CreateNewInstances:     14ms     14ms    0.17us    0.131ms
+       CreateStringsWithConcat:     44ms     45ms    0.04us    0.356ms
+                  DictCreation:     27ms     27ms    0.07us    0.136ms
+             DictWithFloatKeys:     36ms     36ms    0.04us    0.267ms
+           DictWithIntegerKeys:     31ms     31ms    0.03us    0.358ms
+            DictWithStringKeys:     27ms     27ms    0.02us    0.350ms
+                      ForLoops:     21ms     21ms    0.85us    0.028ms
+                    IfThenElse:     15ms     15ms    0.01us    0.267ms
+                   ListSlicing:     33ms     33ms    2.38us    0.022ms
+                NestedForLoops:     25ms     25ms    0.02us    0.012ms
+      NestedListComprehensions:     33ms     33ms    2.74us    0.035ms
+          NormalClassAttribute:     38ms     39ms    0.03us    0.186ms
+       NormalInstanceAttribute:     10ms     10ms    0.01us    0.189ms
+           PythonFunctionCalls:     19ms     19ms    0.06us    0.106ms
+             PythonMethodCalls:     15ms     15ms    0.07us    0.060ms
+                     Recursion:     26ms     26ms    0.52us    0.179ms
+                  SecondImport:      9ms      9ms    0.09us    0.069ms
+           SecondPackageImport:     10ms     10ms    0.10us    0.069ms
+         SecondSubmoduleImport:     20ms     20ms    0.20us    0.067ms
+       SimpleComplexArithmetic:     29ms     29ms    0.03us    0.136ms
+        SimpleDictManipulation:     49ms     49ms    0.04us    0.171ms
+         SimpleFloatArithmetic:     26ms     27ms    0.02us    0.213ms
+      SimpleIntFloatArithmetic:     22ms     22ms    0.02us    0.205ms
+       SimpleIntegerArithmetic:     22ms     22ms    0.02us    0.206ms
+      SimpleListComprehensions:     27ms     27ms    2.23us    0.035ms
+        SimpleListManipulation:     16ms     16ms    0.01us    0.230ms
+          SimpleLongArithmetic:     17ms     17ms    0.03us    0.101ms
+                    SmallLists:     25ms     25ms    0.04us    0.139ms
+                   SmallTuples:     28ms     28ms    0.05us    0.155ms
+         SpecialClassAttribute:     39ms     39ms    0.03us    0.181ms
+      SpecialInstanceAttribute:     10ms     10ms    0.01us    0.187ms
+                StringMappings:    105ms    105ms    0.42us    0.139ms
+              StringPredicates:     21ms     21ms    0.03us    0.450ms
+                 StringSlicing:     32ms     32ms    0.06us    0.293ms
+                     TryExcept:     11ms     11ms    0.00us    0.259ms
+                    TryFinally:     12ms     12ms    0.08us    0.141ms
+                TryRaiseExcept:     29ms     29ms    0.46us    0.136ms
+                  TupleSlicing:     48ms     48ms    0.18us    0.014ms
+                   WithFinally:     28ms     29ms    0.18us    0.141ms
+               WithRaiseExcept:     60ms     60ms    0.75us    0.178ms
+-------------------------------------------------------------------------------
+Totals:                           1416ms   1427ms
+
+

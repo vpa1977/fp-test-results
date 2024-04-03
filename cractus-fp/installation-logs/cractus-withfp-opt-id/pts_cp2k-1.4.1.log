@@ -1,0 +1,985 @@
+MPI is detected and it appears to be OpenMPI
+Compiling with 64 processes for target native.
+==================== Finding GCC from system paths ====================
+path to gcc is /tmp/pts-compiler-mask-cp2k1.4.1/gcc
+path to g++ is /tmp/pts-compiler-mask-cp2k1.4.1/g++
+path to gfortran is /tmp/pts-compiler-mask-cp2k1.4.1/gfortran
+Found include directory /usr/include
+Step gcc took 0.00 seconds.
+Step intel took 0.00 seconds.
+==================== Getting proc arch info using OpenBLAS tools ====================
+OpenBLAS-0.3.21.tar.gz: OK
+Checksum of OpenBLAS-0.3.21.tar.gz Ok
+/usr/bin/ld: warning: /tmp/ccilS7wZ.o: missing .note.GNU-stack section implies executable stack
+/usr/bin/ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker
+OpenBLAS detected LIBCORE = skylakex
+OpenBLAS detected ARCH    = x86_64
+==================== Finding CMake from system paths ====================
+path to cmake is /usr/bin/cmake
+Step cmake took 0.00 seconds.
+==================== Finding OpenMPI from system paths ====================
+path to mpirun is /usr/bin/mpirun
+path to mpicc is /usr/bin/mpicc
+path to mpic++ is /usr/bin/mpic++
+path to mpif90 is /usr/bin/mpif90
+Step openmpi took 0.00 seconds.
+==================== Installing OpenBLAS ====================
+OpenBLAS-0.3.21.tar.gz is found
+Installing from scratch into /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/openblas-0.3.21
+Step openblas took 84.00 seconds.
+==================== Installing FFTW ====================
+fftw-3.3.10.tar.gz: OK
+Checksum of fftw-3.3.10.tar.gz Ok
+Installing from scratch into /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/fftw-3.3.10
+Step fftw took 86.00 seconds.
+==================== Installing LIBINT ====================
+libint-v2.6.0-cp2k-lmax-5.tgz: OK
+Checksum of libint-v2.6.0-cp2k-lmax-5.tgz Ok
+Installing from scratch into /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/libint-v2.6.0-cp2k-lmax-5
+Step libint took 325.00 seconds.
+==================== Installing LIBXC ====================
+libxc-6.0.0.tar.gz: OK
+Checksum of libxc-6.0.0.tar.gz Ok
+Installing from scratch into /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/libxc-6.0.0
+patching file src/mgga_xc_b97mv.c
+Step libxc took 60.00 seconds.
+==================== Installing Libxsmm ====================
+libxsmm-1.17.tar.gz: OK
+Checksum of libxsmm-1.17.tar.gz Ok
+Installing from scratch into /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/libxsmm-1.17
+Step libxsmm took 20.00 seconds.
+==================== Installing ScaLAPACK ====================
+scalapack-2.2.1.tgz: OK
+Checksum of scalapack-2.2.1.tgz Ok
+Installing from scratch into /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/scalapack-2.2.1
+Step scalapack took 19.00 seconds.
+==================== Installing COSMA ====================
+COSMA-v2.6.2.tar.gz: OK
+Checksum of COSMA-v2.6.2.tar.gz Ok
+Installing from scratch into /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/COSMA-2.6.2
+Step cosma took 22.00 seconds.
+==================== Installing ELPA ====================
+elpa-2022.11.001.tar.gz: OK
+Checksum of elpa-2022.11.001.tar.gz Ok
+Installing from scratch into /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/elpa-2022.11.001/cpu
+Step elpa took 82.00 seconds.
+Step ptscotch took 0.00 seconds.
+Step superlu took 0.00 seconds.
+Step pexsi took 0.00 seconds.
+Step quip took 1.00 seconds.
+==================== Installing gsl ====================
+gsl-2.7.tar.gz: OK
+Checksum of gsl-2.7.tar.gz Ok
+Installing from scratch into /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/gsl-2.7
+Step gsl took 75.00 seconds.
+Step plumed took 0.00 seconds.
+==================== Installing hdf5 ====================
+hdf5-1.12.0.tar.bz2: OK
+Checksum of hdf5-1.12.0.tar.bz2 Ok
+Installing from scratch into /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/hdf5-1.12.0
+Step hdf5 took 128.00 seconds.
+==================== Installing libvdwxc ====================
+libvdwxc-0.4.0.tar.gz: OK
+Checksum of libvdwxc-0.4.0.tar.gz Ok
+Installing from scratch into /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/libvdwxc-0.4.0
+Step libvdwxc took 27.00 seconds.
+==================== Installing spglib ====================
+spglib-1.16.2.tar.gz: OK
+Checksum of spglib-1.16.2.tar.gz Ok
+Installing from scratch into /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/spglib-1.16.2
+Step spglib took 11.00 seconds.
+==================== Installing libvori ====================
+libvori-220621.tar.gz: OK
+Checksum of libvori-220621.tar.gz Ok
+Installing from scratch into /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/libvori-220621
+Step libvori took 21.00 seconds.
+Step libtorch took 0.00 seconds.
+==================== Installing spfft ====================
+SpFFT-1.0.6.tar.gz: OK
+Checksum of SpFFT-1.0.6.tar.gz Ok
+Installing from scratch into /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/SpFFT-1.0.6
+Step spfft took 10.00 seconds.
+==================== Installing spla ====================
+SpLA-1.5.4.tar.gz: OK
+Checksum of SpLA-1.5.4.tar.gz Ok
+Installing from scratch into /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/SpLA-1.5.4
+   35 | #include <cstddef>
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:136:8: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+  136 |   std::uint_least64_t allocated_memory_pinned() const;
+      |        ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:136:3: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+  136 |   std::uint_least64_t allocated_memory_pinned() const;
+      |   ^~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:143:8: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+  143 |   std::uint_least64_t allocated_memory_gpu() const;
+      |        ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:143:3: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+  143 |   std::uint_least64_t allocated_memory_gpu() const;
+      |   ^~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_ssb/pgemm_ssb_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/pgemm_ssbtr.cpp:36:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:61:31: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+   61 |   virtual auto size() -> std::uint_least64_t = 0;
+      |                               ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:36:1: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+   35 | #include "spla/exceptions.hpp"
+  +++ |+#include <cstdint>
+   36 | 
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_ssb/pgemm_ssb_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/pgemm_ssb.cpp:36:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:61:31: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+   61 |   virtual auto size() -> std::uint_least64_t = 0;
+      |                               ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:36:1: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+   35 | #include "spla/exceptions.hpp"
+  +++ |+#include <cstdint>
+   36 | 
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_sbs/pgemm_sbs_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/pgemm_sbs.cpp:36:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:61:31: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+   61 |   virtual auto size() -> std::uint_least64_t = 0;
+      |                               ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:36:1: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+   35 | #include "spla/exceptions.hpp"
+  +++ |+#include <cstdint>
+   36 | 
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/spla.hpp:36,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_sbs/ring_sbs_host.hpp:46:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:129:8: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+  129 |   std::uint_least64_t allocated_memory_host() const;
+      |        ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:35:1: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+   34 | #include <functional>
+  +++ |+#include <cstdint>
+   35 | #include <cstddef>
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:136:8: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+  136 |   std::uint_least64_t allocated_memory_pinned() const;
+      |        ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:136:3: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+  136 |   std::uint_least64_t allocated_memory_pinned() const;
+      |   ^~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:143:8: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+  143 |   std::uint_least64_t allocated_memory_gpu() const;
+      |        ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:143:3: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+  143 |   std::uint_least64_t allocated_memory_gpu() const;
+      |   ^~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/gemm/gemm_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_sbs/pgemm_sbs_host.cpp:38:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:61:31: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+   61 |   virtual auto size() -> std::uint_least64_t = 0;
+      |                               ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:36:1: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+   35 | #include "spla/exceptions.hpp"
+  +++ |+#include <cstdint>
+   36 | 
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:219: src/CMakeFiles/spla.dir/spla/matrix_distribution.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:55:21: error: no declaration matches ‘uint_least64_t spla::Context::allocated_memory_host() const’
+   55 | std::uint_least64_t Context::allocated_memory_host() const {
+      |                     ^~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:55:21: note: no functions named ‘uint_least64_t spla::Context::allocated_memory_host() const’
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:51:19: note: ‘class spla::Context’ defined here
+   51 | class SPLA_EXPORT Context {
+      |                   ^~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:59:21: error: no declaration matches ‘uint_least64_t spla::Context::allocated_memory_pinned() const’
+   59 | std::uint_least64_t Context::allocated_memory_pinned() const {
+      |                     ^~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:59:21: note: no functions named ‘uint_least64_t spla::Context::allocated_memory_pinned() const’
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:51:19: note: ‘class spla::Context’ defined here
+   51 | class SPLA_EXPORT Context {
+      |                   ^~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:67:21: error: no declaration matches ‘uint_least64_t spla::Context::allocated_memory_gpu() const’
+   67 | std::uint_least64_t Context::allocated_memory_gpu() const {
+      |                     ^~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:67:21: note: no functions named ‘uint_least64_t spla::Context::allocated_memory_gpu() const’
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:51:19: note: ‘class spla::Context’ defined here
+   51 | class SPLA_EXPORT Context {
+      |                   ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:36:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/simple_allocator.hpp: In instantiation of ‘class spla::SimpleAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:97:69:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/simple_allocator.hpp:90:8: error: ‘uint_least64_t spla::SimpleAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+   90 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp: In function ‘SplaError spla_ctx_allocated_memory_host(SplaContext, uint_least64_t*)’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:241:52: error: ‘class spla::Context’ has no member named ‘allocated_memory_host’
+  241 |     *size = reinterpret_cast<spla::Context*>(ctx)->allocated_memory_host();
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp: In function ‘SplaError spla_ctx_allocated_memory_pinned(SplaContext, uint_least64_t*)’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:255:52: error: ‘class spla::Context’ has no member named ‘allocated_memory_host’
+  255 |     *size = reinterpret_cast<spla::Context*>(ctx)->allocated_memory_host();
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp: In function ‘SplaError spla_ctx_allocated_memory_gpu(SplaContext, uint_least64_t*)’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:269:52: error: ‘class spla::Context’ has no member named ‘allocated_memory_host’
+  269 |     *size = reinterpret_cast<spla::Context*>(ctx)->allocated_memory_host();
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:233: src/CMakeFiles/spla.dir/spla/matrix_distribution_internal.cpp.o] Error 1
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/gemm/gemm_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_ssb/ring_ssb_host.cpp:38:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/gemm/gemm_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_sbs/ring_sbs_host.cpp:38:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:303: src/CMakeFiles/spla.dir/spla/gemm.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:205: src/CMakeFiles/spla.dir/gemm/gemm_host.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:289: src/CMakeFiles/spla.dir/spla/context.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:261: src/CMakeFiles/spla.dir/spla/pgemm_ssbtr.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:247: src/CMakeFiles/spla.dir/spla/pgemm_ssb.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:275: src/CMakeFiles/spla.dir/spla/pgemm_sbs.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:135: src/CMakeFiles/spla.dir/pgemm_ssb/pgemm_ssb_host.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:177: src/CMakeFiles/spla.dir/pgemm_sbs/pgemm_sbs_host.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:149: src/CMakeFiles/spla.dir/pgemm_ssb/ring_ssb_host.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:191: src/CMakeFiles/spla.dir/pgemm_sbs/ring_sbs_host.cpp.o] Error 1
+make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/build-cpu'
+make[1]: *** [CMakeFiles/Makefile2:103: src/CMakeFiles/spla.dir/all] Error 2
+make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/build-cpu'
+make: *** [Makefile:139: all] Error 2
+   35 | #include <cstddef>
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:136:8: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+  136 |   std::uint_least64_t allocated_memory_pinned() const;
+      |        ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:136:3: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+  136 |   std::uint_least64_t allocated_memory_pinned() const;
+      |   ^~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:143:8: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+  143 |   std::uint_least64_t allocated_memory_gpu() const;
+      |        ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:143:3: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+  143 |   std::uint_least64_t allocated_memory_gpu() const;
+      |   ^~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_ssb/pgemm_ssb_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/pgemm_ssb.cpp:36:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:61:31: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+   61 |   virtual auto size() -> std::uint_least64_t = 0;
+      |                               ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:36:1: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+   35 | #include "spla/exceptions.hpp"
+  +++ |+#include <cstdint>
+   36 | 
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_ssb/pgemm_ssb_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/pgemm_ssbtr.cpp:36:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:61:31: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+   61 |   virtual auto size() -> std::uint_least64_t = 0;
+      |                               ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:36:1: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+   35 | #include "spla/exceptions.hpp"
+  +++ |+#include <cstdint>
+   36 | 
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/spla.hpp:36,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_sbs/ring_sbs_host.hpp:46:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:129:8: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+  129 |   std::uint_least64_t allocated_memory_host() const;
+      |        ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:35:1: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+   34 | #include <functional>
+  +++ |+#include <cstdint>
+   35 | #include <cstddef>
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:136:8: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+  136 |   std::uint_least64_t allocated_memory_pinned() const;
+      |        ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:136:3: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+  136 |   std::uint_least64_t allocated_memory_pinned() const;
+      |   ^~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:143:8: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+  143 |   std::uint_least64_t allocated_memory_gpu() const;
+      |        ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:143:3: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+  143 |   std::uint_least64_t allocated_memory_gpu() const;
+      |   ^~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/gemm/gemm_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_sbs/pgemm_sbs_host.cpp:38:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:61:31: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+   61 |   virtual auto size() -> std::uint_least64_t = 0;
+      |                               ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:36:1: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+   35 | #include "spla/exceptions.hpp"
+  +++ |+#include <cstdint>
+   36 | 
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:55:21: error: no declaration matches ‘uint_least64_t spla::Context::allocated_memory_host() const’
+   55 | std::uint_least64_t Context::allocated_memory_host() const {
+      |                     ^~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:55:21: note: no functions named ‘uint_least64_t spla::Context::allocated_memory_host() const’
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:51:19: note: ‘class spla::Context’ defined here
+   51 | class SPLA_EXPORT Context {
+      |                   ^~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:59:21: error: no declaration matches ‘uint_least64_t spla::Context::allocated_memory_pinned() const’
+   59 | std::uint_least64_t Context::allocated_memory_pinned() const {
+      |                     ^~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:59:21: note: no functions named ‘uint_least64_t spla::Context::allocated_memory_pinned() const’
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:51:19: note: ‘class spla::Context’ defined here
+   51 | class SPLA_EXPORT Context {
+      |                   ^~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:67:21: error: no declaration matches ‘uint_least64_t spla::Context::allocated_memory_gpu() const’
+   67 | std::uint_least64_t Context::allocated_memory_gpu() const {
+      |                     ^~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:67:21: note: no functions named ‘uint_least64_t spla::Context::allocated_memory_gpu() const’
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:51:19: note: ‘class spla::Context’ defined here
+   51 | class SPLA_EXPORT Context {
+      |                   ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:36:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/simple_allocator.hpp: In instantiation of ‘class spla::SimpleAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:97:69:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/simple_allocator.hpp:90:8: error: ‘uint_least64_t spla::SimpleAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+   90 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_sbs/pgemm_sbs_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/pgemm_sbs.cpp:36:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:61:31: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+   61 |   virtual auto size() -> std::uint_least64_t = 0;
+      |                               ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:36:1: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+   35 | #include "spla/exceptions.hpp"
+  +++ |+#include <cstdint>
+   36 | 
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp: In function ‘SplaError spla_ctx_allocated_memory_host(SplaContext, uint_least64_t*)’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:241:52: error: ‘class spla::Context’ has no member named ‘allocated_memory_host’
+  241 |     *size = reinterpret_cast<spla::Context*>(ctx)->allocated_memory_host();
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp: In function ‘SplaError spla_ctx_allocated_memory_pinned(SplaContext, uint_least64_t*)’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:255:52: error: ‘class spla::Context’ has no member named ‘allocated_memory_host’
+  255 |     *size = reinterpret_cast<spla::Context*>(ctx)->allocated_memory_host();
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp: In function ‘SplaError spla_ctx_allocated_memory_gpu(SplaContext, uint_least64_t*)’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:269:52: error: ‘class spla::Context’ has no member named ‘allocated_memory_host’
+  269 |     *size = reinterpret_cast<spla::Context*>(ctx)->allocated_memory_host();
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:219: src/CMakeFiles/spla.dir/spla/matrix_distribution.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:233: src/CMakeFiles/spla.dir/spla/matrix_distribution_internal.cpp.o] Error 1
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/gemm/gemm_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_ssb/ring_ssb_host.cpp:38:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/gemm/gemm_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_sbs/ring_sbs_host.cpp:38:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:303: src/CMakeFiles/spla.dir/spla/gemm.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:289: src/CMakeFiles/spla.dir/spla/context.cpp.o] Error 1
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:247: src/CMakeFiles/spla.dir/spla/pgemm_ssb.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:205: src/CMakeFiles/spla.dir/gemm/gemm_host.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:261: src/CMakeFiles/spla.dir/spla/pgemm_ssbtr.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:275: src/CMakeFiles/spla.dir/spla/pgemm_sbs.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:135: src/CMakeFiles/spla.dir/pgemm_ssb/pgemm_ssb_host.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:177: src/CMakeFiles/spla.dir/pgemm_sbs/pgemm_sbs_host.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:149: src/CMakeFiles/spla.dir/pgemm_ssb/ring_ssb_host.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:191: src/CMakeFiles/spla.dir/pgemm_sbs/ring_sbs_host.cpp.o] Error 1
+make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/build-cpu'
+make[1]: *** [CMakeFiles/Makefile2:103: src/CMakeFiles/spla.dir/all] Error 2
+make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/build-cpu'
+make: *** [Makefile:139: all] Error 2
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/scripts/tool_kit.sh: line 662: /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/SpLA-1.5.4/install_successful: No such file or directory
+MPI is detected and it appears to be OpenMPI
+Compiling with 64 processes for target native.
+==================== Finding GCC from system paths ====================
+path to gcc is /tmp/pts-compiler-mask-cp2k1.4.1/gcc
+path to g++ is /tmp/pts-compiler-mask-cp2k1.4.1/g++
+path to gfortran is /tmp/pts-compiler-mask-cp2k1.4.1/gfortran
+Found include directory /usr/include
+Step gcc took 0.00 seconds.
+Step intel took 0.00 seconds.
+==================== Getting proc arch info using OpenBLAS tools ====================
+OpenBLAS detected LIBCORE = skylakex
+OpenBLAS detected ARCH    = x86_64
+==================== Finding CMake from system paths ====================
+path to cmake is /usr/bin/cmake
+Step cmake took 0.00 seconds.
+==================== Finding OpenMPI from system paths ====================
+path to mpirun is /usr/bin/mpirun
+path to mpicc is /usr/bin/mpicc
+path to mpic++ is /usr/bin/mpic++
+path to mpif90 is /usr/bin/mpif90
+Step openmpi took 0.00 seconds.
+==================== Finding LAPACK from system paths ====================
+libopenblas is found in ld search path
+Step openblas took 0.00 seconds.
+==================== Installing FFTW ====================
+fftw-3.3.10 is already installed, skipping it.
+Step fftw took 0.00 seconds.
+==================== Installing LIBINT ====================
+libint-2.6.0 is already installed, skipping it.
+Step libint took 0.00 seconds.
+==================== Installing LIBXC ====================
+libxc-6.0.0 is already installed, skipping it.
+Step libxc took 0.00 seconds.
+==================== Installing Libxsmm ====================
+libxsmm-1.17 is already installed, skipping it.
+Step libxsmm took 1.00 seconds.
+==================== Installing ScaLAPACK ====================
+scalapack-2.2.1 is already installed, skipping it.
+Step scalapack took 0.00 seconds.
+==================== Installing COSMA ====================
+COSMA-2.6.2 is already installed, skipping it.
+Step cosma took 0.00 seconds.
+==================== Installing ELPA ====================
+elpa-2022.11.001 is already installed, skipping it.
+Step elpa took 0.00 seconds.
+Step ptscotch took 0.00 seconds.
+Step superlu took 0.00 seconds.
+Step pexsi took 0.00 seconds.
+Step quip took 0.00 seconds.
+==================== Installing gsl ====================
+gsl-2.7 is already installed, skipping it.
+Step gsl took 0.00 seconds.
+Step plumed took 0.00 seconds.
+==================== Installing hdf5 ====================
+hdf5-1.12.0 is already installed, skipping it.
+Step hdf5 took 0.00 seconds.
+==================== Installing libvdwxc ====================
+libvdwxc-0.4.0 is already installed, skipping it.
+Step libvdwxc took 0.00 seconds.
+==================== Installing spglib ====================
+spglib-1.16.2 is already installed, skipping it.
+Step spglib took 0.00 seconds.
+==================== Installing libvori ====================
+libvori-220621 is already installed, skipping it.
+Step libvori took 0.00 seconds.
+Step libtorch took 0.00 seconds.
+==================== Installing spfft ====================
+SpFFT-1.0.6 is already installed, skipping it.
+Step spfft took 1.00 seconds.
+==================== Installing spla ====================
+SpLA-1.5.4.tar.gz is found
+Installing from scratch into /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/SpLA-1.5.4
+  143 |   std::uint_least64_t allocated_memory_gpu() const;
+      |   ^~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/gemm/gemm_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_ssb/pgemm_ssb_host.cpp:37:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:61:31: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+   61 |   virtual auto size() -> std::uint_least64_t = 0;
+      |                               ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:36:1: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+   35 | #include "spla/exceptions.hpp"
+  +++ |+#include <cstdint>
+   36 | 
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/spla.hpp:36,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_sbs/ring_sbs_host.hpp:46:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:129:8: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+  129 |   std::uint_least64_t allocated_memory_host() const;
+      |        ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:35:1: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+   34 | #include <functional>
+  +++ |+#include <cstdint>
+   35 | #include <cstddef>
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:136:8: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+  136 |   std::uint_least64_t allocated_memory_pinned() const;
+      |        ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:136:3: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+  136 |   std::uint_least64_t allocated_memory_pinned() const;
+      |   ^~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:143:8: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+  143 |   std::uint_least64_t allocated_memory_gpu() const;
+      |        ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:143:3: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+  143 |   std::uint_least64_t allocated_memory_gpu() const;
+      |   ^~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_ssb/pgemm_ssb_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/pgemm_ssb.cpp:36:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:61:31: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+   61 |   virtual auto size() -> std::uint_least64_t = 0;
+      |                               ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:36:1: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+   35 | #include "spla/exceptions.hpp"
+  +++ |+#include <cstdint>
+   36 | 
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_ssb/pgemm_ssb_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/pgemm_ssbtr.cpp:36:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:61:31: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+   61 |   virtual auto size() -> std::uint_least64_t = 0;
+      |                               ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:36:1: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+   35 | #include "spla/exceptions.hpp"
+  +++ |+#include <cstdint>
+   36 | 
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_sbs/pgemm_sbs_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/pgemm_sbs.cpp:36:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:61:31: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+   61 |   virtual auto size() -> std::uint_least64_t = 0;
+      |                               ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:36:1: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+   35 | #include "spla/exceptions.hpp"
+  +++ |+#include <cstdint>
+   36 | 
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/gemm/gemm_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_sbs/pgemm_sbs_host.cpp:38:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:61:31: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+   61 |   virtual auto size() -> std::uint_least64_t = 0;
+      |                               ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:36:1: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+   35 | #include "spla/exceptions.hpp"
+  +++ |+#include <cstdint>
+   36 | 
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:219: src/CMakeFiles/spla.dir/spla/matrix_distribution.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:55:21: error: no declaration matches ‘uint_least64_t spla::Context::allocated_memory_host() const’
+   55 | std::uint_least64_t Context::allocated_memory_host() const {
+      |                     ^~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:55:21: note: no functions named ‘uint_least64_t spla::Context::allocated_memory_host() const’
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:51:19: note: ‘class spla::Context’ defined here
+   51 | class SPLA_EXPORT Context {
+      |                   ^~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:59:21: error: no declaration matches ‘uint_least64_t spla::Context::allocated_memory_pinned() const’
+   59 | std::uint_least64_t Context::allocated_memory_pinned() const {
+      |                     ^~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:59:21: note: no functions named ‘uint_least64_t spla::Context::allocated_memory_pinned() const’
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:51:19: note: ‘class spla::Context’ defined here
+   51 | class SPLA_EXPORT Context {
+      |                   ^~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:67:21: error: no declaration matches ‘uint_least64_t spla::Context::allocated_memory_gpu() const’
+   67 | std::uint_least64_t Context::allocated_memory_gpu() const {
+      |                     ^~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:67:21: note: no functions named ‘uint_least64_t spla::Context::allocated_memory_gpu() const’
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:51:19: note: ‘class spla::Context’ defined here
+   51 | class SPLA_EXPORT Context {
+      |                   ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:36:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/simple_allocator.hpp: In instantiation of ‘class spla::SimpleAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:97:69:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/simple_allocator.hpp:90:8: error: ‘uint_least64_t spla::SimpleAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+   90 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp: In function ‘SplaError spla_ctx_allocated_memory_host(SplaContext, uint_least64_t*)’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:241:52: error: ‘class spla::Context’ has no member named ‘allocated_memory_host’
+  241 |     *size = reinterpret_cast<spla::Context*>(ctx)->allocated_memory_host();
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp: In function ‘SplaError spla_ctx_allocated_memory_pinned(SplaContext, uint_least64_t*)’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:255:52: error: ‘class spla::Context’ has no member named ‘allocated_memory_host’
+  255 |     *size = reinterpret_cast<spla::Context*>(ctx)->allocated_memory_host();
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp: In function ‘SplaError spla_ctx_allocated_memory_gpu(SplaContext, uint_least64_t*)’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:269:52: error: ‘class spla::Context’ has no member named ‘allocated_memory_host’
+  269 |     *size = reinterpret_cast<spla::Context*>(ctx)->allocated_memory_host();
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/gemm/gemm_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_sbs/ring_sbs_host.cpp:38:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:233: src/CMakeFiles/spla.dir/spla/matrix_distribution_internal.cpp.o] Error 1
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/gemm/gemm_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_ssb/ring_ssb_host.cpp:38:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:205: src/CMakeFiles/spla.dir/gemm/gemm_host.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:303: src/CMakeFiles/spla.dir/spla/gemm.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:289: src/CMakeFiles/spla.dir/spla/context.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:247: src/CMakeFiles/spla.dir/spla/pgemm_ssb.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:261: src/CMakeFiles/spla.dir/spla/pgemm_ssbtr.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:275: src/CMakeFiles/spla.dir/spla/pgemm_sbs.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:177: src/CMakeFiles/spla.dir/pgemm_sbs/pgemm_sbs_host.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:135: src/CMakeFiles/spla.dir/pgemm_ssb/pgemm_ssb_host.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:191: src/CMakeFiles/spla.dir/pgemm_sbs/ring_sbs_host.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:149: src/CMakeFiles/spla.dir/pgemm_ssb/ring_ssb_host.cpp.o] Error 1
+make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/build-cpu'
+make[1]: *** [CMakeFiles/Makefile2:103: src/CMakeFiles/spla.dir/all] Error 2
+make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/build-cpu'
+make: *** [Makefile:139: all] Error 2
+  143 |   std::uint_least64_t allocated_memory_gpu() const;
+      |   ^~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/gemm/gemm_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_ssb/pgemm_ssb_host.cpp:37:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:61:31: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+   61 |   virtual auto size() -> std::uint_least64_t = 0;
+      |                               ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:36:1: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+   35 | #include "spla/exceptions.hpp"
+  +++ |+#include <cstdint>
+   36 | 
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_ssb/pgemm_ssb_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/pgemm_ssbtr.cpp:36:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:61:31: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+   61 |   virtual auto size() -> std::uint_least64_t = 0;
+      |                               ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:36:1: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+   35 | #include "spla/exceptions.hpp"
+  +++ |+#include <cstdint>
+   36 | 
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_ssb/pgemm_ssb_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/pgemm_ssb.cpp:36:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:61:31: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+   61 |   virtual auto size() -> std::uint_least64_t = 0;
+      |                               ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:36:1: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+   35 | #include "spla/exceptions.hpp"
+  +++ |+#include <cstdint>
+   36 | 
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/spla.hpp:36,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_sbs/ring_sbs_host.hpp:46:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:129:8: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+  129 |   std::uint_least64_t allocated_memory_host() const;
+      |        ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:35:1: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+   34 | #include <functional>
+  +++ |+#include <cstdint>
+   35 | #include <cstddef>
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:136:8: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+  136 |   std::uint_least64_t allocated_memory_pinned() const;
+      |        ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:136:3: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+  136 |   std::uint_least64_t allocated_memory_pinned() const;
+      |   ^~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:143:8: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+  143 |   std::uint_least64_t allocated_memory_gpu() const;
+      |        ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:143:3: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+  143 |   std::uint_least64_t allocated_memory_gpu() const;
+      |   ^~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_sbs/pgemm_sbs_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/pgemm_sbs.cpp:36:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:61:31: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+   61 |   virtual auto size() -> std::uint_least64_t = 0;
+      |                               ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:36:1: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+   35 | #include "spla/exceptions.hpp"
+  +++ |+#include <cstdint>
+   36 | 
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/gemm/gemm_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_sbs/pgemm_sbs_host.cpp:38:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:61:31: error: ‘uint_least64_t’ in namespace ‘std’ does not name a type
+   61 |   virtual auto size() -> std::uint_least64_t = 0;
+      |                               ^~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator.hpp:36:1: note: ‘std::uint_least64_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+   35 | #include "spla/exceptions.hpp"
+  +++ |+#include <cstdint>
+   36 | 
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:219: src/CMakeFiles/spla.dir/spla/matrix_distribution.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:55:21: error: no declaration matches ‘uint_least64_t spla::Context::allocated_memory_host() const’
+   55 | std::uint_least64_t Context::allocated_memory_host() const {
+      |                     ^~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:55:21: note: no functions named ‘uint_least64_t spla::Context::allocated_memory_host() const’
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:51:19: note: ‘class spla::Context’ defined here
+   51 | class SPLA_EXPORT Context {
+      |                   ^~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:59:21: error: no declaration matches ‘uint_least64_t spla::Context::allocated_memory_pinned() const’
+   59 | std::uint_least64_t Context::allocated_memory_pinned() const {
+      |                     ^~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:59:21: note: no functions named ‘uint_least64_t spla::Context::allocated_memory_pinned() const’
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:51:19: note: ‘class spla::Context’ defined here
+   51 | class SPLA_EXPORT Context {
+      |                   ^~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:67:21: error: no declaration matches ‘uint_least64_t spla::Context::allocated_memory_gpu() const’
+   67 | std::uint_least64_t Context::allocated_memory_gpu() const {
+      |                     ^~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:67:21: note: no functions named ‘uint_least64_t spla::Context::allocated_memory_gpu() const’
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/include/spla/context.hpp:51:19: note: ‘class spla::Context’ defined here
+   51 | class SPLA_EXPORT Context {
+      |                   ^~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:36:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/simple_allocator.hpp: In instantiation of ‘class spla::SimpleAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:97:69:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/simple_allocator.hpp:90:8: error: ‘uint_least64_t spla::SimpleAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+   90 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp: In function ‘SplaError spla_ctx_allocated_memory_host(SplaContext, uint_least64_t*)’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:241:52: error: ‘class spla::Context’ has no member named ‘allocated_memory_host’
+  241 |     *size = reinterpret_cast<spla::Context*>(ctx)->allocated_memory_host();
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp: In function ‘SplaError spla_ctx_allocated_memory_pinned(SplaContext, uint_least64_t*)’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:255:52: error: ‘class spla::Context’ has no member named ‘allocated_memory_host’
+  255 |     *size = reinterpret_cast<spla::Context*>(ctx)->allocated_memory_host();
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp: In function ‘SplaError spla_ctx_allocated_memory_gpu(SplaContext, uint_least64_t*)’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context.cpp:269:52: error: ‘class spla::Context’ has no member named ‘allocated_memory_host’
+  269 |     *size = reinterpret_cast<spla::Context*>(ctx)->allocated_memory_host();
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/gemm/gemm_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_ssb/ring_ssb_host.cpp:38:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:233: src/CMakeFiles/spla.dir/spla/matrix_distribution_internal.cpp.o] Error 1
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:42,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/spla/context_internal.hpp:41,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/gemm/gemm_host.hpp:32,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/pgemm_sbs/ring_sbs_host.cpp:38:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp: In instantiation of ‘class spla::PoolAllocator<spla::MemLoc::Host>’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/allocator_collection.hpp:64:14:   required from here
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/src/memory/pool_allocator.hpp:122:8: error: ‘uint_least64_t spla::PoolAllocator<LOCATION>::size() [with spla::MemLoc LOCATION = spla::MemLoc::Host; uint_least64_t = long unsigned int]’ marked ‘override’, but does not override
+  122 |   auto size() -> std::uint_least64_t override {
+      |        ^~~~
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:303: src/CMakeFiles/spla.dir/spla/gemm.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:205: src/CMakeFiles/spla.dir/gemm/gemm_host.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:289: src/CMakeFiles/spla.dir/spla/context.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:261: src/CMakeFiles/spla.dir/spla/pgemm_ssbtr.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:247: src/CMakeFiles/spla.dir/spla/pgemm_ssb.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:275: src/CMakeFiles/spla.dir/spla/pgemm_sbs.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:177: src/CMakeFiles/spla.dir/pgemm_sbs/pgemm_sbs_host.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:135: src/CMakeFiles/spla.dir/pgemm_ssb/pgemm_ssb_host.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:149: src/CMakeFiles/spla.dir/pgemm_ssb/ring_ssb_host.cpp.o] Error 1
+make[2]: *** [src/CMakeFiles/spla.dir/build.make:191: src/CMakeFiles/spla.dir/pgemm_sbs/ring_sbs_host.cpp.o] Error 1
+make[2]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/build-cpu'
+make[1]: *** [CMakeFiles/Makefile2:103: src/CMakeFiles/spla.dir/all] Error 2
+make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/build/spla-1.5.4/build-cpu'
+make: *** [Makefile:139: all] Error 2
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/scripts/tool_kit.sh: line 662: /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/tools/toolchain/install/SpLA-1.5.4/install_successful: No such file or directory
+cp: cannot stat 'install/arch/*': No such file or directory
+Discovering programs ...
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/Makefile:51: /home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/arch/local.psmp: No such file or directory
+make[2]: *** No rule to make target '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/arch/local.psmp'.  Stop.
+make[1]: *** [/home/ubuntu/.phoronix-test-suite/installed-tests/pts/cp2k-1.4.1/cp2k-2023.1/Makefile:128: psmp] Error 2
+make: *** [Makefile:123: all] Error 2

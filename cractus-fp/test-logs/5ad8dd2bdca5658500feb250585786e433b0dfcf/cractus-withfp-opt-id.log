@@ -1,0 +1,34 @@
+#####
+cractus-withfp-opt-id - Run 1
+2024-02-21 17:31:32
+#####
+obj2mesh -n 15 -r 16384 lens.obj > lens.msh
+oconv -f -n 6 -r 16384 materials.rad cube2f.rad > cube2f_instance.oct
+oconv -f -n 6 -r 16384 materials.rad cube4f.rad > cube4f_instance.oct
+oconv -n 6 -r 16384 materials.rad scene.rad > scene.oct
+echo "-ss 1.0" "-lr -10 -u- -pd 0.0" | cat optionsbase - > optionsUnix
+rm -f serial.unf
+time rpict @viewpoint @optionsUnix -x 2048 -y 2048 -t 60 -o serial.unf scene.oct
+rpict: 21591 rays, 0.00% after 0.000u 0.000s 0.000r hours on cractus (PID 1678610)
+rpict: 65556293 rays, 0.05% after 0.035u 0.000s 0.035r hours on cractus (PID 1678610)
+rpict: 95408867 rays, 6.69% after 0.052u 0.000s 0.052r hours on cractus (PID 1678610)
+rpict: 127003405 rays, 16.65% after 0.068u 0.000s 0.069r hours on cractus (PID 1678610)
+rpict: 158027978 rays, 24.80% after 0.085u 0.000s 0.085r hours on cractus (PID 1678610)
+rpict: 187892012 rays, 34.86% after 0.102u 0.000s 0.102r hours on cractus (PID 1678610)
+rpict: 219267212 rays, 44.04% after 0.120u 0.000s 0.120r hours on cractus (PID 1678610)
+rpict: 249992384 rays, 45.75% after 0.137u 0.000s 0.137r hours on cractus (PID 1678610)
+rpict: 281014251 rays, 49.56% after 0.153u 0.000s 0.153r hours on cractus (PID 1678610)
+rpict: 320386519 rays, 54.00% after 0.170u 0.000s 0.170r hours on cractus (PID 1678610)
+rpict: 358870048 rays, 58.11% after 0.187u 0.000s 0.187r hours on cractus (PID 1678610)
+rpict: 395092865 rays, 61.82% after 0.203u 0.000s 0.203r hours on cractus (PID 1678610)
+rpict: 428386197 rays, 64.65% after 0.220u 0.000s 0.220r hours on cractus (PID 1678610)
+rpict: 461597574 rays, 67.43% after 0.237u 0.000s 0.237r hours on cractus (PID 1678610)
+rpict: 496359221 rays, 70.21% after 0.253u 0.000s 0.253r hours on cractus (PID 1678610)
+rpict: 531844037 rays, 73.49% after 0.270u 0.000s 0.270r hours on cractus (PID 1678610)
+rpict: 565480407 rays, 79.44% after 0.286u 0.000s 0.287r hours on cractus (PID 1678610)
+rpict: 570890201 rays, 100.00% after 0.290u 0.000s 0.290r hours on cractus (PID 1678610)
+1044.32user 0.09system 17:24.54elapsed 99%CPU (0avgtext+0avgdata 17408maxresident)k
+5640inputs+15024outputs (4major+12862minor)pagefaults 0swaps
+pfilt -1 -e +0 -x /4 -y /4 -r .6 -m .15 serial.unf > serial.pic
+ra_ppm serial.pic > serial.ppm
+

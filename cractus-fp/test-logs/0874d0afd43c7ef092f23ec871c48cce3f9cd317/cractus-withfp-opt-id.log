@@ -1,0 +1,126 @@
+#####
+cractus-withfp-opt-id - Run 1
+2024-02-22 03:21:15
+#####
+sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 64
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 102400MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 104857600 (11703863.28 per second)
+
+102400.00 MiB transferred (11429.55 MiB/sec)
+
+
+General statistics:
+    total time:                          8.9560s
+    total number of events:              104857600
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.00
+         max:                                   28.03
+         95th percentile:                        0.01
+         sum:                               488181.10
+
+Threads fairness:
+    events (avg/stddev):           1638400.0000/0.00
+    execution time (avg/stddev):   7.6278/0.81
+
+
+#####
+cractus-withfp-opt-id - Run 2
+2024-02-22 03:21:28
+#####
+sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 64
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 102400MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 104857600 (11747269.94 per second)
+
+102400.00 MiB transferred (11471.94 MiB/sec)
+
+
+General statistics:
+    total time:                          8.9213s
+    total number of events:              104857600
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.00
+         max:                                   20.01
+         95th percentile:                        0.01
+         sum:                               495828.61
+
+Threads fairness:
+    events (avg/stddev):           1638400.0000/0.00
+    execution time (avg/stddev):   7.7473/0.57
+
+
+#####
+cractus-withfp-opt-id - Run 3
+2024-02-22 03:21:38
+#####
+sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 64
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 102400MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 104857600 (11859858.92 per second)
+
+102400.00 MiB transferred (11581.89 MiB/sec)
+
+
+General statistics:
+    total time:                          8.8382s
+    total number of events:              104857600
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.00
+         max:                                   19.68
+         95th percentile:                        0.01
+         sum:                               504231.81
+
+Threads fairness:
+    events (avg/stddev):           1638400.0000/0.00
+    execution time (avg/stddev):   7.8786/0.43
+
+

@@ -1,0 +1,45 @@
+Archive:  selenium-top-sites-2.zip
+  inflating: selenium-top-sites.py   
+Collecting selenium
+  Obtaining dependency information for selenium from https://files.pythonhosted.org/packages/3f/fd/c2e7bb547b5b96c7bd536b4a80c4564b7ce5cd38d10095fbba8648996ab9/selenium-4.18.1-py3-none-any.whl.metadata
+  Downloading selenium-4.18.1-py3-none-any.whl.metadata (6.9 kB)
+Requirement already satisfied: urllib3[socks]<3,>=1.26 in /usr/lib/python3/dist-packages (from selenium) (1.26.16)
+Collecting trio~=0.17 (from selenium)
+  Obtaining dependency information for trio~=0.17 from https://files.pythonhosted.org/packages/14/fb/9299cf74953f473a15accfdbe2c15218e766bae8c796f2567c83bae03e98/trio-0.24.0-py3-none-any.whl.metadata
+  Downloading trio-0.24.0-py3-none-any.whl.metadata (4.9 kB)
+Collecting trio-websocket~=0.9 (from selenium)
+  Obtaining dependency information for trio-websocket~=0.9 from https://files.pythonhosted.org/packages/48/be/a9ae5f50cad5b6f85bd2574c2c923730098530096e170c1ce7452394d7aa/trio_websocket-0.11.1-py3-none-any.whl.metadata
+  Downloading trio_websocket-0.11.1-py3-none-any.whl.metadata (4.7 kB)
+Requirement already satisfied: certifi>=2021.10.8 in /usr/lib/python3/dist-packages (from selenium) (2022.9.24)
+Collecting typing_extensions>=4.9.0 (from selenium)
+  Obtaining dependency information for typing_extensions>=4.9.0 from https://files.pythonhosted.org/packages/b7/f4/6a90020cd2d93349b442bfcb657d0dc91eee65491600b2cb1d388bc98e6b/typing_extensions-4.9.0-py3-none-any.whl.metadata
+  Downloading typing_extensions-4.9.0-py3-none-any.whl.metadata (3.0 kB)
+Requirement already satisfied: attrs>=20.1.0 in /usr/lib/python3/dist-packages (from trio~=0.17->selenium) (23.1.0)
+Collecting sortedcontainers (from trio~=0.17->selenium)
+  Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+Requirement already satisfied: idna in /usr/lib/python3/dist-packages (from trio~=0.17->selenium) (3.3)
+Collecting outcome (from trio~=0.17->selenium)
+  Obtaining dependency information for outcome from https://files.pythonhosted.org/packages/55/8b/5ab7257531a5d830fc8000c476e63c935488d74609b50f9384a643ec0a62/outcome-1.3.0.post0-py2.py3-none-any.whl.metadata
+  Downloading outcome-1.3.0.post0-py2.py3-none-any.whl.metadata (2.6 kB)
+Collecting sniffio>=1.3.0 (from trio~=0.17->selenium)
+  Downloading sniffio-1.3.0-py3-none-any.whl (10 kB)
+Collecting wsproto>=0.14 (from trio-websocket~=0.9->selenium)
+  Downloading wsproto-1.2.0-py3-none-any.whl (24 kB)
+Collecting PySocks!=1.5.7,<2.0,>=1.5.6 (from urllib3[socks]<3,>=1.26->selenium)
+  Downloading PySocks-1.7.1-py3-none-any.whl (16 kB)
+Collecting h11<1,>=0.9.0 (from wsproto>=0.14->trio-websocket~=0.9->selenium)
+  Obtaining dependency information for h11<1,>=0.9.0 from https://files.pythonhosted.org/packages/95/04/ff642e65ad6b90db43e668d70ffb6736436c7ce41fcc549f4e9472234127/h11-0.14.0-py3-none-any.whl.metadata
+  Downloading h11-0.14.0-py3-none-any.whl.metadata (8.2 kB)
+Downloading selenium-4.18.1-py3-none-any.whl (10.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.0/10.0 MB 14.3 MB/s eta 0:00:00
+Downloading trio-0.24.0-py3-none-any.whl (460 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 460.2/460.2 kB 14.9 MB/s eta 0:00:00
+Downloading trio_websocket-0.11.1-py3-none-any.whl (17 kB)
+Downloading typing_extensions-4.9.0-py3-none-any.whl (32 kB)
+Downloading outcome-1.3.0.post0-py2.py3-none-any.whl (10 kB)
+Downloading h11-0.14.0-py3-none-any.whl (58 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.3/58.3 kB 2.8 MB/s eta 0:00:00
+Installing collected packages: sortedcontainers, typing_extensions, sniffio, PySocks, outcome, h11, wsproto, trio, trio-websocket, selenium
+Successfully installed PySocks-1.7.1 h11-0.14.0 outcome-1.3.0.post0 selenium-4.18.1 sniffio-1.3.0 sortedcontainers-2.4.0 trio-0.24.0 trio-websocket-0.11.1 typing_extensions-4.9.0 wsproto-1.2.0
+Archive:  chromedriver_linux64_v77.zip
+  inflating: chromedriver            

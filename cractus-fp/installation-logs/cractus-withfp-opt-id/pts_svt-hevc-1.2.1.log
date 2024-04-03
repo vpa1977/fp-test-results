@@ -1,0 +1,497 @@
+
+7-Zip [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=en_US.utf8,Utf16=on,HugeFiles=on,64 bits,64 CPUs Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz (50657),ASM,AES-NI)
+
+Scanning the drive for archives:
+1 file, 680772328 bytes (650 MiB)
+
+Extracting archive: Bosphorus_1920x1080_120fps_420_8bit_YUV_RAW.7z
+--
+Path = Bosphorus_1920x1080_120fps_420_8bit_YUV_RAW.7z
+Type = 7z
+Physical Size = 680772328
+Headers Size = 249
+Method = LZMA:16 BZip2
+Solid = -
+Blocks = 2
+
+Everything is Ok
+
+Files: 2
+Size:       1866240249
+Compressed: 680772328
+
+7-Zip [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=en_US.utf8,Utf16=on,HugeFiles=on,64 bits,64 CPUs Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz (50657),ASM,AES-NI)
+
+Scanning the drive for archives:
+1 file, 2804470345 bytes (2675 MiB)
+
+Extracting archive: Bosphorus_3840x2160_120fps_420_8bit_YUV_Y4M.7z
+--
+Path = Bosphorus_3840x2160_120fps_420_8bit_YUV_Y4M.7z
+Type = 7z
+Physical Size = 2804470345
+Headers Size = 215
+Method = BZip2
+Solid = -
+Blocks = 2
+
+Everything is Ok
+
+Files: 2
+Size:       7464963909
+Compressed: 2804470345
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 13.2.0
+-- The ASM_NASM compiler identification is YASM
+-- Found assembler: /usr/bin/yasm
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /tmp/pts-compiler-mask-svt-hevc1.2.1/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- CMAKE_BUILD_TYPE = Release
+-- CMAKE_C_COMPILER = /tmp/pts-compiler-mask-svt-hevc1.2.1/cc
+-- CMAKE_ASM_NASM_COMPILER = /usr/bin/yasm
+-- CMAKE_AR = /usr/bin/ar
+-- CMAKE_RANLIB = /usr/bin/ranlib
+-- CMAKE_INSTALL_PREFIX = /usr/local
+-- Performing Test C_FLAG_Wall
+-- Performing Test C_FLAG_Wall - Success
+-- Performing Test C_FLAG_Wextra
+-- Performing Test C_FLAG_Wextra - Success
+-- Performing Test C_FLAG_Wformat
+-- Performing Test C_FLAG_Wformat - Success
+-- Performing Test C_FLAG_Wformat_security
+-- Performing Test C_FLAG_Wformat_security - Success
+-- Performing Test C_FLAG_fPIE
+-- Performing Test C_FLAG_fPIE - Success
+-- Performing Test C_FLAG_fPIC
+-- Performing Test C_FLAG_fPIC - Success
+-- Performing Test C_FLAG_D_FORTIFY_SOURCE_2
+-- Performing Test C_FLAG_D_FORTIFY_SOURCE_2 - Success
+-- Performing Test C_FLAG_GS
+-- Performing Test C_FLAG_GS - Failed
+-- Performing Test C_FLAG_sdl
+-- Performing Test C_FLAG_sdl - Failed
+-- Performing Test C_FLAG_fstack_protector_strong
+-- Performing Test C_FLAG_fstack_protector_strong - Success
+-- Performing Test C_FLAG_O2
+-- Performing Test C_FLAG_O2 - Success
+-- Performing Test C_FLAG_O3
+-- Performing Test C_FLAG_O3 - Success
+-- Performing Test C_FLAG_O0
+-- Performing Test C_FLAG_O0 - Success
+-- Performing Test C_FLAG_msse2
+-- Performing Test C_FLAG_msse2 - Success
+-- Performing Test C_FLAG_msse4_1
+-- Performing Test C_FLAG_msse4_1 - Success
+-- Performing Test C_FLAG_static_intel
+-- Performing Test C_FLAG_static_intel - Failed
+-- Performing Test C_FLAG_mssse3
+-- Performing Test C_FLAG_mssse3 - Success
+-- Performing Test C_FLAG_mavx2
+-- Performing Test C_FLAG_mavx2 - Success
+-- Performing Test C_FLAG_Qwd10148
+-- Performing Test C_FLAG_Qwd10148 - Failed
+-- Performing Test C_FLAG_Qwd10010
+-- Performing Test C_FLAG_Qwd10010 - Failed
+-- Performing Test C_FLAG_Qwd10157
+-- Performing Test C_FLAG_Qwd10157 - Failed
+-- Configuring done (3.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/build
+[  1%] Building C object Source/Lib/C_DEFAULT/CMakeFiles/HEVC_C_DEFAULT.dir/EbComputeSAD_C.c.o
+[  2%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/HEVC_ASM_SSE2.dir/EbDeblockingFilter_Intrinsic_SSE2.c.o
+[  3%] Building C object Source/Lib/C_DEFAULT/CMakeFiles/HEVC_C_DEFAULT.dir/EbMeSadCalculation_C.c.o
+[  5%] Building C object Source/Lib/ASM_SSE4_1/CMakeFiles/HEVC_ASM_SSE4_1.dir/EbPictureOperators_Intrinsic_SSE4_1.c.o
+[  5%] Building C object Source/Lib/C_DEFAULT/CMakeFiles/HEVC_C_DEFAULT.dir/EbDeblockingFilter_C.c.o
+[  6%] Building C object Source/Lib/ASM_SSE4_1/CMakeFiles/HEVC_ASM_SSE4_1.dir/EbIntraPrediction16bit_Intrinsic_SSE4_1.c.o
+[  6%] Building C object Source/Lib/ASM_SSSE3/CMakeFiles/HEVC_ASM_SSSE3.dir/EbIntraPrediction16bit_Intrinsic_SSSE3.c.o
+[  7%] Building C object Source/Lib/ASM_SSE4_1/CMakeFiles/HEVC_ASM_SSE4_1.dir/EbTransforms_Intrinsic_SSE4_1.c.o
+[  7%] Building C object Source/Lib/C_DEFAULT/CMakeFiles/HEVC_C_DEFAULT.dir/EbAvcStyleMcp_C.c.o
+[ 11%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/HEVC_ASM_AVX2.dir/EbPictureOperators_Intrinsic_AVX2.c.o
+[ 13%] Building ASM_NASM object Source/Lib/ASM_SSE2/CMakeFiles/HEVC_ASM_SSE2.dir/x64Macro.asm.o
+[ 11%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/HEVC_ASM_SSE2.dir/EbIntraPrediction16bit_Intrinsic_SSE2.c.o
+[ 13%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/HEVC_ASM_AVX2.dir/EbCombinedAveragingSAD_Intrinsic_AVX512.c.o
+[ 13%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/HEVC_ASM_SSE2.dir/EbCombinedAveragingSAD_Intrinsic_SSE2.c.o
+[ 13%] Building C object Source/Lib/ASM_SSSE3/CMakeFiles/HEVC_ASM_SSSE3.dir/EbMcp_Intrinsic_SSSE3.c.o
+[ 13%] Building C object Source/Lib/ASM_SSSE3/CMakeFiles/HEVC_ASM_SSSE3.dir/EbAvcStyleMcp_Intrinsic_SSSE3.c.o
+[ 14%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/HEVC_ASM_SSE2.dir/EbApplySaoLcu16bit_Intrinsic_SSE2.c.o
+[ 14%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/HEVC_ASM_SSE2.dir/EbAvcStyleMcp_Intrinsic_SSE2.c.o
+[ 16%] Building C object Source/Lib/C_DEFAULT/CMakeFiles/HEVC_C_DEFAULT.dir/EbSampleAdaptiveOffset_C.c.o
+[ 16%] Building C object Source/Lib/ASM_SSSE3/CMakeFiles/HEVC_ASM_SSSE3.dir/EbSaoApplication_Intrinsic_SSSE3.c.o
+[ 17%] Building C object Source/Lib/C_DEFAULT/CMakeFiles/HEVC_C_DEFAULT.dir/EbTransforms_C.c.o
+[ 17%] Building C object Source/Lib/C_DEFAULT/CMakeFiles/HEVC_C_DEFAULT.dir/EbPictureOperators_C.c.o
+[ 18%] Building C object Source/Lib/C_DEFAULT/CMakeFiles/HEVC_C_DEFAULT.dir/EbComputeMean_C.c.o
+[ 18%] Building C object Source/Lib/C_DEFAULT/CMakeFiles/HEVC_C_DEFAULT.dir/EbIntraPrediction_C.c.o
+[ 20%] Building C object Source/Lib/ASM_SSSE3/CMakeFiles/HEVC_ASM_SSSE3.dir/EbDeblockingFilter16bit_Intrinsic_SSSE3.c.o
+[ 22%] Building C object Source/Lib/ASM_SSSE3/CMakeFiles/HEVC_ASM_SSSE3.dir/EbDeblockingFilter_Intrinsic_SSSE3.c.o
+[ 22%] Building C object Source/Lib/C_DEFAULT/CMakeFiles/HEVC_C_DEFAULT.dir/EbMcp_C.c.o
+[ 22%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/HEVC_ASM_SSE2.dir/EbComputeMean_Intrinsic_SSE2.c.o
+[ 22%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/HEVC_ASM_AVX2.dir/EbPackUnPack_Intrinsic_AVX2.c.o
+[ 22%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/HEVC_ASM_SSE2.dir/EbInvTransform_Intrinsic_SSE2.c.o
+[ 23%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/HEVC_ASM_SSE2.dir/EbGatherSaoStatistics16bit_Intrinsic_SSE2.c.o
+[ 25%] Building C object Source/Lib/ASM_SSSE3/CMakeFiles/HEVC_ASM_SSSE3.dir/EbTransforms_Intrinsic_SSSE3.c.o
+[ 24%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/HEVC_ASM_SSE2.dir/EbIntraPrediction_Intrinsic_SSE2.c.o
+[ 25%] Building C object Source/Lib/C_DEFAULT/CMakeFiles/HEVC_C_DEFAULT.dir/EbPackUnPack_C.c.o
+[ 26%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/HEVC_ASM_AVX2.dir/EbCombinedAveragingSAD_Intrinsic_AVX2.c.o
+[ 27%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/HEVC_ASM_SSE2.dir/EbMcp_Intrinsic_SSE2.c.o
+[ 27%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/HEVC_ASM_AVX2.dir/EbComputeSAD_SadLoopKernel_AVX512.c.o
+[ 28%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/HEVC_ASM_SSE2.dir/EbMcp16bit_Intrinsic_SSE2.c.o
+[ 29%] Building ASM_NASM object Source/Lib/ASM_SSE2/CMakeFiles/HEVC_ASM_SSE2.dir/x64inc.asm.o
+[ 29%] Building ASM_NASM object Source/Lib/ASM_SSE2/CMakeFiles/HEVC_ASM_SSE2.dir/EbGatherSaoStatistics16bit_SSE2.asm.o
+[ 29%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/HEVC_ASM_AVX2.dir/EbComputeSAD_Intrinsic_AVX2.c.o
+[ 30%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/HEVC_ASM_SSE2.dir/EbMeSadCalculation_Intrinsic_SSE2.c.o
+[ 34%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/HEVC_ASM_SSE2.dir/EbSaoStatistics_Intrinsic_SSE2.c.o
+[ 31%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/HEVC_ASM_SSE2.dir/EbPackUnPack_Intrinsic_SSE2.c.o
+[ 34%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/HEVC_ASM_SSE2.dir/EbPictureOperators_Intrinsic_SSE2.c.o
+[ 34%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/HEVC_ASM_AVX2.dir/EbIntraPrediction_Intrinsic_AVX2.c.o
+[ 34%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/HEVC_ASM_AVX2.dir/EbMCP16bit_Intrinsic_AVX2.c.o
+[ 35%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/HEVC_ASM_AVX2.dir/EbNoiseExtractAVX2.c.o
+[ 37%] Building C object Source/Lib/ASM_SSE2/CMakeFiles/HEVC_ASM_SSE2.dir/EbTransforms_Intrinsic_SSE2.c.o
+[ 37%] Building C object Source/Lib/ASM_AVX2/CMakeFiles/HEVC_ASM_AVX2.dir/EbTransforms_Intrinsic_AVX2.c.o
+[ 38%] Building ASM_NASM object Source/Lib/ASM_SSE2/CMakeFiles/HEVC_ASM_SSE2.dir/EbPictureOperators_SSE2.asm.o
+[ 38%] Building ASM_NASM object Source/Lib/ASM_SSE2/CMakeFiles/HEVC_ASM_SSE2.dir/x64RegisterUtil.asm.o
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/ASM_SSE2/x64Macro.asm:43: warning: section flags ignored on section redeclaration
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/ASM_SSE2/x64Macro.asm:43: warning: section flags ignored on section redeclaration
+[ 38%] Built target HEVC_ASM_SSE4_1
+[ 38%] Built target HEVC_ASM_SSSE3
+[ 38%] Built target HEVC_ASM_SSE2
+[ 38%] Built target HEVC_ASM_AVX2
+[ 38%] Built target HEVC_C_DEFAULT
+[ 39%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbEncodeContext.c.o
+[ 39%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbEncDecProcess.c.o
+[ 40%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbEncDecResults.c.o
+[ 40%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbEncHandle.c.o
+[ 42%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbEncDecTasks.c.o
+[ 43%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbEntropyCodingProcess.c.o
+[ 43%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbEncDecSegments.c.o
+[ 44%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbEntropyCodingResults.c.o
+[ 44%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbInitialRateControlProcess.c.o
+[ 45%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbInitialRateControlReorderQueue.c.o
+[ 46%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbModeDecisionConfigurationProcess.c.o
+[ 46%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbModeDecisionProcess.c.o
+[ 47%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbMotionEstimationContext.c.o
+[ 48%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbInitialRateControlResults.c.o
+[ 49%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbPacketizationReorderQueue.c.o
+[ 50%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbMotionEstimationProcess.c.o
+[ 50%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbPacketizationProcess.c.o
+[ 50%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbPictureAnalysisResults.c.o
+[ 52%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbMotionEstimationResults.c.o
+[ 52%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbPictureBufferDesc.c.o
+[ 53%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbPictureControlSet.c.o
+[ 55%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbResourceCoordinationProcess.c.o
+[ 55%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbPictureDecisionProcess.c.o
+[ 56%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbPictureDecisionReorderQueue.c.o
+[ 56%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbPictureAnalysisProcess.c.o
+[ 58%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbPictureDemuxResults.c.o
+[ 58%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbPictureDecisionResults.c.o
+[ 59%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbResourceCoordinationResults.c.o
+[ 59%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbPictureDecisionQueue.c.o
+[ 60%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbRateControlProcess.c.o
+[ 61%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbReferenceObject.c.o
+[ 64%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbAdaptiveMotionVectorPrediction.c.o
+[ 64%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbSequenceControlSet.c.o
+[ 65%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbThreads.c.o
+[ 66%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbAvailability.c.o
+[ 66%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbRateControlTasks.c.o
+[ 66%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbPictureManagerProcess.c.o
+[ 68%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbPictureManagerReorderQueue.c.o
+[ 68%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbPictureManagerQueue.c.o
+[ 68%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbRateControlResults.c.o
+[ 69%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbSystemResourceManager.c.o
+[ 69%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbSourceBasedOperationsProcess.c.o
+[ 70%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbAvcStyleMcp.c.o
+[ 70%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbBitstreamUnit.c.o
+[ 72%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbCabacContextModel.c.o
+[ 72%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbCodingUnit.c.o
+[ 72%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbCodingLoop.c.o
+[ 75%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbDeblockingFilter.c.o
+[ 75%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbEntropyCoding.c.o
+[ 75%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbCoeffEstimation_Intrinsic.c.o
+[ 76%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbInterPrediction.c.o
+[ 76%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbEntropyCodingUtil.c.o
+[ 77%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbFullLoop.c.o
+[ 78%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbIntraPrediction.c.o
+[ 78%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbMcp.c.o
+[ 79%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbHmCode.c.o
+[ 79%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbMcpTables.c.o
+[ 82%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbMalloc.c.o
+[ 82%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbNeighborArrays.c.o
+[ 82%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbModeDecision.c.o
+[ 84%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbMotionEstimation.c.o
+[ 84%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbModeDecisionConfiguration.c.o
+[ 84%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbMdRateEstimation.c.o
+[ 85%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbPictureOperators.c.o
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbEncodeContext.c: In function ‘EncodeContextCtor’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbEncodeContext.c:45:18: warning: unused variable ‘return_error’ [-Wunused-variable]
+   45 |     EB_ERRORTYPE return_error = EB_ErrorNone;
+      |                  ^~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbResourceCoordinationProcess.c: In function ‘ResourceCoordinationKernel’:
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbMotionEstimationProcess.c:18:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:132:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  132 |             /*5      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:134:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  134 |             /*7      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:144:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  144 |             /*5      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbResourceCoordinationProcess.c:358:37: warning: variable ‘subHeightCMinus1’ set but not used [-Wunused-but-set-variable]
+  358 |     EB_U32                          subHeightCMinus1 = 1;
+      |                                     ^~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:146:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  146 |             /*7      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbPictureDecisionProcess.c:18:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:132:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  132 |             /*5      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:134:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  134 |             /*7      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:144:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  144 |             /*5      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:146:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  146 |             /*7      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbPictureControlSet.c: In function ‘PictureControlSetCtor’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbPictureControlSet.c:147:18: warning: unused variable ‘return_error’ [-Wunused-variable]
+  147 |     EB_ERRORTYPE return_error = EB_ErrorNone;
+      |                  ^~~~~~~~~~~~
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbMotionEstimation.c:15:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:132:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  132 |             /*5      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:134:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  134 |             /*7      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:144:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  144 |             /*5      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:146:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  146 |             /*7      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+[ 86%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbPredictionStructure.c.o
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbEncHandle.c: In function ‘LoadDefaultBufferConfigurationSettings’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbEncHandle.c:1673:12: warning: unused variable ‘tileColCount’ [-Wunused-variable]
+ 1673 |     EB_U16 tileColCount = sequenceControlSetPtr->staticConfig.tileColumnCount;
+      |            ^~~~~~~~~~~~
+[ 86%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbProductCodingLoop.c.o
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbCodingLoop.c:20:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:132:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  132 |             /*5      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:134:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  134 |             /*7      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:144:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  144 |             /*5      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:146:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  146 |             /*7      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbPictureOperators.c:14:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:132:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  132 |             /*5      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:134:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  134 |             /*7      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:144:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  144 |             /*5      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:146:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  146 |             /*7      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbModeDecision.c:20:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:132:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  132 |             /*5      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:134:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  134 |             /*7      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:144:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  144 |             /*5      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:146:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  146 |             /*7      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+[ 87%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbSampleAdaptiveOffsetGenerationDecision.c.o
+[ 89%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbRateDistortionCost.c.o
+[ 89%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbTransforms.c.o
+[ 89%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbRateControlTables.c.o
+[ 91%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbSei.c.o
+[ 91%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbString.c.o
+[ 91%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbTransQuantBuffers.c.o
+[ 93%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbUtility.c.o
+[ 93%] Building C object Source/Lib/Codec/CMakeFiles/SvtHevcEnc.dir/EbUnPackProcess.c.o
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbProductCodingLoop.c:20:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:132:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  132 |             /*5      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:134:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  134 |             /*7      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:144:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  144 |             /*5      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbComputeSAD.h:146:29: warning: cast between incompatible function types from ‘void (*)()’ to ‘EB_U32 (*)(EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U8 *, EB_U32,  EB_U32,  EB_U32)’ {aka ‘unsigned int (*)(unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned char *, unsigned int,  unsigned int,  unsigned int)’} [-Wcast-function-type]
+  146 |             /*7      */     (EB_SADAVGKERNELNxM_TYPE)NxMSadKernelVoidFunc,
+      |                             ^
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbUnPackProcess.c: In function ‘UnPackCreator’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbUnPackProcess.c:34:14: warning: unused parameter ‘objectInitDataPtr’ [-Wunused-parameter]
+   34 |     EB_PTR   objectInitDataPtr)
+      |     ~~~~~~~~~^~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbProductCodingLoop.c: In function ‘PerformIntra4x4Search’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbProductCodingLoop.c:2855:21: warning: ‘PictureFastDistortion’ accessing 16 bytes in a region of size 8 [-Wstringop-overflow=]
+ 2855 |                     PictureFastDistortion(
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+ 2856 |                         inputPicturePtr,
+      |                         ~~~~~~~~~~~~~~~~
+ 2857 |                         inputOriginIndex,
+      |                         ~~~~~~~~~~~~~~~~~
+ 2858 |                         inputChromaOriginIndex,
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~
+ 2859 |                         candidateBuffer->predictionPtr,
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2860 |                         puOriginIndex,
+      |                         ~~~~~~~~~~~~~~
+ 2861 |                         puChromaOriginIndex,
+      |                         ~~~~~~~~~~~~~~~~~~~~
+ 2862 |                         MIN_PU_SIZE,
+      |                         ~~~~~~~~~~~~
+ 2863 |                         PICTURE_BUFFER_DESC_FULL_MASK,
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2864 |                         &lumaFastDistortion,
+      |                         ~~~~~~~~~~~~~~~~~~~~
+ 2865 |                         &chromaFastDistortion);
+      |                         ~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbProductCodingLoop.c:2855:21: note: referencing argument 9 of type ‘EB_U64[2]’ {aka ‘long unsigned int[2]’}
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbProductCodingLoop.c:2855:21: warning: ‘PictureFastDistortion’ accessing 16 bytes in a region of size 8 [-Wstringop-overflow=]
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbProductCodingLoop.c:2855:21: note: referencing argument 10 of type ‘EB_U64[2]’ {aka ‘long unsigned int[2]’}
+In file included from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbModeDecision.h:18,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbIntraPrediction.h:21,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbRateDistortionCost.h:13,
+                 from /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbProductCodingLoop.c:12:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbPictureOperators.h:55:21: note: in a call to function ‘PictureFastDistortion’
+   55 | extern EB_ERRORTYPE PictureFastDistortion(
+      |                     ^~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbProductCodingLoop.c:2878:21: warning: ‘PictureFastDistortion’ accessing 16 bytes in a region of size 8 [-Wstringop-overflow=]
+ 2878 |                     PictureFastDistortion(
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+ 2879 |                         inputPicturePtr,
+      |                         ~~~~~~~~~~~~~~~~
+ 2880 |                         inputOriginIndex,
+      |                         ~~~~~~~~~~~~~~~~~
+ 2881 |                         0,
+      |                         ~~
+ 2882 |                         candidateBuffer->predictionPtr,
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2883 |                         puOriginIndex,
+      |                         ~~~~~~~~~~~~~~
+ 2884 |                         0,
+      |                         ~~
+ 2885 |                         MIN_PU_SIZE,
+      |                         ~~~~~~~~~~~~
+ 2886 |                         PICTURE_BUFFER_DESC_LUMA_MASK,
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2887 |                         &lumaFastDistortion,
+      |                         ~~~~~~~~~~~~~~~~~~~~
+ 2888 |                         NULL);
+      |                         ~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbProductCodingLoop.c:2878:21: note: referencing argument 9 of type ‘EB_U64[2]’ {aka ‘long unsigned int[2]’}
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbProductCodingLoop.c:2878:21: note: referencing argument 10 of type ‘EB_U64[2]’ {aka ‘long unsigned int[2]’}
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbPictureOperators.h:55:21: note: in a call to function ‘PictureFastDistortion’
+   55 | extern EB_ERRORTYPE PictureFastDistortion(
+      |                     ^~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbSampleAdaptiveOffsetGenerationDecision.c: In function ‘SaoGenerationDecision’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbSampleAdaptiveOffsetGenerationDecision.c:754:9: warning: ‘TestSaoCopyModes’ accessing 240 bytes in a region of size 80 [-Wstringop-overflow=]
+  754 |         TestSaoCopyModes(
+      |         ^~~~~~~~~~~~~~~~~
+  755 |             saoStats->boDiff,
+      |             ~~~~~~~~~~~~~~~~~
+  756 |             saoStats->boCount,
+      |             ~~~~~~~~~~~~~~~~~~
+  757 |             saoStats->eoDiff,
+      |             ~~~~~~~~~~~~~~~~~
+  758 |             saoStats->eoCount,
+      |             ~~~~~~~~~~~~~~~~~~
+  759 |             saoPtr,
+      |             ~~~~~~~
+  760 |             leftSaoPtr,
+      |             ~~~~~~~~~~~
+  761 |             upSaoPtr,
+      |             ~~~~~~~~~
+  762 |             fullLambda,
+      |             ~~~~~~~~~~~
+  763 |             mdRateEstimationPtr,
+      |             ~~~~~~~~~~~~~~~~~~~~
+  764 |             saoLumaBestCost,
+      |             ~~~~~~~~~~~~~~~~
+  765 |             saoChromaBestCost,
+      |             ~~~~~~~~~~~~~~~~~~
+  766 |             EB_FALSE);
+      |             ~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbSampleAdaptiveOffsetGenerationDecision.c:754:9: note: referencing argument 3 of type ‘EB_S32[3][4][5]’ {aka ‘int[3][4][5]’}
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbSampleAdaptiveOffsetGenerationDecision.c:754:9: warning: ‘TestSaoCopyModes’ accessing 120 bytes in a region of size 40 [-Wstringop-overflow=]
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbSampleAdaptiveOffsetGenerationDecision.c:754:9: note: referencing argument 4 of type ‘EB_U16[3][4][5]’ {aka ‘short unsigned int[3][4][5]’}
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbSampleAdaptiveOffsetGenerationDecision.c:437:13: note: in a call to function ‘TestSaoCopyModes’
+  437 | static void TestSaoCopyModes(
+      |             ^~~~~~~~~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbSampleAdaptiveOffsetGenerationDecision.c: In function ‘SaoGenerationDecision16bit’:
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbSampleAdaptiveOffsetGenerationDecision.c:1047:17: warning: ‘TestSaoCopyModes’ accessing 240 bytes in a region of size 80 [-Wstringop-overflow=]
+ 1047 |                 TestSaoCopyModes(
+      |                 ^~~~~~~~~~~~~~~~~
+ 1048 |                         saoStats->boDiff,
+      |                         ~~~~~~~~~~~~~~~~~
+ 1049 |                         saoStats->boCount,
+      |                         ~~~~~~~~~~~~~~~~~~
+ 1050 |                         saoStats->eoDiff,
+      |                         ~~~~~~~~~~~~~~~~~
+ 1051 |                         saoStats->eoCount,
+      |                         ~~~~~~~~~~~~~~~~~~
+ 1052 |                         saoPtr,
+      |                         ~~~~~~~
+ 1053 |                         leftSaoPtr,
+      |                         ~~~~~~~~~~~
+ 1054 |                         upSaoPtr,
+      |                         ~~~~~~~~~
+ 1055 |                         fullLambda,
+      |                         ~~~~~~~~~~~
+ 1056 |                         mdRateEstimationPtr,
+      |                         ~~~~~~~~~~~~~~~~~~~~
+ 1057 |                         saoLumaBestCost,
+      |                         ~~~~~~~~~~~~~~~~
+ 1058 |                         saoChromaBestCost,
+      |                         ~~~~~~~~~~~~~~~~~~
+ 1059 |                         EB_TRUE);
+      |                         ~~~~~~~~
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbSampleAdaptiveOffsetGenerationDecision.c:1047:17: note: referencing argument 3 of type ‘EB_S32[3][4][5]’ {aka ‘int[3][4][5]’}
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbSampleAdaptiveOffsetGenerationDecision.c:1047:17: warning: ‘TestSaoCopyModes’ accessing 120 bytes in a region of size 40 [-Wstringop-overflow=]
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbSampleAdaptiveOffsetGenerationDecision.c:1047:17: note: referencing argument 4 of type ‘EB_U16[3][4][5]’ {aka ‘short unsigned int[3][4][5]’}
+/home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Source/Lib/Codec/EbSampleAdaptiveOffsetGenerationDecision.c:437:13: note: in a call to function ‘TestSaoCopyModes’
+  437 | static void TestSaoCopyModes(
+      |             ^~~~~~~~~~~~~~~~
+[ 94%] Linking C shared library /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Bin/Release/libSvtHevcEnc.so
+[ 94%] Built target SvtHevcEnc
+[ 94%] Building C object Source/App/CMakeFiles/SvtHevcEncApp.dir/EbAppConfig.c.o
+[ 95%] Building C object Source/App/CMakeFiles/SvtHevcEncApp.dir/EbAppContext.c.o
+[ 97%] Building C object Source/App/CMakeFiles/SvtHevcEncApp.dir/EbAppMain.c.o
+[ 98%] Building C object Source/App/CMakeFiles/SvtHevcEncApp.dir/EbTime.c.o
+[ 97%] Building C object Source/App/CMakeFiles/SvtHevcEncApp.dir/EbAppString.c.o
+[ 99%] Building C object Source/App/CMakeFiles/SvtHevcEncApp.dir/EbAppInputy4m.c.o
+[ 99%] Building C object Source/App/CMakeFiles/SvtHevcEncApp.dir/EbAppProcessCmd.c.o
+[100%] Linking C executable /home/ubuntu/.phoronix-test-suite/installed-tests/pts/svt-hevc-1.2.1/SVT-HEVC-1.5.0/Bin/Release/SvtHevcEncApp
+[100%] Built target SvtHevcEncApp

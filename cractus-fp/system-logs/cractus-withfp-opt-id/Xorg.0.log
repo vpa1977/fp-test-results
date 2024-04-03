@@ -1,0 +1,1269 @@
+
+X.Org X Server 1.21.1.7
+X Protocol Version 11, Revision 0
+Current Operating System: Linux cractus 6.5.0-9-generic #9-Ubuntu SMP PREEMPT_DYNAMIC Wed Jan 31 04:44:51 UTC 2024 x86_64
+Kernel command line: BOOT_IMAGE=/boot/vmlinuz-6.5.0-9-generic root=UUID=28c10f60-e85e-47fc-83fe-19d395553500 ro
+xorg-server 2:21.1.7-3ubuntu2 (For technical support please see http://www.ubuntu.com/support) 
+Current version of pixman: 0.42.2
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Wed Feb 21 06:48:24 2024
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+(==) No Layout section.  Using the first Screen section.
+(==) No screen section available. Using defaults.
+(**) |-->Screen "Default Screen Section" (0)
+(**) |   |-->Monitor "<default monitor>"
+(==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+(==) Automatically adding devices
+(==) Automatically enabling devices
+(==) Automatically adding GPU devices
+(==) Automatically binding GPU devices
+(==) Max clients allowed: 256, resource mask: 0x1fffff
+(WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+	Entry deleted from font path.
+(WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+	Entry deleted from font path.
+(WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+	Entry deleted from font path.
+(WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+	Entry deleted from font path.
+(WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+	Entry deleted from font path.
+(==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/Type1,
+	built-ins
+(==) ModulePath set to "/usr/lib/xorg/modules"
+(II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+(II) Loader magic: 0x55fbe3836020
+(II) Module ABI versions:
+	X.Org ANSI C Emulation: 0.4
+	X.Org Video Driver: 25.2
+	X.Org XInput driver : 24.4
+	X.Org Server Extension : 10.0
+(++) using VT number 7
+
+(II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+(--) PCI:*(3@0:0:0) 102b:0522:1137:0101 rev 66, Mem @ 0x9b000000/16777216, 0x9c810000/16384, 0x9c000000/8388608, BIOS @ 0x????????/131072
+(II) LoadModule: "glx"
+(II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+(II) Module glx: vendor="X.Org Foundation"
+	compiled for 1.21.1.7, module version = 1.0.0
+	ABI class: X.Org Server Extension, version 10.0
+(==) Matched mga as autoconfigured driver 0
+(==) Matched modesetting as autoconfigured driver 1
+(==) Matched fbdev as autoconfigured driver 2
+(==) Matched vesa as autoconfigured driver 3
+(==) Assigned the driver to the xf86ConfigLayout
+(II) LoadModule: "mga"
+(WW) Warning, couldn't open module mga
+(EE) Failed to load module "mga" (module does not exist, 0)
+(II) LoadModule: "modesetting"
+(II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+(II) Module modesetting: vendor="X.Org Foundation"
+	compiled for 1.21.1.7, module version = 1.21.1
+	Module class: X.Org Video Driver
+	ABI class: X.Org Video Driver, version 25.2
+(II) LoadModule: "fbdev"
+(II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+(II) Module fbdev: vendor="X.Org Foundation"
+	compiled for 1.21.1.7, module version = 0.5.0
+	Module class: X.Org Video Driver
+	ABI class: X.Org Video Driver, version 25.2
+(II) LoadModule: "vesa"
+(II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+(II) Module vesa: vendor="X.Org Foundation"
+	compiled for 1.21.1.7, module version = 2.5.0
+	Module class: X.Org Video Driver
+	ABI class: X.Org Video Driver, version 25.2
+(==) Matched mga as autoconfigured driver 0
+(==) Matched modesetting as autoconfigured driver 1
+(==) Matched fbdev as autoconfigured driver 2
+(==) Matched vesa as autoconfigured driver 3
+(==) Assigned the driver to the xf86ConfigLayout
+(II) LoadModule: "mga"
+(WW) Warning, couldn't open module mga
+(EE) Failed to load module "mga" (module does not exist, 0)
+(II) LoadModule: "modesetting"
+(II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+(II) Module modesetting: vendor="X.Org Foundation"
+	compiled for 1.21.1.7, module version = 1.21.1
+	Module class: X.Org Video Driver
+	ABI class: X.Org Video Driver, version 25.2
+(II) UnloadModule: "modesetting"
+(II) Unloading modesetting
+(II) Failed to load module "modesetting" (already loaded, 0)
+(II) LoadModule: "fbdev"
+(II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+(II) Module fbdev: vendor="X.Org Foundation"
+	compiled for 1.21.1.7, module version = 0.5.0
+	Module class: X.Org Video Driver
+	ABI class: X.Org Video Driver, version 25.2
+(II) UnloadModule: "fbdev"
+(II) Unloading fbdev
+(II) Failed to load module "fbdev" (already loaded, 0)
+(II) LoadModule: "vesa"
+(II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+(II) Module vesa: vendor="X.Org Foundation"
+	compiled for 1.21.1.7, module version = 2.5.0
+	Module class: X.Org Video Driver
+	ABI class: X.Org Video Driver, version 25.2
+(II) UnloadModule: "vesa"
+(II) Unloading vesa
+(II) Failed to load module "vesa" (already loaded, 0)
+(II) modesetting: Driver for Modesetting Kernel Drivers: kms
+(II) FBDEV: driver for framebuffer: fbdev
+(II) VESA: driver for VESA chipsets: vesa
+(EE) open /dev/dri/card0: No such file or directory
+(WW) Falling back to old probe method for modesetting
+(EE) open /dev/dri/card0: No such file or directory
+(II) Loading sub module "fbdevhw"
+(II) LoadModule: "fbdevhw"
+(II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+(II) Module fbdevhw: vendor="X.Org Foundation"
+	compiled for 1.21.1.7, module version = 0.0.2
+	ABI class: X.Org Video Driver, version 25.2
+(EE) Unable to find a valid framebuffer device
+(WW) Falling back to old probe method for fbdev
+(II) Loading sub module "fbdevhw"
+(II) LoadModule: "fbdevhw"
+(II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+(II) Module fbdevhw: vendor="X.Org Foundation"
+	compiled for 1.21.1.7, module version = 0.0.2
+	ABI class: X.Org Video Driver, version 25.2
+(EE) open /dev/fb0: No such file or directory
+(EE) Screen 0 deleted because of no matching config section.
+(II) UnloadModule: "modesetting"
+(EE) Screen 0 deleted because of no matching config section.
+(II) UnloadModule: "fbdev"
+(II) UnloadSubModule: "fbdevhw"
+(II) Loading sub module "vbe"
+(II) LoadModule: "vbe"
+(II) Loading /usr/lib/xorg/modules/libint10.so
+(II) Module int10: vendor="X.Org Foundation"
+	compiled for 1.21.1.7, module version = 1.0.0
+	ABI class: X.Org Video Driver, version 25.2
+(II) Loading sub module "int10"
+(II) LoadModule: "int10"
+(II) Loading /usr/lib/xorg/modules/libint10.so
+(II) Module int10: vendor="X.Org Foundation"
+	compiled for 1.21.1.7, module version = 1.0.0
+	ABI class: X.Org Video Driver, version 25.2
+(II) VESA(0): initializing int10
+(II) VESA(0): Primary V_BIOS segment is: 0xc000
+(II) VESA(0): VESA BIOS detected
+(II) VESA(0): VESA VBE Version 3.0
+(II) VESA(0): VESA VBE Total Mem: 8128 kB
+(II) VESA(0): VESA VBE OEM: Matrox Graphics Inc.
+(II) VESA(0): VESA VBE OEM Software Rev: 4.0
+(II) VESA(0): VESA VBE OEM Vendor: Matrox
+(II) VESA(0): VESA VBE OEM Product: MGA-G200
+(II) VESA(0): VESA VBE OEM Product Rev: 00
+(II) VESA(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+(==) VESA(0): Depth 24, (--) framebuffer bpp 32
+(==) VESA(0): RGB weight 888
+(==) VESA(0): Default visual is TrueColor
+(==) VESA(0): Using gamma correction (1.0, 1.0, 1.0)
+(II) Loading sub module "ddc"
+(II) LoadModule: "ddc"
+(II) Module "ddc" already built-in
+(II) VESA(0): VESA VBE DDC supported
+(II) VESA(0): VESA VBE DDC Level none
+(II) VESA(0): VESA VBE DDC transfer in appr. 0 sec.
+(II) VESA(0): VESA VBE DDC read failed
+(II) VESA(0): VESA VBE PanelID invalid
+(II) VESA(0): Searching for matching VESA mode(s):
+Mode: 101 (640x480)
+	ModeAttributes: 0x9b
+	WinAAttributes: 0x7
+	WinBAttributes: 0x0
+	WinGranularity: 64
+	WinSize: 64
+	WinASegment: 0xa000
+	WinBSegment: 0x0
+	WinFuncPtr: 0xc0005cb9
+	BytesPerScanline: 640
+	XResolution: 640
+	YResolution: 480
+	XCharSize: 8
+	YCharSize: 16
+	NumberOfPlanes: 1
+	BitsPerPixel: 8
+	NumberOfBanks: 1
+	MemoryModel: 4
+	BankSize: 0
+	NumberOfImages: 24
+	RedMaskSize: 0
+	RedFieldPosition: 0
+	GreenMaskSize: 0
+	GreenFieldPosition: 0
+	BlueMaskSize: 0
+	BlueFieldPosition: 0
+	RsvdMaskSize: 0
+	RsvdFieldPosition: 0
+	DirectColorModeInfo: 0
+	PhysBasePtr: 0x9b000000
+	LinBytesPerScanLine: 640
+	BnkNumberOfImagePages: 24
+	LinNumberOfImagePages: 24
+	LinRedMaskSize: 0
+	LinRedFieldPosition: 0
+	LinGreenMaskSize: 0
+	LinGreenFieldPosition: 0
+	LinBlueMaskSize: 0
+	LinBlueFieldPosition: 0
+	LinRsvdMaskSize: 0
+	LinRsvdFieldPosition: 0
+	MaxPixelClock: 218000000
+Mode: 110 (640x480)
+	ModeAttributes: 0x9b
+	WinAAttributes: 0x7
+	WinBAttributes: 0x0
+	WinGranularity: 64
+	WinSize: 64
+	WinASegment: 0xa000
+	WinBSegment: 0x0
+	WinFuncPtr: 0xc0005cb9
+	BytesPerScanline: 1280
+	XResolution: 640
+	YResolution: 480
+	XCharSize: 8
+	YCharSize: 16
+	NumberOfPlanes: 1
+	BitsPerPixel: 16
+	NumberOfBanks: 1
+	MemoryModel: 6
+	BankSize: 0
+	NumberOfImages: 11
+	RedMaskSize: 5
+	RedFieldPosition: 10
+	GreenMaskSize: 5
+	GreenFieldPosition: 5
+	BlueMaskSize: 5
+	BlueFieldPosition: 0
+	RsvdMaskSize: 1
+	RsvdFieldPosition: 15
+	DirectColorModeInfo: 1
+	PhysBasePtr: 0x9b000000
+	LinBytesPerScanLine: 1280
+	BnkNumberOfImagePages: 11
+	LinNumberOfImagePages: 11
+	LinRedMaskSize: 5
+	LinRedFieldPosition: 10
+	LinGreenMaskSize: 5
+	LinGreenFieldPosition: 5
+	LinBlueMaskSize: 5
+	LinBlueFieldPosition: 0
+	LinRsvdMaskSize: 1
+	LinRsvdFieldPosition: 15
+	MaxPixelClock: 218000000
+Mode: 111 (640x480)
+	ModeAttributes: 0x9b
+	WinAAttributes: 0x7
+	WinBAttributes: 0x0
+	WinGranularity: 64
+	WinSize: 64
+	WinASegment: 0xa000
+	WinBSegment: 0x0
+	WinFuncPtr: 0xc0005cb9
+	BytesPerScanline: 1280
+	XResolution: 640
+	YResolution: 480
+	XCharSize: 8
+	YCharSize: 16
+	NumberOfPlanes: 1
+	BitsPerPixel: 16
+	NumberOfBanks: 1
+	MemoryModel: 6
+	BankSize: 0
+	NumberOfImages: 11
+	RedMaskSize: 5
+	RedFieldPosition: 11
+	GreenMaskSize: 6
+	GreenFieldPosition: 5
+	BlueMaskSize: 5
+	BlueFieldPosition: 0
+	RsvdMaskSize: 0
+	RsvdFieldPosition: 0
+	DirectColorModeInfo: 1
+	PhysBasePtr: 0x9b000000
+	LinBytesPerScanLine: 1280
+	BnkNumberOfImagePages: 11
+	LinNumberOfImagePages: 11
+	LinRedMaskSize: 5
+	LinRedFieldPosition: 11
+	LinGreenMaskSize: 6
+	LinGreenFieldPosition: 5
+	LinBlueMaskSize: 5
+	LinBlueFieldPosition: 0
+	LinRsvdMaskSize: 0
+	LinRsvdFieldPosition: 0
+	MaxPixelClock: 218000000
+*Mode: 112 (640x480)
+	ModeAttributes: 0x9b
+	WinAAttributes: 0x7
+	WinBAttributes: 0x0
+	WinGranularity: 64
+	WinSize: 64
+	WinASegment: 0xa000
+	WinBSegment: 0x0
+	WinFuncPtr: 0xc0005cb9
+	BytesPerScanline: 2560
+	XResolution: 640
+	YResolution: 480
+	XCharSize: 8
+	YCharSize: 16
+	NumberOfPlanes: 1
+	BitsPerPixel: 32
+	NumberOfBanks: 1
+	MemoryModel: 6
+	BankSize: 0
+	NumberOfImages: 5
+	RedMaskSize: 8
+	RedFieldPosition: 16
+	GreenMaskSize: 8
+	GreenFieldPosition: 8
+	BlueMaskSize: 8
+	BlueFieldPosition: 0
+	RsvdMaskSize: 8
+	RsvdFieldPosition: 24
+	DirectColorModeInfo: 1
+	PhysBasePtr: 0x9b000000
+	LinBytesPerScanLine: 2560
+	BnkNumberOfImagePages: 5
+	LinNumberOfImagePages: 5
+	LinRedMaskSize: 8
+	LinRedFieldPosition: 16
+	LinGreenMaskSize: 8
+	LinGreenFieldPosition: 8
+	LinBlueMaskSize: 8
+	LinBlueFieldPosition: 0
+	LinRsvdMaskSize: 8
+	LinRsvdFieldPosition: 24
+	MaxPixelClock: 218000000
+Mode: 100 (640x400)
+	ModeAttributes: 0x9b
+	WinAAttributes: 0x7
+	WinBAttributes: 0x0
+	WinGranularity: 64
+	WinSize: 64
+	WinASegment: 0xa000
+	WinBSegment: 0x0
+	WinFuncPtr: 0xc0005cb9
+	BytesPerScanline: 640
+	XResolution: 640
+	YResolution: 400
+	XCharSize: 8
+	YCharSize: 16
+	NumberOfPlanes: 1
+	BitsPerPixel: 8
+	NumberOfBanks: 1
+	MemoryModel: 4
+	BankSize: 0
+	NumberOfImages: 30
+	RedMaskSize: 0
+	RedFieldPosition: 0
+	GreenMaskSize: 0
+	GreenFieldPosition: 0
+	BlueMaskSize: 0
+	BlueFieldPosition: 0
+	RsvdMaskSize: 0
+	RsvdFieldPosition: 0
+	DirectColorModeInfo: 0
+	PhysBasePtr: 0x9b000000
+	LinBytesPerScanLine: 640
+	BnkNumberOfImagePages: 30
+	LinNumberOfImagePages: 30
+	LinRedMaskSize: 0
+	LinRedFieldPosition: 0
+	LinGreenMaskSize: 0
+	LinGreenFieldPosition: 0
+	LinBlueMaskSize: 0
+	LinBlueFieldPosition: 0
+	LinRsvdMaskSize: 0
+	LinRsvdFieldPosition: 0
+	MaxPixelClock: 218000000
+Mode: 102 (800x600)
+	ModeAttributes: 0x1b
+	WinAAttributes: 0x7
+	WinBAttributes: 0x0
+	WinGranularity: 64
+	WinSize: 64
+	WinASegment: 0xa000
+	WinBSegment: 0x0
+	WinFuncPtr: 0xc0005cb9
+	BytesPerScanline: 100
+	XResolution: 800
+	YResolution: 600
+	XCharSize: 8
+	YCharSize: 14
+	NumberOfPlanes: 4
+	BitsPerPixel: 4
+	NumberOfBanks: 1
+	MemoryModel: 3
+	BankSize: 0
+	NumberOfImages: 0
+	RedMaskSize: 0
+	RedFieldPosition: 0
+	GreenMaskSize: 0
+	GreenFieldPosition: 0
+	BlueMaskSize: 0
+	BlueFieldPosition: 0
+	RsvdMaskSize: 0
+	RsvdFieldPosition: 0
+	DirectColorModeInfo: 0
+	PhysBasePtr: 0x0
+	LinBytesPerScanLine: 0
+	BnkNumberOfImagePages: 0
+	LinNumberOfImagePages: 0
+	LinRedMaskSize: 0
+	LinRedFieldPosition: 0
+	LinGreenMaskSize: 0
+	LinGreenFieldPosition: 0
+	LinBlueMaskSize: 0
+	LinBlueFieldPosition: 0
+	LinRsvdMaskSize: 0
+	LinRsvdFieldPosition: 0
+	MaxPixelClock: 218000000
+Mode: 103 (800x600)
+	ModeAttributes: 0x9b
+	WinAAttributes: 0x7
+	WinBAttributes: 0x0
+	WinGranularity: 64
+	WinSize: 64
+	WinASegment: 0xa000
+	WinBSegment: 0x0
+	WinFuncPtr: 0xc0005cb9
+	BytesPerScanline: 800
+	XResolution: 800
+	YResolution: 600
+	XCharSize: 8
+	YCharSize: 16
+	NumberOfPlanes: 1
+	BitsPerPixel: 8
+	NumberOfBanks: 1
+	MemoryModel: 4
+	BankSize: 0
+	NumberOfImages: 14
+	RedMaskSize: 0
+	RedFieldPosition: 0
+	GreenMaskSize: 0
+	GreenFieldPosition: 0
+	BlueMaskSize: 0
+	BlueFieldPosition: 0
+	RsvdMaskSize: 0
+	RsvdFieldPosition: 0
+	DirectColorModeInfo: 0
+	PhysBasePtr: 0x9b000000
+	LinBytesPerScanLine: 800
+	BnkNumberOfImagePages: 14
+	LinNumberOfImagePages: 14
+	LinRedMaskSize: 0
+	LinRedFieldPosition: 0
+	LinGreenMaskSize: 0
+	LinGreenFieldPosition: 0
+	LinBlueMaskSize: 0
+	LinBlueFieldPosition: 0
+	LinRsvdMaskSize: 0
+	LinRsvdFieldPosition: 0
+	MaxPixelClock: 218000000
+Mode: 113 (800x600)
+	ModeAttributes: 0x9b
+	WinAAttributes: 0x7
+	WinBAttributes: 0x0
+	WinGranularity: 64
+	WinSize: 64
+	WinASegment: 0xa000
+	WinBSegment: 0x0
+	WinFuncPtr: 0xc0005cb9
+	BytesPerScanline: 1600
+	XResolution: 800
+	YResolution: 600
+	XCharSize: 8
+	YCharSize: 16
+	NumberOfPlanes: 1
+	BitsPerPixel: 16
+	NumberOfBanks: 1
+	MemoryModel: 6
+	BankSize: 0
+	NumberOfImages: 7
+	RedMaskSize: 5
+	RedFieldPosition: 10
+	GreenMaskSize: 5
+	GreenFieldPosition: 5
+	BlueMaskSize: 5
+	BlueFieldPosition: 0
+	RsvdMaskSize: 1
+	RsvdFieldPosition: 15
+	DirectColorModeInfo: 1
+	PhysBasePtr: 0x9b000000
+	LinBytesPerScanLine: 1600
+	BnkNumberOfImagePages: 7
+	LinNumberOfImagePages: 7
+	LinRedMaskSize: 5
+	LinRedFieldPosition: 10
+	LinGreenMaskSize: 5
+	LinGreenFieldPosition: 5
+	LinBlueMaskSize: 5
+	LinBlueFieldPosition: 0
+	LinRsvdMaskSize: 1
+	LinRsvdFieldPosition: 15
+	MaxPixelClock: 218000000
+Mode: 114 (800x600)
+	ModeAttributes: 0x9b
+	WinAAttributes: 0x7
+	WinBAttributes: 0x0
+	WinGranularity: 64
+	WinSize: 64
+	WinASegment: 0xa000
+	WinBSegment: 0x0
+	WinFuncPtr: 0xc0005cb9
+	BytesPerScanline: 1600
+	XResolution: 800
+	YResolution: 600
+	XCharSize: 8
+	YCharSize: 16
+	NumberOfPlanes: 1
+	BitsPerPixel: 16
+	NumberOfBanks: 1
+	MemoryModel: 6
+	BankSize: 0
+	NumberOfImages: 7
+	RedMaskSize: 5
+	RedFieldPosition: 11
+	GreenMaskSize: 6
+	GreenFieldPosition: 5
+	BlueMaskSize: 5
+	BlueFieldPosition: 0
+	RsvdMaskSize: 0
+	RsvdFieldPosition: 0
+	DirectColorModeInfo: 1
+	PhysBasePtr: 0x9b000000
+	LinBytesPerScanLine: 1600
+	BnkNumberOfImagePages: 7
+	LinNumberOfImagePages: 7
+	LinRedMaskSize: 5
+	LinRedFieldPosition: 11
+	LinGreenMaskSize: 6
+	LinGreenFieldPosition: 5
+	LinBlueMaskSize: 5
+	LinBlueFieldPosition: 0
+	LinRsvdMaskSize: 0
+	LinRsvdFieldPosition: 0
+	MaxPixelClock: 218000000
+*Mode: 115 (800x600)
+	ModeAttributes: 0x9b
+	WinAAttributes: 0x7
+	WinBAttributes: 0x0
+	WinGranularity: 64
+	WinSize: 64
+	WinASegment: 0xa000
+	WinBSegment: 0x0
+	WinFuncPtr: 0xc0005cb9
+	BytesPerScanline: 3200
+	XResolution: 800
+	YResolution: 600
+	XCharSize: 8
+	YCharSize: 16
+	NumberOfPlanes: 1
+	BitsPerPixel: 32
+	NumberOfBanks: 1
+	MemoryModel: 6
+	BankSize: 0
+	NumberOfImages: 3
+	RedMaskSize: 8
+	RedFieldPosition: 16
+	GreenMaskSize: 8
+	GreenFieldPosition: 8
+	BlueMaskSize: 8
+	BlueFieldPosition: 0
+	RsvdMaskSize: 8
+	RsvdFieldPosition: 24
+	DirectColorModeInfo: 1
+	PhysBasePtr: 0x9b000000
+	LinBytesPerScanLine: 3200
+	BnkNumberOfImagePages: 3
+	LinNumberOfImagePages: 3
+	LinRedMaskSize: 8
+	LinRedFieldPosition: 16
+	LinGreenMaskSize: 8
+	LinGreenFieldPosition: 8
+	LinBlueMaskSize: 8
+	LinBlueFieldPosition: 0
+	LinRsvdMaskSize: 8
+	LinRsvdFieldPosition: 24
+	MaxPixelClock: 218000000
+Mode: 105 (1024x768)
+	ModeAttributes: 0x9b
+	WinAAttributes: 0x7
+	WinBAttributes: 0x0
+	WinGranularity: 64
+	WinSize: 64
+	WinASegment: 0xa000
+	WinBSegment: 0x0
+	WinFuncPtr: 0xc0005cb9
+	BytesPerScanline: 1024
+	XResolution: 1024
+	YResolution: 768
+	XCharSize: 8
+	YCharSize: 16
+	NumberOfPlanes: 1
+	BitsPerPixel: 8
+	NumberOfBanks: 1
+	MemoryModel: 4
+	BankSize: 0
+	NumberOfImages: 8
+	RedMaskSize: 0
+	RedFieldPosition: 0
+	GreenMaskSize: 0
+	GreenFieldPosition: 0
+	BlueMaskSize: 0
+	BlueFieldPosition: 0
+	RsvdMaskSize: 0
+	RsvdFieldPosition: 0
+	DirectColorModeInfo: 0
+	PhysBasePtr: 0x9b000000
+	LinBytesPerScanLine: 1024
+	BnkNumberOfImagePages: 8
+	LinNumberOfImagePages: 8
+	LinRedMaskSize: 0
+	LinRedFieldPosition: 0
+	LinGreenMaskSize: 0
+	LinGreenFieldPosition: 0
+	LinBlueMaskSize: 0
+	LinBlueFieldPosition: 0
+	LinRsvdMaskSize: 0
+	LinRsvdFieldPosition: 0
+	MaxPixelClock: 218000000
+Mode: 116 (1024x768)
+	ModeAttributes: 0x9b
+	WinAAttributes: 0x7
+	WinBAttributes: 0x0
+	WinGranularity: 64
+	WinSize: 64
+	WinASegment: 0xa000
+	WinBSegment: 0x0
+	WinFuncPtr: 0xc0005cb9
+	BytesPerScanline: 2048
+	XResolution: 1024
+	YResolution: 768
+	XCharSize: 8
+	YCharSize: 16
+	NumberOfPlanes: 1
+	BitsPerPixel: 16
+	NumberOfBanks: 1
+	MemoryModel: 6
+	BankSize: 0
+	NumberOfImages: 4
+	RedMaskSize: 5
+	RedFieldPosition: 10
+	GreenMaskSize: 5
+	GreenFieldPosition: 5
+	BlueMaskSize: 5
+	BlueFieldPosition: 0
+	RsvdMaskSize: 1
+	RsvdFieldPosition: 15
+	DirectColorModeInfo: 1
+	PhysBasePtr: 0x9b000000
+	LinBytesPerScanLine: 2048
+	BnkNumberOfImagePages: 4
+	LinNumberOfImagePages: 4
+	LinRedMaskSize: 5
+	LinRedFieldPosition: 10
+	LinGreenMaskSize: 5
+	LinGreenFieldPosition: 5
+	LinBlueMaskSize: 5
+	LinBlueFieldPosition: 0
+	LinRsvdMaskSize: 1
+	LinRsvdFieldPosition: 15
+	MaxPixelClock: 218000000
+Mode: 117 (1024x768)
+	ModeAttributes: 0x9b
+	WinAAttributes: 0x7
+	WinBAttributes: 0x0
+	WinGranularity: 64
+	WinSize: 64
+	WinASegment: 0xa000
+	WinBSegment: 0x0
+	WinFuncPtr: 0xc0005cb9
+	BytesPerScanline: 2048
+	XResolution: 1024
+	YResolution: 768
+	XCharSize: 8
+	YCharSize: 16
+	NumberOfPlanes: 1
+	BitsPerPixel: 16
+	NumberOfBanks: 1
+	MemoryModel: 6
+	BankSize: 0
+	NumberOfImages: 4
+	RedMaskSize: 5
+	RedFieldPosition: 11
+	GreenMaskSize: 6
+	GreenFieldPosition: 5
+	BlueMaskSize: 5
+	BlueFieldPosition: 0
+	RsvdMaskSize: 0
+	RsvdFieldPosition: 0
+	DirectColorModeInfo: 1
+	PhysBasePtr: 0x9b000000
+	LinBytesPerScanLine: 2048
+	BnkNumberOfImagePages: 4
+	LinNumberOfImagePages: 4
+	LinRedMaskSize: 5
+	LinRedFieldPosition: 11
+	LinGreenMaskSize: 6
+	LinGreenFieldPosition: 5
+	LinBlueMaskSize: 5
+	LinBlueFieldPosition: 0
+	LinRsvdMaskSize: 0
+	LinRsvdFieldPosition: 0
+	MaxPixelClock: 218000000
+*Mode: 118 (1024x768)
+	ModeAttributes: 0x9b
+	WinAAttributes: 0x7
+	WinBAttributes: 0x0
+	WinGranularity: 64
+	WinSize: 64
+	WinASegment: 0xa000
+	WinBSegment: 0x0
+	WinFuncPtr: 0xc0005cb9
+	BytesPerScanline: 4096
+	XResolution: 1024
+	YResolution: 768
+	XCharSize: 8
+	YCharSize: 16
+	NumberOfPlanes: 1
+	BitsPerPixel: 32
+	NumberOfBanks: 1
+	MemoryModel: 6
+	BankSize: 0
+	NumberOfImages: 1
+	RedMaskSize: 8
+	RedFieldPosition: 16
+	GreenMaskSize: 8
+	GreenFieldPosition: 8
+	BlueMaskSize: 8
+	BlueFieldPosition: 0
+	RsvdMaskSize: 8
+	RsvdFieldPosition: 24
+	DirectColorModeInfo: 1
+	PhysBasePtr: 0x9b000000
+	LinBytesPerScanLine: 4096
+	BnkNumberOfImagePages: 1
+	LinNumberOfImagePages: 1
+	LinRedMaskSize: 8
+	LinRedFieldPosition: 16
+	LinGreenMaskSize: 8
+	LinGreenFieldPosition: 8
+	LinBlueMaskSize: 8
+	LinBlueFieldPosition: 0
+	LinRsvdMaskSize: 8
+	LinRsvdFieldPosition: 24
+	MaxPixelClock: 218000000
+Mode: 107 (1280x1024)
+	ModeAttributes: 0x9b
+	WinAAttributes: 0x7
+	WinBAttributes: 0x0
+	WinGranularity: 64
+	WinSize: 64
+	WinASegment: 0xa000
+	WinBSegment: 0x0
+	WinFuncPtr: 0xc0005cb9
+	BytesPerScanline: 1280
+	XResolution: 1280
+	YResolution: 1024
+	XCharSize: 8
+	YCharSize: 16
+	NumberOfPlanes: 1
+	BitsPerPixel: 8
+	NumberOfBanks: 1
+	MemoryModel: 4
+	BankSize: 0
+	NumberOfImages: 5
+	RedMaskSize: 0
+	RedFieldPosition: 0
+	GreenMaskSize: 0
+	GreenFieldPosition: 0
+	BlueMaskSize: 0
+	BlueFieldPosition: 0
+	RsvdMaskSize: 0
+	RsvdFieldPosition: 0
+	DirectColorModeInfo: 0
+	PhysBasePtr: 0x9b000000
+	LinBytesPerScanLine: 1280
+	BnkNumberOfImagePages: 5
+	LinNumberOfImagePages: 5
+	LinRedMaskSize: 0
+	LinRedFieldPosition: 0
+	LinGreenMaskSize: 0
+	LinGreenFieldPosition: 0
+	LinBlueMaskSize: 0
+	LinBlueFieldPosition: 0
+	LinRsvdMaskSize: 0
+	LinRsvdFieldPosition: 0
+	MaxPixelClock: 218000000
+Mode: 119 (1280x1024)
+	ModeAttributes: 0x9b
+	WinAAttributes: 0x7
+	WinBAttributes: 0x0
+	WinGranularity: 64
+	WinSize: 64
+	WinASegment: 0xa000
+	WinBSegment: 0x0
+	WinFuncPtr: 0xc0005cb9
+	BytesPerScanline: 2560
+	XResolution: 1280
+	YResolution: 1024
+	XCharSize: 8
+	YCharSize: 16
+	NumberOfPlanes: 1
+	BitsPerPixel: 16
+	NumberOfBanks: 1
+	MemoryModel: 6
+	BankSize: 0
+	NumberOfImages: 2
+	RedMaskSize: 5
+	RedFieldPosition: 10
+	GreenMaskSize: 5
+	GreenFieldPosition: 5
+	BlueMaskSize: 5
+	BlueFieldPosition: 0
+	RsvdMaskSize: 1
+	RsvdFieldPosition: 15
+	DirectColorModeInfo: 1
+	PhysBasePtr: 0x9b000000
+	LinBytesPerScanLine: 2560
+	BnkNumberOfImagePages: 2
+	LinNumberOfImagePages: 2
+	LinRedMaskSize: 5
+	LinRedFieldPosition: 10
+	LinGreenMaskSize: 5
+	LinGreenFieldPosition: 5
+	LinBlueMaskSize: 5
+	LinBlueFieldPosition: 0
+	LinRsvdMaskSize: 1
+	LinRsvdFieldPosition: 15
+	MaxPixelClock: 218000000
+Mode: 11a (1280x1024)
+	ModeAttributes: 0x9b
+	WinAAttributes: 0x7
+	WinBAttributes: 0x0
+	WinGranularity: 64
+	WinSize: 64
+	WinASegment: 0xa000
+	WinBSegment: 0x0
+	WinFuncPtr: 0xc0005cb9
+	BytesPerScanline: 2560
+	XResolution: 1280
+	YResolution: 1024
+	XCharSize: 8
+	YCharSize: 16
+	NumberOfPlanes: 1
+	BitsPerPixel: 16
+	NumberOfBanks: 1
+	MemoryModel: 6
+	BankSize: 0
+	NumberOfImages: 2
+	RedMaskSize: 5
+	RedFieldPosition: 11
+	GreenMaskSize: 6
+	GreenFieldPosition: 5
+	BlueMaskSize: 5
+	BlueFieldPosition: 0
+	RsvdMaskSize: 0
+	RsvdFieldPosition: 0
+	DirectColorModeInfo: 1
+	PhysBasePtr: 0x9b000000
+	LinBytesPerScanLine: 2560
+	BnkNumberOfImagePages: 2
+	LinNumberOfImagePages: 2
+	LinRedMaskSize: 5
+	LinRedFieldPosition: 11
+	LinGreenMaskSize: 6
+	LinGreenFieldPosition: 5
+	LinBlueMaskSize: 5
+	LinBlueFieldPosition: 0
+	LinRsvdMaskSize: 0
+	LinRsvdFieldPosition: 0
+	MaxPixelClock: 218000000
+*Mode: 11b (1280x1024)
+	ModeAttributes: 0x9b
+	WinAAttributes: 0x7
+	WinBAttributes: 0x0
+	WinGranularity: 64
+	WinSize: 64
+	WinASegment: 0xa000
+	WinBSegment: 0x0
+	WinFuncPtr: 0xc0005cb9
+	BytesPerScanline: 5120
+	XResolution: 1280
+	YResolution: 1024
+	XCharSize: 8
+	YCharSize: 16
+	NumberOfPlanes: 1
+	BitsPerPixel: 32
+	NumberOfBanks: 1
+	MemoryModel: 6
+	BankSize: 0
+	NumberOfImages: 0
+	RedMaskSize: 8
+	RedFieldPosition: 16
+	GreenMaskSize: 8
+	GreenFieldPosition: 8
+	BlueMaskSize: 8
+	BlueFieldPosition: 0
+	RsvdMaskSize: 8
+	RsvdFieldPosition: 24
+	DirectColorModeInfo: 1
+	PhysBasePtr: 0x9b000000
+	LinBytesPerScanLine: 5120
+	BnkNumberOfImagePages: 0
+	LinNumberOfImagePages: 0
+	LinRedMaskSize: 8
+	LinRedFieldPosition: 16
+	LinGreenMaskSize: 8
+	LinGreenFieldPosition: 8
+	LinBlueMaskSize: 8
+	LinBlueFieldPosition: 0
+	LinRsvdMaskSize: 8
+	LinRsvdFieldPosition: 24
+	MaxPixelClock: 218000000
+Mode: 11c (1600x1200)
+	ModeAttributes: 0x9b
+	WinAAttributes: 0x7
+	WinBAttributes: 0x0
+	WinGranularity: 64
+	WinSize: 64
+	WinASegment: 0xa000
+	WinBSegment: 0x0
+	WinFuncPtr: 0xc0005cb9
+	BytesPerScanline: 3200
+	XResolution: 1600
+	YResolution: 1200
+	XCharSize: 8
+	YCharSize: 16
+	NumberOfPlanes: 1
+	BitsPerPixel: 16
+	NumberOfBanks: 1
+	MemoryModel: 6
+	BankSize: 0
+	NumberOfImages: 1
+	RedMaskSize: 5
+	RedFieldPosition: 10
+	GreenMaskSize: 5
+	GreenFieldPosition: 5
+	BlueMaskSize: 5
+	BlueFieldPosition: 0
+	RsvdMaskSize: 1
+	RsvdFieldPosition: 15
+	DirectColorModeInfo: 1
+	PhysBasePtr: 0x9b000000
+	LinBytesPerScanLine: 3200
+	BnkNumberOfImagePages: 1
+	LinNumberOfImagePages: 1
+	LinRedMaskSize: 5
+	LinRedFieldPosition: 10
+	LinGreenMaskSize: 5
+	LinGreenFieldPosition: 5
+	LinBlueMaskSize: 5
+	LinBlueFieldPosition: 0
+	LinRsvdMaskSize: 1
+	LinRsvdFieldPosition: 15
+	MaxPixelClock: 218000000
+Mode: 11d (1600x1200)
+	ModeAttributes: 0x9b
+	WinAAttributes: 0x7
+	WinBAttributes: 0x0
+	WinGranularity: 64
+	WinSize: 64
+	WinASegment: 0xa000
+	WinBSegment: 0x0
+	WinFuncPtr: 0xc0005cb9
+	BytesPerScanline: 3200
+	XResolution: 1600
+	YResolution: 1200
+	XCharSize: 8
+	YCharSize: 16
+	NumberOfPlanes: 1
+	BitsPerPixel: 16
+	NumberOfBanks: 1
+	MemoryModel: 6
+	BankSize: 0
+	NumberOfImages: 1
+	RedMaskSize: 5
+	RedFieldPosition: 11
+	GreenMaskSize: 6
+	GreenFieldPosition: 5
+	BlueMaskSize: 5
+	BlueFieldPosition: 0
+	RsvdMaskSize: 0
+	RsvdFieldPosition: 0
+	DirectColorModeInfo: 1
+	PhysBasePtr: 0x9b000000
+	LinBytesPerScanLine: 3200
+	BnkNumberOfImagePages: 1
+	LinNumberOfImagePages: 1
+	LinRedMaskSize: 5
+	LinRedFieldPosition: 11
+	LinGreenMaskSize: 6
+	LinGreenFieldPosition: 5
+	LinBlueMaskSize: 5
+	LinBlueFieldPosition: 0
+	LinRsvdMaskSize: 0
+	LinRsvdFieldPosition: 0
+	MaxPixelClock: 218000000
+*Mode: 11e (1600x1200)
+	ModeAttributes: 0x9b
+	WinAAttributes: 0x7
+	WinBAttributes: 0x0
+	WinGranularity: 64
+	WinSize: 64
+	WinASegment: 0xa000
+	WinBSegment: 0x0
+	WinFuncPtr: 0xc0005cb9
+	BytesPerScanline: 6400
+	XResolution: 1600
+	YResolution: 1200
+	XCharSize: 8
+	YCharSize: 16
+	NumberOfPlanes: 1
+	BitsPerPixel: 32
+	NumberOfBanks: 1
+	MemoryModel: 6
+	BankSize: 0
+	NumberOfImages: 0
+	RedMaskSize: 8
+	RedFieldPosition: 16
+	GreenMaskSize: 8
+	GreenFieldPosition: 8
+	BlueMaskSize: 8
+	BlueFieldPosition: 0
+	RsvdMaskSize: 8
+	RsvdFieldPosition: 24
+	DirectColorModeInfo: 1
+	PhysBasePtr: 0x9b000000
+	LinBytesPerScanLine: 6400
+	BnkNumberOfImagePages: 0
+	LinNumberOfImagePages: 0
+	LinRedMaskSize: 8
+	LinRedFieldPosition: 16
+	LinGreenMaskSize: 8
+	LinGreenFieldPosition: 8
+	LinBlueMaskSize: 8
+	LinBlueFieldPosition: 0
+	LinRsvdMaskSize: 8
+	LinRsvdFieldPosition: 24
+	MaxPixelClock: 218000000
+Mode: 10a (132x43)
+	ModeAttributes: 0xf
+	WinAAttributes: 0x7
+	WinBAttributes: 0x0
+	WinGranularity: 32
+	WinSize: 32
+	WinASegment: 0xb800
+	WinBSegment: 0x0
+	WinFuncPtr: 0xc0005cb9
+	BytesPerScanline: 132
+	XResolution: 132
+	YResolution: 43
+	XCharSize: 8
+	YCharSize: 8
+	NumberOfPlanes: 4
+	BitsPerPixel: 4
+	NumberOfBanks: 1
+	MemoryModel: 0
+	BankSize: 0
+	NumberOfImages: 0
+	RedMaskSize: 0
+	RedFieldPosition: 0
+	GreenMaskSize: 0
+	GreenFieldPosition: 0
+	BlueMaskSize: 0
+	BlueFieldPosition: 0
+	RsvdMaskSize: 0
+	RsvdFieldPosition: 0
+	DirectColorModeInfo: 0
+	PhysBasePtr: 0x0
+	LinBytesPerScanLine: 0
+	BnkNumberOfImagePages: 0
+	LinNumberOfImagePages: 0
+	LinRedMaskSize: 0
+	LinRedFieldPosition: 0
+	LinGreenMaskSize: 0
+	LinGreenFieldPosition: 0
+	LinBlueMaskSize: 0
+	LinBlueFieldPosition: 0
+	LinRsvdMaskSize: 0
+	LinRsvdFieldPosition: 0
+	MaxPixelClock: 218000000
+
+(II) VESA(0): Total Memory: 127 64KB banks (8128kB)
+(II) VESA(0): <default monitor>: Using default hsync range of 31.50-48.00 kHz
+(II) VESA(0): <default monitor>: Using default vrefresh range of 50.00-70.00 Hz
+(II) VESA(0): <default monitor>: Using default maximum pixel clock of 65.00 MHz
+(WW) VESA(0): Unable to estimate virtual size
+(II) VESA(0): Not using built-in mode "1600x1200" (no mode of this name)
+(II) VESA(0): Not using built-in mode "1280x1024" (no mode of this name)
+(II) VESA(0): Not using built-in mode "1024x768" (no mode of this name)
+(II) VESA(0): Not using built-in mode "800x600" (no mode of this name)
+(II) VESA(0): Not using built-in mode "640x480" (no mode of this name)
+(WW) VESA(0): No valid modes left. Trying less strict filter...
+(II) VESA(0): <default monitor>: Using hsync range of 31.50-48.00 kHz
+(II) VESA(0): <default monitor>: Using vrefresh range of 50.00-70.00 Hz
+(II) VESA(0): <default monitor>: Using maximum pixel clock of 65.00 MHz
+(WW) VESA(0): Unable to estimate virtual size
+(II) VESA(0): Not using built-in mode "1600x1200" (hsync out of range)
+(II) VESA(0): Not using built-in mode "1280x1024" (hsync out of range)
+(II) VESA(0): Virtual size is 1024x768 (pitch 1024)
+(**) VESA(0): *Built-in mode "1024x768"
+(**) VESA(0): *Built-in mode "800x600"
+(**) VESA(0): *Built-in mode "640x480"
+(==) VESA(0): DPI set to (96, 96)
+(**) VESA(0): Using "Shadow Framebuffer"
+(II) Loading sub module "shadow"
+(II) LoadModule: "shadow"
+(II) Loading /usr/lib/xorg/modules/libshadow.so
+(II) Module shadow: vendor="X.Org Foundation"
+	compiled for 1.21.1.7, module version = 1.1.0
+	ABI class: X.Org ANSI C Emulation, version 0.4
+(II) Loading sub module "fb"
+(II) LoadModule: "fb"
+(II) Module "fb" already built-in
+(II) Loading sub module "int10"
+(II) LoadModule: "int10"
+(II) Loading /usr/lib/xorg/modules/libint10.so
+(II) Module int10: vendor="X.Org Foundation"
+	compiled for 1.21.1.7, module version = 1.0.0
+	ABI class: X.Org Video Driver, version 25.2
+(II) VESA(0): initializing int10
+(II) VESA(0): Primary V_BIOS segment is: 0xc000
+(II) VESA(0): VESA BIOS detected
+(II) VESA(0): VESA VBE Version 3.0
+(II) VESA(0): VESA VBE Total Mem: 8128 kB
+(II) VESA(0): VESA VBE OEM: Matrox Graphics Inc.
+(II) VESA(0): VESA VBE OEM Software Rev: 4.0
+(II) VESA(0): VESA VBE OEM Vendor: Matrox
+(II) VESA(0): VESA VBE OEM Product: MGA-G200
+(II) VESA(0): VESA VBE OEM Product Rev: 00
+(II) VESA(0): virtual address = 0x7f0345702000, VGAbase = 0x7f034636e000
+	physical address = 0x9b000000, size = 8323072
+(II) VESA(0): Setting up VESA Mode 0x118 (1024x768)
+(==) VESA(0): Default visual is TrueColor
+(==) VESA(0): Backing store enabled
+(==) VESA(0): DPMS enabled
+(II) Initializing extension Generic Event Extension
+(II) Initializing extension SHAPE
+(II) Initializing extension MIT-SHM
+(II) Initializing extension XInputExtension
+(II) Initializing extension XTEST
+(II) Initializing extension BIG-REQUESTS
+(II) Initializing extension SYNC
+(II) Initializing extension XKEYBOARD
+(II) Initializing extension XC-MISC
+(II) Initializing extension SECURITY
+(II) Initializing extension XFIXES
+(II) Initializing extension RENDER
+(II) Initializing extension RANDR
+(II) Initializing extension COMPOSITE
+(II) Initializing extension DAMAGE
+(II) Initializing extension MIT-SCREEN-SAVER
+(II) Initializing extension DOUBLE-BUFFER
+(II) Initializing extension RECORD
+(II) Initializing extension DPMS
+(II) Initializing extension Present
+(II) Initializing extension DRI3
+(II) Initializing extension X-Resource
+(II) Initializing extension XVideo
+(II) Initializing extension XVideo-MotionCompensation
+(II) Initializing extension SELinux
+(II) SELinux: Disabled on system
+(II) Initializing extension GLX
+(II) AIGLX: Screen 0 is not DRI2 capable
+(II) IGLX: Loaded and initialized swrast
+(II) GLX: Initialized DRISWRAST GL provider for screen 0
+(II) Initializing extension XFree86-VidModeExtension
+(II) Initializing extension XFree86-DGA
+(II) Initializing extension XFree86-DRI
+(II) Initializing extension DRI2
+(II) config/udev: Adding input device Power Button (/dev/input/event0)
+(**) Power Button: Applying InputClass "libinput keyboard catchall"
+(II) LoadModule: "libinput"
+(II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+(II) Module libinput: vendor="X.Org Foundation"
+	compiled for 1.21.1.7, module version = 1.3.0
+	Module class: X.Org XInput Driver
+	ABI class: X.Org XInput driver, version 24.4
+(II) Using input driver 'libinput' for 'Power Button'
+(**) Power Button: always reports core events
+(**) Option "Device" "/dev/input/event0"
+(II) event0  - Power Button: is tagged by udev as: Keyboard
+(II) event0  - Power Button: device is a keyboard
+(II) event0  - Power Button: device removed
+(**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input0/event0"
+(II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+(**) Option "xkb_model" "pc105"
+(**) Option "xkb_layout" "us"
+(II) event0  - Power Button: is tagged by udev as: Keyboard
+(II) event0  - Power Button: device is a keyboard
+(II) config/udev: Adding input device Avocent Keyboard/Mouse Function (/dev/input/event1)
+(**) Avocent Keyboard/Mouse Function: Applying InputClass "libinput keyboard catchall"
+(II) Using input driver 'libinput' for 'Avocent Keyboard/Mouse Function'
+(**) Avocent Keyboard/Mouse Function: always reports core events
+(**) Option "Device" "/dev/input/event1"
+(II) event1  - Avocent Keyboard/Mouse Function: is tagged by udev as: Keyboard
+(II) event1  - Avocent Keyboard/Mouse Function: device is a keyboard
+(II) event1  - Avocent Keyboard/Mouse Function: device removed
+(**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4.1/1-4.1:1.0/0003:0624:0402.0001/input/input1/event1"
+(II) XINPUT: Adding extended input device "Avocent Keyboard/Mouse Function" (type: KEYBOARD, id 7)
+(**) Option "xkb_model" "pc105"
+(**) Option "xkb_layout" "us"
+(II) event1  - Avocent Keyboard/Mouse Function: is tagged by udev as: Keyboard
+(II) event1  - Avocent Keyboard/Mouse Function: device is a keyboard
+(II) config/udev: Adding input device Avocent Keyboard/Mouse Function (/dev/input/event2)
+(**) Avocent Keyboard/Mouse Function: Applying InputClass "libinput pointer catchall"
+(II) Using input driver 'libinput' for 'Avocent Keyboard/Mouse Function'
+(**) Avocent Keyboard/Mouse Function: always reports core events
+(**) Option "Device" "/dev/input/event2"
+(II) event2  - Avocent Keyboard/Mouse Function: is tagged by udev as: Mouse
+(II) event2  - Avocent Keyboard/Mouse Function: device is a pointer
+(II) event2  - Avocent Keyboard/Mouse Function: device removed
+(**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4.1/1-4.1:1.1/0003:0624:0402.0002/input/input2/event2"
+(II) XINPUT: Adding extended input device "Avocent Keyboard/Mouse Function" (type: MOUSE, id 8)
+(**) Option "AccelerationScheme" "none"
+(**) Avocent Keyboard/Mouse Function: (accel) selected scheme none/0
+(**) Avocent Keyboard/Mouse Function: (accel) acceleration factor: 2.000
+(**) Avocent Keyboard/Mouse Function: (accel) acceleration threshold: 4
+(II) event2  - Avocent Keyboard/Mouse Function: is tagged by udev as: Mouse
+(II) event2  - Avocent Keyboard/Mouse Function: device is a pointer
+(II) config/udev: Adding input device Avocent Keyboard/Mouse Function (/dev/input/mouse0)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device Avocent Keyboard/Mouse Function (/dev/input/event3)
+(**) Avocent Keyboard/Mouse Function: Applying InputClass "libinput pointer catchall"
+(II) Using input driver 'libinput' for 'Avocent Keyboard/Mouse Function'
+(**) Avocent Keyboard/Mouse Function: always reports core events
+(**) Option "Device" "/dev/input/event3"
+(II) event3  - Avocent Keyboard/Mouse Function: is tagged by udev as: Mouse
+(II) event3  - Avocent Keyboard/Mouse Function: device is a pointer
+(II) event3  - Avocent Keyboard/Mouse Function: device removed
+(II) libinput: Avocent Keyboard/Mouse Function: Step value 0 was provided, libinput Fallback acceleration function is used.
+(II) libinput: Avocent Keyboard/Mouse Function: Step value 0 was provided, libinput Fallback acceleration function is used.
+(II) libinput: Avocent Keyboard/Mouse Function: Step value 0 was provided, libinput Fallback acceleration function is used.
+(**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4.1/1-4.1:1.2/0003:0624:0402.0003/input/input3/event3"
+(II) XINPUT: Adding extended input device "Avocent Keyboard/Mouse Function" (type: MOUSE, id 9)
+(**) Option "AccelerationScheme" "none"
+(**) Avocent Keyboard/Mouse Function: (accel) selected scheme none/0
+(**) Avocent Keyboard/Mouse Function: (accel) acceleration factor: 2.000
+(**) Avocent Keyboard/Mouse Function: (accel) acceleration threshold: 4
+(II) event3  - Avocent Keyboard/Mouse Function: is tagged by udev as: Mouse
+(II) event3  - Avocent Keyboard/Mouse Function: device is a pointer
+(II) config/udev: Adding input device Avocent Keyboard/Mouse Function (/dev/input/mouse1)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.

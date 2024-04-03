@@ -1,0 +1,1151 @@
+Generating config..
+make CC="cc" CXX="g++" STATIC= -f Makefile.config
+fatal: not a git repository (or any of the parent directories): .git
+make[1]: Entering directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/stress-ng-1.11.0/stress-ng-0.16.04'
+MK git-commit-id.h
+using -laio ... no
+using -lbsd ... no
+using -lapparmor ... no
+using -lmd ... no
+using -lkmod ... no
+using -lJudy ... no
+using -lxxhash ... no
+using -lsctp ... no
+using -lcrypt ... yes
+using aio.h ... yes
+using -lIPSec_MB ... no
+using asm/mtrr.h ... yes
+using bsd/string.h ... no
+using asm/cachectl.h ... no
+using bsd/stdlib.h ... no
+using asm/prctl.h ... yes
+using bsd/sys/tree.h ... no
+using attr/xattr.h ... no
+using -lgbm ... yes
+using bsd/wchar.h ... no
+using -lpthread spinlock ... yes
+using -lpthread ... yes
+using bsd/unistd.h ... no
+using EGL/egl.h ... yes
+using crypt.h ... yes
+using features.h ... yes
+using EGL/egl.h EGL/eglext.h ... yes
+using asm/ldt.h ... yes
+using -ldl ... yes
+using float.h ... yes
+using wchar.h ... yes
+using GLES2/gl2.h ... yes
+using gbm.h ... yes
+using -ljpeg ... yes
+using ifaddrs.h ... yes
+using fenv.h ... yes
+using complex.h ... yes
+using intel-ipsec-mb.h ... no
+using -lz ... yes
+using Judy.h ... no
+using keyutils.h ... no
+using libaio.h ... no
+using grp.h ... yes
+using jpeglib.h ... yes
+using gmp.h ... yes
+using libkmod.h ... no
+using link.h ... yes
+using libgen.h ... yes
+using -lrt ... yes
+using linux/fs.h ... yes
+using linux/connector.h ... yes
+using linux/blkzoned.h ... yes
+using linux/dm-ioctl.h ... yes
+using -lEGL ... yes
+using -lmpfr ... yes
+using -lGLESv2 ... yes
+using linux/cdrom.h ... yes
+using linux/cn_proc.h ... yes
+using linux/futex.h ... yes
+using linux/android/binder.h ... yes
+using linux/kd.h ... yes
+using linux/media.h ... yes
+using linux/membarrier.h ... yes
+using linux/fd.h ... yes
+using linux/android/binderfs.h ... yes
+using linux/genetlink.h ... yes
+using linux/fsverity.h ... yes
+using linux/magic.h ... yes
+using linux/loop.h ... yes
+using linux/audit.h ... yes
+using linux/landlock.h ... yes
+using linux/netlink.h ... yes
+using linux/fiemap.h ... yes
+using linux/if_packet.h ... yes
+using linux/posix_types.h ... yes
+using linux/mempolicy.h ... yes
+using linux/io_uring.h ... yes
+using linux/module.h ... yes
+using linux/perf_event.h ... yes
+using linux/openat2.h ... yes
+using linux/kvm.h ... yes
+using linux/hpet.h ... yes
+using linux/if_alg.h ... yes
+using linux/filter.h ... yes
+using linux/hdreg.h ... yes
+using linux/if_tun.h ... yes
+using linux/ppdev.h ... yes
+using linux/pci.h ... yes
+using linux/socket.h ... yes
+using linux/ptp_clock.h ... yes
+using linux/rtc.h ... yes
+using linux/rseq.h ... yes
+using linux/random.h ... yes
+using linux/rtnetlink.h ... yes
+using linux/seccomp.h ... yes
+using linux/sockios.h ... yes
+using linux/userfaultfd.h ... yes
+using linux/sysctl.h ... yes
+using mach/mach.h ... no
+using locale.h ... yes
+using linux/version.h ... yes
+using linux/watchdog.h ... yes
+using linux/usbdevice_fs.h ... yes
+using linux/serial.h ... yes
+using mach/vm_statistics.h ... no
+using linux/vt.h ... yes
+using linux/videodev2.h ... yes
+using linux/unix_diag.h ... yes
+using linux/udp.h ... yes
+using malloc.h ... yes
+using mach/machine.h ... no
+using linux/taskstats.h ... yes
+using pthread_np.h ... no
+using mqueue.h ... yes
+using mpfr.h ... yes
+using poll.h ... yes
+using mntent.h ... yes
+using search.h ... yes
+using semaphore.h ... yes
+using scsi/scsi_ioctl.h ... yes
+using linux/sockdiag.h ... yes
+using sys/apparmor.h ... no
+using scsi/scsi.h ... yes
+using spawn.h ... yes
+using scsi/sg.h ... yes
+using syslog.h ... yes
+using strings.h ... yes
+using sys/auxv.h ... yes
+using sys/capability.h ... no
+using sys/io.h ... yes
+using sys/fsuid.h ... yes
+using sys/ipc.h ... yes
+using sys/loadavg.h ... no
+using sys/epoll.h ... yes
+using sys/fanotify.h ... yes
+using sound/asound.h ... yes
+using sys/param.h ... yes
+using sys/mount.h ... yes
+using sys/personality.h ... yes
+using sys/inotify.h ... yes
+using sys/eventfd.h ... yes
+using sys/tree.h ... no
+using sys/sysctl.h ... no
+using sys/prctl.h ... yes
+using sys/select.h ... yes
+using sys/platform/ppc.h ... no
+using sys/pidfd.h ... yes
+using sys/sendfile.h ... yes
+using sys/random.h ... yes
+using sys/quota.h ... yes
+using sys/queue.h ... yes
+using sys/shm.h ... yes
+using sys/msg.h ... yes
+using sys/statfs.h ... yes
+using sys/sysinfo.h ... yes
+using sys/syscall.h ... yes
+using sys/ucred.h ... no
+using sys/statvfs.h ... yes
+using sys/swap.h ... yes
+using sys/signalfd.h ... yes
+using sys/sysmacros.h ... yes
+using sys/timex.h ... yes
+using sys/uio.h ... yes
+using termios.h ... yes
+using sys/timerfd.h ... yes
+using termio.h ... yes
+using sys/utsname.h ... yes
+using sys/un.h ... yes
+using sys/vmmeter.h ... no
+using sys/vfs.h ... yes
+using netinet/sctp.h ... no
+using netinet/tcp.h ... yes
+using sys/xattr.h ... yes
+using utime.h ... yes
+using net/if.h ... yes
+using netinet/ip.h ... yes
+using uvm/uvm_extern.h ... no
+using ustat.h ... no
+using netinet/ip_icmp.h ... yes
+using xxhash.h ... no
+using ALPHA draina instruction ... no
+using ucontext.h ... yes
+using ALPHA halt instruction ... no
+using ARM tlbi instruction ... no
+using ARM yield instruction ... no
+using xmmintrin.h ... yes
+using hppa rfi instruction ... no
+using MIPS wait instruction ... no
+using hppa diag instruction ... no
+using M68K eori.w on sr instruction ... no
+using s390 ptlb instruction ... no
+using SH4 sleep instruction ... no
+using SPARC tick instruction ... no
+using SH4 rte instruction ... no
+using SPARC membar instruction ... no
+using SPARC rdpr instruction ... no
+using ppc64 dcbtst instruction ... no
+using ppc64 dcbt instruction ... no
+using ppc64 darn instruction ... no
+using __attribute__((fast_math)) ... yes
+using 64 byte alignment attribute ... yes
+using __attribute__((fallthrough)) ... yes
+using ppc64 msync instruction ... no
+using 128 byte alignment attribute ... yes
+using ppc64 dcbst instruction ... no
+using RISC-V fence.i instruction ... no
+using 64K byte alignment attribute ... yes
+using RISC-V fence instruction ... no
+using ppc64 icbi instruction ... no
+using ppc64 tlbie instruction ... no
+using memory barrier ... yes
+using generic nop instruction ... yes
+using RISC-V sfence.vma instruction ... no
+using x86 hlt instruction ... yes
+using x86 cldemote instruction ... yes
+using x86 clflushopt instruction ... yes
+using x86 clts instruction ... yes
+using x86 clflush instruction ... yes
+using x86 invpg instruction ... yes
+using x86 lfence instruction ... yes
+using x86 invd instruction ... yes
+using x86 lldt instruction ... yes
+using x86 clwb instruction ... yes
+using x86 pause instruction ... yes
+using x86 lgdt instruction ... yes
+using x86 mov to cr0 instruction ... yes
+using x86 lmsw instruction ... yes
+using x86 mov to dr0 instruction ... yes
+using x86 prefetcht0 instruction ... yes
+using x86 prefetcht2 instruction ... yes
+using x86 mfence instruction ... yes
+using x86 rdrand instruction ... yes
+using x86 prefetcht1 instruction ... yes
+using x86 rep stosb instruction ... yes
+using x86 rdpmc instruction ... yes
+using x86 rep stosw instruction ... yes
+using immintrin.h ... yes
+using x86 prefetchtnta instruction ... yes
+using x86 serialize instruction ... yes
+using x86 rdseed instruction ... yes
+using x86 sfence instruction ... yes
+using x86 rep stosd instruction ... yes
+using x86 wrinvd instruction ... yes
+using x86 rep stosq instruction ... yes
+using x86 tpause instruction ... yes
+using x86 wrmsr instruction ... yes
+using asm("") ... yes
+using x86 rdmsr instruction ... yes
+using pragma gcc no-hard-dfp ... no
+using pragma inside functions ... yes
+using pragma push/pop ... yes
+using label as value feature ... yes
+using target_clones attribute ... yes
+using __restrict keyword ... yes
+using target_clones arch=cooperlake attribute (x86) ... yes
+using target_clones sse3 attribute (x86) ... yes
+using target_clones arch=skylake-avx512 attribute (x86) ... yes
+using target_clones ssse3 attribute (x86) ... yes
+using target_clones mmx attribute (x86) ... yes
+using target_clones sse attribute (x86) ... yes
+using target_clones sse4_1 attribute (x86) ... yes
+using target_clones sse4_2 attribute (x86) ... yes
+using target_clones avx2 attribute (x86) ... yes
+using target_clones avx attribute (x86) ... yes
+using target_clones sse2 attribute (x86) ... yes
+using target_clones cpu=power attribute (power9) ... no
+using target_clones arch=tigerlake attribute (x86) ... yes
+using target_clones arch=sapphirerapids attribute (x86) ... yes
+using target_clones arch=alderlake attribute (x86) ... yes
+using target_clones arch=rocketlake attribute (x86) ... yes
+using target_clones arch=graniterapids attribute (x86) ... yes
+using float16 ... no
+using complex ... yes
+using daddr_t ... yes
+using variable length array function args ... yes
+using dvd_authinfo ... yes
+using dvd_struct ... yes
+using ino64_t ... yes
+using __itimer_which_t ... yes
+using float32 ... yes
+using float80 ... yes
+using float64 ... yes
+using int128_t ... yes
+using __kernel_long_t ... yes
+using __kernel_ulong_t ... yes
+using landlock_rule_type ... yes
+using float128 ... yes
+using loff_t ... yes
+using off64_t ... yes
+using mode_t ... yes
+using __pid_type ... yes
+using off_t ... yes
+using __priority_which_t ... yes
+using pthread_mutex_t ... yes
+using pthread_mutexattr_t ... yes
+using __rlimit_resource_t ... yes
+using struct cdrom_blk ... yes
+using key_t ... yes
+using __rusage_who_t ... yes
+using float decimal32 ... yes
+using float decimal128 ... yes
+using float decimal64 ... yes
+using struct cdrom_ti ... yes
+using struct cdrom_tochdr ... yes
+using ptrace_request ... yes
+using struct cdrom_read_audio ... yes
+using struct cdrom_mcn ... yes
+using struct cdrom_msf ... yes
+using struct cdrom_tocentry ... yes
+using struct cdrom_subchnl ... yes
+using x86intrin.h ... yes
+using struct cdrom_volctrl ... yes
+using struct consolefontdesc ... yes
+using struct floppy_drive_struct ... yes
+using struct dm_ioctl ... yes
+using struct floppy_fdc_state ... yes
+using struct floppy_struct ... yes
+using struct fsverity_digest ... yes
+using struct fsxattr ... yes
+using struct floppy_write_errors ... yes
+using struct ifreq ... yes
+using vector math ... yes
+using struct kbdiacrs ... yes
+using struct ifconf ... yes
+using struct fsverity_enable_arg ... yes
+using struct iphdr and icmphdr ... yes
+using struct kbentry ... yes
+using struct iphdr ... yes
+using struct open_how ... no
+using struct kbsentry ... yes
+using struct kbkeycode ... yes
+using struct sctp_association ... no
+using struct media_device_info ... yes
+using struct sctp_assoc_stats ... no
+using struct sctp_assoc_value ... no
+using struct sctp_assocparams ... no
+using struct landlock_ruleset_attr ... yes
+using struct mtrr_gentry ... yes
+using struct msginfo ... yes
+using struct rtc_param ... yes
+using struct sctp_event_subscribe ... no
+using struct sctp_default_prinfo ... no
+using struct mtrr_sentry ... yes
+using struct sctp_initmsg ... no
+using struct sctp_getaddrs ... no
+using struct rusage.ru_maxrss ... yes
+using struct sctp_prim ... no
+using struct sctp_paddrparams ... no
+using struct sctp_rtoinfo ... no
+using struct sctp_probeinterval ... no
+using struct sctp_paddrinfo ... no
+using struct sctp_sched_type ... no
+using struct sctp_setadaption ... no
+using struct rusage.ru_minflt ... yes
+using struct rusage.ru_nvcsw ... yes
+using struct sctp_stream_value ... no
+using struct sctp_status ... no
+using _mm_dpbusd_epi32 intrinsic ... yes
+using _mm_loadu_si128 intrinsic ... yes
+using _mm256_loadu_si256 intrinsic ... yes
+using _mm256_dpwssd_epi32 intrinsic ... yes
+using _mm256_dpbusd_epi32 intrinsic ... yes
+using _mm_add_epi8 intrinsic ... yes
+using _mm256_add_epi8 intrinsic ... yes
+using _mm512_add_epi8 intrinsic ... yes
+using _mm_dpwssd_epi32 intrinsic ... yes
+using _mm256_storeu_si256 intrinsic ... yes
+using _mm512_loadu_si512 intrinsic ... yes
+using _mm512_dpbusd_epi32 intrinsic ... yes
+using _mm512_dpwssd_epi32 intrinsic ... yes
+using _mm_storeu_si128 intrinsic ... yes
+using _mm512_storeu_si512 intrinsic ... yes
+using struct seccomp_notif_sizes ... yes
+using struct serial_icounter_struct ... yes
+using struct serial_struct ... yes
+using struct shmid_ds ... yes
+using struct shminfo ... yes
+using struct tpacket_req3 ... yes
+using struct unimapdesc ... yes
+using struct timex ... yes
+using struct usbdevfs_getdriver ... yes
+using struct snd_ctl_card_info ... yes
+using struct termios ... yes
+using struct sockaddr_un ... yes
+using struct snd_ctl_tlv ... yes
+using struct user_desc ... yes
+using struct utimbuf ... yes
+using struct vt_mode ... yes
+using struct vt_stat ... yes
+using struct vt_consize ... yes
+using struct vt_sizes ... yes
+using struct v4l2_capability ... yes
+using struct v4l2_dv_timings ... yes
+using struct v4l2_audioout ... yes
+using struct v4l2_enc_idx ... yes
+using struct v4l2_audio ... yes
+using struct v4l2_framebuffer ... yes
+using aio_cancel ... no
+using aio_write ... no
+using struct v4l2_jpegcompression ... yes
+using v4l2_std_id ... yes
+using struct winsize ... yes
+using accept4 ... yes
+using aio_read ... no
+using aio_fsync ... no
+using adjtime ... yes
+using __atomic_add_fetch ... yes
+using adjtimex ... yes
+using __atomic_and_fetch ... yes
+using atomics with -latomic ... yes
+using __atomic_compare_exchange ... yes
+using aligned_alloc ... yes
+using arch_prctl ... yes
+using __v2di ... yes
+using __atomic_fetch_add_4 ... yes
+using __atomic_fetch_add ... yes
+using __atomic_fetch_nand ... yes
+using __atomic_clear ... yes
+using strlcpy ... no
+using strlcat ... no
+using __atomic_fetch_add_2 ... yes
+using __atomic_fetch_or ... yes
+using __atomic_fetch_sub ... yes
+using __atomic_fetch_and ... yes
+using __atomic_fetch_add_8 ... yes
+using __atomic_load ... yes
+using __atomic_or_fetch ... yes
+using __atomic_load_double ... yes
+using __atomic_nand_fetch ... yes
+using __atomic_fetch_xor ... yes
+using __builtin_cpu_is(power9) ... no
+using __atomic_store ... yes
+using __atomic_sub_fetch ... yes
+using __atomic_store_double ... yes
+using __atomic_xor_fetch ... yes
+using __atomic_test_and_set ... yes
+using brk ... yes
+using __builtin_bswap32 ... yes
+using __builtin_clzl ... yes
+using __builtin_constant_p ... yes
+using bsearch ... yes
+using __builtin_cexp ... yes
+using __builtin_bitreverse ... no
+using __builtin_ctz ... yes
+using __builtin_ccos ... yes
+using __builtin_ccosl ... yes
+using __builtin_ccosf ... yes
+using __builtin_cabsl ... yes
+using __builtin_cosf ... yes
+using __builtin_expect ... yes
+using __builtin_fabs ... yes
+using __builtin_cos ... yes
+using __builtin_memcpy ... yes
+using __builtin_cosl ... yes
+using __builtin_coshl ... yes
+using __builtin_fabsl ... yes
+using __builtin_cpow ... yes
+using __builtin_csin ... yes
+using __builtin_memcmp ... yes
+using __builtin_ia32_movnti64 ... yes
+using __builtin_csinl ... yes
+using __builtin_expl ... yes
+using __builtin_ia32_movnti ... yes
+using __builtin_csinf ... yes
+using __builtin_ia32_movntdq ... yes
+using __builtin_memset ... yes
+using __builtin_exp ... yes
+using __builtin_memmove ... yes
+using __builtin_log ... yes
+using __builtin_logl ... yes
+using __builtin_lgammal ... yes
+using __builtin_nontemporal_load ... no
+using __builtin_popcount ... yes
+using __builtin_parity ... yes
+using __builtin_nontemporal_store ... no
+using __builtin_popcountll ... yes
+using __builtin_prefetch ... yes
+using __builtin_popcountl ... yes
+using __builtin_rotateleft8 ... no
+using __builtin_rotateleft16 ... no
+using __builtin_rint ... yes
+using __builtin_rotateleft32 ... no
+using __builtin_rotateright8 ... no
+using __builtin_rintl ... yes
+using __builtin_rotateleft64 ... no
+using cacheflush ... no
+using __builtin_ia32_sfence ... yes
+using __builtin_rotateright16 ... no
+using __builtin_pow ... yes
+using __builtin_rotateright32 ... no
+using __builtin_rotateright64 ... no
+using __builtin___clear_cache ... yes
+using __builtin_supports ... yes
+using __builtin_roundl ... yes
+using __builtin_sin ... yes
+using __builtin_sinf ... yes
+using __builtin_sqrtl ... yes
+using __builtin_sinhl ... yes
+using __builtin_sinl ... yes
+using __builtin_sqrt ... yes
+using __builtin_shuffle ... yes
+using chroot ... yes
+using cabsl ... yes
+using clock_getres ... yes
+using clearenv ... yes
+using clock_gettime ... yes
+using clock_adjtime ... yes
+using clock_settime ... yes
+using clock_nanosleep ... yes
+using ccosf ... yes
+using ccosl ... yes
+building eigen matrix test...
+using cimag ... yes
+using ccosf ... yes
+using cimagl ... yes
+using cimagf ... yes
+using copy_file_range ... yes
+using dup3 ... no
+using clone ... yes
+using crypt_r ... yes
+using coshl ... yes
+using cosl ... yes
+using cpow ... yes
+using crealf ... yes
+using creal ... yes
+using creall ... yes
+using delete_module ... yes
+using csin ... yes
+using drand48 ... yes
+using epoll_create ... yes
+using endpwent ... yes
+using eventfd ... yes
+using __executable_start ... yes
+using endmntent ... yes
+using epoll_create1 ... yes
+using csinf ... yes
+using csinl ... yes
+using execveat ... yes
+using fallocate ... yes
+using faccessat ... yes
+using faccessat2 ... no
+using fchmodat ... yes
+using expl ... yes
+using fchownat ... yes
+using fgetxattr ... yes
+using flistxattr ... yes
+using finit_module ... no
+using flock ... yes
+using fdatasync ... yes
+using fremovexattr ... yes
+using fsetxattr ... yes
+using fstatat ... yes
+using fanotify ... yes
+using getmntinfo ... no
+using getauxval ... yes
+using futimes ... yes
+using fsync ... yes
+using futimens ... yes
+using getcpu ... yes
+using futimesat ... yes
+using getdtablesize ... yes
+using getdomainname ... yes
+using getentropy ... yes
+using gethostid ... yes
+using getitimer ... yes
+using getexecname ... no
+using gethostname ... yes
+using getloadavg ... yes
+using getpagesize ... yes
+using getpgrp ... yes
+using getpgid ... yes
+using getmntent ... yes
+using getpwent ... yes
+using getpriority ... yes
+using getrandom ... yes
+using getresgid ... yes
+using getresuid ... yes
+using getxattr ... yes
+using getrusage ... yes
+using gettid ... yes
+using iopl ... yes
+using getsid ... yes
+using hsearch ... yes
+using inotify1 ... yes
+using ioport ... yes
+using lgetxattr ... yes
+using inotify ... yes
+using listxattr ... yes
+using linkat ... yes
+using llistxattr ... yes
+using lgammal ... yes
+using lremovexattr ... yes
+using _mm_stream_si128 ... no
+using _mm_stream_si64 ... no
+using lrand48 ... yes
+using lookup_dcookie ... yes
+using lockf ... yes
+using _mm_stream_si32 ... no
+using lseek64 ... yes
+using lsetxattr ... yes
+using madvise ... yes
+using logl ... yes
+using lsearch ... yes
+using malloc_trim ... yes
+using mallopt ... yes
+using memfd_create ... yes
+using mlock ... yes
+using mkdirat ... yes
+using memalign ... yes
+using mincore ... yes
+using mlockall ... yes
+using mknodat ... yes
+using mlock2 ... yes
+using mprotect ... yes
+using mremap ... yes
+using munlock ... yes
+using modify_ldt ... yes
+using mquery ... no
+using munlockall ... yes
+using nanosleep ... yes
+using name_to_handle_at ... yes
+using nice ... yes
+using openat ... yes
+using msync ... yes
+using POSIX message queues ... yes
+using SYSV message queues ... yes
+using open_by_handle_at ... yes
+using personality ... yes
+using pidfd_send_signal ... yes
+using pidfd_getfd ... yes
+using open_memstream ... yes
+using openat2 ... yes
+using pidfd_open ... yes
+using pipe2 ... yes
+using __ppc_get_timebase ... no
+using pkey_alloc ... yes
+using pkey_free ... yes
+using pkey_get ... yes
+using pkey_mprotect ... yes
+using posix_fallocate ... yes
+using posix_memalign ... yes
+using posix_spawn ... yes
+using posix_openpt ... yes
+using pkey_set ... yes
+using posix_madvise ... yes
+using posix_fadvise ... yes
+using prctl ... yes
+using process_vm_writev ... yes
+using prlimit ... yes
+using pread ... yes
+using preadv ... yes
+using ppoll ... yes
+using powl ... yes
+using process_vm_readv ... yes
+using preadv2 ... yes
+using pthread_mutexattr_destroy ... yes
+using pthread_mutex_init ... yes
+using pthread_attr_setstack ... yes
+using pthread_mutexattr_init ... yes
+using pselect ... yes
+using pthread_mutex_destroy ... yes
+using pthread_mutexattr_setprioceiling ... yes
+using pthread_mutexattr_setprotocol ... yes
+using pthread_setaffinity_np ... yes
+using __rolw ... yes
+using rfork ... no
+using ptsname ... yes
+using __rold ... yes
+using __rolb ... yes
+using quotactl_fd ... no
+using pwritev ... yes
+using pwrite ... yes
+using __rord ... yes
+using pthread_sigqueue ... yes
+using __rolq ... yes
+using pthread_setschedparam ... yes
+using ptrace ... yes
+using pwritev2 ... yes
+using remap_file_pages ... yes
+using __rorb ... yes
+using removexattr ... yes
+using readlinkat ... yes
+using renameat ... yes
+using __rorw ... yes
+using __rorq ... yes
+using renameat2 ... yes
+using sched_getaffinity ... yes
+using sched_getcpu ... yes
+using sched_get_priority_min ... yes
+using sched_get_priority_max ... yes
+using sbrk ... yes
+using sched_rr_get_interval ... yes
+using rintl ... yes
+using recvmmsg ... yes
+using setproctitle ... no
+using sched_setscheduler ... yes
+using sched_yield ... yes
+using sched_setaffinity ... yes
+using semtimedop ... yes
+using POSIX semaphores ... yes
+using setfsgid ... yes
+using select ... yes
+using sendfile ... yes
+using setfsuid ... yes
+using setitimer ... yes
+using setdomainname ... yes
+using setpgrp ... yes
+using setmntent ... yes
+using SYSV semaphores ... yes
+using setpriority ... yes
+using setpwent ... yes
+using setpgid ... yes
+using setns ... yes
+using setresgid ... yes
+using setresuid ... yes
+using setregid ... yes
+using setxattr ... yes
+using settimeofday ... yes
+using setreuid ... yes
+using sendmmsg ... yes
+using signalfd ... yes
+using SYSV shm ... yes
+using sigaltstack ... yes
+using sigqueue ... yes
+using sigwaitinfo ... yes
+using statfs ... yes
+using srand48 ... yes
+using sinhl ... yes
+using statx ... yes
+using sinl ... yes
+using sqrtl ... yes
+using splice ... yes
+using __sync_synchronize ... yes
+using stime ... no
+using symlinkat ... yes
+using swapcontext ... yes
+using sync_bool_compare_and_swap ... yes
+using swapon ... yes
+using sync_file_range ... yes
+using sysinfo ... yes
+using syscall ... yes
+using tee ... yes
+using tcflow ... yes
+using syncfs ... yes
+using tcflush ... yes
+using tcdrain ... yes
+using timerfd_gettime ... yes
+using timerfd_create ... yes
+using timerfd_settime ... yes
+using tcgetattr ... yes
+using timer_getoverrrun ... yes
+using tgkill ... yes
+using ustat ... no
+using timer_gettime ... yes
+using wcscasecmp ... no
+using timer_delete ... yes
+using wcscat ... no
+using timer_settime ... yes
+using timer_create ... yes
+using wcschr ... no
+using wcscmp ... no
+using wcscoll ... no
+using wcscpy ... no
+using wcslcat ... no
+using wcslen ... no
+using ttyname ... yes
+using wcsncasecmp ... no
+using wcslcpy ... no
+using wcsncat ... no
+using wcsrchr ... no
+using uname ... yes
+using wcsncmp ... no
+using umount2 ... yes
+using wcsxfrm ... no
+using tsearch ... yes
+using unshare ... yes
+using unlinkat ... yes
+using utime ... yes
+using vhangup ... yes
+using utimensat ... yes
+using vmsplice ... yes
+using vfork ... yes
+using waitid ... yes
+using wait4 ... yes
+using wait3 ... yes
+using eigen C++ functions ... yes
+make[1]: Leaving directory '/home/ubuntu/.phoronix-test-suite/installed-tests/pts/stress-ng-1.11.0/stress-ng-0.16.04'
+Generating empty AppArmor profile
+CXX stress-eigen-ops.cpp
+CC stress-vecmath.c
+CC apparmor-data.c
+MK personality.h
+MK io-uring.h
+CC core-perf.c
+CC core-affinity.c
+CC core-asm-ret.c
+CC core-cpu.c
+CC core-cpu-cache.c
+CC core-cpuidle.c
+CC core-hash.c
+CC core-helper.c
+CC core-ignite-cpu.c
+CC core-interrupts.c
+CC core-io-uring.c
+CC core-io-priority.c
+CC core-job.c
+CC core-killpid.c
+CC core-klog.c
+CC core-limit.c
+CC core-lock.c
+CC core-log.c
+CC core-madvise.c
+CC core-mincore.c
+CC core-mlock.c
+CC core-mmap.c
+CC core-module.c
+CC core-mounts.c
+CC core-mwc.c
+CC core-net.c
+CC core-numa.c
+CC core-out-of-memory.c
+CC core-parse-opts.c
+CC core-processes.c
+CC core-resources.c
+CC core-sched.c
+CC core-setting.c
+CC core-shared-heap.c
+CC core-shim.c
+CC core-smart.c
+CC core-sort.c
+CC core-thermal-zone.c
+CC core-time.c
+CC core-thrash.c
+CC core-ftrace.c
+CC core-try-open.c
+CC core-vmstat.c
+CC stress-ng.c
+CC core-config.c
+CC stress-access.c
+CC stress-affinity.c
+CC stress-af-alg.c
+CC stress-aio.c
+CC stress-aiol.c
+CC stress-alarm.c
+CC stress-apparmor.c
+CC stress-atomic.c
+CC stress-bad-altstack.c
+CC stress-bad-ioctl.c
+CC stress-bigheap.c
+CC stress-bind-mount.c
+CC stress-binderfs.c
+CC stress-branch.c
+CC stress-brk.c
+CC stress-bsearch.c
+CC stress-cache.c
+CC stress-cacheline.c
+CC stress-cap.c
+CC stress-chattr.c
+CC stress-chdir.c
+CC stress-chmod.c
+CC stress-chown.c
+CC stress-chroot.c
+CC stress-clock.c
+CC stress-clone.c
+CC stress-close.c
+CC stress-context.c
+CC stress-copy-file.c
+CC stress-cpu.c
+CC stress-cpu-online.c
+CC stress-crypt.c
+CC stress-cyclic.c
+CC stress-daemon.c
+CC stress-dccp.c
+CC stress-dekker.c
+CC stress-dentry.c
+CC stress-dev.c
+CC stress-dev-shm.c
+CC stress-dir.c
+CC stress-dirdeep.c
+CC stress-dirmany.c
+CC stress-dnotify.c
+CC stress-dup.c
+CC stress-dynlib.c
+CC stress-eigen.c
+CC stress-efivar.c
+CC stress-enosys.c
+CC stress-env.c
+CC stress-epoll.c
+CC stress-eventfd.c
+CC stress-exec.c
+CC stress-exit-group.c
+CC stress-fallocate.c
+CC stress-fanotify.c
+CC stress-far-branch.c
+CC stress-fault.c
+CC stress-fcntl.c
+CC stress-file-ioctl.c
+CC stress-fiemap.c
+CC stress-fifo.c
+CC stress-filename.c
+CC stress-flock.c
+CC stress-flushcache.c
+CC stress-fma.c
+CC stress-fork.c
+CC stress-forkheavy.c
+CC stress-fp.c
+CC stress-fp-error.c
+CC stress-fpunch.c
+CC stress-fsize.c
+CC stress-fstat.c
+CC stress-full.c
+CC stress-funccall.c
+CC stress-funcret.c
+CC stress-futex.c
+CC stress-get.c
+CC stress-getrandom.c
+CC stress-getdent.c
+CC stress-goto.c
+CC stress-gpu.c
+CC stress-handle.c
+CC stress-hash.c
+CC stress-hdd.c
+CC stress-heapsort.c
+CC stress-hrtimers.c
+CC stress-hsearch.c
+CC stress-icache.c
+CC stress-icmp-flood.c
+CC stress-idle-page.c
+CC stress-inode-flags.c
+CC stress-inotify.c
+CC stress-io.c
+CC stress-iomix.c
+CC stress-ioport.c
+CC stress-ioprio.c
+CC stress-io-uring.c
+CC stress-ipsec-mb.c
+CC stress-itimer.c
+CC stress-jpeg.c
+CC stress-judy.c
+CC stress-kcmp.c
+CC stress-key.c
+CC stress-kill.c
+CC stress-klog.c
+CC stress-kvm.c
+CC stress-l1cache.c
+CC stress-landlock.c
+CC stress-lease.c
+CC stress-link.c
+CC stress-list.c
+CC stress-llc-affinity.c
+CC stress-loadavg.c
+CC stress-lockbus.c
+CC stress-locka.c
+CC stress-lockf.c
+CC stress-lockofd.c
+CC stress-longjmp.c
+CC stress-loop.c
+CC stress-lsearch.c
+CC stress-madvise.c
+CC stress-malloc.c
+CC stress-matrix.c
+CC stress-matrix-3d.c
+CC stress-mcontend.c
+CC stress-membarrier.c
+CC stress-memcpy.c
+CC stress-memfd.c
+CC stress-memhotplug.c
+CC stress-memrate.c
+CC stress-memthrash.c
+CC stress-mergesort.c
+CC stress-mincore.c
+CC stress-misaligned.c
+CC stress-mknod.c
+CC stress-mlock.c
+CC stress-mlockmany.c
+CC stress-mmap.c
+CC stress-mmapaddr.c
+CC stress-mmapfixed.c
+CC stress-mmapfork.c
+CC stress-mmaphuge.c
+CC stress-mmapmany.c
+CC stress-module.c
+CC stress-mprotect.c
+CC stress-mpfr.c
+CC stress-mq.c
+CC stress-mremap.c
+CC stress-msg.c
+CC stress-msync.c
+CC stress-msyncmany.c
+CC stress-munmap.c
+CC stress-mutex.c
+CC stress-nanosleep.c
+CC stress-netdev.c
+CC stress-netlink-proc.c
+CC stress-netlink-task.c
+CC stress-nice.c
+CC stress-nop.c
+CC stress-null.c
+CC stress-numa.c
+CC stress-oom-pipe.c
+CC stress-opcode.c
+CC stress-open.c
+CC stress-pagemove.c
+CC stress-pageswap.c
+CC stress-pci.c
+CC stress-personality.c
+CC stress-peterson.c
+CC stress-physpage.c
+CC stress-pidfd.c
+CC stress-ping-sock.c
+CC stress-pipe.c
+CC stress-pipeherd.c
+CC stress-pkey.c
+CC stress-plugin.c
+CC stress-poll.c
+CC stress-prctl.c
+CC stress-prefetch.c
+CC stress-priv-instr.c
+CC stress-procfs.c
+CC stress-pthread.c
+CC stress-ptrace.c
+CC stress-pty.c
+CC stress-quota.c
+CC stress-qsort.c
+CC stress-race-sched.c
+CC stress-radixsort.c
+CC stress-randlist.c
+CC stress-ramfs.c
+CC stress-rawdev.c
+CC stress-rawpkt.c
+CC stress-rawsock.c
+CC stress-rawudp.c
+CC stress-rdrand.c
+CC stress-readahead.c
+CC stress-reboot.c
+CC stress-regs.c
+CC stress-remap.c
+CC stress-rename.c
+CC stress-resched.c
+CC stress-resources.c
+CC stress-revio.c
+CC stress-ring-pipe.c
+CC stress-rlimit.c
+CC stress-rmap.c
+CC stress-rotate.c
+CC stress-rseq.c
+CC stress-rtc.c
+CC stress-sctp.c
+CC stress-schedmix.c
+CC stress-schedpolicy.c
+CC stress-seal.c
+CC stress-seccomp.c
+CC stress-secretmem.c
+CC stress-seek.c
+CC stress-sem.c
+CC stress-sem-sysv.c
+CC stress-sendfile.c
+CC stress-session.c
+CC stress-set.c
+CC stress-shellsort.c
+CC stress-shm.c
+CC stress-shm-sysv.c
+CC stress-sigabrt.c
+CC stress-sigbus.c
+CC stress-sigchld.c
+CC stress-sigfd.c
+CC stress-sigfpe.c
+CC stress-sigio.c
+CC stress-signal.c
+CC stress-signest.c
+CC stress-sigpending.c
+CC stress-sigpipe.c
+CC stress-sigq.c
+CC stress-sigrt.c
+CC stress-sigsegv.c
+CC stress-sigsuspend.c
+CC stress-sigtrap.c
+CC stress-skiplist.c
+CC stress-sleep.c
+CC stress-smi.c
+CC stress-sock.c
+CC stress-sockabuse.c
+CC stress-sockdiag.c
+CC stress-sockfd.c
+CC stress-sockpair.c
+CC stress-sockmany.c
+CC stress-softlockup.c
+CC stress-spawn.c
+CC stress-sparsematrix.c
+CC stress-splice.c
+CC stress-stack.c
+CC stress-stackmmap.c
+CC stress-str.c
+CC stress-stream.c
+CC stress-swap.c
+CC stress-switch.c
+CC stress-sync-file.c
+CC stress-syncload.c
+CC stress-sysbadaddr.c
+CC stress-syscall.c
+CC stress-sysinfo.c
+CC stress-sysinval.c
+CC stress-sysfs.c
+CC stress-tee.c
+CC stress-timer.c
+CC stress-timerfd.c
+CC stress-tlb-shootdown.c
+CC stress-tmpfs.c
+CC stress-touch.c
+CC stress-tree.c
+CC stress-tsc.c
+CC stress-tsearch.c
+CC stress-tun.c
+CC stress-udp.c
+CC stress-udp-flood.c
+CC stress-umount.c
+CC stress-unshare.c
+CC stress-uprobe.c
+CC stress-urandom.c
+CC stress-userfaultfd.c
+CC stress-usersyscall.c
+CC stress-utime.c
+CC stress-vdso.c
+CC stress-vecfp.c
+CC stress-vecshuf.c
+CC stress-vecwide.c
+CC stress-verity.c
+CC stress-vforkmany.c
+CC stress-vm.c
+CC stress-vm-addr.c
+CC stress-vm-rw.c
+CC stress-vm-segv.c
+CC stress-vm-splice.c
+CC stress-vnni.c
+CC stress-wait.c
+CC stress-waitcpu.c
+CC stress-watchdog.c
+CC stress-wcs.c
+CC stress-x86cpuid.c
+CC stress-x86syscall.c
+CC stress-xattr.c
+CC stress-yield.c
+CC stress-zero.c
+CC stress-zlib.c
+CC stress-zombie.c
+LD stress-ng
