@@ -1,0 +1,290 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>-baseline-name</Title>
+    <LastModified>2024-04-03 09:29:18</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.4</TestClient>
+    <Description>Intel Core i5-1135G7 testing with a LENOVO Lenovo V15 G2 ITL LNVNB161216 (GGCN50WW BIOS) and Intel TigerLake-LP GT2 [Iris Xe ] on Ubuntu 23.10 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>baseline-baseline-id</Identifier>
+    <Hardware>Processor: Intel Core i5-1135G7 @ 4.20GHz (4 Cores / 8 Threads), Motherboard: LENOVO Lenovo V15 G2 ITL LNVNB161216 (GGCN50WW BIOS), Chipset: Intel Tiger Lake-LP, Memory: 32 + 8 DDR4-3200MT/s, Disk: 1000GB CT1000P2SSD8 + 512GB TS512GESD310C, Graphics: Intel TigerLake-LP GT2 [Iris Xe ] (1300MHz), Audio: Realtek ALC257, Network: Realtek RTL8111/8168/8411 + Intel Wi-Fi 6 AX201</Hardware>
+    <Software>OS: Ubuntu 23.10, Kernel: 6.5.0-26-generic (x86_64), Display Server: X Server 1.21.1.7, Compiler: GCC 13.2.0, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>ubuntu</User>
+    <TimeStamp>2024-04-03 09:21:56</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --enable-libphobos-checking=release --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=2 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=\/build\/gcc-13-XYspKM\/gcc-13-13.2.0\/debian\/tmp-nvptx\/usr,amdgcn-amdhsa=\/build\/gcc-13-XYspKM\/gcc-13-13.2.0\/debian\/tmp-gcn\/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v","cpu-scaling-governor":"intel_pstate powersave (EPP: balance_performance)","cpu-microcode":"0xb4","cpu-thermald":"2.5.4","kernel-extra-details":"Transparent Huge Pages: madvise","security":"gather_data_sampling: Mitigation of Microcode + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Not affected + retbleed: Not affected + spec_rstack_overflow: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced \/ Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-cos</Arguments>
+    <Description>Benchmark: cos</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-id</Identifier>
+        <Value>45.5815</Value>
+        <RawString>45.4356:45.3891:45.9199</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.26:1.26:1.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-exp</Arguments>
+    <Description>Benchmark: exp</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-id</Identifier>
+        <Value>9.24134</Value>
+        <RawString>9.73467:8.87631:8.81914:8.82045:9.73689:9.44437:8.95825:8.82096:9.73581:8.81984:9.73625:9.73418:8.82056:8.82443:9.73796</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"4.23:4.24:4.23:4.23:4.23:4.23:4.23:4.24:4.23:4.24:4.23:4.23:4.23:4.23:4.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-ffs</Arguments>
+    <Description>Benchmark: ffs</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-id</Identifier>
+        <Value>2.91067</Value>
+        <RawString>2.90988:2.91048:2.91164</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-pow</Arguments>
+    <Description>Benchmark: pow</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-id</Identifier>
+        <Value>21.0507</Value>
+        <RawString>21.0559:21.0579:21.0382</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.25:2.25:2.25"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-sin</Arguments>
+    <Description>Benchmark: sin</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-id</Identifier>
+        <Value>38.8089</Value>
+        <RawString>38.8116:38.8059:38.8093</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"3.35:3.35:3.35"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-log2</Arguments>
+    <Description>Benchmark: log2</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-id</Identifier>
+        <Value>13.5223</Value>
+        <RawString>13.5205:13.5198:13.5267</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-modf</Arguments>
+    <Description>Benchmark: modf</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-id</Identifier>
+        <Value>4.66439</Value>
+        <RawString>4.66335:4.66469:4.66512</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-sinh</Arguments>
+    <Description>Benchmark: sinh</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-id</Identifier>
+        <Value>15.3464</Value>
+        <RawString>15.339:15.3507:15.3496</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-sqrt</Arguments>
+    <Description>Benchmark: sqrt</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-id</Identifier>
+        <Value>4.05663</Value>
+        <RawString>4.05664:4.05696:4.05629</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-tanh</Arguments>
+    <Description>Benchmark: tanh</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-id</Identifier>
+        <Value>23.0572</Value>
+        <RawString>23.1091:23.0356:23.027</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-asinh</Arguments>
+    <Description>Benchmark: asinh</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-id</Identifier>
+        <Value>18.4504</Value>
+        <RawString>18.4582:18.4444:18.4485</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-atanh</Arguments>
+    <Description>Benchmark: atanh</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-id</Identifier>
+        <Value>23.9669</Value>
+        <RawString>23.9781:23.9552:23.9674</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-ffsll</Arguments>
+    <Description>Benchmark: ffsll</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-id</Identifier>
+        <Value>3.48038</Value>
+        <RawString>3.48096:3.47995:3.48023</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-sincos</Arguments>
+    <Description>Benchmark: sincos</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-id</Identifier>
+        <Value>22.0963</Value>
+        <RawString>22.0182:22.2481:22.0225</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.32:2.33:2.32"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-pthread_once</Arguments>
+    <Description>Benchmark: pthread_once</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>baseline-baseline-id</Identifier>
+        <Value>2.89899</Value>
+        <RawString>2.90021:2.89867:2.8981</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
