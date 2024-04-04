@@ -1,0 +1,2514 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>cractus-base-name</Title>
+    <LastModified>2024-04-04 01:01:11</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.4</TestClient>
+    <Description>2 x Intel Xeon Gold 5218 testing with a Cisco UCSC-C480-M5 (C480M5.4.2.2d.0.0808221350 BIOS) and Matrox MGA G200e [Pilot] on Ubuntu 23.10 via the Phoronix Test Suite.</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>cractus-base-id</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon Gold 5218 @ 3.90GHz (32 Cores / 64 Threads), Motherboard: Cisco UCSC-C480-M5 (C480M5.4.2.2d.0.0808221350 BIOS), Chipset: Intel Sky Lake-E DMI3 Registers, Memory: 64GB, Disk: 2 x 300GB AL14SXB30EN, Graphics: Matrox MGA G200e [Pilot], Network: 2 x Intel X550 + 4 x Intel I350</Hardware>
+    <Software>OS: Ubuntu 23.10, Kernel: 6.5.0-26-generic (x86_64), Display Server: X Server, Compiler: GCC 13.2.0, File-System: ext4, Screen Resolution: 1024x768</Software>
+    <User>ubuntu</User>
+    <TimeStamp>2024-04-03 06:40:01</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --enable-libphobos-checking=release --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=2 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=\/build\/gcc-13-XYspKM\/gcc-13-13.2.0\/debian\/tmp-nvptx\/usr,amdgcn-amdhsa=\/build\/gcc-13-XYspKM\/gcc-13-13.2.0\/debian\/tmp-gcn\/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v","cpu-scaling-governor":"intel_pstate powersave (EPP: balance_performance)","cpu-microcode":"0x5003604","kernel-extra-details":"Transparent Huge Pages: madvise","python":"Python 3.11.6","security":"gather_data_sampling: Mitigation of Microcode + itlb_multihit: KVM: Mitigation of VMX disabled + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable + retbleed: Mitigation of Enhanced IBRS + spec_rstack_overflow: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced \/ Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence + srbds: Not affected + tsx_async_abort: Mitigation of TSX disabled"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b3</Arguments>
+    <Description>Compression Level: 3 - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1383.8</Value>
+        <RawString>1373:1389.4:1389.1</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"64.20:63.73:64.08"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b3</Arguments>
+    <Description>Compression Level: 3 - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>708.9</Value>
+        <RawString>710.1:707.2:709.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"64.20:63.73:64.08"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b8</Arguments>
+    <Description>Compression Level: 8 - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>341.8</Value>
+        <RawString>368.3:358.7:317.6:363.4:370.4:327.6:343.6:347.8:348.9:310:373.1:297.7:349.5:324:326.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"63.78:64.18:63.47:63.51:64.78:64.68:64.59:64.12:65.35:64.69:63.72:65.08:64.54:63.95:65.43"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b8</Arguments>
+    <Description>Compression Level: 8 - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>718.8</Value>
+        <RawString>714.6:716.9:712.9:719.3:718.2:721.2:720.9:718.3:718.5:720:721.9:720.5:718.4:722.2:718.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"63.78:64.18:63.47:63.51:64.78:64.68:64.59:64.12:65.35:64.69:63.72:65.08:64.54:63.95:65.43"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b12</Arguments>
+    <Description>Compression Level: 12 - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>102.1</Value>
+        <RawString>102.5:87.6:103.7:111.6:98.3:103.6:107.9:100.6:102.8:110.5:108.7:95.9:96:104.2:97.1</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"64.34:63.84:65.17:63.81:65.05:64.01:63.99:63.50:65.60:64.30:64.03:63.54:65.77:63.85:64.70"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b12</Arguments>
+    <Description>Compression Level: 12 - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>672.4</Value>
+        <RawString>670.3:672.5:673.7:671.7:675.3:671.8:674.8:675.3:673.4:674.3:674:671.8:662.2:672.2:672.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"64.34:63.84:65.17:63.81:65.05:64.01:63.99:63.50:65.60:64.30:64.03:63.54:65.77:63.85:64.70"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b19</Arguments>
+    <Description>Compression Level: 19 - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>10.3</Value>
+        <RawString>10.4:10.2:10.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"74.49:75.90:73.32"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b19</Arguments>
+    <Description>Compression Level: 19 - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>593.3</Value>
+        <RawString>592:595.1:592.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"74.49:75.90:73.32"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b3 --long</Arguments>
+    <Description>Compression Level: 3, Long Mode - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>282.3</Value>
+        <RawString>282.1:283.7:281.2</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"64.53:63.83:64.21"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b3 --long</Arguments>
+    <Description>Compression Level: 3, Long Mode - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>741.7</Value>
+        <RawString>742.4:743:739.6</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"64.53:63.83:64.21"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b8 --long</Arguments>
+    <Description>Compression Level: 8, Long Mode - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>271.0</Value>
+        <RawString>271.9:274.5:266.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"64.93:63.74:64.04"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b8 --long</Arguments>
+    <Description>Compression Level: 8, Long Mode - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>730.6</Value>
+        <RawString>729.5:732:730.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"64.93:63.74:64.04"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b19 --long</Arguments>
+    <Description>Compression Level: 19, Long Mode - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>5.50</Value>
+        <RawString>5.75:5.4:5.35:5.4:5.68:5.41:5.41:5.4:5.75:5.42:5.55:5.56:5.42:5.53</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"69.34:71.74:71.98:71.56:69.68:71.70:71.69:71.65:69.45:71.63:70.66:70.70:71.71:70.57"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b19 --long</Arguments>
+    <Description>Compression Level: 19, Long Mode - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>596.0</Value>
+        <RawString>596.6:595.5:596:598.3:596.5:595:596:597.7:595.2:595.9:594.3:593.8:594.1:598.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"69.34:71.74:71.98:71.56:69.68:71.70:71.69:71.65:69.45:71.63:70.66:70.70:71.71:70.57"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnuradio-1.0.0</Identifier>
+    <Title>GNU Radio</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: Five Back to Back FIR Filters</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>542.5</Value>
+        <RawString>529.4:542.2:555.9</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.91:360.51:360.46"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnuradio-1.0.0</Identifier>
+    <Title>GNU Radio</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: Signal Source (Cosine)</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2014.0</Value>
+        <RawString>2019.2:1995.1:2027.6</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.91:360.51:360.46"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnuradio-1.0.0</Identifier>
+    <Title>GNU Radio</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: FIR Filter</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>446.0</Value>
+        <RawString>444.4:446.9:446.8</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.91:360.51:360.46"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnuradio-1.0.0</Identifier>
+    <Title>GNU Radio</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: IIR Filter</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>257.6</Value>
+        <RawString>259.2:255.3:258.4</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.91:360.51:360.46"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnuradio-1.0.0</Identifier>
+    <Title>GNU Radio</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: FM Deemphasis Filter</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>574.5</Value>
+        <RawString>568.8:573.8:580.8</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.91:360.51:360.46"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnuradio-1.0.0</Identifier>
+    <Title>GNU Radio</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: Hilbert Transform</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>212.7</Value>
+        <RawString>212.9:213:212.3</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.91:360.51:360.46"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/john-the-ripper-1.8.0</Identifier>
+    <Title>John The Ripper</Title>
+    <AppVersion>2023.03.14</AppVersion>
+    <Arguments>--format=bcrypt</Arguments>
+    <Description>Test: Blowfish</Description>
+    <Scale>Real C/S</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>39300</Value>
+        <RawString>39154:39379:39366</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-m64 -lssl -lcrypto -fopenmp -lgmp -lm -lrt -lz -ldl -lcrypt -lbz2"},"test-run-times":"30.48:30.26:30.26"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/dav1d-1.15.1</Identifier>
+    <Title>dav1d</Title>
+    <AppVersion>1.4</AppVersion>
+    <Arguments>-i summer_nature_4k.ivf</Arguments>
+    <Description>Video Input: Summer Nature 4K</Description>
+    <Scale>FPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>108.81</Value>
+        <RawString>107.9:109.45:109.08</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread"},"test-run-times":"35.06:33.07:33.18"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/dav1d-1.15.1</Identifier>
+    <Title>dav1d</Title>
+    <AppVersion>1.4</AppVersion>
+    <Arguments>-i summer_nature_1080p.ivf</Arguments>
+    <Description>Video Input: Summer Nature 1080p</Description>
+    <Scale>FPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>275.91</Value>
+        <RawString>277.59:272.06:278.08</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread"},"test-run-times":"13.52:13.33:13.05"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset slow</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Slow</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>8.49</Value>
+        <RawString>8.18:8.61:8.59:8.59</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"73.50:69.76:69.93:69.92"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset medium</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Medium</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>8.84</Value>
+        <RawString>8.83:8.84:8.84</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"68.09:67.98:68.02"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset slow</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Slow</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>21.20</Value>
+        <RawString>21.31:21.14:21.16</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"28.22:28.45:28.41"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset medium</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Medium</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>22.09</Value>
+        <RawString>22.12:22.14:22</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"27.18:27.15:27.33"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset veryfast</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Very Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>15.92</Value>
+        <RawString>15.9:15.95:15.91</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"37.82:37.70:37.79"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset superfast</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Super Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>20.62</Value>
+        <RawString>20.48:20.77:20.62</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"29.38:28.97:29.19"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset ultrafast</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Ultra Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>23.77</Value>
+        <RawString>23.79:23.85:23.68</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"25.30:25.24:25.41"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset veryfast</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Very Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>40.91</Value>
+        <RawString>40.99:41.04:40.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"14.70:14.69:14.81"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset superfast</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Super Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>52.75</Value>
+        <RawString>52.75:52.8:52.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"11.43:11.43:11.44"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset ultrafast</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Ultra Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>63.23</Value>
+        <RawString>63.62:62.96:63.12</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"9.49:9.60:9.56"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/x265-1.3.0</Identifier>
+    <Title>x265</Title>
+    <AppVersion>3.4</AppVersion>
+    <Arguments>Bosphorus_3840x2160.y4m</Arguments>
+    <Description>Video Input: Bosphorus 4K</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>13.52</Value>
+        <RawString>13.2:13.67:13.68</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"45.98:44.12:44.09"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/x265-1.3.0</Identifier>
+    <Title>x265</Title>
+    <AppVersion>3.4</AppVersion>
+    <Arguments>Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m</Arguments>
+    <Description>Video Input: Bosphorus 1080p</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>32.83</Value>
+        <RawString>32.44:32.97:33.08</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"18.65:18.35:18.28"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/himeno-1.3.0</Identifier>
+    <Title>Himeno Benchmark</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>Poisson Pressure Solver</Description>
+    <Scale>MFLOPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2351.282032</Value>
+        <RawString>2374.789059:2340.24013:2338.816906</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -mavx2"},"test-run-times":"52.18:53.96:54.54"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-7zip-1.10.0</Identifier>
+    <Title>7-Zip Compression</Title>
+    <AppVersion>22.01</AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: Compression Rating</Description>
+    <Scale>MIPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>89707</Value>
+        <RawString>78714:90343:93211:92911:88870:90448:87876:90938:92798:91663:89287:89427</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lpthread -ldl -O2 -fPIC"},"test-run-times":"69.95:63.34:60.96:61.30:63.62:61.33:62.76:63.64:61.86:61.59:61.92:62.08"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-7zip-1.10.0</Identifier>
+    <Title>7-Zip Compression</Title>
+    <AppVersion>22.01</AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: Decompression Rating</Description>
+    <Scale>MIPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>130406</Value>
+        <RawString>131595:127262:130645:132432:128994:131135:132477:127486:129117:130273:132442:131016</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lpthread -ldl -O2 -fPIC"},"test-run-times":"69.95:63.34:60.96:61.30:63.62:61.33:62.76:63.64:61.86:61.59:61.92:62.08"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/stockfish-1.4.0</Identifier>
+    <Title>Stockfish</Title>
+    <AppVersion>15</AppVersion>
+    <Arguments></Arguments>
+    <Description>Total Time</Description>
+    <Scale>Nodes Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>53772262</Value>
+        <RawString>57374565:58863689:55012025:49575376:54316699:52800216:50146351:50223266:55638170</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lgcov -m64 -lpthread -fno-exceptions -std=c++17 -fno-peel-loops -fno-tracer -pedantic -O3 -msse -msse3 -mpopcnt -mavx2 -mavx512f -mavx512bw -mavx512vnni -mavx512dq -mavx512vl -msse4.1 -mssse3 -msse2 -mbmi2 -flto -flto=jobserver"},"test-run-times":"132.53:150.93:140.11:112.56:128.94:133.38:104.62:124.74:134.24"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/asmfish-1.1.2</Identifier>
+    <Title>asmFish</Title>
+    <AppVersion>2018-07-23</AppVersion>
+    <Arguments></Arguments>
+    <Description>1024 Hash Memory, 26 Depth</Description>
+    <Scale>Nodes/second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>68642681</Value>
+        <RawString>68753515:67893119:69281408</RawString>
+        <JSON>{"test-run-times":"157.40:178.86:193.81"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/swet-1.0.0</Identifier>
+    <Title>Swet</Title>
+    <AppVersion>1.5.16</AppVersion>
+    <Arguments></Arguments>
+    <Description>Average</Description>
+    <Scale>Operations Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>438256522</Value>
+        <RawString>441193795:437596040:435979730</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -lcurses -lrt"},"test-run-times":"22.94:22.91:22.92"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-gcc-1.4.0</Identifier>
+    <Title>Timed GCC Compilation</Title>
+    <AppVersion>13.2</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1646.474</Value>
+        <RawString>1659.729:1645.523:1634.171</RawString>
+        <JSON>{"test-run-times":"1659.73:1645.52:1634.17"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-linux-kernel-1.15.0</Identifier>
+    <Title>Timed Linux Kernel Compilation</Title>
+    <AppVersion>6.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>72.530</Value>
+        <RawString>76.478:71.82:71.872:71.792:71.991:71.904:71.851</RawString>
+        <JSON>{"test-run-times":"76.48:71.82:71.87:71.79:71.99:71.90:71.85"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-llvm-1.5.0</Identifier>
+    <Title>Timed LLVM Compilation</Title>
+    <AppVersion>16.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>526.749</Value>
+        <RawString>526.795:535.981:517.472</RawString>
+        <JSON>{"test-run-times":"526.79:535.98:517.47"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/c-ray-1.2.0</Identifier>
+    <Title>C-Ray</Title>
+    <AppVersion>1.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>Total Time - 4K, 16 Rays Per Pixel</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>31.117</Value>
+        <RawString>31.091:31.045:31.214</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -O3"},"test-run-times":"31.67:31.73:31.89"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/povray-1.2.1</Identifier>
+    <Title>POV-Ray</Title>
+    <AppVersion>3.7.0.7</AppVersion>
+    <Arguments></Arguments>
+    <Description>Trace Time</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>28.104</Value>
+        <RawString>28.348:27.513:28.452</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -lSM -lICE -lX11 -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"},"test-run-times":"31.16:30.30:31.25"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/numpy-1.2.1</Identifier>
+    <Title>Numpy Benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description></Description>
+    <Scale>Score</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>278.23</Value>
+        <RawString>275.97:280.66:278.05</RawString>
+        <JSON>{"test-run-times":"275.47:274.41:278.27"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/cython-bench-1.1.0</Identifier>
+    <Title>Cython Benchmark</Title>
+    <AppVersion>0.29.21</AppVersion>
+    <Arguments>NQUEENS</Arguments>
+    <Description>Test: N-Queens</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>37.934</Value>
+        <RawString>37.962:37.724:38.115</RawString>
+        <JSON>{"test-run-times":"37.96:37.72:38.11"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/hackbench-1.0.0</Identifier>
+    <Title>Hackbench</Title>
+    <AppVersion></AppVersion>
+    <Arguments>32 process</Arguments>
+    <Description>Count: 32 - Type: Process</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>36.420</Value>
+        <RawString>37.451:35.856:35.954</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lpthread"},"test-run-times":"37.60:36.00:36.10"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/m-queens-1.1.0</Identifier>
+    <Title>m-queens</Title>
+    <AppVersion>1.2</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Solve</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>40.844</Value>
+        <RawString>40.922:40.819:40.791</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fopenmp -O2 -march=native"},"test-run-times":"40.92:40.82:40.79"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/radiance-1.0.0</Identifier>
+    <Title>Radiance Benchmark</Title>
+    <AppVersion>5.0</AppVersion>
+    <Arguments>make all</Arguments>
+    <Description>Test: Serial</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1056.44</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"1056.44"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/radiance-1.0.0</Identifier>
+    <Title>Radiance Benchmark</Title>
+    <AppVersion>5.0</AppVersion>
+    <Arguments>make smp</Arguments>
+    <Description>Test: SMP Parallel</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>326.42</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"326.42"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/system-decompress-bzip2-1.0.2</Identifier>
+    <Title>System BZIP2 Decompression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>System BZIP2 Decompression Processor </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>15.451</Value>
+        <RawString>15.501:15.443:15.408</RawString>
+        <JSON>{"test-run-times":"15.50:15.44:15.41"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/system-decompress-gzip-1.1.1</Identifier>
+    <Title>System GZIP Decompression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>System GZIP Decompression Processor </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>4.610</Value>
+        <RawString>5.267:4.553:4.55:4.556:4.551:4.548:4.55:4.553:4.568:4.552:4.548:4.551:4.583</RawString>
+        <JSON>{"test-run-times":"5.27:4.55:4.55:4.56:4.55:4.55:4.55:4.55:4.57:4.55:4.55:4.55:4.58"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/system-decompress-xz-1.0.2</Identifier>
+    <Title>System XZ Decompression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>System XZ Decompression Processor </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>5.076</Value>
+        <RawString>5.109:5.061:5.059</RawString>
+        <JSON>{"test-run-times":"5.11:5.06:5.06"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnupg-1.0.1</Identifier>
+    <Title>GnuPG</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>GnuPG Processor </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>17.585</Value>
+        <RawString>18.784:17.478:17.435:17.433:17.455:17.46:17.438:17.446:17.452:17.471</RawString>
+        <JSON>{"test-run-times":"18.78:17.48:17.44:17.43:17.45:17.46:17.44:17.45:17.45:17.47"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/system-decompress-tiff-1.0.1</Identifier>
+    <Title>System Libtiff Decompression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>System Libtiff Decompression Processor </Description>
+    <Scale>ms</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>12.152766</Value>
+        <RawString>28.700689:12.6275:11.764943:17.542201:11.663858:11.680307:11.738248:11.657337:11.677155:11.951683:11.81835:11.743919:11.68045:11.756271:11.728495:11.634968:11.644007:11.624284:11.495321:11.740292:11.535027:11.702435:11.633798:11.521632:11.399829:11.65798:12.054213:11.607778:11.742081:11.83009:11.67572:11.595359:11.598615:11.499091:11.61921:11.572717:11.595597:11.844069:11.642248:12.246435:11.737092:11.664264:11.643446:11.638542:11.509994:11.62246:11.709983:11.452015:11.620652:11.595674</RawString>
+        <JSON>{"test-run-times":"0.06:0.02:0.02:0.03:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/system-libjpeg-1.1.0</Identifier>
+    <Title>System JPEG Library Decode</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>System JPEG Library Decode Processor </Description>
+    <Scale>ms</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>24.011400</Value>
+        <RawString>42.99833:24.248186:22.650179:24.164345:23.452413:23.941095:23.68746:22.873712:23.747317:24.831203:23.590137:23.461224:22.060748:23.723145:24.52054:23.340708:22.753382:24.743629:23.911645:23.584356:23.859827:22.9198:23.855317:22.712434:24.543126:22.776012:24.651378:23.981886:22.518089:22.724507:23.655584:24.118048:25.058568:23.023305:22.825582:25.32474:23.9122:23.340385:22.787164:22.817949:22.946347:23.928737:24.962701:23.700471:23.801787:23.001992:23.668372:23.793029:23.065518</RawString>
+        <JSON>{"test-run-times":"0.06:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.04:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.04:0.03:0.03:0.04:0.03:0.03:0.03:0.03:0.03:0.03:0.04:0.03:0.03:0.03:0.03:0.03:0.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/openssl-3.1.0</Identifier>
+    <Title>OpenSSL</Title>
+    <AppVersion>3.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>RSA 4096-bit Performance</Description>
+    <Scale>byte/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>63</Value>
+        <RawString>63:63:63</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -m64 -O3 -lssl -lcrypto -ldl"},"test-run-times":"5672.75:5672.57:5672.58"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/openssl-1.2.0</Identifier>
+    <Title>OpenSSL</Title>
+    <AppVersion> </AppVersion>
+    <Arguments></Arguments>
+    <Description>OpenSSL Processor </Description>
+    <Scale>byte/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>63</Value>
+        <RawString>63:63:63</RawString>
+        <JSON>{"install-footnote":"OpenSSL 3.0.10 1 Aug 2023 (Library: OpenSSL 3.0.10 1 Aug 2023)","test-run-times":"5672.51:5672.50:5672.49"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/redis-1.4.0</Identifier>
+    <Title>Redis</Title>
+    <AppVersion>7.0.4</AppVersion>
+    <Arguments>-t get</Arguments>
+    <Description>Test: GET</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2449944.2</Value>
+        <RawString>2451505:2448264:2450063.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"26.44:26.44:26.43"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/redis-1.4.0</Identifier>
+    <Title>Redis</Title>
+    <AppVersion>7.0.4</AppVersion>
+    <Arguments>-t set</Arguments>
+    <Description>Test: SET</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1424170.92</Value>
+        <RawString>1421085.5:1422176.88:1429250.38</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"41.21:41.18:41.01"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>PBKDF2-sha512</Description>
+    <Scale>Iterations Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1026003</Value>
+        <RawString>1026003:1026003:1026003</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1024007</Value>
+        <RawString>1020015:1026003:1026003</RawString>
+        <JSON>{"test-run-times":"33.02:32.25:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1023350</Value>
+        <RawString>1024000:1028015:1018034</RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1027344</Value>
+        <RawString>1026003:1028015:1028015</RawString>
+        <JSON>{"test-run-times":"32.21:32.22:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1021351</Value>
+        <RawString>1018034:1020015:1026003</RawString>
+        <JSON>{"test-run-times":"32.23:32.26:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1026006</Value>
+        <RawString>1026003:1024000:1028015</RawString>
+        <JSON>{"test-run-times":"33.48:32.26:32.26"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1026674</Value>
+        <RawString>1028015:1026003:1026003</RawString>
+        <JSON>{"test-run-times":"32.21:32.46:32.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>PBKDF2-whirlpool</Description>
+    <Scale>Iterations Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>450677</Value>
+        <RawString>450419:450419:451194</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>450420</Value>
+        <RawString>449646:451194:450419</RawString>
+        <JSON>{"test-run-times":"33.02:32.25:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>450419</Value>
+        <RawString>450419:450419:450419</RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>450161</Value>
+        <RawString>449646:450419:450419</RawString>
+        <JSON>{"test-run-times":"32.21:32.22:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>449905</Value>
+        <RawString>448876:450419:450419</RawString>
+        <JSON>{"test-run-times":"33.48:32.26:32.26"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>448635</Value>
+        <RawString>445066:450419:450419</RawString>
+        <JSON>{"test-run-times":"32.99:32.23:32.53"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>AES-XTS 256b Encryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2333.1</Value>
+        <RawString>2309.2:2327:2363.2</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2338.7</Value>
+        <RawString>2324.1:2328.9:2363.1</RawString>
+        <JSON>{"test-run-times":"33.02:32.25:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2343.5</Value>
+        <RawString>2342.1:2356.9:2331.5</RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2348.2</Value>
+        <RawString>2335:2367.8:2341.8</RawString>
+        <JSON>{"test-run-times":"32.20:32.24:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2348.3</Value>
+        <RawString>2325.7:2362.2:2357</RawString>
+        <JSON>{"test-run-times":"32.23:32.26:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2357.8</Value>
+        <RawString>2361.7:2357.9:2353.9</RawString>
+        <JSON>{"test-run-times":"33.48:32.26:32.26"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2352.6</Value>
+        <RawString>2357.6:2332.3:2368</RawString>
+        <JSON>{"test-run-times":"32.99:32.23:32.53"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2347.3</Value>
+        <RawString>2339:2340.9:2362</RawString>
+        <JSON>{"test-run-times":"32.21:32.46:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2341.5</Value>
+        <RawString>2332.8:2345.2:2346.4</RawString>
+        <JSON>{"test-run-times":"32.24:32.25:32.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2345.3</Value>
+        <RawString>2354.8:2348.6:2332.5</RawString>
+        <JSON>{"test-run-times":"32.96:32.22:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2356.4</Value>
+        <RawString>2370.5:2346.8:2351.8</RawString>
+        <JSON>{"test-run-times":"32.19:32.18:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2350.1</Value>
+        <RawString>2347.3:2346.9:2356</RawString>
+        <JSON>{"test-run-times":"32.25:32.23:32.76"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>AES-XTS 256b Decryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2357.4</Value>
+        <RawString>2357.5:2351.5:2363.3</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2369.9</Value>
+        <RawString>2353.2:2385:2371.4</RawString>
+        <JSON>{"test-run-times":"33.02:32.25:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2363.8</Value>
+        <RawString>2371.8:2357.7:2362</RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2369.6</Value>
+        <RawString>2369:2359.8:2380.1</RawString>
+        <JSON>{"test-run-times":"32.21:32.22:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2368.2</Value>
+        <RawString>2365:2367.6:2372</RawString>
+        <JSON>{"test-run-times":"32.20:32.24:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2359.5</Value>
+        <RawString>2355.9:2363.3:2359.3</RawString>
+        <JSON>{"test-run-times":"32.23:32.26:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2360.2</Value>
+        <RawString>2363.2:2361.1:2356.4</RawString>
+        <JSON>{"test-run-times":"33.48:32.26:32.26"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2364.2</Value>
+        <RawString>2358.9:2364:2369.6</RawString>
+        <JSON>{"test-run-times":"32.99:32.23:32.53"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2370.4</Value>
+        <RawString>2367.7:2371.3:2372.2</RawString>
+        <JSON>{"test-run-times":"32.21:32.46:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2372.1</Value>
+        <RawString>2364.4:2375:2377</RawString>
+        <JSON>{"test-run-times":"32.24:32.25:32.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2372.6</Value>
+        <RawString>2380.3:2375.8:2361.8</RawString>
+        <JSON>{"test-run-times":"32.96:32.22:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2348.8</Value>
+        <RawString>2347.6:2349.9</RawString>
+        <JSON>{"test-run-times":"32.19:32.18:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2349.4</Value>
+        <RawString>2348.4:2351.4:2348.3</RawString>
+        <JSON>{"test-run-times":"32.25:32.23:32.76"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Serpent-XTS 256b Encryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>445.3</Value>
+        <RawString>433.9:450.5:451.5</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.3</Value>
+        <RawString>451.1:452:450.7</RawString>
+        <JSON>{"test-run-times":"33.02:32.25:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.8</Value>
+        <RawString>451.9:451.7:451.7</RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.7</Value>
+        <RawString>451.8:451.1:452.2</RawString>
+        <JSON>{"test-run-times":"32.21:32.22:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.9</Value>
+        <RawString>451.7:452.1:452</RawString>
+        <JSON>{"test-run-times":"32.20:32.24:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.6</Value>
+        <RawString>451.5:451.7:451.6</RawString>
+        <JSON>{"test-run-times":"32.23:32.26:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.5</Value>
+        <RawString>451.6:451.1:451.8</RawString>
+        <JSON>{"test-run-times":"32.21:32.46:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.0</Value>
+        <RawString>451.2:450.6:451.1</RawString>
+        <JSON>{"test-run-times":"32.25:32.23:32.76"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Serpent-XTS 256b Decryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>461.5</Value>
+        <RawString>461.6:461.2:461.7</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>461.9</Value>
+        <RawString>462.1:461.8:461.9</RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>461.8</Value>
+        <RawString>461.9:461.3:462.3</RawString>
+        <JSON>{"test-run-times":"32.21:32.22:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>462.1</Value>
+        <RawString>462:462.1:462.1</RawString>
+        <JSON>{"test-run-times":"32.20:32.24:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>461.6</Value>
+        <RawString>461.7:461.7:461.5</RawString>
+        <JSON>{"test-run-times":"32.23:32.26:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>461.7</Value>
+        <RawString>461.9:461.8:461.5</RawString>
+        <JSON>{"test-run-times":"33.48:32.26:32.26"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>462.0</Value>
+        <RawString>462:461.8:462.3</RawString>
+        <JSON>{"test-run-times":"32.24:32.25:32.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>461.1</Value>
+        <RawString>461.4:460.9:461.1</RawString>
+        <JSON>{"test-run-times":"32.25:32.23:32.76"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Twofish-XTS 256b Encryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>263.0</Value>
+        <RawString>256.8:266.2:266.1</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.4</Value>
+        <RawString>266.2:266.6:266.4</RawString>
+        <JSON>{"test-run-times":"33.02:32.25:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.3</Value>
+        <RawString>266.3:266.3:266.3</RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.5</Value>
+        <RawString>266.5:266.5:266.5</RawString>
+        <JSON>{"test-run-times":"32.21:32.46:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.2</Value>
+        <RawString>266.4:266.2:266.1</RawString>
+        <JSON>{"test-run-times":"32.19:32.18:32.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Twofish-XTS 256b Decryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.8</Value>
+        <RawString>266.8:266.8:266.8</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.9</Value>
+        <RawString>266.6:267.1:266.9</RawString>
+        <JSON>{"test-run-times":"33.02:32.25:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.6</Value>
+        <RawString>266.8:266.4:266.7</RawString>
+        <JSON>{"test-run-times":"32.21:32.22:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.7</Value>
+        <RawString>266.7:266.8:266.5</RawString>
+        <JSON>{"test-run-times":"33.48:32.26:32.26"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>267.0</Value>
+        <RawString>267.1:266.9:267</RawString>
+        <JSON>{"test-run-times":"32.21:32.46:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>267.1</Value>
+        <RawString>267.3:267.2:266.7</RawString>
+        <JSON>{"test-run-times":"32.96:32.22:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.5</Value>
+        <RawString>266.6:266.4:266.6</RawString>
+        <JSON>{"test-run-times":"32.25:32.23:32.76"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>AES-XTS 512b Encryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1942.7</Value>
+        <RawString>1940.9:1939.1:1948</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1947.1</Value>
+        <RawString>1939.9:1956.9:1944.5</RawString>
+        <JSON>{"test-run-times":"33.02:32.25:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1948.4</Value>
+        <RawString>1953.8:1948.1:1943.4</RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1946.1</Value>
+        <RawString>1947.6:1935.8:1955</RawString>
+        <JSON>{"test-run-times":"32.21:32.22:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1951.7</Value>
+        <RawString>1947.8:1954.3:1953.1</RawString>
+        <JSON>{"test-run-times":"32.20:32.24:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1945.0</Value>
+        <RawString>1940.3:1950.3:1944.3</RawString>
+        <JSON>{"test-run-times":"32.23:32.26:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1946.0</Value>
+        <RawString>1948.9:1945.2:1943.8</RawString>
+        <JSON>{"test-run-times":"33.48:32.26:32.26"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1949.0</Value>
+        <RawString>1944.8:1946.6:1955.7</RawString>
+        <JSON>{"test-run-times":"32.99:32.23:32.53"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1949.5</Value>
+        <RawString>1949.5:1947.9:1951</RawString>
+        <JSON>{"test-run-times":"32.21:32.46:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1950.2</Value>
+        <RawString>1944.7:1952.9:1953.1</RawString>
+        <JSON>{"test-run-times":"32.24:32.25:32.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1951.9</Value>
+        <RawString>1959.1:1952.4:1944.3</RawString>
+        <JSON>{"test-run-times":"32.96:32.22:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1945.6</Value>
+        <RawString>1955.3:1939.3:1942.1</RawString>
+        <JSON>{"test-run-times":"32.19:32.18:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1940.8</Value>
+        <RawString>1941.5:1941.9:1939</RawString>
+        <JSON>{"test-run-times":"32.25:32.23:32.76"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>AES-XTS 512b Decryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1944.2</Value>
+        <RawString>1945.7:1938.4:1948.5</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1949.8</Value>
+        <RawString>1943.9:1960.6:1944.8</RawString>
+        <JSON>{"test-run-times":"33.02:32.25:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1951.4</Value>
+        <RawString>1958.7:1947.7:1947.7</RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1950.4</Value>
+        <RawString>1952.4:1940:1958.7</RawString>
+        <JSON>{"test-run-times":"32.21:32.22:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1953.6</Value>
+        <RawString>1951.7:1953.2:1955.9</RawString>
+        <JSON>{"test-run-times":"32.20:32.24:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1946.4</Value>
+        <RawString>1944.6:1947.6:1947</RawString>
+        <JSON>{"test-run-times":"32.23:32.26:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1945.7</Value>
+        <RawString>1947.9:1943.5</RawString>
+        <JSON>{"test-run-times":"33.48:32.26:32.26"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1950.2</Value>
+        <RawString>1944.5:1950.2:1955.8</RawString>
+        <JSON>{"test-run-times":"32.99:32.23:32.53"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1950.6</Value>
+        <RawString>1954.4:1946.1:1951.2</RawString>
+        <JSON>{"test-run-times":"32.21:32.46:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1954.1</Value>
+        <RawString>1949.4:1956.8:1956.2</RawString>
+        <JSON>{"test-run-times":"32.24:32.25:32.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1956.2</Value>
+        <RawString>1962.5:1957.2:1949</RawString>
+        <JSON>{"test-run-times":"32.96:32.22:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1947.8</Value>
+        <RawString>1954.4:1941.1</RawString>
+        <JSON>{"test-run-times":"32.19:32.18:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1939.4</Value>
+        <RawString>1941.3:1937.4</RawString>
+        <JSON>{"test-run-times":"32.25:32.23:32.76"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Serpent-XTS 512b Encryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.3</Value>
+        <RawString>451.5:451.1:451.4</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.7</Value>
+        <RawString>451:452.3</RawString>
+        <JSON>{"test-run-times":"33.02:32.25:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.9</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.5</Value>
+        <RawString>451.4:451.6:451.5</RawString>
+        <JSON>{"test-run-times":"32.23:32.26:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.8</Value>
+        <RawString>451.5:452.1:451.8</RawString>
+        <JSON>{"test-run-times":"32.99:32.23:32.53"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>452.0</Value>
+        <RawString>452.3:452.3:451.4</RawString>
+        <JSON>{"test-run-times":"32.96:32.22:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>452</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"32.19:32.18:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.2</Value>
+        <RawString>451.3:451:451.3</RawString>
+        <JSON>{"test-run-times":"32.25:32.23:32.76"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Twofish-XTS 512b Encryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.2</Value>
+        <RawString>266.2:266.1</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.0</Value>
+        <RawString>266.1:266.5:265.5</RawString>
+        <JSON>{"test-run-times":"33.02:32.25:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.1</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.3</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"32.21:32.22:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.4</Value>
+        <RawString>266.4:266.3</RawString>
+        <JSON>{"test-run-times":"32.99:32.23:32.53"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"32.19:32.18:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>265.8</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"32.25:32.23:32.76"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Twofish-XTS 512b Decryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.6</Value>
+        <RawString>266.6:266.6:266.6</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.8</Value>
+        <RawString>266.5:267:266.8</RawString>
+        <JSON>{"test-run-times":"33.02:32.25:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.7</Value>
+        <RawString>266.8:266.5:266.7</RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.9</Value>
+        <RawString>267:267.1:266.6</RawString>
+        <JSON>{"test-run-times":"32.96:32.22:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.5</Value>
+        <RawString>266.5:266.5</RawString>
+        <JSON>{"test-run-times":"32.25:32.23:32.76"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Serpent-XTS 512b Decryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>461.5</Value>
+        <RawString>461.3:461.6</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>461.8</Value>
+        <RawString>461.9:461.7</RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>461.9</Value>
+        <RawString>462:461.1:462.5</RawString>
+        <JSON>{"test-run-times":"32.21:32.22:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>461.7</Value>
+        <RawString>461.5:461.8:461.7</RawString>
+        <JSON>{"test-run-times":"32.23:32.26:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>462.0</Value>
+        <RawString>461.7:462:462.4</RawString>
+        <JSON>{"test-run-times":"32.24:32.25:32.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>462.6</Value>
+        <RawString>462.6:462.5</RawString>
+        <JSON>{"test-run-times":"32.96:32.22:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>461.6</Value>
+        <RawString>462:461.2</RawString>
+        <JSON>{"test-run-times":"32.19:32.18:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>461.2</Value>
+        <RawString>461.3:461:461.4</RawString>
+        <JSON>{"test-run-times":"32.25:32.23:32.76"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/tjbench-1.2.0</Identifier>
+    <Title>libjpeg-turbo tjbench</Title>
+    <AppVersion>2.1.0</AppVersion>
+    <Arguments>decompression-throughput</Arguments>
+    <Description>Test: Decompression Throughput</Description>
+    <Scale>Megapixels/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>127.226616</Value>
+        <RawString>128.072388:126.617488:126.989973</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -rdynamic"},"test-run-times":"25.34:25.35:25.28"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/mysqlslap-1.4.0</Identifier>
+    <Title>MariaDB</Title>
+    <AppVersion>11.0.1</AppVersion>
+    <Arguments>--concurrency=128</Arguments>
+    <Description>Clients: 128</Description>
+    <Scale>Queries Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>193</Value>
+        <RawString>194.0617116243:192.04916458613:193.42359767892</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fPIC -pie -fstack-protector -O3 -shared -lrt -lpthread -lz -ldl -lm -lstdc++"},"test-run-times":"538.05:543.28:537.01"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/mysqlslap-1.4.0</Identifier>
+    <Title>MariaDB</Title>
+    <AppVersion>11.0.1</AppVersion>
+    <Arguments>--concurrency=256</Arguments>
+    <Description>Clients: 256</Description>
+    <Scale>Queries Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>167</Value>
+        <RawString>166.11295681063:167.72895001677:166.88918558077</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fPIC -pie -fstack-protector -O3 -shared -lrt -lpthread -lz -ldl -lm -lstdc++"},"test-run-times":"624.77:619.10:618.35"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gegl-1.0.0</Identifier>
+    <Title>GEGL</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>GEGL System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>45.319</Value>
+        <RawString>45.688:45.179:45.09</RawString>
+        <JSON>{"test-run-times":"45.69:45.18:45.09"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gimp-1.1.3</Identifier>
+    <Title>GIMP</Title>
+    <AppVersion>2.10.34</AppVersion>
+    <Arguments>resize</Arguments>
+    <Description>Test: resize</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>31.224</Value>
+        <RawString>33.54:31.775:31.549:31.637:30.771:30.774:30.83:30.659:31.025:30.849:30.786:31.528:30.692:30.959:30.979</RawString>
+        <JSON>{"test-run-times":"33.54:31.77:31.55:31.64:30.77:30.77:30.83:30.66:31.02:30.85:30.79:31.53:30.69:30.96:30.98"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gimp-1.1.3</Identifier>
+    <Title>GIMP</Title>
+    <AppVersion>2.10.34</AppVersion>
+    <Arguments>rotate</Arguments>
+    <Description>Test: rotate</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>26.868</Value>
+        <RawString>26.769:26.804:27.03</RawString>
+        <JSON>{"test-run-times":"26.77:26.80:27.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gimp-1.1.3</Identifier>
+    <Title>GIMP</Title>
+    <AppVersion>2.10.34</AppVersion>
+    <Arguments>auto-levels</Arguments>
+    <Description>Test: auto-levels</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>31.663</Value>
+        <RawString>31.194:31.705:32.09</RawString>
+        <JSON>{"test-run-times":"31.19:31.70:32.09"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gimp-1.1.3</Identifier>
+    <Title>GIMP</Title>
+    <AppVersion>2.10.34</AppVersion>
+    <Arguments>unsharp-mask</Arguments>
+    <Description>Test: unsharp-mask</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>40.665</Value>
+        <RawString>40.432:41.377:40.187</RawString>
+        <JSON>{"test-run-times":"40.43:41.38:40.19"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gmic-1.0.0</Identifier>
+    <Title>G'MIC</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>G'MIC System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>7.800</Value>
+        <RawString>8.72:7.687:7.732:7.777:7.77:7.743:7.69:7.739:7.7:7.721:7.677:7.709:7.733</RawString>
+        <JSON>{"test-run-times":"8.72:7.69:7.73:7.78:7.77:7.74:7.69:7.74:7.70:7.72:7.68:7.71:7.73"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/hugin-1.0.0</Identifier>
+    <Title>Hugin</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Hugin System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>78.152</Value>
+        <RawString>81.364:83.296:77.411:75.098:77.455:76.445:75.101:80.733:75.145:77.321:81.252:73.403:80.282:79.348:78.629</RawString>
+        <JSON>{"test-run-times":"81.36:83.30:77.41:75.10:77.45:76.44:75.10:80.73:75.14:77.32:81.25:73.40:80.28:79.35:78.63"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/inkscape-1.0.1</Identifier>
+    <Title>Inkscape</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Inkscape System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>46.371</Value>
+        <RawString>48.628:46.054:45.999:45.936:45.738:45.871</RawString>
+        <JSON>{"install-footnote":"Inkscape 1.2.2 (b0a8486541, 2022-12-01)","test-run-times":"48.63:46.05:46.00:45.94:45.74:45.87"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/ocrmypdf-1.0.0</Identifier>
+    <Title>OCRMyPDF</Title>
+    <AppVersion>14.0.1+dfsg1</AppVersion>
+    <Arguments></Arguments>
+    <Description>OCRMyPDF System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>10.780</Value>
+        <RawString>12.917:10.588:10.725:10.214:10.758:10.582:10.837:10.618:10.913:10.473:10.78:10.466:10.309:10.652:10.862</RawString>
+        <JSON>{"test-run-times":"12.92:10.59:10.72:10.21:10.76:10.58:10.84:10.62:10.91:10.47:10.78:10.47:10.31:10.65:10.86"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/octave-benchmark-1.0.1</Identifier>
+    <Title>GNU Octave Benchmark</Title>
+    <AppVersion>8.3.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>GNU Octave Benchmark System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>16.067</Value>
+        <RawString>16.6:16:15.866:15.951:15.919</RawString>
+        <JSON>{"test-run-times":"16.60:16.00:15.87:15.95:15.92"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/rawtherapee-1.0.1</Identifier>
+    <Title>RawTherapee</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>RawTherapee System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>95.362</Value>
+        <RawString>96.087:95.205:94.794</RawString>
+        <JSON>{"install-footnote":"RawTherapee, version 5.9, command line.","test-run-times":"98.05:97.15:96.73"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/rsvg-1.0.0</Identifier>
+    <Title>librsvg</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>librsvg System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>81.950</Value>
+        <RawString>83.958:81.18:80.711</RawString>
+        <JSON>{"install-footnote":"rsvg-convert version 2.54.7","test-run-times":"83.96:81.18:80.71"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/stress-ng-1.11.0</Identifier>
+    <Title>Stress-NG</Title>
+    <AppVersion>0.16.04</AppVersion>
+    <Arguments>--crypt 0</Arguments>
+    <Description>Test: Crypto</Description>
+    <Scale>Bogo Ops/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>44344.56</Value>
+        <RawString>44360.27:44360.02:44313.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lm -latomic -lc -lcrypt -ldl -lEGL -lgbm -lGLESv2 -ljpeg -lmpfr -lpthread -lrt -lz"},"test-run-times":"30.12:30.20:30.10"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/stress-ng-1.11.0</Identifier>
+    <Title>Stress-NG</Title>
+    <AppVersion>0.16.04</AppVersion>
+    <Arguments>--cpu 0 --cpu-method all</Arguments>
+    <Description>Test: CPU Stress</Description>
+    <Scale>Bogo Ops/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>52931.95</Value>
+        <RawString>52845.63:53059.02:52891.2</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lm -latomic -lc -lcrypt -ldl -lEGL -lgbm -lGLESv2 -ljpeg -lmpfr -lpthread -lrt -lz"},"test-run-times":"30.10:30.10:30.20"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ctx-clock-1.0.0</Identifier>
+    <Title>ctx_clock</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Context Switch Time</Description>
+    <Scale>Clocks</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>203</Value>
+        <RawString>204:204:202</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"1.18:1.18:1.18"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/sysbench-1.1.0</Identifier>
+    <Title>Sysbench</Title>
+    <AppVersion>1.0.20</AppVersion>
+    <Arguments>memory run</Arguments>
+    <Description>Test: Memory</Description>
+    <Scale>MiB/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>11673.91</Value>
+        <RawString>11899.88:11369.05:11877.27:11549.42</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -lm"},"test-run-times":"8.63:9.02:8.63:8.88"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/sysbench-1.1.0</Identifier>
+    <Title>Sysbench</Title>
+    <AppVersion>1.0.20</AppVersion>
+    <Arguments>cpu run</Arguments>
+    <Description>Test: CPU</Description>
+    <Scale>Events Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>50177.87</Value>
+        <RawString>50183.04:50168.29:50182.28</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -lm"},"test-run-times":"90.02:90.01:90.02"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pybench-1.1.3</Identifier>
+    <Title>PyBench</Title>
+    <AppVersion>2018-02-16</AppVersion>
+    <Arguments></Arguments>
+    <Description>Total For Average Test Times</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1446</Value>
+        <RawString>1450:1444:1443</RawString>
+        <JSON>{"test-run-times":"33.50:33.27:33.27"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/appleseed-1.0.1</Identifier>
+    <Title>Appleseed</Title>
+    <AppVersion>2.0 Beta</AppVersion>
+    <Arguments>emily.appleseed</Arguments>
+    <Description>Scene: Emily</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>215.39779</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"450.81"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/appleseed-1.0.1</Identifier>
+    <Title>Appleseed</Title>
+    <AppVersion>2.0 Beta</AppVersion>
+    <Arguments>disney_material_1.appleseed</Arguments>
+    <Description>Scene: Disney Material</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>103.454954</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"208.66"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/phpbench-1.1.6</Identifier>
+    <Title>PHPBench</Title>
+    <AppVersion>0.8.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>PHP Benchmark Suite</Description>
+    <Scale>Score</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>503105</Value>
+        <RawString>503320:504221:501774</RawString>
+        <JSON>{"test-run-times":"39.80:39.70:39.90"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/git-1.1.0</Identifier>
+    <Title>Git</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Complete Common Git Commands</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>86.099</Value>
+        <RawString>87.076:85.51:85.711</RawString>
+        <JSON>{"install-footnote":"git version 2.40.1","test-run-times":"87.08:85.51:85.71"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/tesseract-ocr-1.0.1</Identifier>
+    <Title>Tesseract OCR</Title>
+    <AppVersion>5.3.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To OCR 7 Images</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>40.233</Value>
+        <RawString>40.31:40.158:40.231</RawString>
+        <JSON>{"test-run-times":"40.31:40.16:40.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/tesseract-ocr-1.0.1</Identifier>
+    <Title>Tesseract OCR</Title>
+    <AppVersion>5.3.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>Tesseract OCR System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>40.179</Value>
+        <RawString>40.116:40.166:40.256</RawString>
+        <JSON>{"test-run-times":"40.12:40.17:40.26"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
