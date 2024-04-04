@@ -1,0 +1,3820 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>cractus-base-name</Title>
+    <LastModified>2024-04-04 10:10:41</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.4</TestClient>
+    <Description>2 x Intel Xeon Gold 5218 testing with a Cisco UCSC-C480-M5 (C480M5.4.2.2d.0.0808221350 BIOS) and Matrox MGA G200e [Pilot] on Ubuntu 23.10 via the Phoronix Test Suite.</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>mantic</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon Gold 5218 @ 3.90GHz (32 Cores / 64 Threads), Motherboard: Cisco UCSC-C480-M5 (C480M5.4.2.2d.0.0808221350 BIOS), Chipset: Intel Sky Lake-E DMI3 Registers, Memory: 64GB, Disk: 2 x 300GB AL14SXB30EN, Graphics: Matrox MGA G200e [Pilot], Network: 2 x Intel X550 + 4 x Intel I350</Hardware>
+    <Software>OS: Ubuntu 23.10, Kernel: 6.5.0-26-generic (x86_64), Compiler: GCC 13.2.0, File-System: ext4, Screen Resolution: 1024x768</Software>
+    <User>ubuntu</User>
+    <TimeStamp>2024-04-03 00:34:22</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --enable-libphobos-checking=release --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=2 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=\/build\/gcc-13-XYspKM\/gcc-13-13.2.0\/debian\/tmp-nvptx\/usr,amdgcn-amdhsa=\/build\/gcc-13-XYspKM\/gcc-13-13.2.0\/debian\/tmp-gcn\/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v","disk-scheduler":"MQ-DEADLINE","disk-mount-options":"relatime,rw","disk-details":"Block Size: 4096","cpu-scaling-governor":"intel_pstate powersave (EPP: balance_performance)","cpu-microcode":"0x5003604","kernel-extra-details":"Transparent Huge Pages: madvise","java":"OpenJDK Runtime Environment (build 17.0.10+7-Ubuntu-123.10.1)","python":"Python 3.11.6","security":"gather_data_sampling: Mitigation of Microcode + itlb_multihit: KVM: Mitigation of VMX disabled + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable + retbleed: Mitigation of Enhanced IBRS + spec_rstack_overflow: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced \/ Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence + srbds: Not affected + tsx_async_abort: Mitigation of TSX disabled"}</JSON>
+  </System>
+  <System>
+    <Identifier>mantic-no-omit-framepointer</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon Gold 5218 @ 3.90GHz (32 Cores / 64 Threads), Motherboard: Cisco UCSC-C480-M5 (C480M5.4.2.2d.0.0808221350 BIOS), Chipset: Intel Sky Lake-E DMI3 Registers, Memory: 64GB, Disk: 2 x 300GB AL14SXB30EN, Graphics: Matrox MGA G200e [Pilot], Network: 2 x Intel X550 + 4 x Intel I350</Hardware>
+    <Software>OS: Ubuntu 23.10, Kernel: 6.5.0-9-generic (x86_64), Display Server: X Server, Compiler: GCC 13.2.0, File-System: ext4</Software>
+    <User>ubuntu</User>
+    <TimeStamp>2024-02-21 06:11:46</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --enable-libphobos-checking=release --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=2 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=\/build\/gcc-13-b9QCDx\/gcc-13-13.2.0\/debian\/tmp-nvptx\/usr,amdgcn-amdhsa=\/build\/gcc-13-b9QCDx\/gcc-13-13.2.0\/debian\/tmp-gcn\/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v","disk-scheduler":"MQ-DEADLINE","disk-mount-options":"relatime,rw","disk-details":"Block Size: 4096","cpu-scaling-governor":"intel_pstate powersave (EPP: balance_performance)","cpu-microcode":"0x5003302","kernel-extra-details":"Transparent Huge Pages: madvise","environment-variables":"CXXFLAGS=-fno-omit-frame-pointer QMAKE_CFLAGS=-fno-omit-frame-pointer CFLAGS=-fno-omit-frame-pointer CFLAGS_OVERRIDE=-fno-omit-frame-pointer QMAKE_CXXFLAGS=-fno-omit-frame-pointer FFLAGS=-fno-omit-frame-pointer","java":"OpenJDK Runtime Environment (build 17.0.9-ea+6-Ubuntu-1)","python":"Python 3.11.6","security":"gather_data_sampling: Vulnerable: No microcode + itlb_multihit: KVM: Mitigation of VMX disabled + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable + retbleed: Mitigation of Enhanced IBRS + spec_rstack_overflow: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced \/ Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence + srbds: Not affected + tsx_async_abort: Mitigation of TSX disabled"}</JSON>
+  </System>
+  <Result>
+    <Identifier>system/sqlite-1.0.1</Identifier>
+    <Title>SQLite</Title>
+    <AppVersion>3.42.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>SQLite </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-withfp-opt-id</Identifier>
+        <Value>91.677</Value>
+        <RawString>99.725:101.905:93.056:86.549:81.074:92.383:82.761:77.268:92.286:96.86:99.661:96.6</RawString>
+        <JSON>{"test-run-times":"99.72:101.91:93.06:86.55:81.07:92.38:82.76:77.27:92.29:96.86:99.66:96.60"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>52.359</Value>
+        <RawString>57.085:50.789:52.218:45.88:58.254:51.801:50.955:52.653:55.182:51.89:52.333:55.311:50.295:47.25:53.492</RawString>
+        <JSON>{"test-run-times":"57.08:50.79:52.22:45.88:58.25:51.80:50.96:52.65:55.18:51.89:52.33:55.31:50.29:47.25:53.49"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>40.386</Value>
+        <RawString>52.021:33.574:34.207:40.466:48.15:39.36:46.642:33.951:36.291:32.152:47.661:48.776:42.618:36.754:33.16</RawString>
+        <JSON>{"test-run-times":"52.02:33.57:34.21:40.47:48.15:39.36:46.64:33.95:36.29:32.15:47.66:48.78:42.62:36.75:33.16"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ior-1.1.1</Identifier>
+    <Title>IOR</Title>
+    <AppVersion>3.3.0</AppVersion>
+    <Arguments>-b 2m -o testFile</Arguments>
+    <Description>Block Size: 2MB - Disk Target: Default Test Directory</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>158.26</Value>
+        <RawString>175.84:166.28:164.03:162.31:161.64:151.68:160.1:162.7:161.66:153.7:147.66:131.46</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -lm -lmpi"},"min-result":28.27,"max-result":193.6,"test-run-times":"40.78:43.41:42.32:42.66:42.80:54.84:43.40:42.21:42.39:49.82:52.30:89.71"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>180.55</Value>
+        <RawString>182.79:179.61:179.24</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lmpi"},"min-result":99.99,"max-result":191.87,"test-run-times":"38.28:38.67:38.60"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ior-1.1.1</Identifier>
+    <Title>IOR</Title>
+    <AppVersion>3.3.0</AppVersion>
+    <Arguments>-b 4m -o testFile</Arguments>
+    <Description>Block Size: 4MB - Disk Target: Default Test Directory</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>156.56</Value>
+        <RawString>164.68:161.49:145.99:156.56:152.23:147:151.48:145.12:167.6:152.86:157.67:159.45:168.48:162.31:155.55</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -lm -lmpi"},"min-result":32.35,"max-result":214.04,"test-run-times":"84.52:84.40:97.32:87.19:99.29:101.23:94.33:115.18:89.89:95.16:85.96:84.90:80.99:84.10:96.91"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>187.19</Value>
+        <RawString>187.43:187.16:186.99</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lmpi"},"min-result":148.23,"max-result":206.35,"test-run-times":"72.49:72.61:72.59"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ramspeed-1.4.3</Identifier>
+    <Title>RAMspeed SMP</Title>
+    <AppVersion>3.5.0</AppVersion>
+    <Arguments>ADD -b 3</Arguments>
+    <Description>Type: Add - Benchmark: Integer</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>12854.86</Value>
+        <RawString>12459.75:9572.57:7661.5:12811.3:17099.12:15806.75:10193.44:12138.7:13965.68:17478.19:12539.95:12531.35</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"133.93:209.33:240.40:151.64:94.99:104.94:171.16:176.72:128.35:90.98:134.39:134.35"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>12738.40</Value>
+        <RawString>13608.92:13683.46:12494.72:12497.69:13109.4:12496.24:12500.54:12497.59:12503.8:12493.42:12488.96:12486.05</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"122.02:124.66:133.32:133.17:128.57:133.15:133.29:133.22:133.03:133.58:133.86:133.26"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ramspeed-1.4.3</Identifier>
+    <Title>RAMspeed SMP</Title>
+    <AppVersion>3.5.0</AppVersion>
+    <Arguments>COPY -b 3</Arguments>
+    <Description>Type: Copy - Benchmark: Integer</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>15321.45</Value>
+        <RawString>20669.01:13378.13:13376.11:13381.73:13371.78:13348.85:13369.17:13161.08:18687.9:18962.58:13085.52:19065.54</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"104.84:134.39:134.29:134.26:134.31:134.24:134.10:135.97:115.51:110.18:136.26:111.75"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>13671.47</Value>
+        <RawString>13350.05:13360.27:17185:13351.29:13340.56:13338.54:13340.62:13352.37:13380.09:13340.41:13352.27:13366.11</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"133.37:133.34:118.16:133.53:133.36:133.54:133.58:133.27:133.28:133.95:133.29:133.19"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ramspeed-1.4.3</Identifier>
+    <Title>RAMspeed SMP</Title>
+    <AppVersion>3.5.0</AppVersion>
+    <Arguments>SCALE -b 3</Arguments>
+    <Description>Type: Scale - Benchmark: Integer</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>12564.40</Value>
+        <RawString>12391.05:12611.2:12690.95</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"135.17:133.60:134.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>12613.00</Value>
+        <RawString>12621.73:12615.18:12602.08</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"133.36:133.37:133.15"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ramspeed-1.4.3</Identifier>
+    <Title>RAMspeed SMP</Title>
+    <AppVersion>3.5.0</AppVersion>
+    <Arguments>AVERAGE -b 3</Arguments>
+    <Description>Type: Average - Benchmark: Integer</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>14146.36</Value>
+        <RawString>12958.43:12741.79:11593.26:18588.16:19558.21:13055.58:12290.44:13460.01:13071.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"134.42:140.59:157.07:105.32:97.47:133.63:145.64:140.06:133.37"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>13056.28</Value>
+        <RawString>13048.53:13060.98:13059.32</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"133.53:133.53:133.32"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ramspeed-1.4.3</Identifier>
+    <Title>RAMspeed SMP</Title>
+    <AppVersion>3.5.0</AppVersion>
+    <Arguments>ADD -b 6</Arguments>
+    <Description>Type: Add - Benchmark: Floating Point</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>12832.82</Value>
+        <RawString>12834.37:12830.48:12833.62</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"132.07:132.13:132.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>12827.69</Value>
+        <RawString>12823.26:12826.08:12833.72</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"132.59:131.68:131.87"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ramspeed-1.4.3</Identifier>
+    <Title>RAMspeed SMP</Title>
+    <AppVersion>3.5.0</AppVersion>
+    <Arguments>COPY -b 6</Arguments>
+    <Description>Type: Copy - Benchmark: Floating Point</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>13479.31</Value>
+        <RawString>13473.05:13493.97:13470.92</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"131.13:131.19:131.14"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>13917.89</Value>
+        <RawString>13387.65:15943.98:13407.16:13378.88:13381.1:13380.61:13398.34:17175.12:13400.46:13376.81:13387.08:13397.48</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"132.09:121.79:131.85:131.84:131.80:131.79:131.82:113.93:131.65:83.14:131.84:131.85:131.72"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ramspeed-1.4.3</Identifier>
+    <Title>RAMspeed SMP</Title>
+    <AppVersion>3.5.0</AppVersion>
+    <Arguments>SCALE -b 6</Arguments>
+    <Description>Type: Scale - Benchmark: Floating Point</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>11947.11</Value>
+        <RawString>11952.85:11950.62:11937.85</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"131.07:131.21:131.22"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>11870.73</Value>
+        <RawString>11869.1:11897.41:11845.67</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"131.92:131.74:132.39"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ramspeed-1.4.3</Identifier>
+    <Title>RAMspeed SMP</Title>
+    <AppVersion>3.5.0</AppVersion>
+    <Arguments>AVERAGE -b 6</Arguments>
+    <Description>Type: Average - Benchmark: Floating Point</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>18395.22</Value>
+        <RawString>13160.21:13135.74:16419.57:19367.47:19611.03:16598.28:20021.86:20373.84:19264.33:18768.84:20482.73:19280.93:20374.37:18703:20366.06</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"131.71:132.08:113.01:96.39:93.21:112.84:91.90:89.05:96.99:100.46:88.11:96.84:88.43:100.06:89.79"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>13137.60</Value>
+        <RawString>13142.47:13141.6:13128.74</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"131.76:131.79:132.01"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/stream-1.3.4</Identifier>
+    <Title>Stream</Title>
+    <AppVersion>2013-01-17</AppVersion>
+    <Arguments>Copy</Arguments>
+    <Description>Type: Copy</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>29708.7</Value>
+        <RawString>29063.4:30304.7:29467.4:29056.6:30651.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -fopenmp"},"test-run-times":"37.91:37.30:37.31:37.66:36.81"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>23552.4</Value>
+        <RawString>23557.8:23566.6:23567.9:23538.4:23531.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-mcmodel=medium -fopenmp"},"test-run-times":"32.94:32.93:33.11:32.95:33.00"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/stream-1.3.4</Identifier>
+    <Title>Stream</Title>
+    <AppVersion>2013-01-17</AppVersion>
+    <Arguments>Scale</Arguments>
+    <Description>Type: Scale</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>23400.2</Value>
+        <RawString>22808.2:23741.7:23736.8:22750.2:23963.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -fopenmp"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>23594.2</Value>
+        <RawString>23593.6:23612.8:23605.1:23579.4:23580.1</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-mcmodel=medium -fopenmp"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/stream-1.3.4</Identifier>
+    <Title>Stream</Title>
+    <AppVersion>2013-01-17</AppVersion>
+    <Arguments>Triad</Arguments>
+    <Description>Type: Triad</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>26056.4</Value>
+        <RawString>26068.8:26284.1:25898.4:25373.7:26656.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -fopenmp"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>26443.2</Value>
+        <RawString>26466.7:26441.9:26442.5:26440.2:26424.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-mcmodel=medium -fopenmp"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/stream-1.3.4</Identifier>
+    <Title>Stream</Title>
+    <AppVersion>2013-01-17</AppVersion>
+    <Arguments>Add</Arguments>
+    <Description>Type: Add</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>26044.5</Value>
+        <RawString>26073:25946.2:26173.2:25493.3:26536.6</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -fopenmp"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>26338.9</Value>
+        <RawString>26362.3:26340.9:26337.4:26328.5:26325.3</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-mcmodel=medium -fopenmp"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-cos</Arguments>
+    <Description>Benchmark: cos</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>80.3332</Value>
+        <RawString>84.4456:78.5157:78.5396:78.5042:78.633:82.1735:80.4942:78.5921:88.8058:78.5447:80.5787:78.877:81.2355:78.5188:78.5396</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.86:1.47:1.47:1.46:1.47:1.41:1.41:1.46:1.41:1.46:1.39:1.47:1.41:1.45:1.46"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>79.0205</Value>
+        <RawString>79.433:78.811:78.8176</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.60:1.47:1.47"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-sin</Arguments>
+    <Description>Benchmark: sin</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>67.5868</Value>
+        <RawString>67.5994:67.5312:67.6297</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"3.49:3.48:3.51"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>68.1897</Value>
+        <RawString>67.9612:67.9462:68.6616</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"3.50:3.50:3.52"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-sqrt</Arguments>
+    <Description>Benchmark: sqrt</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>6.76583</Value>
+        <RawString>6.60287:7.60624:6.59974:6.59938:6.59894:7.67726:6.60184:6.60153:6.60073:6.59973:6.84805:6.60064:6.60202:6.74783:6.6006</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.95:1.38:1.39:1.39:1.39:1.39:1.40:1.40:1.39:1.38:1.40:1.39:1.38:1.40:1.39"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>7.42445</Value>
+        <RawString>7.42449:7.42444:7.42442</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.40:1.40"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-pthread_once</Arguments>
+    <Description>Benchmark: pthread_once</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>5.10307</Value>
+        <RawString>5.88654:4.9553:4.95521:5.18083:4.9865:4.95781:5.25186:4.95561:4.9557:4.95806:4.95649:5.02754:4.95891:5.41406:5.14567</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.18:1.38:1.39:1.79:1.77:1.39:1.40:1.40:1.39:1.38:1.38:1.40:1.39:1.40:1.40"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>5.76871</Value>
+        <RawString>5.76777:5.76769:5.77068</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.40:1.39"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/npb-1.4.5</Identifier>
+    <Title>NAS Parallel Benchmarks</Title>
+    <AppVersion>3.4</AppVersion>
+    <Arguments>ep.C</Arguments>
+    <Description>Test / Class: EP.C</Description>
+    <Scale>Total Mop/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>2647.34</Value>
+        <RawString>2587.28:2570.44:2763.03:2725.14:2628.04:2653.1:2707.91:2556.8:2723.7:2666.38:2710.5:2572.77:2598.72:2681.51:2564.79</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O3 -march=native -lmpi_usempif08 -lmpi_mpifh -lmpi -lopen-rte -lopen-pal -lhwloc -levent_core -levent_pthreads -lm -lz"},"install-footnote":"Open MPI 4.1.5","test-run-times":"4.16:4.64:3.95:4.09:4.55:4.04:4.32:4.24:3.99:4.02:4.02:4.13:4.13:4.08:4.15"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>1767.14</Value>
+        <RawString>1765.25:1770.1:1766.07</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-lmpi_usempif08 -lmpi_mpifh -lmpi -lopen-rte -lopen-pal -lhwloc -levent_core -levent_pthreads -lm -lz"},"install-footnote":"Open MPI 4.1.5","test-run-times":"5.76:5.73:5.67"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/npb-1.4.5</Identifier>
+    <Title>NAS Parallel Benchmarks</Title>
+    <AppVersion>3.4</AppVersion>
+    <Arguments>lu.C</Arguments>
+    <Description>Test / Class: LU.C</Description>
+    <Scale>Total Mop/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>30261.94</Value>
+        <RawString>30279.9:30302.52:30203.41</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O3 -march=native -lmpi_usempif08 -lmpi_mpifh -lmpi -lopen-rte -lopen-pal -lhwloc -levent_core -levent_pthreads -lm -lz"},"install-footnote":"Open MPI 4.1.5","test-run-times":"69.77:69.02:69.30"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>14222.45</Value>
+        <RawString>14231.15:14212.04:14224.16</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-lmpi_usempif08 -lmpi_mpifh -lmpi -lopen-rte -lopen-pal -lhwloc -levent_core -levent_pthreads -lm -lz"},"install-footnote":"Open MPI 4.1.5","test-run-times":"145.56:145.79:145.74"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/rodinia-1.3.2</Identifier>
+    <Title>Rodinia</Title>
+    <AppVersion>3.1</AppVersion>
+    <Arguments>OMP_LAVAMD</Arguments>
+    <Description>Test: OpenMP LavaMD</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>116.009</Value>
+        <RawString>116.414:115.866:115.748</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lOpenCL"},"test-run-times":"116.41:115.87:115.75"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>107.731</Value>
+        <RawString>107.394:107.698:108.1</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lOpenCL"},"test-run-times":"107.39:107.70:108.10"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/rodinia-1.3.2</Identifier>
+    <Title>Rodinia</Title>
+    <AppVersion>3.1</AppVersion>
+    <Arguments>OMP_CFD</Arguments>
+    <Description>Test: OpenMP CFD Solver</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>21.315</Value>
+        <RawString>26.263:19.356:19.609:21.113:20.883:21.21:24.261:20.18:20.962:22.387:20.195:20.768:19.894:21.332</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lOpenCL"},"test-run-times":"26.26:19.36:19.61:21.11:20.88:21.21:24.26:20.18:20.96:22.39:20.20:20.77:19.89:21.33"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>14.023</Value>
+        <RawString>14.142:14.081:13.847</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lOpenCL"},"test-run-times":"14.14:14.08:13.85"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/dacapobench-1.1.0</Identifier>
+    <Title>DaCapo Benchmark</Title>
+    <AppVersion>23.11</AppVersion>
+    <Arguments>jython</Arguments>
+    <Description>Java Test: Jython</Description>
+    <Scale>msec</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.02:0.01:0.01","error":"The test quit with a non-zero exit status. E: Error: Unable to access jarfile dacapo-23.11-chopin.jar"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>9081</Value>
+        <RawString>9208:9036:8999</RawString>
+        <JSON>{"test-run-times":"36.89:32.34:32.48"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/dacapobench-1.1.0</Identifier>
+    <Title>DaCapo Benchmark</Title>
+    <AppVersion>23.11</AppVersion>
+    <Arguments>tradebeans</Arguments>
+    <Description>Java Test: Tradebeans</Description>
+    <Scale>msec</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: Error: Unable to access jarfile dacapo-23.11-chopin.jar"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>28478</Value>
+        <RawString>27759:28683:29289:28181</RawString>
+        <JSON>{"test-run-times":"101.68:98.46:98.47:97.21"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/renaissance-1.3.0</Identifier>
+    <Title>Renaissance</Title>
+    <AppVersion>0.14</AppVersion>
+    <Arguments>dotty</Arguments>
+    <Description>Test: Scala Dotty</Description>
+    <Scale>ms</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>2636.0</Value>
+        <RawString>2632.348253:2591.533995:2684.257234</RawString>
+        <JSON>{"min-result":1246.83,"max-result":4067.34,"test-run-times":"179.07:164.89:167.76"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>1394.1</Value>
+        <RawString>1672.649183:1648.235579:1457.250803:1287.409467:1321.399898:1372.495768:1294.931445:1276.033847:1287.963745:1448.298682:1321.51676:1329.433391:1345.339551:1349.473435:1499.335017</RawString>
+        <JSON>{"min-result":1088.15,"max-result":2420.04,"test-run-times":"109.59:107.03:99.06:97.77:99.91:102.42:98.18:97.27:98.19:105.79:99.64:100.32:100.87:101.16:107.95"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/renaissance-1.3.0</Identifier>
+    <Title>Renaissance</Title>
+    <AppVersion>0.14</AppVersion>
+    <Arguments>reactors</Arguments>
+    <Description>Test: Savina Reactors.IO</Description>
+    <Scale>ms</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>12899.5</Value>
+        <RawString>14635.688271:12054.98365:12803.435326:13019.484146:12921.078474:11977.275266:12907.353649:12150.531905:13217.295242:12722.318425:13563.342614:12821.563102</RawString>
+        <JSON>{"min-result":11977.28,"max-result":23036.97,"test-run-times":"185.96:168.66:178.99:181.29:185.04:169.36:183.17:170.28:183.69:178.33:184.30:176.90"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>12910.9</Value>
+        <RawString>12719.495723:12924.72338:13088.350022</RawString>
+        <JSON>{"min-result":12719.5,"max-result":21498.27,"test-run-times":"176.74:178.34:182.46"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/renaissance-1.3.0</Identifier>
+    <Title>Renaissance</Title>
+    <AppVersion>0.14</AppVersion>
+    <Arguments>page-rank</Arguments>
+    <Description>Test: Apache Spark PageRank</Description>
+    <Scale>ms</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>5737.2</Value>
+        <RawString>6300.845036:5363.248553:5693.758112:5535.4774:5649.237815:5606.524371:5479.43262:5752.537271:5821.82062:5964.15343:5536.641029:6142.307594</RawString>
+        <JSON>{"min-result":4521.89,"max-result":8075.11,"test-run-times":"225.80:197.49:201.26:193.75:195.63:198.39:201.95:197.47:203.56:206.61:198.43:208.76"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>4738.7</Value>
+        <RawString>4723.10195:4631.001555:4861.966549</RawString>
+        <JSON>{"min-result":4082.34,"max-result":5033.13,"test-run-times":"166.48:164.12:169.12"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b3</Arguments>
+    <Description>Compression Level: 3 - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>1383.8</Value>
+        <RawString>1373:1389.4:1389.1</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"64.20:63.73:64.08"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>340.4</Value>
+        <RawString>341.3:340.3:339.6</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"67.24:67.32:66.67"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b3</Arguments>
+    <Description>Compression Level: 3 - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>708.9</Value>
+        <RawString>710.1:707.2:709.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"64.20:63.73:64.08"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>117.5</Value>
+        <RawString>117.7:116.9:117.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"67.24:67.32:66.67"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b8</Arguments>
+    <Description>Compression Level: 8 - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>341.8</Value>
+        <RawString>368.3:358.7:317.6:363.4:370.4:327.6:343.6:347.8:348.9:310:373.1:297.7:349.5:324:326.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"63.78:64.18:63.47:63.51:64.78:64.68:64.59:64.12:65.35:64.69:63.72:65.08:64.54:63.95:65.43"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>137.1</Value>
+        <RawString>136.9:137.3:137</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"65.56:65.72:66.51"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b8</Arguments>
+    <Description>Compression Level: 8 - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>718.8</Value>
+        <RawString>714.6:716.9:712.9:719.3:718.2:721.2:720.9:718.3:718.5:720:721.9:720.5:718.4:722.2:718.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"63.78:64.18:63.47:63.51:64.78:64.68:64.59:64.12:65.35:64.69:63.72:65.08:64.54:63.95:65.43"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>125.7</Value>
+        <RawString>125.7:125.8:125.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"65.56:65.72:66.51"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b12</Arguments>
+    <Description>Compression Level: 12 - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>102.1</Value>
+        <RawString>102.5:87.6:103.7:111.6:98.3:103.6:107.9:100.6:102.8:110.5:108.7:95.9:96:104.2:97.1</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"64.34:63.84:65.17:63.81:65.05:64.01:63.99:63.50:65.60:64.30:64.03:63.54:65.77:63.85:64.70"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>35.7</Value>
+        <RawString>35.4:35.9:35.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"66.28:66.24:65.85"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b12</Arguments>
+    <Description>Compression Level: 12 - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>672.4</Value>
+        <RawString>670.3:672.5:673.7:671.7:675.3:671.8:674.8:675.3:673.4:674.3:674:671.8:662.2:672.2:672.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"64.34:63.84:65.17:63.81:65.05:64.01:63.99:63.50:65.60:64.30:64.03:63.54:65.77:63.85:64.70"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>127.9</Value>
+        <RawString>128:127.9:127.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"66.28:66.24:65.85"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b19</Arguments>
+    <Description>Compression Level: 19 - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>10.3</Value>
+        <RawString>10.4:10.2:10.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"74.49:75.90:73.32"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>3.01</Value>
+        <RawString>3:3.01:3.02</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"105.18:104.84:104.57"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b19</Arguments>
+    <Description>Compression Level: 19 - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>593.3</Value>
+        <RawString>592:595.1:592.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"74.49:75.90:73.32"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>111.9</Value>
+        <RawString>111.7:111.9:112.1</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"105.18:104.84:104.57"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b3 --long</Arguments>
+    <Description>Compression Level: 3, Long Mode - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>282.3</Value>
+        <RawString>282.1:283.7:281.2</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"64.53:63.83:64.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>82.2</Value>
+        <RawString>82.5:82.1:82.1</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"67.65:68.02:67.98"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b3 --long</Arguments>
+    <Description>Compression Level: 3, Long Mode - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>741.7</Value>
+        <RawString>742.4:743:739.6</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"64.53:63.83:64.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>121.8</Value>
+        <RawString>121.8:121.9:121.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"67.65:68.02:67.98"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b8 --long</Arguments>
+    <Description>Compression Level: 8, Long Mode - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>271.0</Value>
+        <RawString>271.9:274.5:266.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"64.93:63.74:64.04"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>96.3</Value>
+        <RawString>96.5:96:96.3</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"67.28:67.33:67.22"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b8 --long</Arguments>
+    <Description>Compression Level: 8, Long Mode - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>730.6</Value>
+        <RawString>729.5:732:730.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"64.93:63.74:64.04"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>127.5</Value>
+        <RawString>127.5:127.3:127.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"67.28:67.33:67.22"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b19 --long</Arguments>
+    <Description>Compression Level: 19, Long Mode - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>5.50</Value>
+        <RawString>5.75:5.4:5.35:5.4:5.68:5.41:5.41:5.4:5.75:5.42:5.55:5.56:5.42:5.53</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"69.34:71.74:71.98:71.56:69.68:71.70:71.69:71.65:69.45:71.63:70.66:70.70:71.71:70.57"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>1.75</Value>
+        <RawString>1.75:1.75:1.75</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"155.01:155.05:155.06"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b19 --long</Arguments>
+    <Description>Compression Level: 19, Long Mode - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>596.0</Value>
+        <RawString>596.6:595.5:596:598.3:596.5:595:596:597.7:595.2:595.9:594.3:593.8:594.1:598.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"69.34:71.74:71.98:71.56:69.68:71.70:71.69:71.65:69.45:71.63:70.66:70.70:71.71:70.57"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>112.8</Value>
+        <RawString>112.8:112.8:112.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"155.01:155.05:155.06"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnuradio-1.0.0</Identifier>
+    <Title>GNU Radio</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: Five Back to Back FIR Filters</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>542.5</Value>
+        <RawString>529.4:542.2:555.9</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.91:360.51:360.46"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>540.5</Value>
+        <RawString>535.1:563.3:571.9:512.3:562:498.4</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"362.03:360.48:360.47:360.46:360.52:360.47"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnuradio-1.0.0</Identifier>
+    <Title>GNU Radio</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: Signal Source (Cosine)</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>2014.0</Value>
+        <RawString>2019.2:1995.1:2027.6</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.91:360.51:360.46"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>2005.2</Value>
+        <RawString>2005.4:1986.3:2021.6:2026.8:1981.5:2009.4</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"362.03:360.48:360.47:360.46:360.52:360.47"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnuradio-1.0.0</Identifier>
+    <Title>GNU Radio</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: FIR Filter</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>446.0</Value>
+        <RawString>444.4:446.9:446.8</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.91:360.51:360.46"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>453.1</Value>
+        <RawString>453.7:454.5:446.3:460.5:455.4:448.2</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"362.03:360.48:360.47:360.46:360.52:360.47"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnuradio-1.0.0</Identifier>
+    <Title>GNU Radio</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: IIR Filter</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>257.6</Value>
+        <RawString>259.2:255.3:258.4</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.91:360.51:360.46"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>255.5</Value>
+        <RawString>256.7:253.2:251.5:258.7:254:259</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"362.03:360.48:360.47:360.46:360.52:360.47"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnuradio-1.0.0</Identifier>
+    <Title>GNU Radio</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: FM Deemphasis Filter</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>574.5</Value>
+        <RawString>568.8:573.8:580.8</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.91:360.51:360.46"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>573.1</Value>
+        <RawString>574.7:574.5:572.1:569.2:575.5:572.7</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"362.03:360.48:360.47:360.46:360.52:360.47"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnuradio-1.0.0</Identifier>
+    <Title>GNU Radio</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: Hilbert Transform</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>212.7</Value>
+        <RawString>212.9:213:212.3</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.91:360.51:360.46"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>206.6</Value>
+        <RawString>206:208.3:205.6:207.7:206.9:205.1</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"362.03:360.48:360.47:360.46:360.52:360.47"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/john-the-ripper-1.8.0</Identifier>
+    <Title>John The Ripper</Title>
+    <AppVersion>2023.03.14</AppVersion>
+    <Arguments>--format=bcrypt</Arguments>
+    <Description>Test: Blowfish</Description>
+    <Scale>Real C/S</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>39300</Value>
+        <RawString>39154:39379:39366</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-m64 -lssl -lcrypto -fopenmp -lgmp -lm -lrt -lz -ldl -lcrypt -lbz2"},"test-run-times":"30.48:30.26:30.26"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>39370</Value>
+        <RawString>39366:39379:39366</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-m64 -lssl -lcrypto -fopenmp -lgmp -lm -lrt -lz -ldl -lcrypt -lbz2"},"test-run-times":"30.55:30.26:30.26"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/dav1d-1.15.1</Identifier>
+    <Title>dav1d</Title>
+    <AppVersion>1.4</AppVersion>
+    <Arguments>-i summer_nature_4k.ivf</Arguments>
+    <Description>Video Input: Summer Nature 4K</Description>
+    <Scale>FPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>108.81</Value>
+        <RawString>107.9:109.45:109.08</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread"},"test-run-times":"35.06:33.07:33.18"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>109.78</Value>
+        <RawString>108.62:110.05:110.68</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread"},"test-run-times":"34.82:32.88:32.70"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/dav1d-1.15.1</Identifier>
+    <Title>dav1d</Title>
+    <AppVersion>1.4</AppVersion>
+    <Arguments>-i summer_nature_1080p.ivf</Arguments>
+    <Description>Video Input: Summer Nature 1080p</Description>
+    <Scale>FPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>275.91</Value>
+        <RawString>277.59:272.06:278.08</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread"},"test-run-times":"13.52:13.33:13.05"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>274.67</Value>
+        <RawString>272.61:275.1:276.29</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread"},"test-run-times":"13.93:13.18:13.12"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset slow</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Slow</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>8.49</Value>
+        <RawString>8.18:8.61:8.59:8.59</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"73.50:69.76:69.93:69.92"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>1.87</Value>
+        <RawString>1.88:1.87:1.87</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -lpthread -lm -lrt"},"test-run-times":"320.07:320.64:320.26"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset medium</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Medium</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>8.84</Value>
+        <RawString>8.83:8.84:8.84</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"68.09:67.98:68.02"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>1.98</Value>
+        <RawString>1.98:1.99:1.98</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -lpthread -lm -lrt"},"test-run-times":"302.44:302.16:303.12"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset slow</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Slow</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>21.20</Value>
+        <RawString>21.31:21.14:21.16</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"28.22:28.45:28.41"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>5.24</Value>
+        <RawString>5.25:5.21:5.26</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -lpthread -lm -lrt"},"test-run-times":"114.26:115.19:114.24"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset medium</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Medium</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>22.09</Value>
+        <RawString>22.12:22.14:22</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"27.18:27.15:27.33"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>5.60</Value>
+        <RawString>5.57:5.61:5.61</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -lpthread -lm -lrt"},"test-run-times":"107.73:106.96:106.94"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset veryfast</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Very Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>15.92</Value>
+        <RawString>15.9:15.95:15.91</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"37.82:37.70:37.79"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>3.82</Value>
+        <RawString>3.83:3.81:3.83</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -lpthread -lm -lrt"},"test-run-times":"156.95:157.70:156.83"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset superfast</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Super Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>20.62</Value>
+        <RawString>20.48:20.77:20.62</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"29.38:28.97:29.19"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>4.34</Value>
+        <RawString>4.34:4.35:4.34</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -lpthread -lm -lrt"},"test-run-times":"138.19:137.91:138.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset ultrafast</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Ultra Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>23.77</Value>
+        <RawString>23.79:23.85:23.68</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"25.30:25.24:25.41"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>6.20</Value>
+        <RawString>6.18:6.19:6.22</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -lpthread -lm -lrt"},"test-run-times":"97.15:97.01:96.61"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset veryfast</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Very Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>40.91</Value>
+        <RawString>40.99:41.04:40.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"14.70:14.69:14.81"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>10.65</Value>
+        <RawString>10.58:10.71:10.66</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -lpthread -lm -lrt"},"test-run-times":"56.79:56.11:56.33"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset superfast</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Super Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>52.75</Value>
+        <RawString>52.75:52.8:52.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"11.43:11.43:11.44"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>12.33</Value>
+        <RawString>12.34:12.31:12.35</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -lpthread -lm -lrt"},"test-run-times":"48.69:48.80:48.65"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset ultrafast</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Ultra Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>63.23</Value>
+        <RawString>63.62:62.96:63.12</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"9.49:9.60:9.56"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>17.24</Value>
+        <RawString>17.31:17.31:17.1</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -lpthread -lm -lrt"},"test-run-times":"34.73:34.72:35.14"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/x265-1.3.0</Identifier>
+    <Title>x265</Title>
+    <AppVersion>3.4</AppVersion>
+    <Arguments>Bosphorus_3840x2160.y4m</Arguments>
+    <Description>Video Input: Bosphorus 4K</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>13.52</Value>
+        <RawString>13.2:13.67:13.68</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"45.98:44.12:44.09"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>14.20</Value>
+        <RawString>13.64:15:13.95:13.97:14.01:13.99:13.86:13.88:14.8:15:14.14:13.94:13.9:14.96:14.01</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"44.51:40.24:43.24:43.20:43.05:43.11:43.52:43.47:40.79:40.22:42.67:43.26:43.41:40.34:43.08"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/x265-1.3.0</Identifier>
+    <Title>x265</Title>
+    <AppVersion>3.4</AppVersion>
+    <Arguments>Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m</Arguments>
+    <Description>Video Input: Bosphorus 1080p</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>32.83</Value>
+        <RawString>32.44:32.97:33.08</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"18.65:18.35:18.28"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>32.89</Value>
+        <RawString>32.41:33.08:33.19</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"18.67:18.28:18.22"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/himeno-1.3.0</Identifier>
+    <Title>Himeno Benchmark</Title>
+    <AppVersion>3.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>Poisson Pressure Solver</Description>
+    <Scale>MFLOPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>2351.282032</Value>
+        <RawString>2374.789059:2340.24013:2338.816906</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -mavx2"},"test-run-times":"52.18:53.96:54.54"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>2353.358460</Value>
+        <RawString>2344.10435:2356.117607:2359.853422</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -mavx2"},"test-run-times":"53.66:52.90:52.41"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-7zip-1.10.0</Identifier>
+    <Title>7-Zip Compression</Title>
+    <AppVersion>22.01</AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: Compression Rating</Description>
+    <Scale>MIPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>89707</Value>
+        <RawString>78714:90343:93211:92911:88870:90448:87876:90938:92798:91663:89287:89427</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lpthread -ldl -O2 -fPIC"},"test-run-times":"69.95:63.34:60.96:61.30:63.62:61.33:62.76:63.64:61.86:61.59:61.92:62.08"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>90656</Value>
+        <RawString>92786:91792:88001:88742:91961</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lpthread -ldl -O2 -fPIC"},"test-run-times":"61.96:61.64:63.44:62.26:62.30"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-7zip-1.10.0</Identifier>
+    <Title>7-Zip Compression</Title>
+    <AppVersion>22.01</AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: Decompression Rating</Description>
+    <Scale>MIPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>130406</Value>
+        <RawString>131595:127262:130645:132432:128994:131135:132477:127486:129117:130273:132442:131016</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lpthread -ldl -O2 -fPIC"},"test-run-times":"69.95:63.34:60.96:61.30:63.62:61.33:62.76:63.64:61.86:61.59:61.92:62.08"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>131656</Value>
+        <RawString>129784:131997:131780:132550:132168</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lpthread -ldl -O2 -fPIC"},"test-run-times":"61.96:61.64:63.44:62.26:62.30"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/stockfish-1.4.0</Identifier>
+    <Title>Stockfish</Title>
+    <AppVersion>15</AppVersion>
+    <Arguments></Arguments>
+    <Description>Total Time</Description>
+    <Scale>Nodes Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>53772262</Value>
+        <RawString>57374565:58863689:55012025:49575376:54316699:52800216:50146351:50223266:55638170</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lgcov -m64 -lpthread -fno-exceptions -std=c++17 -fno-peel-loops -fno-tracer -pedantic -O3 -msse -msse3 -mpopcnt -mavx2 -mavx512f -mavx512bw -mavx512vnni -mavx512dq -mavx512vl -msse4.1 -mssse3 -msse2 -mbmi2 -flto -flto=jobserver"},"test-run-times":"132.53:150.93:140.11:112.56:128.94:133.38:104.62:124.74:134.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>54094294</Value>
+        <RawString>49162292:56525388:50520654:55661563:57757716:54370170:53122284:61526514:51977196:55640090:51175278:51692381</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lgcov -m64 -lpthread -fno-exceptions -std=c++17 -pedantic -O3 -msse -msse3 -mpopcnt -mavx2 -mavx512f -mavx512bw -mavx512vnni -mavx512dq -mavx512vl -msse4.1 -mssse3 -msse2 -mbmi2 -flto -fno-peel-loops -fno-tracer -flto=jobserver"},"test-run-times":"111.61:153.99:127.91:126.23:147.14:133.31:118.50:144.96:109.38:134.20:115.68:115.94"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/asmfish-1.1.2</Identifier>
+    <Title>asmFish</Title>
+    <AppVersion>2018-07-23</AppVersion>
+    <Arguments></Arguments>
+    <Description>1024 Hash Memory, 26 Depth</Description>
+    <Scale>Nodes/second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>68642681</Value>
+        <RawString>68753515:67893119:69281408</RawString>
+        <JSON>{"test-run-times":"157.40:178.86:193.81"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>70556224</Value>
+        <RawString>68808597:72066688:74832003:70168439:68635152:71700593:72397480:70232789:68556767:69013935:68703231:71559011</RawString>
+        <JSON>{"test-run-times":"160.78:166.35:149.37:180.96:178.53:199.70:166.36:157.83:166.50:161.30:168.60:151.35"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/swet-1.0.0</Identifier>
+    <Title>Swet</Title>
+    <AppVersion>1.5.16</AppVersion>
+    <Arguments></Arguments>
+    <Description>Average</Description>
+    <Scale>Operations Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>438256522</Value>
+        <RawString>441193795:437596040:435979730</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -lcurses -lrt"},"test-run-times":"22.94:22.91:22.92"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>432865178</Value>
+        <RawString>434942792:437879332:425773409</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -lcurses -lrt"},"test-run-times":"22.93:22.92:22.91"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-gcc-1.4.0</Identifier>
+    <Title>Timed GCC Compilation</Title>
+    <AppVersion>13.2</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>1646.474</Value>
+        <RawString>1659.729:1645.523:1634.171</RawString>
+        <JSON>{"test-run-times":"1659.73:1645.52:1634.17"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>1648.108</Value>
+        <RawString>1657.699:1639.498:1647.126</RawString>
+        <JSON>{"test-run-times":"1657.70:1639.50:1647.13"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-linux-kernel-1.15.0</Identifier>
+    <Title>Timed Linux Kernel Compilation</Title>
+    <AppVersion>6.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>72.530</Value>
+        <RawString>76.478:71.82:71.872:71.792:71.991:71.904:71.851</RawString>
+        <JSON>{"test-run-times":"76.48:71.82:71.87:71.79:71.99:71.90:71.85"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>71.507</Value>
+        <RawString>75.487:70.743:70.79:70.719:71.084:70.853:70.873</RawString>
+        <JSON>{"test-run-times":"75.49:70.74:70.79:70.72:71.08:70.85:70.87"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-llvm-1.5.0</Identifier>
+    <Title>Timed LLVM Compilation</Title>
+    <AppVersion>16.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>526.749</Value>
+        <RawString>526.795:535.981:517.472</RawString>
+        <JSON>{"test-run-times":"526.79:535.98:517.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>517.178</Value>
+        <RawString>515.646:520.884:515.003</RawString>
+        <JSON>{"test-run-times":"515.65:520.88:515.00"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/c-ray-1.2.0</Identifier>
+    <Title>C-Ray</Title>
+    <AppVersion>1.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>Total Time - 4K, 16 Rays Per Pixel</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>31.117</Value>
+        <RawString>31.091:31.045:31.214</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -O3"},"test-run-times":"31.67:31.73:31.89"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>32.206</Value>
+        <RawString>32.214:32.132:32.272</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -O3"},"test-run-times":"32.79:32.84:32.96"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/povray-1.2.1</Identifier>
+    <Title>POV-Ray</Title>
+    <AppVersion>3.7.0.7</AppVersion>
+    <Arguments></Arguments>
+    <Description>Trace Time</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>28.104</Value>
+        <RawString>28.348:27.513:28.452</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -lSM -lICE -lX11 -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"},"test-run-times":"31.16:30.30:31.25"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>24.711</Value>
+        <RawString>24.906:24.437:24.789</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -lSM -lICE -lX11 -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"},"test-run-times":"27.78:27.20:27.54"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/numpy-1.2.1</Identifier>
+    <Title>Numpy Benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description></Description>
+    <Scale>Score</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>278.23</Value>
+        <RawString>275.97:280.66:278.05</RawString>
+        <JSON>{"test-run-times":"275.47:274.41:278.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>276.92</Value>
+        <RawString>276.11:277.44:277.22</RawString>
+        <JSON>{"test-run-times":"282.74:285.47:282.63"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/cython-bench-1.1.0</Identifier>
+    <Title>Cython Benchmark</Title>
+    <AppVersion>0.29.21</AppVersion>
+    <Arguments>NQUEENS</Arguments>
+    <Description>Test: N-Queens</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>37.934</Value>
+        <RawString>37.962:37.724:38.115</RawString>
+        <JSON>{"test-run-times":"37.96:37.72:38.11"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>36.893</Value>
+        <RawString>36.824:37.014:36.84</RawString>
+        <JSON>{"test-run-times":"36.82:37.01:36.84"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/hackbench-1.0.0</Identifier>
+    <Title>Hackbench</Title>
+    <AppVersion></AppVersion>
+    <Arguments>32 process</Arguments>
+    <Description>Count: 32 - Type: Process</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>36.420</Value>
+        <RawString>37.451:35.856:35.954</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lpthread"},"test-run-times":"37.60:36.00:36.10"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>36.222</Value>
+        <RawString>35.266:37.491:35.29:37.56:35.425:34.872:36.892:37.173:37.285:35.378:37.702:34.912:37.737:34.867:35.477</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lpthread"},"test-run-times":"35.42:37.63:35.43:37.70:35.56:35.01:37.03:37.32:37.43:35.52:37.84:35.05:37.88:35.01:35.62"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/m-queens-1.1.0</Identifier>
+    <Title>m-queens</Title>
+    <AppVersion>1.2</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Solve</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>40.844</Value>
+        <RawString>40.922:40.819:40.791</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fopenmp -O2 -march=native"},"test-run-times":"40.92:40.82:40.79"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>69.520</Value>
+        <RawString>69.292:69.949:69.318</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fopenmp"},"test-run-times":"69.29:69.95:69.32"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/radiance-1.0.0</Identifier>
+    <Title>Radiance Benchmark</Title>
+    <AppVersion>5.0</AppVersion>
+    <Arguments>make all</Arguments>
+    <Description>Test: Serial</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>1056.44</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"1056.44"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>1048.852</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"1048.85"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/radiance-1.0.0</Identifier>
+    <Title>Radiance Benchmark</Title>
+    <AppVersion>5.0</AppVersion>
+    <Arguments>make smp</Arguments>
+    <Description>Test: SMP Parallel</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>326.42</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"326.42"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>322.289</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"322.29"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/system-decompress-bzip2-1.0.2</Identifier>
+    <Title>System BZIP2 Decompression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>System BZIP2 Decompression Processor </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>15.451</Value>
+        <RawString>15.501:15.443:15.408</RawString>
+        <JSON>{"test-run-times":"15.50:15.44:15.41"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>14.406</Value>
+        <RawString>14.439:14.393:14.385</RawString>
+        <JSON>{"test-run-times":"14.44:14.39:14.38"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/system-decompress-gzip-1.1.1</Identifier>
+    <Title>System GZIP Decompression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>System GZIP Decompression Processor </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>4.610</Value>
+        <RawString>5.267:4.553:4.55:4.556:4.551:4.548:4.55:4.553:4.568:4.552:4.548:4.551:4.583</RawString>
+        <JSON>{"test-run-times":"5.27:4.55:4.55:4.56:4.55:4.55:4.55:4.55:4.57:4.55:4.55:4.55:4.58"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>4.665</Value>
+        <RawString>5.268:4.614:4.615:4.616:4.615:4.612:4.615:4.611:4.617:4.617:4.615:4.613:4.614</RawString>
+        <JSON>{"test-run-times":"5.27:4.61:4.61:4.62:4.61:4.61:4.62:4.61:4.62:4.62:4.62:4.61:4.61"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/system-decompress-xz-1.0.2</Identifier>
+    <Title>System XZ Decompression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>System XZ Decompression Processor </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>5.076</Value>
+        <RawString>5.109:5.061:5.059</RawString>
+        <JSON>{"test-run-times":"5.11:5.06:5.06"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>5.079</Value>
+        <RawString>5.111:5.062:5.065</RawString>
+        <JSON>{"test-run-times":"5.11:5.06:5.07"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnupg-1.0.1</Identifier>
+    <Title>GnuPG</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>GnuPG Processor </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>17.585</Value>
+        <RawString>18.784:17.478:17.435:17.433:17.455:17.46:17.438:17.446:17.452:17.471</RawString>
+        <JSON>{"test-run-times":"18.78:17.48:17.44:17.43:17.45:17.46:17.44:17.45:17.45:17.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>17.202</Value>
+        <RawString>18.371:17.053:17.103:17.053:17.116:17.065:17.047:17.064:17.084:17.066</RawString>
+        <JSON>{"test-run-times":"18.37:17.05:17.10:17.05:17.12:17.06:17.05:17.06:17.08:17.07"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/system-decompress-tiff-1.0.1</Identifier>
+    <Title>System Libtiff Decompression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>System Libtiff Decompression Processor </Description>
+    <Scale>ms</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>12.152766</Value>
+        <RawString>28.700689:12.6275:11.764943:17.542201:11.663858:11.680307:11.738248:11.657337:11.677155:11.951683:11.81835:11.743919:11.68045:11.756271:11.728495:11.634968:11.644007:11.624284:11.495321:11.740292:11.535027:11.702435:11.633798:11.521632:11.399829:11.65798:12.054213:11.607778:11.742081:11.83009:11.67572:11.595359:11.598615:11.499091:11.61921:11.572717:11.595597:11.844069:11.642248:12.246435:11.737092:11.664264:11.643446:11.638542:11.509994:11.62246:11.709983:11.452015:11.620652:11.595674</RawString>
+        <JSON>{"test-run-times":"0.06:0.02:0.02:0.03:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>12.108538</Value>
+        <RawString>42.496955:11.718133:11.563626:11.575775:11.414461:11.549294:11.588034:11.423916:11.512559:11.426723:11.355571:11.558283:11.404902:11.407405:11.472918:11.492803:11.686979:11.223982:11.469951:11.586393:11.408169:11.549198:11.463879:11.402649:11.416744:11.372714:11.513135:11.491123:11.364241:11.49557:11.487432:11.442668:11.422075:11.340887:11.39302:11.35289:11.745636:11.475476:11.465488:11.471066:11.461613:11.543517:11.397414:11.465615:11.9126:11.566335:11.584153:11.644342:11.385414:11.46316</RawString>
+        <JSON>{"test-run-times":"0.06:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/system-libjpeg-1.1.0</Identifier>
+    <Title>System JPEG Library Decode</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>System JPEG Library Decode Processor </Description>
+    <Scale>ms</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>24.011400</Value>
+        <RawString>42.99833:24.248186:22.650179:24.164345:23.452413:23.941095:23.68746:22.873712:23.747317:24.831203:23.590137:23.461224:22.060748:23.723145:24.52054:23.340708:22.753382:24.743629:23.911645:23.584356:23.859827:22.9198:23.855317:22.712434:24.543126:22.776012:24.651378:23.981886:22.518089:22.724507:23.655584:24.118048:25.058568:23.023305:22.825582:25.32474:23.9122:23.340385:22.787164:22.817949:22.946347:23.928737:24.962701:23.700471:23.801787:23.001992:23.668372:23.793029:23.065518</RawString>
+        <JSON>{"test-run-times":"0.06:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.04:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.04:0.03:0.03:0.04:0.03:0.03:0.03:0.03:0.03:0.03:0.04:0.03:0.03:0.03:0.03:0.03:0.03"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>22.513262</Value>
+        <RawString>35.192792:23.007709:22.088134:21.591705:22.62352:22.885363:23.016864:22.024448:21.134891:22.665494:22.459837:21.372662:23.117275:21.781758:23.303734:22.04565:23.334829:21.473244:23.027275:21.949515:21.485937:22.60952:22.78785:21.629825:21.498702:22.478067:23.694796:22.521723:21.457885:21.052448:21.349906:22.375685:23.404247:21.656264:22.218272:23.325265:22.368152:21.51303:23.182774:20.976693:22.758329:22.097075:21.210094:22.900615:22.038485:21.290482:22.636131:22.479121:21.020888:23.548148</RawString>
+        <JSON>{"test-run-times":"0.05:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/openssl-3.1.0</Identifier>
+    <Title>OpenSSL</Title>
+    <AppVersion>3.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>RSA 4096-bit Performance</Description>
+    <Scale>byte/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>63</Value>
+        <RawString>63:63:63</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -m64 -O3 -lssl -lcrypto -ldl"},"test-run-times":"5672.75:5672.57:5672.58"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>63</Value>
+        <RawString>63:63:63</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -m64 -lssl -lcrypto -ldl"},"test-run-times":"5673.43:5673.26:5673.26"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/openssl-1.2.0</Identifier>
+    <Title>OpenSSL</Title>
+    <AppVersion> </AppVersion>
+    <Arguments></Arguments>
+    <Description>OpenSSL Processor </Description>
+    <Scale>byte/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>63</Value>
+        <RawString>63:63:63</RawString>
+        <JSON>{"install-footnote":"OpenSSL 3.0.10 1 Aug 2023 (Library: OpenSSL 3.0.10 1 Aug 2023)","test-run-times":"5672.51:5672.50:5672.49"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>30</Value>
+        <RawString>30:30</RawString>
+        <JSON>{"install-footnote":"OpenSSL 3.0.10 1 Aug 2023 (Library: OpenSSL 3.0.10 1 Aug 2023)","test-run-times":"4079.36:724.01:3.96:7.10"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/redis-1.4.0</Identifier>
+    <Title>Redis</Title>
+    <AppVersion>7.0.4</AppVersion>
+    <Arguments>-t get</Arguments>
+    <Description>Test: GET</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>2449944.2</Value>
+        <RawString>2451505:2448264:2450063.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"26.44:26.44:26.43"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>2548812.25</Value>
+        <RawString>2548076.25:2549115.25:2549245.25</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"25.67:25.64:25.64"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/redis-1.4.0</Identifier>
+    <Title>Redis</Title>
+    <AppVersion>7.0.4</AppVersion>
+    <Arguments>-t set</Arguments>
+    <Description>Test: SET</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>1424170.92</Value>
+        <RawString>1421085.5:1422176.88:1429250.38</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"41.21:41.18:41.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>1504740.47</Value>
+        <RawString>1482474.38:1493232.62:1688820:1494823.75:1494243:1480610.75:1492548:1494795.12:1492406.5:1492058:1479622.88:1494506.88:1481484.25</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"39.75:39.51:35.63:39.47:39.48:39.79:39.52:39.47:39.53:39.53:39.82:39.48:39.77"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>PBKDF2-sha512</Description>
+    <Scale>Iterations Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1024007</Value>
+        <RawString>1020015:1026003:1026003</RawString>
+        <JSON>{"test-run-times":"33.02:32.25:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1023350</Value>
+        <RawString>1024000:1028015:1018034</RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1027344</Value>
+        <RawString>1026003:1028015:1028015</RawString>
+        <JSON>{"test-run-times":"32.21:32.22:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1021351</Value>
+        <RawString>1018034:1020015:1026003</RawString>
+        <JSON>{"test-run-times":"32.23:32.26:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1026006</Value>
+        <RawString>1026003:1024000:1028015</RawString>
+        <JSON>{"test-run-times":"33.48:32.26:32.26"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1026674</Value>
+        <RawString>1028015:1026003:1026003</RawString>
+        <JSON>{"test-run-times":"32.21:32.46:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>1026003</Value>
+        <RawString>1026003:1026003:1026003</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>1024000</Value>
+        <RawString>1024000:1024000:1024000</RawString>
+        <JSON>{"test-run-times":"32.25:32.99:32.68"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>PBKDF2-whirlpool</Description>
+    <Scale>Iterations Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>450420</Value>
+        <RawString>449646:451194:450419</RawString>
+        <JSON>{"test-run-times":"33.02:32.25:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>450419</Value>
+        <RawString>450419:450419:450419</RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>450161</Value>
+        <RawString>449646:450419:450419</RawString>
+        <JSON>{"test-run-times":"32.21:32.22:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>449905</Value>
+        <RawString>448876:450419:450419</RawString>
+        <JSON>{"test-run-times":"33.48:32.26:32.26"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>448635</Value>
+        <RawString>445066:450419:450419</RawString>
+        <JSON>{"test-run-times":"32.99:32.23:32.53"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>450677</Value>
+        <RawString>450419:450419:451194</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>451194</Value>
+        <RawString>451194:451194:451194</RawString>
+        <JSON>{"test-run-times":"32.25:32.99:32.68"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>AES-XTS 256b Encryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2338.7</Value>
+        <RawString>2324.1:2328.9:2363.1</RawString>
+        <JSON>{"test-run-times":"33.02:32.25:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2343.5</Value>
+        <RawString>2342.1:2356.9:2331.5</RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2348.2</Value>
+        <RawString>2335:2367.8:2341.8</RawString>
+        <JSON>{"test-run-times":"32.20:32.24:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2348.3</Value>
+        <RawString>2325.7:2362.2:2357</RawString>
+        <JSON>{"test-run-times":"32.23:32.26:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2357.8</Value>
+        <RawString>2361.7:2357.9:2353.9</RawString>
+        <JSON>{"test-run-times":"33.48:32.26:32.26"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2352.6</Value>
+        <RawString>2357.6:2332.3:2368</RawString>
+        <JSON>{"test-run-times":"32.99:32.23:32.53"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2347.3</Value>
+        <RawString>2339:2340.9:2362</RawString>
+        <JSON>{"test-run-times":"32.21:32.46:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2341.5</Value>
+        <RawString>2332.8:2345.2:2346.4</RawString>
+        <JSON>{"test-run-times":"32.24:32.25:32.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2345.3</Value>
+        <RawString>2354.8:2348.6:2332.5</RawString>
+        <JSON>{"test-run-times":"32.96:32.22:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2356.4</Value>
+        <RawString>2370.5:2346.8:2351.8</RawString>
+        <JSON>{"test-run-times":"32.19:32.18:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2350.1</Value>
+        <RawString>2347.3:2346.9:2356</RawString>
+        <JSON>{"test-run-times":"32.25:32.23:32.76"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>2333.1</Value>
+        <RawString>2309.2:2327:2363.2</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>2358.9</Value>
+        <RawString>2341.3:2369.6:2365.9</RawString>
+        <JSON>{"test-run-times":"32.25:32.99:32.68"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>AES-XTS 256b Decryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2369.9</Value>
+        <RawString>2353.2:2385:2371.4</RawString>
+        <JSON>{"test-run-times":"33.02:32.25:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2363.8</Value>
+        <RawString>2371.8:2357.7:2362</RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2369.6</Value>
+        <RawString>2369:2359.8:2380.1</RawString>
+        <JSON>{"test-run-times":"32.21:32.22:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2368.2</Value>
+        <RawString>2365:2367.6:2372</RawString>
+        <JSON>{"test-run-times":"32.20:32.24:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2359.5</Value>
+        <RawString>2355.9:2363.3:2359.3</RawString>
+        <JSON>{"test-run-times":"32.23:32.26:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2360.2</Value>
+        <RawString>2363.2:2361.1:2356.4</RawString>
+        <JSON>{"test-run-times":"33.48:32.26:32.26"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2364.2</Value>
+        <RawString>2358.9:2364:2369.6</RawString>
+        <JSON>{"test-run-times":"32.99:32.23:32.53"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2370.4</Value>
+        <RawString>2367.7:2371.3:2372.2</RawString>
+        <JSON>{"test-run-times":"32.21:32.46:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2372.1</Value>
+        <RawString>2364.4:2375:2377</RawString>
+        <JSON>{"test-run-times":"32.24:32.25:32.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2372.6</Value>
+        <RawString>2380.3:2375.8:2361.8</RawString>
+        <JSON>{"test-run-times":"32.96:32.22:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2348.8</Value>
+        <RawString>2347.6:2349.9</RawString>
+        <JSON>{"test-run-times":"32.19:32.18:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>2349.4</Value>
+        <RawString>2348.4:2351.4:2348.3</RawString>
+        <JSON>{"test-run-times":"32.25:32.23:32.76"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>2357.4</Value>
+        <RawString>2357.5:2351.5:2363.3</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>2395.9</Value>
+        <RawString>2394.5:2399:2394.1</RawString>
+        <JSON>{"test-run-times":"32.25:32.99:32.68"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Serpent-XTS 256b Encryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.3</Value>
+        <RawString>451.1:452:450.7</RawString>
+        <JSON>{"test-run-times":"33.02:32.25:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.8</Value>
+        <RawString>451.9:451.7:451.7</RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.7</Value>
+        <RawString>451.8:451.1:452.2</RawString>
+        <JSON>{"test-run-times":"32.21:32.22:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.9</Value>
+        <RawString>451.7:452.1:452</RawString>
+        <JSON>{"test-run-times":"32.20:32.24:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.6</Value>
+        <RawString>451.5:451.7:451.6</RawString>
+        <JSON>{"test-run-times":"32.23:32.26:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.5</Value>
+        <RawString>451.6:451.1:451.8</RawString>
+        <JSON>{"test-run-times":"32.21:32.46:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.0</Value>
+        <RawString>451.2:450.6:451.1</RawString>
+        <JSON>{"test-run-times":"32.25:32.23:32.76"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>445.3</Value>
+        <RawString>433.9:450.5:451.5</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>457.7</Value>
+        <RawString>446.6:463.4:463.2</RawString>
+        <JSON>{"test-run-times":"32.25:32.99:32.68"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Serpent-XTS 256b Decryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>461.9</Value>
+        <RawString>462.1:461.8:461.9</RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>461.8</Value>
+        <RawString>461.9:461.3:462.3</RawString>
+        <JSON>{"test-run-times":"32.21:32.22:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>462.1</Value>
+        <RawString>462:462.1:462.1</RawString>
+        <JSON>{"test-run-times":"32.20:32.24:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>461.6</Value>
+        <RawString>461.7:461.7:461.5</RawString>
+        <JSON>{"test-run-times":"32.23:32.26:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>461.7</Value>
+        <RawString>461.9:461.8:461.5</RawString>
+        <JSON>{"test-run-times":"33.48:32.26:32.26"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>462.0</Value>
+        <RawString>462:461.8:462.3</RawString>
+        <JSON>{"test-run-times":"32.24:32.25:32.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>461.1</Value>
+        <RawString>461.4:460.9:461.1</RawString>
+        <JSON>{"test-run-times":"32.25:32.23:32.76"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>461.5</Value>
+        <RawString>461.6:461.2:461.7</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>473.1</Value>
+        <RawString>473.1:473.2:473</RawString>
+        <JSON>{"test-run-times":"32.25:32.99:32.68"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Twofish-XTS 256b Encryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.4</Value>
+        <RawString>266.2:266.6:266.4</RawString>
+        <JSON>{"test-run-times":"33.02:32.25:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.3</Value>
+        <RawString>266.3:266.3:266.3</RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.5</Value>
+        <RawString>266.5:266.5:266.5</RawString>
+        <JSON>{"test-run-times":"32.21:32.46:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.2</Value>
+        <RawString>266.4:266.2:266.1</RawString>
+        <JSON>{"test-run-times":"32.19:32.18:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>263.0</Value>
+        <RawString>256.8:266.2:266.1</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>267.0</Value>
+        <RawString>260.6:270.3:270.1</RawString>
+        <JSON>{"test-run-times":"32.25:32.99:32.68"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Twofish-XTS 256b Decryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.9</Value>
+        <RawString>266.6:267.1:266.9</RawString>
+        <JSON>{"test-run-times":"33.02:32.25:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.6</Value>
+        <RawString>266.8:266.4:266.7</RawString>
+        <JSON>{"test-run-times":"32.21:32.22:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.7</Value>
+        <RawString>266.7:266.8:266.5</RawString>
+        <JSON>{"test-run-times":"33.48:32.26:32.26"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>267.0</Value>
+        <RawString>267.1:266.9:267</RawString>
+        <JSON>{"test-run-times":"32.21:32.46:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>267.1</Value>
+        <RawString>267.3:267.2:266.7</RawString>
+        <JSON>{"test-run-times":"32.96:32.22:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.5</Value>
+        <RawString>266.6:266.4:266.6</RawString>
+        <JSON>{"test-run-times":"32.25:32.23:32.76"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>266.8</Value>
+        <RawString>266.8:266.8:266.8</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>270.7</Value>
+        <RawString>270.7:270.7:270.6</RawString>
+        <JSON>{"test-run-times":"32.25:32.99:32.68"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>AES-XTS 512b Encryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1947.1</Value>
+        <RawString>1939.9:1956.9:1944.5</RawString>
+        <JSON>{"test-run-times":"33.02:32.25:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1948.4</Value>
+        <RawString>1953.8:1948.1:1943.4</RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1946.1</Value>
+        <RawString>1947.6:1935.8:1955</RawString>
+        <JSON>{"test-run-times":"32.21:32.22:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1951.7</Value>
+        <RawString>1947.8:1954.3:1953.1</RawString>
+        <JSON>{"test-run-times":"32.20:32.24:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1945.0</Value>
+        <RawString>1940.3:1950.3:1944.3</RawString>
+        <JSON>{"test-run-times":"32.23:32.26:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1946.0</Value>
+        <RawString>1948.9:1945.2:1943.8</RawString>
+        <JSON>{"test-run-times":"33.48:32.26:32.26"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1949.0</Value>
+        <RawString>1944.8:1946.6:1955.7</RawString>
+        <JSON>{"test-run-times":"32.99:32.23:32.53"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1949.5</Value>
+        <RawString>1949.5:1947.9:1951</RawString>
+        <JSON>{"test-run-times":"32.21:32.46:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1950.2</Value>
+        <RawString>1944.7:1952.9:1953.1</RawString>
+        <JSON>{"test-run-times":"32.24:32.25:32.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1951.9</Value>
+        <RawString>1959.1:1952.4:1944.3</RawString>
+        <JSON>{"test-run-times":"32.96:32.22:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1945.6</Value>
+        <RawString>1955.3:1939.3:1942.1</RawString>
+        <JSON>{"test-run-times":"32.19:32.18:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1940.8</Value>
+        <RawString>1941.5:1941.9:1939</RawString>
+        <JSON>{"test-run-times":"32.25:32.23:32.76"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>1942.7</Value>
+        <RawString>1940.9:1939.1:1948</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>1966.7</Value>
+        <RawString>1963.9:1968.9:1967.4</RawString>
+        <JSON>{"test-run-times":"32.25:32.99:32.68"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>AES-XTS 512b Decryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1949.8</Value>
+        <RawString>1943.9:1960.6:1944.8</RawString>
+        <JSON>{"test-run-times":"33.02:32.25:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1951.4</Value>
+        <RawString>1958.7:1947.7:1947.7</RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1950.4</Value>
+        <RawString>1952.4:1940:1958.7</RawString>
+        <JSON>{"test-run-times":"32.21:32.22:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1953.6</Value>
+        <RawString>1951.7:1953.2:1955.9</RawString>
+        <JSON>{"test-run-times":"32.20:32.24:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1946.4</Value>
+        <RawString>1944.6:1947.6:1947</RawString>
+        <JSON>{"test-run-times":"32.23:32.26:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1945.7</Value>
+        <RawString>1947.9:1943.5</RawString>
+        <JSON>{"test-run-times":"33.48:32.26:32.26"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1950.2</Value>
+        <RawString>1944.5:1950.2:1955.8</RawString>
+        <JSON>{"test-run-times":"32.99:32.23:32.53"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1950.6</Value>
+        <RawString>1954.4:1946.1:1951.2</RawString>
+        <JSON>{"test-run-times":"32.21:32.46:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1954.1</Value>
+        <RawString>1949.4:1956.8:1956.2</RawString>
+        <JSON>{"test-run-times":"32.24:32.25:32.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1956.2</Value>
+        <RawString>1962.5:1957.2:1949</RawString>
+        <JSON>{"test-run-times":"32.96:32.22:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1947.8</Value>
+        <RawString>1954.4:1941.1</RawString>
+        <JSON>{"test-run-times":"32.19:32.18:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>1939.4</Value>
+        <RawString>1941.3:1937.4</RawString>
+        <JSON>{"test-run-times":"32.25:32.23:32.76"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>1944.2</Value>
+        <RawString>1945.7:1938.4:1948.5</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>1970.5</Value>
+        <RawString>1968.9:1972.2:1970.4</RawString>
+        <JSON>{"test-run-times":"32.25:32.99:32.68"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Serpent-XTS 512b Encryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.7</Value>
+        <RawString>451:452.3</RawString>
+        <JSON>{"test-run-times":"33.02:32.25:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.9</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.5</Value>
+        <RawString>451.4:451.6:451.5</RawString>
+        <JSON>{"test-run-times":"32.23:32.26:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.8</Value>
+        <RawString>451.5:452.1:451.8</RawString>
+        <JSON>{"test-run-times":"32.99:32.23:32.53"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>452.0</Value>
+        <RawString>452.3:452.3:451.4</RawString>
+        <JSON>{"test-run-times":"32.96:32.22:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>452</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"32.19:32.18:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>451.2</Value>
+        <RawString>451.3:451:451.3</RawString>
+        <JSON>{"test-run-times":"32.25:32.23:32.76"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>451.3</Value>
+        <RawString>451.5:451.1:451.4</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>463.3</Value>
+        <RawString>463.3:463.3</RawString>
+        <JSON>{"test-run-times":"32.25:32.99:32.68"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Twofish-XTS 512b Encryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.0</Value>
+        <RawString>266.1:266.5:265.5</RawString>
+        <JSON>{"test-run-times":"33.02:32.25:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.1</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.3</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"32.21:32.22:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.4</Value>
+        <RawString>266.4:266.3</RawString>
+        <JSON>{"test-run-times":"32.99:32.23:32.53"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"32.19:32.18:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>265.8</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"32.25:32.23:32.76"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>266.2</Value>
+        <RawString>266.2:266.1</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>270.2</Value>
+        <RawString>270.2:270.2</RawString>
+        <JSON>{"test-run-times":"32.25:32.99:32.68"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Twofish-XTS 512b Decryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.8</Value>
+        <RawString>266.5:267:266.8</RawString>
+        <JSON>{"test-run-times":"33.02:32.25:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.7</Value>
+        <RawString>266.8:266.5:266.7</RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.9</Value>
+        <RawString>267:267.1:266.6</RawString>
+        <JSON>{"test-run-times":"32.96:32.22:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>266.5</Value>
+        <RawString>266.5:266.5</RawString>
+        <JSON>{"test-run-times":"32.25:32.23:32.76"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>266.6</Value>
+        <RawString>266.6:266.6:266.6</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>270.5</Value>
+        <RawString>270.5:270.5:270.5</RawString>
+        <JSON>{"test-run-times":"32.25:32.99:32.68"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Serpent-XTS 512b Decryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>461.8</Value>
+        <RawString>461.9:461.7</RawString>
+        <JSON>{"test-run-times":"32.21:32.21:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>461.9</Value>
+        <RawString>462:461.1:462.5</RawString>
+        <JSON>{"test-run-times":"32.21:32.22:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>461.7</Value>
+        <RawString>461.5:461.8:461.7</RawString>
+        <JSON>{"test-run-times":"32.23:32.26:32.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>462.0</Value>
+        <RawString>461.7:462:462.4</RawString>
+        <JSON>{"test-run-times":"32.24:32.25:32.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>462.6</Value>
+        <RawString>462.6:462.5</RawString>
+        <JSON>{"test-run-times":"32.96:32.22:32.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>461.6</Value>
+        <RawString>462:461.2</RawString>
+        <JSON>{"test-run-times":"32.19:32.18:32.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>cractus-base-id</Identifier>
+        <Value>461.2</Value>
+        <RawString>461.3:461:461.4</RawString>
+        <JSON>{"test-run-times":"32.25:32.23:32.76"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>461.5</Value>
+        <RawString>461.3:461.6</RawString>
+        <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>472.9</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"32.25:32.99:32.68"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/tjbench-1.2.0</Identifier>
+    <Title>libjpeg-turbo tjbench</Title>
+    <AppVersion>2.1.0</AppVersion>
+    <Arguments>decompression-throughput</Arguments>
+    <Description>Test: Decompression Throughput</Description>
+    <Scale>Megapixels/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>127.226616</Value>
+        <RawString>128.072388:126.617488:126.989973</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -rdynamic"},"test-run-times":"25.34:25.35:25.28"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>126.311997</Value>
+        <RawString>126.08138:126.39834:126.456271</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -rdynamic"},"test-run-times":"25.40:25.39:25.38"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/mysqlslap-1.4.0</Identifier>
+    <Title>MariaDB</Title>
+    <AppVersion>11.0.1</AppVersion>
+    <Arguments>--concurrency=128</Arguments>
+    <Description>Clients: 128</Description>
+    <Scale>Queries Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>193</Value>
+        <RawString>194.0617116243:192.04916458613:193.42359767892</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fPIC -pie -fstack-protector -O3 -shared -lrt -lpthread -lz -ldl -lm -lstdc++"},"test-run-times":"538.05:543.28:537.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>183</Value>
+        <RawString>180.73377914332:185.32246108228:183.62100624311</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fPIC -pie -fstack-protector -O3 -shared -lrt -lpthread -lz -ldl -lm -lstdc++"},"test-run-times":"570.86:558.05:561.29"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/mysqlslap-1.4.0</Identifier>
+    <Title>MariaDB</Title>
+    <AppVersion>11.0.1</AppVersion>
+    <Arguments>--concurrency=256</Arguments>
+    <Description>Clients: 256</Description>
+    <Scale>Queries Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>167</Value>
+        <RawString>166.11295681063:167.72895001677:166.88918558077</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fPIC -pie -fstack-protector -O3 -shared -lrt -lpthread -lz -ldl -lm -lstdc++"},"test-run-times":"624.77:619.10:618.35"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>151</Value>
+        <RawString>148.58841010401:150.73861923425:153.16281206923</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fPIC -pie -fstack-protector -O3 -shared -lrt -lpthread -lz -ldl -lm -lstdc++"},"test-run-times":"694.22:682.11:671.26"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gegl-1.0.0</Identifier>
+    <Title>GEGL</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>GEGL System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>45.319</Value>
+        <RawString>45.688:45.179:45.09</RawString>
+        <JSON>{"test-run-times":"45.69:45.18:45.09"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>44.399</Value>
+        <RawString>44.742:44.347:44.109</RawString>
+        <JSON>{"test-run-times":"44.74:44.35:44.11"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gimp-1.1.3</Identifier>
+    <Title>GIMP</Title>
+    <AppVersion>2.10.34</AppVersion>
+    <Arguments>resize</Arguments>
+    <Description>Test: resize</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>31.224</Value>
+        <RawString>33.54:31.775:31.549:31.637:30.771:30.774:30.83:30.659:31.025:30.849:30.786:31.528:30.692:30.959:30.979</RawString>
+        <JSON>{"test-run-times":"33.54:31.77:31.55:31.64:30.77:30.77:30.83:30.66:31.02:30.85:30.79:31.53:30.69:30.96:30.98"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>33.209</Value>
+        <RawString>33.064:33.913:32.649</RawString>
+        <JSON>{"test-run-times":"33.06:33.91:32.65"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gimp-1.1.3</Identifier>
+    <Title>GIMP</Title>
+    <AppVersion>2.10.34</AppVersion>
+    <Arguments>rotate</Arguments>
+    <Description>Test: rotate</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>26.868</Value>
+        <RawString>26.769:26.804:27.03</RawString>
+        <JSON>{"test-run-times":"26.77:26.80:27.03"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>26.426</Value>
+        <RawString>26.455:26.389:26.435</RawString>
+        <JSON>{"test-run-times":"26.45:26.39:26.43"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gimp-1.1.3</Identifier>
+    <Title>GIMP</Title>
+    <AppVersion>2.10.34</AppVersion>
+    <Arguments>auto-levels</Arguments>
+    <Description>Test: auto-levels</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>31.663</Value>
+        <RawString>31.194:31.705:32.09</RawString>
+        <JSON>{"test-run-times":"31.19:31.70:32.09"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>31.321</Value>
+        <RawString>31.529:31.274:31.16</RawString>
+        <JSON>{"test-run-times":"31.53:31.27:31.16"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gimp-1.1.3</Identifier>
+    <Title>GIMP</Title>
+    <AppVersion>2.10.34</AppVersion>
+    <Arguments>unsharp-mask</Arguments>
+    <Description>Test: unsharp-mask</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>40.665</Value>
+        <RawString>40.432:41.377:40.187</RawString>
+        <JSON>{"test-run-times":"40.43:41.38:40.19"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>39.931</Value>
+        <RawString>37.4:41.298:37.688:41.069:40.538:37.652:40.533:40.044:40.874:39.497:41.203:39.962:40.072:40.452:40.688</RawString>
+        <JSON>{"test-run-times":"37.40:41.30:37.69:41.07:40.54:37.65:40.53:40.04:40.87:39.50:41.20:39.96:40.07:40.45:40.69"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gmic-1.0.0</Identifier>
+    <Title>G'MIC</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>G'MIC System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>7.800</Value>
+        <RawString>8.72:7.687:7.732:7.777:7.77:7.743:7.69:7.739:7.7:7.721:7.677:7.709:7.733</RawString>
+        <JSON>{"test-run-times":"8.72:7.69:7.73:7.78:7.77:7.74:7.69:7.74:7.70:7.72:7.68:7.71:7.73"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>6.383</Value>
+        <RawString>7.562:6.269:6.196:6.161:6.229:6.192:7.024:6.277:6.225:6.265:6.227:6.212:6.297:6.291:6.312</RawString>
+        <JSON>{"test-run-times":"7.56:6.27:6.20:6.16:6.23:6.19:7.02:6.28:6.22:6.27:6.23:6.21:6.30:6.29:6.31"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/hugin-1.0.0</Identifier>
+    <Title>Hugin</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Hugin System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>78.152</Value>
+        <RawString>81.364:83.296:77.411:75.098:77.455:76.445:75.101:80.733:75.145:77.321:81.252:73.403:80.282:79.348:78.629</RawString>
+        <JSON>{"test-run-times":"81.36:83.30:77.41:75.10:77.45:76.44:75.10:80.73:75.14:77.32:81.25:73.40:80.28:79.35:78.63"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>76.577</Value>
+        <RawString>78.485:76.891:74.414:76.518</RawString>
+        <JSON>{"test-run-times":"78.48:76.89:74.41:76.52"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/inkscape-1.0.1</Identifier>
+    <Title>Inkscape</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Inkscape System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>46.371</Value>
+        <RawString>48.628:46.054:45.999:45.936:45.738:45.871</RawString>
+        <JSON>{"install-footnote":"Inkscape 1.2.2 (b0a8486541, 2022-12-01)","test-run-times":"48.63:46.05:46.00:45.94:45.74:45.87"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>47.120</Value>
+        <RawString>49.485:46.708:46.668:46.589:46.705:46.562</RawString>
+        <JSON>{"install-footnote":"Inkscape 1.2.2 (b0a8486541, 2022-12-01)","test-run-times":"49.48:46.71:46.67:46.59:46.70:46.56"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/ocrmypdf-1.0.0</Identifier>
+    <Title>OCRMyPDF</Title>
+    <AppVersion>14.0.1+dfsg1</AppVersion>
+    <Arguments></Arguments>
+    <Description>OCRMyPDF System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>10.780</Value>
+        <RawString>12.917:10.588:10.725:10.214:10.758:10.582:10.837:10.618:10.913:10.473:10.78:10.466:10.309:10.652:10.862</RawString>
+        <JSON>{"test-run-times":"12.92:10.59:10.72:10.21:10.76:10.58:10.84:10.62:10.91:10.47:10.78:10.47:10.31:10.65:10.86"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>10.749</Value>
+        <RawString>13.061:10.529:10.575:10.611:10.458:10.383:10.485:10.529:10.543:10.684:10.676:10.704:10.467:10.776</RawString>
+        <JSON>{"test-run-times":"13.06:10.53:10.57:10.61:10.46:10.38:10.49:10.53:10.54:10.68:10.68:10.70:10.47:10.78"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/octave-benchmark-1.0.1</Identifier>
+    <Title>GNU Octave Benchmark</Title>
+    <AppVersion>8.3.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>GNU Octave Benchmark System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>16.067</Value>
+        <RawString>16.6:16:15.866:15.951:15.919</RawString>
+        <JSON>{"test-run-times":"16.60:16.00:15.87:15.95:15.92"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>16.062</Value>
+        <RawString>16.681:15.913:15.877:15.922:15.917</RawString>
+        <JSON>{"test-run-times":"16.68:15.91:15.88:15.92:15.92"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/rawtherapee-1.0.1</Identifier>
+    <Title>RawTherapee</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>RawTherapee System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>95.362</Value>
+        <RawString>96.087:95.205:94.794</RawString>
+        <JSON>{"install-footnote":"RawTherapee, version 5.9, command line.","test-run-times":"98.05:97.15:96.73"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>92.326</Value>
+        <RawString>92.656:92.214:92.108</RawString>
+        <JSON>{"install-footnote":"RawTherapee, version 5.9, command line.","test-run-times":"94.62:94.14:94.02"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/rsvg-1.0.0</Identifier>
+    <Title>librsvg</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>librsvg System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>81.950</Value>
+        <RawString>83.958:81.18:80.711</RawString>
+        <JSON>{"install-footnote":"rsvg-convert version 2.54.7","test-run-times":"83.96:81.18:80.71"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>79.752</Value>
+        <RawString>81.323:79.166:78.767</RawString>
+        <JSON>{"install-footnote":"rsvg-convert version 2.54.7","test-run-times":"81.32:79.17:78.77"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/stress-ng-1.11.0</Identifier>
+    <Title>Stress-NG</Title>
+    <AppVersion>0.16.04</AppVersion>
+    <Arguments>--crypt 0</Arguments>
+    <Description>Test: Crypto</Description>
+    <Scale>Bogo Ops/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>44344.56</Value>
+        <RawString>44360.27:44360.02:44313.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lm -latomic -lc -lcrypt -ldl -lEGL -lgbm -lGLESv2 -ljpeg -lmpfr -lpthread -lrt -lz"},"test-run-times":"30.12:30.20:30.10"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>43095.71</Value>
+        <RawString>43088.17:43099.15:43099.81</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lm -latomic -lc -lcrypt -ldl -lEGL -lgbm -lGLESv2 -ljpeg -lmpfr -lpthread -lrt -lz"},"test-run-times":"30.24:30.10:30.10"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/stress-ng-1.11.0</Identifier>
+    <Title>Stress-NG</Title>
+    <AppVersion>0.16.04</AppVersion>
+    <Arguments>--cpu 0 --cpu-method all</Arguments>
+    <Description>Test: CPU Stress</Description>
+    <Scale>Bogo Ops/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>52931.95</Value>
+        <RawString>52845.63:53059.02:52891.2</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lm -latomic -lc -lcrypt -ldl -lEGL -lgbm -lGLESv2 -ljpeg -lmpfr -lpthread -lrt -lz"},"test-run-times":"30.10:30.10:30.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>56164.81</Value>
+        <RawString>54928.23:56694.68:56871.52</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lm -latomic -lc -lcrypt -ldl -lEGL -lgbm -lGLESv2 -ljpeg -lmpfr -lpthread -lrt -lz"},"test-run-times":"30.11:30.10:30.10"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ctx-clock-1.0.0</Identifier>
+    <Title>ctx_clock</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Context Switch Time</Description>
+    <Scale>Clocks</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>203</Value>
+        <RawString>204:204:202</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"1.18:1.18:1.18"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>206</Value>
+        <RawString>206:206:206</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"1.19:1.19:1.18"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/sysbench-1.1.0</Identifier>
+    <Title>Sysbench</Title>
+    <AppVersion>1.0.20</AppVersion>
+    <Arguments>memory run</Arguments>
+    <Description>Test: Memory</Description>
+    <Scale>MiB/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>11673.91</Value>
+        <RawString>11899.88:11369.05:11877.27:11549.42</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -lm"},"test-run-times":"8.63:9.02:8.63:8.88"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>11494.46</Value>
+        <RawString>11429.55:11471.94:11581.89</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -lm"},"test-run-times":"9.00:8.94:8.85"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/sysbench-1.1.0</Identifier>
+    <Title>Sysbench</Title>
+    <AppVersion>1.0.20</AppVersion>
+    <Arguments>cpu run</Arguments>
+    <Description>Test: CPU</Description>
+    <Scale>Events Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>50177.87</Value>
+        <RawString>50183.04:50168.29:50182.28</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -lm"},"test-run-times":"90.02:90.01:90.02"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>47570.94</Value>
+        <RawString>47576.6:47560.36:47575.86</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -lm"},"test-run-times":"90.02:90.02:90.02"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pybench-1.1.3</Identifier>
+    <Title>PyBench</Title>
+    <AppVersion>2018-02-16</AppVersion>
+    <Arguments></Arguments>
+    <Description>Total For Average Test Times</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>1446</Value>
+        <RawString>1450:1444:1443</RawString>
+        <JSON>{"test-run-times":"33.50:33.27:33.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>1417</Value>
+        <RawString>1420:1415:1416</RawString>
+        <JSON>{"test-run-times":"32.49:32.29:32.45"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/appleseed-1.0.1</Identifier>
+    <Title>Appleseed</Title>
+    <AppVersion>2.0 Beta</AppVersion>
+    <Arguments>emily.appleseed</Arguments>
+    <Description>Scene: Emily</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>215.39779</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"450.81"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>226.073844</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"473.12"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/appleseed-1.0.1</Identifier>
+    <Title>Appleseed</Title>
+    <AppVersion>2.0 Beta</AppVersion>
+    <Arguments>disney_material_1.appleseed</Arguments>
+    <Description>Scene: Disney Material</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>103.454954</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"208.66"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>103.495608</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"207.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/phpbench-1.1.6</Identifier>
+    <Title>PHPBench</Title>
+    <AppVersion>0.8.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>PHP Benchmark Suite</Description>
+    <Scale>Score</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>503105</Value>
+        <RawString>503320:504221:501774</RawString>
+        <JSON>{"test-run-times":"39.80:39.70:39.90"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>514483</Value>
+        <RawString>513481:515439:514530</RawString>
+        <JSON>{"test-run-times":"39.03:38.84:38.91"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/git-1.1.0</Identifier>
+    <Title>Git</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Complete Common Git Commands</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>86.099</Value>
+        <RawString>87.076:85.51:85.711</RawString>
+        <JSON>{"install-footnote":"git version 2.40.1","test-run-times":"87.08:85.51:85.71"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>85.065</Value>
+        <RawString>86.135:84.714:84.346</RawString>
+        <JSON>{"install-footnote":"git version 2.40.1","test-run-times":"86.13:84.71:84.35"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/tesseract-ocr-1.0.1</Identifier>
+    <Title>Tesseract OCR</Title>
+    <AppVersion>5.3.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To OCR 7 Images</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>40.233</Value>
+        <RawString>40.31:40.158:40.231</RawString>
+        <JSON>{"test-run-times":"40.31:40.16:40.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>40.358</Value>
+        <RawString>40.499:40.266:40.308</RawString>
+        <JSON>{"test-run-times":"40.50:40.27:40.31"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/tesseract-ocr-1.0.1</Identifier>
+    <Title>Tesseract OCR</Title>
+    <AppVersion>5.3.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>Tesseract OCR System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>mantic</Identifier>
+        <Value>40.179</Value>
+        <RawString>40.116:40.166:40.256</RawString>
+        <JSON>{"test-run-times":"40.12:40.17:40.26"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>mantic-no-omit-framepointer</Identifier>
+        <Value>40.283</Value>
+        <RawString>40.375:40.206:40.267</RawString>
+        <JSON>{"test-run-times":"40.38:40.21:40.27"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
