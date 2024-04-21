@@ -1,0 +1,726 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>rockman-withfp-withno-omit-framepointer-name</Title>
+    <LastModified>2024-04-19 20:56:55</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.4</TestClient>
+    <Description>2 x Intel Xeon Gold 6430 testing with a Dell PowerEdge R760 030NDG (1.4.4 BIOS) and Matrox G200eW3 on Ubuntu 23.10 via the Phoronix Test Suite.</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon Gold 6430 @ 3.40GHz (64 Cores / 128 Threads), Motherboard: Dell PowerEdge R760 030NDG (1.4.4 BIOS), Chipset: Intel Device 1bce, Memory: 512GB, Disk: 1600GB Dell Ent NVMe FIPS CM6 MU 1.6TB, Graphics: Matrox G200eW3, Network: 2 x Broadcom NetXtreme BCM5720 PCIe + 2 x Mellanox MT2894</Hardware>
+    <Software>OS: Ubuntu 23.10, Kernel: 6.5.0-9-generic (x86_64), Compiler: GCC 13.2.0, File-System: ext4, Screen Resolution: 1024x768</Software>
+    <User>ubuntu</User>
+    <TimeStamp>2024-04-19 12:45:36</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --enable-libphobos-checking=release --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=2 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=\/build\/gcc-13-b9QCDx\/gcc-13-13.2.0\/debian\/tmp-nvptx\/usr,amdgcn-amdhsa=\/build\/gcc-13-b9QCDx\/gcc-13-13.2.0\/debian\/tmp-gcn\/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v","cpu-scaling-governor":"intel_cpufreq schedutil","cpu-microcode":"0x2b0004b1","kernel-extra-details":"Transparent Huge Pages: madvise","environment-variables":"CXXFLAGS=-fno-omit-frame-pointer QMAKE_CFLAGS=-fno-omit-frame-pointer CFLAGS=-fno-omit-frame-pointer CFLAGS_OVERRIDE=-fno-omit-frame-pointer QMAKE_CXXFLAGS=-fno-omit-frame-pointer FFLAGS=-fno-omit-frame-pointer","security":"gather_data_sampling: Not affected + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Not affected + retbleed: Not affected + spec_rstack_overflow: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced \/ Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/ramspeed-1.4.3</Identifier>
+    <Title>RAMspeed SMP</Title>
+    <AppVersion>3.5.0</AppVersion>
+    <Arguments>COPY -b 3</Arguments>
+    <Description>Type: Copy - Benchmark: Integer</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>27371.30</Value>
+        <RawString>27289.77:27409.35:27414.78</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"68.41:68.31:68.32"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ramspeed-1.4.3</Identifier>
+    <Title>RAMspeed SMP</Title>
+    <AppVersion>3.5.0</AppVersion>
+    <Arguments>AVERAGE -b 3</Arguments>
+    <Description>Type: Average - Benchmark: Integer</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>25834.47</Value>
+        <RawString>26031.11:25734.99:25737.32</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"71.73:68.32:68.32"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ramspeed-1.4.3</Identifier>
+    <Title>RAMspeed SMP</Title>
+    <AppVersion>3.5.0</AppVersion>
+    <Arguments>AVERAGE -b 6</Arguments>
+    <Description>Type: Average - Benchmark: Floating Point</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>27650.68</Value>
+        <RawString>27652.73:27648.77:27650.53</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"62.90:62.91:62.91"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/stream-1.3.4</Identifier>
+    <Title>Stream</Title>
+    <AppVersion>2013-01-17</AppVersion>
+    <Arguments>Copy</Arguments>
+    <Description>Type: Copy</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>150772.7</Value>
+        <RawString>150823.8:150744.4:150749.8:150783.4:150761.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-mcmodel=medium -fopenmp"},"test-run-times":"14.75:14.64:14.72:14.56:14.73"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-cos</Arguments>
+    <Description>Benchmark: cos</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>46.7966</Value>
+        <RawString>46.8093:46.7995:46.781</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.38:1.38:1.38"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-sin</Arguments>
+    <Description>Benchmark: sin</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>40.1082</Value>
+        <RawString>40.0999:40.1101:40.1145</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"3.50:3.45:3.45"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-sqrt</Arguments>
+    <Description>Benchmark: sqrt</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>5.67889</Value>
+        <RawString>5.67947:5.67845:5.67876</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.36:1.37:1.36"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-pthread_once</Arguments>
+    <Description>Benchmark: pthread_once</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>4.77554</Value>
+        <RawString>4.78548:4.76582:4.77531</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.36:1.37:1.36"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/npb-1.4.5</Identifier>
+    <Title>NAS Parallel Benchmarks</Title>
+    <AppVersion>3.4</AppVersion>
+    <Arguments>ep.C</Arguments>
+    <Description>Test / Class: EP.C</Description>
+    <Scale>Total Mop/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>4883.64</Value>
+        <RawString>4922.65:4843.51:4884.76</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-lmpi_usempif08 -lmpi_mpifh -lmpi -lopen-rte -lopen-pal -lhwloc -levent_core -levent_pthreads -lm -lz"},"install-footnote":"Open MPI 4.1.5","test-run-times":"3.33:3.48:3.34"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/npb-1.4.5</Identifier>
+    <Title>NAS Parallel Benchmarks</Title>
+    <AppVersion>3.4</AppVersion>
+    <Arguments>lu.C</Arguments>
+    <Description>Test / Class: LU.C</Description>
+    <Scale>Total Mop/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>39227.58</Value>
+        <RawString>39206.47:39267.58:39208.69</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-lmpi_usempif08 -lmpi_mpifh -lmpi -lopen-rte -lopen-pal -lhwloc -levent_core -levent_pthreads -lm -lz"},"install-footnote":"Open MPI 4.1.5","test-run-times":"54.25:54.22:54.27"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b3</Arguments>
+    <Description>Compression Level: 3 - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>625.8</Value>
+        <RawString>632.1:614.4:630.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"66.55:65.98:64.89"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b3</Arguments>
+    <Description>Compression Level: 3 - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>222.4</Value>
+        <RawString>222.8:222:222.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"66.55:65.98:64.89"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b8</Arguments>
+    <Description>Compression Level: 8 - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>217.4</Value>
+        <RawString>216.5:217.7:218</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"67.44:66.87:65.99"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b8</Arguments>
+    <Description>Compression Level: 8 - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>236.9</Value>
+        <RawString>237.3:236.6:236.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"67.44:66.87:65.99"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b12</Arguments>
+    <Description>Compression Level: 12 - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>58.3</Value>
+        <RawString>58.4:58.3:58.3</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"67.76:67.68:64.30"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b12</Arguments>
+    <Description>Compression Level: 12 - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>239.4</Value>
+        <RawString>239.4:239.2:239.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"67.76:67.68:64.30"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b19</Arguments>
+    <Description>Compression Level: 19 - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>5.19</Value>
+        <RawString>5.19:5.19:5.19</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"74.50:74.42:74.54"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b19</Arguments>
+    <Description>Compression Level: 19 - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>206.7</Value>
+        <RawString>206.8:206.6:206.6</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"74.50:74.42:74.54"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b3 --long</Arguments>
+    <Description>Compression Level: 3, Long Mode - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>177.1</Value>
+        <RawString>155.4:185.1:178.6:197.9:193.6:188.7:177.8:180.4:187.5:185.7:175.1:166.8:184:184.2:116</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"63.60:64.42:64.41:66.66:63.99:65.53:66.24:64.85:65.58:65.29:65.13:64.05:64.78:64.77:63.94"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b3 --long</Arguments>
+    <Description>Compression Level: 3, Long Mode - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>229.5</Value>
+        <RawString>229:229:229.8:229.5:229.4:229.7:229.1:229.1:229.3:229.2:229.2:229.8:230:229.8:229.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"63.60:64.42:64.41:66.66:63.99:65.53:66.24:64.85:65.58:65.29:65.13:64.05:64.78:64.77:63.94"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b8 --long</Arguments>
+    <Description>Compression Level: 8, Long Mode - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>133.5</Value>
+        <RawString>150.3:139.6:132.5:128:130.6:132:133:138.5:129.8:129.9:139.9:126.1:126.3:128.2:138.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"66.19:64.50:65.31:65.68:64.58:64.69:65.74:65.91:65.60:64.98:66.21:66.61:66.23:65.72:64.52"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b8 --long</Arguments>
+    <Description>Compression Level: 8, Long Mode - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>240.3</Value>
+        <RawString>240:240.4:240.1:240.5:240.6:240:240.6:240.3:240.2:240.3:240:239.6:240.6:240.4:240.2</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"66.19:64.50:65.31:65.68:64.58:64.69:65.74:65.91:65.60:64.98:66.21:66.61:66.23:65.72:64.52"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b19 --long</Arguments>
+    <Description>Compression Level: 19, Long Mode - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>2.93</Value>
+        <RawString>2.94:2.92:2.94</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"106.01:106.49:105.92"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b19 --long</Arguments>
+    <Description>Compression Level: 19, Long Mode - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>207.0</Value>
+        <RawString>206.9:206.9:207.1</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lz -llzma"},"test-run-times":"106.01:106.49:105.92"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset slow</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Slow</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>2.67</Value>
+        <RawString>2.67:2.66:2.67</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -lpthread -lm -lrt"},"test-run-times":"224.38:225.86:225.18"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset medium</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Medium</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>2.83</Value>
+        <RawString>2.83:2.83:2.82</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -lpthread -lm -lrt"},"test-run-times":"212.05:211.90:212.72"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset slow</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Slow</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>11.21</Value>
+        <RawString>11.26:11.14:11.22</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -lpthread -lm -lrt"},"test-run-times":"53.35:53.93:53.55"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset medium</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Medium</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>11.82</Value>
+        <RawString>11.75:11.85:11.87</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -lpthread -lm -lrt"},"test-run-times":"51.12:50.71:50.61"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset veryfast</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Very Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>5.26</Value>
+        <RawString>5.25:5.25:5.27</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -lpthread -lm -lrt"},"test-run-times":"114.37:114.33:113.88"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset superfast</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Super Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>6.47</Value>
+        <RawString>6.44:6.46:6.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -lpthread -lm -lrt"},"test-run-times":"93.21:93.02:92.32"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset ultrafast</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Ultra Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>7.75</Value>
+        <RawString>7.75:7.71:7.78</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -lpthread -lm -lrt"},"test-run-times":"77.48:77.93:77.21"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset veryfast</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Very Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>20.47</Value>
+        <RawString>20.36:20.21:20.84</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -lpthread -lm -lrt"},"test-run-times":"29.52:29.75:28.86"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset superfast</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Super Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>25.69</Value>
+        <RawString>25.64:25.67:25.77</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -lpthread -lm -lrt"},"test-run-times":"23.46:23.43:23.34"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset ultrafast</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Ultra Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>29.47</Value>
+        <RawString>29.13:29.59:29.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -lpthread -lm -lrt"},"test-run-times":"20.66:20.34:20.26"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/m-queens-1.1.0</Identifier>
+    <Title>m-queens</Title>
+    <AppVersion>1.2</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Solve</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>26.288</Value>
+        <RawString>26.38:26.113:26.37</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fopenmp"},"test-run-times":"26.38:26.11:26.37"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/mysqlslap-1.4.0</Identifier>
+    <Title>MariaDB</Title>
+    <AppVersion>11.0.1</AppVersion>
+    <Arguments>--concurrency=128</Arguments>
+    <Description>Clients: 128</Description>
+    <Scale>Queries Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>510</Value>
+        <RawString>503.01810865191:509.42435048395:517.5983436853</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fPIC -pie -fstack-protector -O3 -shared -lrt -lpthread -lz -ldl -lm -lstdc++"},"test-run-times":"200.24:197.73:194.65"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/mysqlslap-1.4.0</Identifier>
+    <Title>MariaDB</Title>
+    <AppVersion>11.0.1</AppVersion>
+    <Arguments>--concurrency=256</Arguments>
+    <Description>Clients: 256</Description>
+    <Scale>Queries Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>440</Value>
+        <RawString>429.92261392949:444.83985765125:444.64206313917</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fPIC -pie -fstack-protector -O3 -shared -lrt -lpthread -lz -ldl -lm -lstdc++"},"test-run-times":"234.54:226.82:226.79"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gimp-1.1.3</Identifier>
+    <Title>GIMP</Title>
+    <AppVersion>2.10.34</AppVersion>
+    <Arguments>resize</Arguments>
+    <Description>Test: resize</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>32.602</Value>
+        <RawString>35.879:33.759:35.038:33.773:30.284:30.841:31.436:34.169:30.367:30.179:31.871:33.622</RawString>
+        <JSON>{"test-run-times":"35.88:33.76:35.04:33.77:30.28:30.84:31.44:34.17:30.37:30.18:31.87:33.62"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/sysbench-1.1.0</Identifier>
+    <Title>Sysbench</Title>
+    <AppVersion>1.0.20</AppVersion>
+    <Arguments>cpu run</Arguments>
+    <Description>Test: CPU</Description>
+    <Scale>Events Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-withno-omit-framepointer-id</Identifier>
+        <Value>148634.48</Value>
+        <RawString>148647.46:148621.76:148634.21</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -lm"},"test-run-times":"90.01:90.01:90.01"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

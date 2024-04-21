@@ -1,0 +1,726 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>rockman-baseline-name</Title>
+    <LastModified>2024-04-19 11:41:02</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.4</TestClient>
+    <Description>2 x Intel Xeon Gold 6430 testing with a Dell PowerEdge R760 030NDG (1.4.4 BIOS) and Matrox G200eW3 on Ubuntu 23.10 via the Phoronix Test Suite.</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>rockman-baseline-id</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon Gold 6430 @ 3.40GHz (64 Cores / 128 Threads), Motherboard: Dell PowerEdge R760 030NDG (1.4.4 BIOS), Chipset: Intel Device 1bce, Memory: 512GB, Disk: 1600GB Dell Ent NVMe FIPS CM6 MU 1.6TB, Graphics: Matrox G200eW3, Network: 2 x Broadcom NetXtreme BCM5720 PCIe + 2 x Mellanox MT2894</Hardware>
+    <Software>OS: Ubuntu 23.10, Kernel: 6.5.0-9-generic (x86_64), Compiler: GCC 13.2.0, File-System: ext4, Screen Resolution: 1024x768</Software>
+    <User>ubuntu</User>
+    <TimeStamp>2024-04-19 04:40:13</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --enable-libphobos-checking=release --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=2 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=\/build\/gcc-13-XYspKM\/gcc-13-13.2.0\/debian\/tmp-nvptx\/usr,amdgcn-amdhsa=\/build\/gcc-13-XYspKM\/gcc-13-13.2.0\/debian\/tmp-gcn\/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v","cpu-scaling-governor":"intel_cpufreq schedutil","cpu-microcode":"0x2b0004b1","kernel-extra-details":"Transparent Huge Pages: madvise","security":"gather_data_sampling: Not affected + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Not affected + retbleed: Not affected + spec_rstack_overflow: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced \/ Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/ramspeed-1.4.3</Identifier>
+    <Title>RAMspeed SMP</Title>
+    <AppVersion>3.5.0</AppVersion>
+    <Arguments>COPY -b 3</Arguments>
+    <Description>Type: Copy - Benchmark: Integer</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>26936.83</Value>
+        <RawString>26758.6:27115.16:26936.74</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"70.86:71.46:70.46"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ramspeed-1.4.3</Identifier>
+    <Title>RAMspeed SMP</Title>
+    <AppVersion>3.5.0</AppVersion>
+    <Arguments>AVERAGE -b 3</Arguments>
+    <Description>Type: Average - Benchmark: Integer</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>25131.04</Value>
+        <RawString>25191.7:25069.39:25132.02</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"71.52:70.58:70.86"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ramspeed-1.4.3</Identifier>
+    <Title>RAMspeed SMP</Title>
+    <AppVersion>3.5.0</AppVersion>
+    <Arguments>AVERAGE -b 6</Arguments>
+    <Description>Type: Average - Benchmark: Floating Point</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>27033.02</Value>
+        <RawString>27027.65:27025.27:27046.13</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"65.96:65.96:66.00"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/stream-1.3.4</Identifier>
+    <Title>Stream</Title>
+    <AppVersion>2013-01-17</AppVersion>
+    <Arguments>Copy</Arguments>
+    <Description>Type: Copy</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>218937.1</Value>
+        <RawString>218941.6:218927.4:218987:218938.8:218890.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-mcmodel=medium -O3 -march=native -fopenmp"},"test-run-times":"10.42:10.43:10.49:10.46:10.42"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-cos</Arguments>
+    <Description>Benchmark: cos</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>46.4404</Value>
+        <RawString>46.46:46.4249:46.4362</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.38:1.38:1.38"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-sin</Arguments>
+    <Description>Benchmark: sin</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>40.2597</Value>
+        <RawString>40.2609:40.238:40.2801</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"3.45:3.45:3.45"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-sqrt</Arguments>
+    <Description>Benchmark: sqrt</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>5.67483</Value>
+        <RawString>5.67325:5.67394:5.6773</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.36:1.37:1.37"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-pthread_once</Arguments>
+    <Description>Benchmark: pthread_once</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>4.04328</Value>
+        <RawString>4.04277:4.04424:4.04284</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.36:1.36:1.36"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/npb-1.4.5</Identifier>
+    <Title>NAS Parallel Benchmarks</Title>
+    <AppVersion>3.4</AppVersion>
+    <Arguments>ep.C</Arguments>
+    <Description>Test / Class: EP.C</Description>
+    <Scale>Total Mop/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>6911.22</Value>
+        <RawString>7107.85:6786.16:6839.66</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O3 -march=native -lmpi_usempif08 -lmpi_mpifh -lmpi -lopen-rte -lopen-pal -lhwloc -levent_core -levent_pthreads -lm -lz"},"install-footnote":"Open MPI 4.1.5","test-run-times":"2.85:2.84:2.81"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/npb-1.4.5</Identifier>
+    <Title>NAS Parallel Benchmarks</Title>
+    <AppVersion>3.4</AppVersion>
+    <Arguments>lu.C</Arguments>
+    <Description>Test / Class: LU.C</Description>
+    <Scale>Total Mop/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>161526.85</Value>
+        <RawString>161234.4:161762.09:161584.05</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"F9X","compiler":"gfortran","compiler-options":"-O3 -march=native -lmpi_usempif08 -lmpi_mpifh -lmpi -lopen-rte -lopen-pal -lhwloc -levent_core -levent_pthreads -lm -lz"},"install-footnote":"Open MPI 4.1.5","test-run-times":"14.48:14.44:14.52"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b3</Arguments>
+    <Description>Compression Level: 3 - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>2419.3</Value>
+        <RawString>2417.6:2418.3:2573.5:2298.7:2298:2443:2377.5:2446.6:2491.9:2518.2:2357.2:2404.5:2438.2:2461.3:2344.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"63.17:63.57:62.39:63.20:63.12:63.46:63.58:63.43:62.97:62.63:63.46:62.94:62.88:63.23:62.95"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b3</Arguments>
+    <Description>Compression Level: 3 - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>1008.3</Value>
+        <RawString>1004.8:1009.8:1009.5:1008.8:1006.5:1010.3:1009.9:1009.7:1007.3:1009.9:1008.4:1008.4:1008.3:1009.7:1003.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"63.17:63.57:62.39:63.20:63.12:63.46:63.58:63.43:62.97:62.63:63.46:62.94:62.88:63.23:62.95"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b8</Arguments>
+    <Description>Compression Level: 8 - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>780.2</Value>
+        <RawString>777.5:778.1:785.1</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"63.28:64.33:63.05"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b8</Arguments>
+    <Description>Compression Level: 8 - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>1032.1</Value>
+        <RawString>1022.4:1032.6:1041.3</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"63.28:64.33:63.05"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b12</Arguments>
+    <Description>Compression Level: 12 - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>203.6</Value>
+        <RawString>204.4:200.2:206.3</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"63.96:62.75:63.54"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b12</Arguments>
+    <Description>Compression Level: 12 - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>925.3</Value>
+        <RawString>923.3:921:931.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"63.96:62.75:63.54"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b19</Arguments>
+    <Description>Compression Level: 19 - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>11.4</Value>
+        <RawString>11.2:11.3:11.6</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"70.06:69.89:69.53"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b19</Arguments>
+    <Description>Compression Level: 19 - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>790.5</Value>
+        <RawString>791.9:789.7:789.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"70.06:69.89:69.53"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b3 --long</Arguments>
+    <Description>Compression Level: 3, Long Mode - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>324.8</Value>
+        <RawString>332.6:320.1:321.6</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"63.14:63.25:62.80"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b3 --long</Arguments>
+    <Description>Compression Level: 3, Long Mode - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>1039.0</Value>
+        <RawString>1041.5:1038.7:1036.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"63.14:63.25:62.80"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b8 --long</Arguments>
+    <Description>Compression Level: 8, Long Mode - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>388.5</Value>
+        <RawString>388.5:415.6:399.9:380.2:418.9:404.4:408.3:362.9:353.8:359.1:373.8:396.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"63.43:63.13:63.60:62.74:63.39:62.72:64.57:64.03:63.29:63.13:64.29:63.38"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b8 --long</Arguments>
+    <Description>Compression Level: 8, Long Mode - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>1030.7</Value>
+        <RawString>1032.4:1009.4:1031.6:1033.2:1033.8:1037:1028.5:1027.9:1033.9:1034.3:1033.2:1033.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"63.43:63.13:63.60:62.74:63.39:62.72:64.57:64.03:63.29:63.13:64.29:63.38"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b19 --long</Arguments>
+    <Description>Compression Level: 19, Long Mode - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>6.06</Value>
+        <RawString>6.31:6.01:6.09:5.93:5.98</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"65.57:67.26:66.71:67.53:67.59"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b19 --long</Arguments>
+    <Description>Compression Level: 19, Long Mode - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>789.0</Value>
+        <RawString>789.8:789.8:790.9:791.4:782.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"65.57:67.26:66.71:67.53:67.59"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset slow</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Slow</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>8.38</Value>
+        <RawString>8.38:8.36:8.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"71.65:71.81:71.47"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset medium</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Medium</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>8.61</Value>
+        <RawString>8.6:8.61:8.62</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"69.89:69.74:69.65"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset slow</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Slow</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>31.50</Value>
+        <RawString>31.49:31.34:31.66</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"19.12:19.21:19.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset medium</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Medium</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>32.53</Value>
+        <RawString>32.47:32.62:32.49</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"18.55:18.46:18.53"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset veryfast</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Very Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>16.00</Value>
+        <RawString>16.03:16.02:15.96</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"37.50:37.54:37.65"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset superfast</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Super Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>22.44</Value>
+        <RawString>22.51:22.43:22.39</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"26.72:26.82:26.87"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset ultrafast</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Ultra Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>27.56</Value>
+        <RawString>27.34:27.77:27.56</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"22.02:21.68:21.84"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset veryfast</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Very Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>74.17</Value>
+        <RawString>75.45:71.92:78.89:72.85:73.45:72.44:76.74:79.55:77.49:71.98:72.09:72.16:71.84:73.05:72.59</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"8.02:8.40:7.67:8.30:8.23:8.34:7.87:7.60:7.80:8.40:8.38:8.37:8.41:8.27:8.32"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset superfast</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Super Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>117.35</Value>
+        <RawString>109.91:120.5:110.28:107.83:108.54:108.49:128.04:130.13:125.57:123.7:110.82:122.27:109.53:114.3:130.36</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"5.52:5.04:5.50:5.62:5.58:5.59:4.75:4.67:4.83:4.91:5.47:4.96:5.54:5.30:4.66"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/kvazaar-1.2.0</Identifier>
+    <Title>Kvazaar</Title>
+    <AppVersion>2.2</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset ultrafast</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Ultra Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>152.29</Value>
+        <RawString>162.03:161.96:152.94:142.11:142.93:142.86:149.58:161.35:142.55:154.76:156.74:157.63</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"3.76:3.76:3.98:4.28:4.25:4.25:4.06:3.77:4.26:3.93:3.88:3.86"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/m-queens-1.1.0</Identifier>
+    <Title>m-queens</Title>
+    <AppVersion>1.2</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Solve</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>15.969</Value>
+        <RawString>15.892:15.937:16.079</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fopenmp -O2 -march=native"},"test-run-times":"15.89:15.94:16.08"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/mysqlslap-1.4.0</Identifier>
+    <Title>MariaDB</Title>
+    <AppVersion>11.0.1</AppVersion>
+    <Arguments>--concurrency=128</Arguments>
+    <Description>Clients: 128</Description>
+    <Scale>Queries Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>403</Value>
+        <RawString>28.964518464881:157.52993068683:524.9343832021:525.76235541535:527.70448548813:527.14812862414:525.48607461902</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fPIC -pie -fstack-protector -O3 -shared -lrt -lpthread -lz -ldl -lm -lstdc++"},"test-run-times":"3457.36:636.57:191.86:191.67:190.93:191.14:191.75"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/mysqlslap-1.4.0</Identifier>
+    <Title>MariaDB</Title>
+    <AppVersion>11.0.1</AppVersion>
+    <Arguments>--concurrency=256</Arguments>
+    <Description>Clients: 256</Description>
+    <Scale>Queries Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>434</Value>
+        <RawString>425.17006802721:436.68122270742:441.30626654899</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fPIC -pie -fstack-protector -O3 -shared -lrt -lpthread -lz -ldl -lm -lstdc++"},"test-run-times":"237.27:231.02:228.60"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gimp-1.1.3</Identifier>
+    <Title>GIMP</Title>
+    <AppVersion>2.10.34</AppVersion>
+    <Arguments>resize</Arguments>
+    <Description>Test: resize</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>33.985</Value>
+        <RawString>37.256:34.61:35.193:33.809:31.88:35.962:33.405:32.326:35.26:34.605:35.756:32.471:32.434:33.299:31.513</RawString>
+        <JSON>{"test-run-times":"37.26:34.61:35.19:33.81:31.88:35.96:33.40:32.33:35.26:34.61:35.76:32.47:32.43:33.30:31.51"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/sysbench-1.1.0</Identifier>
+    <Title>Sysbench</Title>
+    <AppVersion>1.0.20</AppVersion>
+    <Arguments>cpu run</Arguments>
+    <Description>Test: CPU</Description>
+    <Scale>Events Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rockman-baseline-id</Identifier>
+        <Value>147748.83</Value>
+        <RawString>147745.43:147740.64:147760.41</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -lm"},"test-run-times":"90.01:90.02:90.01"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
