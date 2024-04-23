@@ -1,0 +1,30 @@
+#####
+rockman-withno-omit-framepointer-id - Run 1
+2024-04-22 06:41:56
+#####
+obj2mesh -n 15 -r 16384 lens.obj > lens.msh
+oconv -f -n 6 -r 16384 materials.rad cube2f.rad > cube2f_instance.oct
+oconv -f -n 6 -r 16384 materials.rad cube4f.rad > cube4f_instance.oct
+oconv -n 6 -r 16384 materials.rad scene.rad > scene.oct
+echo "-ss 1.0" "-lr -10 -u- -pd 0.0" | cat optionsbase - > optionsUnix
+rm -f serial.unf
+time rpict @viewpoint @optionsUnix -x 2048 -y 2048 -t 60 -o serial.unf scene.oct
+rpict: 21591 rays, 0.00% after 0.000u 0.000s 0.000r hours on rockman (PID 1332682)
+rpict: 65556293 rays, 0.05% after 0.026u 0.000s 0.026r hours on rockman (PID 1332682)
+rpict: 106238126 rays, 9.03% after 0.043u 0.000s 0.043r hours on rockman (PID 1332682)
+rpict: 149694798 rays, 23.68% after 0.059u 0.000s 0.059r hours on rockman (PID 1332682)
+rpict: 190496651 rays, 35.94% after 0.076u 0.000s 0.076r hours on rockman (PID 1332682)
+rpict: 230624679 rays, 44.29% after 0.092u 0.000s 0.092r hours on rockman (PID 1332682)
+rpict: 271713098 rays, 48.78% after 0.109u 0.000s 0.109r hours on rockman (PID 1332682)
+rpict: 323790559 rays, 54.35% after 0.126u 0.000s 0.126r hours on rockman (PID 1332682)
+rpict: 374270321 rays, 59.72% after 0.142u 0.000s 0.142r hours on rockman (PID 1332682)
+rpict: 421531415 rays, 64.21% after 0.159u 0.000s 0.159r hours on rockman (PID 1332682)
+rpict: 466981158 rays, 67.68% after 0.176u 0.000s 0.176r hours on rockman (PID 1332682)
+rpict: 514787948 rays, 71.88% after 0.193u 0.000s 0.193r hours on rockman (PID 1332682)
+rpict: 561800512 rays, 78.32% after 0.209u 0.000s 0.209r hours on rockman (PID 1332682)
+rpict: 570890201 rays, 100.00% after 0.213u 0.000s 0.213r hours on rockman (PID 1332682)
+767.62user 0.04system 12:47.69elapsed 99%CPU (0avgtext+0avgdata 16384maxresident)k
+0inputs+14664outputs (0major+12808minor)pagefaults 0swaps
+pfilt -1 -e +0 -x /4 -y /4 -r .6 -m .15 serial.unf > serial.pic
+ra_ppm serial.pic > serial.ppm
+

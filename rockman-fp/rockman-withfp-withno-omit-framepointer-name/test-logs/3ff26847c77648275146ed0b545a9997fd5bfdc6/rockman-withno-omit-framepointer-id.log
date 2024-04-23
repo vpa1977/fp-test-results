@@ -1,0 +1,153 @@
+#####
+rockman-withno-omit-framepointer-id - Run 1
+2024-04-22 06:46:01
+#####
+echo "-ss 1.0" "-lr -10 -u- -pd 0.0" | cat optionsbase - > optionsUnix
+obj2mesh -n 15 -r 16384 lens.obj > lens.msh
+oconv -f -n 6 -r 16384 materials.rad cube2f.rad > cube2f_instance.oct
+oconv -f -n 6 -r 16384 materials.rad cube4f.rad > cube4f_instance.oct
+oconv -n 6 -r 16384 materials.rad scene.rad > scene.oct
+echo '-af smp.amb -x 2048 -y 2048 -o smp.unf scene.oct' > args
+rm -f smp.unf smp.amb
+time ./runsmp
+running proc 4
+rpiece: -pm unsupported
+running proc 3
+rpiece: -pm unsupported
+running proc 2
+rpiece: -pm unsupported
+running proc 1
+rpiece: -pm unsupported
+0 63 begun
+0 62 begun
+0 61 begun
+0 63 done
+0 60 begun
+0 62 done
+0 61 done
+0 59 begun
+0 60 done
+0 58 begun
+0 59 done
+0 57 begun
+0 58 done
+0 55 begun
+0 56 begun
+0 57 done
+0 54 begun
+0 55 done
+0 56 done
+0 53 begun
+0 54 done
+0 52 begun
+0 53 done
+0 52 done
+0 51 begun
+0 51 done
+0 50 begun
+0 49 begun
+0 50 done
+0 48 begun
+0 49 done
+0 47 begun
+0 46 begun
+0 45 begun
+0 47 done
+0 48 done
+0 46 done
+0 44 begun
+0 45 done
+0 43 begun
+0 42 begun
+0 41 begun
+0 44 done
+0 43 done
+0 40 begun
+0 42 done
+0 41 done
+0 39 begun
+0 38 begun
+0 37 begun
+0 40 done
+0 38 done
+0 36 begun
+0 37 done
+0 39 done
+0 35 begun
+0 36 done
+0 34 begun
+0 32 begun
+0 33 begun
+0 34 done
+0 33 done
+0 35 done
+0 31 begun
+0 32 done
+0 30 begun
+0 29 begun
+0 28 begun
+0 31 done
+0 30 done
+0 29 done
+0 27 begun
+0 26 begun
+0 28 done
+0 25 begun
+0 27 done
+0 24 begun
+0 26 done
+0 25 done
+0 23 begun
+0 22 begun
+0 24 done
+0 21 begun
+0 23 done
+0 20 begun
+0 19 begun
+0 22 done
+0 21 done
+0 18 begun
+0 17 begun
+0 19 done
+0 16 begun
+0 20 done
+0 15 begun
+0 18 done
+0 17 done
+0 13 begun
+0 14 begun
+0 16 done
+0 14 done
+0 12 begun
+0 13 done
+0 10 begun
+0 11 begun
+0 10 done
+0 9 begun
+0 9 done
+0 8 begun
+0 8 done
+0 7 begun
+0 7 done
+0 6 begun
+0 11 done
+0 5 begun
+0 15 done
+0 4 begun
+0 5 done
+0 3 begun
+0 6 done
+0 2 begun
+0 4 done
+0 1 begun
+0 3 done
+0 0 begun
+0 2 done
+0 1 done
+0 0 done
+0 12 done
+230.34user 0.11system 3:51.95elapsed 99%CPU (0avgtext+0avgdata 16384maxresident)k
+0inputs+35944outputs (0major+21767minor)pagefaults 0swaps
+pfilt -1 -e +0 -x /4 -y /4 -r .6 -m .15 smp.unf > smp.pic
+ra_ppm smp.pic > smp.ppm
+

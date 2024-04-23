@@ -1,0 +1,93 @@
+#####
+rockman-withno-omit-framepointer-id - Run 1
+2024-04-22 04:30:43
+#####
+
+7-Zip (z) 22.01 (x64) : Copyright (c) 1999-2022 Igor Pavlov : 2022-07-15
+ 64-bit locale=C.UTF-8 Threads:128
+
+Compiler: 13.2.0 GCC 13.2.0
+Linux : 6.5.0-9-generic : #9-Ubuntu SMP PREEMPT_DYNAMIC Sat Oct  7 01:35:40 UTC 2023 : x86_64
+PageSize:4KB THP:madvise hwcap:6 hwcap2:2
+Intel(R) Xeon(R) Gold 6430 (806F8) 
+
+1T CPU Freq (MHz):  2492  2591  2592  2593  2592  2592  2593
+64T CPU Freq (MHz): 6339% 2552   6079% 2450  
+
+RAM size:  515455 MB,  # CPU hardware threads: 128
+RAM usage:  28478 MB,  # Benchmark threads:    128
+
+                       Compressing  |                  Decompressing
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS
+
+22:     392163 11264   3387 381496  |    3407318 12758   2277 290515
+23:     327243  9983   3340 333422  |    3300822 12516   2282 285561
+24:     292814  9904   3179 314834  |    3209311 12387   2273 281599
+25:     288288 10291   3199 329156  |    3158519 12394   2267 281014
+----------------------------------  | ------------------------------
+Avr:    325127 10360   3276 339727  |    3268992 12514   2275 284672
+Tot:           11437   2775 312200
+
+#####
+rockman-withno-omit-framepointer-id - Run 2
+2024-04-22 04:31:34
+#####
+
+7-Zip (z) 22.01 (x64) : Copyright (c) 1999-2022 Igor Pavlov : 2022-07-15
+ 64-bit locale=C.UTF-8 Threads:128
+
+Compiler: 13.2.0 GCC 13.2.0
+Linux : 6.5.0-9-generic : #9-Ubuntu SMP PREEMPT_DYNAMIC Sat Oct  7 01:35:40 UTC 2023 : x86_64
+PageSize:4KB THP:madvise hwcap:6 hwcap2:2
+Intel(R) Xeon(R) Gold 6430 (806F8) 
+
+1T CPU Freq (MHz):  2499  2591  2592  2592  2593  2592  2592
+64T CPU Freq (MHz): 6333% 2553   6067% 2458  
+
+RAM size:  515455 MB,  # CPU hardware threads: 128
+RAM usage:  28478 MB,  # Benchmark threads:    128
+
+                       Compressing  |                  Decompressing
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS
+
+22:     385846 11089   3385 375351  |    3410631 12759   2279 290797
+23:     328511  9968   3358 334714  |    3305085 12507   2286 285930
+24:     293455  9903   3186 315524  |    3233927 12452   2279 283759
+25:     289362 10206   3237 330383  |    3152050 12378   2266 280438
+----------------------------------  | ------------------------------
+Avr:    324294 10291   3292 338993  |    3275423 12524   2277 285231
+Tot:           11408   2785 312112
+
+#####
+rockman-withno-omit-framepointer-id - Run 3
+2024-04-22 04:32:24
+#####
+
+7-Zip (z) 22.01 (x64) : Copyright (c) 1999-2022 Igor Pavlov : 2022-07-15
+ 64-bit locale=C.UTF-8 Threads:128
+
+Compiler: 13.2.0 GCC 13.2.0
+Linux : 6.5.0-9-generic : #9-Ubuntu SMP PREEMPT_DYNAMIC Sat Oct  7 01:35:40 UTC 2023 : x86_64
+PageSize:4KB THP:madvise hwcap:6 hwcap2:2
+Intel(R) Xeon(R) Gold 6430 (806F8) 
+
+1T CPU Freq (MHz):  2493  2591  2591  2592  2592  2593  2593
+64T CPU Freq (MHz): 6317% 2551   6337% 2570  
+
+RAM size:  515455 MB,  # CPU hardware threads: 128
+RAM usage:  28478 MB,  # Benchmark threads:    128
+
+                       Compressing  |                  Decompressing
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS
+
+22:     388733 11149   3392 378160  |    3407437 12755   2278 290525
+23:     326368  9962   3338 332530  |    3290340 12483   2280 284655
+24:     301527 10253   3162 324203  |    3234073 12453   2279 283772
+25:     267010  9688   3147 304862  |    3163793 12414   2268 281483
+----------------------------------  | ------------------------------
+Avr:    320910 10263   3260 334939  |    3273911 12526   2276 285109
+Tot:           11395   2768 310024
+
