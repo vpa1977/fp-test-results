@@ -1,0 +1,1793 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>baseline-fp-opt-name</Title>
+    <LastModified>2024-04-03 10:34:39</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.4</TestClient>
+    <Description>Intel Core i5-1135G7 testing with a LENOVO Lenovo V15 G2 ITL LNVNB161216 (GGCN50WW BIOS) and Intel TigerLake-LP GT2 [Iris Xe ] on Ubuntu 23.10 via the Phoronix Test Suite.</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>laptop-mantic</Identifier>
+    <Hardware>Processor: Intel Core i5-1135G7 @ 4.20GHz (4 Cores / 8 Threads), Motherboard: LENOVO Lenovo V15 G2 ITL LNVNB161216 (GGCN50WW BIOS), Chipset: Intel Tiger Lake-LP, Memory: 32 + 8 DDR4-3200MT/s, Disk: 1000GB CT1000P2SSD8 + 512GB TS512GESD310C, Graphics: Intel TigerLake-LP GT2 [Iris Xe ] (1300MHz), Audio: Realtek ALC257, Network: Realtek RTL8111/8168/8411 + Intel Wi-Fi 6 AX201</Hardware>
+    <Software>OS: Ubuntu 23.10, Kernel: 6.5.0-9-generic (x86_64), Display Server: X Server 1.21.1.7, Compiler: GCC 13.2.0, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>ubuntu</User>
+    <TimeStamp>2024-02-12 21:38:36</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --enable-libphobos-checking=release --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=2 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=\/build\/gcc-13-XYspKM\/gcc-13-13.2.0\/debian\/tmp-nvptx\/usr,amdgcn-amdhsa=\/build\/gcc-13-XYspKM\/gcc-13-13.2.0\/debian\/tmp-gcn\/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v","disk-scheduler":"MQ-DEADLINE","disk-mount-options":"relatime,rw","disk-details":"Block Size: 4096","cpu-scaling-governor":"intel_pstate powersave (EPP: balance_performance)","cpu-microcode":"0xac","cpu-thermald":"2.5.4","kernel-extra-details":"Transparent Huge Pages: madvise","python":"Python 3.11.6","security":"gather_data_sampling: Mitigation of Microcode + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Not affected + retbleed: Not affected + spec_rstack_overflow: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced \/ Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+    <Hardware>Processor: 2 x AMD Ryzen 9 7950X 16-Core (2 Cores), Motherboard: QEMU Standard PC (Q35 + ICH9 2009) (1.16.2-debian-1.16.2-1 BIOS), Chipset: Intel 82G33/G31/P35/P31 + ICH9, Memory: 1 x 4GB RAM QEMU, Disk: 32GB, Graphics: Red Hat Virtio 1.0 GPU, Audio: Intel 82801I, Monitor: QEMU Monitor, Network: Red Hat Virtio 1.0 device</Hardware>
+    <Software>OS: Ubuntu 23.10, Kernel: 6.5.0-9-generic (x86_64), Display Server: X Server 1.21.1.7, Compiler: GCC 13.2.0, File-System: ext4, Screen Resolution: 1280x800, System Layer: KVM</Software>
+    <User>ubuntu</User>
+    <TimeStamp>2024-02-14 07:44:16</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --enable-libphobos-checking=release --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=2 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=\/build\/gcc-13-b9QCDx\/gcc-13-13.2.0\/debian\/tmp-nvptx\/usr,amdgcn-amdhsa=\/build\/gcc-13-b9QCDx\/gcc-13-13.2.0\/debian\/tmp-gcn\/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v","disk-scheduler":"NONE","disk-mount-options":"commit=30,discard,errors=remount-ro,relatime,rw","disk-details":"Block Size: 4096","cpu-microcode":"0xa601206","kernel-extra-details":"Transparent Huge Pages: madvise","python":"Python 3.11.6","security":"gather_data_sampling: Not affected + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Not affected + retbleed: Not affected + spec_rstack_overflow: Mitigation of safe RET + spec_store_bypass: Mitigation of SSB disabled via prctl + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines IBPB: conditional IBRS_FW STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>system/sqlite-1.0.1</Identifier>
+    <Title>SQLite</Title>
+    <AppVersion>3.42.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>SQLite </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>7.560</Value>
+        <RawString>7.654:7.568:7.459</RawString>
+        <JSON>{"test-run-times":"7.65:7.57:7.46"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>baseline-fp-opt-id</Identifier>
+        <Value>7.550</Value>
+        <RawString>7.637:7.418:7.594</RawString>
+        <JSON>{"test-run-times":"7.64:7.42:7.59"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>10.917</Value>
+        <RawString>11.029:10.929:10.792</RawString>
+        <JSON>{"test-run-times":"11.03:10.93:10.79"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/compress-zstd-1.5.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Zstd Compression Processor </Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.78:0.76:0.78","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"2.41:0.80:0.82","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnuradio-1.0.0</Identifier>
+    <Title>GNU Radio</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: Five Back to Back FIR Filters</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>748.4</Value>
+        <RawString>797.5:738.9:749.7:742.3:755:745.7:731.5:736.1:738.9</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"360.21:360.21:360.21:360.21:360.22:360.21:360.22:360.21:360.22"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>baseline-fp-opt-id</Identifier>
+        <Value>743.2</Value>
+        <RawString>795:740.1:740.3:738.4:731.2:735.5:735.1:730.1:743.1</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"360.21:360.22:360.22:360.22:360.22:360.22:360.22:360.22:360.22"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>858.1</Value>
+        <RawString>855.4:864.2:854.6</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"360.53:360.21:360.21"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnuradio-1.0.0</Identifier>
+    <Title>GNU Radio</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: Signal Source (Cosine)</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>4193.0</Value>
+        <RawString>4180.9:4228:4191.1:4194.9:4206.3:4189:4155.7:4200.1:4190.7</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"360.21:360.21:360.21:360.21:360.22:360.21:360.22:360.21:360.22"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>baseline-fp-opt-id</Identifier>
+        <Value>4191.9</Value>
+        <RawString>4203.9:4222.1:4183.3:4202.6:4191.7:4171.5:4161.6:4207.7:4182.8</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"360.21:360.22:360.22:360.22:360.22:360.22:360.22:360.22:360.22"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>4295.6</Value>
+        <RawString>4308.4:4300.1:4278.3</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"360.53:360.21:360.21"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnuradio-1.0.0</Identifier>
+    <Title>GNU Radio</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: FIR Filter</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>869.2</Value>
+        <RawString>870.7:876.4:867.2:868.1:868:869.9:870:866.6:866.1</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"360.21:360.21:360.21:360.21:360.22:360.21:360.22:360.21:360.22"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>baseline-fp-opt-id</Identifier>
+        <Value>870.0</Value>
+        <RawString>871.5:875.5:867.5:871.4:870.8:869.8:872.3:862.6:868.9</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"360.21:360.22:360.22:360.22:360.22:360.22:360.22:360.22:360.22"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>886.5</Value>
+        <RawString>884.5:891.1:883.8</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"360.53:360.21:360.21"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnuradio-1.0.0</Identifier>
+    <Title>GNU Radio</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: IIR Filter</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>364.7</Value>
+        <RawString>363.4:362.2:365.1:366.1:361.9:365.2:363.4:371.7:362.9</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"360.21:360.21:360.21:360.21:360.22:360.21:360.22:360.21:360.22"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>baseline-fp-opt-id</Identifier>
+        <Value>364.2</Value>
+        <RawString>364.7:362.9:363.5:363.4:363.9:363.2:366.2:365:365.2</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"360.21:360.22:360.22:360.22:360.22:360.22:360.22:360.22:360.22"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>359.0</Value>
+        <RawString>359.7:358.7:358.5</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"360.53:360.21:360.21"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnuradio-1.0.0</Identifier>
+    <Title>GNU Radio</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: FM Deemphasis Filter</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>1039.7</Value>
+        <RawString>1034.5:1035.4:1049.7:1038.8:1036.8:1034.9:1038.2:1035.9:1053.3</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"360.21:360.21:360.21:360.21:360.22:360.21:360.22:360.21:360.22"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>baseline-fp-opt-id</Identifier>
+        <Value>1037.4</Value>
+        <RawString>1037.3:1050.4:1034.9:1035.6:1033.4:1035.9:1036.4:1036.1:1037</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"360.21:360.22:360.22:360.22:360.22:360.22:360.22:360.22:360.22"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>1034.4</Value>
+        <RawString>1033.3:1033.7:1036.1</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"360.53:360.21:360.21"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnuradio-1.0.0</Identifier>
+    <Title>GNU Radio</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: Hilbert Transform</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>504.5</Value>
+        <RawString>502.1:498.6:505.3:507.6:504.2:507:505.2:505.7:504.8</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"360.21:360.21:360.21:360.21:360.22:360.21:360.22:360.21:360.22"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>baseline-fp-opt-id</Identifier>
+        <Value>506.2</Value>
+        <RawString>505.5:510.2:506.2:504.6:502.9:504.1:508.8:505.3:508</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"360.21:360.22:360.22:360.22:360.22:360.22:360.22:360.22:360.22"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>467.8</Value>
+        <RawString>473.5:469.9:460</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"360.53:360.21:360.21"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/compress-pbzip2-1.0.0</Identifier>
+    <Title>PBZIP2 Compression</Title>
+    <AppVersion>1.1.13</AppVersion>
+    <Arguments></Arguments>
+    <Description>PBZIP2 Compression </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/system-decompress-bzip2-1.0.2</Identifier>
+    <Title>System BZIP2 Decompression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>System BZIP2 Decompression Processor </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>8.723</Value>
+        <RawString>8.71:8.729:8.73</RawString>
+        <JSON>{"test-run-times":"8.71:8.73:8.73"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>8.925</Value>
+        <RawString>8.956:8.912:8.908</RawString>
+        <JSON>{"test-run-times":"8.96:8.91:8.91"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/system-decompress-gzip-1.1.1</Identifier>
+    <Title>System GZIP Decompression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>System GZIP Decompression Processor </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>2.972</Value>
+        <RawString>2.971:2.97:2.975</RawString>
+        <JSON>{"test-run-times":"2.97:2.97:2.98"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>3.023</Value>
+        <RawString>3.358:2.994:2.996:2.996:2.994:2.995:2.995:2.998:2.995:2.994:2.995:3:2.994</RawString>
+        <JSON>{"test-run-times":"3.36:2.99:3.00:3.00:2.99:3.00:2.99:3.00:3.00:2.99:3.00:3.00:2.99"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/system-decompress-xz-1.0.2</Identifier>
+    <Title>System XZ Decompression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>System XZ Decompression Processor </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>3.227</Value>
+        <RawString>3.228:3.23:3.224</RawString>
+        <JSON>{"test-run-times":"3.23:3.23:3.22"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>3.237</Value>
+        <RawString>3.247:3.233:3.231</RawString>
+        <JSON>{"test-run-times":"3.25:3.23:3.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/compress-lzma-1.0.0</Identifier>
+    <Title>LZMA Compression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>LZMA Compression </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gnupg-1.0.1</Identifier>
+    <Title>GnuPG</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>GnuPG Processor </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>9.958</Value>
+        <RawString>9.944:9.992:9.937</RawString>
+        <JSON>{"test-run-times":"9.94:9.99:9.94"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/system-decompress-tiff-1.0.1</Identifier>
+    <Title>System Libtiff Decompression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>System Libtiff Decompression Processor </Description>
+    <Scale>ms</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>7.447625</Value>
+        <RawString>7.669234:7.301659:7.39195:7.344172:7.01081:7.076782:7.342664:7.03835:7.479489:7.595708:6.972019:7.348198:6.991909:7.751367:7.514516:6.964865:7.557268:7.532844:9.863989:7.380094:7.267567:7.78314:7.57299:7.618413:7.119706:7.232186:7.411857:7.324464:7.794751:6.96762:7.356425:7.593709:7.552053:7.337559:7.605952:7.736987:7.46854:7.296139:7.368848:7.368195</RawString>
+        <JSON>{"test-run-times":"0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.02:0.01:0.01:0.01:0.02:0.01:0.01:0.01:0.02:0.02:0.02:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.02:0.02:0.01:0.02:0.01:0.01:0.01:0.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>7.248744</Value>
+        <RawString>7.658499:6.857635:7.115681:7.003194:7.138618:7.0532:7.04776:7.075811:7.00795:6.858182:7.316674:6.973711:7.108585:7.45539:7.056267:7.028538:7.669596:7.513467:7.086766:7.469749:7.275603:7.281788:7.18339:7.272159:7.504791:7.470208:7.346097:7.221829:7.673957:7.179947:7.247056:7.369065:7.315991:7.57096:7.231662:7.0062:7.445589:7.134823:7.559901:8.126661:7.415815:7.300612:7.076431:7.508406:7.672624:7.573683:7.093988:7.233478:6.918671:5.730527</RawString>
+        <JSON>{"test-run-times":"0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.02:0.01:0.01:0.02:0.01:0.01:0.01:0.01:0.01:0.02:0.01:0.01:0.02:0.01:0.01:0.01:0.01:0.02:0.02:0.01:0.01:0.01:0.01:0.02:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01:0.01"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/system-libjpeg-1.1.0</Identifier>
+    <Title>System JPEG Library Decode</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>System JPEG Library Decode Processor </Description>
+    <Scale>ms</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>10.498690</Value>
+        <RawString>10.322329:10.624129:10.750452:10.582349:10.164592:10.809751:10.272752:10.607048:10.648415:10.20508</RawString>
+        <JSON>{"test-run-times":"0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>10.420528</Value>
+        <RawString>12.587769:10.683362:10.813194:10.330672:10.595624:10.545684:10.011922:10.330483:10.388722:10.119745:10.535462:10.740035:10.101644:10.196317:10.338388:10.04304:10.518542:10.156289:10.017964:9.815908:10.159078:10.691669:10.665377:10.139875:10.037069:10.582362:10.673897:10.236259:10.721191:9.958839:10.487945:10.477926:10.821153:10.309396:10.163173:10.305551:10.514939:10.439233:10.584587:10.130092:10.401839:9.92838:10.442068:10.63011:9.997456:10.637732:10.902891:10.359813:10.175104:10.580619</RawString>
+        <JSON>{"test-run-times":"0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/system-libxml2-1.0.3</Identifier>
+    <Title>System Libxml2 Parsing</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>System Libxml2 Parsing Processor </Description>
+    <Scale>ms</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/systemd-boot-kernel-1.0.1</Identifier>
+    <Title>Systemd Kernel Boot Time</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Systemd Kernel Boot Time Processor </Description>
+    <Scale>ms</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.02","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.02","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/systemd-boot-userspace-1.0.1</Identifier>
+    <Title>Systemd Userspace Boot Time</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Systemd Userspace Boot Time Processor </Description>
+    <Scale>ms</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.01","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.01","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/openssl-1.2.0</Identifier>
+    <Title>OpenSSL</Title>
+    <AppVersion> </AppVersion>
+    <Arguments></Arguments>
+    <Description>OpenSSL Processor </Description>
+    <Scale>byte/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>7</Value>
+        <RawString>7:7:7</RawString>
+        <JSON>{"install-footnote":"OpenSSL 3.0.10 1 Aug 2023 (Library: OpenSSL 3.0.10 1 Aug 2023)","test-run-times":"5672.10:5671.99:5672.14"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>7</Value>
+        <RawString>7:7:7</RawString>
+        <JSON>{"install-footnote":"OpenSSL 3.0.10 1 Aug 2023 (Library: OpenSSL 3.0.10 1 Aug 2023)","test-run-times":"5671.80:5671.76:5671.76"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/mpv-1.0.1</Identifier>
+    <Title>MPV</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>MPV System </Description>
+    <Scale>FPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.15:0.15:0.15","error":"The test run did not produce a result. E: [   0.018][d][stats] lua-settings\/stats.conf not found. "}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.27:0.15:0.15","error":"The test run did not produce a result. E: [   0.017][d][osc] lua-settings\/osc.conf not found. "}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>PBKDF2-sha512</Description>
+    <Scale>Iterations Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>1671482</Value>
+        <RawString>1672370:1669707:1672370</RawString>
+        <JSON>{"test-run-times":"33.88:33.88:33.85"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>baseline-fp-opt-id</Identifier>
+        <Value>1672370</Value>
+        <RawString>1672370:1672370:1672370</RawString>
+        <JSON>{"test-run-times":"33.86:34.60:34.10"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>1660897</Value>
+        <RawString>1664406:1656518:1661768</RawString>
+        <JSON>{"test-run-times":"34.02:34.00:34.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>PBKDF2-whirlpool</Description>
+    <Scale>Iterations Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>680305</Value>
+        <RawString>680893:679129:680893</RawString>
+        <JSON>{"test-run-times":"33.88:33.88:33.85"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>baseline-fp-opt-id</Identifier>
+        <Value>680599</Value>
+        <RawString>680010:680893:680893</RawString>
+        <JSON>{"test-run-times":"33.86:34.60:34.10"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>675338</Value>
+        <RawString>675628:675628:674759</RawString>
+        <JSON>{"test-run-times":"34.02:34.00:34.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>AES-XTS 256b Encryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>4801.2</Value>
+        <RawString>4807.2:4810.1:4786.2</RawString>
+        <JSON>{"test-run-times":"33.88:33.88:33.85"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>baseline-fp-opt-id</Identifier>
+        <Value>4797.5</Value>
+        <RawString>4799.8:4799.9:4792.7</RawString>
+        <JSON>{"test-run-times":"33.86:34.60:34.10"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>4807.0</Value>
+        <RawString>4793.4:4810.4:4817.3</RawString>
+        <JSON>{"test-run-times":"34.02:34.00:34.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>AES-XTS 256b Decryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>4825.8</Value>
+        <RawString>4816.6:4834:4826.8</RawString>
+        <JSON>{"test-run-times":"33.88:33.88:33.85"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>baseline-fp-opt-id</Identifier>
+        <Value>4826.0</Value>
+        <RawString>4824.1:4830.3:4823.7</RawString>
+        <JSON>{"test-run-times":"33.86:34.60:34.10"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>4840.7</Value>
+        <RawString>4837.4:4837.2:4847.6</RawString>
+        <JSON>{"test-run-times":"34.02:34.00:34.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Serpent-XTS 256b Encryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>689.4</Value>
+        <RawString>688.9:689.4:689.8</RawString>
+        <JSON>{"test-run-times":"33.88:33.88:33.85"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>baseline-fp-opt-id</Identifier>
+        <Value>689.9</Value>
+        <RawString>689.9:690.3:689.5</RawString>
+        <JSON>{"test-run-times":"33.86:34.60:34.10"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>688.3</Value>
+        <RawString>684.3:689.5:691</RawString>
+        <JSON>{"test-run-times":"34.02:34.00:34.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Serpent-XTS 256b Decryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>648.4</Value>
+        <RawString>647.5:648.8:648.8</RawString>
+        <JSON>{"test-run-times":"33.88:33.88:33.85"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>baseline-fp-opt-id</Identifier>
+        <Value>648.5</Value>
+        <RawString>648:648.7:648.7</RawString>
+        <JSON>{"test-run-times":"33.86:34.60:34.10"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>648.4</Value>
+        <RawString>648.1:648.2:649</RawString>
+        <JSON>{"test-run-times":"34.02:34.00:34.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Twofish-XTS 256b Encryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>426.5</Value>
+        <RawString>425.7:427.1:426.6</RawString>
+        <JSON>{"test-run-times":"33.88:33.88:33.85"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>baseline-fp-opt-id</Identifier>
+        <Value>426.4</Value>
+        <RawString>426.9:426.4:425.9</RawString>
+        <JSON>{"test-run-times":"33.86:34.60:34.10"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>425.1</Value>
+        <RawString>423.4:425.7:426.2</RawString>
+        <JSON>{"test-run-times":"34.02:34.00:34.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Twofish-XTS 256b Decryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>428.3</Value>
+        <RawString>428:428.2:428.7</RawString>
+        <JSON>{"test-run-times":"33.88:33.88:33.85"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>baseline-fp-opt-id</Identifier>
+        <Value>428.4</Value>
+        <RawString>428:428.6:428.6</RawString>
+        <JSON>{"test-run-times":"33.86:34.60:34.10"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>427.7</Value>
+        <RawString>427.6:427.3:428.1</RawString>
+        <JSON>{"test-run-times":"34.02:34.00:34.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>AES-XTS 512b Encryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>4264.9</Value>
+        <RawString>4270.8:4268.8:4255.1</RawString>
+        <JSON>{"test-run-times":"33.88:33.88:33.85"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>baseline-fp-opt-id</Identifier>
+        <Value>4261.0</Value>
+        <RawString>4276.2:4251.3:4255.4</RawString>
+        <JSON>{"test-run-times":"33.86:34.60:34.10"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>4264.8</Value>
+        <RawString>4258.3:4264.9:4271.3</RawString>
+        <JSON>{"test-run-times":"34.02:34.00:34.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>AES-XTS 512b Decryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>4250.8</Value>
+        <RawString>4248.9:4249.5:4254</RawString>
+        <JSON>{"test-run-times":"33.88:33.88:33.85"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>baseline-fp-opt-id</Identifier>
+        <Value>4254.2</Value>
+        <RawString>4252.6:4253.1:4256.9</RawString>
+        <JSON>{"test-run-times":"33.86:34.60:34.10"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>4264.9</Value>
+        <RawString>4257.1:4264.4:4273.3</RawString>
+        <JSON>{"test-run-times":"34.02:34.00:34.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Serpent-XTS 512b Encryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>689.3</Value>
+        <RawString>688.8:689.7:689.4</RawString>
+        <JSON>{"test-run-times":"33.88:33.88:33.85"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>baseline-fp-opt-id</Identifier>
+        <Value>689</Value>
+        <RawString>689:689</RawString>
+        <JSON>{"test-run-times":"33.86:34.60:34.10"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>689.8</Value>
+        <RawString>689.3:689.3:690.9</RawString>
+        <JSON>{"test-run-times":"34.02:34.00:34.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Serpent-XTS 512b Decryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>648.1</Value>
+        <RawString>647.2:648.4:648.7</RawString>
+        <JSON>{"test-run-times":"33.88:33.88:33.85"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>baseline-fp-opt-id</Identifier>
+        <Value>647.9</Value>
+        <RawString>647.6:648.5:647.6</RawString>
+        <JSON>{"test-run-times":"33.86:34.60:34.10"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>648.2</Value>
+        <RawString>647.6:648.1:648.9</RawString>
+        <JSON>{"test-run-times":"34.02:34.00:34.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Twofish-XTS 512b Encryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>425.9</Value>
+        <RawString>425.3:426.2:426.2</RawString>
+        <JSON>{"test-run-times":"33.88:33.88:33.85"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>425.8</Value>
+        <RawString>425.9:425.4:426.1</RawString>
+        <JSON>{"test-run-times":"34.02:34.00:34.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Twofish-XTS 512b Decryption</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>428.0</Value>
+        <RawString>427.8:427.6:428.5</RawString>
+        <JSON>{"test-run-times":"33.88:33.88:33.85"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>baseline-fp-opt-id</Identifier>
+        <Value>427.9</Value>
+        <RawString>427.6:428.5:427.7</RawString>
+        <JSON>{"test-run-times":"33.86:34.60:34.10"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>427.6</Value>
+        <RawString>427.8:427.6:427.3</RawString>
+        <JSON>{"test-run-times":"34.02:34.00:34.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/darktable-1.0.5</Identifier>
+    <Title>Darktable</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Darktable System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.05:0.05:0.05","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.05:0.05:0.05","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gegl-1.0.0</Identifier>
+    <Title>GEGL</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>GEGL System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>25.571</Value>
+        <RawString>25.508:25.598:25.606</RawString>
+        <JSON>{"test-run-times":"25.51:25.60:25.61"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>25.201</Value>
+        <RawString>25.192:25.202:25.209</RawString>
+        <JSON>{"test-run-times":"25.19:25.20:25.21"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gimp-1.1.3</Identifier>
+    <Title>GIMP</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>GIMP System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.01:0.00:0.01","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/gmic-1.0.0</Identifier>
+    <Title>G'MIC</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>G'MIC System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>8.438</Value>
+        <RawString>8.671:12.861:11.077:10.7:5.372:8.698:9.595:7.784:2.078:8.705:7.384:8.327</RawString>
+        <JSON>{"test-run-times":"8.67:12.86:11.08:10.70:0.86:5.37:8.70:9.60:7.78:2.08:8.71:7.38:8.33"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.37:0.22:0.22","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/hugin-1.0.0</Identifier>
+    <Title>Hugin</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Hugin System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>57.748</Value>
+        <RawString>56.696:58.361:58.187</RawString>
+        <JSON>{"test-run-times":"56.70:58.36:58.19"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>56.363</Value>
+        <RawString>56.368:56.158:56.562</RawString>
+        <JSON>{"test-run-times":"56.37:56.16:56.56"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/inkscape-1.0.1</Identifier>
+    <Title>Inkscape</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Inkscape System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>21.704</Value>
+        <RawString>21.963:21.621:21.529</RawString>
+        <JSON>{"install-footnote":"Inkscape 1.2.2 (b0a8486541, 2022-12-01)","test-run-times":"21.96:21.62:21.53"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>21.589</Value>
+        <RawString>21.915:21.515:21.338</RawString>
+        <JSON>{"install-footnote":"Inkscape 1.2.2 (b0a8486541, 2022-12-01)","test-run-times":"21.91:21.51:21.34"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/ocrmypdf-1.0.0</Identifier>
+    <Title>OCRMyPDF</Title>
+    <AppVersion>14.0.1+dfsg1</AppVersion>
+    <Arguments></Arguments>
+    <Description>OCRMyPDF System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>28.956</Value>
+        <RawString>24.353:28.929:28.586:28.447:29.038:28.616:30.098:29.017:29.658:29.369:29.514:29.653:29.714:29.63:29.714</RawString>
+        <JSON>{"test-run-times":"24.35:28.93:28.59:28.45:29.04:28.62:30.10:29.02:29.66:29.37:29.51:29.65:29.71:29.63:29.71"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>24.695</Value>
+        <RawString>23.846:24.356:25.107:25.1:25.068</RawString>
+        <JSON>{"test-run-times":"23.85:24.36:25.11:25.10:25.07"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/octave-benchmark-1.0.1</Identifier>
+    <Title>GNU Octave Benchmark</Title>
+    <AppVersion>8.3.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>GNU Octave Benchmark System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>7.203</Value>
+        <RawString>7.29:7.209:7.17:7.173:7.175</RawString>
+        <JSON>{"test-run-times":"7.29:7.21:7.17:7.17:7.18"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>7.339</Value>
+        <RawString>7.402:7.329:7.305:7.319:7.342</RawString>
+        <JSON>{"test-run-times":"7.40:7.33:7.30:7.32:7.34"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/openscad-1.0.0</Identifier>
+    <Title>OpenSCAD</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>OpenSCAD System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.11:0.03:0.03","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.10:0.03:0.03","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/rawtherapee-1.0.1</Identifier>
+    <Title>RawTherapee</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>RawTherapee System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>95.723</Value>
+        <RawString>87.171:94.915:95.28:97.01:96.26:97.141:94.492:97.795:96.509:97.043:95.615:97.445:94.847:96.828:97.501</RawString>
+        <JSON>{"install-footnote":"RawTherapee, version 5.9, command line.","test-run-times":"88.06:95.82:96.20:97.93:97.17:98.06:95.40:98.71:97.42:97.96:96.53:98.37:95.75:97.74:98.42"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>83.456</Value>
+        <RawString>83.341:83.467:83.56</RawString>
+        <JSON>{"install-footnote":"RawTherapee, version 5.9, command line.","test-run-times":"84.22:84.35:84.43"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/rsvg-1.0.0</Identifier>
+    <Title>librsvg</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>librsvg System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>22.261</Value>
+        <RawString>22.278:22.185:22.32</RawString>
+        <JSON>{"install-footnote":"rsvg-convert version 2.54.7","test-run-times":"22.28:22.18:22.32"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>20.167</Value>
+        <RawString>20.231:20.142:20.128</RawString>
+        <JSON>{"install-footnote":"rsvg-convert version 2.54.7","test-run-times":"20.23:20.14:20.13"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/redis-1.1.1</Identifier>
+    <Title>Redis Memtier / Redis Benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Redis Memtier / Redis Benchmark System </Description>
+    <Scale></Scale>
+    <Proportion></Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"45.04:45.03:45.04","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"45.04:45.04:45.03","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/blender-1.2.1</Identifier>
+    <Title>Blender</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Blender System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"1.32:1.03:1.03","error":"The test quit with a non-zero exit status. E: AttributeError: 'Context' object has no attribute 'user_preferences'. Did you mean: 'preferences'?"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"1.30:1.03:1.03","error":"The test quit with a non-zero exit status. E: AttributeError: 'Context' object has no attribute 'user_preferences'. Did you mean: 'preferences'?"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/clpeak-1.0.1</Identifier>
+    <Title>clpeak</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>clpeak System </Description>
+    <Scale></Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test run did not produce a result. E: no platforms found"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test run did not produce a result. E: no platforms found"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/nginx-1.0.0</Identifier>
+    <Title>Nginx</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Nginx System </Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lluajit-5.1 -lm -lssl -lcrypto -lpthread -ldl -std=c99 -O2"},"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lluajit-5.1 -lm -lssl -lcrypto -lpthread -ldl -std=c99 -O2"},"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/selenium-1.0.38</Identifier>
+    <Title>Selenium</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Selenium System </Description>
+    <Scale>Score</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.10:0.10:0.10","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/selenium-top-sites-1.0.3</Identifier>
+    <Title>Time To Load + View Popular Websites</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Load + View Popular Websites System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.15:0.15:0.15","error":"The test quit with a non-zero exit status. E: SyntaxError: invalid syntax"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/tesseract-ocr-1.0.1</Identifier>
+    <Title>Tesseract OCR</Title>
+    <AppVersion>5.3.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>Tesseract OCR System </Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>22.042</Value>
+        <RawString>22.03:22.051:22.044</RawString>
+        <JSON>{"test-run-times":"22.03:22.05:22.04"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>22.034</Value>
+        <RawString>22.044:22.029:22.029</RawString>
+        <JSON>{"test-run-times":"22.04:22.03:22.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/systemd-boot-total-1.0.6</Identifier>
+    <Title>Systemd Total Boot Time</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Systemd Total Boot Time System </Description>
+    <Scale>ms</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.03","error":"The test run did not produce a result. E: BrokenPipeError: [Errno 32] Broken pipe"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.03","error":"The test run did not produce a result. E: BrokenPipeError: [Errno 32] Broken pipe"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-cos</Arguments>
+    <Description>Benchmark: cos</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>45.5815</Value>
+        <RawString>45.4356:45.3891:45.9199</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.26:1.26:1.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>46.0265</Value>
+        <RawString>46.8735:45.6174:45.5887</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.25:1.27:1.27"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-exp</Arguments>
+    <Description>Benchmark: exp</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>9.24134</Value>
+        <RawString>9.73467:8.87631:8.81914:8.82045:9.73689:9.44437:8.95825:8.82096:9.73581:8.81984:9.73625:9.73418:8.82056:8.82443:9.73796</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"4.23:4.24:4.23:4.23:4.23:4.23:4.23:4.24:4.23:4.24:4.23:4.23:4.23:4.23:4.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>9.26949</Value>
+        <RawString>9.2303:9.28055:9.29763</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"4.24:4.24:4.24"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-ffs</Arguments>
+    <Description>Benchmark: ffs</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>2.91067</Value>
+        <RawString>2.90988:2.91048:2.91164</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>3.47680</Value>
+        <RawString>3.47775:3.47618:3.47646</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-pow</Arguments>
+    <Description>Benchmark: pow</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>21.0507</Value>
+        <RawString>21.0559:21.0579:21.0382</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.25:2.25:2.25"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>21.1490</Value>
+        <RawString>21.1452:21.1568:21.1451</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.25:2.25:2.25"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-sin</Arguments>
+    <Description>Benchmark: sin</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>38.8089</Value>
+        <RawString>38.8116:38.8059:38.8093</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"3.35:3.35:3.35"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>38.9846</Value>
+        <RawString>38.9394:38.9401:39.0743</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"3.36:3.36:3.36"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-log2</Arguments>
+    <Description>Benchmark: log2</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>13.5223</Value>
+        <RawString>13.5205:13.5198:13.5267</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>13.5244</Value>
+        <RawString>13.524:13.5267:13.5225</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-modf</Arguments>
+    <Description>Benchmark: modf</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>4.66439</Value>
+        <RawString>4.66335:4.66469:4.66512</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>4.06133</Value>
+        <RawString>4.05799:4.06341:4.06259</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-sinh</Arguments>
+    <Description>Benchmark: sinh</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>15.3464</Value>
+        <RawString>15.339:15.3507:15.3496</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>16.6459</Value>
+        <RawString>16.3618:16.3393:17.7239:17.6856:16.3452:16.3681:16.3608:16.3838:16.3453:17.668:16.3663:16.3422:16.3745:16.694:16.3298</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23:1.23:1.23:1.23:1.23:1.23:1.23:1.22:1.23:1.23:1.23:1.23:1.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-sqrt</Arguments>
+    <Description>Benchmark: sqrt</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>4.05663</Value>
+        <RawString>4.05664:4.05696:4.05629</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>4.05646</Value>
+        <RawString>4.05675:4.05703:4.05559</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-tanh</Arguments>
+    <Description>Benchmark: tanh</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>23.0572</Value>
+        <RawString>23.1091:23.0356:23.027</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>23.9347</Value>
+        <RawString>23.9356:23.9431:23.9255</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-asinh</Arguments>
+    <Description>Benchmark: asinh</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>18.4504</Value>
+        <RawString>18.4582:18.4444:18.4485</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>18.6362</Value>
+        <RawString>18.6294:18.6459:18.6332</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-atanh</Arguments>
+    <Description>Benchmark: atanh</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>23.9669</Value>
+        <RawString>23.9781:23.9552:23.9674</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>24.0530</Value>
+        <RawString>24.046:24.0603:24.0526</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-ffsll</Arguments>
+    <Description>Benchmark: ffsll</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>3.48038</Value>
+        <RawString>3.48096:3.47995:3.48023</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>2.91162</Value>
+        <RawString>2.91227:2.91215:2.91044</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-sincos</Arguments>
+    <Description>Benchmark: sincos</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>22.0963</Value>
+        <RawString>22.0182:22.2481:22.0225</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.32:2.33:2.32"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>22.2200</Value>
+        <RawString>22.2214:22.2235:22.2151</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.33:2.33:2.33"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glibc-bench-1.8.0</Identifier>
+    <Title>Glibc Benchmarks</Title>
+    <AppVersion>2.37</AppVersion>
+    <Arguments>bench-pthread_once</Arguments>
+    <Description>Benchmark: pthread_once</Description>
+    <Scale>ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>2.89899</Value>
+        <RawString>2.90021:2.89867:2.8981</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
+        <Value>3.47919</Value>
+        <RawString>3.47807:3.4791:3.4804</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.23:1.23:1.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+
+</PhoronixTestSuite>
