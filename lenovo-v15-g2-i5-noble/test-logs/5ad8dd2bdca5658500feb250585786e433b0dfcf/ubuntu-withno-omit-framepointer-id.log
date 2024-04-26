@@ -1,0 +1,27 @@
+#####
+ubuntu-withno-omit-framepointer-id - Run 1
+2024-04-23 22:54:22
+#####
+obj2mesh -n 15 -r 16384 lens.obj > lens.msh
+oconv -f -n 6 -r 16384 materials.rad cube2f.rad > cube2f_instance.oct
+oconv -f -n 6 -r 16384 materials.rad cube4f.rad > cube4f_instance.oct
+oconv -n 6 -r 16384 materials.rad scene.rad > scene.oct
+echo "-ss 1.0" "-lr -10 -u- -pd 0.0" | cat optionsbase - > optionsUnix
+rm -f serial.unf
+time rpict @viewpoint @optionsUnix -x 2048 -y 2048 -t 60 -o serial.unf scene.oct
+rpict: 21591 rays, 0.00% after 0.000u 0.000s 0.000r hours on ubuntu (PID 1176633)
+rpict: 65556293 rays, 0.05% after 0.019u 0.000s 0.019r hours on ubuntu (PID 1176633)
+rpict: 124314190 rays, 15.04% after 0.035u 0.000s 0.035r hours on ubuntu (PID 1176633)
+rpict: 183289910 rays, 32.81% after 0.052u 0.000s 0.052r hours on ubuntu (PID 1176633)
+rpict: 239812194 rays, 44.68% after 0.069u 0.000s 0.069r hours on ubuntu (PID 1176633)
+rpict: 302180057 rays, 51.90% after 0.085u 0.000s 0.085r hours on ubuntu (PID 1176633)
+rpict: 375619758 rays, 59.86% after 0.102u 0.000s 0.102r hours on ubuntu (PID 1176633)
+rpict: 440451659 rays, 65.62% after 0.119u 0.000s 0.119r hours on ubuntu (PID 1176633)
+rpict: 506345891 rays, 71.04% after 0.135u 0.000s 0.135r hours on ubuntu (PID 1176633)
+rpict: 570370455 rays, 92.38% after 0.152u 0.000s 0.152r hours on ubuntu (PID 1176633)
+rpict: 570890201 rays, 100.00% after 0.152u 0.000s 0.152r hours on ubuntu (PID 1176633)
+547.35user 0.03system 9:07.39elapsed 99%CPU (0avgtext+0avgdata 17664maxresident)k
+0inputs+13936outputs (0major+12715minor)pagefaults 0swaps
+pfilt -1 -e +0 -x /4 -y /4 -r .6 -m .15 serial.unf > serial.pic
+ra_ppm serial.pic > serial.ppm
+

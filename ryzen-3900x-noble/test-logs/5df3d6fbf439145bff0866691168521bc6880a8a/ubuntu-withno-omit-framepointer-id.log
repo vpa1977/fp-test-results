@@ -1,0 +1,93 @@
+#####
+ubuntu-withno-omit-framepointer-id - Run 1
+2024-04-25 03:13:14
+#####
+
+7-Zip (z) 22.01 (x64) : Copyright (c) 1999-2022 Igor Pavlov : 2022-07-15
+ 64-bit locale=en_US.utf8 Threads:32
+
+Compiler: 13.2.0 GCC 13.2.0
+Linux : 6.8.0-31-generic : #31-Ubuntu SMP PREEMPT_DYNAMIC Sat Apr 20 00:40:06 UTC 2024 : x86_64
+PageSize:4KB THP:madvise hwcap:2 hwcap2:2
+AMD Ryzen 9 3900X 12-Core Processor (870F10) 
+
+1T CPU Freq (MHz):  4361  4363  4362  4363  4362  4360  4361
+12T CPU Freq (MHz): 1197% 4225   1199% 4184  
+
+RAM size:   32035 MB,  # CPU hardware threads:  24 / 32 : 00FFFFFF
+RAM usage:   5339 MB,  # Benchmark threads:     24
+
+                       Compressing  |                  Decompressing
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS
+
+22:     108185  2254   4669 105243  |    1087077  2394   3872  92685
+23:      93202  2130   4459  94962  |    1061010  2371   3870  91781
+24:      87332  2107   4457  93900  |    1049075  2386   3858  92048
+25:      83684  2081   4592  95547  |    1014216  2363   3819  90237
+----------------------------------  | ------------------------------
+Avr:     93101  2143   4544  97413  |    1052845  2379   3855  91688
+Tot:            2261   4200  94550
+
+#####
+ubuntu-withno-omit-framepointer-id - Run 2
+2024-04-25 03:13:46
+#####
+
+7-Zip (z) 22.01 (x64) : Copyright (c) 1999-2022 Igor Pavlov : 2022-07-15
+ 64-bit locale=en_US.utf8 Threads:32
+
+Compiler: 13.2.0 GCC 13.2.0
+Linux : 6.8.0-31-generic : #31-Ubuntu SMP PREEMPT_DYNAMIC Sat Apr 20 00:40:06 UTC 2024 : x86_64
+PageSize:4KB THP:madvise hwcap:2 hwcap2:2
+AMD Ryzen 9 3900X 12-Core Processor (870F10) 
+
+1T CPU Freq (MHz):  4359  4414  4412  4402  4412  4411  4397
+12T CPU Freq (MHz): 1188% 4180   1197% 4155  
+
+RAM size:   32035 MB,  # CPU hardware threads:  24 / 32 : 00FFFFFF
+RAM usage:   5339 MB,  # Benchmark threads:     24
+
+                       Compressing  |                  Decompressing
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS
+
+22:     107846  2252   4659 104913  |    1085005  2391   3869  92509
+23:      92778  2134   4429  94530  |    1064341  2378   3871  92069
+24:      88783  2143   4455  95460  |    1051942  2393   3857  92300
+25:      83435  2083   4572  95263  |    1016093  2364   3824  90404
+----------------------------------  | ------------------------------
+Avr:     93210  2153   4529  97542  |    1054345  2382   3855  91820
+Tot:            2267   4192  94681
+
+#####
+ubuntu-withno-omit-framepointer-id - Run 3
+2024-04-25 03:14:16
+#####
+
+7-Zip (z) 22.01 (x64) : Copyright (c) 1999-2022 Igor Pavlov : 2022-07-15
+ 64-bit locale=en_US.utf8 Threads:32
+
+Compiler: 13.2.0 GCC 13.2.0
+Linux : 6.8.0-31-generic : #31-Ubuntu SMP PREEMPT_DYNAMIC Sat Apr 20 00:40:06 UTC 2024 : x86_64
+PageSize:4KB THP:madvise hwcap:2 hwcap2:2
+AMD Ryzen 9 3900X 12-Core Processor (870F10) 
+
+1T CPU Freq (MHz):  4332  4318  4326  4352  4407  4350  4412
+12T CPU Freq (MHz): 1194% 4201   1185% 4114  
+
+RAM size:   32035 MB,  # CPU hardware threads:  24 / 32 : 00FFFFFF
+RAM usage:   5339 MB,  # Benchmark threads:     24
+
+                       Compressing  |                  Decompressing
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS
+
+22:     108232  2261   4657 105288  |    1079552  2388   3855  92044
+23:      92506  2139   4406  94253  |    1053762  2365   3854  91154
+24:      87868  2124   4449  94477  |    1047794  2392   3844  91936
+25:      85086  2115   4592  97149  |    1011947  2364   3809  90035
+----------------------------------  | ------------------------------
+Avr:     93423  2160   4526  97792  |    1048264  2377   3840  91292
+Tot:            2268   4183  94542
+

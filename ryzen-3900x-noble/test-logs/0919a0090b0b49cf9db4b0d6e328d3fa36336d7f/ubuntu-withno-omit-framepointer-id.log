@@ -1,0 +1,560 @@
+#####
+ubuntu-withno-omit-framepointer-id - Run 1
+2024-04-25 00:52:22
+#####
+Using scaled threading model. 24 processors detected, 24 threads used to drive the workload, in a possible range of [1,2048]
+Version: daytrader svn-1904225 wildfly 26.1.3.Final (use -p to print nominal benchmark stats)
+DayTrader is using port 8080 (8080+0). Configure with -Djboss.http.port and/or -Djboss.socket.binding.port-offset
+NOTE: Starting watchdog timer with timeout of 330 seconds. Adjust timeout with the -f command line option.
+===== DaCapo 23.11-chopin tradebeans starting warmup 1 =====
+Resetting database and populating with 1098 stocks...
+Populating database with 1536 users...
+Finished repopulating database
+Running 1024 trade sessions directly on server
+Starting 18071 requests...
+Completed requests
+Completed 1024 trade sessions comprising 18071 trader actions
+	Home ....................  3354 (18.6%)
+	Portfolio ...............  1527 ( 8.5%)
+	Quote ...................  7480 (41.4%)
+	Buy .....................  1663 ( 9.2%)
+	Sell ....................  1542 ( 8.5%)
+	Update ..................   253 ( 1.4%)
+	Register ................   102 ( 0.6%)
+	Login ...................  1024 ( 5.7%)
+	Logout ..................  1126 ( 6.2%)
+===== DaCapo 23.11-chopin tradebeans completed warmup 1 in 11453 msec =====
+===== DaCapo simple tail latency: 50% 917 usec, 90% 6827 usec, 99% 26896 usec, 99.9% 45379 usec, 99.99% 57282 usec, max 58233 usec, measured over 18071 events =====
+===== DaCapo metered tail latency: 50% 4771644 usec, 90% 8522699 usec, 99% 9349823 usec, 99.9% 9425854 usec, 99.99% 9445619 usec, max 9448669 usec, measured over 18071 events =====
+===== DaCapo 23.11-chopin tradebeans starting warmup 2 =====
+Resetting database and populating with 1098 stocks...
+Populating database with 1536 users...
+Finished repopulating database
+Running 1024 trade sessions directly on server
+Starting 18071 requests...
+Completed requests
+Completed 1024 trade sessions comprising 18071 trader actions
+	Home ....................  3354 (18.6%)
+	Portfolio ...............  1527 ( 8.5%)
+	Quote ...................  7480 (41.4%)
+	Buy .....................  1663 ( 9.2%)
+	Sell ....................  1542 ( 8.5%)
+	Update ..................   253 ( 1.4%)
+	Register ................   102 ( 0.6%)
+	Login ...................  1024 ( 5.7%)
+	Logout ..................  1126 ( 6.2%)
+===== DaCapo 23.11-chopin tradebeans completed warmup 2 in 10606 msec =====
+===== DaCapo simple tail latency: 50% 803 usec, 90% 6500 usec, 99% 25036 usec, 99.9% 43677 usec, 99.99% 61627 usec, max 64807 usec, measured over 18071 events =====
+===== DaCapo metered tail latency: 50% 3359 usec, 90% 16174 usec, 99% 31437 usec, 99.9% 52230 usec, 99.99% 70124 usec, max 73688 usec, measured over 18071 events =====
+===== DaCapo 23.11-chopin tradebeans starting =====
+Resetting database and populating with 1098 stocks...
+Populating database with 1536 users...
+Finished repopulating database
+Running 1024 trade sessions directly on server
+Starting 18071 requests...
+Completed requests
+Completed 1024 trade sessions comprising 18071 trader actions
+	Home ....................  3354 (18.6%)
+	Portfolio ...............  1527 ( 8.5%)
+	Quote ...................  7480 (41.4%)
+	Buy .....................  1663 ( 9.2%)
+	Sell ....................  1542 ( 8.5%)
+	Update ..................   253 ( 1.4%)
+	Register ................   102 ( 0.6%)
+	Login ...................  1024 ( 5.7%)
+	Logout ..................  1126 ( 6.2%)
+===== DaCapo 23.11-chopin tradebeans PASSED in 11120 msec =====
+===== DaCapo simple tail latency: 50% 856 usec, 90% 6514 usec, 99% 26019 usec, 99.9% 46730 usec, 99.99% 61493 usec, max 64769 usec, measured over 18071 events =====
+===== DaCapo metered tail latency: 50% 9777 usec, 90% 36391 usec, 99% 49319 usec, 99.9% 72922 usec, 99.99% 84092 usec, max 89752 usec, measured over 18071 events =====
+Shutting down Wildfly...
+
+#####
+ubuntu-withno-omit-framepointer-id - Run 2
+2024-04-25 00:53:05
+#####
+Using scaled threading model. 24 processors detected, 24 threads used to drive the workload, in a possible range of [1,2048]
+Version: daytrader svn-1904225 wildfly 26.1.3.Final (use -p to print nominal benchmark stats)
+DayTrader is using port 8080 (8080+0). Configure with -Djboss.http.port and/or -Djboss.socket.binding.port-offset
+NOTE: Starting watchdog timer with timeout of 330 seconds. Adjust timeout with the -f command line option.
+===== DaCapo 23.11-chopin tradebeans starting warmup 1 =====
+Resetting database and populating with 1098 stocks...
+Populating database with 1536 users...
+Finished repopulating database
+Running 1024 trade sessions directly on server
+Starting 18071 requests...
+Completed requests
+Completed 1024 trade sessions comprising 18071 trader actions
+	Home ....................  3354 (18.6%)
+	Portfolio ...............  1527 ( 8.5%)
+	Quote ...................  7480 (41.4%)
+	Buy .....................  1663 ( 9.2%)
+	Sell ....................  1542 ( 8.5%)
+	Update ..................   253 ( 1.4%)
+	Register ................   102 ( 0.6%)
+	Login ...................  1024 ( 5.7%)
+	Logout ..................  1126 ( 6.2%)
+===== DaCapo 23.11-chopin tradebeans completed warmup 1 in 11061 msec =====
+===== DaCapo simple tail latency: 50% 906 usec, 90% 6525 usec, 99% 25728 usec, 99.9% 45312 usec, 99.99% 57011 usec, max 60838 usec, measured over 18071 events =====
+===== DaCapo metered tail latency: 50% 36237 usec, 90% 65562 usec, 99% 77736 usec, 99.9% 99093 usec, 99.99% 116793 usec, max 123255 usec, measured over 18071 events =====
+===== DaCapo 23.11-chopin tradebeans starting warmup 2 =====
+Resetting database and populating with 1098 stocks...
+Populating database with 1536 users...
+Finished repopulating database
+Running 1024 trade sessions directly on server
+Starting 18071 requests...
+Completed requests
+Completed 1024 trade sessions comprising 18071 trader actions
+	Home ....................  3354 (18.6%)
+	Portfolio ...............  1527 ( 8.5%)
+	Quote ...................  7480 (41.4%)
+	Buy .....................  1663 ( 9.2%)
+	Sell ....................  1542 ( 8.5%)
+	Update ..................   253 ( 1.4%)
+	Register ................   102 ( 0.6%)
+	Login ...................  1024 ( 5.7%)
+	Logout ..................  1126 ( 6.2%)
+===== DaCapo 23.11-chopin tradebeans completed warmup 2 in 10779 msec =====
+===== DaCapo simple tail latency: 50% 733 usec, 90% 6404 usec, 99% 24965 usec, 99.9% 44832 usec, 99.99% 58955 usec, max 59868 usec, measured over 18071 events =====
+===== DaCapo metered tail latency: 50% 8061 usec, 90% 20242 usec, 99% 35470 usec, 99.9% 55535 usec, 99.99% 82545 usec, max 86877 usec, measured over 18071 events =====
+===== DaCapo 23.11-chopin tradebeans starting =====
+Resetting database and populating with 1098 stocks...
+Populating database with 1536 users...
+Finished repopulating database
+Running 1024 trade sessions directly on server
+Starting 18071 requests...
+Completed requests
+Completed 1024 trade sessions comprising 18071 trader actions
+	Home ....................  3354 (18.6%)
+	Portfolio ...............  1527 ( 8.5%)
+	Quote ...................  7480 (41.4%)
+	Buy .....................  1663 ( 9.2%)
+	Sell ....................  1542 ( 8.5%)
+	Update ..................   253 ( 1.4%)
+	Register ................   102 ( 0.6%)
+	Login ...................  1024 ( 5.7%)
+	Logout ..................  1126 ( 6.2%)
+===== DaCapo 23.11-chopin tradebeans PASSED in 10321 msec =====
+===== DaCapo simple tail latency: 50% 717 usec, 90% 6338 usec, 99% 24753 usec, 99.9% 42263 usec, 99.99% 58025 usec, max 61386 usec, measured over 18071 events =====
+===== DaCapo metered tail latency: 50% 19243 usec, 90% 29423 usec, 99% 44382 usec, 99.9% 61926 usec, 99.99% 78425 usec, max 79680 usec, measured over 18071 events =====
+Shutting down Wildfly...
+
+#####
+ubuntu-withno-omit-framepointer-id - Run 3
+2024-04-25 00:53:48
+#####
+Using scaled threading model. 24 processors detected, 24 threads used to drive the workload, in a possible range of [1,2048]
+Version: daytrader svn-1904225 wildfly 26.1.3.Final (use -p to print nominal benchmark stats)
+DayTrader is using port 8080 (8080+0). Configure with -Djboss.http.port and/or -Djboss.socket.binding.port-offset
+NOTE: Starting watchdog timer with timeout of 330 seconds. Adjust timeout with the -f command line option.
+===== DaCapo 23.11-chopin tradebeans starting warmup 1 =====
+Resetting database and populating with 1098 stocks...
+Populating database with 1536 users...
+Finished repopulating database
+Running 1024 trade sessions directly on server
+Starting 18071 requests...
+Completed requests
+Completed 1024 trade sessions comprising 18071 trader actions
+	Home ....................  3354 (18.6%)
+	Portfolio ...............  1527 ( 8.5%)
+	Quote ...................  7480 (41.4%)
+	Buy .....................  1663 ( 9.2%)
+	Sell ....................  1542 ( 8.5%)
+	Update ..................   253 ( 1.4%)
+	Register ................   102 ( 0.6%)
+	Login ...................  1024 ( 5.7%)
+	Logout ..................  1126 ( 6.2%)
+===== DaCapo 23.11-chopin tradebeans completed warmup 1 in 10831 msec =====
+===== DaCapo simple tail latency: 50% 789 usec, 90% 6417 usec, 99% 24847 usec, 99.9% 43939 usec, 99.99% 56883 usec, max 57823 usec, measured over 18071 events =====
+===== DaCapo metered tail latency: 50% 4491566 usec, 90% 8066535 usec, 99% 8852273 usec, 99.9% 8923116 usec, 99.99% 8943713 usec, max 8948370 usec, measured over 18071 events =====
+===== DaCapo 23.11-chopin tradebeans starting warmup 2 =====
+Resetting database and populating with 1098 stocks...
+Populating database with 1536 users...
+Finished repopulating database
+Running 1024 trade sessions directly on server
+Starting 18071 requests...
+Completed requests
+Completed 1024 trade sessions comprising 18071 trader actions
+	Home ....................  3354 (18.6%)
+	Portfolio ...............  1527 ( 8.5%)
+	Quote ...................  7480 (41.4%)
+	Buy .....................  1663 ( 9.2%)
+	Sell ....................  1542 ( 8.5%)
+	Update ..................   253 ( 1.4%)
+	Register ................   102 ( 0.6%)
+	Login ...................  1024 ( 5.7%)
+	Logout ..................  1126 ( 6.2%)
+===== DaCapo 23.11-chopin tradebeans completed warmup 2 in 10623 msec =====
+===== DaCapo simple tail latency: 50% 664 usec, 90% 6304 usec, 99% 25012 usec, 99.9% 46943 usec, 99.99% 69739 usec, max 74063 usec, measured over 18071 events =====
+===== DaCapo metered tail latency: 50% 23965 usec, 90% 39042 usec, 99% 52166 usec, 99.9% 72394 usec, 99.99% 92940 usec, max 95106 usec, measured over 18071 events =====
+===== DaCapo 23.11-chopin tradebeans starting =====
+Resetting database and populating with 1098 stocks...
+Populating database with 1536 users...
+Finished repopulating database
+Running 1024 trade sessions directly on server
+Starting 18071 requests...
+Completed requests
+Completed 1024 trade sessions comprising 18071 trader actions
+	Home ....................  3354 (18.6%)
+	Portfolio ...............  1527 ( 8.5%)
+	Quote ...................  7480 (41.4%)
+	Buy .....................  1663 ( 9.2%)
+	Sell ....................  1542 ( 8.5%)
+	Update ..................   253 ( 1.4%)
+	Register ................   102 ( 0.6%)
+	Login ...................  1024 ( 5.7%)
+	Logout ..................  1126 ( 6.2%)
+===== DaCapo 23.11-chopin tradebeans PASSED in 10569 msec =====
+===== DaCapo simple tail latency: 50% 733 usec, 90% 6416 usec, 99% 25489 usec, 99.9% 44919 usec, 99.99% 62736 usec, max 66903 usec, measured over 18071 events =====
+===== DaCapo metered tail latency: 50% 8040 usec, 90% 22830 usec, 99% 36061 usec, 99.9% 54792 usec, 99.99% 78864 usec, max 79670 usec, measured over 18071 events =====
+Shutting down Wildfly...
+
+#####
+ubuntu-withno-omit-framepointer-id - Run 4
+2024-04-25 00:54:33
+#####
+Using scaled threading model. 24 processors detected, 24 threads used to drive the workload, in a possible range of [1,2048]
+Version: daytrader svn-1904225 wildfly 26.1.3.Final (use -p to print nominal benchmark stats)
+DayTrader is using port 8080 (8080+0). Configure with -Djboss.http.port and/or -Djboss.socket.binding.port-offset
+NOTE: Starting watchdog timer with timeout of 330 seconds. Adjust timeout with the -f command line option.
+===== DaCapo 23.11-chopin tradebeans starting warmup 1 =====
+Resetting database and populating with 1098 stocks...
+Populating database with 1536 users...
+Finished repopulating database
+Running 1024 trade sessions directly on server
+Starting 18071 requests...
+Completed requests
+Completed 1024 trade sessions comprising 18071 trader actions
+	Home ....................  3354 (18.6%)
+	Portfolio ...............  1527 ( 8.5%)
+	Quote ...................  7480 (41.4%)
+	Buy .....................  1663 ( 9.2%)
+	Sell ....................  1542 ( 8.5%)
+	Update ..................   253 ( 1.4%)
+	Register ................   102 ( 0.6%)
+	Login ...................  1024 ( 5.7%)
+	Logout ..................  1126 ( 6.2%)
+===== DaCapo 23.11-chopin tradebeans completed warmup 1 in 12563 msec =====
+===== DaCapo simple tail latency: 50% 924 usec, 90% 6717 usec, 99% 26482 usec, 99.9% 47255 usec, 99.99% 63688 usec, max 74851 usec, measured over 18071 events =====
+===== DaCapo metered tail latency: 50% 35976 usec, 90% 63218 usec, 99% 77536 usec, 99.9% 95853 usec, 99.99% 129020 usec, max 132010 usec, measured over 18071 events =====
+===== DaCapo 23.11-chopin tradebeans starting warmup 2 =====
+Resetting database and populating with 1098 stocks...
+Populating database with 1536 users...
+Finished repopulating database
+Running 1024 trade sessions directly on server
+Starting 18071 requests...
+Completed requests
+Completed 1024 trade sessions comprising 18071 trader actions
+	Home ....................  3354 (18.6%)
+	Portfolio ...............  1527 ( 8.5%)
+	Quote ...................  7480 (41.4%)
+	Buy .....................  1663 ( 9.2%)
+	Sell ....................  1542 ( 8.5%)
+	Update ..................   253 ( 1.4%)
+	Register ................   102 ( 0.6%)
+	Login ...................  1024 ( 5.7%)
+	Logout ..................  1126 ( 6.2%)
+===== DaCapo 23.11-chopin tradebeans completed warmup 2 in 10584 msec =====
+===== DaCapo simple tail latency: 50% 795 usec, 90% 6337 usec, 99% 24460 usec, 99.9% 42852 usec, 99.99% 58810 usec, max 68325 usec, measured over 18071 events =====
+===== DaCapo metered tail latency: 50% 15165 usec, 90% 34275 usec, 99% 46522 usec, 99.9% 65271 usec, 99.99% 85778 usec, max 90598 usec, measured over 18071 events =====
+===== DaCapo 23.11-chopin tradebeans starting =====
+Resetting database and populating with 1098 stocks...
+Populating database with 1536 users...
+Finished repopulating database
+Running 1024 trade sessions directly on server
+Starting 18071 requests...
+Completed requests
+Completed 1024 trade sessions comprising 18071 trader actions
+	Home ....................  3354 (18.6%)
+	Portfolio ...............  1527 ( 8.5%)
+	Quote ...................  7480 (41.4%)
+	Buy .....................  1663 ( 9.2%)
+	Sell ....................  1542 ( 8.5%)
+	Update ..................   253 ( 1.4%)
+	Register ................   102 ( 0.6%)
+	Login ...................  1024 ( 5.7%)
+	Logout ..................  1126 ( 6.2%)
+===== DaCapo 23.11-chopin tradebeans PASSED in 10624 msec =====
+===== DaCapo simple tail latency: 50% 778 usec, 90% 6521 usec, 99% 25318 usec, 99.9% 42819 usec, 99.99% 59336 usec, max 59629 usec, measured over 18071 events =====
+===== DaCapo metered tail latency: 50% 9440 usec, 90% 28185 usec, 99% 41424 usec, 99.9% 60920 usec, 99.99% 83294 usec, max 83688 usec, measured over 18071 events =====
+Shutting down Wildfly...
+
+#####
+ubuntu-withno-omit-framepointer-id - Run 5
+2024-04-25 00:55:17
+#####
+Using scaled threading model. 24 processors detected, 24 threads used to drive the workload, in a possible range of [1,2048]
+Version: daytrader svn-1904225 wildfly 26.1.3.Final (use -p to print nominal benchmark stats)
+DayTrader is using port 8080 (8080+0). Configure with -Djboss.http.port and/or -Djboss.socket.binding.port-offset
+NOTE: Starting watchdog timer with timeout of 330 seconds. Adjust timeout with the -f command line option.
+===== DaCapo 23.11-chopin tradebeans starting warmup 1 =====
+Resetting database and populating with 1098 stocks...
+Populating database with 1536 users...
+Finished repopulating database
+Running 1024 trade sessions directly on server
+Starting 18071 requests...
+Completed requests
+Completed 1024 trade sessions comprising 18071 trader actions
+	Home ....................  3354 (18.6%)
+	Portfolio ...............  1527 ( 8.5%)
+	Quote ...................  7480 (41.4%)
+	Buy .....................  1663 ( 9.2%)
+	Sell ....................  1542 ( 8.5%)
+	Update ..................   253 ( 1.4%)
+	Register ................   102 ( 0.6%)
+	Login ...................  1024 ( 5.7%)
+	Logout ..................  1126 ( 6.2%)
+===== DaCapo 23.11-chopin tradebeans completed warmup 1 in 11288 msec =====
+===== DaCapo simple tail latency: 50% 845 usec, 90% 6645 usec, 99% 25459 usec, 99.9% 42777 usec, 99.99% 59572 usec, max 65381 usec, measured over 18071 events =====
+===== DaCapo metered tail latency: 50% 4727511 usec, 90% 8458540 usec, 99% 9275599 usec, 99.9% 9353216 usec, 99.99% 9379418 usec, max 9387821 usec, measured over 18071 events =====
+===== DaCapo 23.11-chopin tradebeans starting warmup 2 =====
+Resetting database and populating with 1098 stocks...
+Populating database with 1536 users...
+Finished repopulating database
+Running 1024 trade sessions directly on server
+Starting 18071 requests...
+Completed requests
+Completed 1024 trade sessions comprising 18071 trader actions
+	Home ....................  3354 (18.6%)
+	Portfolio ...............  1527 ( 8.5%)
+	Quote ...................  7480 (41.4%)
+	Buy .....................  1663 ( 9.2%)
+	Sell ....................  1542 ( 8.5%)
+	Update ..................   253 ( 1.4%)
+	Register ................   102 ( 0.6%)
+	Login ...................  1024 ( 5.7%)
+	Logout ..................  1126 ( 6.2%)
+===== DaCapo 23.11-chopin tradebeans completed warmup 2 in 10849 msec =====
+===== DaCapo simple tail latency: 50% 748 usec, 90% 6344 usec, 99% 24719 usec, 99.9% 45157 usec, 99.99% 65855 usec, max 66518 usec, measured over 18071 events =====
+===== DaCapo metered tail latency: 50% 31787 usec, 90% 54567 usec, 99% 67688 usec, 99.9% 86772 usec, 99.99% 108265 usec, max 109017 usec, measured over 18071 events =====
+===== DaCapo 23.11-chopin tradebeans starting =====
+Resetting database and populating with 1098 stocks...
+Populating database with 1536 users...
+Finished repopulating database
+Running 1024 trade sessions directly on server
+Starting 18071 requests...
+Completed requests
+Completed 1024 trade sessions comprising 18071 trader actions
+	Home ....................  3354 (18.6%)
+	Portfolio ...............  1527 ( 8.5%)
+	Quote ...................  7480 (41.4%)
+	Buy .....................  1663 ( 9.2%)
+	Sell ....................  1542 ( 8.5%)
+	Update ..................   253 ( 1.4%)
+	Register ................   102 ( 0.6%)
+	Login ...................  1024 ( 5.7%)
+	Logout ..................  1126 ( 6.2%)
+===== DaCapo 23.11-chopin tradebeans PASSED in 10825 msec =====
+===== DaCapo simple tail latency: 50% 637 usec, 90% 6242 usec, 99% 24248 usec, 99.9% 43149 usec, 99.99% 69517 usec, max 72465 usec, measured over 18071 events =====
+===== DaCapo metered tail latency: 50% 29001 usec, 90% 44198 usec, 99% 56542 usec, 99.9% 78386 usec, 99.99% 97575 usec, max 99924 usec, measured over 18071 events =====
+Shutting down Wildfly...
+
+#####
+ubuntu-withno-omit-framepointer-id - Run 6
+2024-04-25 00:56:00
+#####
+Using scaled threading model. 24 processors detected, 24 threads used to drive the workload, in a possible range of [1,2048]
+Version: daytrader svn-1904225 wildfly 26.1.3.Final (use -p to print nominal benchmark stats)
+DayTrader is using port 8080 (8080+0). Configure with -Djboss.http.port and/or -Djboss.socket.binding.port-offset
+NOTE: Starting watchdog timer with timeout of 330 seconds. Adjust timeout with the -f command line option.
+===== DaCapo 23.11-chopin tradebeans starting warmup 1 =====
+Resetting database and populating with 1098 stocks...
+Populating database with 1536 users...
+Finished repopulating database
+Running 1024 trade sessions directly on server
+Starting 18071 requests...
+Completed requests
+Completed 1024 trade sessions comprising 18071 trader actions
+	Home ....................  3354 (18.6%)
+	Portfolio ...............  1527 ( 8.5%)
+	Quote ...................  7480 (41.4%)
+	Buy .....................  1663 ( 9.2%)
+	Sell ....................  1542 ( 8.5%)
+	Update ..................   253 ( 1.4%)
+	Register ................   102 ( 0.6%)
+	Login ...................  1024 ( 5.7%)
+	Logout ..................  1126 ( 6.2%)
+===== DaCapo 23.11-chopin tradebeans completed warmup 1 in 11213 msec =====
+===== DaCapo simple tail latency: 50% 839 usec, 90% 6648 usec, 99% 25478 usec, 99.9% 44754 usec, 99.99% 69169 usec, max 83032 usec, measured over 18071 events =====
+===== DaCapo metered tail latency: 50% 4663327 usec, 90% 8346061 usec, 99% 9148473 usec, 99.9% 9219478 usec, 99.99% 9244225 usec, max 9270077 usec, measured over 18071 events =====
+===== DaCapo 23.11-chopin tradebeans starting warmup 2 =====
+Resetting database and populating with 1098 stocks...
+Populating database with 1536 users...
+Finished repopulating database
+Running 1024 trade sessions directly on server
+Starting 18071 requests...
+Completed requests
+Completed 1024 trade sessions comprising 18071 trader actions
+	Home ....................  3354 (18.6%)
+	Portfolio ...............  1527 ( 8.5%)
+	Quote ...................  7480 (41.4%)
+	Buy .....................  1663 ( 9.2%)
+	Sell ....................  1542 ( 8.5%)
+	Update ..................   253 ( 1.4%)
+	Register ................   102 ( 0.6%)
+	Login ...................  1024 ( 5.7%)
+	Logout ..................  1126 ( 6.2%)
+===== DaCapo 23.11-chopin tradebeans completed warmup 2 in 10465 msec =====
+===== DaCapo simple tail latency: 50% 755 usec, 90% 6218 usec, 99% 24621 usec, 99.9% 44332 usec, 99.99% 56104 usec, max 60219 usec, measured over 18071 events =====
+===== DaCapo metered tail latency: 50% 2987 usec, 90% 11198 usec, 99% 28002 usec, 99.9% 48237 usec, 99.99% 56104 usec, max 65406 usec, measured over 18071 events =====
+===== DaCapo 23.11-chopin tradebeans starting =====
+Resetting database and populating with 1098 stocks...
+Populating database with 1536 users...
+Finished repopulating database
+Running 1024 trade sessions directly on server
+Starting 18071 requests...
+Completed requests
+Completed 1024 trade sessions comprising 18071 trader actions
+	Home ....................  3354 (18.6%)
+	Portfolio ...............  1527 ( 8.5%)
+	Quote ...................  7480 (41.4%)
+	Buy .....................  1663 ( 9.2%)
+	Sell ....................  1542 ( 8.5%)
+	Update ..................   253 ( 1.4%)
+	Register ................   102 ( 0.6%)
+	Login ...................  1024 ( 5.7%)
+	Logout ..................  1126 ( 6.2%)
+===== DaCapo 23.11-chopin tradebeans PASSED in 10406 msec =====
+===== DaCapo simple tail latency: 50% 781 usec, 90% 6224 usec, 99% 24890 usec, 99.9% 43582 usec, 99.99% 55674 usec, max 63072 usec, measured over 18071 events =====
+===== DaCapo metered tail latency: 50% 8000 usec, 90% 18338 usec, 99% 32787 usec, 99.9% 53347 usec, 99.99% 67694 usec, max 69520 usec, measured over 18071 events =====
+Shutting down Wildfly...
+
+#####
+ubuntu-withno-omit-framepointer-id - Run 7
+2024-04-25 00:56:44
+#####
+Using scaled threading model. 24 processors detected, 24 threads used to drive the workload, in a possible range of [1,2048]
+Version: daytrader svn-1904225 wildfly 26.1.3.Final (use -p to print nominal benchmark stats)
+DayTrader is using port 8080 (8080+0). Configure with -Djboss.http.port and/or -Djboss.socket.binding.port-offset
+NOTE: Starting watchdog timer with timeout of 330 seconds. Adjust timeout with the -f command line option.
+===== DaCapo 23.11-chopin tradebeans starting warmup 1 =====
+Resetting database and populating with 1098 stocks...
+Populating database with 1536 users...
+Finished repopulating database
+Running 1024 trade sessions directly on server
+Starting 18071 requests...
+Completed requests
+Completed 1024 trade sessions comprising 18071 trader actions
+	Home ....................  3354 (18.6%)
+	Portfolio ...............  1527 ( 8.5%)
+	Quote ...................  7480 (41.4%)
+	Buy .....................  1663 ( 9.2%)
+	Sell ....................  1542 ( 8.5%)
+	Update ..................   253 ( 1.4%)
+	Register ................   102 ( 0.6%)
+	Login ...................  1024 ( 5.7%)
+	Logout ..................  1126 ( 6.2%)
+===== DaCapo 23.11-chopin tradebeans completed warmup 1 in 11174 msec =====
+===== DaCapo simple tail latency: 50% 866 usec, 90% 6640 usec, 99% 26017 usec, 99.9% 47654 usec, 99.99% 59899 usec, max 61076 usec, measured over 18071 events =====
+===== DaCapo metered tail latency: 50% 37039 usec, 90% 60401 usec, 99% 73134 usec, 99.9% 97519 usec, 99.99% 109016 usec, max 109285 usec, measured over 18071 events =====
+===== DaCapo 23.11-chopin tradebeans starting warmup 2 =====
+Resetting database and populating with 1098 stocks...
+Populating database with 1536 users...
+Finished repopulating database
+Running 1024 trade sessions directly on server
+Starting 18071 requests...
+Completed requests
+Completed 1024 trade sessions comprising 18071 trader actions
+	Home ....................  3354 (18.6%)
+	Portfolio ...............  1527 ( 8.5%)
+	Quote ...................  7480 (41.4%)
+	Buy .....................  1663 ( 9.2%)
+	Sell ....................  1542 ( 8.5%)
+	Update ..................   253 ( 1.4%)
+	Register ................   102 ( 0.6%)
+	Login ...................  1024 ( 5.7%)
+	Logout ..................  1126 ( 6.2%)
+===== DaCapo 23.11-chopin tradebeans completed warmup 2 in 10633 msec =====
+===== DaCapo simple tail latency: 50% 717 usec, 90% 6258 usec, 99% 25040 usec, 99.9% 43987 usec, 99.99% 57103 usec, max 64721 usec, measured over 18071 events =====
+===== DaCapo metered tail latency: 50% 10508 usec, 90% 26649 usec, 99% 39216 usec, 99.9% 59840 usec, 99.99% 76609 usec, max 77131 usec, measured over 18071 events =====
+===== DaCapo 23.11-chopin tradebeans starting =====
+Resetting database and populating with 1098 stocks...
+Populating database with 1536 users...
+Finished repopulating database
+Running 1024 trade sessions directly on server
+Starting 18071 requests...
+Completed requests
+Completed 1024 trade sessions comprising 18071 trader actions
+	Home ....................  3354 (18.6%)
+	Portfolio ...............  1527 ( 8.5%)
+	Quote ...................  7480 (41.4%)
+	Buy .....................  1663 ( 9.2%)
+	Sell ....................  1542 ( 8.5%)
+	Update ..................   253 ( 1.4%)
+	Register ................   102 ( 0.6%)
+	Login ...................  1024 ( 5.7%)
+	Logout ..................  1126 ( 6.2%)
+===== DaCapo 23.11-chopin tradebeans PASSED in 10642 msec =====
+===== DaCapo simple tail latency: 50% 715 usec, 90% 6422 usec, 99% 25348 usec, 99.9% 45476 usec, 99.99% 61560 usec, max 67332 usec, measured over 18071 events =====
+===== DaCapo metered tail latency: 50% 15182 usec, 90% 32701 usec, 99% 45963 usec, 99.9% 67572 usec, 99.99% 82569 usec, max 83832 usec, measured over 18071 events =====
+Shutting down Wildfly...
+
+#####
+ubuntu-withno-omit-framepointer-id - Run 8
+2024-04-25 00:57:27
+#####
+Using scaled threading model. 24 processors detected, 24 threads used to drive the workload, in a possible range of [1,2048]
+Version: daytrader svn-1904225 wildfly 26.1.3.Final (use -p to print nominal benchmark stats)
+DayTrader is using port 8080 (8080+0). Configure with -Djboss.http.port and/or -Djboss.socket.binding.port-offset
+NOTE: Starting watchdog timer with timeout of 330 seconds. Adjust timeout with the -f command line option.
+===== DaCapo 23.11-chopin tradebeans starting warmup 1 =====
+Resetting database and populating with 1098 stocks...
+Populating database with 1536 users...
+Finished repopulating database
+Running 1024 trade sessions directly on server
+Starting 18071 requests...
+Completed requests
+Completed 1024 trade sessions comprising 18071 trader actions
+	Home ....................  3354 (18.6%)
+	Portfolio ...............  1527 ( 8.5%)
+	Quote ...................  7480 (41.4%)
+	Buy .....................  1663 ( 9.2%)
+	Sell ....................  1542 ( 8.5%)
+	Update ..................   253 ( 1.4%)
+	Register ................   102 ( 0.6%)
+	Login ...................  1024 ( 5.7%)
+	Logout ..................  1126 ( 6.2%)
+===== DaCapo 23.11-chopin tradebeans completed warmup 1 in 11397 msec =====
+===== DaCapo simple tail latency: 50% 893 usec, 90% 6729 usec, 99% 26760 usec, 99.9% 49375 usec, 99.99% 62423 usec, max 71932 usec, measured over 18071 events =====
+===== DaCapo metered tail latency: 50% 4769424 usec, 90% 8471787 usec, 99% 9289666 usec, 99.9% 9366925 usec, 99.99% 9385289 usec, max 9405462 usec, measured over 18071 events =====
+===== DaCapo 23.11-chopin tradebeans starting warmup 2 =====
+Resetting database and populating with 1098 stocks...
+Populating database with 1536 users...
+Finished repopulating database
+Running 1024 trade sessions directly on server
+Starting 18071 requests...
+Completed requests
+Completed 1024 trade sessions comprising 18071 trader actions
+	Home ....................  3354 (18.6%)
+	Portfolio ...............  1527 ( 8.5%)
+	Quote ...................  7480 (41.4%)
+	Buy .....................  1663 ( 9.2%)
+	Sell ....................  1542 ( 8.5%)
+	Update ..................   253 ( 1.4%)
+	Register ................   102 ( 0.6%)
+	Login ...................  1024 ( 5.7%)
+	Logout ..................  1126 ( 6.2%)
+===== DaCapo 23.11-chopin tradebeans completed warmup 2 in 11535 msec =====
+===== DaCapo simple tail latency: 50% 776 usec, 90% 6467 usec, 99% 26207 usec, 99.9% 45221 usec, 99.99% 58767 usec, max 77267 usec, measured over 18071 events =====
+===== DaCapo metered tail latency: 50% 11200 usec, 90% 34839 usec, 99% 48011 usec, 99.9% 71432 usec, 99.99% 87786 usec, max 99247 usec, measured over 18071 events =====
+===== DaCapo 23.11-chopin tradebeans starting =====
+Resetting database and populating with 1098 stocks...
+Populating database with 1536 users...
+Finished repopulating database
+Running 1024 trade sessions directly on server
+Starting 18071 requests...
+Completed requests
+Completed 1024 trade sessions comprising 18071 trader actions
+	Home ....................  3354 (18.6%)
+	Portfolio ...............  1527 ( 8.5%)
+	Quote ...................  7480 (41.4%)
+	Buy .....................  1663 ( 9.2%)
+	Sell ....................  1542 ( 8.5%)
+	Update ..................   253 ( 1.4%)
+	Register ................   102 ( 0.6%)
+	Login ...................  1024 ( 5.7%)
+	Logout ..................  1126 ( 6.2%)
+===== DaCapo 23.11-chopin tradebeans PASSED in 10886 msec =====
+===== DaCapo simple tail latency: 50% 765 usec, 90% 6422 usec, 99% 25489 usec, 99.9% 45920 usec, 99.99% 57558 usec, max 64021 usec, measured over 18071 events =====
+===== DaCapo metered tail latency: 50% 5021 usec, 90% 15967 usec, 99% 30845 usec, 99.9% 51809 usec, 99.99% 67873 usec, max 70073 usec, measured over 18071 events =====
+Shutting down Wildfly...
+

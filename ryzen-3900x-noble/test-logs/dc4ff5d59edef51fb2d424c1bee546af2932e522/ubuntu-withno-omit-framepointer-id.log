@@ -1,0 +1,426 @@
+#####
+ubuntu-withno-omit-framepointer-id - Run 1
+2024-04-25 18:08:39
+#####
+
+Linux 6.8.0-31-generic #31-Ubuntu SMP PREEMPT_DYNAMIC Sat Apr 20 00:40:06 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+
+RawTherapee executable: /usr/bin/rawtherapee-cli
+[Could not find /usr/bin/AboutThisBuild.txt]
+
+Photo:   /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/colorspace_flowers.pef
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/00 - Exposure.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/01 - Sharpening.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/02 - Sharpening.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/03 - Vibrance.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/04 - SharpenEdge.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/05 - SharpenMicro.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/06 - Color appearance.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/07 - Impulse Denoising.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/08 - Defringing.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/09 - Directional Pyramid Denoising.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/10 - EPD.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/11 - Shadows & Highlights.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/12 - Directional Pyramid Equalizer.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/13 - RAW.pp3
+
+Benchmark 01 "Auto Exposure"........................1.059
+Benchmark 02 "Auto Exposure"........................ .648
+Benchmark 03 "Auto Exposure"........................ .651
+Benchmark 04 "Auto Exposure"........................ .633
+Benchmark 05 "Auto Exposure"........................ .647
+Benchmark "Auto Exposure" average.....................727
+
+Benchmark 01 "Sharpening - Unsharp Mask"............ .658
+Benchmark 02 "Sharpening - Unsharp Mask"............ .664
+Benchmark 03 "Sharpening - Unsharp Mask"............ .666
+Benchmark 04 "Sharpening - Unsharp Mask"............ .654
+Benchmark 05 "Sharpening - Unsharp Mask"............ .666
+Benchmark "Sharpening - Unsharp Mask" average.........661
+
+Benchmark 01 "Sharpening - RL Deconvolution"........ .894
+Benchmark 02 "Sharpening - RL Deconvolution"........ .903
+Benchmark 03 "Sharpening - RL Deconvolution"........ .897
+Benchmark 04 "Sharpening - RL Deconvolution"........ .877
+Benchmark 05 "Sharpening - RL Deconvolution"........ .884
+Benchmark "Sharpening - RL Deconvolution" average.....891
+
+Benchmark 01 "Vibrance"...............................626
+Benchmark 02 "Vibrance"...............................628
+Benchmark 03 "Vibrance"...............................647
+Benchmark 04 "Vibrance"...............................646
+Benchmark 05 "Vibrance"...............................641
+Benchmark "Vibrance" average........................ .637
+
+Benchmark 01 "Edges"................................ .821
+Benchmark 02 "Edges"................................ .818
+Benchmark 03 "Edges"................................ .812
+Benchmark 04 "Edges"................................ .813
+Benchmark 05 "Edges"................................ .815
+Benchmark "Edges" average.............................815
+
+Benchmark 01 "Microcontrast"........................ .690
+Benchmark 02 "Microcontrast"........................ .691
+Benchmark 03 "Microcontrast"........................ .684
+Benchmark 04 "Microcontrast"........................ .689
+Benchmark 05 "Microcontrast"........................ .674
+Benchmark "Microcontrast" average.....................685
+
+Benchmark 01 "CIECAM02"...............................763
+Benchmark 02 "CIECAM02"...............................766
+Benchmark 03 "CIECAM02"...............................747
+Benchmark 04 "CIECAM02"...............................743
+Benchmark 05 "CIECAM02"...............................745
+Benchmark "CIECAM02" average........................ .752
+
+Benchmark 01 "Impulse Noise Reduction".............. .658
+Benchmark 02 "Impulse Noise Reduction".............. .664
+Benchmark 03 "Impulse Noise Reduction".............. .661
+Benchmark 04 "Impulse Noise Reduction".............. .656
+Benchmark 05 "Impulse Noise Reduction".............. .662
+Benchmark "Impulse Noise Reduction" average...........660
+
+Benchmark 01 "Defringe"...............................731
+Benchmark 02 "Defringe"...............................721
+Benchmark 03 "Defringe"...............................720
+Benchmark 04 "Defringe"...............................724
+Benchmark 05 "Defringe"...............................731
+Benchmark "Defringe" average........................ .725
+
+Benchmark 01 "Noise Reduction"......................1.164
+Benchmark 02 "Noise Reduction"......................1.108
+Benchmark 03 "Noise Reduction"......................1.124
+Benchmark 04 "Noise Reduction"......................1.157
+Benchmark 05 "Noise Reduction"......................1.171
+Benchmark "Noise Reduction" average................ 1.144
+
+Benchmark 01 "Tone Mapping"........................ 3.195
+Benchmark 02 "Tone Mapping"........................ 3.225
+Benchmark 03 "Tone Mapping"........................ 3.141
+Benchmark 04 "Tone Mapping"........................ 3.057
+Benchmark 05 "Tone Mapping"........................ 3.161
+Benchmark "Tone Mapping" average....................3.155
+
+Benchmark 01 "Shadows/Highlights".....................640
+Benchmark 02 "Shadows/Highlights".....................642
+Benchmark 03 "Shadows/Highlights".....................650
+Benchmark 04 "Shadows/Highlights".....................646
+Benchmark 05 "Shadows/Highlights".....................646
+Benchmark "Shadows/Highlights" average.............. .644
+
+Benchmark 01 "Contrast by Detail Levels"............ .682
+Benchmark 02 "Contrast by Detail Levels"............ .672
+Benchmark 03 "Contrast by Detail Levels"............ .666
+Benchmark 04 "Contrast by Detail Levels"............ .665
+Benchmark 05 "Contrast by Detail Levels"............ .668
+Benchmark "Contrast by Detail Levels" average.........670
+
+Benchmark 01 "Raw Chromatic Aberration"...............727
+Benchmark 02 "Raw Chromatic Aberration"...............714
+Benchmark 03 "Raw Chromatic Aberration"...............718
+Benchmark 04 "Raw Chromatic Aberration"...............721
+Benchmark 05 "Raw Chromatic Aberration"...............714
+Benchmark "Raw Chromatic Aberration" average........ .718
+
+Benchmark total:                                   64.462
+
+Average times for each set:
+Auto Exposure.........................................727
+CIECAM02............................................ .752
+Contrast by Detail Levels.............................670
+Defringe............................................ .725
+Edges.................................................815
+Impulse Noise Reduction...............................660
+Microcontrast.........................................685
+Noise Reduction.................................... 1.144
+Raw Chromatic Aberration............................ .718
+Shadows/Highlights.................................. .644
+Sharpening - RL Deconvolution.........................891
+Sharpening - Unsharp Mask.............................661
+Tone Mapping........................................3.155
+Vibrance............................................ .637
+
+#####
+ubuntu-withno-omit-framepointer-id - Run 2
+2024-04-25 18:09:48
+#####
+
+Linux 6.8.0-31-generic #31-Ubuntu SMP PREEMPT_DYNAMIC Sat Apr 20 00:40:06 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+
+RawTherapee executable: /usr/bin/rawtherapee-cli
+[Could not find /usr/bin/AboutThisBuild.txt]
+
+Photo:   /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/colorspace_flowers.pef
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/00 - Exposure.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/01 - Sharpening.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/02 - Sharpening.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/03 - Vibrance.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/04 - SharpenEdge.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/05 - SharpenMicro.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/06 - Color appearance.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/07 - Impulse Denoising.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/08 - Defringing.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/09 - Directional Pyramid Denoising.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/10 - EPD.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/11 - Shadows & Highlights.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/12 - Directional Pyramid Equalizer.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/13 - RAW.pp3
+
+Benchmark 01 "Auto Exposure"........................ .634
+Benchmark 02 "Auto Exposure"........................ .641
+Benchmark 03 "Auto Exposure"........................ .642
+Benchmark 04 "Auto Exposure"........................ .639
+Benchmark 05 "Auto Exposure"........................ .648
+Benchmark "Auto Exposure" average.....................640
+
+Benchmark 01 "Sharpening - Unsharp Mask"............ .654
+Benchmark 02 "Sharpening - Unsharp Mask"............ .653
+Benchmark 03 "Sharpening - Unsharp Mask"............ .657
+Benchmark 04 "Sharpening - Unsharp Mask"............ .660
+Benchmark 05 "Sharpening - Unsharp Mask"............ .697
+Benchmark "Sharpening - Unsharp Mask" average.........664
+
+Benchmark 01 "Sharpening - RL Deconvolution"........ .879
+Benchmark 02 "Sharpening - RL Deconvolution"........ .886
+Benchmark 03 "Sharpening - RL Deconvolution"........ .896
+Benchmark 04 "Sharpening - RL Deconvolution"........ .881
+Benchmark 05 "Sharpening - RL Deconvolution"........ .884
+Benchmark "Sharpening - RL Deconvolution" average.....885
+
+Benchmark 01 "Vibrance"...............................646
+Benchmark 02 "Vibrance"...............................636
+Benchmark 03 "Vibrance"...............................630
+Benchmark 04 "Vibrance"...............................636
+Benchmark 05 "Vibrance"...............................651
+Benchmark "Vibrance" average........................ .639
+
+Benchmark 01 "Edges"................................ .827
+Benchmark 02 "Edges"................................ .822
+Benchmark 03 "Edges"................................ .829
+Benchmark 04 "Edges"................................ .835
+Benchmark 05 "Edges"................................ .813
+Benchmark "Edges" average.............................825
+
+Benchmark 01 "Microcontrast"........................ .690
+Benchmark 02 "Microcontrast"........................ .690
+Benchmark 03 "Microcontrast"........................ .676
+Benchmark 04 "Microcontrast"........................ .692
+Benchmark 05 "Microcontrast"........................ .693
+Benchmark "Microcontrast" average.....................688
+
+Benchmark 01 "CIECAM02"...............................755
+Benchmark 02 "CIECAM02"...............................741
+Benchmark 03 "CIECAM02"...............................750
+Benchmark 04 "CIECAM02"...............................763
+Benchmark 05 "CIECAM02"...............................750
+Benchmark "CIECAM02" average........................ .751
+
+Benchmark 01 "Impulse Noise Reduction".............. .651
+Benchmark 02 "Impulse Noise Reduction".............. .651
+Benchmark 03 "Impulse Noise Reduction".............. .683
+Benchmark 04 "Impulse Noise Reduction".............. .662
+Benchmark 05 "Impulse Noise Reduction".............. .648
+Benchmark "Impulse Noise Reduction" average...........659
+
+Benchmark 01 "Defringe"...............................722
+Benchmark 02 "Defringe"...............................723
+Benchmark 03 "Defringe"...............................734
+Benchmark 04 "Defringe"...............................737
+Benchmark 05 "Defringe"...............................730
+Benchmark "Defringe" average........................ .729
+
+Benchmark 01 "Noise Reduction"......................1.142
+Benchmark 02 "Noise Reduction"......................1.136
+Benchmark 03 "Noise Reduction"......................1.181
+Benchmark 04 "Noise Reduction"......................1.175
+Benchmark 05 "Noise Reduction"......................1.153
+Benchmark "Noise Reduction" average................ 1.157
+
+Benchmark 01 "Tone Mapping"........................ 3.127
+Benchmark 02 "Tone Mapping"........................ 3.138
+Benchmark 03 "Tone Mapping"........................ 3.100
+Benchmark 04 "Tone Mapping"........................ 3.120
+Benchmark 05 "Tone Mapping"........................ 3.153
+Benchmark "Tone Mapping" average....................3.127
+
+Benchmark 01 "Shadows/Highlights".....................642
+Benchmark 02 "Shadows/Highlights".....................635
+Benchmark 03 "Shadows/Highlights".....................634
+Benchmark 04 "Shadows/Highlights".....................634
+Benchmark 05 "Shadows/Highlights".....................634
+Benchmark "Shadows/Highlights" average.............. .635
+
+Benchmark 01 "Contrast by Detail Levels"............ .678
+Benchmark 02 "Contrast by Detail Levels"............ .690
+Benchmark 03 "Contrast by Detail Levels"............ .687
+Benchmark 04 "Contrast by Detail Levels"............ .669
+Benchmark 05 "Contrast by Detail Levels"............ .679
+Benchmark "Contrast by Detail Levels" average.........680
+
+Benchmark 01 "Raw Chromatic Aberration"...............729
+Benchmark 02 "Raw Chromatic Aberration"...............737
+Benchmark 03 "Raw Chromatic Aberration"...............730
+Benchmark 04 "Raw Chromatic Aberration"...............731
+Benchmark 05 "Raw Chromatic Aberration"...............710
+Benchmark "Raw Chromatic Aberration" average........ .727
+
+Benchmark total:                                   64.061
+
+Average times for each set:
+Auto Exposure.........................................640
+CIECAM02............................................ .751
+Contrast by Detail Levels.............................680
+Defringe............................................ .729
+Edges.................................................825
+Impulse Noise Reduction...............................659
+Microcontrast.........................................688
+Noise Reduction.................................... 1.157
+Raw Chromatic Aberration............................ .727
+Shadows/Highlights.................................. .635
+Sharpening - RL Deconvolution.........................885
+Sharpening - Unsharp Mask.............................664
+Tone Mapping........................................3.127
+Vibrance............................................ .639
+
+#####
+ubuntu-withno-omit-framepointer-id - Run 3
+2024-04-25 18:10:55
+#####
+
+Linux 6.8.0-31-generic #31-Ubuntu SMP PREEMPT_DYNAMIC Sat Apr 20 00:40:06 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+
+RawTherapee executable: /usr/bin/rawtherapee-cli
+[Could not find /usr/bin/AboutThisBuild.txt]
+
+Photo:   /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/colorspace_flowers.pef
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/00 - Exposure.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/01 - Sharpening.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/02 - Sharpening.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/03 - Vibrance.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/04 - SharpenEdge.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/05 - SharpenMicro.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/06 - Color appearance.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/07 - Impulse Denoising.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/08 - Defringing.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/09 - Directional Pyramid Denoising.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/10 - EPD.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/11 - Shadows & Highlights.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/12 - Directional Pyramid Equalizer.pp3
+Sidecar: /home/ubuntu/.phoronix-test-suite/installed-tests/system/rawtherapee-1.0.1/benchmarkRT/13 - RAW.pp3
+
+Benchmark 01 "Auto Exposure"........................ .654
+Benchmark 02 "Auto Exposure"........................ .638
+Benchmark 03 "Auto Exposure"........................ .637
+Benchmark 04 "Auto Exposure"........................ .650
+Benchmark 05 "Auto Exposure"........................ .646
+Benchmark "Auto Exposure" average.....................645
+
+Benchmark 01 "Sharpening - Unsharp Mask"............ .656
+Benchmark 02 "Sharpening - Unsharp Mask"............ .669
+Benchmark 03 "Sharpening - Unsharp Mask"............ .657
+Benchmark 04 "Sharpening - Unsharp Mask"............ .658
+Benchmark 05 "Sharpening - Unsharp Mask"............ .658
+Benchmark "Sharpening - Unsharp Mask" average.........659
+
+Benchmark 01 "Sharpening - RL Deconvolution"........ .885
+Benchmark 02 "Sharpening - RL Deconvolution"........ .895
+Benchmark 03 "Sharpening - RL Deconvolution"........ .898
+Benchmark 04 "Sharpening - RL Deconvolution"........ .888
+Benchmark 05 "Sharpening - RL Deconvolution"........ .948
+Benchmark "Sharpening - RL Deconvolution" average.....902
+
+Benchmark 01 "Vibrance"...............................637
+Benchmark 02 "Vibrance"...............................643
+Benchmark 03 "Vibrance"...............................649
+Benchmark 04 "Vibrance"...............................650
+Benchmark 05 "Vibrance"...............................640
+Benchmark "Vibrance" average........................ .643
+
+Benchmark 01 "Edges"................................ .812
+Benchmark 02 "Edges"................................ .816
+Benchmark 03 "Edges"................................ .816
+Benchmark 04 "Edges"................................ .831
+Benchmark 05 "Edges"................................ .825
+Benchmark "Edges" average.............................820
+
+Benchmark 01 "Microcontrast"........................ .683
+Benchmark 02 "Microcontrast"........................ .689
+Benchmark 03 "Microcontrast"........................ .691
+Benchmark 04 "Microcontrast"........................ .686
+Benchmark 05 "Microcontrast"........................ .690
+Benchmark "Microcontrast" average.....................687
+
+Benchmark 01 "CIECAM02"...............................746
+Benchmark 02 "CIECAM02"...............................759
+Benchmark 03 "CIECAM02"...............................758
+Benchmark 04 "CIECAM02"...............................762
+Benchmark 05 "CIECAM02"...............................761
+Benchmark "CIECAM02" average........................ .757
+
+Benchmark 01 "Impulse Noise Reduction".............. .666
+Benchmark 02 "Impulse Noise Reduction".............. .663
+Benchmark 03 "Impulse Noise Reduction".............. .667
+Benchmark 04 "Impulse Noise Reduction".............. .653
+Benchmark 05 "Impulse Noise Reduction".............. .649
+Benchmark "Impulse Noise Reduction" average...........659
+
+Benchmark 01 "Defringe"...............................736
+Benchmark 02 "Defringe"...............................721
+Benchmark 03 "Defringe"...............................736
+Benchmark 04 "Defringe"...............................766
+Benchmark 05 "Defringe"...............................734
+Benchmark "Defringe" average........................ .738
+
+Benchmark 01 "Noise Reduction"......................1.116
+Benchmark 02 "Noise Reduction"......................1.174
+Benchmark 03 "Noise Reduction"......................1.157
+Benchmark 04 "Noise Reduction"......................1.135
+Benchmark 05 "Noise Reduction"......................1.158
+Benchmark "Noise Reduction" average................ 1.148
+
+Benchmark 01 "Tone Mapping"........................ 3.099
+Benchmark 02 "Tone Mapping"........................ 3.116
+Benchmark 03 "Tone Mapping"........................ 3.123
+Benchmark 04 "Tone Mapping"........................ 3.135
+Benchmark 05 "Tone Mapping"........................ 3.194
+Benchmark "Tone Mapping" average....................3.133
+
+Benchmark 01 "Shadows/Highlights".....................644
+Benchmark 02 "Shadows/Highlights".....................643
+Benchmark 03 "Shadows/Highlights".....................631
+Benchmark 04 "Shadows/Highlights".....................633
+Benchmark 05 "Shadows/Highlights".....................632
+Benchmark "Shadows/Highlights" average.............. .636
+
+Benchmark 01 "Contrast by Detail Levels"............ .669
+Benchmark 02 "Contrast by Detail Levels"............ .667
+Benchmark 03 "Contrast by Detail Levels"............ .668
+Benchmark 04 "Contrast by Detail Levels"............ .684
+Benchmark 05 "Contrast by Detail Levels"............ .680
+Benchmark "Contrast by Detail Levels" average.........673
+
+Benchmark 01 "Raw Chromatic Aberration"...............722
+Benchmark 02 "Raw Chromatic Aberration"...............713
+Benchmark 03 "Raw Chromatic Aberration"...............717
+Benchmark 04 "Raw Chromatic Aberration"...............726
+Benchmark 05 "Raw Chromatic Aberration"...............713
+Benchmark "Raw Chromatic Aberration" average........ .718
+
+Benchmark total:                                   64.121
+
+Average times for each set:
+Auto Exposure.........................................645
+CIECAM02............................................ .757
+Contrast by Detail Levels.............................673
+Defringe............................................ .738
+Edges.................................................820
+Impulse Noise Reduction...............................659
+Microcontrast.........................................687
+Noise Reduction.................................... 1.148
+Raw Chromatic Aberration............................ .718
+Shadows/Highlights.................................. .636
+Sharpening - RL Deconvolution.........................902
+Sharpening - Unsharp Mask.............................659
+Tone Mapping........................................3.133
+Vibrance............................................ .643
+

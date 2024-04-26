@@ -1,0 +1,33 @@
+WARNING: Skipping /usr/lib/python3.12/dist-packages/charset_normalizer-3.3.2.dist-info due to invalid metadata entry 'name'
+Requirement already satisfied: cython in ./.local/lib/python3.12/site-packages (3.0.10)
+WARNING: Skipping /usr/lib/python3.12/dist-packages/charset_normalizer-3.3.2.dist-info due to invalid metadata entry 'name'
+warning: hexiom2.pxd:63:25: Declarations should not be declared inline.
+warning: spectralnorm.pxd:4:25: Declarations should not be declared inline.
+Compiling bpnn3.py because it changed.
+Compiling chaos.py because it changed.
+Compiling coroutines.py because it changed.
+Compiling fstrings.py because it changed.
+Compiling generators.py because it changed.
+Compiling hexiom2.py because it changed.
+Compiling meteor_contest.py because it changed.
+Compiling nbody.py because it changed.
+Compiling nqueens.py because it changed.
+Compiling richards.py because it changed.
+Compiling spectralnorm.py because it changed.
+Compiling util.py because it changed.
+[ 1/12] Cythonizing bpnn3.py
+[ 2/12] Cythonizing chaos.py
+[ 3/12] Cythonizing coroutines.py
+[ 4/12] Cythonizing fstrings.py
+[ 5/12] Cythonizing generators.py
+[ 6/12] Cythonizing hexiom2.py
+[ 7/12] Cythonizing meteor_contest.py
+[ 8/12] Cythonizing nbody.py
+[ 9/12] Cythonizing nqueens.py
+[10/12] Cythonizing richards.py
+[11/12] Cythonizing spectralnorm.py
+[12/12] Cythonizing util.py
+fstrings.c: In function ‘__pyx_pf_8fstrings_run.isra’:
+fstrings.c:2564:18: note: variable tracking size limit exceeded with ‘-fvar-tracking-assignments’, retrying without
+ 2564 | static PyObject *__pyx_pf_8fstrings_run(CYTHON_UNUSED PyObject *__pyx_self) {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~

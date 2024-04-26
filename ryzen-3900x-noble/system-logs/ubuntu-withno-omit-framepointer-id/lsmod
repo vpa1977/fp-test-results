@@ -1,0 +1,104 @@
+Module                  Size  Used by
+twofish_generic        20480  0
+twofish_avx_x86_64     49152  0
+twofish_x86_64_3way    32768  1 twofish_avx_x86_64
+twofish_x86_64         16384  2 twofish_x86_64_3way,twofish_avx_x86_64
+twofish_common         94208  4 twofish_x86_64,twofish_generic,twofish_x86_64_3way,twofish_avx_x86_64
+serpent_avx2           45056  0
+serpent_avx_x86_64     49152  1 serpent_avx2
+serpent_sse2_x86_64    49152  0
+serpent_generic        24576  3 serpent_avx2,serpent_sse2_x86_64,serpent_avx_x86_64
+algif_skcipher         16384  0
+af_alg                 32768  1 algif_skcipher
+tls                   151552  0
+qrtr                   53248  4
+cfg80211             1339392  0
+binfmt_misc            24576  1
+nls_iso8859_1          12288  1
+nouveau              3096576  0
+intel_rapl_msr         20480  0
+intel_rapl_common      40960  1 intel_rapl_msr
+snd_hda_codec_realtek   200704  1
+snd_hda_codec_generic   122880  1 snd_hda_codec_realtek
+snd_hda_codec_hdmi     94208  1
+mxm_wmi                12288  1 nouveau
+drm_gpuvm              45056  1 nouveau
+drm_exec               16384  2 drm_gpuvm,nouveau
+gpu_sched              61440  1 nouveau
+snd_hda_intel          61440  4
+drm_ttm_helper         12288  1 nouveau
+edac_mce_amd           28672  0
+snd_intel_dspcfg       36864  1 snd_hda_intel
+ttm                   110592  2 drm_ttm_helper,nouveau
+snd_intel_sdw_acpi     16384  1 snd_intel_dspcfg
+snd_hda_codec         217088  4 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec_realtek
+drm_display_helper    253952  1 nouveau
+snd_hda_core          151552  5 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek
+kvm_amd               208896  0
+cec                    98304  1 drm_display_helper
+snd_hwdep              20480  1 snd_hda_codec
+ccp                   143360  1 kvm_amd
+rc_core                77824  1 cec
+snd_pcm               200704  4 snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_core
+i2c_algo_bit           16384  1 nouveau
+video                  73728  1 nouveau
+joydev                 32768  0
+input_leds             12288  0
+snd_timer              49152  1 snd_pcm
+kvm                  1437696  1 kvm_amd
+snd                   147456  16 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hwdep,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek,snd_timer,snd_pcm
+soundcore              16384  1 snd
+irqbypass              12288  1 kvm
+i2c_piix4              32768  0
+k10temp                16384  0
+rapl                   20480  0
+wmi_bmof               12288  0
+mac_hid                12288  0
+msr                    12288  0
+dm_multipath           45056  0
+parport_pc             53248  0
+ppdev                  24576  0
+lp                     28672  0
+parport                77824  3 parport_pc,lp,ppdev
+efi_pstore             12288  0
+nfnetlink              20480  1
+dmi_sysfs              24576  0
+ip_tables              36864  0
+x_tables               69632  1 ip_tables
+autofs4                57344  2
+btrfs                2019328  0
+blake2b_generic        24576  0
+raid10                 73728  0
+raid456               192512  0
+async_raid6_recov      20480  1 raid456
+async_memcpy           16384  2 raid456,async_raid6_recov
+async_pq               20480  2 raid456,async_raid6_recov
+async_xor              16384  3 async_pq,raid456,async_raid6_recov
+async_tx               16384  5 async_pq,async_memcpy,async_xor,raid456,async_raid6_recov
+xor                    20480  2 async_xor,btrfs
+raid6_pq              126976  4 async_pq,btrfs,raid456,async_raid6_recov
+libcrc32c              12288  2 btrfs,raid456
+raid1                  57344  0
+raid0                  24576  0
+hid_generic            12288  0
+uas                    28672  0
+usbhid                 77824  0
+hid                   184320  2 usbhid,hid_generic
+usb_storage            90112  3 uas
+crct10dif_pclmul       12288  1
+crc32_pclmul           12288  0
+polyval_clmulni        12288  0
+polyval_generic        12288  1 polyval_clmulni
+ghash_clmulni_intel    16384  0
+sha256_ssse3           32768  0
+sha1_ssse3             32768  0
+ahci                   49152  0
+r8169                 118784  0
+libahci                57344  1 ahci
+xhci_pci               24576  0
+xhci_pci_renesas       20480  1 xhci_pci
+realtek                36864  1
+wmi                    32768  4 video,wmi_bmof,mxm_wmi,nouveau
+aesni_intel           356352  0
+crypto_simd            16384  5 serpent_avx2,serpent_sse2_x86_64,aesni_intel,serpent_avx_x86_64,twofish_avx_x86_64
+cryptd                 28672  2 crypto_simd,ghash_clmulni_intel

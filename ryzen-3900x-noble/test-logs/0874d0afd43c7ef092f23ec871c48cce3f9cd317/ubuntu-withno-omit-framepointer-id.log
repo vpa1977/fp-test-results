@@ -1,0 +1,126 @@
+#####
+ubuntu-withno-omit-framepointer-id - Run 1
+2024-04-25 18:17:05
+#####
+sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 24
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 102400MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 104857584 (8998831.31 per second)
+
+102399.98 MiB transferred (8787.92 MiB/sec)
+
+
+General statistics:
+    total time:                          11.6514s
+    total number of events:              104857584
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.00
+         max:                                   27.01
+         95th percentile:                        0.00
+         sum:                               260605.95
+
+Threads fairness:
+    events (avg/stddev):           4369066.0000/0.00
+    execution time (avg/stddev):   10.8586/0.06
+
+
+#####
+ubuntu-withno-omit-framepointer-id - Run 2
+2024-04-25 18:17:21
+#####
+sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 24
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 102400MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 104857584 (8995294.83 per second)
+
+102399.98 MiB transferred (8784.47 MiB/sec)
+
+
+General statistics:
+    total time:                          11.6560s
+    total number of events:              104857584
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.00
+         max:                                   21.34
+         95th percentile:                        0.00
+         sum:                               260658.99
+
+Threads fairness:
+    events (avg/stddev):           4369066.0000/0.00
+    execution time (avg/stddev):   10.8608/0.06
+
+
+#####
+ubuntu-withno-omit-framepointer-id - Run 3
+2024-04-25 18:17:34
+#####
+sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 24
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 102400MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 104857584 (9003097.28 per second)
+
+102399.98 MiB transferred (8792.09 MiB/sec)
+
+
+General statistics:
+    total time:                          11.6461s
+    total number of events:              104857584
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.00
+         max:                                   21.02
+         95th percentile:                        0.00
+         sum:                               260691.45
+
+Threads fairness:
+    events (avg/stddev):           4369066.0000/0.00
+    execution time (avg/stddev):   10.8621/0.05
+
+

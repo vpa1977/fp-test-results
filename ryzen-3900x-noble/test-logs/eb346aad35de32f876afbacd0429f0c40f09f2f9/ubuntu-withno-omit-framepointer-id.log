@@ -1,0 +1,104 @@
+#####
+ubuntu-withno-omit-framepointer-id - Run 1
+2024-04-25 15:53:15
+#####
+# Tests are approximate using memory only (no storage IO).
+PBKDF2-sha1      1792437 iterations per second for 256-bit key
+PBKDF2-sha256    3421128 iterations per second for 256-bit key
+PBKDF2-sha512    1640964 iterations per second for 256-bit key
+PBKDF2-ripemd160  840205 iterations per second for 256-bit key
+PBKDF2-whirlpool  703742 iterations per second for 256-bit key
+argon2i      10 iterations, 1048576 memory, 4 parallel threads (CPUs) for 256-bit key (requested 2000 ms time)
+argon2id     10 iterations, 1048576 memory, 4 parallel threads (CPUs) for 256-bit key (requested 2000 ms time)
+#     Algorithm |       Key |      Encryption |      Decryption
+        aes-cbc        128b      1123.0 MiB/s      2248.6 MiB/s
+    serpent-cbc        128b       120.0 MiB/s       676.4 MiB/s
+    twofish-cbc        128b       231.7 MiB/s       401.9 MiB/s
+        aes-cbc        256b       892.4 MiB/s      2118.9 MiB/s
+    serpent-cbc        256b       120.0 MiB/s       676.7 MiB/s
+    twofish-cbc        256b       231.5 MiB/s       400.2 MiB/s
+        aes-xts        256b      2065.4 MiB/s      2077.2 MiB/s
+    serpent-xts        256b       602.3 MiB/s       590.7 MiB/s
+    twofish-xts        256b       372.1 MiB/s       370.4 MiB/s
+        aes-xts        512b      1971.3 MiB/s      1967.6 MiB/s
+    serpent-xts        512b       602.2 MiB/s       588.9 MiB/s
+    twofish-xts        512b       371.4 MiB/s       369.8 MiB/s
+
+#####
+ubuntu-withno-omit-framepointer-id - Run 2
+2024-04-25 15:53:57
+#####
+# Tests are approximate using memory only (no storage IO).
+PBKDF2-sha1      1721799 iterations per second for 256-bit key
+PBKDF2-sha256    3307810 iterations per second for 256-bit key
+PBKDF2-sha512    1581562 iterations per second for 256-bit key
+PBKDF2-ripemd160  815377 iterations per second for 256-bit key
+PBKDF2-whirlpool  678250 iterations per second for 256-bit key
+argon2i      10 iterations, 1048576 memory, 4 parallel threads (CPUs) for 256-bit key (requested 2000 ms time)
+argon2id     10 iterations, 1048576 memory, 4 parallel threads (CPUs) for 256-bit key (requested 2000 ms time)
+#     Algorithm |       Key |      Encryption |      Decryption
+        aes-cbc        128b      1135.7 MiB/s      2262.1 MiB/s
+    serpent-cbc        128b       121.1 MiB/s       683.7 MiB/s
+    twofish-cbc        128b       233.1 MiB/s       405.4 MiB/s
+        aes-cbc        256b       902.7 MiB/s      2145.0 MiB/s
+    serpent-cbc        256b       121.1 MiB/s       683.8 MiB/s
+    twofish-cbc        256b       232.6 MiB/s       405.1 MiB/s
+        aes-xts        256b      2072.7 MiB/s      2090.5 MiB/s
+    serpent-xts        256b       608.6 MiB/s       596.4 MiB/s
+    twofish-xts        256b       379.6 MiB/s       391.2 MiB/s
+        aes-xts        512b      2069.5 MiB/s      2067.8 MiB/s
+    serpent-xts        512b       636.1 MiB/s       618.9 MiB/s
+    twofish-xts        512b       392.5 MiB/s       390.9 MiB/s
+
+#####
+ubuntu-withno-omit-framepointer-id - Run 3
+2024-04-25 15:54:39
+#####
+# Tests are approximate using memory only (no storage IO).
+PBKDF2-sha1      1804777 iterations per second for 256-bit key
+PBKDF2-sha256    3477864 iterations per second for 256-bit key
+PBKDF2-sha512    1661768 iterations per second for 256-bit key
+PBKDF2-ripemd160  852500 iterations per second for 256-bit key
+PBKDF2-whirlpool  700919 iterations per second for 256-bit key
+argon2i      10 iterations, 1048576 memory, 4 parallel threads (CPUs) for 256-bit key (requested 2000 ms time)
+argon2id     10 iterations, 1048576 memory, 4 parallel threads (CPUs) for 256-bit key (requested 2000 ms time)
+#     Algorithm |       Key |      Encryption |      Decryption
+        aes-cbc        128b      1185.4 MiB/s      2385.5 MiB/s
+    serpent-cbc        128b       126.5 MiB/s       716.6 MiB/s
+    twofish-cbc        128b       243.9 MiB/s       424.6 MiB/s
+        aes-cbc        256b       942.1 MiB/s      2244.9 MiB/s
+    serpent-cbc        256b       126.7 MiB/s       715.3 MiB/s
+    twofish-cbc        256b       243.5 MiB/s       423.3 MiB/s
+        aes-xts        256b      2181.3 MiB/s      2197.6 MiB/s
+    serpent-xts        256b       637.2 MiB/s       623.7 MiB/s
+    twofish-xts        256b       392.7 MiB/s       391.5 MiB/s
+        aes-xts        512b      2083.2 MiB/s      2083.9 MiB/s
+    serpent-xts        512b       637.0 MiB/s       619.6 MiB/s
+    twofish-xts        512b       393.1 MiB/s       391.4 MiB/s
+
+#####
+ubuntu-withno-omit-framepointer-id - Run 4
+2024-04-25 15:55:20
+#####
+# Tests are approximate using memory only (no storage IO).
+PBKDF2-sha1      1771243 iterations per second for 256-bit key
+PBKDF2-sha256    3421128 iterations per second for 256-bit key
+PBKDF2-sha512    1640964 iterations per second for 256-bit key
+PBKDF2-ripemd160  840205 iterations per second for 256-bit key
+PBKDF2-whirlpool  701858 iterations per second for 256-bit key
+argon2i      10 iterations, 1048576 memory, 4 parallel threads (CPUs) for 256-bit key (requested 2000 ms time)
+argon2id     10 iterations, 1048576 memory, 4 parallel threads (CPUs) for 256-bit key (requested 2000 ms time)
+#     Algorithm |       Key |      Encryption |      Decryption
+        aes-cbc        128b      1175.9 MiB/s      2346.2 MiB/s
+    serpent-cbc        128b       125.0 MiB/s       707.2 MiB/s
+    twofish-cbc        128b       241.3 MiB/s       419.0 MiB/s
+        aes-cbc        256b       932.9 MiB/s      2212.7 MiB/s
+    serpent-cbc        256b       124.9 MiB/s       703.0 MiB/s
+    twofish-cbc        256b       241.0 MiB/s       419.5 MiB/s
+        aes-xts        256b      2154.1 MiB/s      2168.7 MiB/s
+    serpent-xts        256b       629.3 MiB/s       616.8 MiB/s
+    twofish-xts        256b       388.3 MiB/s       387.1 MiB/s
+        aes-xts        512b      2047.0 MiB/s      2048.6 MiB/s
+    serpent-xts        512b       625.4 MiB/s       616.3 MiB/s
+    twofish-xts        512b       388.2 MiB/s       386.5 MiB/s
+
