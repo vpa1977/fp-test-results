@@ -3,7 +3,7 @@
 <PhoronixTestSuite>
   <Generated>
     <Title>baseline-fp-opt-name</Title>
-    <LastModified>2024-04-26 07:34:54</LastModified>
+    <LastModified>2024-04-27 23:03:33</LastModified>
     <TestClient>Phoronix Test Suite v10.8.4</TestClient>
     <Description>Intel Core i5-1135G7 testing with a LENOVO Lenovo V15 G2 ITL LNVNB161216 (GGCN50WW BIOS) and Intel TigerLake-LP GT2 [Iris Xe ] on Ubuntu 23.10 via the Phoronix Test Suite.</Description>
     <Notes></Notes>
@@ -1515,6 +1515,18 @@
         <RawString>23.846:24.356:25.107:25.1:25.068</RawString>
         <JSON>{"test-run-times":"23.85:24.36:25.11:25.10:25.07"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>10.032</Value>
+        <RawString>9.986:10.075:10.035</RawString>
+        <JSON>{"test-run-times":"9.99:10.08:10.04"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>9.834</Value>
+        <RawString>9.904:9.795:9.804</RawString>
+        <JSON>{"test-run-times":"9.90:9.80:9.80"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -1538,6 +1550,18 @@
         <Value>7.339</Value>
         <RawString>7.402:7.329:7.305:7.319:7.342</RawString>
         <JSON>{"test-run-times":"7.40:7.33:7.30:7.32:7.34"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>8.903</Value>
+        <RawString>8.934:8.834:8.906:8.855:8.986</RawString>
+        <JSON>{"test-run-times":"8.93:8.83:8.91:8.85:8.99"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>8.954</Value>
+        <RawString>8.916:8.963:8.821:9.09:8.982</RawString>
+        <JSON>{"test-run-times":"8.92:8.96:8.82:9.09:8.98"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1563,6 +1587,18 @@
         <RawString></RawString>
         <JSON>{"test-run-times":"0.10:0.03:0.03","error":"The test quit with a non-zero exit status."}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.04:0.04:0.04","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.04:0.04:0.04","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -1586,6 +1622,18 @@
         <Value>83.456</Value>
         <RawString>83.341:83.467:83.56</RawString>
         <JSON>{"install-footnote":"RawTherapee, version 5.9, command line.","test-run-times":"84.22:84.35:84.43"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>63.054</Value>
+        <RawString>63.135:63.13:62.897</RawString>
+        <JSON>{"install-footnote":"RawTherapee, version 5.9, command line.","test-run-times":"64.15:64.14:63.91"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>62.832</Value>
+        <RawString>62.831:62.755:62.91</RawString>
+        <JSON>{"install-footnote":"RawTherapee, version 5.9, command line.","test-run-times":"63.85:63.78:63.93"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1611,6 +1659,18 @@
         <RawString>20.231:20.142:20.128</RawString>
         <JSON>{"install-footnote":"rsvg-convert version 2.54.7","test-run-times":"20.23:20.14:20.13"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>21.978</Value>
+        <RawString>22.103:21.883:21.947</RawString>
+        <JSON>{"install-footnote":"rsvg-convert version 2.54.7","test-run-times":"22.10:21.88:21.95"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>22.760</Value>
+        <RawString>22.873:22.724:22.684</RawString>
+        <JSON>{"install-footnote":"rsvg-convert version 2.54.7","test-run-times":"22.87:22.72:22.68"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -1634,6 +1694,18 @@
         <Value></Value>
         <RawString></RawString>
         <JSON>{"test-run-times":"45.04:45.04:45.03","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -levent_openssl -levent -lcrypto -lssl -lpthread -lz -lpcre"},"test-run-times":"45.03:45.03:45.03","error":"The test run did not produce a result."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -levent_openssl -levent -lcrypto -lssl -lpthread -lz -lpcre"},"test-run-times":"45.03:45.03:45.03","error":"The test run did not produce a result."}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1767,6 +1839,18 @@
         <RawString>22.044:22.029:22.029</RawString>
         <JSON>{"test-run-times":"22.04:22.03:22.03"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>23.431</Value>
+        <RawString>23.529:23.417:23.346</RawString>
+        <JSON>{"test-run-times":"23.53:23.42:23.35"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>23.471</Value>
+        <RawString>23.337:23.482:23.593</RawString>
+        <JSON>{"test-run-times":"23.34:23.48:23.59"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -1839,6 +1923,18 @@
         <RawString>49.325:49.2673:49.3283</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.38:1.38:1.38"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>92.7902</Value>
+        <RawString>94.0469:93.9634:90.3604</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.29:1.29:1.30"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>92.9202</Value>
+        <RawString>93.6604:93.8591:91.2412</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.30:1.29:1.31"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -1868,6 +1964,18 @@
         <Value>17.1314</Value>
         <RawString>16.664:17.4624:17.2678</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"4.28:4.29:4.29"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>17.1928</Value>
+        <RawString>17.1846:17.2063:17.1875</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"4.28:4.27:4.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>16.6098</Value>
+        <RawString>16.6749:16.5464:16.608</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"4.29:4.28:4.30"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1899,6 +2007,18 @@
         <RawString>6.21157:5.96498:5.96438</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.29:1.27:1.27"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>5.91137</Value>
+        <RawString>5.90266:5.91967:5.91177</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.29:1.27:1.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>6.00751</Value>
+        <RawString>5.95275:6.13726:5.93252</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.27:1.28:1.27"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -1928,6 +2048,18 @@
         <Value>41.7884</Value>
         <RawString>41.0383:42.0523:42.2747</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.30:2.30:2.31"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>42.0860</Value>
+        <RawString>41.71:42.7268:41.8211</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.28:2.31:2.29"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>40.5851</Value>
+        <RawString>40.2251:40.3427:41.1874</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.29:2.27:2.29"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1977,6 +2109,18 @@
         <RawString>42.28:42.363:42.2866</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"3.50:3.51:3.50"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>79.2632</Value>
+        <RawString>78.4849:80.8997:78.4049</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"3.41:3.35:3.40"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>78.1601</Value>
+        <RawString>78.1329:78.2398:78.1075</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"3.40:3.40:3.39"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -2006,6 +2150,18 @@
         <Value>24.0111</Value>
         <RawString>23.8897:24.0872:24.0564</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.28:1.28:1.29"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>22.7737</Value>
+        <RawString>22.7:22.9911:22.63</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.27:1.27:1.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>23.7166</Value>
+        <RawString>23.4732:24.0863:23.5902</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.28:1.28:1.28"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -2037,6 +2193,18 @@
         <RawString>8.88658:8.81317:8.81469</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.28:1.28:1.28"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>6.81276</Value>
+        <RawString>6.80342:6.81839:6.81646</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.27:1.27:1.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>7.04398</Value>
+        <RawString>7.01543:7.09512:7.0214</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.28:1.28:1.28"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -2066,6 +2234,18 @@
         <Value>32.0383</Value>
         <RawString>31.563:32.4079:32.144</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.29:1.29:1.28"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>30.1289</Value>
+        <RawString>30.1612:30.081:30.1445</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.28:1.28:1.28"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>27.7339</Value>
+        <RawString>27.6939:27.5691:27.9387</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.27:1.27:1.27"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -2115,6 +2295,18 @@
         <RawString>5.02789:5.01116:4.98529</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.36:1.36:1.36"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>7.47792</Value>
+        <RawString>7.4501:7.52978:7.45387</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.27:1.27:1.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>7.54558</Value>
+        <RawString>7.48397:7.58116:7.5716</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.28:1.27:1.27"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -2144,6 +2336,18 @@
         <Value>42.1008</Value>
         <RawString>42.2282:42.2291:41.8452</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.29:1.29:1.28"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>42.0324</Value>
+        <RawString>42.6007:41.1087:42.3877</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.28:1.27:1.28"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>39.9546</Value>
+        <RawString>39.6347:40.156:40.073</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.27:1.27:1.27"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -2175,6 +2379,18 @@
         <RawString>34.263:36.184:36.2008:37.2831:35.8529:35.8372:35.9516</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.27:1.29:1.29:1.29:1.28:1.29:1.28"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>34.4147</Value>
+        <RawString>34.6889:34.2298:34.3253</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.27:1.27:1.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>34.3169</Value>
+        <RawString>34.0915:34.7819:34.0772</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.27:1.27:1.27"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -2204,6 +2420,18 @@
         <Value>47.4232</Value>
         <RawString>47.418:47.4246:47.427</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.28:1.29:1.28"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>44.9497</Value>
+        <RawString>44.7868:45.2784:44.7838</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.27:1.27:1.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>46.9027</Value>
+        <RawString>47.1776:46.8921:46.6384</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.28:1.28:1.28"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -2235,6 +2463,18 @@
         <RawString>6.79791:6.97586:6.79784</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.27:1.28:1.27"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>6.00967</Value>
+        <RawString>5.89193:6.06883:6.06824</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.27:1.28:1.28"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>5.90083</Value>
+        <RawString>5.93283:5.83791:5.93176</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.27:1.27:1.27"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -2264,6 +2504,18 @@
         <Value>42.6864</Value>
         <RawString>42.8215:42.804:42.4337</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.36:2.36:2.35"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>41.8013</Value>
+        <RawString>42.3665:42.168:40.8693</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.35:2.35:2.31"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>40.4518</Value>
+        <RawString>40.5372:40.0811:40.7371</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.30:2.29:2.31"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -2312,6 +2564,18 @@
         <Value>4.8158</Value>
         <RawString>4.8103:4.8187:4.8185</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.37:1.36:1.37"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>5.88892</Value>
+        <RawString>5.87231:5.89493:5.89953</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.27:1.27:1.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>6.69292</Value>
+        <RawString>6.69929:6.68439:6.69509</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.27:1.27:1.27"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -3540,42 +3804,6 @@
     </Data>
   </Result>
   <Result>
-    <Identifier>pts/dav1d-1.14.0</Identifier>
-    <Title>dav1d</Title>
-    <AppVersion>1.2.1</AppVersion>
-    <Arguments>-i summer_nature_4k.ivf</Arguments>
-    <Description>Video Input: Summer Nature 4K</Description>
-    <Scale>FPS</Scale>
-    <Proportion>HIB</Proportion>
-    <DisplayFormat>BAR_GRAPH</DisplayFormat>
-    <Data>
-      <Entry>
-        <Identifier>desktop-mantic</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lm"},"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: Failed to open input file summer_nature_4k.ivf: No such file or directory"}</JSON>
-      </Entry>
-    </Data>
-  </Result>
-  <Result>
-    <Identifier>pts/dav1d-1.14.0</Identifier>
-    <Title>dav1d</Title>
-    <AppVersion>1.2.1</AppVersion>
-    <Arguments>-i summer_nature_1080p.ivf</Arguments>
-    <Description>Video Input: Summer Nature 1080p</Description>
-    <Scale>FPS</Scale>
-    <Proportion>HIB</Proportion>
-    <DisplayFormat>BAR_GRAPH</DisplayFormat>
-    <Data>
-      <Entry>
-        <Identifier>desktop-mantic</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -lm"},"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: Failed to open input file summer_nature_1080p.ivf: No such file or directory"}</JSON>
-      </Entry>
-    </Data>
-  </Result>
-  <Result>
     <Identifier>pts/kvazaar-1.2.0</Identifier>
     <Title>Kvazaar</Title>
     <AppVersion>2.2</AppVersion>
@@ -4065,6 +4293,12 @@
         <RawString>18.08:17.97:17.88</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"33.46:33.63:33.81"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>19.96</Value>
+        <RawString>20.07:19.95:19.86</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"30.08:30.27:30.38"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4100,6 +4334,12 @@
         <Value>27.72</Value>
         <RawString>27.6:27.68:27.87</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"21.90:21.85:21.70"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>58.81</Value>
+        <RawString>57.6:61.56:60.24:57.64:57.66:59.19:58.53:58.05</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"10.49:9.84:10.05:10.51:10.49:10.23:10.34:10.43"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -4228,12 +4468,6 @@
         <JSON>{"test-run-times":"0.01:0.01:0.00","error":"The test quit with a non-zero exit status. E: .\/stockfish: 3: .\/stockfish: not found"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: .\/stockfish: 3: .\/stockfish: not found"}</JSON>
-      </Entry>
-      <Entry>
         <Identifier>server-rockman-mantic-no-omit-framepointer</Identifier>
         <Value>159148004</Value>
         <RawString>169596070:160714389:159524429:167165843:147102275:150370413:161248777:165279834:165104803:155616686:148522676:154591798:162521418:148759215:171101436</RawString>
@@ -4244,6 +4478,18 @@
         <Value>160836446</Value>
         <RawString>147967929:168572666:149320927:176990009:156789335:178110448:164066227:152407416:161279650:153551513:155834178:151870694:169820837:171243169:154721698</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lgcov -m64 -lpthread -O2 -fno-exceptions -std=c++17 -pedantic -O3 -msse -msse3 -mpopcnt -mavx2 -mavx512f -mavx512bw -mavx512vnni -mavx512dq -mavx512vl -msse4.1 -mssse3 -msse2 -mbmi2 -flto -fno-peel-loops -fno-tracer -flto=jobserver"},"test-run-times":"72.64:97.58:79.89:117.00:82.71:93.06:84.99:81.31:76.75:81.14:76.00:77.33:85.89:100.09:65.91"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>36618974</Value>
+        <RawString>37581268:33974230:36177501:36861488:36282439:37985074:36307472:35624809:37748615:37214672:36648612:37350821:35215156:37176249:37136211</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lgcov -m64 -lpthread -O2 -fno-exceptions -std=c++17 -pedantic -O3 -msse -msse3 -mpopcnt -mavx2 -msse4.1 -mssse3 -msse2 -flto -fno-peel-loops -fno-tracer -flto=jobserver"},"test-run-times":"81.08:86.82:84.08:73.99:85.36:93.03:84.75:87.75:79.79:82.03:75.27:81.29:88.20:80.69:88.81"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>37480601</Value>
+        <RawString>38583627:35405913:37547473:37383711:38223267:37314462:38573536:37302141:36926034:37545850</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lgcov -m64 -lpthread -O2 -fno-exceptions -std=c++17 -pedantic -O3 -msse -msse3 -mpopcnt -mavx2 -msse4.1 -mssse3 -msse2 -flto -fno-peel-loops -fno-tracer -flto=jobserver"},"test-run-times":"79.27:75.88:80.90:77.32:70.55:78.53:76.74:80.18:85.79:81.05"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -4280,6 +4526,18 @@
         <Value>143067660</Value>
         <RawString>142678004:147832400:140913216:140847020</RawString>
         <JSON>{"test-run-times":"148.14:147.84:127.14:137.48"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>40757116</Value>
+        <RawString>40926816:41177125:40167407</RawString>
+        <JSON>{"test-run-times":"172.07:139.24:146.61"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>40605326</Value>
+        <RawString>41379994:40033772:40402211</RawString>
+        <JSON>{"test-run-times":"129.52:156.01:145.20"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -4821,6 +5079,18 @@
         <RawString>365.73:366.08:364.44</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.51:30.48:29.87"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>364.02</Value>
+        <RawString>363.63:364.36:364.07</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.28:30.13:30.39"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>364.81</Value>
+        <RawString>361.8:371.09:361.55</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"30.34:29.89:29.51"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4844,6 +5114,18 @@
         <Value>4052.91</Value>
         <RawString>4050.92:4046.7:4061.1</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.49:30.23:29.53"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>4353.89</Value>
+        <RawString>4359.01:4351.14:4351.51</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"30.12:29.29:30.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>4297.67</Value>
+        <RawString>4299.19:4294.88:4298.95</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"30.46:29.64:30.54"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -4869,6 +5151,18 @@
         <RawString>18340:18360:18350</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.92:30.04:29.95"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>18123</Value>
+        <RawString>18100:18080:18190</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.88:29.92:30.37"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>18430</Value>
+        <RawString>18560:18370:18360</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"30.01:29.98:29.61"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4892,6 +5186,18 @@
         <Value>39630</Value>
         <RawString>39590:39690:39610</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.72:30.47:29.51"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>40073</Value>
+        <RawString>39790:40630:39800</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"30.12:29.90:29.81"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>40157</Value>
+        <RawString>40120:40110:40240</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"30.03:29.70:30.33"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5247,6 +5553,18 @@
         <RawString>2459.7:2352.1:2481.8:2496.1:2465.8</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.89:63.19:62.77:63.47:62.69"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>2535.8</Value>
+        <RawString>2534:2533.6:2539.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.53:62.71:62.79"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>2576.1</Value>
+        <RawString>2611.6:2578.9:2537.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.25:62.67:62.50"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5270,6 +5588,18 @@
         <Value>1023.6</Value>
         <RawString>1023.5:1022:1023.4:1023.7:1025.2</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.89:63.19:62.77:63.47:62.69"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>1471.9</Value>
+        <RawString>1473.8:1472.2:1469.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.53:62.71:62.79"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>1474.2</Value>
+        <RawString>1487.3:1474.4:1460.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.25:62.67:62.50"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5319,6 +5649,18 @@
         <RawString>805.7:811:788.3</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"63.08:63.45:63.27"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>551.5</Value>
+        <RawString>545.6:556.6:552.2</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.56:62.63:63.11"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>556.3</Value>
+        <RawString>560.5:554.6:553.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.12:62.09:62.91"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5342,6 +5684,18 @@
         <Value>1070.8</Value>
         <RawString>1069.4:1070.4:1072.6</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"63.08:63.45:63.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>1561.0</Value>
+        <RawString>1559.5:1554.6:1568.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.56:62.63:63.11"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>1568.7</Value>
+        <RawString>1576.7:1563.7:1565.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.12:62.09:62.91"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5367,6 +5721,18 @@
         <RawString>199.4:198.9:198.1</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"63.24:62.32:63.40"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>161.8</Value>
+        <RawString>161.2:162.6:161.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"61.84:63.19:63.61"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>165.5</Value>
+        <RawString>166:163.4:167</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"63.44:63.15:63.39"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5390,6 +5756,18 @@
         <Value>1000.4</Value>
         <RawString>1002.3:1000.2:998.8</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"63.24:62.32:63.40"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>1581.7</Value>
+        <RawString>1577.7:1594:1573.3</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"61.84:63.19:63.61"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>1597.9</Value>
+        <RawString>1600.1:1595.9:1597.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"63.44:63.15:63.39"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5415,6 +5793,18 @@
         <RawString>11.5:11.4:11.7</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"70.23:69.87:68.57"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>15.6</Value>
+        <RawString>15.2:15.7:15.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"74.43:73.62:73.39"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>15.5</Value>
+        <RawString>15.2:15.5:16.1:15.2:15.3</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"74.33:73.95:72.85:73.95:74.13"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5438,6 +5828,18 @@
         <Value>866.1</Value>
         <RawString>865.5:864:868.7</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"70.23:69.87:68.57"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>1401.2</Value>
+        <RawString>1399.5:1399.8:1404.2</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"74.43:73.62:73.39"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>1364.8</Value>
+        <RawString>1374.8:1359.3:1354.1:1321.8:1414</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"74.33:73.95:72.85:73.95:74.13"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5463,6 +5865,18 @@
         <RawString>319.7:320.2:280.3:316.2:289.9:283.4:328.5:334.2:314.1:329:333.2:319.8:304.6:329.6:320.4</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.36:62.71:63.20:64.06:63.07:62.75:64.28:64.42:62.74:62.80:62.80:63.19:63.51:63.44:63.45"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>506.2</Value>
+        <RawString>512.4:505.4:500.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"63.14:63.10:61.82"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>523.3</Value>
+        <RawString>521.4:522.5:526.1</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.80:62.52:62.34"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5486,6 +5900,18 @@
         <Value>1049.4</Value>
         <RawString>1049.5:1051.9:1049.2:1049.3:1047.9:1047.5:1051.9:1047.1:1049.9:1047.6:1048.6:1051:1050.9:1047.5:1050.6</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.36:62.71:63.20:64.06:63.07:62.75:64.28:64.42:62.74:62.80:62.80:63.19:63.51:63.44:63.45"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>1478.9</Value>
+        <RawString>1457.8:1501.7:1477.1</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"63.14:63.10:61.82"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>1506.5</Value>
+        <RawString>1511.3:1509.3:1499</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.80:62.52:62.34"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5511,6 +5937,18 @@
         <RawString>338.3:450.1:392.5:389.7:408.4:365.8:413.4:485.3:374.8:373.8:386.7:410.5:382.9:424.3:360.8</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"63.59:63.57:64.15:63.51:62.81:63.85:63.49:63.79:64.01:63.44:63.22:62.89:63.11:63.43:64.50"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>517.3</Value>
+        <RawString>517.3:516.8:517.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.55:62.87:63.17"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>520.1</Value>
+        <RawString>519:518.2:523</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.96:62.69:62.80"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5534,6 +5972,18 @@
         <Value>1066.8</Value>
         <RawString>1067.6:1067.3:1065.6:1069.2:1061.3:1068.1:1067.5:1065.8:1060.6:1068.8:1069.5:1069.4:1066.7:1066.3:1067.6</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"63.59:63.57:64.15:63.51:62.81:63.85:63.49:63.79:64.01:63.44:63.22:62.89:63.11:63.43:64.50"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>1584.0</Value>
+        <RawString>1570:1608.3:1573.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.55:62.87:63.17"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>1593.2</Value>
+        <RawString>1588.5:1605.9:1585.2</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.96:62.69:62.80"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5559,6 +6009,18 @@
         <RawString>6.31:6.29:5.9:6:6.45:6.31:6.31:6.31:6.02:6.32:6.32:6.01:5.98:5.91:6.32</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"65.93:66.33:67.58:67.24:65.13:65.66:64.95:65.24:67.24:65.99:65.16:67.26:66.81:68.39:66.16"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>8.18</Value>
+        <RawString>8.12:8.19:8.24</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"83.80:83.86:83.58"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>8.27</Value>
+        <RawString>8.3:8.27:8.25</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"83.08:83.25:83.66"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5582,6 +6044,18 @@
         <Value>848.4</Value>
         <RawString>848.6:848.8:849.6:847.6:848.8:844:848.3:848.4:848:848.4:849.3:847.8:850:848.3:849.6</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"65.93:66.33:67.58:67.24:65.13:65.66:64.95:65.24:67.24:65.99:65.16:67.26:66.81:68.39:66.16"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>1300.4</Value>
+        <RawString>1272.5:1315.3:1313.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"83.80:83.86:83.58"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>1317.5</Value>
+        <RawString>1316.2:1319.2:1317.1</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"83.08:83.25:83.66"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5607,6 +6081,12 @@
         <RawString>118.68:116.52:116.28</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread"},"test-run-times":"30.50:31.06:31.13"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>83.74</Value>
+        <RawString>84.11:83.53:83.57</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread"},"test-run-times":"42.90:43.19:43.17"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5630,6 +6110,288 @@
         <Value>288.37</Value>
         <RawString>286.84:287.94:290.33</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread"},"test-run-times":"12.64:12.59:12.49"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>330.32</Value>
+        <RawString>331.01:330.82:329.12</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread"},"test-run-times":"10.91:10.91:10.97"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/stress-ng-1.11.0</Identifier>
+    <Title>Stress-NG</Title>
+    <AppVersion>0.16.04</AppVersion>
+    <Arguments>--crypt 0</Arguments>
+    <Description>Test: Crypto</Description>
+    <Scale>Bogo Ops/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>31928.53</Value>
+        <RawString>31984.19:31926.69:31874.72</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lm -lEGL -lGLESv2 -latomic -lc -lcrypt -ldl -lgbm -ljpeg -lmpfr -lpthread -lrt -lz"},"test-run-times":"30.04:30.04:30.04"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>31795.29</Value>
+        <RawString>31835.39:31788.06:31762.43</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lm -lEGL -lGLESv2 -latomic -lc -lcrypt -ldl -lgbm -ljpeg -lmpfr -lpthread -lrt -lz"},"test-run-times":"30.04:30.04:30.04"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/stress-ng-1.11.0</Identifier>
+    <Title>Stress-NG</Title>
+    <AppVersion>0.16.04</AppVersion>
+    <Arguments>--cpu 0 --cpu-method all</Arguments>
+    <Description>Test: CPU Stress</Description>
+    <Scale>Bogo Ops/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>30882.92</Value>
+        <RawString>30912.52:30868.82:30867.41</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lm -lEGL -lGLESv2 -latomic -lc -lcrypt -ldl -lgbm -ljpeg -lmpfr -lpthread -lrt -lz"},"test-run-times":"30.05:30.04:30.04"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>30910.85</Value>
+        <RawString>30922.54:30904.56:30905.45</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lm -lEGL -lGLESv2 -latomic -lc -lcrypt -ldl -lgbm -ljpeg -lmpfr -lpthread -lrt -lz"},"test-run-times":"30.04:30.04:30.04"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ctx-clock-1.0.0</Identifier>
+    <Title>ctx_clock</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Context Switch Time</Description>
+    <Scale>Clocks</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>456</Value>
+        <RawString>456:456:456</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2"},"test-run-times":"1.43:1.43:1.41"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>456</Value>
+        <RawString>456:456:456</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2"},"test-run-times":"1.41:1.42:1.40"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/sysbench-1.1.0</Identifier>
+    <Title>Sysbench</Title>
+    <AppVersion>1.0.20</AppVersion>
+    <Arguments>memory run</Arguments>
+    <Description>Test: Memory</Description>
+    <Scale>MiB/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>8825.89</Value>
+        <RawString>8814.62:8830.15:8832.89</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -lm"},"test-run-times":"11.62:11.61:11.60"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>8842.32</Value>
+        <RawString>8831.04:8849.27:8846.65</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -lm"},"test-run-times":"11.60:11.58:11.58"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/sysbench-1.1.0</Identifier>
+    <Title>Sysbench</Title>
+    <AppVersion>1.0.20</AppVersion>
+    <Arguments>cpu run</Arguments>
+    <Description>Test: CPU</Description>
+    <Scale>Events Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>26064.55</Value>
+        <RawString>26132.24:26055.61:26005.79</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -lm"},"test-run-times":"90.01:90.01:90.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>26033.30</Value>
+        <RawString>26120.52:25999.63:25979.76</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -lm"},"test-run-times":"90.01:90.01:90.01"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pybench-1.1.3</Identifier>
+    <Title>PyBench</Title>
+    <AppVersion>2018-02-16</AppVersion>
+    <Arguments></Arguments>
+    <Description>Total For Average Test Times</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>801</Value>
+        <RawString>815:797:791</RawString>
+        <JSON>{"test-run-times":"18.95:18.46:18.46"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>793</Value>
+        <RawString>772:802:805</RawString>
+        <JSON>{"test-run-times":"18.05:18.71:18.69"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/appleseed-1.0.1</Identifier>
+    <Title>Appleseed</Title>
+    <AppVersion>2.0 Beta</AppVersion>
+    <Arguments>emily.appleseed</Arguments>
+    <Description>Scene: Emily</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>273.695155</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"551.49"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>273.417875</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"549.93"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/appleseed-1.0.1</Identifier>
+    <Title>Appleseed</Title>
+    <AppVersion>2.0 Beta</AppVersion>
+    <Arguments>disney_material_1.appleseed</Arguments>
+    <Description>Scene: Disney Material</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>167.580962</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"334.50"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>167.775994</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"334.19"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/phpbench-1.1.6</Identifier>
+    <Title>PHPBench</Title>
+    <AppVersion>0.8.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>PHP Benchmark Suite</Description>
+    <Scale>Score</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>762811</Value>
+        <RawString>744874:784183:750134:781577:753289</RawString>
+        <JSON>{"test-run-times":"26.87:25.52:26.68:25.61:26.57"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>770349</Value>
+        <RawString>759073:792500:759475</RawString>
+        <JSON>{"test-run-times":"26.37:25.26:26.36"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/git-1.1.0</Identifier>
+    <Title>Git</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Complete Common Git Commands</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>46.127</Value>
+        <RawString>46.972:45.164:46.244</RawString>
+        <JSON>{"install-footnote":"git version 2.40.1","test-run-times":"46.97:45.16:46.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>45.854</Value>
+        <RawString>46.187:46.358:45.018</RawString>
+        <JSON>{"install-footnote":"git version 2.40.1","test-run-times":"46.19:46.36:45.02"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/dav1d-1.15.1</Identifier>
+    <Title>dav1d</Title>
+    <AppVersion>1.4</AppVersion>
+    <Arguments>-i chimera_8b_1080p.ivf</Arguments>
+    <Description>Video Input: Chimera 1080p</Description>
+    <Scale>FPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>282.36</Value>
+        <RawString>283.55:281.09:282.45</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread"},"test-run-times":"32.33:31.79:31.63"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/dav1d-1.15.1</Identifier>
+    <Title>dav1d</Title>
+    <AppVersion>1.4</AppVersion>
+    <Arguments>-i chimera_10b_1080p.ivf</Arguments>
+    <Description>Video Input: Chimera 1080p 10-bit</Description>
+    <Scale>FPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>244.69</Value>
+        <RawString>245.16:245:243.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread"},"test-run-times":"36.45:36.47:36.64"}</JSON>
       </Entry>
     </Data>
   </Result>
