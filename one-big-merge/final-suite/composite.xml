@@ -3,7 +3,7 @@
 <PhoronixTestSuite>
   <Generated>
     <Title>baseline-fp-opt-name</Title>
-    <LastModified>2024-04-28 09:39:50</LastModified>
+    <LastModified>2024-04-28 23:52:09</LastModified>
     <TestClient>Phoronix Test Suite v10.8.4</TestClient>
     <Description>Intel Core i5-1135G7 testing with a LENOVO Lenovo V15 G2 ITL LNVNB161216 (GGCN50WW BIOS) and Intel TigerLake-LP GT2 [Iris Xe ] on Ubuntu 23.10 via the Phoronix Test Suite.</Description>
     <Notes></Notes>
@@ -81,6 +81,16 @@
     <Notes></Notes>
     <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --enable-libphobos-checking=release --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=2 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=\/build\/gcc-13-XYspKM\/gcc-13-13.2.0\/debian\/tmp-nvptx\/usr,amdgcn-amdhsa=\/build\/gcc-13-XYspKM\/gcc-13-13.2.0\/debian\/tmp-gcn\/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v","disk-scheduler":"MQ-DEADLINE","disk-mount-options":"relatime,rw","disk-details":"Block Size: 4096","cpu-scaling-governor":"intel_pstate powersave (EPP: balance_performance)","cpu-microcode":"0x5003604","kernel-extra-details":"Transparent Huge Pages: madvise","java":"OpenJDK Runtime Environment (build 17.0.10+7-Ubuntu-123.10.1)","python":"Python 3.11.6","security":"gather_data_sampling: Mitigation of Microcode + itlb_multihit: KVM: Mitigation of VMX disabled + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable + retbleed: Mitigation of Enhanced IBRS + spec_rstack_overflow: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced \/ Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence + srbds: Not affected + tsx_async_abort: Mitigation of TSX disabled"}</JSON>
   </System>
+  <System>
+    <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon Gold 5218 @ 3.90GHz (32 Cores / 64 Threads), Motherboard: Cisco UCSC-C480-M5 (C480M5.4.2.2d.0.0808221350 BIOS), Chipset: Intel Sky Lake-E DMI3 Registers, Memory: 64GB, Disk: 2 x 300GB AL14SXB30EN, Graphics: Matrox MGA G200e [Pilot], Network: 2 x Intel X550 + 4 x Intel I350</Hardware>
+    <Software>OS: Ubuntu 23.10, Kernel: 6.5.0-9-generic (x86_64), Compiler: GCC 13.2.0, File-System: ext4</Software>
+    <User>ubuntu</User>
+    <TimeStamp>2024-04-28 08:16:07</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --enable-libphobos-checking=release --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=2 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=\/build\/gcc-13-b9QCDx\/gcc-13-13.2.0\/debian\/tmp-nvptx\/usr,amdgcn-amdhsa=\/build\/gcc-13-b9QCDx\/gcc-13-13.2.0\/debian\/tmp-gcn\/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v","disk-scheduler":"MQ-DEADLINE","disk-mount-options":"relatime,rw","disk-details":"Block Size: 4096","cpu-scaling-governor":"intel_pstate powersave (EPP: balance_performance)","cpu-microcode":"0x5003302","kernel-extra-details":"Transparent Huge Pages: madvise","environment-variables":"CXXFLAGS=\"-fno-omit-frame-pointer -frecord-gcc-switches -O2\" QMAKE_CFLAGS=\"-fno-omit-frame-pointer -frecord-gcc-switches -O2\" CFLAGS=\"-fno-omit-frame-pointer -frecord-gcc-switches -O2\" CFLAGS_OVERRIDE=\"-fno-omit-frame-pointer -frecord-gcc-switches -O2\" QMAKE_CXXFLAGS=\"-fno-omit-frame-pointer -frecord-gcc-switches -O2\" FFLAGS=\"-fno-omit-frame-pointer -frecord-gcc-switches -O2\"","java":"OpenJDK Runtime Environment (build 17.0.9-ea+6-Ubuntu-1)","python":"Python 3.11.6","security":"gather_data_sampling: Vulnerable: No microcode + itlb_multihit: KVM: Mitigation of VMX disabled + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable + retbleed: Mitigation of Enhanced IBRS + spec_rstack_overflow: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced \/ Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence + srbds: Not affected + tsx_async_abort: Mitigation of TSX disabled"}</JSON>
+  </System>
   <Result>
     <Identifier>system/sqlite-1.0.1</Identifier>
     <Title>SQLite</Title>
@@ -138,6 +148,12 @@
         <Value>52.359</Value>
         <RawString>57.085:50.789:52.218:45.88:58.254:51.801:50.955:52.653:55.182:51.89:52.333:55.311:50.295:47.25:53.492</RawString>
         <JSON>{"test-run-times":"57.08:50.79:52.22:45.88:58.25:51.80:50.96:52.65:55.18:51.89:52.33:55.31:50.29:47.25:53.49"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>124.490</Value>
+        <RawString>63.549:56.588:68.664:53.263:182.33:171.99:174.148:177.995:171.886</RawString>
+        <JSON>{"test-run-times":"63.55:56.59:68.66:53.26:182.33:171.99:174.15:177.99:171.89"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -199,6 +215,12 @@
         <RawString>529.4:542.2:555.9</RawString>
         <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.91:360.51:360.46"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>551.2</Value>
+        <RawString>547.5:462.5:499.8:572.2:553.9:570.4:595.8:573.1:585.2</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.83:360.50:360.48:360.47:360.48:360.48:360.50:360.47:360.50"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -258,6 +280,12 @@
         <Value>2014.0</Value>
         <RawString>2019.2:1995.1:2027.6</RawString>
         <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.91:360.51:360.46"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>2002.4</Value>
+        <RawString>2014.9:2007.7:1996.1:1996.6:1978.9:1991:2017.6:2017.7:2001.2</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.83:360.50:360.48:360.47:360.48:360.48:360.50:360.47:360.50"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -319,6 +347,12 @@
         <RawString>444.4:446.9:446.8</RawString>
         <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.91:360.51:360.46"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>458.1</Value>
+        <RawString>461.4:462.1:458:462.3:456.6:453.4:447.5:460.4:461.6</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.83:360.50:360.48:360.47:360.48:360.48:360.50:360.47:360.50"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -378,6 +412,12 @@
         <Value>257.6</Value>
         <RawString>259.2:255.3:258.4</RawString>
         <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.91:360.51:360.46"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>256.7</Value>
+        <RawString>254.2:258.5:256.5:253.5:259.2:256.3:256.7:256.5:258.7</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.83:360.50:360.48:360.47:360.48:360.48:360.50:360.47:360.50"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -439,6 +479,12 @@
         <RawString>568.8:573.8:580.8</RawString>
         <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.91:360.51:360.46"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>576.3</Value>
+        <RawString>579.4:577.6:572.5:582.6:575:579:573:582.5:564.9</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.83:360.50:360.48:360.47:360.48:360.48:360.50:360.47:360.50"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -498,6 +544,12 @@
         <Value>212.7</Value>
         <RawString>212.9:213:212.3</RawString>
         <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.91:360.51:360.46"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>207.4</Value>
+        <RawString>207:208.7:207.1:205.6:204.3:209.7:208.2:208.1:207.5</RawString>
+        <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.83:360.50:360.48:360.47:360.48:360.48:360.50:360.47:360.50"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -589,6 +641,12 @@
         <RawString>15.501:15.443:15.408</RawString>
         <JSON>{"test-run-times":"15.50:15.44:15.41"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>14.260</Value>
+        <RawString>14.271:14.249:14.26</RawString>
+        <JSON>{"test-run-times":"14.27:14.25:14.26"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -643,6 +701,12 @@
         <RawString>5.267:4.553:4.55:4.556:4.551:4.548:4.55:4.553:4.568:4.552:4.548:4.551:4.583</RawString>
         <JSON>{"test-run-times":"5.27:4.55:4.55:4.56:4.55:4.55:4.55:4.55:4.57:4.55:4.55:4.55:4.58"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>4.622</Value>
+        <RawString>4.626:4.621:4.618</RawString>
+        <JSON>{"test-run-times":"4.63:4.62:4.62"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -696,6 +760,12 @@
         <Value>5.076</Value>
         <RawString>5.109:5.061:5.059</RawString>
         <JSON>{"test-run-times":"5.11:5.06:5.06"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>5.078</Value>
+        <RawString>5.082:5.074:5.078</RawString>
+        <JSON>{"test-run-times":"5.08:5.07:5.08"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -781,6 +851,12 @@
         <RawString>18.784:17.478:17.435:17.433:17.455:17.46:17.438:17.446:17.452:17.471</RawString>
         <JSON>{"test-run-times":"18.78:17.48:17.44:17.43:17.45:17.46:17.44:17.45:17.45:17.47"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>17.354</Value>
+        <RawString>17.817:17.112:17.133</RawString>
+        <JSON>{"test-run-times":"17.82:17.11:17.13"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -835,6 +911,12 @@
         <RawString>28.700689:12.6275:11.764943:17.542201:11.663858:11.680307:11.738248:11.657337:11.677155:11.951683:11.81835:11.743919:11.68045:11.756271:11.728495:11.634968:11.644007:11.624284:11.495321:11.740292:11.535027:11.702435:11.633798:11.521632:11.399829:11.65798:12.054213:11.607778:11.742081:11.83009:11.67572:11.595359:11.598615:11.499091:11.61921:11.572717:11.595597:11.844069:11.642248:12.246435:11.737092:11.664264:11.643446:11.638542:11.509994:11.62246:11.709983:11.452015:11.620652:11.595674</RawString>
         <JSON>{"test-run-times":"0.06:0.02:0.02:0.03:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>11.612775</Value>
+        <RawString>21.741861:11.867535:11.691311:11.344:11.075019:11.275808:11.251241:11.040229:11.100934:11.212225:11.184938:11.657875:11.462659:11.626639:11.273467:11.364358:11.344799:11.331105:11.421682:11.382808:11.534165:11.448669:11.453219:11.444067:11.362581:11.58528:11.349875:11.528488:11.386382:11.438789:11.454257:11.373898:11.489981:11.314983:11.312369:11.227336:11.512797:11.398062:11.37264:11.3991:11.307304:11.436577:11.201327:11.401157:11.191058</RawString>
+        <JSON>{"test-run-times":"0.03:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -888,6 +970,12 @@
         <Value>24.011400</Value>
         <RawString>42.99833:24.248186:22.650179:24.164345:23.452413:23.941095:23.68746:22.873712:23.747317:24.831203:23.590137:23.461224:22.060748:23.723145:24.52054:23.340708:22.753382:24.743629:23.911645:23.584356:23.859827:22.9198:23.855317:22.712434:24.543126:22.776012:24.651378:23.981886:22.518089:22.724507:23.655584:24.118048:25.058568:23.023305:22.825582:25.32474:23.9122:23.340385:22.787164:22.817949:22.946347:23.928737:24.962701:23.700471:23.801787:23.001992:23.668372:23.793029:23.065518</RawString>
         <JSON>{"test-run-times":"0.06:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.04:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.04:0.03:0.03:0.04:0.03:0.03:0.03:0.03:0.03:0.03:0.04:0.03:0.03:0.03:0.03:0.03:0.03"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>21.744697</Value>
+        <RawString>30.574905:22.748545:22.120676:20.999466:21.893158:21.761732:21.914209:21.357797:20.906354:21.368673:21.331408:21.235956:20.915332:20.946961:21.190205:20.755972:20.882644:21.325917:20.976881:21.119311:22.037407:21.810078:21.767368:21.735238:21.657611:21.212721:21.159268:21.389043:22.320036:22.234249:23.38832:21.974907:21.78926:21.180707:21.82605:22.141333:21.572631:20.665735:20.754655:20.931979:20.516391:22.117949:22.838149:22.385802:21.828908:21.333295:21.303278:21.957327:21.806612:21.272456</RawString>
+        <JSON>{"test-run-times":"0.04:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1063,6 +1151,12 @@
         <RawString>1028015:1026003:1026003</RawString>
         <JSON>{"test-run-times":"32.21:32.46:32.23"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"8.20:8.20:8.70","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -1188,6 +1282,12 @@
         <Value>448635</Value>
         <RawString>445066:450419:450419</RawString>
         <JSON>{"test-run-times":"32.99:32.23:32.53"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"8.43:8.21:8.23","error":"The test quit with a non-zero exit status."}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -3679,6 +3779,12 @@
         <RawString>45.688:45.179:45.09</RawString>
         <JSON>{"test-run-times":"45.69:45.18:45.09"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>44.433</Value>
+        <RawString>44.805:44.313:44.181</RawString>
+        <JSON>{"test-run-times":"44.80:44.31:44.18"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -3727,6 +3833,12 @@
         <RawString>81.364:83.296:77.411:75.098:77.455:76.445:75.101:80.733:75.145:77.321:81.252:73.403:80.282:79.348:78.629</RawString>
         <JSON>{"test-run-times":"81.36:83.30:77.41:75.10:77.45:76.44:75.10:80.73:75.14:77.32:81.25:73.40:80.28:79.35:78.63"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>76.731</Value>
+        <RawString>76.274:76.477:77.441</RawString>
+        <JSON>{"test-run-times":"76.27:76.48:77.44"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -3774,6 +3886,12 @@
         <Value>46.371</Value>
         <RawString>48.628:46.054:45.999:45.936:45.738:45.871</RawString>
         <JSON>{"install-footnote":"Inkscape 1.2.2 (b0a8486541, 2022-12-01)","test-run-times":"48.63:46.05:46.00:45.94:45.74:45.87"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>42.563</Value>
+        <RawString>44.347:42.092:42.151:42.181:42.044</RawString>
+        <JSON>{"install-footnote":"Inkscape 1.2.2 (b0a8486541, 2022-12-01)","test-run-times":"44.35:42.09:42.15:42.18:42.04"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -3829,6 +3947,12 @@
         <RawString>12.917:10.588:10.725:10.214:10.758:10.582:10.837:10.618:10.913:10.473:10.78:10.466:10.309:10.652:10.862</RawString>
         <JSON>{"test-run-times":"12.92:10.59:10.72:10.21:10.76:10.58:10.84:10.62:10.91:10.47:10.78:10.47:10.31:10.65:10.86"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>10.739</Value>
+        <RawString>12.331:10.44:10.561:10.542:10.462:10.816:10.574:10.664:10.581:10.696:10.758:10.49:10.687</RawString>
+        <JSON>{"test-run-times":"12.33:10.44:10.56:10.54:10.46:10.82:10.57:10.66:10.58:10.70:10.76:10.49:10.69"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -3882,6 +4006,12 @@
         <Value>16.067</Value>
         <RawString>16.6:16:15.866:15.951:15.919</RawString>
         <JSON>{"test-run-times":"16.60:16.00:15.87:15.95:15.92"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>16.104</Value>
+        <RawString>16.601:17.123:15.889:15.996:15.878:15.968:15.877:15.983:15.984:15.865:15.985</RawString>
+        <JSON>{"test-run-times":"16.60:17.12:15.89:16.00:15.88:15.97:15.88:15.98:15.98:15.86:15.98"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -3967,6 +4097,12 @@
         <RawString>96.087:95.205:94.794</RawString>
         <JSON>{"install-footnote":"RawTherapee, version 5.9, command line.","test-run-times":"98.05:97.15:96.73"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>93.358</Value>
+        <RawString>93.519:93.351:93.203</RawString>
+        <JSON>{"install-footnote":"RawTherapee, version 5.9, command line.","test-run-times":"95.44:95.26:95.11"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4014,6 +4150,12 @@
         <Value>81.950</Value>
         <RawString>83.958:81.18:80.711</RawString>
         <JSON>{"install-footnote":"rsvg-convert version 2.54.7","test-run-times":"83.96:81.18:80.71"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>77.978</Value>
+        <RawString>78.706:77.381:77.848</RawString>
+        <JSON>{"install-footnote":"rsvg-convert version 2.54.7","test-run-times":"78.71:77.38:77.85"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -4213,6 +4355,12 @@
         <RawString>23.446:23.207:23.428</RawString>
         <JSON>{"test-run-times":"23.45:23.21:23.43"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>40.504</Value>
+        <RawString>40.635:40.424:40.453</RawString>
+        <JSON>{"test-run-times":"40.63:40.42:40.45"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4297,6 +4445,12 @@
         <RawString>84.4456:78.5157:78.5396:78.5042:78.633:82.1735:80.4942:78.5921:88.8058:78.5447:80.5787:78.877:81.2355:78.5188:78.5396</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.86:1.47:1.47:1.46:1.47:1.41:1.41:1.46:1.41:1.46:1.39:1.47:1.41:1.45:1.46"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>90.4444</Value>
+        <RawString>91.3873:89.9665:89.9794</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.54:1.43:1.43"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4344,6 +4498,12 @@
         <Value>10.4166</Value>
         <RawString>10.4681:10.3787:10.4029</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"4.37:4.37:4.37"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>16.9480</Value>
+        <RawString>16.9207:16.9844:16.9388</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"4.42:4.40:4.40"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -4393,6 +4553,12 @@
         <RawString>4.07866:4.07837:4.07825</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.36:1.36:1.36"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>6.57693</Value>
+        <RawString>6.57642:6.57695:6.57741</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.41:1.39:1.40"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4440,6 +4606,12 @@
         <Value>22.4794</Value>
         <RawString>22.4824:22.4716:22.4841</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.38:2.38:2.38"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>37.4407</Value>
+        <RawString>37.42:37.4647:37.4375</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.46:2.45:2.45"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -4501,6 +4673,12 @@
         <RawString>67.5994:67.5312:67.6297</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"3.49:3.48:3.51"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>77.2972</Value>
+        <RawString>77.5287:76.8567:77.5063</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"3.67:3.65:3.66"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4548,6 +4726,12 @@
         <Value>14.1321</Value>
         <RawString>14.1337:14.132:14.1305</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.36:1.37:1.36"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>22.1848</Value>
+        <RawString>22.2314:22.1575:22.1656</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.39:1.39"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -4597,6 +4781,12 @@
         <RawString>4.87624:4.87726:4.875</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.37:1.36:1.37"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>8.24545</Value>
+        <RawString>8.24498:8.24577:8.24559</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.39:1.39:1.39"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4644,6 +4834,12 @@
         <Value>17.6730</Value>
         <RawString>17.4429:18.0243:17.5518</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.36:1.36:1.37"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>32.7358</Value>
+        <RawString>32.308:33.5303:32.3691</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.39:1.40:1.40"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -4705,6 +4901,12 @@
         <RawString>6.60287:7.60624:6.59974:6.59938:6.59894:7.67726:6.60184:6.60153:6.60073:6.59973:6.84805:6.60064:6.60202:6.74783:6.6006</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.95:1.38:1.39:1.39:1.39:1.39:1.40:1.40:1.39:1.38:1.40:1.39:1.38:1.40:1.39"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>5.78269</Value>
+        <RawString>5.78263:5.78265:5.7828</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.40:1.40"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4752,6 +4954,12 @@
         <Value>23.5514</Value>
         <RawString>23.5622:23.5464:23.5457</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.37:1.36:1.36"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>48.0020</Value>
+        <RawString>56.0056:49.4347:46.9361:46.8801:46.9324:48.3059:46.9304:49.8437:46.9437:46.9348:46.9497:46.9418:46.934:47.1187:46.9383</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.39:1.40:1.40:1.39:1.40:1.40:1.39:1.40:1.40:1.40:1.40:1.40:1.39:1.40:1.39"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -4801,6 +5009,12 @@
         <RawString>18.8743:18.7871:18.8225</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.37:1.36:1.37"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>33.8947</Value>
+        <RawString>33.894:33.8866:33.9034</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.40:1.39"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4848,6 +5062,12 @@
         <Value>24.3169</Value>
         <RawString>24.319:24.3153:24.3164</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.37:1.37:1.36"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>41.2028</Value>
+        <RawString>41.2246:41.188:41.1958</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.40:1.40"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -4897,6 +5117,12 @@
         <RawString>4.07845:4.07853:4.07872</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.37:1.37:1.36"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>5.76230</Value>
+        <RawString>5.76252:5.76188:5.76251</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.40:1.39"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4944,6 +5170,12 @@
         <Value>23.4912</Value>
         <RawString>23.2612:25.0237:23.2345:23.2343:23.2523:23.2499:23.2418:23.2354:25.0157:23.2565:23.2707:23.2662:23.2611:23.2963:23.2682</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.50:2.50:2.50:2.50:2.49:2.50:2.49:2.50:2.50:2.50:2.50:2.49:2.50:2.50:2.50"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>41.2282</Value>
+        <RawString>41.2184:41.2354:41.2309</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.47:2.46:2.46"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5004,6 +5236,12 @@
         <Value>5.10307</Value>
         <RawString>5.88654:4.9553:4.95521:5.18083:4.9865:4.95781:5.25186:4.95561:4.9557:4.95806:4.95649:5.02754:4.95891:5.41406:5.14567</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.18:1.38:1.39:1.79:1.77:1.39:1.40:1.40:1.39:1.38:1.38:1.40:1.39:1.40:1.40"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>4.95410</Value>
+        <RawString>4.95458:4.95348:4.95424</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.39:1.40"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5119,6 +5357,12 @@
         <RawString>29063.4:30304.7:29467.4:29056.6:30651.4</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -fopenmp"},"test-run-times":"37.91:37.30:37.31:37.66:36.81"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>30692.7</Value>
+        <RawString>30673.7:30696:30691.4:30695.5:30706.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -fopenmp"},"test-run-times":"30.85:30.90:30.92:30.89:30.98"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5160,6 +5404,12 @@
         <Value>23400.2</Value>
         <RawString>22808.2:23741.7:23736.8:22750.2:23963.9</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -fopenmp"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>23901.6</Value>
+        <RawString>23911.9:23898.8:23899.2:23901.6:23896.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -fopenmp"}}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5203,6 +5453,12 @@
         <RawString>26068.8:26284.1:25898.4:25373.7:26656.9</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -fopenmp"}}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>26573.8</Value>
+        <RawString>26580.7:26580.1:26576.6:26566.3:26565.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -fopenmp"}}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5244,6 +5500,12 @@
         <Value>26044.5</Value>
         <RawString>26073:25946.2:26173.2:25493.3:26536.6</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -fopenmp"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>26463.7</Value>
+        <RawString>26464.9:26471.1:26455.9:26459.7:26467</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -fopenmp"}}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5311,6 +5573,12 @@
         <RawString>116.414:115.866:115.748</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lOpenCL"},"test-run-times":"116.41:115.87:115.75"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>108.609</Value>
+        <RawString>108.416:108.435:108.975</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lOpenCL"},"test-run-times":"108.42:108.43:108.97"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5352,6 +5620,12 @@
         <Value>21.315</Value>
         <RawString>26.263:19.356:19.609:21.113:20.883:21.21:24.261:20.18:20.962:22.387:20.195:20.768:19.894:21.332</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lOpenCL"},"test-run-times":"26.26:19.36:19.61:21.11:20.88:21.21:24.26:20.18:20.96:22.39:20.20:20.77:19.89:21.33"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>13.845</Value>
+        <RawString>13.971:13.781:13.784</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lOpenCL"},"test-run-times":"13.97:13.78:13.78"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5419,6 +5693,12 @@
         <RawString></RawString>
         <JSON>{"test-run-times":"0.02:0.01:0.01","error":"The test quit with a non-zero exit status. E: Error: Unable to access jarfile dacapo-23.11-chopin.jar"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>8945</Value>
+        <RawString>8917:9023:8895</RawString>
+        <JSON>{"test-run-times":"33.09:32.56:32.64"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5460,6 +5740,12 @@
         <Value></Value>
         <RawString></RawString>
         <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: Error: Unable to access jarfile dacapo-23.11-chopin.jar"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>29407</Value>
+        <RawString>28985:29825:29412</RawString>
+        <JSON>{"test-run-times":"99.61:102.29:100.32"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5503,6 +5789,12 @@
         <RawString>2632.348253:2591.533995:2684.257234</RawString>
         <JSON>{"min-result":1246.83,"max-result":4067.34,"test-run-times":"179.07:164.89:167.76"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>1396.2</Value>
+        <RawString>1474.429424:1295.516297:1468.145725:1331.844875:1379.908546:1526.162104:1314.449933:1324.042719:1475.875758:1453.940717:1282.479921:1487.274678:1327.962797:1346.758193:1454.735111</RawString>
+        <JSON>{"min-result":1086.38,"max-result":2367.48,"test-run-times":"99.79:98.63:99.39:100.43:102.82:110.04:98.96:99.69:100.11:99.26:97.61:100.33:100.13:101.03:99.09"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5545,6 +5837,12 @@
         <RawString>14635.688271:12054.98365:12803.435326:13019.484146:12921.078474:11977.275266:12907.353649:12150.531905:13217.295242:12722.318425:13563.342614:12821.563102</RawString>
         <JSON>{"min-result":11977.28,"max-result":23036.97,"test-run-times":"185.96:168.66:178.99:181.29:185.04:169.36:183.17:170.28:183.69:178.33:184.30:176.90"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>12041.0</Value>
+        <RawString>11863.665509:12214.65706:12044.805789</RawString>
+        <JSON>{"min-result":11863.67,"max-result":19472.62,"test-run-times":"166.23:170.79:173.54"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5586,6 +5884,12 @@
         <Value>5737.2</Value>
         <RawString>6300.845036:5363.248553:5693.758112:5535.4774:5649.237815:5606.524371:5479.43262:5752.537271:5821.82062:5964.15343:5536.641029:6142.307594</RawString>
         <JSON>{"min-result":4521.89,"max-result":8075.11,"test-run-times":"225.80:197.49:201.26:193.75:195.63:198.39:201.95:197.47:203.56:206.61:198.43:208.76"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>4922.2</Value>
+        <RawString>4750.465641:5161.641722:4742.028373:5088.400166:4890.091875:5155.867429:5052.831477:4668.343156:5066.316466:4825.301911:4987.367486:4678.257308</RawString>
+        <JSON>{"min-result":4169.61,"max-result":5255.08,"test-run-times":"165.04:175.82:166.14:174.23:168.50:179.27:174.07:164.56:174.68:167.96:172.40:163.44"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5797,6 +6101,12 @@
         <RawString>39154:39379:39366</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-m64 -lssl -lcrypto -fopenmp -lgmp -lm -lrt -lz -ldl -lcrypt -lbz2"},"test-run-times":"30.48:30.26:30.26"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>38154</Value>
+        <RawString>38336:38380:37747</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-m64 -lssl -lcrypto -fopenmp -lgmp -lm -lrt -lz -ldl -lcrypt -lbz2"},"test-run-times":"30.34:30.25:30.25"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5838,6 +6148,12 @@
         <Value>8.49</Value>
         <RawString>8.18:8.61:8.59:8.59</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"73.50:69.76:69.93:69.92"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>8.48</Value>
+        <RawString>8.35:8.54:8.54</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"71.94:70.32:70.40"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5881,6 +6197,12 @@
         <RawString>8.83:8.84:8.84</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"68.09:67.98:68.02"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>8.78</Value>
+        <RawString>8.79:8.77:8.79</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"68.34:68.48:68.31"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5922,6 +6244,12 @@
         <Value>21.20</Value>
         <RawString>21.31:21.14:21.16</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"28.22:28.45:28.41"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>21.20</Value>
+        <RawString>21.23:21.19:21.19</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"28.32:28.38:28.38"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5965,6 +6293,12 @@
         <RawString>22.12:22.14:22</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"27.18:27.15:27.33"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>22.05</Value>
+        <RawString>22.09:22.16:21.89</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"27.22:27.13:27.48"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6006,6 +6340,12 @@
         <Value>15.92</Value>
         <RawString>15.9:15.95:15.91</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"37.82:37.70:37.79"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>15.97</Value>
+        <RawString>16.06:15.89:15.96</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"37.44:37.85:37.68"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -6049,6 +6389,12 @@
         <RawString>20.48:20.77:20.62</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"29.38:28.97:29.19"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>20.68</Value>
+        <RawString>20.75:20.62:20.68</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"29.00:29.18:29.08"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6090,6 +6436,12 @@
         <Value>23.77</Value>
         <RawString>23.79:23.85:23.68</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"25.30:25.24:25.41"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>23.81</Value>
+        <RawString>23.66:23.96:23.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"25.45:25.12:25.28"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -6133,6 +6485,12 @@
         <RawString>40.99:41.04:40.7</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"14.70:14.69:14.81"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>40.83</Value>
+        <RawString>40.91:40.76:40.82</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"14.72:14.78:14.75"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6175,6 +6533,12 @@
         <RawString>52.75:52.8:52.7</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"11.43:11.43:11.44"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>53.56</Value>
+        <RawString>53.75:53.56:53.38</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"11.22:11.26:11.30"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6216,6 +6580,12 @@
         <Value>63.23</Value>
         <RawString>63.62:62.96:63.12</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"9.49:9.60:9.56"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>63.29</Value>
+        <RawString>63.48:63.15:63.24</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"9.51:9.55:9.55"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -6355,6 +6725,12 @@
         <RawString>13.2:13.67:13.68</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"45.98:44.12:44.09"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>14.13</Value>
+        <RawString>14.99:13.94:13.92:13.85:13.96:15.07:13.97:13.83:13.93:13.77:14.01:13.96:13.9:13.8:15.03</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"40.29:43.27:43.34:43.59:43.22:40.05:43.20:43.63:43.34:43.83:43.07:43.21:43.40:43.71:40.17"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6396,6 +6772,12 @@
         <Value>32.83</Value>
         <RawString>32.44:32.97:33.08</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"18.65:18.35:18.28"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>32.89</Value>
+        <RawString>32.8:33.14:32.73</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"18.44:18.26:18.49"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -6439,6 +6821,12 @@
         <RawString>2374.789059:2340.24013:2338.816906</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -mavx2"},"test-run-times":"52.18:53.96:54.54"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>2141.580219</Value>
+        <RawString>2130.827878:2173.023612:2120.889168</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -O2 -mavx2"},"test-run-times":"66.32:64.30:59.00"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6480,6 +6868,12 @@
         <Value>89707</Value>
         <RawString>78714:90343:93211:92911:88870:90448:87876:90938:92798:91663:89287:89427</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lpthread -ldl -O2 -fPIC"},"test-run-times":"69.95:63.34:60.96:61.30:63.62:61.33:62.76:63.64:61.86:61.59:61.92:62.08"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>90167</Value>
+        <RawString>87470:88945:94442:89297:91093:89506:86915:91457:90610:91934</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lpthread -ldl -O2 -fPIC"},"test-run-times":"61.97:61.84:60.60:62.98:61.91:62.00:63.57:61.92:62.06:62.01"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -6523,6 +6917,12 @@
         <RawString>131595:127262:130645:132432:128994:131135:132477:127486:129117:130273:132442:131016</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lpthread -ldl -O2 -fPIC"},"test-run-times":"69.95:63.34:60.96:61.30:63.62:61.33:62.76:63.64:61.86:61.59:61.92:62.08"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>132389</Value>
+        <RawString>132607:132314:133203:132819:131424:132136:132807:131442:132891:132247</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lpthread -ldl -O2 -fPIC"},"test-run-times":"61.97:61.84:60.60:62.98:61.91:62.00:63.57:61.92:62.06:62.01"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6564,6 +6964,12 @@
         <Value>53772262</Value>
         <RawString>57374565:58863689:55012025:49575376:54316699:52800216:50146351:50223266:55638170</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lgcov -m64 -lpthread -fno-exceptions -std=c++17 -fno-peel-loops -fno-tracer -pedantic -O3 -msse -msse3 -mpopcnt -mavx2 -mavx512f -mavx512bw -mavx512vnni -mavx512dq -mavx512vl -msse4.1 -mssse3 -msse2 -mbmi2 -flto -flto=jobserver"},"test-run-times":"132.53:150.93:140.11:112.56:128.94:133.38:104.62:124.74:134.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>52596162</Value>
+        <RawString>48892956:50019647:54587643:52687561:53706124:51169450:52628727:50178604:58142175:55786201:51309332:52045520</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lgcov -m64 -lpthread -O2 -fno-exceptions -std=c++17 -pedantic -O3 -msse -msse3 -mpopcnt -mavx2 -mavx512f -mavx512bw -mavx512vnni -mavx512dq -mavx512vl -msse4.1 -mssse3 -msse2 -mbmi2 -flto -fno-peel-loops -fno-tracer -flto=jobserver"},"test-run-times":"105.97:117.91:109.36:123.66:131.44:144.96:118.16:105.38:152.68:124.85:105.53:125.38"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -6619,6 +7025,12 @@
         <RawString>68753515:67893119:69281408</RawString>
         <JSON>{"test-run-times":"157.40:178.86:193.81"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>69383809</Value>
+        <RawString>68860006:70515132:68776288</RawString>
+        <JSON>{"test-run-times":"136.30:166.68:191.89"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6660,6 +7072,12 @@
         <Value>438256522</Value>
         <RawString>441193795:437596040:435979730</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -lcurses -lrt"},"test-run-times":"22.94:22.91:22.92"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>419145268</Value>
+        <RawString>422562708:420309169:414563927</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -lcurses -lrt"},"test-run-times":"22.95:22.92:22.91"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -6703,6 +7121,12 @@
         <RawString>1659.729:1645.523:1634.171</RawString>
         <JSON>{"test-run-times":"1659.73:1645.52:1634.17"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>1631.920</Value>
+        <RawString>1654.556:1617.47:1623.733</RawString>
+        <JSON>{"test-run-times":"1654.56:1617.47:1623.73"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6745,6 +7169,12 @@
         <RawString>76.478:71.82:71.872:71.792:71.991:71.904:71.851</RawString>
         <JSON>{"test-run-times":"76.48:71.82:71.87:71.79:71.99:71.90:71.85"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>71.261</Value>
+        <RawString>75.197:70.682:70.594:70.553:70.664:70.743:70.392</RawString>
+        <JSON>{"test-run-times":"75.20:70.68:70.59:70.55:70.66:70.74:70.39"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6786,6 +7216,12 @@
         <Value>526.749</Value>
         <RawString>526.795:535.981:517.472</RawString>
         <JSON>{"test-run-times":"526.79:535.98:517.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>518.393</Value>
+        <RawString>512.454:514.678:528.048</RawString>
+        <JSON>{"test-run-times":"512.45:514.68:528.05"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -6853,6 +7289,12 @@
         <RawString>31.091:31.045:31.214</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -O3"},"test-run-times":"31.67:31.73:31.89"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>57.832</Value>
+        <RawString>57.718:57.952:57.826</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -O3 -O2"},"test-run-times":"58.31:58.66:58.52"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6895,6 +7337,12 @@
         <RawString>28.348:27.513:28.452</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -lSM -lICE -lX11 -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"},"test-run-times":"31.16:30.30:31.25"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>24.762</Value>
+        <RawString>24.533:24.748:25.006</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -O2 -lSM -lICE -lX11 -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"},"test-run-times":"27.38:27.61:27.86"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6924,6 +7372,12 @@
         <Value>48.431</Value>
         <RawString>48.492:48.465:48.335</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-m64 -lgcc_s -lutil -lrt -lpthread -lm -ldl -lc -pie -nodefaultlibs"},"test-run-times":"48.49:48.46:48.33"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>59.830</Value>
+        <RawString>59.812:59.808:59.87</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-m64 -lgcc_s -lutil -lrt -lpthread -lm -ldl -lc -pie -nodefaultlibs"},"test-run-times":"59.81:59.81:59.87"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -7039,6 +7493,12 @@
         <RawString>275.97:280.66:278.05</RawString>
         <JSON>{"test-run-times":"275.47:274.41:278.27"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>266.83</Value>
+        <RawString>265.03:270.48:264.98</RawString>
+        <JSON>{"test-run-times":"343.63:285.48:295.08"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7080,6 +7540,12 @@
         <Value>37.934</Value>
         <RawString>37.962:37.724:38.115</RawString>
         <JSON>{"test-run-times":"37.96:37.72:38.11"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>36.655</Value>
+        <RawString>36.704:36.568:36.693</RawString>
+        <JSON>{"test-run-times":"36.70:36.57:36.69"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -7123,6 +7589,12 @@
         <RawString>37.451:35.856:35.954</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lpthread"},"test-run-times":"37.60:36.00:36.10"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>37.104</Value>
+        <RawString>35.755:37.621:37.37:37.67</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lpthread -O2"},"test-run-times":"35.90:37.77:37.52:37.81"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7164,6 +7636,12 @@
         <Value>40.844</Value>
         <RawString>40.922:40.819:40.791</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fopenmp -O2 -march=native"},"test-run-times":"40.92:40.82:40.79"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>36.246</Value>
+        <RawString>36.156:36.231:36.35</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fopenmp -O2"},"test-run-times":"36.16:36.23:36.35"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -7231,6 +7709,12 @@
         <RawString></RawString>
         <JSON>{"test-run-times":"1056.44"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>1049.322</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"1049.32"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7273,6 +7757,12 @@
         <RawString></RawString>
         <JSON>{"test-run-times":"326.42"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>317.317</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"317.32"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7308,6 +7798,12 @@
         <Value>1309.43</Value>
         <RawString>1302.59:1318.71:1306.98</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"30.04:30.54:29.92"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>568.75</Value>
+        <RawString>565.97:570.44:569.85</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.24:30.51:29.78"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -7345,6 +7841,12 @@
         <RawString>15460:15460:15460</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.81:29.83:30.27"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>7133.88</Value>
+        <RawString>7134.47:7133.47:7133.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.61:30.63:29.63"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7381,6 +7883,12 @@
         <RawString>63200:63210:63210</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"30.08:29.82:29.92"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>29320</Value>
+        <RawString>29210:29180:29570</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.98:30.33:30.00"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7416,6 +7924,12 @@
         <Value>185153</Value>
         <RawString>185100:185220:185140</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.81:30.50:29.83"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>71330</Value>
+        <RawString>71470:71260:71260</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.70:30.22:29.89"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -7459,6 +7973,12 @@
         <RawString>63:63:63</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -m64 -O3 -lssl -lcrypto -ldl"},"test-run-times":"5672.75:5672.57:5672.58"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>63</Value>
+        <RawString>63:63:63</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -m64 -O2 -lssl -lcrypto -ldl"},"test-run-times":"5672.57:5672.60:5672.57"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7495,6 +8015,12 @@
         <RawString>128.072388:126.617488:126.989973</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -rdynamic"},"test-run-times":"25.34:25.35:25.28"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>124.916289</Value>
+        <RawString>124.250271:126.636748:123.861847</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -O3 -rdynamic"},"test-run-times":"25.24:25.36:25.13"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7507,13 +8033,13 @@
     <Proportion>HIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
-        <Entry>
-            <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
-            <Value>685</Value>
-            <RawString>690.13112491373:691.08500345543:674.76383265857</RawString>
-            <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -pie -fPIC -fstack-protector -O3 -lnuma -lpcre2-8 -lcrypt -lsystemd -lz -lm -lssl -lcrypto -lpthread -ldl"},"test-run-times":"146.67:146.32:149.91"}</JSON>
-        </Entry>
-        <Entry>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>685</Value>
+        <RawString>690.13112491373:691.08500345543:674.76383265857</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -pie -fPIC -fstack-protector -O3 -lnuma -lpcre2-8 -lcrypt -lsystemd -lz -lm -lssl -lcrypto -lpthread -ldl"},"test-run-times":"146.67:146.32:149.91"}</JSON>
+      </Entry>
+      <Entry>
         <Identifier>server-rockman-mantic</Identifier>
         <Value>517</Value>
         <RawString>508.13008130081:521.64840897235:521.37643378519</RawString>
@@ -7531,6 +8057,12 @@
         <RawString>691.56293222683:675.67567567568:690.13112491373</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -pie -fPIC -fstack-protector -O3 -lnuma -lpcre2-8 -lcrypt -lsystemd -lz -lm -lssl -lcrypto -lpthread -ldl"},"test-run-times":"146.35:149.65:146.57"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>207</Value>
+        <RawString>206.18556701031:210.17234131988:204.45716622368</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fPIC -O2 -pie -fstack-protector -O3 -shared -lrt -lpthread -lz -ldl -lm -lstdc++"},"test-run-times":"505.95:493.43:507.22"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7543,11 +8075,11 @@
     <Proportion>HIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
-       <Entry>
-            <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
-            <Value>656</Value>
-            <RawString>654.4502617801:661.37566137566:651.4657980456</RawString>
-            <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -pie -fPIC -fstack-protector -O3 -lnuma -lpcre2-8 -lcrypt -lsystemd -lz -lm -lssl -lcrypto -lpthread -ldl"},"test-run-times":"154.85:153.18:155.51"}</JSON>
+      <Entry>
+        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value>656</Value>
+        <RawString>654.4502617801:661.37566137566:651.4657980456</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -pie -fPIC -fstack-protector -O3 -lnuma -lpcre2-8 -lcrypt -lsystemd -lz -lm -lssl -lcrypto -lpthread -ldl"},"test-run-times":"154.85:153.18:155.51"}</JSON>
       </Entry>
       <Entry>
         <Identifier>server-rockman-mantic</Identifier>
@@ -7566,6 +8098,12 @@
         <Value>655</Value>
         <RawString>647.66839378238:660.50198150595:655.73770491803</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -pie -fPIC -fstack-protector -O3 -lnuma -lpcre2-8 -lcrypt -lsystemd -lz -lm -lssl -lcrypto -lpthread -ldl"},"test-run-times":"156.51:153.43:154.49"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>179</Value>
+        <RawString>177.6514478593:179.1793585379:180.3101334295</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fPIC -O2 -pie -fstack-protector -O3 -shared -lrt -lpthread -lz -ldl -lm -lstdc++"},"test-run-times":"586.44:581.28:580.15"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -7609,6 +8147,12 @@
         <RawString>33.54:31.775:31.549:31.637:30.771:30.774:30.83:30.659:31.025:30.849:30.786:31.528:30.692:30.959:30.979</RawString>
         <JSON>{"test-run-times":"33.54:31.77:31.55:31.64:30.77:30.77:30.83:30.66:31.02:30.85:30.79:31.53:30.69:30.96:30.98"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>30.985</Value>
+        <RawString>30.587:31.016:31.353</RawString>
+        <JSON>{"test-run-times":"30.59:31.02:31.35"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7650,6 +8194,12 @@
         <Value>26.868</Value>
         <RawString>26.769:26.804:27.03</RawString>
         <JSON>{"test-run-times":"26.77:26.80:27.03"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>26.834</Value>
+        <RawString>26.656:26.987:26.859</RawString>
+        <JSON>{"test-run-times":"26.66:26.99:26.86"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -7693,6 +8243,12 @@
         <RawString>31.194:31.705:32.09</RawString>
         <JSON>{"test-run-times":"31.19:31.70:32.09"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>31.412</Value>
+        <RawString>31.586:31.113:31.536</RawString>
+        <JSON>{"test-run-times":"31.59:31.11:31.54"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7734,6 +8290,12 @@
         <Value>40.665</Value>
         <RawString>40.432:41.377:40.187</RawString>
         <JSON>{"test-run-times":"40.43:41.38:40.19"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>40.634</Value>
+        <RawString>40.188:40.602:41.112</RawString>
+        <JSON>{"test-run-times":"40.19:40.60:41.11"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -7807,6 +8369,12 @@
         <RawString>3529890.25:3350143.75:3367063.5:3331394.25:3393342.25</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3 -O2"},"test-run-times":"20.18:20.94:20.86:21.02:20.75"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>2557462.33</Value>
+        <RawString>2560209.75:2554063.25:2558114</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3 -O2"},"test-run-times":"25.55:25.60:25.56"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7842,6 +8410,12 @@
         <Value>2201793.00</Value>
         <RawString>2193587.25:2213188.75:2198603</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3 -O2"},"test-run-times":"28.81:28.60:28.76"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>1698188.71</Value>
+        <RawString>1698111.62:1698861.75:1697592.75</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3 -O2"},"test-run-times":"35.46:35.45:35.47"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -7885,6 +8459,12 @@
         <RawString>1373:1389.4:1389.1</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"64.20:63.73:64.08"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>1263.7</Value>
+        <RawString>1283.9:1223:1271.5:1276.3</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"64.25:64.11:65.06:64.60"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7926,6 +8506,12 @@
         <Value>708.9</Value>
         <RawString>710.1:707.2:709.5</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"64.20:63.73:64.08"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>731.5</Value>
+        <RawString>732.8:731.2:732.2:729.6</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"64.25:64.11:65.06:64.60"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -7993,6 +8579,12 @@
         <RawString>368.3:358.7:317.6:363.4:370.4:327.6:343.6:347.8:348.9:310:373.1:297.7:349.5:324:326.5</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"63.78:64.18:63.47:63.51:64.78:64.68:64.59:64.12:65.35:64.69:63.72:65.08:64.54:63.95:65.43"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>351.6</Value>
+        <RawString>345.3:354.4:355</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"64.21:65.51:64.70"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -8034,6 +8626,12 @@
         <Value>718.8</Value>
         <RawString>714.6:716.9:712.9:719.3:718.2:721.2:720.9:718.3:718.5:720:721.9:720.5:718.4:722.2:718.5</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"63.78:64.18:63.47:63.51:64.78:64.68:64.59:64.12:65.35:64.69:63.72:65.08:64.54:63.95:65.43"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>767.4</Value>
+        <RawString>767.1:766.8:768.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"64.21:65.51:64.70"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -8077,6 +8675,12 @@
         <RawString>102.5:87.6:103.7:111.6:98.3:103.6:107.9:100.6:102.8:110.5:108.7:95.9:96:104.2:97.1</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"64.34:63.84:65.17:63.81:65.05:64.01:63.99:63.50:65.60:64.30:64.03:63.54:65.77:63.85:64.70"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>98.6</Value>
+        <RawString>92.9:100.4:83.8:104.3:98.3:98.5:104.4:100.9:100.6:99:101.7:103.4:94:103.3:93.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"63.95:64.97:64.68:63.77:63.48:63.02:64.10:65.29:63.42:64.79:63.49:63.12:63.38:65.57:63.17"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -8118,6 +8722,12 @@
         <Value>672.4</Value>
         <RawString>670.3:672.5:673.7:671.7:675.3:671.8:674.8:675.3:673.4:674.3:674:671.8:662.2:672.2:672.8</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"64.34:63.84:65.17:63.81:65.05:64.01:63.99:63.50:65.60:64.30:64.03:63.54:65.77:63.85:64.70"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>734.9</Value>
+        <RawString>732.6:738.1:738.2:736.9:727.7:731.9:737.9:732.4:731.2:731.5:739.7:733.9:734.2:740.8:736.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"63.95:64.97:64.68:63.77:63.48:63.02:64.10:65.29:63.42:64.79:63.49:63.12:63.38:65.57:63.17"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -8161,6 +8771,12 @@
         <RawString>10.4:10.2:10.4</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"74.49:75.90:73.32"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>10.3</Value>
+        <RawString>10.1:10.2:10.6:10:10.6:10.1:10.7:10.1:10.4:10.1:10.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"75.13:75.81:73.73:76.38:73.98:76.21:73.28:76.38:75.12:76.77:75.58"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -8202,6 +8818,12 @@
         <Value>593.3</Value>
         <RawString>592:595.1:592.7</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"74.49:75.90:73.32"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>631.5</Value>
+        <RawString>633.1:631.1:630.2:630.2:633.5:634.1:631.8:630.4:631:632.6:628.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"75.13:75.81:73.73:76.38:73.98:76.21:73.28:76.38:75.12:76.77:75.58"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -8245,6 +8867,12 @@
         <RawString>282.1:283.7:281.2</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"64.53:63.83:64.21"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>313.9</Value>
+        <RawString>311.5:319.2:311.1</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"63.44:65.27:64.36"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -8286,6 +8914,12 @@
         <Value>741.7</Value>
         <RawString>742.4:743:739.6</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"64.53:63.83:64.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>758.2</Value>
+        <RawString>761.3:754.8:758.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"63.44:65.27:64.36"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -8329,6 +8963,12 @@
         <RawString>271.9:274.5:266.5</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"64.93:63.74:64.04"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>289.7</Value>
+        <RawString>286.9:293:289.1</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"64.15:65.26:64.59"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -8370,6 +9010,12 @@
         <Value>730.6</Value>
         <RawString>729.5:732:730.4</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"64.93:63.74:64.04"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>776.9</Value>
+        <RawString>775.7:775.7:779.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"64.15:65.26:64.59"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -8413,6 +9059,12 @@
         <RawString>5.75:5.4:5.35:5.4:5.68:5.41:5.41:5.4:5.75:5.42:5.55:5.56:5.42:5.53</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"69.34:71.74:71.98:71.56:69.68:71.70:71.69:71.65:69.45:71.63:70.66:70.70:71.71:70.57"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>5.45</Value>
+        <RawString>5.49:5.43:5.44</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"71.66:72.14:71.03"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -8455,6 +9107,12 @@
         <RawString>596.6:595.5:596:598.3:596.5:595:596:597.7:595.2:595.9:594.3:593.8:594.1:598.7</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -pthread -lz -llzma"},"test-run-times":"69.34:71.74:71.98:71.56:69.68:71.70:71.69:71.65:69.45:71.63:70.66:70.70:71.71:70.57"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>624.4</Value>
+        <RawString>625.5:625.2:622.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"71.66:72.14:71.03"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -8467,11 +9125,11 @@
     <Proportion>HIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
-       <Entry>
-            <Identifier>desktop-mantic</Identifier>
-            <Value>236.19</Value>
-            <RawString>236.35:235.8:236.43</RawString>
-            <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread"},"test-run-times":"15.30:15.34:15.30"}</JSON>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>236.19</Value>
+        <RawString>236.35:235.8:236.43</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread"},"test-run-times":"15.30:15.34:15.30"}</JSON>
       </Entry>
       <Entry>
         <Identifier>server-rockman-mantic</Identifier>
@@ -8497,6 +9155,12 @@
         <RawString>238.63:239.59:239.4</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread"},"test-run-times":"15.16:15.10:15.11"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>109.38</Value>
+        <RawString>108.48:109.26:110.41</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread"},"test-run-times":"34.75:33.12:32.77"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -8509,12 +9173,12 @@
     <Proportion>HIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
-        <Entry>
-            <Identifier>desktop-mantic</Identifier>
-            <Value>846.32</Value>
-            <RawString>846.67:846.15:846.15</RawString>
-            <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread"},"test-run-times":"4.28:4.28:4.29"}</JSON>
-        </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>846.32</Value>
+        <RawString>846.67:846.15:846.15</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread"},"test-run-times":"4.28:4.28:4.29"}</JSON>
+      </Entry>
       <Entry>
         <Identifier>server-rockman-mantic</Identifier>
         <Value>288.37</Value>
@@ -8538,6 +9202,12 @@
         <Value>851.82</Value>
         <RawString>853.19:850.05:852.22</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread"},"test-run-times":"4.25:4.26:4.25"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>279.59</Value>
+        <RawString>276.81:280.82:281.15</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread"},"test-run-times":"13.64:12.91:12.90"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -8575,6 +9245,12 @@
         <RawString>44360.27:44360.02:44313.4</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lm -latomic -lc -lcrypt -ldl -lEGL -lgbm -lGLESv2 -ljpeg -lmpfr -lpthread -lrt -lz"},"test-run-times":"30.12:30.20:30.10"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>43096.98</Value>
+        <RawString>43096.43:43108.03:43086.48</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lm -lEGL -lGLESv2 -latomic -lc -lcrypt -ldl -lgbm -ljpeg -lmpfr -lpthread -lrt -lz"},"test-run-times":"30.12:30.19:30.10"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -8610,6 +9286,12 @@
         <Value>52931.95</Value>
         <RawString>52845.63:53059.02:52891.2</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lm -latomic -lc -lcrypt -ldl -lEGL -lgbm -lGLESv2 -ljpeg -lmpfr -lpthread -lrt -lz"},"test-run-times":"30.10:30.10:30.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>57094.86</Value>
+        <RawString>57099.39:56923.11:57262.08</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lm -lEGL -lGLESv2 -latomic -lc -lcrypt -ldl -lgbm -ljpeg -lmpfr -lpthread -lrt -lz"},"test-run-times":"30.10:30.10:30.19"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -8647,6 +9329,12 @@
         <RawString>204:204:202</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"1.18:1.18:1.18"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>209</Value>
+        <RawString>208:208:210</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2"},"test-run-times":"1.18:1.19:1.20"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -8682,6 +9370,12 @@
         <Value>11673.91</Value>
         <RawString>11899.88:11369.05:11877.27:11549.42</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -lm"},"test-run-times":"8.63:9.02:8.63:8.88"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>11799.43</Value>
+        <RawString>11873.07:11541.75:11983.48</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -lm"},"test-run-times":"8.64:8.89:8.56"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -8719,6 +9413,12 @@
         <RawString>50183.04:50168.29:50182.28</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -lm"},"test-run-times":"90.02:90.01:90.02"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>47584.09</Value>
+        <RawString>47592.14:47591.82:47568.3</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -lm"},"test-run-times":"90.02:90.02:90.02"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -8754,6 +9454,12 @@
         <Value>1446</Value>
         <RawString>1450:1444:1443</RawString>
         <JSON>{"test-run-times":"33.50:33.27:33.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>1414</Value>
+        <RawString>1415:1413:1413</RawString>
+        <JSON>{"test-run-times":"32.44:32.24:32.23"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -8791,6 +9497,12 @@
         <RawString></RawString>
         <JSON>{"test-run-times":"450.81"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>213.482794</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"434.58"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -8826,6 +9538,12 @@
         <Value>103.454954</Value>
         <RawString></RawString>
         <JSON>{"test-run-times":"208.66"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>103.477449</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"205.96"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -8863,6 +9581,12 @@
         <RawString>503320:504221:501774</RawString>
         <JSON>{"test-run-times":"39.80:39.70:39.90"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>512749</Value>
+        <RawString>512980:509280:515988</RawString>
+        <JSON>{"test-run-times":"39.04:39.31:38.80"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -8898,6 +9622,12 @@
         <Value>86.099</Value>
         <RawString>87.076:85.51:85.711</RawString>
         <JSON>{"install-footnote":"git version 2.40.1","test-run-times":"87.08:85.51:85.71"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>84.539</Value>
+        <RawString>84.686:84.591:84.341</RawString>
+        <JSON>{"install-footnote":"git version 2.40.1","test-run-times":"84.69:84.59:84.34"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -8971,6 +9701,12 @@
         <RawString>6.732:6.426:6.508</RawString>
         <JSON>{"test-run-times":"6.73:6.43:6.51"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>6.393</Value>
+        <RawString>7.897:6.227:6.322:6.273:6.294:6.303:6.249:6.232:6.266:6.26:6.313:6.273:6.348:6.247</RawString>
+        <JSON>{"test-run-times":"7.90:6.23:6.32:6.27:6.29:6.30:6.25:6.23:6.27:6.26:6.31:6.27:6.35:6.25"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -8995,6 +9731,12 @@
         <RawString>40.31:40.158:40.231</RawString>
         <JSON>{"test-run-times":"40.31:40.16:40.23"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value>40.358</Value>
+        <RawString>40.335:40.357:40.382</RawString>
+        <JSON>{"test-run-times":"40.33:40.36:40.38"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -9013,6 +9755,12 @@
         <RawString></RawString>
         <JSON>{"test-run-times":"0.00:0.01:0.01","error":"The test quit with a non-zero exit status."}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -9030,6 +9778,222 @@
         <Value>63</Value>
         <RawString>63:63:63</RawString>
         <JSON>{"install-footnote":"OpenSSL 3.0.10 1 Aug 2023 (Library: OpenSSL 3.0.10 1 Aug 2023)","test-run-times":"5672.51:5672.50:5672.49"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>AES-XTS 256b Decryption</Description>
+    <Scale>Iterations Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"8.18:8.21:8.20","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>AES-XTS 256b Encryption</Description>
+    <Scale>Iterations Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"8.41:8.18:8.98","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>AES-XTS 512b Decryption</Description>
+    <Scale>Iterations Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"8.22:8.21:8.69","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>AES-XTS 512b Encryption</Description>
+    <Scale>Iterations Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"8.20:8.20:8.99","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Serpent-XTS 256b Decryption</Description>
+    <Scale>Iterations Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"8.21:8.19:8.20","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Serpent-XTS 256b Encryption</Description>
+    <Scale>Iterations Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"8.20:8.20:8.20","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Serpent-XTS 512b Decryption</Description>
+    <Scale>Iterations Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"8.21:8.22:8.17","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Serpent-XTS 512b Encryption</Description>
+    <Scale>Iterations Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"8.97:8.20:8.18","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Twofish-XTS 256b Decryption</Description>
+    <Scale>Iterations Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"8.19:8.97:8.70","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Twofish-XTS 256b Encryption</Description>
+    <Scale>Iterations Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"8.20:8.22:8.97","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Twofish-XTS 512b Decryption</Description>
+    <Scale>Iterations Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"8.19:8.68:8.19","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>system/cryptsetup-1.0.1</Identifier>
+    <Title>Cryptsetup</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Twofish-XTS 512b Encryption</Description>
+    <Scale>Iterations Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"8.21:8.21:8.22","error":"The test quit with a non-zero exit status."}</JSON>
       </Entry>
     </Data>
   </Result>
