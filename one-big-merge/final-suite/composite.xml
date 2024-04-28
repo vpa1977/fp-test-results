@@ -8038,54 +8038,6 @@
     </Data>
   </Result>
   <Result>
-    <Identifier>pts/redis-1.4.0</Identifier>
-    <Title>Redis</Title>
-    <AppVersion>7.0.4</AppVersion>
-    <Arguments>-t get</Arguments>
-    <Description>Test: GET</Description>
-    <Scale></Scale>
-    <Proportion></Proportion>
-    <DisplayFormat>BAR_GRAPH</DisplayFormat>
-    <Data>
-      <Entry>
-        <Identifier>desktop-mantic</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"6.01:6.01:6.01","error":"The test run did not produce a result. E: .\/redis: 12: .\/src\/redis-benchmark: not found"}</JSON>
-      </Entry>
-      <Entry>
-        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"6.01:6.01:6.01","error":"The test run did not produce a result. E: .\/redis: 12: .\/src\/redis-benchmark: not found"}</JSON>
-      </Entry>
-    </Data>
-  </Result>
-  <Result>
-    <Identifier>pts/redis-1.4.0</Identifier>
-    <Title>Redis</Title>
-    <AppVersion>7.0.4</AppVersion>
-    <Arguments>-t set</Arguments>
-    <Description>Test: SET</Description>
-    <Scale></Scale>
-    <Proportion></Proportion>
-    <DisplayFormat>BAR_GRAPH</DisplayFormat>
-    <Data>
-      <Entry>
-        <Identifier>desktop-mantic</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"6.01:6.01:6.01","error":"The test run did not produce a result. E: .\/redis: 12: .\/src\/redis-benchmark: not found"}</JSON>
-      </Entry>
-      <Entry>
-        <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"6.01:6.01:6.01","error":"The test run did not produce a result. E: .\/redis: 12: .\/src\/redis-benchmark: not found"}</JSON>
-      </Entry>
-    </Data>
-  </Result>
-  <Result>
     <Identifier>pts/tjbench-1.2.0</Identifier>
     <Title>libjpeg-turbo tjbench</Title>
     <AppVersion>2.1.0</AppVersion>
@@ -8131,12 +8083,6 @@
     <Proportion>HIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
-      <Entry>
-        <Identifier>desktop-mantic</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pie -fPIC -fstack-protector -O3"},"test-run-times":"0.00:0.01:0.00","error":"The test quit with a non-zero exit status. E: .\/mysqlslap: 3: .\/bin\/mysqlslap: not found"}</JSON>
-      </Entry>
       <Entry>
         <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
         <Value>554</Value>
@@ -8420,12 +8366,6 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>fp-withfp-opt-id</Identifier>
-        <Value>2895829.33</Value>
-        <RawString>2893738:2886721.25:2907028.75</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"23.30:23.34:23.22"}</JSON>
-      </Entry>
-      <Entry>
         <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
         <Value>3579297.67</Value>
         <RawString>3508834.75:3555493:3673565.25</RawString>
@@ -8461,12 +8401,6 @@
     <Proportion>HIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
-      <Entry>
-        <Identifier>fp-withfp-opt-id</Identifier>
-        <Value>2257683.46</Value>
-        <RawString>2192986.5:2318076:2277505.75:2310898:2208875:2237759.5</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"28.82:27.59:27.97:27.65:28.65:28.36"}</JSON>
-      </Entry>
       <Entry>
         <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
         <Value>2245109.67</Value>
@@ -9115,11 +9049,11 @@
     <Proportion>HIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
-      <Entry>
-        <Identifier>desktop-mantic</Identifier>
-        <Value>83.74</Value>
-        <RawString>84.11:83.53:83.57</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread"},"test-run-times":"42.90:43.19:43.17"}</JSON>
+       <Entry>
+            <Identifier>desktop-mantic</Identifier>
+            <Value>236.19</Value>
+            <RawString>236.35:235.8:236.43</RawString>
+            <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread"},"test-run-times":"15.30:15.34:15.30"}</JSON>
       </Entry>
       <Entry>
         <Identifier>server-rockman-mantic</Identifier>
@@ -9157,12 +9091,12 @@
     <Proportion>HIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
-      <Entry>
-        <Identifier>desktop-mantic</Identifier>
-        <Value>330.32</Value>
-        <RawString>331.01:330.82:329.12</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread"},"test-run-times":"10.91:10.91:10.97"}</JSON>
-      </Entry>
+        <Entry>
+            <Identifier>desktop-mantic</Identifier>
+            <Value>846.32</Value>
+            <RawString>846.67:846.15:846.15</RawString>
+            <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread"},"test-run-times":"4.28:4.28:4.29"}</JSON>
+        </Entry>
       <Entry>
         <Identifier>server-rockman-mantic</Identifier>
         <Value>288.37</Value>
