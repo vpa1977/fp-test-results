@@ -3,7 +3,7 @@
 <PhoronixTestSuite>
   <Generated>
     <Title>baseline-fp-opt-name</Title>
-    <LastModified>2024-04-28 06:54:29</LastModified>
+    <LastModified>2024-04-28 09:39:50</LastModified>
     <TestClient>Phoronix Test Suite v10.8.4</TestClient>
     <Description>Intel Core i5-1135G7 testing with a LENOVO Lenovo V15 G2 ITL LNVNB161216 (GGCN50WW BIOS) and Intel TigerLake-LP GT2 [Iris Xe ] on Ubuntu 23.10 via the Phoronix Test Suite.</Description>
     <Notes></Notes>
@@ -8155,6 +8155,12 @@
         <RawString>194.0617116243:192.04916458613:193.42359767892</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fPIC -pie -fstack-protector -O3 -shared -lrt -lpthread -lz -ldl -lm -lstdc++"},"test-run-times":"538.05:543.28:537.01"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>686</Value>
+        <RawString>691.56293222683:675.67567567568:690.13112491373</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -pie -fPIC -fstack-protector -O3 -lnuma -lpcre2-8 -lcrypt -lsystemd -lz -lm -lssl -lcrypto -lpthread -ldl"},"test-run-times":"146.35:149.65:146.57"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -8190,6 +8196,12 @@
         <Value>167</Value>
         <RawString>166.11295681063:167.72895001677:166.88918558077</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fPIC -pie -fstack-protector -O3 -shared -lrt -lpthread -lz -ldl -lm -lstdc++"},"test-run-times":"624.77:619.10:618.35"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>655</Value>
+        <RawString>647.66839378238:660.50198150595:655.73770491803</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -pie -fPIC -fstack-protector -O3 -lnuma -lpcre2-8 -lcrypt -lsystemd -lz -lm -lssl -lcrypto -lpthread -ldl"},"test-run-times":"156.51:153.43:154.49"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -8431,6 +8443,12 @@
         <RawString>2451505:2448264:2450063.5</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"26.44:26.44:26.43"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>3394366.80</Value>
+        <RawString>3529890.25:3350143.75:3367063.5:3331394.25:3393342.25</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3 -O2"},"test-run-times":"20.18:20.94:20.86:21.02:20.75"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -8466,6 +8484,12 @@
         <Value>1424170.92</Value>
         <RawString>1421085.5:1422176.88:1429250.38</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3"},"test-run-times":"41.21:41.18:41.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>2201793.00</Value>
+        <RawString>2193587.25:2213188.75:2198603</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3 -O2"},"test-run-times":"28.81:28.60:28.76"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -9588,6 +9612,12 @@
         <Value>6.584</Value>
         <RawString>7.15:6.537:6.315:6.428:6.608:6.465:6.508:6.6:6.585:6.549:6.593:6.666</RawString>
         <JSON>{"test-run-times":"7.15:6.54:6.31:6.43:6.61:6.46:6.51:6.60:6.59:6.55:6.59:6.67"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>desktop-mantic</Identifier>
+        <Value>7.140</Value>
+        <RawString>8.815:6.919:6.905:7.178:6.934:7.131:6.992:7.07:6.792:7.047:7.085:7.128:6.82</RawString>
+        <JSON>{"test-run-times":"8.82:6.92:6.90:7.18:6.93:7.13:6.99:7.07:6.79:7.05:7.08:7.13:6.82"}</JSON>
       </Entry>
     </Data>
   </Result>
