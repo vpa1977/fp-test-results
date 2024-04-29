@@ -3,7 +3,7 @@
 <PhoronixTestSuite>
   <Generated>
     <Title>Mantic vs Mantic -fno-omit-framepointer</Title>
-    <LastModified>2024-04-29 05:15:36</LastModified>
+    <LastModified>2024-04-29 08:49:08</LastModified>
     <TestClient>Phoronix Test Suite v10.8.4</TestClient>
     <Description>2 x Intel Xeon Gold 5218 testing with a Cisco UCSC-C480-M5 (C480M5.4.2.2d.0.0808221350 BIOS) and Matrox MGA G200e [Pilot] on Ubuntu 23.10 via the Phoronix Test Suite.</Description>
     <Notes></Notes>
@@ -3545,6 +3545,12 @@
         <RawString>108.806:108.346:107.735</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lOpenCL"},"test-run-times":"108.81:108.35:107.73"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>633.540</Value>
+        <RawString>645.036:628.05:627.533</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lOpenCL"},"test-run-times":"645.04:628.05:627.53"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -3592,6 +3598,12 @@
         <Value>13.677</Value>
         <RawString>13.833:13.646:13.553</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lOpenCL"},"test-run-times":"13.83:13.65:13.55"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>45.985</Value>
+        <RawString>45.491:46.078:46.385</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lOpenCL"},"test-run-times":"45.49:46.08:46.39"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -3654,12 +3666,6 @@
         <JSON>{"test-run-times":"19.29:18.87:18.49:18.81"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>server-cractus-mantic</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.02:0.01:0.01","error":"The test quit with a non-zero exit status. E: Error: Unable to access jarfile dacapo-23.11-chopin.jar"}</JSON>
-      </Entry>
-      <Entry>
         <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
         <Value>8945</Value>
         <RawString>8917:9023:8895</RawString>
@@ -3670,6 +3676,12 @@
         <Value></Value>
         <RawString></RawString>
         <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: Error: Unable to access jarfile dacapo-23.11-chopin.jar"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>4988</Value>
+        <RawString>4999:4975:4991</RawString>
+        <JSON>{"test-run-times":"19.06:18.22:18.26"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -3708,12 +3720,6 @@
         <JSON>{"test-run-times":"67.51:66.46:66.25"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>server-cractus-mantic</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: Error: Unable to access jarfile dacapo-23.11-chopin.jar"}</JSON>
-      </Entry>
-      <Entry>
         <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
         <Value>29407</Value>
         <RawString>28985:29825:29412</RawString>
@@ -3724,6 +3730,12 @@
         <Value></Value>
         <RawString></RawString>
         <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: Error: Unable to access jarfile dacapo-23.11-chopin.jar"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>5860</Value>
+        <RawString>5452:6009:5882:5861:5915:5838:5888:5823:5979:5908:5907</RawString>
+        <JSON>{"test-run-times":"25.94:26.77:26.94:26.69:26.79:26.78:26.50:26.60:27.22:26.53:26.79"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -3773,6 +3785,12 @@
         <RawString>1474.429424:1295.516297:1468.145725:1331.844875:1379.908546:1526.162104:1314.449933:1324.042719:1475.875758:1453.940717:1282.479921:1487.274678:1327.962797:1346.758193:1454.735111</RawString>
         <JSON>{"min-result":1086.38,"max-result":2367.48,"test-run-times":"99.79:98.63:99.39:100.43:102.82:110.04:98.96:99.69:100.11:99.26:97.61:100.33:100.13:101.03:99.09"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>831.5</Value>
+        <RawString>826.746684:834.642748:833.147099</RawString>
+        <JSON>{"min-result":616.28,"max-result":2046.76,"test-run-times":"63.69:64.52:64.23"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -3821,6 +3839,12 @@
         <RawString>11863.665509:12214.65706:12044.805789</RawString>
         <JSON>{"min-result":11863.67,"max-result":19472.62,"test-run-times":"166.23:170.79:173.54"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>6072.9</Value>
+        <RawString>6024.610861:6125.693302:6068.525456</RawString>
+        <JSON>{"min-result":6024.61,"max-result":8692.81,"test-run-times":"80.88:82.67:81.92"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -3868,6 +3892,12 @@
         <Value>4922.2</Value>
         <RawString>4750.465641:5161.641722:4742.028373:5088.400166:4890.091875:5155.867429:5052.831477:4668.343156:5066.316466:4825.301911:4987.367486:4678.257308</RawString>
         <JSON>{"min-result":4169.61,"max-result":5255.08,"test-run-times":"165.04:175.82:166.14:174.23:168.50:179.27:174.07:164.56:174.68:167.96:172.40:163.44"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>3520.2</Value>
+        <RawString>3520.419761:3513.142037:3527.145491</RawString>
+        <JSON>{"min-result":3130.01,"max-result":3838.59,"test-run-times":"116.12:116.81:117.23"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -4085,6 +4115,12 @@
         <RawString>38336:38380:37747</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-m64 -lssl -lcrypto -fopenmp -lgmp -lm -lrt -lz -ldl -lcrypt -lbz2"},"test-run-times":"30.34:30.25:30.25"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>6224</Value>
+        <RawString>6655:6175:6163:6163:6165:6187:6182:6187:6187:6177</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-m64 -lssl -lcrypto -fopenmp -lgmp -lm -lrt -lz -ldl -lcrypt -lbz2"},"test-run-times":"30.17:30.14:30.16:30.16:30.14:30.16:30.15:30.14:30.16:30.13"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4132,6 +4168,12 @@
         <Value>8.48</Value>
         <RawString>8.35:8.54:8.54</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"71.94:70.32:70.40"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>2.80</Value>
+        <RawString>2.81:2.8:2.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"213.66:214.08:214.07"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -4181,6 +4223,12 @@
         <RawString>8.79:8.77:8.79</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"68.34:68.48:68.31"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>2.88</Value>
+        <RawString>2.89:2.87:2.87</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"207.84:209.14:208.79"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4228,6 +4276,12 @@
         <Value>21.20</Value>
         <RawString>21.23:21.19:21.19</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"28.32:28.38:28.38"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>15.93</Value>
+        <RawString>16.29:15.73:15.76</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"36.87:38.18:38.10"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -4277,6 +4331,12 @@
         <RawString>22.09:22.16:21.89</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"27.22:27.13:27.48"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>16.45</Value>
+        <RawString>16.82:16.25:16.28</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"35.71:36.95:36.88"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4324,6 +4384,12 @@
         <Value>15.97</Value>
         <RawString>16.06:15.89:15.96</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"37.44:37.85:37.68"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>7.29</Value>
+        <RawString>7.37:7.25:7.26</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"81.44:82.79:82.73"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -4373,6 +4439,12 @@
         <RawString>20.75:20.62:20.68</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"29.00:29.18:29.08"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>9.01</Value>
+        <RawString>9.14:8.95:8.95</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"65.72:67.10:67.08"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4420,6 +4492,12 @@
         <Value>23.81</Value>
         <RawString>23.66:23.96:23.8</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"25.45:25.12:25.28"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>12.55</Value>
+        <RawString>12.76:12.44:12.45</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"47.07:48.25:48.21"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -4469,6 +4547,12 @@
         <RawString>40.91:40.76:40.82</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"14.72:14.78:14.75"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>35.27</Value>
+        <RawString>37.75:34.69:35.31:35.18:35.04:35.3:34.98:34.89:35.25:34.73:34.93:35.15:35.28</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"15.92:17.33:17.03:17.09:17.16:17.03:17.19:17.23:17.05:17.31:17.21:17.10:17.04"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4517,6 +4601,12 @@
         <RawString>53.75:53.56:53.38</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"11.22:11.26:11.30"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>43.54</Value>
+        <RawString>48.08:43.5:43.24:42.63:43.58:42.59:43.56:43.05:43.43:43.47:43.11:43.3:43.03:42.81:43.68</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"12.51:13.82:13.91:14.11:13.80:14.12:13.81:13.97:13.85:13.84:13.95:13.89:13.98:14.05:13.77"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4564,6 +4654,12 @@
         <Value>63.29</Value>
         <RawString>63.48:63.15:63.24</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"9.51:9.55:9.55"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>62.13</Value>
+        <RawString>72.23:60.75:61.82:61.36:62.36:61.81:61.15:62.71:60.25:59.71:61.07:62.05:61.11:61.46</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"8.34:9.91:9.74:9.81:9.65:9.74:9.84:9.60:9.99:10.08:9.86:9.70:9.85:9.79"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -4709,6 +4805,12 @@
         <RawString>14.99:13.94:13.92:13.85:13.96:15.07:13.97:13.83:13.93:13.77:14.01:13.96:13.9:13.8:15.03</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"40.29:43.27:43.34:43.59:43.22:40.05:43.20:43.63:43.34:43.83:43.07:43.21:43.40:43.71:40.17"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>6.45</Value>
+        <RawString>6.46:6.45:6.44</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"92.98:93.04:93.23"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4756,6 +4858,12 @@
         <Value>32.89</Value>
         <RawString>32.8:33.14:32.73</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"18.44:18.26:18.49"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>30.39</Value>
+        <RawString>32.3:30.38:30.77:29.63:30.05:30.22:30.48:30.14:29.87:30.09</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"18.62:19.79:19.54:20.29:20.00:19.89:19.72:19.94:20.13:19.98"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -4805,6 +4913,12 @@
         <RawString>2130.827878:2173.023612:2120.889168</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -O2 -mavx2"},"test-run-times":"66.32:64.30:59.00"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>4795.672678</Value>
+        <RawString>4789.472322:4800.135446:4797.410265</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -O2 -mavx2"},"test-run-times":"59.65:59.67:59.64"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4852,6 +4966,12 @@
         <Value>90167</Value>
         <RawString>87470:88945:94442:89297:91093:89506:86915:91457:90610:91934</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lpthread -ldl -O2 -fPIC"},"test-run-times":"61.97:61.84:60.60:62.98:61.91:62.00:63.57:61.92:62.06:62.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>31611</Value>
+        <RawString>34596:31638:31389:31513:31035:31623:31505:31556:31448:30838:30791:31388:31583:31954:31303</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lpthread -ldl -O2 -fPIC"},"test-run-times":"33.53:36.25:36.25:36.27:36.65:36.15:36.19:36.32:36.26:36.30:36.71:36.32:36.40:36.09:36.32"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -4901,6 +5021,12 @@
         <RawString>132607:132314:133203:132819:131424:132136:132807:131442:132891:132247</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lpthread -ldl -O2 -fPIC"},"test-run-times":"61.97:61.84:60.60:62.98:61.91:62.00:63.57:61.92:62.06:62.01"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>21365</Value>
+        <RawString>23261:21291:21314:21214:20971:21302:21297:21266:21168:21306:21081:21311:21092:21281:21313</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lpthread -ldl -O2 -fPIC"},"test-run-times":"33.53:36.25:36.25:36.27:36.65:36.15:36.19:36.32:36.26:36.30:36.71:36.32:36.40:36.09:36.32"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4948,6 +5074,12 @@
         <Value>52596162</Value>
         <RawString>48892956:50019647:54587643:52687561:53706124:51169450:52628727:50178604:58142175:55786201:51309332:52045520</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lgcov -m64 -lpthread -O2 -fno-exceptions -std=c++17 -pedantic -O3 -msse -msse3 -mpopcnt -mavx2 -mavx512f -mavx512bw -mavx512vnni -mavx512dq -mavx512vl -msse4.1 -mssse3 -msse2 -mbmi2 -flto -fno-peel-loops -fno-tracer -flto=jobserver"},"test-run-times":"105.97:117.91:109.36:123.66:131.44:144.96:118.16:105.38:152.68:124.85:105.53:125.38"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>8298159</Value>
+        <RawString>8519759:8245343:8129374</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lgcov -m64 -lpthread -O2 -fno-exceptions -std=c++17 -pedantic -O3 -msse -msse3 -mpopcnt -mavx2 -mavx512f -mavx512bw -mavx512vnni -mavx512dq -mavx512vl -msse4.1 -mssse3 -msse2 -mbmi2 -flto -fno-peel-loops -fno-tracer -flto=jobserver"},"test-run-times":"169.48:186.48:200.30"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5009,6 +5141,12 @@
         <RawString>68860006:70515132:68776288</RawString>
         <JSON>{"test-run-times":"136.30:166.68:191.89"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>10104459</Value>
+        <RawString>10202517:10030330:10080531</RawString>
+        <JSON>{"test-run-times":"264.50:266.35:229.21"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5056,6 +5194,12 @@
         <Value>419145268</Value>
         <RawString>422562708:420309169:414563927</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -lcurses -lrt"},"test-run-times":"22.95:22.92:22.91"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>713210775</Value>
+        <RawString>718639009:703749157:717244158</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -lcurses -lrt"},"test-run-times":"15.23:15.25:15.23"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5105,6 +5249,12 @@
         <RawString>1654.556:1617.47:1623.733</RawString>
         <JSON>{"test-run-times":"1654.56:1617.47:1623.73"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>2365.124</Value>
+        <RawString>2365.751:2364.899:2364.722</RawString>
+        <JSON>{"test-run-times":"2365.75:2364.90:2364.72"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5152,6 +5302,12 @@
         <Value>71.261</Value>
         <RawString>75.197:70.682:70.594:70.553:70.664:70.743:70.392</RawString>
         <JSON>{"test-run-times":"75.20:70.68:70.59:70.55:70.66:70.74:70.39"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>285.857</Value>
+        <RawString>286.935:285.486:285.15</RawString>
+        <JSON>{"test-run-times":"286.93:285.49:285.15"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5201,6 +5357,12 @@
         <RawString>512.454:514.678:528.048</RawString>
         <JSON>{"test-run-times":"512.45:514.68:528.05"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>2061.086</Value>
+        <RawString>2058.385:2063.767:2061.106</RawString>
+        <JSON>{"test-run-times":"2058.38:2063.77:2061.11"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5221,6 +5383,12 @@
       </Entry>
       <Entry>
         <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
         <Value></Value>
         <RawString></RawString>
         <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status."}</JSON>
@@ -5273,6 +5441,12 @@
         <RawString>58.345:58.345:58.167</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -O3 -O2"},"test-run-times":"58.93:59.03:58.86"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>335.987</Value>
+        <RawString>333.388:337.377:337.197</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -O3 -O2"},"test-run-times":"333.81:337.80:337.61"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5321,6 +5495,12 @@
         <RawString>24.533:24.748:25.006</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -O2 -lSM -lICE -lX11 -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"},"test-run-times":"27.38:27.61:27.86"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>130.602</Value>
+        <RawString>130.094:131.071:130.64</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -O2 -lSM -lICE -lX11 -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"},"test-run-times":"132.07:133.06:132.61"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5363,6 +5543,12 @@
         <RawString>59.797:59.766:59.887</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-m64 -lgcc_s -lutil -lrt -lpthread -lm -ldl -lc -pie -nodefaultlibs"},"test-run-times":"59.80:59.77:59.89"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>67.835</Value>
+        <RawString>67.965:67.618:67.923</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-m64 -lgcc_s -lutil -lrt -lpthread -lm -ldl -lc -pie -nodefaultlibs"},"test-run-times":"67.96:67.62:67.92"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5386,6 +5572,12 @@
         <Value></Value>
         <RawString></RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O3 -march=native -fopenmp -msse4.1 -fPIC -pie -ldl"},"test-run-times":"0.02:0.01:0.01","error":"The test quit with a non-zero exit status. E: Error: Fuction 'batch' at (oneDNN-3.3\/tests\/benchdnn\/common.cpp:438) returned '1'"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O3 -march=native -O2 -fopenmp -msse4.1 -fPIC -pie -ldl"},"test-run-times":"0.04:0.01:0.01","error":"The test quit with a non-zero exit status. E: Error: Fuction 'batch' at (oneDNN-3.3\/tests\/benchdnn\/common.cpp:438) returned '1'"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5411,6 +5603,12 @@
         <RawString></RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O3 -march=native -fopenmp -msse4.1 -fPIC -pie -ldl"},"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: Error: Fuction 'batch' at (oneDNN-3.3\/tests\/benchdnn\/common.cpp:438) returned '1'"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O3 -march=native -O2 -fopenmp -msse4.1 -fPIC -pie -ldl"},"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: Error: Fuction 'batch' at (oneDNN-3.3\/tests\/benchdnn\/common.cpp:438) returned '1'"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5434,6 +5632,12 @@
         <Value></Value>
         <RawString></RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O3 -march=native -fopenmp -msse4.1 -fPIC -pie -ldl"},"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: Error: Fuction 'batch' at (oneDNN-3.3\/tests\/benchdnn\/common.cpp:438) returned '1'"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O3 -march=native -O2 -fopenmp -msse4.1 -fPIC -pie -ldl"},"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: Error: Fuction 'batch' at (oneDNN-3.3\/tests\/benchdnn\/common.cpp:438) returned '1'"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5483,6 +5687,12 @@
         <RawString>265.03:270.48:264.98</RawString>
         <JSON>{"test-run-times":"343.63:285.48:295.08"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>473.67</Value>
+        <RawString>473.73:471.64:475.64</RawString>
+        <JSON>{"test-run-times":"147.42:149.50:147.33"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5530,6 +5740,12 @@
         <Value>36.655</Value>
         <RawString>36.704:36.568:36.693</RawString>
         <JSON>{"test-run-times":"36.70:36.57:36.69"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>20.742</Value>
+        <RawString>20.7:20.668:20.859</RawString>
+        <JSON>{"test-run-times":"20.70:20.67:20.86"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5579,6 +5795,12 @@
         <RawString>35.755:37.621:37.37:37.67</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lpthread -O2"},"test-run-times":"35.90:37.77:37.52:37.81"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>198.091</Value>
+        <RawString>196.118:198.978:199.177</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lpthread -O2"},"test-run-times":"196.18:199.04:199.24"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5627,6 +5849,12 @@
         <RawString>36.156:36.231:36.35</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fopenmp -O2"},"test-run-times":"36.16:36.23:36.35"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>226.504</Value>
+        <RawString>225.484:226.83:227.199</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fopenmp -O2"},"test-run-times":"225.48:226.83:227.20"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5650,6 +5878,12 @@
         <Value></Value>
         <RawString></RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-std=c++11 -rdynamic"},"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: .\/opencv-bench: 3: .\/main.py: not found"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -rdynamic"},"test-run-times":"0.01:0.00:0.01","error":"The test quit with a non-zero exit status. E: .\/opencv-bench: 3: .\/main.py: not found"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5699,6 +5933,12 @@
         <RawString></RawString>
         <JSON>{"test-run-times":"1049.32"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>550.18</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"550.18"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5746,6 +5986,12 @@
         <Value>317.317</Value>
         <RawString></RawString>
         <JSON>{"test-run-times":"317.32"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>227.764</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"227.76"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5795,6 +6041,12 @@
         <RawString>546.33:536.4:536.76</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"30.48:29.64:29.59"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>78.23</Value>
+        <RawString>77.82:77.99:78.89</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.53:30.31:30.10"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5842,6 +6094,12 @@
         <Value>7086.92</Value>
         <RawString>7092.85:7082.66:7085.25</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"30.54:29.55:30.62"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>1018.18</Value>
+        <RawString>1013.81:1014.26:1026.48</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.78:29.69:30.45"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5891,6 +6149,12 @@
         <RawString>29560:29630:29570</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.58:29.94:30.18"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>4150.57</Value>
+        <RawString>4144.75:4147.33:4159.62</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.92:30.03:30.01"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5938,6 +6202,12 @@
         <Value>71543</Value>
         <RawString>71530:71540:71560</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.80:30.09:29.85"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>10453</Value>
+        <RawString>10420:10500:10440</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.55:30.45:29.75"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -6028,6 +6298,12 @@
         <Value>124.916289</Value>
         <RawString>124.250271:126.636748:123.861847</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -O3 -rdynamic"},"test-run-times":"25.24:25.36:25.13"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>193.206876</Value>
+        <RawString>193.3104:192.68983:193.620398</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -O3 -rdynamic"},"test-run-times":"25.22:25.26:25.14"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -6155,6 +6431,12 @@
         <RawString>30.587:31.016:31.353</RawString>
         <JSON>{"test-run-times":"30.59:31.02:31.35"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>14.803</Value>
+        <RawString>14.933:14.67:14.806</RawString>
+        <JSON>{"test-run-times":"14.93:14.67:14.81"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6196,6 +6478,12 @@
         <Value>26.834</Value>
         <RawString>26.656:26.987:26.859</RawString>
         <JSON>{"test-run-times":"26.66:26.99:26.86"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>12.976</Value>
+        <RawString>12.974:12.961:12.993</RawString>
+        <JSON>{"test-run-times":"12.97:12.96:12.99"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -6239,6 +6527,12 @@
         <RawString>31.586:31.113:31.536</RawString>
         <JSON>{"test-run-times":"31.59:31.11:31.54"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>13.811</Value>
+        <RawString>13.841:13.804:13.788</RawString>
+        <JSON>{"test-run-times":"13.84:13.80:13.79"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6280,6 +6574,12 @@
         <Value>40.634</Value>
         <RawString>40.188:40.602:41.112</RawString>
         <JSON>{"test-run-times":"40.19:40.60:41.11"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>15.994</Value>
+        <RawString>15.992:15.985:16.006</RawString>
+        <JSON>{"test-run-times":"15.99:15.99:16.01"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -6359,6 +6659,12 @@
         <RawString>2560209.75:2554063.25:2558114</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3 -O2"},"test-run-times":"25.55:25.60:25.56"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>3606459.25</Value>
+        <RawString>3615393.75:3595634.75:3608349.25</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3 -O2"},"test-run-times":"19.85:19.92:19.87"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6400,6 +6706,12 @@
         <Value>1698188.71</Value>
         <RawString>1698111.62:1698861.75:1697592.75</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3 -O2"},"test-run-times":"35.46:35.45:35.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>2871635.75</Value>
+        <RawString>2874606:2870315.5:2869985.75</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3 -O2"},"test-run-times":"23.41:23.44:23.44"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -6449,6 +6761,12 @@
         <RawString>1283.9:1223:1271.5:1276.3</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"64.25:64.11:65.06:64.60"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>854.9</Value>
+        <RawString>874.7:832.6:857.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.72:62.40:61.78"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6496,6 +6814,12 @@
         <Value>731.5</Value>
         <RawString>732.8:731.2:732.2:729.6</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"64.25:64.11:65.06:64.60"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>1530.9</Value>
+        <RawString>1535.2:1531:1526.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.72:62.40:61.78"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -6569,6 +6893,12 @@
         <RawString>345.3:354.4:355</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"64.21:65.51:64.70"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>139.3</Value>
+        <RawString>139.7:139.3:138.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.40:62.57:62.49"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6616,6 +6946,12 @@
         <Value>767.4</Value>
         <RawString>767.1:766.8:768.4</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"64.21:65.51:64.70"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>1673.9</Value>
+        <RawString>1672.3:1672.8:1676.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.40:62.57:62.49"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -6665,6 +7001,12 @@
         <RawString>92.9:100.4:83.8:104.3:98.3:98.5:104.4:100.9:100.6:99:101.7:103.4:94:103.3:93.9</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"63.95:64.97:64.68:63.77:63.48:63.02:64.10:65.29:63.42:64.79:63.49:63.12:63.38:65.57:63.17"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>41.8</Value>
+        <RawString>41.9:41.8:41.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"61.77:61.89:61.86"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6712,6 +7054,12 @@
         <Value>734.9</Value>
         <RawString>732.6:738.1:738.2:736.9:727.7:731.9:737.9:732.4:731.2:731.5:739.7:733.9:734.2:740.8:736.7</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"63.95:64.97:64.68:63.77:63.48:63.02:64.10:65.29:63.42:64.79:63.49:63.12:63.38:65.57:63.17"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>1684.8</Value>
+        <RawString>1687.9:1683.8:1682.6</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"61.77:61.89:61.86"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -6761,6 +7109,12 @@
         <RawString>10.1:10.2:10.6:10:10.6:10.1:10.7:10.1:10.4:10.1:10.4</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"75.13:75.81:73.73:76.38:73.98:76.21:73.28:76.38:75.12:76.77:75.58"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>9.81</Value>
+        <RawString>9.95:9.8:9.68</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"76.65:77.35:77.44"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6808,6 +7162,12 @@
         <Value>631.5</Value>
         <RawString>633.1:631.1:630.2:630.2:633.5:634.1:631.8:630.4:631:632.6:628.8</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"75.13:75.81:73.73:76.38:73.98:76.21:73.28:76.38:75.12:76.77:75.58"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>1355.4</Value>
+        <RawString>1352:1358.2:1356</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"76.65:77.35:77.44"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -6857,6 +7217,12 @@
         <RawString>311.5:319.2:311.1</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"63.44:65.27:64.36"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>710.7</Value>
+        <RawString>709.4:709.8:712.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"63.20:61.58:61.76"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6904,6 +7270,12 @@
         <Value>758.2</Value>
         <RawString>761.3:754.8:758.4</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"63.44:65.27:64.36"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>1554.5</Value>
+        <RawString>1557:1555.4:1551</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"63.20:61.58:61.76"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -6953,6 +7325,12 @@
         <RawString>286.9:293:289.1</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"64.15:65.26:64.59"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>137.1</Value>
+        <RawString>137.5:137.1:136.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"61.97:62.13:62.23"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7000,6 +7378,12 @@
         <Value>776.9</Value>
         <RawString>775.7:775.7:779.4</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"64.15:65.26:64.59"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>1658.3</Value>
+        <RawString>1656.9:1660.3:1657.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"61.97:62.13:62.23"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -7049,6 +7433,12 @@
         <RawString>5.49:5.43:5.44</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"71.66:72.14:71.03"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>6.41</Value>
+        <RawString>6.4:6.42:6.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"64.41:64.48:64.45"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7096,6 +7486,12 @@
         <Value>624.4</Value>
         <RawString>625.5:625.2:622.5</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"71.66:72.14:71.03"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>1315.9</Value>
+        <RawString>1319.9:1311:1316.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"64.41:64.48:64.45"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -7145,6 +7541,12 @@
         <RawString>108.48:109.26:110.41</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread"},"test-run-times":"34.75:33.12:32.77"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>86.67</Value>
+        <RawString>88.14:86.08:85.79</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread"},"test-run-times":"41.24:41.90:42.04"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7193,6 +7595,12 @@
         <RawString>276.81:280.82:281.15</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread"},"test-run-times":"13.64:12.91:12.90"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>371.42</Value>
+        <RawString>428.21:364.24:366.84:373.58:368.38:358.41:374.88:368.74:363.99:367.4:363.08:364.53:374.46:363.14</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread"},"test-run-times":"8.65:9.91:9.84:9.66:9.80:10.07:9.63:9.79:9.92:9.83:9.94:9.90:9.64:9.94"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7234,6 +7642,12 @@
         <Value>43096.98</Value>
         <RawString>43096.43:43108.03:43086.48</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lm -lEGL -lGLESv2 -latomic -lc -lcrypt -ldl -lgbm -ljpeg -lmpfr -lpthread -lrt -lz"},"test-run-times":"30.12:30.19:30.10"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>6977.92</Value>
+        <RawString>7587.9:6969.72:6950:6928.51:6950.92:6916.2:6933.19:6953.67:6886.45:6924.59:6910.16:6956.71:6922.6:6918.84:6959.33</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lm -lEGL -lGLESv2 -latomic -lc -lcrypt -ldl -lgbm -ljpeg -lmpfr -lpthread -lrt -lz"},"test-run-times":"30.05:30.04:30.02:30.02:30.02:30.02:30.02:30.02:30.02:30.02:30.02:30.03:30.02:30.02:30.02"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -7277,6 +7691,12 @@
         <RawString>57099.39:56923.11:57262.08</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lm -lEGL -lGLESv2 -latomic -lc -lcrypt -ldl -lgbm -ljpeg -lmpfr -lpthread -lrt -lz"},"test-run-times":"30.10:30.10:30.19"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>8871.02</Value>
+        <RawString>9061.03:8773.44:8778.6</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lm -lEGL -lGLESv2 -latomic -lc -lcrypt -ldl -lgbm -ljpeg -lmpfr -lpthread -lrt -lz"},"test-run-times":"30.02:30.02:30.02"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7318,6 +7738,12 @@
         <Value>209</Value>
         <RawString>208:208:210</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2"},"test-run-times":"1.18:1.19:1.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>150</Value>
+        <RawString>150:150:150</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2"},"test-run-times":"0.76:0.76:0.76"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -7361,6 +7787,12 @@
         <RawString>11873.07:11541.75:11983.48</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -lm"},"test-run-times":"8.64:8.89:8.56"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>17415.96</Value>
+        <RawString>17414.82:17377.91:17455.14</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -lm"},"test-run-times":"5.89:5.90:5.87"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7402,6 +7834,12 @@
         <Value>47584.09</Value>
         <RawString>47592.14:47591.82:47568.3</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -lm"},"test-run-times":"90.02:90.02:90.02"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>13481.06</Value>
+        <RawString>13569.4:13443.26:13430.52</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -lm"},"test-run-times":"90.01:90.01:90.01"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -7445,6 +7883,12 @@
         <RawString>1415:1413:1413</RawString>
         <JSON>{"test-run-times":"32.44:32.24:32.23"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>717</Value>
+        <RawString>717:715:718</RawString>
+        <JSON>{"test-run-times":"16.56:16.50:16.56"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7486,6 +7930,12 @@
         <Value>213.482794</Value>
         <RawString></RawString>
         <JSON>{"test-run-times":"434.58"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>1046.765205</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"2096.85"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -7529,6 +7979,12 @@
         <RawString></RawString>
         <JSON>{"test-run-times":"205.96"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>607.876993</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"1215.94"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7571,6 +8027,12 @@
         <RawString>512980:509280:515988</RawString>
         <JSON>{"test-run-times":"39.04:39.31:38.80"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>1006009</Value>
+        <RawString>1010351:1000516:1007159</RawString>
+        <JSON>{"test-run-times":"19.83:20.01:19.88"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7612,6 +8074,12 @@
         <Value>84.539</Value>
         <RawString>84.686:84.591:84.341</RawString>
         <JSON>{"install-footnote":"git version 2.40.1","test-run-times":"84.69:84.59:84.34"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>49.561</Value>
+        <RawString>49.538:49.536:49.609</RawString>
+        <JSON>{"install-footnote":"git version 2.40.1","test-run-times":"49.54:49.54:49.61"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -7984,6 +8452,42 @@
         <Value></Value>
         <RawString></RawString>
         <JSON>{"test-run-times":"8.21:8.21:8.22","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/mysqlslap-1.5.0</Identifier>
+    <Title>MariaDB mariadb-slap</Title>
+    <AppVersion>11.5</AppVersion>
+    <Arguments>--concurrency=128</Arguments>
+    <Description>Clients: 128</Description>
+    <Scale>Queries Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>238</Value>
+        <RawString>210.74815595364:240.90580582992:240.90580582992:241.0219329959:240.67388688327:240.73182474723:241.37098720734:240.84778420039:240.84778420039</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -pie -fPIC -fstack-protector -O3 -lnuma -lpcre2-8 -lcrypt -lsystemd -lz -lm -lssl -lcrypto -lpthread -ldl"},"test-run-times":"479.86:419.34:419.35:419.10:419.70:419.58:418.52:419.43:419.39"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/mysqlslap-1.5.0</Identifier>
+    <Title>MariaDB mariadb-slap</Title>
+    <AppVersion>11.5</AppVersion>
+    <Arguments>--concurrency=256</Arguments>
+    <Description>Clients: 256</Description>
+    <Scale>Queries Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>laptop-mantic</Identifier>
+        <Value>120</Value>
+        <RawString>115.27377521614:120.67093037287:121.87690432663:122.11503236048:121.83235867446</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -pie -fPIC -fstack-protector -O3 -lnuma -lpcre2-8 -lcrypt -lsystemd -lz -lm -lssl -lcrypto -lpthread -ldl"},"test-run-times":"872.87:833.63:825.02:823.55:825.59"}</JSON>
       </Entry>
     </Data>
   </Result>
