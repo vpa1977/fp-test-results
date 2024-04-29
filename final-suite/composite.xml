@@ -3,9 +3,9 @@
 <PhoronixTestSuite>
   <Generated>
     <Title>Mantic vs Mantic -fno-omit-framepointer</Title>
-    <LastModified>2024-04-29 00:41:07</LastModified>
+    <LastModified>2024-04-29 05:15:36</LastModified>
     <TestClient>Phoronix Test Suite v10.8.4</TestClient>
-    <Description></Description>
+    <Description>2 x Intel Xeon Gold 5218 testing with a Cisco UCSC-C480-M5 (C480M5.4.2.2d.0.0808221350 BIOS) and Matrox MGA G200e [Pilot] on Ubuntu 23.10 via the Phoronix Test Suite.</Description>
     <Notes></Notes>
     <InternalTags></InternalTags>
     <ReferenceID></ReferenceID>
@@ -90,6 +90,16 @@
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --enable-libphobos-checking=release --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=2 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=\/build\/gcc-13-b9QCDx\/gcc-13-13.2.0\/debian\/tmp-nvptx\/usr,amdgcn-amdhsa=\/build\/gcc-13-b9QCDx\/gcc-13-13.2.0\/debian\/tmp-gcn\/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v","disk-scheduler":"MQ-DEADLINE","disk-mount-options":"relatime,rw","disk-details":"Block Size: 4096","cpu-scaling-governor":"intel_pstate powersave (EPP: balance_performance)","cpu-microcode":"0x5003302","kernel-extra-details":"Transparent Huge Pages: madvise","environment-variables":"CXXFLAGS=\"-fno-omit-frame-pointer -frecord-gcc-switches -O2\" QMAKE_CFLAGS=\"-fno-omit-frame-pointer -frecord-gcc-switches -O2\" CFLAGS=\"-fno-omit-frame-pointer -frecord-gcc-switches -O2\" CFLAGS_OVERRIDE=\"-fno-omit-frame-pointer -frecord-gcc-switches -O2\" QMAKE_CXXFLAGS=\"-fno-omit-frame-pointer -frecord-gcc-switches -O2\" FFLAGS=\"-fno-omit-frame-pointer -frecord-gcc-switches -O2\"","java":"OpenJDK Runtime Environment (build 17.0.9-ea+6-Ubuntu-1)","python":"Python 3.11.6","security":"gather_data_sampling: Vulnerable: No microcode + itlb_multihit: KVM: Mitigation of VMX disabled + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable + retbleed: Mitigation of Enhanced IBRS + spec_rstack_overflow: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced \/ Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence + srbds: Not affected + tsx_async_abort: Mitigation of TSX disabled"}</JSON>
+  </System>
+  <System>
+    <Identifier>server-cractus-mantic</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon Gold 5218 @ 3.90GHz (32 Cores / 64 Threads), Motherboard: Cisco UCSC-C480-M5 (C480M5.4.2.2d.0.0808221350 BIOS), Chipset: Intel Sky Lake-E DMI3 Registers, Memory: 64GB, Disk: 2 x 300GB AL14SXB30EN, Graphics: Matrox MGA G200e [Pilot], Network: 2 x Intel X550 + 4 x Intel I350</Hardware>
+    <Software>OS: Ubuntu 23.10, Kernel: 6.5.0-9-generic (x86_64), Compiler: GCC 13.2.0, File-System: ext4</Software>
+    <User>ubuntu</User>
+    <TimeStamp>2024-04-29 04:32:22</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --enable-libphobos-checking=release --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=2 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=\/build\/gcc-13-XYspKM\/gcc-13-13.2.0\/debian\/tmp-nvptx\/usr,amdgcn-amdhsa=\/build\/gcc-13-XYspKM\/gcc-13-13.2.0\/debian\/tmp-gcn\/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v","cpu-scaling-governor":"intel_pstate powersave (EPP: balance_performance)","cpu-microcode":"0x5003302","kernel-extra-details":"Transparent Huge Pages: madvise","environment-variables":"CXXFLAGS=\"-frecord-gcc-switches -O2\" QMAKE_CFLAGS=\"-frecord-gcc-switches -O2\" CFLAGS=\"-frecord-gcc-switches -O2\" CFLAGS_OVERRIDE=\"-frecord-gcc-switches -O2\" QMAKE_CXXFLAGS=\"-frecord-gcc-switches -O2\" FFLAGS=\"-frecord-gcc-switches -O2\"","java":"OpenJDK Runtime Environment (build 17.0.9-ea+6-Ubuntu-1)","security":"gather_data_sampling: Vulnerable: No microcode + itlb_multihit: KVM: Mitigation of VMX disabled + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable + retbleed: Mitigation of Enhanced IBRS + spec_rstack_overflow: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced \/ Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence + srbds: Not affected + tsx_async_abort: Mitigation of TSX disabled"}</JSON>
   </System>
   <Result>
     <Identifier>system/sqlite-1.0.1</Identifier>
@@ -2351,6 +2361,12 @@
         <RawString>91.3873:89.9665:89.9794</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.54:1.43:1.43"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value>89.4279</Value>
+        <RawString>89.6151:89.3321:89.3365</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.43:1.42:1.42"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -2404,6 +2420,12 @@
         <Value>16.9480</Value>
         <RawString>16.9207:16.9844:16.9388</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"4.42:4.40:4.40"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value>16.1551</Value>
+        <RawString>16.1542:16.163:16.148</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"4.41:4.40:4.41"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -2459,6 +2481,12 @@
         <RawString>6.57642:6.57695:6.57741</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.41:1.39:1.40"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value>4.94856</Value>
+        <RawString>4.94827:4.94863:4.94878</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.39:1.39"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -2512,6 +2540,12 @@
         <Value>37.4407</Value>
         <RawString>37.42:37.4647:37.4375</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.46:2.45:2.45"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value>36.9812</Value>
+        <RawString>36.9752:36.9608:37.0076</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.44:2.44:2.44"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -2579,6 +2613,12 @@
         <RawString>77.5287:76.8567:77.5063</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"3.67:3.65:3.66"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value>76.8898</Value>
+        <RawString>76.9039:76.884:76.8816</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"3.62:3.61:3.62"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -2631,6 +2671,12 @@
         <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
         <Value>22.1848</Value>
         <RawString>22.2314:22.1575:22.1656</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.39:1.39"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value>21.5003</Value>
+        <RawString>21.5007:21.5019:21.4984</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.39:1.39"}</JSON>
       </Entry>
     </Data>
@@ -2687,6 +2733,12 @@
         <RawString>8.24498:8.24577:8.24559</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.39:1.39:1.39"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value>8.24022</Value>
+        <RawString>8.2405:8.23988:8.24028</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.39:1.40"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -2739,6 +2791,12 @@
         <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
         <Value>32.7358</Value>
         <RawString>32.308:33.5303:32.3691</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.39:1.40:1.40"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value>28.4227</Value>
+        <RawString>28.4015:28.4228:28.4438</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.39:1.40:1.40"}</JSON>
       </Entry>
     </Data>
@@ -2807,6 +2865,12 @@
         <RawString>5.78263:5.78265:5.7828</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.40:1.40"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value>6.59750</Value>
+        <RawString>6.59749:6.59771:6.5973</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.39:1.39:1.39"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -2860,6 +2924,12 @@
         <Value>48.0020</Value>
         <RawString>56.0056:49.4347:46.9361:46.8801:46.9324:48.3059:46.9304:49.8437:46.9437:46.9348:46.9497:46.9418:46.934:47.1187:46.9383</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.39:1.40:1.40:1.39:1.40:1.40:1.39:1.40:1.40:1.40:1.40:1.40:1.39:1.40:1.39"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value>45.1540</Value>
+        <RawString>45.175:45.1805:45.1065</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.40:1.39"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -2915,6 +2985,12 @@
         <RawString>33.894:33.8866:33.9034</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.40:1.39"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value>32.8393</Value>
+        <RawString>32.8446:32.8395:32.8339</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.39:1.40:1.40"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -2968,6 +3044,12 @@
         <Value>41.2028</Value>
         <RawString>41.2246:41.188:41.1958</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.40:1.40"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value>41.1304</Value>
+        <RawString>40.8266:40.8504:43.3222:40.8357:40.6222:40.8229:40.633</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.39:1.39:1.40:1.39:1.40:1.40"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -3023,6 +3105,12 @@
         <RawString>5.76252:5.76188:5.76251</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.40:1.39"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value>4.94829</Value>
+        <RawString>4.94875:4.94801:4.94812</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.39:1.39:1.40"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -3076,6 +3164,12 @@
         <Value>41.2282</Value>
         <RawString>41.2184:41.2354:41.2309</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.47:2.46:2.46"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value>40.8779</Value>
+        <RawString>40.8844:40.8809:40.8685</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.45:2.45:2.45"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -3142,6 +3236,12 @@
         <Value>4.95410</Value>
         <RawString>4.95458:4.95348:4.95424</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.39:1.40"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value>5.77116</Value>
+        <RawString>5.77062:5.77185:5.77102</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.39:1.39"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -3479,6 +3579,12 @@
         <RawString>108.416:108.435:108.975</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lOpenCL"},"test-run-times":"108.42:108.43:108.97"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value>108.296</Value>
+        <RawString>108.806:108.346:107.735</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lOpenCL"},"test-run-times":"108.81:108.35:107.73"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -3526,6 +3632,12 @@
         <Value>13.845</Value>
         <RawString>13.971:13.781:13.784</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lOpenCL"},"test-run-times":"13.97:13.78:13.78"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value>13.677</Value>
+        <RawString>13.833:13.646:13.553</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lOpenCL"},"test-run-times":"13.83:13.65:13.55"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -3599,6 +3711,12 @@
         <RawString>8917:9023:8895</RawString>
         <JSON>{"test-run-times":"33.09:32.56:32.64"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: Error: Unable to access jarfile dacapo-23.11-chopin.jar"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -3646,6 +3764,12 @@
         <Value>29407</Value>
         <RawString>28985:29825:29412</RawString>
         <JSON>{"test-run-times":"99.61:102.29:100.32"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status. E: Error: Unable to access jarfile dacapo-23.11-chopin.jar"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5195,6 +5319,12 @@
         <RawString>57.718:57.952:57.826</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -O3 -O2"},"test-run-times":"58.31:58.66:58.52"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value>58.286</Value>
+        <RawString>58.345:58.345:58.167</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -O3 -O2"},"test-run-times":"58.93:59.03:58.86"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5278,6 +5408,12 @@
         <Value>59.830</Value>
         <RawString>59.812:59.808:59.87</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-m64 -lgcc_s -lutil -lrt -lpthread -lm -ldl -lc -pie -nodefaultlibs"},"test-run-times":"59.81:59.81:59.87"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value>59.817</Value>
+        <RawString>59.797:59.766:59.887</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-m64 -lgcc_s -lutil -lrt -lpthread -lm -ldl -lc -pie -nodefaultlibs"},"test-run-times":"59.80:59.77:59.89"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5705,6 +5841,12 @@
         <RawString>565.97:570.44:569.85</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.24:30.51:29.78"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value>539.83</Value>
+        <RawString>546.33:536.4:536.76</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"30.48:29.64:29.59"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5746,6 +5888,12 @@
         <Value>7133.88</Value>
         <RawString>7134.47:7133.47:7133.7</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.61:30.63:29.63"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value>7086.92</Value>
+        <RawString>7092.85:7082.66:7085.25</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"30.54:29.55:30.62"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5789,6 +5937,12 @@
         <RawString>29210:29180:29570</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.98:30.33:30.00"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value>29587</Value>
+        <RawString>29560:29630:29570</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.58:29.94:30.18"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5830,6 +5984,12 @@
         <Value>71330</Value>
         <RawString>71470:71260:71260</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.70:30.22:29.89"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
+        <Value>71543</Value>
+        <RawString>71530:71540:71560</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.80:30.09:29.85"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -7633,6 +7793,12 @@
       </Entry>
       <Entry>
         <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-mantic</Identifier>
         <Value></Value>
         <RawString></RawString>
         <JSON>{"test-run-times":"0.01:0.01:0.01","error":"The test quit with a non-zero exit status."}</JSON>
