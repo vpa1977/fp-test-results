@@ -3,7 +3,7 @@
 <PhoronixTestSuite>
   <Generated>
     <Title>Mantic vs Mantic -fno-omit-framepointer</Title>
-    <LastModified>2024-04-30 04:19:00</LastModified>
+    <LastModified>2024-04-30 20:13:05</LastModified>
     <TestClient>Phoronix Test Suite v10.8.4</TestClient>
     <Description>2 x Intel Xeon Gold 5218 testing with a Cisco UCSC-C480-M5 (C480M5.4.2.2d.0.0808221350 BIOS) and Matrox MGA G200e [Pilot] on Ubuntu 23.10 via the Phoronix Test Suite.</Description>
     <Notes></Notes>
@@ -101,6 +101,16 @@
     <Notes></Notes>
     <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --enable-libphobos-checking=release --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=2 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=\/build\/gcc-13-b9QCDx\/gcc-13-13.2.0\/debian\/tmp-nvptx\/usr,amdgcn-amdhsa=\/build\/gcc-13-b9QCDx\/gcc-13-13.2.0\/debian\/tmp-gcn\/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v","disk-scheduler":"MQ-DEADLINE","disk-mount-options":"relatime,rw","disk-details":"Block Size: 4096","cpu-scaling-governor":"intel_pstate powersave (EPP: balance_performance)","cpu-microcode":"0x5003302","kernel-extra-details":"Transparent Huge Pages: madvise","environment-variables":"CXXFLAGS=\"-fno-omit-frame-pointer -frecord-gcc-switches -O2\" QMAKE_CFLAGS=\"-fno-omit-frame-pointer -frecord-gcc-switches -O2\" CFLAGS=\"-fno-omit-frame-pointer -frecord-gcc-switches -O2\" CFLAGS_OVERRIDE=\"-fno-omit-frame-pointer -frecord-gcc-switches -O2\" QMAKE_CXXFLAGS=\"-fno-omit-frame-pointer -frecord-gcc-switches -O2\" FFLAGS=\"-fno-omit-frame-pointer -frecord-gcc-switches -O2\"","java":"OpenJDK Runtime Environment (build 17.0.9-ea+6-Ubuntu-1)","python":"Python 3.11.6","security":"gather_data_sampling: Vulnerable: No microcode + itlb_multihit: KVM: Mitigation of VMX disabled + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable + retbleed: Mitigation of Enhanced IBRS + spec_rstack_overflow: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced \/ Automatic IBRS IBPB: conditional RSB filling PBRSB-eIBRS: SW sequence + srbds: Not affected + tsx_async_abort: Mitigation of TSX disabled"}</JSON>
   </System>
+  <System>
+    <Identifier>server-cractus-noble</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon Gold 5218 @ 3.90GHz (32 Cores / 64 Threads), Motherboard: Cisco UCSC-C480-M5 (C480M5.4.2.2d.0.0808221350 BIOS), Chipset: Intel Sky Lake-E DMI3 Registers, Memory: 64GB, Disk: 2 x 300GB AL14SXB30EN, Graphics: Matrox MGA G200e [Pilot], Network: 2 x Intel X550 + 4 x Intel I350</Hardware>
+    <Software>OS: Ubuntu 24.04, Kernel: 6.8.0-31-generic (x86_64), Compiler: GCC 13.2.0, File-System: ext4, Screen Resolution: 1024x768</Software>
+    <User>ubuntu</User>
+    <TimeStamp>2024-04-29 23:57:53</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --enable-libphobos-checking=release --enable-libstdcxx-backtrace --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=\/build\/gcc-13-uJ7kn6\/gcc-13-13.2.0\/debian\/tmp-nvptx\/usr,amdgcn-amdhsa=\/build\/gcc-13-uJ7kn6\/gcc-13-13.2.0\/debian\/tmp-gcn\/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v","disk-scheduler":"MQ-DEADLINE","disk-mount-options":"relatime,rw","disk-details":"Block Size: 4096","cpu-scaling-governor":"intel_pstate powersave (EPP: balance_performance)","cpu-microcode":"0x5003605","kernel-extra-details":"Transparent Huge Pages: madvise","environment-variables":"CXXFLAGS=\"-fno-omit-frame-pointer -frecord-gcc-switches -O2\" QMAKE_CFLAGS=\"-fno-omit-frame-pointer -frecord-gcc-switches -O2\" CFLAGS=\"-fno-omit-frame-pointer -frecord-gcc-switches -O2\" CFLAGS_OVERRIDE=\"-fno-omit-frame-pointer -frecord-gcc-switches -O2\" QMAKE_CXXFLAGS=\"-fno-omit-frame-pointer -frecord-gcc-switches -O2\" FFLAGS=\"-fno-omit-frame-pointer -frecord-gcc-switches -O2\"","java":"OpenJDK Runtime Environment (build 21.0.3+9-Ubuntu-1ubuntu1)","python":"Python 3.12.3","security":"gather_data_sampling: Mitigation of Microcode + itlb_multihit: KVM: Mitigation of VMX disabled + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable + reg_file_data_sampling: Not affected + retbleed: Mitigation of Enhanced IBRS + spec_rstack_overflow: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced \/ Automatic IBRS; IBPB: conditional; RSB filling; PBRSB-eIBRS: SW sequence; BHI: Syscall hardening KVM: SW loop + srbds: Not affected + tsx_async_abort: Mitigation of TSX disabled"}</JSON>
+  </System>
   <Result>
     <Identifier>system/sqlite-1.0.1</Identifier>
     <Title>SQLite</Title>
@@ -111,6 +121,13 @@
     <Proportion>LIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
+        <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>169.813</Value>
+        <RawString>167.527:178.642:171.805:179.912:173.455:173.68:179.822:164.583:138.894</RawString>
+        <JSON>{"test-run-times":"167.53:178.64:171.81:179.91:173.45:173.68:179.82:164.58:138.89"}</JSON>
+        </Entry>
+
       <Entry>
         <Identifier>laptop-mantic</Identifier>
         <Value>7.560</Value>
@@ -219,6 +236,12 @@
         <RawString>547.5:462.5:499.8:572.2:553.9:570.4:595.8:573.1:585.2</RawString>
         <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.83:360.50:360.48:360.47:360.48:360.48:360.50:360.47:360.50"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>602.1</Value>
+        <RawString>579.3:629:637.4:575.3:598.7:579:590.8:594.3:634.8</RawString>
+        <JSON>{"install-footnote":"3.10.9.2","test-run-times":"361.56:360.59:360.55:360.53:360.52:360.54:360.51:360.57:360.57"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -284,6 +307,12 @@
         <Value>2002.4</Value>
         <RawString>2014.9:2007.7:1996.1:1996.6:1978.9:1991:2017.6:2017.7:2001.2</RawString>
         <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.83:360.50:360.48:360.47:360.48:360.48:360.50:360.47:360.50"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1978.5</Value>
+        <RawString>1988.1:1952:1981.8:1976.6:1964.8:1979.9:2059:1963.8:1940.3</RawString>
+        <JSON>{"install-footnote":"3.10.9.2","test-run-times":"361.56:360.59:360.55:360.53:360.52:360.54:360.51:360.57:360.57"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -351,6 +380,12 @@
         <RawString>461.4:462.1:458:462.3:456.6:453.4:447.5:460.4:461.6</RawString>
         <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.83:360.50:360.48:360.47:360.48:360.48:360.50:360.47:360.50"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>444.9</Value>
+        <RawString>445.4:443.3:449.8:443.7:444.1:443:442.2:444.3:448.2</RawString>
+        <JSON>{"install-footnote":"3.10.9.2","test-run-times":"361.56:360.59:360.55:360.53:360.52:360.54:360.51:360.57:360.57"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -416,6 +451,12 @@
         <Value>256.7</Value>
         <RawString>254.2:258.5:256.5:253.5:259.2:256.3:256.7:256.5:258.7</RawString>
         <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.83:360.50:360.48:360.47:360.48:360.48:360.50:360.47:360.50"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>254.8</Value>
+        <RawString>254.2:257.2:253:254.3:256.9:254.4:257.2:251.7:254.5</RawString>
+        <JSON>{"install-footnote":"3.10.9.2","test-run-times":"361.56:360.59:360.55:360.53:360.52:360.54:360.51:360.57:360.57"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -483,6 +524,12 @@
         <RawString>579.4:577.6:572.5:582.6:575:579:573:582.5:564.9</RawString>
         <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.83:360.50:360.48:360.47:360.48:360.48:360.50:360.47:360.50"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>600.0</Value>
+        <RawString>603:601.9:596.5:592.4:602.2:606.5:604.5:597.9:595.1</RawString>
+        <JSON>{"install-footnote":"3.10.9.2","test-run-times":"361.56:360.59:360.55:360.53:360.52:360.54:360.51:360.57:360.57"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -548,6 +595,12 @@
         <Value>207.4</Value>
         <RawString>207:208.7:207.1:205.6:204.3:209.7:208.2:208.1:207.5</RawString>
         <JSON>{"install-footnote":"3.10.7.0","test-run-times":"361.83:360.50:360.48:360.47:360.48:360.48:360.50:360.47:360.50"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>202.9</Value>
+        <RawString>203.8:202.3:202.8:202.5:202.3:206.4:203.1:201.2:201.5</RawString>
+        <JSON>{"install-footnote":"3.10.9.2","test-run-times":"361.56:360.59:360.55:360.53:360.52:360.54:360.51:360.57:360.57"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -651,6 +704,12 @@
         <RawString>14.271:14.249:14.26</RawString>
         <JSON>{"test-run-times":"14.27:14.25:14.26"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>14.514</Value>
+        <RawString>14.655:14.534:14.352</RawString>
+        <JSON>{"test-run-times":"14.65:14.53:14.35"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -717,6 +776,12 @@
         <RawString>4.626:4.621:4.618</RawString>
         <JSON>{"test-run-times":"4.63:4.62:4.62"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>4.712</Value>
+        <RawString>5.302:4.661:4.665:4.662:4.664:4.667:4.661:4.664:4.663:4.663:4.662:4.661:4.666</RawString>
+        <JSON>{"test-run-times":"5.30:4.66:4.66:4.66:4.66:4.67:4.66:4.66:4.66:4.66:4.66:4.66:4.67"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -782,6 +847,12 @@
         <Value>5.078</Value>
         <RawString>5.082:5.074:5.078</RawString>
         <JSON>{"test-run-times":"5.08:5.07:5.08"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>5.093</Value>
+        <RawString>5.126:5.079:5.075</RawString>
+        <JSON>{"test-run-times":"5.13:5.08:5.07"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -885,6 +956,12 @@
         <RawString>17.817:17.112:17.133</RawString>
         <JSON>{"test-run-times":"17.82:17.11:17.13"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>17.228</Value>
+        <RawString>18.395:17.092:17.1:17.114:17.099:17.118:17.097:17.115:17.068:17.083</RawString>
+        <JSON>{"test-run-times":"18.40:17.09:17.10:17.11:17.10:17.12:17.10:17.11:17.07:17.08"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -951,6 +1028,12 @@
         <RawString>21.741861:11.867535:11.691311:11.344:11.075019:11.275808:11.251241:11.040229:11.100934:11.212225:11.184938:11.657875:11.462659:11.626639:11.273467:11.364358:11.344799:11.331105:11.421682:11.382808:11.534165:11.448669:11.453219:11.444067:11.362581:11.58528:11.349875:11.528488:11.386382:11.438789:11.454257:11.373898:11.489981:11.314983:11.312369:11.227336:11.512797:11.398062:11.37264:11.3991:11.307304:11.436577:11.201327:11.401157:11.191058</RawString>
         <JSON>{"test-run-times":"0.03:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>11.713272</Value>
+        <RawString>54.708319:11.37535:10.898786:10.902686:10.665399:10.760598:10.716639:10.670572:10.632637:10.716618:10.613774:10.747671:10.736717:10.835802:10.748606:10.887504:11.092269:10.817152:10.768479:10.814949:10.866403:10.792337:10.652962:10.743455:10.796871:10.802272:10.875085:10.875914:11.011785:11.083363:10.816302:10.779761:10.679594:10.744374:10.75681:10.770706:10.837985:10.664207:10.806011:11.272583:10.815167:10.767205:10.822012:10.595685:10.925167:10.785807:10.909843:10.461435:11.277017:11.564963</RawString>
+        <JSON>{"test-run-times":"0.07:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02:0.02"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -1016,6 +1099,12 @@
         <Value>21.744697</Value>
         <RawString>30.574905:22.748545:22.120676:20.999466:21.893158:21.761732:21.914209:21.357797:20.906354:21.368673:21.331408:21.235956:20.915332:20.946961:21.190205:20.755972:20.882644:21.325917:20.976881:21.119311:22.037407:21.810078:21.767368:21.735238:21.657611:21.212721:21.159268:21.389043:22.320036:22.234249:23.38832:21.974907:21.78926:21.180707:21.82605:22.141333:21.572631:20.665735:20.754655:20.931979:20.516391:22.117949:22.838149:22.385802:21.828908:21.333295:21.303278:21.957327:21.806612:21.272456</RawString>
         <JSON>{"test-run-times":"0.04:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>24.343325</Value>
+        <RawString>44.239125:24.019703:22.172225:24.410838:23.761765:23.511982:22.630857:22.885174:24.623899:24.679652:24.463045:24.895106:24.284234:24.158046:24.3418:24.038836:24.175441:23.966818:23.532889:22.411532:23.160852:23.401176:23.407834:23.272362:23.511016:23.686398:23.911939:24.766955:24.247209:24.516764:23.900585:24.420585:24.227516:23.566082:24.423504:23.660185:22.764938:22.995838:24.608249:24.596824:24.242279:24.546017:24.590613:24.466565:23.35437</RawString>
+        <JSON>{"test-run-times":"0.06:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03:0.03"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1185,6 +1274,36 @@
         <RawString></RawString>
         <JSON>{"test-run-times":"8.20:8.20:8.70","error":"The test quit with a non-zero exit status."}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>974513</Value>
+        <RawString>974513:974513:974513</RawString>
+        <JSON>{"test-run-times":"33.01:32.71:32.73"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>970930</Value>
+        <RawString>974513:963764:974513</RawString>
+        <JSON>{"test-run-times":"32.47:32.44:32.46"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>973310</Value>
+        <RawString>970903:974513:974513</RawString>
+        <JSON>{"test-run-times":"32.43:32.45:32.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>972712</Value>
+        <RawString>974513:969109:974513</RawString>
+        <JSON>{"test-run-times":"32.43:32.43:32.44"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>966729</Value>
+        <RawString>965539:969109:965539</RawString>
+        <JSON>{"test-run-times":"32.46:32.43:32.44"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -1317,6 +1436,42 @@
         <RawString></RawString>
         <JSON>{"test-run-times":"8.43:8.21:8.23","error":"The test quit with a non-zero exit status."}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>443810</Value>
+        <RawString>443560:444311:443560</RawString>
+        <JSON>{"test-run-times":"33.01:32.71:32.73"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>442074</Value>
+        <RawString>443560:439102:443560</RawString>
+        <JSON>{"test-run-times":"32.47:32.45:32.45"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>444311</Value>
+        <RawString>444311:444311:444311</RawString>
+        <JSON>{"test-run-times":"32.40:32.41:32.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>443310</Value>
+        <RawString>443560:442810:443560</RawString>
+        <JSON>{"test-run-times":"32.46:32.42:32.42"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>443560</Value>
+        <RawString>443560:443560:443560</RawString>
+        <JSON>{"test-run-times":"32.71:32.50:32.41"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>442079</Value>
+        <RawString>443560:438367:444311</RawString>
+        <JSON>{"test-run-times":"32.46:32.43:32.44"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -1443,6 +1598,84 @@
         <RawString>2309.2:2327:2363.2</RawString>
         <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2381.9</Value>
+        <RawString>2368:2392.5:2385.1</RawString>
+        <JSON>{"test-run-times":"33.01:32.71:32.73"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2373.9</Value>
+        <RawString>2369:2370.3:2382.3</RawString>
+        <JSON>{"test-run-times":"32.47:32.45:32.45"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2382.8</Value>
+        <RawString>2386.4:2377.1:2385</RawString>
+        <JSON>{"test-run-times":"32.40:32.41:32.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2394.3</Value>
+        <RawString>2397.8:2389.9:2395.2</RawString>
+        <JSON>{"test-run-times":"32.47:32.44:32.46"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2388.2</Value>
+        <RawString>2384.1:2386.8:2393.6</RawString>
+        <JSON>{"test-run-times":"32.43:32.45:32.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2385.2</Value>
+        <RawString>2380.2:2389.2:2386.3</RawString>
+        <JSON>{"test-run-times":"32.43:32.43:32.44"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2375.3</Value>
+        <RawString>2383.3:2374.5:2368</RawString>
+        <JSON>{"test-run-times":"32.46:32.42:32.42"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2375.8</Value>
+        <RawString>2376.3:2385.3:2365.8</RawString>
+        <JSON>{"test-run-times":"32.71:32.50:32.41"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2379.4</Value>
+        <RawString>2376.8:2377.5:2383.8</RawString>
+        <JSON>{"test-run-times":"32.42:32.46:32.37"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2379.9</Value>
+        <RawString>2389.3:2368.2:2382.2</RawString>
+        <JSON>{"test-run-times":"32.46:32.43:32.44"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2364.2</Value>
+        <RawString>2342.2:2382.2:2368.2</RawString>
+        <JSON>{"test-run-times":"32.41:32.43:32.44"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2378.6</Value>
+        <RawString>2381.3:2386.7:2367.8</RawString>
+        <JSON>{"test-run-times":"32.45:32.42:32.43"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2385.7</Value>
+        <RawString>2392.6:2382.8:2381.8</RawString>
+        <JSON>{"test-run-times":"32.48:32.45:32.41"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -1562,6 +1795,84 @@
         <Value>2357.4</Value>
         <RawString>2357.5:2351.5:2363.3</RawString>
         <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2391.0</Value>
+        <RawString>2392.6:2394:2386.4</RawString>
+        <JSON>{"test-run-times":"33.01:32.71:32.73"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2375.2</Value>
+        <RawString>2370.4:2372:2383.2</RawString>
+        <JSON>{"test-run-times":"32.47:32.45:32.45"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2383.0</Value>
+        <RawString>2378.6:2387.4</RawString>
+        <JSON>{"test-run-times":"32.40:32.41:32.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2394.0</Value>
+        <RawString>2394.7:2390.6:2396.7</RawString>
+        <JSON>{"test-run-times":"32.47:32.44:32.46"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2389.9</Value>
+        <RawString>2386.5:2389:2394.2</RawString>
+        <JSON>{"test-run-times":"32.43:32.45:32.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2386.6</Value>
+        <RawString>2381.1:2391:2387.8</RawString>
+        <JSON>{"test-run-times":"32.43:32.43:32.44"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2376.5</Value>
+        <RawString>2384.9:2375.7:2368.8</RawString>
+        <JSON>{"test-run-times":"32.46:32.42:32.42"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2378.7</Value>
+        <RawString>2378.9:2388.3:2369</RawString>
+        <JSON>{"test-run-times":"32.71:32.50:32.41"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2382.1</Value>
+        <RawString>2378.2:2379.9:2388.2</RawString>
+        <JSON>{"test-run-times":"32.42:32.46:32.37"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2382.8</Value>
+        <RawString>2390.8:2371.7:2385.8</RawString>
+        <JSON>{"test-run-times":"32.46:32.43:32.44"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2374.6</Value>
+        <RawString>2371.2:2383.6:2368.9</RawString>
+        <JSON>{"test-run-times":"32.41:32.43:32.44"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2380.3</Value>
+        <RawString>2382.6:2388.5:2369.9</RawString>
+        <JSON>{"test-run-times":"32.45:32.42:32.43"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2386.2</Value>
+        <RawString>2393.9:2381.3:2383.3</RawString>
+        <JSON>{"test-run-times":"32.48:32.45:32.41"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1689,6 +2000,48 @@
         <RawString>433.9:450.5:451.5</RawString>
         <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>447.7</Value>
+        <RawString>438.9:452.6:451.5</RawString>
+        <JSON>{"test-run-times":"33.01:32.71:32.73"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>451.6</Value>
+        <RawString>451.6:451.6:451.6</RawString>
+        <JSON>{"test-run-times":"32.47:32.45:32.45"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>451.8</Value>
+        <RawString>451.4:451.8:452.3</RawString>
+        <JSON>{"test-run-times":"32.40:32.41:32.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>452.1</Value>
+        <RawString>451.9:452.3:452.2</RawString>
+        <JSON>{"test-run-times":"32.47:32.44:32.46"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>451.9</Value>
+        <RawString>452:451.9:451.7</RawString>
+        <JSON>{"test-run-times":"32.43:32.45:32.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>452.0</Value>
+        <RawString>452.4:451.7:451.8</RawString>
+        <JSON>{"test-run-times":"32.46:32.42:32.42"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>451.5</Value>
+        <RawString>450.9:451.8:451.9</RawString>
+        <JSON>{"test-run-times":"32.41:32.43:32.44"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -1815,6 +2168,42 @@
         <RawString>461.6:461.2:461.7</RawString>
         <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>461.9</Value>
+        <RawString>462:462.3:461.5</RawString>
+        <JSON>{"test-run-times":"33.01:32.71:32.73"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>461.4</Value>
+        <RawString>461.3:461.5:461.5</RawString>
+        <JSON>{"test-run-times":"32.47:32.45:32.45"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>461.6</Value>
+        <RawString>461.1:461.5:462.1</RawString>
+        <JSON>{"test-run-times":"32.40:32.41:32.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>461.7</Value>
+        <RawString>461.8:461.8:461.4</RawString>
+        <JSON>{"test-run-times":"32.43:32.45:32.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>461.8</Value>
+        <RawString>462.1:461.7:461.5</RawString>
+        <JSON>{"test-run-times":"32.71:32.50:32.41"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>461.3</Value>
+        <RawString>461:461.4:461.4</RawString>
+        <JSON>{"test-run-times":"32.41:32.43:32.44"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -1928,6 +2317,30 @@
         <Value>263.0</Value>
         <RawString>256.8:266.2:266.1</RawString>
         <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>263.5</Value>
+        <RawString>257.8:266.4:266.4</RawString>
+        <JSON>{"test-run-times":"33.01:32.71:32.73"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>266.2</Value>
+        <RawString>266.2:266.2:266.3</RawString>
+        <JSON>{"test-run-times":"32.47:32.45:32.45"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>266.3</Value>
+        <RawString>266.3:266.4:266.3</RawString>
+        <JSON>{"test-run-times":"32.40:32.41:32.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>266.4</Value>
+        <RawString>266.4:266.5:266.4</RawString>
+        <JSON>{"test-run-times":"32.47:32.44:32.46"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -2055,6 +2468,36 @@
         <RawString>266.8:266.8:266.8</RawString>
         <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>267.2</Value>
+        <RawString>267.3:267.2:267.1</RawString>
+        <JSON>{"test-run-times":"33.01:32.71:32.73"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>266.9</Value>
+        <RawString>266.8:266.9:267</RawString>
+        <JSON>{"test-run-times":"32.47:32.45:32.45"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>267.1</Value>
+        <RawString>267.1:267:267.2</RawString>
+        <JSON>{"test-run-times":"32.40:32.41:32.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>267</Value>
+        <RawString>267:267:267</RawString>
+        <JSON>{"test-run-times":"32.46:32.42:32.42"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>267.0</Value>
+        <RawString>267.1:266.9:266.9</RawString>
+        <JSON>{"test-run-times":"32.46:32.43:32.44"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -2180,6 +2623,78 @@
         <Value>1942.7</Value>
         <RawString>1940.9:1939.1:1948</RawString>
         <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1964.3</Value>
+        <RawString>1961.9:1970.6:1960.5</RawString>
+        <JSON>{"test-run-times":"33.01:32.71:32.73"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1956.3</Value>
+        <RawString>1952.6:1956.8:1959.5</RawString>
+        <JSON>{"test-run-times":"32.47:32.45:32.45"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1962.0</Value>
+        <RawString>1961.9:1958.8:1965.4</RawString>
+        <JSON>{"test-run-times":"32.40:32.41:32.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1964.1</Value>
+        <RawString>1962.4:1964.5:1965.4</RawString>
+        <JSON>{"test-run-times":"32.47:32.44:32.46"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1961.0</Value>
+        <RawString>1959.4:1962.9:1960.6</RawString>
+        <JSON>{"test-run-times":"32.43:32.43:32.44"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1954.8</Value>
+        <RawString>1958:1952.6:1953.9</RawString>
+        <JSON>{"test-run-times":"32.46:32.42:32.42"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1958.4</Value>
+        <RawString>1958.9:1964.6:1951.8</RawString>
+        <JSON>{"test-run-times":"32.71:32.50:32.41"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1960.9</Value>
+        <RawString>1958.7:1961.9:1962</RawString>
+        <JSON>{"test-run-times":"32.42:32.46:32.37"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1959.3</Value>
+        <RawString>1965.1:1956.2:1956.6</RawString>
+        <JSON>{"test-run-times":"32.46:32.43:32.44"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1953.0</Value>
+        <RawString>1944.9:1961.4:1952.8</RawString>
+        <JSON>{"test-run-times":"32.41:32.43:32.44"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1958.0</Value>
+        <RawString>1962.2:1958.8:1953</RawString>
+        <JSON>{"test-run-times":"32.45:32.42:32.43"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1956.4</Value>
+        <RawString>1955.8:1954.4:1959.1</RawString>
+        <JSON>{"test-run-times":"32.48:32.45:32.41"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -2307,6 +2822,78 @@
         <RawString>1945.7:1938.4:1948.5</RawString>
         <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1964.3</Value>
+        <RawString>1968.9:1959.7</RawString>
+        <JSON>{"test-run-times":"33.01:32.71:32.73"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1954.1</Value>
+        <RawString>1952.3:1955.8</RawString>
+        <JSON>{"test-run-times":"32.47:32.45:32.45"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1959.3</Value>
+        <RawString>1959.5:1959</RawString>
+        <JSON>{"test-run-times":"32.40:32.41:32.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1963.6</Value>
+        <RawString>1961.9:1963.7:1965.3</RawString>
+        <JSON>{"test-run-times":"32.47:32.44:32.46"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1963.3</Value>
+        <RawString>1963.1:1961.5:1965.4</RawString>
+        <JSON>{"test-run-times":"32.43:32.45:32.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1960.0</Value>
+        <RawString>1958.1:1962.2:1959.7</RawString>
+        <JSON>{"test-run-times":"32.43:32.43:32.44"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1953.9</Value>
+        <RawString>1957.2:1951.7:1952.7</RawString>
+        <JSON>{"test-run-times":"32.46:32.42:32.42"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1958.1</Value>
+        <RawString>1959.4:1963.8:1951.2</RawString>
+        <JSON>{"test-run-times":"32.71:32.50:32.41"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1960.3</Value>
+        <RawString>1957.4:1961.6:1961.8</RawString>
+        <JSON>{"test-run-times":"32.42:32.46:32.37"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1959.1</Value>
+        <RawString>1964.3:1956.4:1956.7</RawString>
+        <JSON>{"test-run-times":"32.46:32.43:32.44"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1956.9</Value>
+        <RawString>1960.6:1958:1952</RawString>
+        <JSON>{"test-run-times":"32.45:32.42:32.43"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1956.0</Value>
+        <RawString>1955.5:1953.7:1958.7</RawString>
+        <JSON>{"test-run-times":"32.48:32.45:32.41"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -2432,6 +3019,48 @@
         <Value>451.3</Value>
         <RawString>451.5:451.1:451.4</RawString>
         <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>452.3</Value>
+        <RawString>452.4:452.1</RawString>
+        <JSON>{"test-run-times":"33.01:32.71:32.73"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>451.9</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"32.47:32.45:32.45"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>451.7</Value>
+        <RawString>451.6:451.7</RawString>
+        <JSON>{"test-run-times":"32.40:32.41:32.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>452.2</Value>
+        <RawString>452:452.4</RawString>
+        <JSON>{"test-run-times":"32.47:32.44:32.46"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>451.8</Value>
+        <RawString>452.2:451.4</RawString>
+        <JSON>{"test-run-times":"32.71:32.50:32.41"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>452.0</Value>
+        <RawString>452.2:451.8</RawString>
+        <JSON>{"test-run-times":"32.42:32.46:32.37"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>451.6</Value>
+        <RawString>451.3:451.7:451.8</RawString>
+        <JSON>{"test-run-times":"32.48:32.45:32.41"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -2559,6 +3188,54 @@
         <RawString>461.3:461.6</RawString>
         <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>462.0</Value>
+        <RawString>462.1:462.2:461.8</RawString>
+        <JSON>{"test-run-times":"33.01:32.71:32.73"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>461.7</Value>
+        <RawString>461.6:461.7</RawString>
+        <JSON>{"test-run-times":"32.47:32.45:32.45"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>461.6</Value>
+        <RawString>461.5:461.6</RawString>
+        <JSON>{"test-run-times":"32.40:32.41:32.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>461.9</Value>
+        <RawString>461.9:462.1:461.6</RawString>
+        <JSON>{"test-run-times":"32.43:32.45:32.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>461.8</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"32.71:32.50:32.41"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>462</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"32.42:32.46:32.37"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>461.1</Value>
+        <RawString>460.8:461.3</RawString>
+        <JSON>{"test-run-times":"32.41:32.43:32.44"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>461.4</Value>
+        <RawString>461.1:461.5:461.6</RawString>
+        <JSON>{"test-run-times":"32.48:32.45:32.41"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -2678,6 +3355,36 @@
         <Value>266.2</Value>
         <RawString>266.2:266.1</RawString>
         <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>266.4</Value>
+        <RawString>266.4:266.3</RawString>
+        <JSON>{"test-run-times":"33.01:32.71:32.73"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>266.2</Value>
+        <RawString>266.1:266.2</RawString>
+        <JSON>{"test-run-times":"32.47:32.45:32.45"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>266.3</Value>
+        <RawString>266.2:266.4</RawString>
+        <JSON>{"test-run-times":"32.47:32.44:32.46"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>266</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"32.46:32.42:32.42"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>266.1</Value>
+        <RawString>266:266.1</RawString>
+        <JSON>{"test-run-times":"32.41:32.43:32.44"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -2805,6 +3512,42 @@
         <RawString>266.6:266.6:266.6</RawString>
         <JSON>{"test-run-times":"32.79:32.24:32.21"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>267.2</Value>
+        <RawString>267.2:267.1</RawString>
+        <JSON>{"test-run-times":"33.01:32.71:32.73"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>267.0</Value>
+        <RawString>266.9:267</RawString>
+        <JSON>{"test-run-times":"32.47:32.45:32.45"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>267</Value>
+        <RawString>267:267</RawString>
+        <JSON>{"test-run-times":"32.40:32.41:32.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>267.1</Value>
+        <RawString>267:267.1:267.1</RawString>
+        <JSON>{"test-run-times":"32.47:32.44:32.46"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>266.9</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"32.46:32.42:32.42"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>266.8</Value>
+        <RawString>266.8:266.9:266.8</RawString>
+        <JSON>{"test-run-times":"32.41:32.43:32.44"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -2864,6 +3607,12 @@
         <Value>44.433</Value>
         <RawString>44.805:44.313:44.181</RawString>
         <JSON>{"test-run-times":"44.80:44.31:44.18"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>46.284</Value>
+        <RawString>46.737:46.251:45.864</RawString>
+        <JSON>{"test-run-times":"46.74:46.25:45.86"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -2925,6 +3674,12 @@
         <RawString>76.274:76.477:77.441</RawString>
         <JSON>{"test-run-times":"76.27:76.48:77.44"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>78.727</Value>
+        <RawString>79.342:75.13:76.307:79.795:81.026:79.381:78.323:80.759:80.383:76.641:78.905</RawString>
+        <JSON>{"test-run-times":"79.34:75.13:76.31:79.79:81.03:79.38:78.32:80.76:80.38:76.64:78.90"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -2985,8 +3740,15 @@
         <RawString>44.347:42.092:42.151:42.181:42.044</RawString>
         <JSON>{"install-footnote":"Inkscape 1.2.2 (b0a8486541, 2022-12-01)","test-run-times":"44.35:42.09:42.15:42.18:42.04"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>47.216</Value>
+        <RawString>48.712:46.666:46.648:46.838</RawString>
+        <JSON>{"install-footnote":"Inkscape 1.2.2 (b0a8486541, 2022-12-01)","test-run-times":"48.71:46.67:46.65:46.84"}</JSON>
+      </Entry>
     </Data>
   </Result>
+
   <Result>
     <Identifier>system/ocrmypdf-1.0.0</Identifier>
     <Title>OCRMyPDF</Title>
@@ -2997,6 +3759,12 @@
     <Proportion>LIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
+        <Entry>
+            <Identifier>server-cractus-noble</Identifier>
+            <Value>10.352</Value>
+            <RawString>12.431:10.449:10.314:10.299:9.989:10.382:10.39:10.047:10.023:10.017:10.226:10.358:10.212:9.962:10.181</RawString>
+            <JSON>{"test-run-times":"12.43:10.45:10.31:10.30:9.99:10.38:10.39:10.05:10.02:10.02:10.23:10.36:10.21:9.96:10.18"}</JSON>
+          </Entry>
       <Entry>
         <Identifier>laptop-mantic</Identifier>
         <Value>28.956</Value>
@@ -3057,6 +3825,12 @@
     <Proportion>LIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
+        <Entry>
+            <Identifier>server-cractus-noble</Identifier>
+            <Value>16.692</Value>
+            <RawString>17.359:16.438:16.475:16.589:16.601</RawString>
+            <JSON>{"test-run-times":"17.36:16.44:16.47:16.59:16.60"}</JSON>
+          </Entry>
       <Entry>
         <Identifier>laptop-mantic</Identifier>
         <Value>7.203</Value>
@@ -3201,6 +3975,12 @@
         <RawString>93.519:93.351:93.203</RawString>
         <JSON>{"install-footnote":"RawTherapee, version 5.9, command line.","test-run-times":"95.44:95.26:95.11"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>95.200</Value>
+        <RawString>95.589:94.96:95.051</RawString>
+        <JSON>{"install-footnote":"RawTherapee, version 5.10, command line.","test-run-times":"97.59:96.91:97.01"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -3260,6 +4040,12 @@
         <Value>77.978</Value>
         <RawString>78.706:77.381:77.848</RawString>
         <JSON>{"install-footnote":"rsvg-convert version 2.54.7","test-run-times":"78.71:77.38:77.85"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>84.843</Value>
+        <RawString>91.12:85.008:84.627:84.492:83.881:84.136:84.793:84.482:84.596:84.182:84.718:83.925:84.225:84.483:83.971</RawString>
+        <JSON>{"install-footnote":"rsvg-convert version 2.58.0","test-run-times":"91.12:85.01:84.63:84.49:83.88:84.14:84.79:84.48:84.60:84.18:84.72:83.93:84.23:84.48:83.97"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -3471,6 +4257,12 @@
         <RawString>40.635:40.424:40.453</RawString>
         <JSON>{"test-run-times":"40.63:40.42:40.45"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>37.860</Value>
+        <RawString>37.859:37.706:38.016</RawString>
+        <JSON>{"test-run-times":"37.86:37.71:38.02"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -3567,6 +4359,12 @@
         <RawString>91.3873:89.9665:89.9794</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.54:1.43:1.43"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>90.8005</Value>
+        <RawString>91.9847:90.1814:90.2355</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.45:1.43:1.43"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -3632,6 +4430,12 @@
         <Value>16.9480</Value>
         <RawString>16.9207:16.9844:16.9388</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"4.42:4.40:4.40"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>18.6789</Value>
+        <RawString>18.6974:18.6747:18.6646</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"4.40:4.40:4.40"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -3699,6 +4503,12 @@
         <RawString>6.57642:6.57695:6.57741</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.41:1.39:1.40"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>6.58531</Value>
+        <RawString>6.58548:6.5851:6.58536</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.39:1.39:1.39"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -3764,6 +4574,12 @@
         <Value>37.4407</Value>
         <RawString>37.42:37.4647:37.4375</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.46:2.45:2.45"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>38.2341</Value>
+        <RawString>38.3163:38.213:38.1729</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.45:2.44:2.44"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -3837,6 +4653,12 @@
         <RawString>77.5287:76.8567:77.5063</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"3.67:3.65:3.66"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>77.4116</Value>
+        <RawString>79.2082:77.6782:75.0766:77.6833</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"3.59:3.66:3.62:3.66"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -3902,6 +4724,12 @@
         <Value>22.1848</Value>
         <RawString>22.2314:22.1575:22.1656</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.39:1.39"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>22.2879</Value>
+        <RawString>22.2819:22.2983:22.2835</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.39:1.39:1.39"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -3969,6 +4797,12 @@
         <RawString>8.24498:8.24577:8.24559</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.39:1.39:1.39"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>9.07804</Value>
+        <RawString>9.0792:9.07713:9.0778</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.39:1.39:1.39"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4034,6 +4868,12 @@
         <Value>32.7358</Value>
         <RawString>32.308:33.5303:32.3691</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.39:1.40:1.40"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>32.6574</Value>
+        <RawString>32.6343:32.652:32.686</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.39:1.39:1.40"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -4107,6 +4947,12 @@
         <RawString>5.78263:5.78265:5.7828</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.40:1.40"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>5.79106</Value>
+        <RawString>5.79143:5.79067:5.79107</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.39:1.39:1.39"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4172,6 +5018,12 @@
         <Value>48.0020</Value>
         <RawString>56.0056:49.4347:46.9361:46.8801:46.9324:48.3059:46.9304:49.8437:46.9437:46.9348:46.9497:46.9418:46.934:47.1187:46.9383</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.39:1.40:1.40:1.39:1.40:1.40:1.39:1.40:1.40:1.40:1.40:1.40:1.39:1.40:1.39"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>47.1697</Value>
+        <RawString>47.2542:47.2606:46.9943</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.39:1.39:1.39"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -4239,6 +5091,12 @@
         <RawString>33.894:33.8866:33.9034</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.40:1.39"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>34.7738</Value>
+        <RawString>34.7775:34.7655:34.7784</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.39:1.40"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4304,6 +5162,12 @@
         <Value>41.2028</Value>
         <RawString>41.2246:41.188:41.1958</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.40:1.40"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>41.3068</Value>
+        <RawString>41.3489:41.3537:41.2178</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.39:1.40:1.39"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -4371,6 +5235,12 @@
         <RawString>5.76252:5.76188:5.76251</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.40:1.39"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>5.76939</Value>
+        <RawString>5.76957:5.76905:5.76954</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.39:1.39:1.39"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4436,6 +5306,12 @@
         <Value>41.2282</Value>
         <RawString>41.2184:41.2354:41.2309</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.47:2.46:2.46"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>41.5889</Value>
+        <RawString>41.5856:41.5522:41.629</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"2.48:2.45:2.46"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -4508,6 +5384,12 @@
         <Value>4.95410</Value>
         <RawString>4.95458:4.95348:4.95424</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.40:1.39:1.40"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>4.96078</Value>
+        <RawString>4.96091:4.96076:4.96068</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pie -nostdlib -nostartfiles -lgcc -lgcc_s"},"test-run-times":"1.39:1.39:1.39"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -4635,6 +5517,12 @@
         <RawString>30673.7:30696:30691.4:30695.5:30706.7</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -fopenmp"},"test-run-times":"30.85:30.90:30.92:30.89:30.98"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>30777.5</Value>
+        <RawString>30705.4:30840.3:30794.1:30746.8:30800.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -fopenmp"},"test-run-times":"32.00:31.00:32.40:31.65:32.01"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4687,6 +5575,12 @@
         <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
         <Value>23901.6</Value>
         <RawString>23911.9:23898.8:23899.2:23901.6:23896.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -fopenmp"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>23784.3</Value>
+        <RawString>23749:23799.2:23806.7:23763.9:23802.8</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -fopenmp"}}</JSON>
       </Entry>
     </Data>
@@ -4743,6 +5637,12 @@
         <RawString>26580.7:26580.1:26576.6:26566.3:26565.4</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -fopenmp"}}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>26556.9</Value>
+        <RawString>26508.8:26588.1:26595.7:26508.8:26583</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -fopenmp"}}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4795,6 +5695,12 @@
         <Identifier>server-cractus-mantic-no-omit-framepointer</Identifier>
         <Value>26463.7</Value>
         <RawString>26464.9:26471.1:26455.9:26459.7:26467</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -fopenmp"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>26495.6</Value>
+        <RawString>26458.8:26532.2:26539.3:26431.4:26516.1</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -fopenmp"}}</JSON>
       </Entry>
     </Data>
@@ -4887,6 +5793,12 @@
         <RawString>639.401:631.329:634.904</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lOpenCL"},"test-run-times":"639.40:631.33:634.90"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>113.662</Value>
+        <RawString>114.178:113.26:113.548</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lOpenCL"},"test-run-times":"114.18:113.26:113.55"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -4952,6 +5864,12 @@
         <Value>46.695</Value>
         <RawString>45.628:47.468:46.989</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lOpenCL"},"test-run-times":"45.63:47.47:46.99"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>13.160</Value>
+        <RawString>13.797:12.318:13.541:13.02:13.442:13.576:12.549:13.705:13.272:13.413:13.285:12.949:12.771:12.995:12.76</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lOpenCL"},"test-run-times":"13.80:12.32:13.54:13.02:13.44:13.58:12.55:13.70:13.27:13.41:13.28:12.95:12.77:13.00:12.76"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5043,6 +5961,12 @@
         <RawString>4930:4963:4993</RawString>
         <JSON>{"test-run-times":"19.10:18.36:18.43"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>9518</Value>
+        <RawString>9523:9600:9430</RawString>
+        <JSON>{"test-run-times":"35.76:34.44:33.61"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5109,6 +6033,12 @@
         <RawString>5569:5921:5820:5894:5772</RawString>
         <JSON>{"test-run-times":"26.49:25.85:26.54:26.56:26.71"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>26686</Value>
+        <RawString>26650:27246:26162</RawString>
+        <JSON>{"test-run-times":"91.97:95.07:90.73"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5174,6 +6104,12 @@
         <Value>833.0</Value>
         <RawString>830.618412:831.431684:836.973303</RawString>
         <JSON>{"min-result":629.3,"max-result":2021.21,"test-run-times":"64.17:64.19:64.49"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"5.66:5.34:5.51","error":"The test quit with a non-zero exit status."}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5247,6 +6183,12 @@
         <RawString>6004.273686:5975.014772:6153.341364</RawString>
         <JSON>{"min-result":5975.01,"max-result":8515.98,"test-run-times":"80.74:79.63:83.45"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>12397.7</Value>
+        <RawString>12166.355878:13805.143966:13012.214994:12981.601349:12291.754916:11842.111567:12126.69844:12502.489345:11815.246093:12800.182002:11627.081526:11801.87746</RawString>
+        <JSON>{"min-result":11627.08,"max-result":23231.14,"test-run-times":"167.40:190.26:178.00:177.63:170.74:160.50:167.71:170.54:162.05:173.86:164.72:165.79"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5312,6 +6254,12 @@
         <Value>3580.1</Value>
         <RawString>3635.729246:3567.43587:3537.237177</RawString>
         <JSON>{"min-result":3199.34,"max-result":3809.51,"test-run-times":"118.87:118.13:116.71"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"2.94:2.46:2.47","error":"The test quit with a non-zero exit status."}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5547,6 +6495,12 @@
         <RawString>6691:6237:6255:6264:6242:6266:6213:6228:6225</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-m64 -lssl -lcrypto -fopenmp -lgmp -lm -lrt -lz -ldl -lcrypt -lbz2"},"test-run-times":"30.17:30.15:30.15:30.16:30.16:30.17:30.16:30.17:30.14"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>38969</Value>
+        <RawString>39001:38905:39001</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-m64 -lssl -lcrypto -fopenmp -lgmp -lm -lrt -lz -ldl -lcrypt -lbz2"},"test-run-times":"30.41:30.28:30.31"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5612,6 +6566,12 @@
         <Value>2.81</Value>
         <RawString>2.82:2.8:2.8</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"212.71:214.27:214.22"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>8.41</Value>
+        <RawString>8.21:8.51:8.52</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"73.21:70.62:70.49"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5679,6 +6639,12 @@
         <RawString>2.89:2.87:2.87</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"207.79:209.42:209.11"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>8.72</Value>
+        <RawString>8.72:8.73:8.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"68.92:68.79:69.08"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5744,6 +6710,12 @@
         <Value>15.89</Value>
         <RawString>16.19:15.73:15.76</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"37.10:38.17:38.11"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>20.98</Value>
+        <RawString>21.03:20.91:21</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"28.59:28.75:28.63"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5811,6 +6783,12 @@
         <RawString>16.69:16.19:16.19</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"35.97:37.10:37.09"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>21.81</Value>
+        <RawString>21.82:21.77:21.85</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"27.55:27.61:27.53"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -5876,6 +6854,12 @@
         <Value>7.26</Value>
         <RawString>7.34:7.21:7.24</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"81.82:83.25:82.94"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>15.82</Value>
+        <RawString>15.76:15.79:15.92</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"38.15:38.08:37.76"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -5943,6 +6927,12 @@
         <RawString>9.1:8.98:8.98</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"66.01:66.86:66.88"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>20.49</Value>
+        <RawString>20.54:20.36:20.56</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"29.28:29.55:29.26"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6008,6 +6998,12 @@
         <Value>12.52</Value>
         <RawString>12.71:12.43:12.43</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"47.26:48.32:48.33"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>23.67</Value>
+        <RawString>23.53:23.84:23.65</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"25.58:25.24:25.44"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -6075,6 +7071,12 @@
         <RawString>37.56:34.95:34.73:35.08:35.05:35.08:35.13:34.82:34.87</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"16.01:17.20:17.31:17.14:17.15:17.14:17.11:17.26:17.24"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>40.34</Value>
+        <RawString>40.56:40.26:40.21</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"14.85:14.95:14.97"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6141,6 +7143,12 @@
         <RawString>48.2:42.58:42.55:42.95:43.38:42.7:43.65:42.89:42.64:42.8:42.74:43.6</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"12.48:14.12:14.13:14.00:13.87:14.08:13.78:14.02:14.10:14.05:14.07:13.80"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>53.04</Value>
+        <RawString>53.26:52.68:53.17</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"11.33:11.44:11.34"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6206,6 +7214,12 @@
         <Value>61.78</Value>
         <RawString>72.49:60.48:61.46:59.73:61.19:61.41:61.77:61.32:60.66:61.26:60.31:61.19:61.62:60.06</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"8.31:9.95:9.80:10.08:9.84:9.80:9.75:9.82:9.92:9.83:9.98:9.84:9.77:10.02"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>62.17</Value>
+        <RawString>62:62.58:61.92</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -ftree-vectorize -fvisibility=hidden -O2 -lpthread -lm -lrt"},"test-run-times":"9.73:9.64:9.74"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -6369,6 +7383,12 @@
         <RawString>6.58:6.48:6.5</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"91.27:92.64:92.45"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>13.42</Value>
+        <RawString>13.22:14.04:13:14.41:13.27:13.4:13.44:12.94:13.35:13.45:13.15:13.93:13.39:13.16:13.18</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"45.62:42.99:46.41:41.89:45.46:45.01:44.89:46.60:45.19:44.85:45.86:43.33:45.04:45.84:45.75"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6434,6 +7454,12 @@
         <Value>30.41</Value>
         <RawString>32.15:30.1:30.22:30.19:30.04:30.15:30.02:30.39</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"18.70:19.97:19.89:19.91:20.01:19.94:20.03:19.78"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>32.46</Value>
+        <RawString>32.51:32.51:32.36</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -O3 -rdynamic -lpthread -lrt -ldl -lnuma"},"test-run-times":"18.60:18.60:18.69"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -6501,6 +7527,12 @@
         <RawString>4763.55723:4769.161933:4762.485973</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -O2 -mavx2"},"test-run-times":"56.99:59.60:59.74"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2156.073575</Value>
+        <RawString>2153.758627:2148.258292:2166.203805</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -O2 -mavx2"},"test-run-times":"67.25:66.29:66.26"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6566,6 +7598,12 @@
         <Value>31765</Value>
         <RawString>34158:31109:31081:31399:30655:31434:31081:31857:31958:31580:32128:31626:33119:32399:30898</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lpthread -ldl -O2 -fPIC"},"test-run-times":"33.34:36.19:36.11:36.09:36.23:36.04:36.17:35.90:35.94:36.00:35.89:36.15:35.71:35.88:36.28"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>87453</Value>
+        <RawString>87330:88234:86796</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lpthread -ldl -O2 -fPIC"},"test-run-times":"62.23:62.43:62.51"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -6633,6 +7671,12 @@
         <RawString>23371:21415:21440:21406:21438:21430:21373:21411:21415:21408:21417:21415:21412:21414:21360</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lpthread -ldl -O2 -fPIC"},"test-run-times":"33.34:36.19:36.11:36.09:36.23:36.04:36.17:35.90:35.94:36.00:35.89:36.15:35.71:35.88:36.28"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>133698</Value>
+        <RawString>133789:133369:133937</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lpthread -ldl -O2 -fPIC"},"test-run-times":"62.23:62.43:62.51"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6698,6 +7742,12 @@
         <Value>8199672</Value>
         <RawString>7784961:7901633:8247315:8458959:8296668:8391796:8247552:8171242:8370853:8221233:8355737:7948119</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lgcov -m64 -lpthread -O2 -fno-exceptions -std=c++17 -pedantic -O3 -msse -msse3 -mpopcnt -mavx2 -mavx512f -mavx512bw -mavx512vnni -mavx512dq -mavx512vl -msse4.1 -mssse3 -msse2 -mbmi2 -flto -fno-peel-loops -fno-tracer -flto=jobserver"},"test-run-times":"176.29:176.36:194.36:179.08:187.65:186.92:204.79:171.96:190.35:208.36:201.73:181.90"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>51402881</Value>
+        <RawString>51062002:52758681:50387960</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lgcov -m64 -lpthread -O2 -fno-exceptions -std=c++17 -pedantic -O3 -msse -msse3 -mpopcnt -mavx2 -mavx512f -mavx512bw -mavx512vnni -mavx512dq -mavx512vl -msse4.1 -mssse3 -msse2 -mbmi2 -flto -fno-peel-loops -fno-tracer -flto=jobserver"},"test-run-times":"132.90:128.98:108.40"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -6777,6 +7827,12 @@
         <RawString>10350755:10122841:9726801:10140898:10133823</RawString>
         <JSON>{"test-run-times":"275.15:278.52:308.20:257.94:296.54"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>69145113</Value>
+        <RawString>69837423:67922908:69675008</RawString>
+        <JSON>{"test-run-times":"167.11:178.55:195.37"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6842,6 +7898,12 @@
         <Value>710751281</Value>
         <RawString>710881817:712330137:709041890</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -lcurses -lrt"},"test-run-times":"15.29:15.26:15.33"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>517361038</Value>
+        <RawString>511011340:522208717:518863057</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -lcurses -lrt"},"test-run-times":"20.61:20.63:20.60"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -6909,6 +7971,12 @@
         <RawString>2342.18:2344.061:2339.22</RawString>
         <JSON>{"test-run-times":"2342.18:2344.06:2339.22"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1651.905</Value>
+        <RawString>1660.97:1647.477:1647.267</RawString>
+        <JSON>{"test-run-times":"1660.97:1647.48:1647.27"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -6975,6 +8043,12 @@
         <RawString>284.077:282.606:282.447</RawString>
         <JSON>{"test-run-times":"284.08:282.61:282.45"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>77.426</Value>
+        <RawString>81.72:76.713:76.638:76.728:76.579:76.813:76.788</RawString>
+        <JSON>{"test-run-times":"81.72:76.71:76.64:76.73:76.58:76.81:76.79"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7040,6 +8114,12 @@
         <Value>2046.701</Value>
         <RawString>2045.001:2047.612:2047.489</RawString>
         <JSON>{"test-run-times":"2045.00:2047.61:2047.49"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>572.458</Value>
+        <RawString>575.274:572.108:569.991</RawString>
+        <JSON>{"test-run-times":"575.27:572.11:569.99"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -7143,6 +8223,12 @@
         <RawString>336.089:339.62:339.734</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -O3 -O2"},"test-run-times":"336.45:340.04:340.16"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>58.141</Value>
+        <RawString>58.523:57.997:57.904</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -O3 -O2"},"test-run-times":"59.15:58.72:58.64"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7209,6 +8295,12 @@
         <RawString>128.669:129.712:129.518</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -O2 -lSM -lICE -lX11 -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"},"test-run-times":"130.65:131.75:131.51"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>25.653</Value>
+        <RawString>25.673:25.219:26.068</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -O2 -lSM -lICE -lX11 -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"},"test-run-times":"28.60:28.08:28.93"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7268,6 +8360,12 @@
         <Value>68.289</Value>
         <RawString>68.479:67.741:68.646</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-m64 -lgcc_s -lutil -lrt -lpthread -lm -ldl -lc -pie -nodefaultlibs"},"test-run-times":"68.48:67.74:68.65"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>60.988</Value>
+        <RawString>61.007:60.957:61.001</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-m64 -lgcc_s -lutil -lrt -lpthread -lm -ldl -lc -pie -nodefaultlibs"},"test-run-times":"61.01:60.96:61.00"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -7443,6 +8541,12 @@
         <RawString>480.76:480.09:477.66</RawString>
         <JSON>{"test-run-times":"150.59:151.04:151.41"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>263.76</Value>
+        <RawString>263.51:264.16:263.61</RawString>
+        <JSON>{"test-run-times":"297.27:294.74:294.40"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7508,6 +8612,12 @@
         <Value>21.656</Value>
         <RawString>21.679:21.599:21.69</RawString>
         <JSON>{"test-run-times":"21.68:21.60:21.69"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>43.543</Value>
+        <RawString>43.545:43.582:43.502</RawString>
+        <JSON>{"test-run-times":"43.54:43.58:43.50"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -7575,6 +8685,12 @@
         <RawString>194.641:197.353:198.683</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lpthread -O2"},"test-run-times":"194.70:197.42:198.74"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>35.835</Value>
+        <RawString>35.943:35.859:35.703</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lpthread -O2"},"test-run-times":"36.07:35.99:35.85"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7640,6 +8756,12 @@
         <Value>222.420</Value>
         <RawString>221.733:222.611:222.917</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fopenmp -O2"},"test-run-times":"221.73:222.61:222.92"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>36.332</Value>
+        <RawString>36.275:36.304:36.418</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fopenmp -O2"},"test-run-times":"36.27:36.30:36.42"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -7743,6 +8865,12 @@
         <RawString></RawString>
         <JSON>{"test-run-times":"552.88"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1059.45</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"1059.45"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7808,6 +8936,12 @@
         <Value>225.746</Value>
         <RawString></RawString>
         <JSON>{"test-run-times":"225.75"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>324.616</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"324.62"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -7875,6 +9009,12 @@
         <RawString>78.74:78.78:78.69</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"30.36:30.08:29.80"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>562.00</Value>
+        <RawString>563.03:560.71:562.27</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"30.39:30.31:29.45"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -7940,6 +9080,12 @@
         <Value>1023.14</Value>
         <RawString>1017.63:1032.39:1019.39</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.96:30.37:29.73"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>7133.82</Value>
+        <RawString>7134.6:7131.22:7135.64</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"30.56:29.56:30.59"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -8007,6 +9153,12 @@
         <RawString>4061.09:4097.61:4088.1</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.69:29.99:30.06"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>29417</Value>
+        <RawString>29740:29470:29040</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.83:29.94:29.89"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -8072,6 +9224,12 @@
         <Value>10403</Value>
         <RawString>10530:10340:10340</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"30.50:29.95:30.03"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>71290</Value>
+        <RawString>71490:71150:71230</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lcurl -lz -lpthread -lssl -lcrypto -lgmp"},"test-run-times":"29.83:30.12:29.75"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -8181,6 +9339,12 @@
         <RawString>193.863726:193.416268:194.146294</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -O3 -rdynamic -lm"},"test-run-times":"25.23:25.17:25.20"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>124.210718</Value>
+        <RawString>124.652644:123.37906:124.600451</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -O3 -rdynamic"},"test-run-times":"25.26:25.23:25.17"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -8228,6 +9392,12 @@
         <Value>207</Value>
         <RawString>206.18556701031:210.17234131988:204.45716622368</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fPIC -O2 -pie -fstack-protector -O3 -shared -lrt -lpthread -lz -ldl -lm -lstdc++"},"test-run-times":"505.95:493.43:507.22"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>188</Value>
+        <RawString>189.86140117714:188.6080724255:184.77457501848</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fPIC -O2 -pie -fstack-protector -O3 -shared -lrt -lpthread -lz -ldl -lm -lstdc++"},"test-run-times":"552.32:553.59:565.73"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -8277,6 +9447,12 @@
         <RawString>177.6514478593:179.1793585379:180.3101334295</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fPIC -O2 -pie -fstack-protector -O3 -shared -lrt -lpthread -lz -ldl -lm -lstdc++"},"test-run-times":"586.44:581.28:580.15"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>162</Value>
+        <RawString>162.17969510217:160.87516087516:163.42539630659</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fPIC -O2 -pie -fstack-protector -O3 -shared -lrt -lpthread -lz -ldl -lm -lstdc++"},"test-run-times":"643.31:646.70:640.00"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -8289,6 +9465,13 @@
     <Proportion>LIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
+        <Entry>
+            <Identifier>server-cractus-noble</Identifier>
+            <Value>33.025</Value>
+            <RawString>33.291:32.661:33.124</RawString>
+            <JSON>{"test-run-times":"33.29:32.66:33.12"}</JSON>
+          </Entry>
+
       <Entry>
         <Identifier>laptop-mantic</Identifier>
         <Value>14.803</Value>
@@ -8349,6 +9532,13 @@
     <Proportion>LIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
+        <Entry>
+            <Identifier>server-cractus-noble</Identifier>
+            <Value>27.284</Value>
+            <RawString>27.708:27.153:26.992</RawString>
+            <JSON>{"test-run-times":"27.71:27.15:26.99"}</JSON>
+          </Entry>
+
       <Entry>
         <Identifier>laptop-mantic</Identifier>
         <Value>12.976</Value>
@@ -8399,6 +9589,7 @@
       </Entry>
     </Data>
   </Result>
+
   <Result>
     <Identifier>system/gimp-1.1.3</Identifier>
     <Title>GIMP</Title>
@@ -8409,6 +9600,12 @@
     <Proportion>LIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
+        <Entry>
+            <Identifier>server-cractus-noble</Identifier>
+            <Value>31.197</Value>
+            <RawString>31.183:31.32:31.088</RawString>
+            <JSON>{"test-run-times":"31.18:31.32:31.09"}</JSON>
+          </Entry>
       <Entry>
         <Identifier>laptop-mantic</Identifier>
         <Value>13.811</Value>
@@ -8469,6 +9666,12 @@
     <Proportion>LIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
+        <Entry>
+            <Identifier>server-cractus-noble</Identifier>
+            <Value>37.889</Value>
+            <RawString>38.143:37.756:37.767</RawString>
+            <JSON>{"test-run-times":"38.14:37.76:37.77"}</JSON>
+          </Entry>
       <Entry>
         <Identifier>laptop-mantic</Identifier>
         <Value>15.994</Value>
@@ -8577,6 +9780,12 @@
         <RawString>4321598.5:4368035:4371472</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3 -O2"},"test-run-times":"17.59:17.46:17.45"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>2290292.33</Value>
+        <RawString>2290362.25:2290782:2289732.75</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3 -O2"},"test-run-times":"27.90:27.84:27.86"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -8636,6 +9845,12 @@
         <Value>2843701.75</Value>
         <RawString>2843383.5:2844015:2843706.75</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3 -O2"},"test-run-times":"23.60:23.60:23.60"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1405331.36</Value>
+        <RawString>1533816.88:1294768.88:1532829.5:1298319.88:1295326.38:1298006.12:1297242:1483926.25:1453429.88:1484322.75:1299737.38:1454298.12:1300007.62:1522236.25:1531702.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-MM -MT -g3 -fvisibility=hidden -O3 -O2"},"test-run-times":"38.62:44.64:38.64:44.53:44.62:44.54:44.56:39.71:40.42:39.70:44.49:40.40:44.48:38.87:38.66"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -8703,6 +9918,12 @@
         <RawString>826.6:829.5:826.3</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.79:61.49:61.68"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1332.2</Value>
+        <RawString>1292.2:1367:1311.8:1367.7:1264.6:1361.6:1357.1:1341.5:1322.1:1332.8:1297.6:1355.3:1347.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"64.29:64.29:64.48:63.91:63.93:63.66:63.63:63.94:64.37:64.28:63.54:63.84:64.03"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -8768,6 +9989,12 @@
         <Value>1491.2</Value>
         <RawString>1490.4:1489.5:1493.6</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.79:61.49:61.68"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>712.9</Value>
+        <RawString>711.8:712.5:713.5:711.7:713.8:712.5:713.4:714.3:712.2:714:713.1:711.9:712.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"64.29:64.29:64.48:63.91:63.93:63.66:63.63:63.94:64.37:64.28:63.54:63.84:64.03"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -8835,6 +10062,12 @@
         <RawString>142.2:143.3:141.7</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"61.58:61.64:61.89"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>262.1</Value>
+        <RawString>270.7:273:286.9:283.8:253.8:253.1:244.5:246.5:255.8:261.3:259.9:255.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"64.15:64.48:64.20:64.58:64.24:65.22:64.41:64.55:65.32:64.81:65.35:65.46"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -8900,6 +10133,12 @@
         <Value>1631.2</Value>
         <RawString>1633.1:1632.5:1627.9</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"61.58:61.64:61.89"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>749.7</Value>
+        <RawString>750.3:751.1:747.2:751.7:750.8:750.1:745.7:748.7:752.7:750.3:750.2:747.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"64.15:64.48:64.20:64.58:64.24:65.22:64.41:64.55:65.32:64.81:65.35:65.46"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -8967,6 +10206,12 @@
         <RawString>41.4:41.2:40.9</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.00:61.95:62.14"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>90.5</Value>
+        <RawString>97.9:89.8:94.8:86.1:80.7:85.7:88.6:93.6:98.4:99.6:88.4:91:82</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"65.56:63.68:64.53:64.45:62.90:62.83:63.80:65.91:64.71:64.23:65.39:65.12:64.70"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -9032,6 +10277,12 @@
         <Value>1648.5</Value>
         <RawString>1647.9:1649.6:1648.1</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"62.00:61.95:62.14"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>716.3</Value>
+        <RawString>720.7:715.3:716.8:714.5:718:716:722.8:720.8:711.6:714.4:712.3:709.9:719.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"65.56:63.68:64.53:64.45:62.90:62.83:63.80:65.91:64.71:64.23:65.39:65.12:64.70"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -9099,6 +10350,12 @@
         <RawString>9.24:9.24:9.63</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"77.73:77.75:77.41"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>10.4</Value>
+        <RawString>10.5:10.2:10.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"73.77:75.10:73.63"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -9164,6 +10421,12 @@
         <Value>1331.9</Value>
         <RawString>1325.8:1327.1:1342.7</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"77.73:77.75:77.41"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>613.7</Value>
+        <RawString>617.1:608.2:615.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"73.77:75.10:73.63"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -9231,6 +10494,12 @@
         <RawString>693.1:700.1:690.4</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"61.30:61.58:61.43"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>309.9</Value>
+        <RawString>314.4:311.2:304.2</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"63.44:63.81:63.62"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -9296,6 +10565,12 @@
         <Value>1511.9</Value>
         <RawString>1510.4:1512.4:1512.9</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"61.30:61.58:61.43"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>736.1</Value>
+        <RawString>735.8:735.6:736.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"63.44:63.81:63.62"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -9363,6 +10638,12 @@
         <RawString>139.9:140:140.7</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"61.99:62.02:62.11"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>283.7</Value>
+        <RawString>280.9:284.9:285.3</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"63.61:64.12:65.07"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -9428,6 +10709,12 @@
         <Value>1624.8</Value>
         <RawString>1628.7:1627.3:1618.3</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"61.99:62.02:62.11"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>756.6</Value>
+        <RawString>755.7:758.2:755.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"63.61:64.12:65.07"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -9495,6 +10782,12 @@
         <RawString>6.22:6.22:6.22</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"65.05:65.01:64.99"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>5.54</Value>
+        <RawString>5.72:5.47:5.47:5.48</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"70.02:71.70:71.65:71.63"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -9560,6 +10853,12 @@
         <Value>1288.6</Value>
         <RawString>1287.2:1289.3:1289.2</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"65.05:65.01:64.99"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>607.1</Value>
+        <RawString>606.5:606.8:607.9:607.2</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lz -llzma"},"test-run-times":"70.02:71.70:71.65:71.63"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -9627,6 +10926,12 @@
         <RawString>112.49:112.48:106:104.08:104.88:103.75:104.15:105.72:104.39:105.97:105.79:105.51:101.79:104.47:104.17</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread"},"test-run-times":"5.61:5.61:5.95:6.06:6.02:6.08:6.06:5.97:6.04:5.95:5.96:5.98:6.20:6.04:6.06"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>113.73</Value>
+        <RawString>114.35:113.62:113.22</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread"},"test-run-times":"31.67:31.86:31.97"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -9693,6 +10998,12 @@
         <RawString>406.98:363.15:359.01:366.92:364.39:363.06:363.22:369.07:362.78:364.69:370.17:366.4</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread"},"test-run-times":"8.87:9.94:10.06:9.84:9.91:9.94:9.94:9.78:9.95:9.90:9.75:9.85"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>278.57</Value>
+        <RawString>275.42:280.97:279.33</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread"},"test-run-times":"13.15:12.91:12.98"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -9752,6 +11063,12 @@
         <Value>6759.72</Value>
         <RawString>7305.49:6701.22:6722.7:6758.88:6745.65:6703.39:6736.61:6701.41:6734.12:6693.38:6710.97:6628.66:6733.82</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lm -lEGL -lGLESv2 -latomic -lc -lcrypt -ldl -lgbm -ljpeg -lmpfr -lpthread -lrt -lz"},"test-run-times":"30.03:30.02:30.02:30.03:30.03:30.02:30.03:30.02:30.02:30.02:30.02:30.02:30.02"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>42808.14</Value>
+        <RawString>42804.17:42803.76:42816.48</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lm -lEGL -lGLESv2 -latomic -lc -lcrypt -ldl -lgbm -ljpeg -lmpfr -lpthread -lrt -lz"},"test-run-times":"30.27:30.09:30.09"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -9813,6 +11130,12 @@
         <RawString>9065.16:8810.58:8806.36</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lm -lEGL -lGLESv2 -latomic -lc -lcrypt -ldl -lgbm -ljpeg -lmpfr -lpthread -lrt -lz"},"test-run-times":"30.02:30.02:30.02"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>53169.59</Value>
+        <RawString>53236.6:53470.55:52801.61</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lm -lEGL -lGLESv2 -latomic -lc -lcrypt -ldl -lgbm -ljpeg -lmpfr -lpthread -lrt -lz"},"test-run-times":"30.09:30.10:30.09"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -9872,6 +11195,12 @@
         <Value>150</Value>
         <RawString>150:150:150</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2"},"test-run-times":"0.77:0.77:0.77"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>205</Value>
+        <RawString>206:202:206</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2"},"test-run-times":"1.18:1.16:1.16"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -9933,6 +11262,12 @@
         <RawString>17550.37:17626.56:17655.4</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -lm"},"test-run-times":"5.84:5.82:5.81"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>11838.80</Value>
+        <RawString>11834.67:11918.47:11763.27</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -lm"},"test-run-times":"8.69:8.60:8.71"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -9991,6 +11326,12 @@
         <Identifier>laptop-mantic-no-omit-framepointer</Identifier>
         <Value>13559.88</Value>
         <RawString>13639.91:13530.18:13509.56</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -lm"},"test-run-times":"90.01:90.01:90.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>47792.60</Value>
+        <RawString>47792.08:47794.82:47790.9</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -lm"},"test-run-times":"90.01:90.01:90.01"}</JSON>
       </Entry>
     </Data>
@@ -10053,6 +11394,12 @@
         <RawString>740:744:737</RawString>
         <JSON>{"test-run-times":"17.22:17.17:17.11"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>1477</Value>
+        <RawString>1477:1478:1475</RawString>
+        <JSON>{"test-run-times":"35.45:35.37:35.36"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -10112,6 +11459,12 @@
         <Value>1070.06524</Value>
         <RawString></RawString>
         <JSON>{"test-run-times":"2119.81"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>219.778104</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"458.15"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -10173,6 +11526,12 @@
         <RawString></RawString>
         <JSON>{"test-run-times":"1249.72"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>105.047098</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"209.80"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -10233,6 +11592,12 @@
         <RawString>990813:983018:989885</RawString>
         <JSON>{"test-run-times":"20.21:20.37:20.22"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>491653</Value>
+        <RawString>492051:491157:491751</RawString>
+        <JSON>{"test-run-times":"40.72:40.75:40.70"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -10292,6 +11657,12 @@
         <Value>50.120</Value>
         <RawString>50.188:50.068:50.104</RawString>
         <JSON>{"install-footnote":"git version 2.40.1","test-run-times":"50.19:50.07:50.10"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>79.760</Value>
+        <RawString>79.844:79.719:79.717</RawString>
+        <JSON>{"install-footnote":"git version 2.43.0","test-run-times":"79.84:79.72:79.72"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -10377,6 +11748,12 @@
         <RawString>7.897:6.227:6.322:6.273:6.294:6.303:6.249:6.232:6.266:6.26:6.313:6.273:6.348:6.247</RawString>
         <JSON>{"test-run-times":"7.90:6.23:6.32:6.27:6.29:6.30:6.25:6.23:6.27:6.26:6.31:6.27:6.35:6.25"}</JSON>
       </Entry>
+      <Entry>
+        <Identifier>server-cractus-noble</Identifier>
+        <Value>6.681</Value>
+        <RawString>8.212:6.493:6.577:6.624:6.485:6.526:6.589:6.6:6.563:6.598:6.529:6.666:6.513:6.562</RawString>
+        <JSON>{"test-run-times":"8.21:6.49:6.58:6.62:6.48:6.53:6.59:6.60:6.56:6.60:6.53:6.67:6.51:6.56"}</JSON>
+      </Entry>
     </Data>
   </Result>
   <Result>
@@ -10389,6 +11766,12 @@
     <Proportion>LIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
+        <Entry>
+            <Identifier>server-cractus-noble</Identifier>
+            <Value>38.054</Value>
+            <RawString>37.977:38.168:38.016</RawString>
+            <JSON>{"test-run-times":"37.98:38.17:38.02"}</JSON>
+          </Entry>
       <Entry>
         <Identifier>desktop-noble</Identifier>
         <Value>22.682</Value>
