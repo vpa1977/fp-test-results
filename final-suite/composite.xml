@@ -131,6 +131,13 @@
     <Proportion>LIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
+        <Entry>
+            <Identifier>laptop-noble</Identifier>
+            <Value>7.647</Value>
+            <RawString>7.636:7.744:7.56</RawString>
+            <JSON>{"test-run-times":"7.64:7.74:7.56"}</JSON>
+          </Entry>
+
       <Entry>
         <Identifier>laptop-mantic</Identifier>
         <Value>7.560</Value>
@@ -4607,6 +4614,13 @@
     <Proportion>LIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
+        <Entry>
+            <Identifier>laptop-noble</Identifier>
+            <Value>29.170</Value>
+            <RawString>26.318:29.631:29.359:29.442:29.491:29.511:29.534:29.188:29.386:29.412:29.447:29.315</RawString>
+            <JSON>{"test-run-times":"26.32:29.63:29.36:29.44:29.49:29.51:29.53:29.19:29.39:29.41:29.45:29.31"}</JSON>
+          </Entry>
+
       <Entry>
         <Identifier>laptop-mantic</Identifier>
         <Value>28.956</Value>
@@ -4673,6 +4687,12 @@
     <Proportion>LIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
+        <Entry>
+            <Identifier>laptop-noble</Identifier>
+            <Value>7.308</Value>
+            <RawString>7.398:7.284:7.277:7.291:7.289</RawString>
+            <JSON>{"test-run-times":"7.40:7.28:7.28:7.29:7.29"}</JSON>
+          </Entry>
       <Entry>
         <Identifier>laptop-mantic</Identifier>
         <Value>7.203</Value>
@@ -5063,6 +5083,12 @@
     <Proportion>LIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
+        <Entry>
+            <Identifier>laptop-noble</Identifier>
+            <Value>20.943</Value>
+            <RawString>20.924:20.944:20.961</RawString>
+            <JSON>{"test-run-times":"20.92:20.94:20.96"}</JSON>
+          </Entry>
       <Entry>
         <Identifier>desktop-mantic-no-omit-framepointer</Identifier>
         <Value>23.431</Value>
@@ -10709,6 +10735,12 @@
     <Proportion>LIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
+        <Entry>
+            <Identifier>laptop-noble</Identifier>
+            <Value>14.486</Value>
+            <RawString>14.621:14.371:14.466</RawString>
+            <JSON>{"test-run-times":"14.62:14.37:14.47"}</JSON>
+       </Entry>
       <Entry>
         <Identifier>laptop-mantic</Identifier>
         <Value>14.803</Value>
@@ -10775,6 +10807,13 @@
     <Proportion>LIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
+        <Entry>
+            <Identifier>laptop-noble</Identifier>
+            <Value>12.979</Value>
+            <RawString>12.964:12.975:12.999</RawString>
+            <JSON>{"test-run-times":"12.96:12.98:13.00"}</JSON>
+          </Entry>
+
       <Entry>
         <Identifier>laptop-mantic</Identifier>
         <Value>12.976</Value>
@@ -10841,6 +10880,13 @@
     <Proportion>LIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
+        <Entry>
+            <Identifier>laptop-noble</Identifier>
+            <Value>14.009</Value>
+            <RawString>14.032:13.992:14.002</RawString>
+            <JSON>{"test-run-times":"14.03:13.99:14.00"}</JSON>
+          </Entry>
+
       <Entry>
         <Identifier>laptop-mantic</Identifier>
         <Value>13.811</Value>
@@ -10907,6 +10953,12 @@
     <Proportion>LIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
+        <Entry>
+            <Identifier>laptop-noble</Identifier>
+            <Value>15.984</Value>
+            <RawString>16.02:15.975:15.956</RawString>
+            <JSON>{"test-run-times":"16.02:15.97:15.96"}</JSON>
+          </Entry>
       <Entry>
         <Identifier>laptop-mantic</Identifier>
         <Value>15.994</Value>
@@ -13181,6 +13233,12 @@
     <Proportion>LIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
+        <Entry>
+            <Identifier>laptop-noble</Identifier>
+            <Value>20.941</Value>
+            <RawString>20.989:20.915:20.92</RawString>
+            <JSON>{"test-run-times":"20.99:20.92:20.92"}</JSON>
+          </Entry>
       <Entry>
         <Identifier>desktop-noble</Identifier>
         <Value>22.682</Value>
@@ -13492,186 +13550,6 @@
         <Value>118</Value>
         <RawString>108.27197921178:118.17537225242:118.93434823977:119.033448399:118.96264572924:119.44577161969:119.26058437686:118.35720203574:119.58861516384</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -pie -fPIC -fstack-protector -O3 -lnuma -lpcre2-8 -lcrypt -lsystemd -lz -lm -lssl -lcrypto -lpthread -ldl"},"test-run-times":"930.88:851.87:845.78:845.50:845.64:842.07:843.32:849.93:840.90"}</JSON>
-      </Entry>
-    </Data>
-  </Result>
-  <Result>
-    <Identifier>system/sqlite-1.0.1</Identifier>
-    <Title>SQLite</Title>
-    <AppVersion>3.45.1</AppVersion>
-    <Arguments></Arguments>
-    <Description>SQLite </Description>
-    <Scale>Seconds</Scale>
-    <Proportion>LIB</Proportion>
-    <DisplayFormat>BAR_GRAPH</DisplayFormat>
-    <Data>
-      <Entry>
-        <Identifier>laptop-noble</Identifier>
-        <Value>7.647</Value>
-        <RawString>7.636:7.744:7.56</RawString>
-        <JSON>{"test-run-times":"7.64:7.74:7.56"}</JSON>
-      </Entry>
-    </Data>
-  </Result>
-  <Result>
-    <Identifier>system/gimp-1.1.3</Identifier>
-    <Title>GIMP</Title>
-    <AppVersion></AppVersion>
-    <Arguments></Arguments>
-    <Description>GIMP System </Description>
-    <Scale>Seconds</Scale>
-    <Proportion>LIB</Proportion>
-    <DisplayFormat>BAR_GRAPH</DisplayFormat>
-    <Data>
-      <Entry>
-        <Identifier>laptop-noble</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
-      </Entry>
-    </Data>
-  </Result>
-  <Result>
-    <Identifier>system/gimp-1.1.3</Identifier>
-    <Title>GIMP</Title>
-    <AppVersion>2.10.36</AppVersion>
-    <Arguments>resize</Arguments>
-    <Description>Test: resize</Description>
-    <Scale>Seconds</Scale>
-    <Proportion>LIB</Proportion>
-    <DisplayFormat>BAR_GRAPH</DisplayFormat>
-    <Data>
-      <Entry>
-        <Identifier>laptop-noble</Identifier>
-        <Value>14.486</Value>
-        <RawString>14.621:14.371:14.466</RawString>
-        <JSON>{"test-run-times":"14.62:14.37:14.47"}</JSON>
-      </Entry>
-    </Data>
-  </Result>
-  <Result>
-    <Identifier>system/gimp-1.1.3</Identifier>
-    <Title>GIMP</Title>
-    <AppVersion>2.10.36</AppVersion>
-    <Arguments>rotate</Arguments>
-    <Description>Test: rotate</Description>
-    <Scale>Seconds</Scale>
-    <Proportion>LIB</Proportion>
-    <DisplayFormat>BAR_GRAPH</DisplayFormat>
-    <Data>
-      <Entry>
-        <Identifier>laptop-noble</Identifier>
-        <Value>12.979</Value>
-        <RawString>12.964:12.975:12.999</RawString>
-        <JSON>{"test-run-times":"12.96:12.98:13.00"}</JSON>
-      </Entry>
-    </Data>
-  </Result>
-  <Result>
-    <Identifier>system/gimp-1.1.3</Identifier>
-    <Title>GIMP</Title>
-    <AppVersion>2.10.36</AppVersion>
-    <Arguments>auto-levels</Arguments>
-    <Description>Test: auto-levels</Description>
-    <Scale>Seconds</Scale>
-    <Proportion>LIB</Proportion>
-    <DisplayFormat>BAR_GRAPH</DisplayFormat>
-    <Data>
-      <Entry>
-        <Identifier>laptop-noble</Identifier>
-        <Value>14.009</Value>
-        <RawString>14.032:13.992:14.002</RawString>
-        <JSON>{"test-run-times":"14.03:13.99:14.00"}</JSON>
-      </Entry>
-    </Data>
-  </Result>
-  <Result>
-    <Identifier>system/gimp-1.1.3</Identifier>
-    <Title>GIMP</Title>
-    <AppVersion>2.10.36</AppVersion>
-    <Arguments>unsharp-mask</Arguments>
-    <Description>Test: unsharp-mask</Description>
-    <Scale>Seconds</Scale>
-    <Proportion>LIB</Proportion>
-    <DisplayFormat>BAR_GRAPH</DisplayFormat>
-    <Data>
-      <Entry>
-        <Identifier>laptop-noble</Identifier>
-        <Value>15.984</Value>
-        <RawString>16.02:15.975:15.956</RawString>
-        <JSON>{"test-run-times":"16.02:15.97:15.96"}</JSON>
-      </Entry>
-    </Data>
-  </Result>
-  <Result>
-    <Identifier>system/ocrmypdf-1.0.0</Identifier>
-    <Title>OCRMyPDF</Title>
-    <AppVersion>15.2.0+dfsg1</AppVersion>
-    <Arguments></Arguments>
-    <Description>OCRMyPDF System </Description>
-    <Scale>Seconds</Scale>
-    <Proportion>LIB</Proportion>
-    <DisplayFormat>BAR_GRAPH</DisplayFormat>
-    <Data>
-      <Entry>
-        <Identifier>laptop-noble</Identifier>
-        <Value>29.170</Value>
-        <RawString>26.318:29.631:29.359:29.442:29.491:29.511:29.534:29.188:29.386:29.412:29.447:29.315</RawString>
-        <JSON>{"test-run-times":"26.32:29.63:29.36:29.44:29.49:29.51:29.53:29.19:29.39:29.41:29.45:29.31"}</JSON>
-      </Entry>
-    </Data>
-  </Result>
-  <Result>
-    <Identifier>system/octave-benchmark-1.0.1</Identifier>
-    <Title>GNU Octave Benchmark</Title>
-    <AppVersion>8.4.0</AppVersion>
-    <Arguments></Arguments>
-    <Description>GNU Octave Benchmark System </Description>
-    <Scale>Seconds</Scale>
-    <Proportion>LIB</Proportion>
-    <DisplayFormat>BAR_GRAPH</DisplayFormat>
-    <Data>
-      <Entry>
-        <Identifier>laptop-noble</Identifier>
-        <Value>7.308</Value>
-        <RawString>7.398:7.284:7.277:7.291:7.289</RawString>
-        <JSON>{"test-run-times":"7.40:7.28:7.28:7.29:7.29"}</JSON>
-      </Entry>
-    </Data>
-  </Result>
-  <Result>
-    <Identifier>system/tesseract-ocr-1.0.1</Identifier>
-    <Title>Tesseract OCR</Title>
-    <AppVersion>5.3.4</AppVersion>
-    <Arguments></Arguments>
-    <Description>Time To OCR 7 Images</Description>
-    <Scale>Seconds</Scale>
-    <Proportion>LIB</Proportion>
-    <DisplayFormat>BAR_GRAPH</DisplayFormat>
-    <Data>
-      <Entry>
-        <Identifier>laptop-noble</Identifier>
-        <Value>20.941</Value>
-        <RawString>20.989:20.915:20.92</RawString>
-        <JSON>{"test-run-times":"20.99:20.92:20.92"}</JSON>
-      </Entry>
-    </Data>
-  </Result>
-  <Result>
-    <Identifier>system/tesseract-ocr-1.0.1</Identifier>
-    <Title>Tesseract OCR</Title>
-    <AppVersion>5.3.4</AppVersion>
-    <Arguments></Arguments>
-    <Description>Tesseract OCR System </Description>
-    <Scale>Seconds</Scale>
-    <Proportion>LIB</Proportion>
-    <DisplayFormat>BAR_GRAPH</DisplayFormat>
-    <Data>
-      <Entry>
-        <Identifier>laptop-noble</Identifier>
-        <Value>20.943</Value>
-        <RawString>20.924:20.944:20.961</RawString>
-        <JSON>{"test-run-times":"20.92:20.94:20.96"}</JSON>
       </Entry>
     </Data>
   </Result>
